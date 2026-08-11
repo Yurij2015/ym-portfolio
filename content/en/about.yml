@@ -1,0 +1,25 @@
+title: About Me
+description: Learn more about my journey as a Senior Full-Stack PHP Developer based in Poznań, my stack, and my experience working on high-load production platforms.
+content: |
+  Hi, I'm **Yurii Mokryi**, a Senior Full-Stack PHP Developer based in Poznań, Poland. I have 10+ years of commercial development experience: building and maintaining SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
+
+  My primary role is full-stack development on a high-load ticketing platform for major sporting events (Formula 1, MotoGP, EICMA, EuroLeague): checkout, user accounts, admin dashboards, Stripe/Dalenys integration, and 3D seat-map solutions. In parallel, as the founder of DigiSpace, I build my own SaaS products — DigiPulse (uptime monitoring) and VetSpace (CRM for veterinary clinics).
+
+  ### My Stack
+
+  Deep expertise in **Laravel** (Filament, Octane, FrankenPHP) and **Symfony**, as well as Vue.js/Nuxt, multi-tenant architectures, payment system integrations (Stripe, Revolut, Dalenys), and third-party APIs. I regularly work with Linux/SSH, Docker, Caddy, CI/CD, Proxmox, and Terraform — from development to production deployment and incident response.
+
+  ### Technical Philosophy
+
+  My technical philosophy is built on **pragmatism** and **results**. Great software starts with understanding the business problem and building the simplest effective solution. I aim to build systems that are maintainable, performant, and solve real problems.
+
+  ### Beyond the Screen
+
+  When I'm not coding, you'll find me exploring coffee shops in Poznań, keeping up with the latest AI and cloud technologies, or contributing to open-source projects.
+
+  Thanks for stopping by. Feel free to check out my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+images:
+  - src: https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: My workstation
+  - src: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: Cloud infrastructure

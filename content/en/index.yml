@@ -1,0 +1,71 @@
+seo:
+  title: "Yurii Mokryi - Senior Full-Stack PHP Developer"
+  description: "Senior Full-Stack developer with 10+ years of commercial experience. Laravel, Filament, Symfony, Vue/Nuxt. SaaS products, high-load ticketing platforms, AI integrations."
+title: "Hi, I'm Yurii Mokryi, a Full-Stack Developer"
+description: "10+ years of commercial development. I build and maintain SaaS products, CRM systems, and high-load platforms. Not just a freelancer — a developer with real production launch experience."
+hero:
+  links:
+    - label: "Available for new projects"
+      to: https://t.me/YuriiMokryi
+      color: "primary"
+      icon: "i-simple-icons-telegram"
+    - label: "View portfolio"
+      to: "/projects"
+      color: "neutral"
+      icon: "i-heroicons-folder"
+  images:
+    - src: /hero/random-1.avif
+      alt: Development and code
+    - src: /hero/random-2.avif
+      alt: Technology stack
+    - src: /hero/random-3.avif
+      alt: Development workflow
+    - src: /hero/random-4.avif
+      alt: Code editor
+    - src: /hero/random-5.avif
+      alt: System architecture
+    - src: /hero/random-6.avif
+      alt: Development process
+    - src: /hero/random-7.avif
+      alt: API and integrations
+    - src: /hero/random-8.avif
+      alt: Databases
+    - src: /hero/random-9.avif
+      alt: System monitoring
+about:
+  title: "About Me"
+  description: |
+    Full-Stack developer with 10+ years of commercial experience. I build and maintain SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
+    Deep expertise in Laravel (Filament, Octane, FrankenPHP) and Symfony, as well as Vue.js/Nuxt, multi-tenant architectures, and payment system integrations.
+experience:
+  title: Work Experience
+  items:
+    - position: "Full-Stack Developer at"
+      date: "2021 — Present"
+      company:
+        name: Platinium Group SAM
+        logo: "i-simple-icons-symfony"
+        url: "https://tickets.formula1.com"
+        color: "#000000"
+    - position: "Founder & Full-Stack Developer at"
+      date: "2022 — Present"
+      company:
+        name: DigiSpace
+        logo: "i-simple-icons-laravel"
+        url: "https://digispace.pro"
+        color: "#FF2D20"
+    - position: "Full-Stack Developer at"
+      date: "Sep 2024 — Dec 2025"
+      company:
+        name: SystemFreaks
+        logo: "i-heroicons-briefcase"
+        url: "#"
+        color: "#6B7280"
+testimonials:
+  - quote: "I design and ship SaaS products end-to-end — from architecture and billing to deployment and growth — on real high-load platforms for Formula 1, MotoGP, and my own SaaS products. Not a 'does everything' freelancer — a developer who has actually taken products from an empty repo to paying users."
+    author:
+      name: 'Yurii Mokryi'
+      description: 'Senior Full-Stack PHP Developer'
+      avatar:
+        src: 'https://github.com/Yurij2015.png'
+        srcset: 'https://github.com/Yurij2015.png 2x'

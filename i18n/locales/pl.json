@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Główna",
+    "projects": "Projekty",
+    "about": "O mnie"
+  },
+  "hero": {
+    "available": "Dostępny dla nowych projektów",
+    "unavailable": "Obecnie niedostępny"
+  },
+  "common": {
+    "viewProject": "Zobacz projekt"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone"
+  }
+}

@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => {
-  return queryCollection('index').first()
-})
+const { locale } = useI18n()
+
+const { data: page } = await useAsyncData(
+  () => `index-${locale.value}`,
+  () => queryCollection(`index_${locale.value}` as 'index_uk').first(),
+  { watch: [locale] }
+)
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -10,13 +14,17 @@ if (!page.value) {
   })
 }
 
+const title = page.value?.seo?.title || page.value?.title
+const description = page.value?.seo?.description || page.value?.description
+
 useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png'
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description
 })
+
+defineOgImage('Portfolio', { title, description })
 </script>
 
 <template>
@@ -30,7 +38,6 @@ useSeoMeta({
       <LandingAbout :page />
       <LandingWorkExperience :page />
     </UPageSection>
-    <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />
   </UPage>

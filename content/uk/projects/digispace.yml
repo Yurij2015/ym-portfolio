@@ -1,0 +1,52 @@
+---
+title: DigiSpace
+description: Код за digispace.pro — публічний сайт агенції, адмін панель та кастомний CMS з Laravel, Inertia та Vue
+url: https://digispace.pro
+date: 2022-03-10
+tags:
+  - Laravel
+  - Inertia
+  - Vue
+  - CMS
+  - Open Source
+image: /hero/random-3.avif
+featured: true
+stack:
+  - name: Laravel
+    icon: i-simple-icons-laravel
+  - name: Inertia
+    icon: i-simple-icons-inertia
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
+  - name: Vite
+    icon: i-simple-icons-vite
+  - name: CMS
+    icon: i-heroicons-document-text
+links:
+  - label: Live Demo
+    to: https://digispace.pro
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: GitHub
+    to: https://github.com/Yurij2015
+    color: neutral
+    icon: i-simple-icons-github
+---
+Код за digispace.pro — публічний сайт агенції, адмін панель та кастомний CMS, збудований з Laravel, Inertia та Vue. Відкритий код: той самий production код, який працює на живому сайті.
+
+## Key Features
+
+- **Public agency site** - Публічний сайт агенції
+- **Admin panel** - Адмін панель
+- **Custom CMS** - Кастомний CMS
+- **Open source** - Відкритий код
+- **Production-ready** - Production-ready код
+- **Modern stack** - Сучасний стек
+
+## Tech Stack
+
+- **Backend**: Laravel
+- **Frontend**: Vue.js
+- **Connection**: Inertia.js
+- **Build tool**: Vite
+- **Architecture**: Custom CMS

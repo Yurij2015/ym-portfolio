@@ -1,0 +1,58 @@
+---
+title: VetSpace
+description: Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів
+url: https://vetspace.pro
+date: 2023-06-20
+tags:
+  - SaaS
+  - Laravel
+  - Vue
+  - Multi-tenant
+  - Stripe
+  - AI
+image: /hero/random-2.avif
+featured: true
+stack:
+  - name: Laravel
+    icon: i-simple-icons-laravel
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
+  - name: Nuxt
+    icon: i-simple-icons-nuxtdotjs
+  - name: Stripe
+    icon: i-simple-icons-stripe
+  - name: GraphQL
+    icon: i-simple-icons-graphql
+  - name: AI
+    icon: i-heroicons-sparkles
+links:
+  - label: Live Demo
+    to: https://vetspace.pro
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: GitHub
+    to: https://github.com/Yurij2015
+    color: neutral
+    icon: i-simple-icons-github
+---
+Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів. Публічний каталог клінік, побудований для SEO-first набуття клієнтів, та підписка на основі CRM (призначення, візити, записи пацієнтів) як окремі Vue/Nuxt додатки над одним Laravel API. Архітектура database-per-tenant, підписки Stripe через Cashier, GraphQL + REST, та аналіз візитів з допомогою AI через присвячений Go мікросервіс.
+
+## Key Features
+
+- **SEO clinic catalog** - SEO-каталог клінік
+- **CRM system** - CRM система для ветеринарів
+- **Appointment scheduling** - Призначення візитів
+- **Patient records** - Записи пацієнтів
+- **Stripe subscriptions** - Підписки через Stripe
+- **Multi-tenant** - Database-per-tenant архітектура
+- **AI analysis** - AI аналіз візитів
+- **Go microservice** - Go мікросервіс для AI
+
+## Tech Stack
+
+- **Backend**: Laravel (API)
+- **Frontend**: Vue/Nuxt (окремі додатки)
+- **Architecture**: Database-per-tenant multi-tenancy
+- **Payments**: Stripe через Cashier
+- **API**: GraphQL + REST
+- **AI**: Go мікросервіс для аналізу візитів

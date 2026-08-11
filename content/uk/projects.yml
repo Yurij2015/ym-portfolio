@@ -1,0 +1,11 @@
+title: Створення продуктів, запуск ідей.
+description: Я створив реальні продукти від порожнього репозиторію до платних користувачів. Ось проекти, якими я пишаюсь, що демонструють мій процес від концепції до готових рішень.
+links:
+  - label: "Обговорити проект"
+    to: https://t.me/YuriiMokryi
+    color: "primary"
+    icon: "i-simple-icons-telegram"
+  - label: 'Написати email'
+    to: "mailto:admin@digispace.pro"
+    color: "neutral"
+    icon: "i-heroicons-envelope"

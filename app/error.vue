@@ -5,9 +5,12 @@ defineProps<{
   error: NuxtError
 }>()
 
+const { locale } = useI18n()
+const navLinks = useNavLinks()
+
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: locale
   }
 })
 
@@ -15,24 +18,6 @@ useSeoMeta({
   title: 'Page not found',
   description: 'We are sorry but this page could not be found.'
 })
-
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation('blog')
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections('blog')
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
 </script>
 
 <template>
@@ -48,14 +33,5 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     </UMain>
 
     <AppFooter />
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        :navigation="navigation"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
   </UApp>
 </template>

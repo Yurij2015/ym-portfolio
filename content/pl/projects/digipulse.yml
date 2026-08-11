@@ -1,0 +1,55 @@
+---
+title: DigiPulse
+description: SaaS do monitorowania dostępności — sprawdzanie co 60 sekund, śledzenie wygaśnięcia SSL, powiadomienia przez Telegram i email
+url: https://digipulse.cloud
+date: 2024-01-15
+tags:
+  - SaaS
+  - Laravel
+  - Go
+  - Monitoring
+  - MCP
+image: /hero/random-1.avif
+featured: true
+stack:
+  - name: Laravel
+    icon: i-simple-icons-laravel
+  - name: Filament
+    icon: i-simple-icons-filament
+  - name: Go
+    icon: i-simple-icons-go
+  - name: PostgreSQL
+    icon: i-simple-icons-postgresql
+  - name: MCP
+    icon: i-heroicons-cpu-chip
+links:
+  - label: Live Demo
+    to: https://digipulse.cloud
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: GitHub
+    to: https://github.com/Yurij2015
+    color: neutral
+    icon: i-simple-icons-github
+---
+SaaS do monitorowania dostępności — sprawdzanie co 60 sekund, śledzenie wygaśnięcia SSL, powiadomienia przez Telegram i email. Panel administracyjny i podstawowy backend zbudowane na Laravel (Octane, websockety Reverb) i Filament, a silnik monitorujący to osobny serwis w Go. Integracja logowania Google OAuth i Cloudflare Turnstile. Zawiera serwer MCP, który udostępnia dane monitoringu bezpośrednio asystentom AI. Self-hosted na Proxmox.
+
+## Kluczowe funkcje
+
+- **Sprawdzanie co 60s** - Sprawdzanie dostępności co 60 sekund
+- **Śledzenie SSL** - Śledzenie wygaśnięcia certyfikatów SSL
+- **Powiadomienia Telegram** - Powiadomienia przez Telegram
+- **Alerty email** - Powiadomienia email
+- **Panel administracyjny** - Panel administracyjny na Filament
+- **Serwer MCP** - Serwer MCP do integracji AI
+- **Google OAuth** - Logowanie Google OAuth
+- **Cloudflare Turnstile** - Integracja Cloudflare Turnstile
+
+## Stos technologiczny
+
+- **Backend**: Laravel (Octane, websockety Reverb)
+- **Panel administracyjny**: Filament
+- **Silnik monitorujący**: Go (osobny serwis)
+- **Baza danych**: PostgreSQL
+- **Integracja AI**: Serwer MCP
+- **Infrastruktura**: Self-hosted na Proxmox

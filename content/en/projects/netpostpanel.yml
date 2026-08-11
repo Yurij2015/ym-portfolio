@@ -1,0 +1,51 @@
+---
+title: NetPostPanel
+description: AI content platform — multi-provider generation, semantic search on Qdrant, RSS aggregation with auto-discovery
+url: https://github.com/Yurij2015
+date: 2024-08-01
+tags:
+  - AI
+  - Laravel
+  - Qdrant
+  - Langfuse
+  - RSS
+  - LLM
+image: /hero/random-4.avif
+featured: true
+stack:
+  - name: Laravel
+    icon: i-simple-icons-laravel
+  - name: AI
+    icon: i-heroicons-sparkles
+  - name: Qdrant
+    icon: i-simple-icons-qdrant
+  - name: Langfuse
+    icon: i-heroicons-chart-bar
+  - name: Horizon
+    icon: i-simple-icons-laravelhorizon
+links:
+  - label: Coming Soon
+    to: "#"
+    color: neutral
+    icon: i-heroicons-clock
+---
+An AI content platform with multi-provider generation (Gemini/OpenAI behind a driver abstraction), semantic search on Qdrant, an RSS/news aggregation engine with auto-discovery and content scraping, and Langfuse tracing for LLM observability.
+
+## Key Features
+
+- **Multi-provider AI** - Multi-provider generation (Gemini/OpenAI)
+- **Semantic search** - Semantic search on Qdrant
+- **RSS aggregation** - RSS/news aggregation engine
+- **Content scraping** - Auto-discovery and content scraping
+- **LLM observability** - Langfuse tracing
+- **Job queues** - Horizon for job processing
+- **Driver abstraction** - Driver abstraction for AI providers
+
+## Tech Stack
+
+- **Backend**: Laravel
+- **AI**: Multi-provider (Gemini/OpenAI)
+- **Vector DB**: Qdrant for semantic search
+- **Observability**: Langfuse for LLM tracing
+- **Queue**: Laravel Horizon
+- **Architecture**: Driver abstraction pattern

@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexPageItem } from '~/utils/content-types'
 
 const { footer, global } = useAppConfig()
+const { t } = useI18n()
 
 defineProps<{
-  page: IndexCollectionItem
+  page: IndexPageItem
 }>()
 </script>
 
@@ -111,7 +112,7 @@ defineProps<{
             variant="ghost"
             class="gap-2"
             :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
+            :label="global.available ? t('hero.available') : t('hero.unavailable')"
           >
             <template #leading>
               <span class="relative flex size-2">

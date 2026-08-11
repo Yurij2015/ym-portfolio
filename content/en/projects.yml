@@ -1,0 +1,11 @@
+title: Building Products, Launching Ideas.
+description: I've built real products from empty repository to paying users. Here are some projects I'm proud of, showcasing my process from concept to production-ready solutions.
+links:
+  - label: "Discuss a project"
+    to: https://t.me/YuriiMokryi
+    color: "primary"
+    icon: "i-simple-icons-telegram"
+  - label: 'Email me'
+    to: "mailto:admin@digispace.pro"
+    color: "neutral"
+    icon: "i-heroicons-envelope"

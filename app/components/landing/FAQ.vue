@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexPageItem } from '~/utils/content-types'
 
 const props = defineProps<{
-  page: IndexCollectionItem
+  page: IndexPageItem
 }>()
 
 const items = computed(() => {
-  return props.page.faq?.categories.map((faq) => {
-    return {
-      label: faq.title,
-      key: faq.title.toLowerCase(),
-      questions: faq.questions
-    }
-  })
+  const categories = props.page.faq?.categories
+  if (!categories) return []
+  return categories.map(faq => ({
+    label: faq.title,
+    key: faq.title.toLowerCase(),
+    questions: faq.questions
+  }))
 })
 
 const ui = {
@@ -26,6 +26,7 @@ const ui = {
 
 <template>
   <UPageSection
+    v-if="page.faq"
     :title="page.faq.title"
     :description="page.faq.description"
     :ui="{

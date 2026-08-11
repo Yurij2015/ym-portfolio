@@ -1,0 +1,51 @@
+---
+title: NetPostPanel
+description: Platforma treści AI — generacja multi-provider, wyszukiwanie semantyczne na Qdrant, agregacja RSS z auto-wykrywaniem
+url: https://github.com/Yurij2015
+date: 2024-08-01
+tags:
+  - AI
+  - Laravel
+  - Qdrant
+  - Langfuse
+  - RSS
+  - LLM
+image: /hero/random-4.avif
+featured: true
+stack:
+  - name: Laravel
+    icon: i-simple-icons-laravel
+  - name: AI
+    icon: i-heroicons-sparkles
+  - name: Qdrant
+    icon: i-simple-icons-qdrant
+  - name: Langfuse
+    icon: i-heroicons-chart-bar
+  - name: Horizon
+    icon: i-simple-icons-laravelhorizon
+links:
+  - label: Coming Soon
+    to: "#"
+    color: neutral
+    icon: i-heroicons-clock
+---
+Platforma treści AI z generacją multi-provider (Gemini/OpenAI za abstrakcją driverów), wyszukiwaniem semantycznym na Qdrant, silnikiem agregacji RSS/wiadomości z auto-wykrywaniem i scrapingiem treści oraz śledzeniem Langfuse dla obserwowalności LLM.
+
+## Kluczowe funkcje
+
+- **AI multi-provider** - Generacja multi-provider (Gemini/OpenAI)
+- **Wyszukiwanie semantyczne** - Wyszukiwanie semantyczne na Qdrant
+- **Agregacja RSS** - Silnik agregacji RSS/wiadomości
+- **Scraping treści** - Auto-wykrywanie i scraping treści
+- **Obserwowalność LLM** - Śledzenie Langfuse
+- **Kolejki zadań** - Horizon do przetwarzania zadań
+- **Abstrakcja driverów** - Abstrakcja driverów dla dostawców AI
+
+## Stos technologiczny
+
+- **Backend**: Laravel
+- **AI**: Multi-provider (Gemini/OpenAI)
+- **Baza wektorowa**: Qdrant do wyszukiwania semantycznego
+- **Obserwowalność**: Langfuse do śledzenia LLM
+- **Kolejka**: Laravel Horizon
+- **Architektura**: Wzorzec abstrakcji driverów

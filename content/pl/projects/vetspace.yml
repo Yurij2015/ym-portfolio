@@ -1,0 +1,58 @@
+---
+title: VetSpace
+description: Dwustronna platforma weterynaryjna — katalog SEO klinik i CRM oparty na subskrypcji z wizytami i rekordami pacjentów
+url: https://vetspace.pro
+date: 2023-06-20
+tags:
+  - SaaS
+  - Laravel
+  - Vue
+  - Multi-tenant
+  - Stripe
+  - AI
+image: /hero/random-2.avif
+featured: true
+stack:
+  - name: Laravel
+    icon: i-simple-icons-laravel
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
+  - name: Nuxt
+    icon: i-simple-icons-nuxtdotjs
+  - name: Stripe
+    icon: i-simple-icons-stripe
+  - name: GraphQL
+    icon: i-simple-icons-graphql
+  - name: AI
+    icon: i-heroicons-sparkles
+links:
+  - label: Live Demo
+    to: https://vetspace.pro
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: GitHub
+    to: https://github.com/Yurij2015
+    color: neutral
+    icon: i-simple-icons-github
+---
+Dwustronna platforma weterynaryjna — katalog SEO klinik i CRM oparty na subskrypcji z wizytami i rekordami pacjentów. Publiczny katalog klinik zbudowany pod kątem pozyskiwania klientów przez SEO oraz CRM oparty na subskrypcji (wizyty, rekordy pacjentów) jako osobne aplikacje Vue/Nuxt na jednym API Laravel. Architektura database-per-tenant, subskrypcje Stripe przez Cashier, GraphQL + REST oraz analiza wizyt wspomagana AI przez dedykowany mikroserwis w Go.
+
+## Kluczowe funkcje
+
+- **Katalog SEO klinik** - Publiczny katalog klinik zoptymalizowany pod SEO
+- **System CRM** - System CRM dla weterynarzy
+- **Umawianie wizyt** - Umawianie wizyt
+- **Rekordy pacjentów** - Zarządzanie rekordami pacjentów
+- **Subskrypcje Stripe** - Subskrypcje przez Stripe
+- **Multi-tenant** - Architektura database-per-tenant
+- **Analiza AI** - Analiza wizyt wspomagana AI
+- **Mikroserwis Go** - Mikroserwis Go do AI
+
+## Stos technologiczny
+
+- **Backend**: Laravel (API)
+- **Frontend**: Vue/Nuxt (osobne aplikacje)
+- **Architektura**: Multi-tenancy database-per-tenant
+- **Płatności**: Stripe przez Cashier
+- **API**: GraphQL + REST
+- **AI**: Mikroserwis Go do analizy wizyt

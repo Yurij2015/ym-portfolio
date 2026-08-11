@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexPageItem } from '~/utils/content-types'
 
-defineProps<{
-  page: IndexCollectionItem
+const props = defineProps<{
+  page: IndexPageItem
 }>()
+
+const testimonials = computed(() => props.page.testimonials)
 </script>
 
 <template>
@@ -14,7 +16,7 @@ defineProps<{
   >
     <UCarousel
       v-slot="{ item }"
-      :items="page.testimonials"
+      :items="testimonials"
       :autoplay="{ delay: 4000 }"
       loop
       dots
@@ -23,6 +25,7 @@ defineProps<{
       }"
     >
       <UPageCTA
+        v-if="item"
         :description="item.quote"
         variant="naked"
         class="rounded-none"

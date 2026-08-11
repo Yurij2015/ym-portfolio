@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "unavailable": "Not available at the moment"
+  },
+  "common": {
+    "viewProject": "View Project"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

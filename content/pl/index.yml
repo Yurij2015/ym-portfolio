@@ -1,0 +1,71 @@
+seo:
+  title: "Yurii Mokryi - Senior Full-Stack PHP Developer"
+  description: "Senior Full-Stack developer z ponad 10-letnim doświadczeniem komercyjnym. Laravel, Filament, Symfony, Vue/Nuxt. Produkty SaaS, platformy ticketingowe o wysokim obciążeniu, integracje AI."
+title: "Cześć, jestem Yurii Mokryi, Full-Stack Developer"
+description: "Ponad 10 lat komercyjnego programowania. Buduję i utrzymuję produkty SaaS, systemy CRM oraz platformy o wysokim obciążeniu. Nie tylko freelancer — deweloper z realnym doświadczeniem wdrażania produktów na produkcję."
+hero:
+  links:
+    - label: "Dostępny dla nowych projektów"
+      to: https://t.me/YuriiMokryi
+      color: "primary"
+      icon: "i-simple-icons-telegram"
+    - label: "Zobacz portfolio"
+      to: "/projects"
+      color: "neutral"
+      icon: "i-heroicons-folder"
+  images:
+    - src: /hero/random-1.avif
+      alt: Programowanie i kod
+    - src: /hero/random-2.avif
+      alt: Stos technologiczny
+    - src: /hero/random-3.avif
+      alt: Proces programowania
+    - src: /hero/random-4.avif
+      alt: Edytor kodu
+    - src: /hero/random-5.avif
+      alt: Architektura systemów
+    - src: /hero/random-6.avif
+      alt: Proces rozwoju
+    - src: /hero/random-7.avif
+      alt: API i integracje
+    - src: /hero/random-8.avif
+      alt: Bazy danych
+    - src: /hero/random-9.avif
+      alt: Monitorowanie systemów
+about:
+  title: "O mnie"
+  description: |
+    Full-Stack developer z ponad 10-letnim doświadczeniem komercyjnym. Buduję i utrzymuję produkty SaaS, systemy CRM, platformy ticketingowe/e-commerce oraz REST API.
+    Głęboka znajomość Laravel (Filament, Octane, FrankenPHP) oraz Symfony, a także Vue.js/Nuxt, architektur wielotenancyjnych i integracji systemów płatności.
+experience:
+  title: Doświadczenie zawodowe
+  items:
+    - position: "Full-Stack Developer w"
+      date: "2021 — obecnie"
+      company:
+        name: Platinium Group SAM
+        logo: "i-simple-icons-symfony"
+        url: "https://tickets.formula1.com"
+        color: "#000000"
+    - position: "Założyciel & Full-Stack Developer w"
+      date: "2022 — obecnie"
+      company:
+        name: DigiSpace
+        logo: "i-simple-icons-laravel"
+        url: "https://digispace.pro"
+        color: "#FF2D20"
+    - position: "Full-Stack Developer w"
+      date: "Wrz 2024 — Gru 2025"
+      company:
+        name: SystemFreaks
+        logo: "i-heroicons-briefcase"
+        url: "#"
+        color: "#6B7280"
+testimonials:
+  - quote: "Projektuję i dostarczam produkty SaaS od architektury i rozliczeń po wdrożenie i rozwój — na realnych platformach o wysokim obciążeniu dla Formula 1, MotoGP i własnych produktów SaaS. Nie jestem freelancerem 'od wszystkiego' — jestem deweloperem, który faktycznie doprowadził produkty od pustego repozytorium do płacących użytkowników."
+    author:
+      name: 'Yurii Mokryi'
+      description: 'Senior Full-Stack PHP Developer'
+      avatar:
+        src: 'https://github.com/Yurij2015.png'
+        srcset: 'https://github.com/Yurij2015.png 2x'

@@ -1,0 +1,11 @@
+title: Buduję produkty, wdrażam pomysły.
+description: Zbudowałem realne produkty od pustego repozytorium do płacących użytkowników. Oto projekty, z których jestem dumny, pokazujące mój proces od koncepcji po gotowe rozwiązania.
+links:
+  - label: "Omów projekt"
+    to: https://t.me/YuriiMokryi
+    color: "primary"
+    icon: "i-simple-icons-telegram"
+  - label: 'Napisz email'
+    to: "mailto:admin@digispace.pro"
+    color: "neutral"
+    icon: "i-heroicons-envelope"

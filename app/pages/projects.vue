@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('projects-page', () => {
-  return queryCollection('pages').path('/projects').first()
-})
+const { locale, t } = useI18n()
+
+const { data: page } = await useAsyncData(
+  () => `projects-page-${locale.value}`,
+  () => queryCollection(`pages_${locale.value}` as 'pages_uk').first(),
+  { watch: [locale] }
+)
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -10,9 +14,11 @@ if (!page.value) {
   })
 }
 
-const { data: projects } = await useAsyncData('projects', () => {
-  return queryCollection('projects').all()
-})
+const { data: projects } = await useAsyncData(
+  () => `projects-${locale.value}`,
+  () => queryCollection(`projects_${locale.value}` as 'projects_uk').all(),
+  { watch: [locale] }
+)
 
 const { global } = useAppConfig()
 
@@ -93,7 +99,7 @@ defineOgImage('Portfolio', { title, description })
               :to="project.url"
               class="text-sm text-primary flex items-center"
             >
-              View Project
+              {{ t('common.viewProject') }}
               <UIcon
                 name="i-lucide-arrow-right"
                 class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"

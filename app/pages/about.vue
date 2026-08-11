@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('about', () => {
-  return queryCollection('about').first()
-})
+const { locale } = useI18n()
+
+const { data: page } = await useAsyncData(
+  () => `about-${locale.value}`,
+  () => queryCollection(`about_${locale.value}` as 'about_uk').first(),
+  { watch: [locale] }
+)
 if (!page.value) {
   throw createError({
     statusCode: 404,

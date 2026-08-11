@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/content',
+    '@nuxtjs/i18n',
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt'
@@ -29,7 +30,7 @@ export default defineNuxtConfig({
       routes: [
         '/'
       ],
-      crawlLinks: true
+      crawlLinks: false
     }
   },
 
@@ -40,6 +41,37 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  i18n: {
+    locales: [
+      {
+        code: 'uk',
+        iso: 'uk-UA',
+        name: 'Українська'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English'
+      },
+      {
+        code: 'pl',
+        iso: 'pl-PL',
+        name: 'Polski'
+      }
+    ],
+    defaultLocale: 'uk',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    },
+    bundle: {
+      optimizeTranslationDirective: false
+    },
+    vueI18n: './i18n.config.ts'
   },
 
   ogImage: {

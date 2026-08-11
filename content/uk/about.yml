@@ -1,0 +1,25 @@
+title: Про мене
+description: Дізнайтеся більше про мій шлях як Senior Full-Stack PHP Developer з Познані, мій стек та досвід роботи над high-load продакшн-платформами.
+content: |
+  Привіт, я **Yurii Mokryi**, Senior Full-Stack PHP Developer з Познані, Польща. Маю 10+ років комерційної розробки: створюю та підтримую SaaS-продукти, CRM-системи, ticketing/e-commerce платформи та REST API.
+
+  Основна робота — full-stack розробка високонавантаженої ticketing-платформи для великих спортивних подій (Formula 1, MotoGP, EICMA, EuroLeague): checkout, облік користувачів, адмін-дашборди, інтеграція Stripe/Dalenys та 3D seat-map рішень. Паралельно як засновник DigiSpace будую власні SaaS-продукти — DigiPulse (моніторинг доступності) та VetSpace (CRM для ветклінік).
+
+  ### Мій стек
+
+  Глибока експертиза в **Laravel** (Filament, Octane, FrankenPHP) та **Symfony**, а також Vue.js/Nuxt, мультитенантних архітектурах, інтеграції платіжних систем (Stripe, Revolut, Dalenys) і сторонніх API. Регулярно працюю з Linux/SSH, Docker, Caddy, CI/CD, Proxmox та Terraform — від розробки до продакшн-деплою та усунення інцидентів.
+
+  ### Технічна філософія
+
+  Моя технічна філософія базується на **прагматизмі** та **результатах**. Чудове програмне забезпечення починається з розуміння бізнес-проблеми та найпростішого ефективного рішення. Я прагну створювати системи, які підтримуються, продуктивні та вирішують реальні проблеми.
+
+  ### За межами екрану
+
+  Коли я не пишу код, ви можете знайти мене, що досліджую кав'ярні Познані, слідкую за останніми AI та хмарними технологіями, або контриб'ютію в open-source проекти.
+
+  Дякую, що завітали. Не соромтеся переглянути мої [проекти](/projects) або [зв'язатися зі мною](/#contact), якщо хочете співпрацювати!
+images:
+  - src: https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: Моя робоча станція
+  - src: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: Хмарна інфраструктура
