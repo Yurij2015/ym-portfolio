@@ -26,3 +26,9 @@ logs
 # VSC
 .history
 .vercel
+
+# Test artifacts
+coverage
+test-results
+playwright-report
+blob-report

@@ -1,8 +1,7 @@
----
 title: VetSpace
 description: Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів
 url: https://vetspace.pro
-date: 2023-06-20
+date: "2023-06-20"
 tags:
   - SaaS
   - Laravel
@@ -34,25 +33,25 @@ links:
     to: https://github.com/Yurij2015
     color: neutral
     icon: i-simple-icons-github
----
-Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів. Публічний каталог клінік, побудований для SEO-first набуття клієнтів, та підписка на основі CRM (призначення, візити, записи пацієнтів) як окремі Vue/Nuxt додатки над одним Laravel API. Архітектура database-per-tenant, підписки Stripe через Cashier, GraphQL + REST, та аналіз візитів з допомогою AI через присвячений Go мікросервіс.
+content: |
+  Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів. Публічний каталог клінік, побудований для SEO-first набуття клієнтів, та підписка на основі CRM (призначення, візити, записи пацієнтів) як окремі Vue/Nuxt додатки над одним Laravel API. Архітектура database-per-tenant, підписки Stripe через Cashier, GraphQL + REST, та аналіз візитів з допомогою AI через присвячений Go мікросервіс.
 
-## Key Features
+  ## Key Features
 
-- **SEO clinic catalog** - SEO-каталог клінік
-- **CRM system** - CRM система для ветеринарів
-- **Appointment scheduling** - Призначення візитів
-- **Patient records** - Записи пацієнтів
-- **Stripe subscriptions** - Підписки через Stripe
-- **Multi-tenant** - Database-per-tenant архітектура
-- **AI analysis** - AI аналіз візитів
-- **Go microservice** - Go мікросервіс для AI
+  - **SEO clinic catalog** - SEO-каталог клінік
+  - **CRM system** - CRM система для ветеринарів
+  - **Appointment scheduling** - Призначення візитів
+  - **Patient records** - Записи пацієнтів
+  - **Stripe subscriptions** - Підписки через Stripe
+  - **Multi-tenant** - Database-per-tenant архітектура
+  - **AI analysis** - AI аналіз візитів
+  - **Go microservice** - Go мікросервіс для AI
 
-## Tech Stack
+  ## Tech Stack
 
-- **Backend**: Laravel (API)
-- **Frontend**: Vue/Nuxt (окремі додатки)
-- **Architecture**: Database-per-tenant multi-tenancy
-- **Payments**: Stripe через Cashier
-- **API**: GraphQL + REST
-- **AI**: Go мікросервіс для аналізу візитів
+  - **Backend**: Laravel (API)
+  - **Frontend**: Vue/Nuxt (окремі додатки)
+  - **Architecture**: Database-per-tenant multi-tenancy
+  - **Payments**: Stripe через Cashier
+  - **API**: GraphQL + REST
+  - **AI**: Go мікросервіс для аналізу візитів

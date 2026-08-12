@@ -1,8 +1,7 @@
----
 title: NetPostPanel
 description: Platforma treści AI — generacja multi-provider, wyszukiwanie semantyczne na Qdrant, agregacja RSS z auto-wykrywaniem
 url: https://github.com/Yurij2015
-date: 2024-08-01
+date: "2024-08-01"
 tags:
   - AI
   - Laravel
@@ -28,24 +27,24 @@ links:
     to: "#"
     color: neutral
     icon: i-heroicons-clock
----
-Platforma treści AI z generacją multi-provider (Gemini/OpenAI za abstrakcją driverów), wyszukiwaniem semantycznym na Qdrant, silnikiem agregacji RSS/wiadomości z auto-wykrywaniem i scrapingiem treści oraz śledzeniem Langfuse dla obserwowalności LLM.
+content: |
+  Platforma treści AI z generacją multi-provider (Gemini/OpenAI za abstrakcją driverów), wyszukiwaniem semantycznym na Qdrant, silnikiem agregacji RSS/wiadomości z auto-wykrywaniem i scrapingiem treści oraz śledzeniem Langfuse dla obserwowalności LLM.
 
-## Kluczowe funkcje
+  ## Kluczowe funkcje
 
-- **AI multi-provider** - Generacja multi-provider (Gemini/OpenAI)
-- **Wyszukiwanie semantyczne** - Wyszukiwanie semantyczne na Qdrant
-- **Agregacja RSS** - Silnik agregacji RSS/wiadomości
-- **Scraping treści** - Auto-wykrywanie i scraping treści
-- **Obserwowalność LLM** - Śledzenie Langfuse
-- **Kolejki zadań** - Horizon do przetwarzania zadań
-- **Abstrakcja driverów** - Abstrakcja driverów dla dostawców AI
+  - **AI multi-provider** - Generacja multi-provider (Gemini/OpenAI)
+  - **Wyszukiwanie semantyczne** - Wyszukiwanie semantyczne na Qdrant
+  - **Agregacja RSS** - Silnik agregacji RSS/wiadomości
+  - **Scraping treści** - Auto-wykrywanie i scraping treści
+  - **Obserwowalność LLM** - Śledzenie Langfuse
+  - **Kolejki zadań** - Horizon do przetwarzania zadań
+  - **Abstrakcja driverów** - Abstrakcja driverów dla dostawców AI
 
-## Stos technologiczny
+  ## Stos technologiczny
 
-- **Backend**: Laravel
-- **AI**: Multi-provider (Gemini/OpenAI)
-- **Baza wektorowa**: Qdrant do wyszukiwania semantycznego
-- **Obserwowalność**: Langfuse do śledzenia LLM
-- **Kolejka**: Laravel Horizon
-- **Architektura**: Wzorzec abstrakcji driverów
+  - **Backend**: Laravel
+  - **AI**: Multi-provider (Gemini/OpenAI)
+  - **Baza wektorowa**: Qdrant do wyszukiwania semantycznego
+  - **Obserwowalność**: Langfuse do śledzenia LLM
+  - **Kolejka**: Laravel Horizon
+  - **Architektura**: Wzorzec abstrakcji driverów

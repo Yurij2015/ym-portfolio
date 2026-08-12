@@ -9,7 +9,12 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
     "@iconify-json/heroicons": "^1.2.3",
@@ -28,8 +33,25 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.17.0",
+    "@nuxt/test-utils": "^4.1.0",
+    "@playwright/test": "^1.62.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "@vue/test-utils": "^2.4.11",
+    "better-sqlite3": "^13.0.3",
+    "debug": "4.4.3",
     "eslint": "^10.8.1",
+    "extend": "3.0.2",
+    "happy-dom": "^20.11.2",
+    "parse5": "7.3.0",
+    "rehype-raw": "7.0.0",
+    "remark-emoji": "5.0.2",
+    "remark-gfm": "4.0.1",
+    "remark-mdc": "3.11.1",
+    "remark-rehype": "11.1.2",
     "typescript": "^6.0.3",
+    "unified": "11.0.5",
+    "unist-util-visit": "5.1.0",
+    "vitest": "^4.1.10",
     "vue-tsc": "^3.3.9"
   },
   "packageManager": "pnpm@11.20.0"

@@ -1,8 +1,7 @@
----
 title: VetSpace
 description: A two-sided veterinary platform — an SEO clinic catalog and a subscription-based CRM with appointments and patient records
 url: https://vetspace.pro
-date: 2023-06-20
+date: "2023-06-20"
 tags:
   - SaaS
   - Laravel
@@ -34,25 +33,25 @@ links:
     to: https://github.com/Yurij2015
     color: neutral
     icon: i-simple-icons-github
----
-A two-sided veterinary platform — an SEO clinic catalog and a subscription-based CRM with appointments and patient records. A public clinic catalog built for SEO-first customer acquisition, and a subscription-based CRM (appointments, visits, patient records) as separate Vue/Nuxt apps on top of a single Laravel API. Database-per-tenant architecture, Stripe subscriptions via Cashier, GraphQL + REST, and AI-assisted visit analysis through a dedicated Go microservice.
+content: |
+  A two-sided veterinary platform — an SEO clinic catalog and a subscription-based CRM with appointments and patient records. A public clinic catalog built for SEO-first customer acquisition, and a subscription-based CRM (appointments, visits, patient records) as separate Vue/Nuxt apps on top of a single Laravel API. Database-per-tenant architecture, Stripe subscriptions via Cashier, GraphQL + REST, and AI-assisted visit analysis through a dedicated Go microservice.
 
-## Key Features
+  ## Key Features
 
-- **SEO clinic catalog** - Public SEO-optimized clinic catalog
-- **CRM system** - CRM system for veterinarians
-- **Appointment scheduling** - Appointment booking
-- **Patient records** - Patient record management
-- **Stripe subscriptions** - Subscriptions via Stripe
-- **Multi-tenant** - Database-per-tenant architecture
-- **AI analysis** - AI-assisted visit analysis
-- **Go microservice** - Go microservice for AI
+  - **SEO clinic catalog** - Public SEO-optimized clinic catalog
+  - **CRM system** - CRM system for veterinarians
+  - **Appointment scheduling** - Appointment booking
+  - **Patient records** - Patient record management
+  - **Stripe subscriptions** - Subscriptions via Stripe
+  - **Multi-tenant** - Database-per-tenant architecture
+  - **AI analysis** - AI-assisted visit analysis
+  - **Go microservice** - Go microservice for AI
 
-## Tech Stack
+  ## Tech Stack
 
-- **Backend**: Laravel (API)
-- **Frontend**: Vue/Nuxt (separate apps)
-- **Architecture**: Database-per-tenant multi-tenancy
-- **Payments**: Stripe via Cashier
-- **API**: GraphQL + REST
-- **AI**: Go microservice for visit analysis
+  - **Backend**: Laravel (API)
+  - **Frontend**: Vue/Nuxt (separate apps)
+  - **Architecture**: Database-per-tenant multi-tenancy
+  - **Payments**: Stripe via Cashier
+  - **API**: GraphQL + REST
+  - **AI**: Go microservice for visit analysis

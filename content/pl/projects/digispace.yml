@@ -1,8 +1,7 @@
----
 title: DigiSpace
 description: Kod za digispace.pro — publiczna strona agencji, panel administracyjny i niestandardowy CMS zbudowany na Laravel, Inertia i Vue
 url: https://digispace.pro
-date: 2022-03-10
+date: "2022-03-10"
 tags:
   - Laravel
   - Inertia
@@ -31,22 +30,22 @@ links:
     to: https://github.com/Yurij2015
     color: neutral
     icon: i-simple-icons-github
----
-Kod za digispace.pro — publiczna strona agencji, panel administracyjny i niestandardowy CMS zbudowany na Laravel, Inertia i Vue. Open source: dokładnie ten sam kod produkcyjny, który działa na żywej stronie.
+content: |
+  Kod za digispace.pro — publiczna strona agencji, panel administracyjny i niestandardowy CMS zbudowany na Laravel, Inertia i Vue. Open source: dokładnie ten sam kod produkcyjny, który działa na żywej stronie.
 
-## Kluczowe funkcje
+  ## Kluczowe funkcje
 
-- **Publiczna strona agencji** - Publiczna strona agencji
-- **Panel administracyjny** - Panel administracyjny
-- **Niestandardowy CMS** - Niestandardowy CMS
-- **Open source** - Otwarty kod źródłowy
-- **Gotowe do produkcji** - Kod gotowy do produkcji
-- **Nowoczesny stos** - Nowoczesny stos technologiczny
+  - **Publiczna strona agencji** - Publiczna strona agencji
+  - **Panel administracyjny** - Panel administracyjny
+  - **Niestandardowy CMS** - Niestandardowy CMS
+  - **Open source** - Otwarty kod źródłowy
+  - **Gotowe do produkcji** - Kod gotowy do produkcji
+  - **Nowoczesny stos** - Nowoczesny stos technologiczny
 
-## Stos technologiczny
+  ## Stos technologiczny
 
-- **Backend**: Laravel
-- **Frontend**: Vue.js
-- **Połączenie**: Inertia.js
-- **Narzędzie build**: Vite
-- **Architektura**: Niestandardowy CMS
+  - **Backend**: Laravel
+  - **Frontend**: Vue.js
+  - **Połączenie**: Inertia.js
+  - **Narzędzie build**: Vite
+  - **Architektura**: Niestandardowy CMS

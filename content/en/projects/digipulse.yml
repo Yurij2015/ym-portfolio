@@ -1,8 +1,7 @@
----
 title: DigiPulse
 description: Uptime monitoring SaaS — 60-second checks, SSL expiry tracking, Telegram and email notifications
 url: https://digipulse.cloud
-date: 2024-01-15
+date: "2024-01-15"
 tags:
   - SaaS
   - Laravel
@@ -31,25 +30,25 @@ links:
     to: https://github.com/Yurij2015
     color: neutral
     icon: i-simple-icons-github
----
-Uptime monitoring SaaS — 60-second checks, SSL expiry tracking, Telegram and email notifications. The admin panel and core backend are built with Laravel (Octane, Reverb websockets) and Filament, while the monitoring engine is a separate Go service. Includes Google OAuth sign-in and Cloudflare Turnstile integration, plus an MCP server that exposes monitoring data directly to AI assistants. Self-hosted on Proxmox.
+content: |
+  Uptime monitoring SaaS — 60-second checks, SSL expiry tracking, Telegram and email notifications. The admin panel and core backend are built with Laravel (Octane, Reverb websockets) and Filament, while the monitoring engine is a separate Go service. Includes Google OAuth sign-in and Cloudflare Turnstile integration, plus an MCP server that exposes monitoring data directly to AI assistants. Self-hosted on Proxmox.
 
-## Key Features
+  ## Key Features
 
-- **60s uptime checks** - Availability checks every 60 seconds
-- **SSL expiry tracking** - SSL certificate expiry monitoring
-- **Telegram notifications** - Alerts via Telegram
-- **Email alerts** - Email notifications
-- **Admin panel** - Filament-based admin panel
-- **MCP server** - MCP server for AI integrations
-- **Google OAuth** - Google OAuth sign-in
-- **Cloudflare Turnstile** - Cloudflare Turnstile integration
+  - **60s uptime checks** - Availability checks every 60 seconds
+  - **SSL expiry tracking** - SSL certificate expiry monitoring
+  - **Telegram notifications** - Alerts via Telegram
+  - **Email alerts** - Email notifications
+  - **Admin panel** - Filament-based admin panel
+  - **MCP server** - MCP server for AI integrations
+  - **Google OAuth** - Google OAuth sign-in
+  - **Cloudflare Turnstile** - Cloudflare Turnstile integration
 
-## Tech Stack
+  ## Tech Stack
 
-- **Backend**: Laravel (Octane, Reverb websockets)
-- **Admin Panel**: Filament
-- **Monitoring Engine**: Go (separate service)
-- **Database**: PostgreSQL
-- **AI Integration**: MCP server
-- **Infrastructure**: Self-hosted on Proxmox
+  - **Backend**: Laravel (Octane, Reverb websockets)
+  - **Admin Panel**: Filament
+  - **Monitoring Engine**: Go (separate service)
+  - **Database**: PostgreSQL
+  - **AI Integration**: MCP server
+  - **Infrastructure**: Self-hosted on Proxmox

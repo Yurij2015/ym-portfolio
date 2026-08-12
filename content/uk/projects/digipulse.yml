@@ -1,8 +1,7 @@
----
 title: DigiPulse
 description: SaaS для моніторингу доступності — перевірки кожні 60 секунд, відстеження закінчення SSL, сповіщення через Telegram та email
 url: https://digipulse.cloud
-date: 2024-01-15
+date: "2024-01-15"
 tags:
   - SaaS
   - Laravel
@@ -31,25 +30,25 @@ links:
     to: https://github.com/Yurij2015
     color: neutral
     icon: i-simple-icons-github
----
-SaaS для моніторингу доступності — перевірки кожні 60 секунд, відстеження закінчення SSL, сповіщення через Telegram та email. Адмін панель та основний бекенд побудовані з Laravel (Octane, Reverb websockets) та Filament, а моніторинг-движок — окремий Go сервіс. Інтеграція Google OAuth sign-in та Cloudflare Turnstile. Включає MCP сервер, який надає дані моніторингу безпосередньо до AI асистентів. Self-hosted на Proxmox.
+content: |
+  SaaS для моніторингу доступності — перевірки кожні 60 секунд, відстеження закінчення SSL, сповіщення через Telegram та email. Адмін панель та основний бекенд побудовані з Laravel (Octane, Reverb websockets) та Filament, а моніторинг-движок — окремий Go сервіс. Інтеграція Google OAuth sign-in та Cloudflare Turnstile. Включає MCP сервер, який надає дані моніторингу безпосередньо до AI асистентів. Self-hosted на Proxmox.
 
-## Key Features
+  ## Key Features
 
-- **60s uptime checks** - Перевірки доступності кожні 60 секунд
-- **SSL expiry tracking** - Відстеження закінчення SSL сертифікатів
-- **Telegram notifications** - Сповіщення через Telegram
-- **Email alerts** - Email сповіщення
-- **Admin panel** - Адмін панель на Filament
-- **MCP server** - MCP сервер для AI інтеграцій
-- **Google OAuth** - Google OAuth sign-in
-- **Cloudflare Turnstile** - Cloudflare Turnstile інтеграція
+  - **60s uptime checks** - Перевірки доступності кожні 60 секунд
+  - **SSL expiry tracking** - Відстеження закінчення SSL сертифікатів
+  - **Telegram notifications** - Сповіщення через Telegram
+  - **Email alerts** - Email сповіщення
+  - **Admin panel** - Адмін панель на Filament
+  - **MCP server** - MCP сервер для AI інтеграцій
+  - **Google OAuth** - Google OAuth sign-in
+  - **Cloudflare Turnstile** - Cloudflare Turnstile інтеграція
 
-## Tech Stack
+  ## Tech Stack
 
-- **Backend**: Laravel (Octane, Reverb websockets)
-- **Admin Panel**: Filament
-- **Monitoring Engine**: Go (окремий сервіс)
-- **Database**: PostgreSQL
-- **AI Integration**: MCP сервер
-- **Infrastructure**: Self-hosted на Proxmox
+  - **Backend**: Laravel (Octane, Reverb websockets)
+  - **Admin Panel**: Filament
+  - **Monitoring Engine**: Go (окремий сервіс)
+  - **Database**: PostgreSQL
+  - **AI Integration**: MCP сервер
+  - **Infrastructure**: Self-hosted на Proxmox

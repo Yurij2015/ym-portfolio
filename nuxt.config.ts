@@ -19,18 +19,27 @@ export default defineNuxtConfig({
 
   content: {
     experimental: {
-      sqliteConnector: 'native'
+      sqliteConnector: 'better-sqlite3'
     }
   },
+  buildDir: '.nuxt',
 
   compatibilityDate: '2026-06-30',
 
+  // Nitro 2.13.4's prerender step corrupts the final build for any
+  // non-static preset (server bundle + client `_nuxt/*` assets end up
+  // missing from `.output`), regardless of which/how many routes are
+  // prerendered — this also happens with zero explicit prerender config,
+  // since @nuxt/content unconditionally marks its SQL-dump routes for
+  // prerendering. Disabling prerendering entirely avoids the bug; the
+  // trade-off is every page is now rendered dynamically on each request
+  // instead of served as static HTML.
   nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: false
+    preset: 'vercel',
+    hooks: {
+      'prerender:routes': (routes: Set<string>) => {
+        routes.clear()
+      }
     }
   },
 

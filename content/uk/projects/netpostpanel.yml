@@ -1,8 +1,7 @@
----
 title: NetPostPanel
 description: AI платформа для контенту — мультипровайдерна генерація, семантичний пошук на Qdrant, RSS агрегація з авто-відкриттям
 url: https://github.com/Yurij2015
-date: 2024-08-01
+date: "2024-08-01"
 tags:
   - AI
   - Laravel
@@ -28,24 +27,24 @@ links:
     to: "#"
     color: neutral
     icon: i-heroicons-clock
----
-AI платформа для контенту з мультипровайдерною генерацією (Gemini/OpenAI за драйвер абстракції), семантичним пошуком на Qdrant, RSS/новинним агрегаційним движком з авто-відкриттям та збором контенту, та Langfuse tracing для LLM обсервабельності.
+content: |
+  AI платформа для контенту з мультипровайдерною генерацією (Gemini/OpenAI за драйвер абстракції), семантичним пошуком на Qdrant, RSS/новинним агрегаційним движком з авто-відкриттям та збором контенту, та Langfuse tracing для LLM обсервабельності.
 
-## Key Features
+  ## Key Features
 
-- **Multi-provider AI** - Мультипровайдерна генерація (Gemini/OpenAI)
-- **Semantic search** - Семантичний пошук на Qdrant
-- **RSS aggregation** - RSS/новинний агрегаційний движок
-- **Content scraping** - Авто-відкриття та збір контенту
-- **LLM observability** - Langfuse tracing
-- **Job queues** - Horizon для обробки задач
-- **Driver abstraction** - Драйвер абстракція для AI провайдерів
+  - **Multi-provider AI** - Мультипровайдерна генерація (Gemini/OpenAI)
+  - **Semantic search** - Семантичний пошук на Qdrant
+  - **RSS aggregation** - RSS/новинний агрегаційний движок
+  - **Content scraping** - Авто-відкриття та збір контенту
+  - **LLM observability** - Langfuse tracing
+  - **Job queues** - Horizon для обробки задач
+  - **Driver abstraction** - Драйвер абстракція для AI провайдерів
 
-## Tech Stack
+  ## Tech Stack
 
-- **Backend**: Laravel
-- **AI**: Multi-provider (Gemini/OpenAI)
-- **Vector DB**: Qdrant для семантичного пошуку
-- **Observability**: Langfuse для LLM tracing
-- **Queue**: Laravel Horizon
-- **Architecture**: Driver abstraction pattern
+  - **Backend**: Laravel
+  - **AI**: Multi-provider (Gemini/OpenAI)
+  - **Vector DB**: Qdrant для семантичного пошуку
+  - **Observability**: Langfuse для LLM tracing
+  - **Queue**: Laravel Horizon
+  - **Architecture**: Driver abstraction pattern
