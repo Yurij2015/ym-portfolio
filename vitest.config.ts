@@ -3,6 +3,7 @@ import { defineVitestConfig } from '@nuxt/test-utils/config'
 export default defineVitestConfig({
   test: {
     environment: 'nuxt',
-    exclude: ['e2e/**', 'node_modules/**', '.nuxt/**', '.output/**']
+    exclude: ['e2e/**', 'node_modules/**', '.nuxt/**', '.output/**'],
+    hookTimeout: 30_000
   }
 })

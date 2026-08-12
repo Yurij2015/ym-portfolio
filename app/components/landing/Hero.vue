@@ -104,7 +104,7 @@ defineProps<{
       >
         <div
           v-if="page.hero.links"
-          class="flex items-center gap-2"
+          class="flex flex-wrap items-center justify-center gap-2"
         >
           <UButton v-bind="page.hero.links[0]" />
           <UButton

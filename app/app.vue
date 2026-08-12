@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 const { locale } = useI18n()
+const bgVariant = useBackgroundVariant()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
@@ -14,7 +15,8 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: locale
+    'lang': locale,
+    'data-bg': bgVariant
   }
 })
 

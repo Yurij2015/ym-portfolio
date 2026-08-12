@@ -8,6 +8,10 @@
   --font-serif: 'Instrument Serif', serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 :root {
   --ui-container: var(--container-4xl);
 
@@ -22,4 +26,21 @@
     color: #ffffff;
     background-color: #474747;
   }
+}
+
+/* Background style picker (BackgroundVariantButton): "1" keeps @nuxt/ui's
+   shipped neutral tones, "2" swaps in a deeper navy for dark / a warm
+   off-white for light. */
+.dark[data-bg='2'] {
+  --ui-bg: #0a0e1a;
+  --ui-bg-muted: #101526;
+  --ui-bg-elevated: #141a2d;
+  --ui-bg-accented: #1c2338;
+}
+
+.light[data-bg='2'] {
+  --ui-bg: #faf8f3;
+  --ui-bg-muted: #f2efe7;
+  --ui-bg-elevated: #ece7dc;
+  --ui-bg-accented: #e1dbcc;
 }

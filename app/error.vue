@@ -7,10 +7,12 @@ defineProps<{
 
 const { locale } = useI18n()
 const navLinks = useNavLinks()
+const bgVariant = useBackgroundVariant()
 
 useHead({
   htmlAttrs: {
-    lang: locale
+    'lang': locale,
+    'data-bg': bgVariant
   }
 })
 
