@@ -1,6 +1,6 @@
 title: NetPostPanel
 description: AI content platform — multi-provider generation, semantic search on Qdrant, RSS aggregation with auto-discovery
-url: https://github.com/Yurij2015
+url: https://net-post-panel.digispace.pro
 date: "2024-08-01"
 tags:
   - AI
@@ -9,7 +9,7 @@ tags:
   - Langfuse
   - RSS
   - LLM
-image: /hero/random-4.avif
+image: /hero/netpostpanel.avif
 featured: true
 stack:
   - name: Laravel

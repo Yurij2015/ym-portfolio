@@ -2,7 +2,7 @@ import { z } from '@nuxt/content'
 
 const createBaseSchema = () => z.object({
   title: z.string(),
-  description: z.string()
+  description: z.string().editor({ input: 'textarea' })
 })
 
 const createButtonSchema = () => z.object({
@@ -70,7 +70,7 @@ export const indexSchema = z.object({
 
 export const projectSchema = z.object({
   title: z.string().nonempty(),
-  description: z.string().nonempty(),
+  description: z.string().nonempty().editor({ input: 'textarea' }),
   image: z.string().nonempty().editor({ input: 'media' }),
   url: z.string().nonempty(),
   tags: z.array(z.string()),

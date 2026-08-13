@@ -54,10 +54,7 @@ defineOgImage('Portfolio', { title, description })
         container: 'pt-0!'
       }"
     >
-      <MDC
-        :value="page.content"
-        unwrap="p"
-      />
+      <MDC :value="page.content" />
       <div class="flex flex-row justify-center items-center py-10 -space-x-8">
         <PolaroidItem
           v-for="(image, index) in page.images"

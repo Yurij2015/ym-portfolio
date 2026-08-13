@@ -9,7 +9,7 @@ tags:
   - Multi-tenant
   - Stripe
   - AI
-image: /hero/random-2.avif
+image: /hero/vetspace.avif
 featured: true
 stack:
   - name: Laravel

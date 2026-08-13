@@ -8,7 +8,7 @@ tags:
   - Go
   - Monitoring
   - MCP
-image: /hero/random-1.avif
+image: /hero/digipulse.avif
 featured: true
 stack:
   - name: Laravel

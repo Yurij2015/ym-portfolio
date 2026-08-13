@@ -14,24 +14,20 @@ hero:
       color: "neutral"
       icon: "i-heroicons-folder"
   images:
-    - src: /hero/random-1.avif
-      alt: Programowanie i kod
-    - src: /hero/random-2.avif
-      alt: Stos technologiczny
-    - src: /hero/random-3.avif
-      alt: Proces programowania
-    - src: /hero/random-4.avif
-      alt: Edytor kodu
-    - src: /hero/random-5.avif
-      alt: Architektura systemów
-    - src: /hero/random-6.avif
-      alt: Proces rozwoju
-    - src: /hero/random-7.avif
-      alt: API i integracje
-    - src: /hero/random-8.avif
-      alt: Bazy danych
-    - src: /hero/random-9.avif
-      alt: Monitorowanie systemów
+    - src: /hero/tech-php.avif
+      alt: PHP
+    - src: /hero/tech-laravel.avif
+      alt: Laravel
+    - src: /hero/tech-symfony.avif
+      alt: Symfony
+    - src: /hero/tech-docker.avif
+      alt: Docker
+    - src: /hero/tech-terraform.avif
+      alt: Terraform
+    - src: /hero/tech-vue.avif
+      alt: Vue.js
+    - src: /hero/tech-nuxt.avif
+      alt: Nuxt
 about:
   title: "O mnie"
   description: |
