@@ -42,6 +42,7 @@
     "eslint": "^10.8.1",
     "extend": "3.0.2",
     "happy-dom": "^20.11.2",
+    "nuxt-studio": "^1.7.0",
     "parse5": "7.3.0",
     "rehype-raw": "7.0.0",
     "remark-emoji": "5.0.2",

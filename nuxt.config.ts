@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    'nuxt-studio'
   ],
 
   devtools: {
