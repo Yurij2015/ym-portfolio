@@ -84,7 +84,10 @@ export default defineNuxtConfig({
     vueI18n: './i18n.config.ts'
   },
 
+  // zeroRuntime bakes OG images during the prerender crawl — but prerendering
+  // is disabled above (see the nitro hook comment), so with zeroRuntime on,
+  // no images ever get generated and og:image is silently omitted.
   ogImage: {
-    zeroRuntime: true
+    zeroRuntime: false
   }
 })
