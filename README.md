@@ -1,33 +1,28 @@
-# Nuxt Portfolio Template
+# Yurii Mokryi — Portfolio
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+Personal portfolio of **Yurii Mokryi**, Senior Full-Stack PHP Developer.
 
-Use this template to create your own portfolio with [Nuxt UI](https://ui.nuxt.com).
+Built with [Nuxt](https://nuxt.com) + [Nuxt UI](https://ui.nuxt.com) with content managed via [Nuxt Content](https://content.nuxt.com). Multilingual (Ukrainian by default, English, Polish) via `@nuxtjs/i18n`. Deployed on [Vercel](https://vercel.com).
 
-- [Live demo](https://portfolio-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+## Features
 
-<a href="https://portfolio-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png">
-    <img alt="Nuxt Portfolio Template" src="https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png">
-  </picture>
-</a>
+- **Three locales**: `uk` (default), `en`, `pl` — configured in `nuxt.config.ts`
+- **Content in Markdown/YAML**: pages, projects and profile are driven by `content/` without touching code
+- **Nuxt Content with SQLite** (`better-sqlite3`) for fast content access
+- **On-the-fly OG images** via `nuxt-og-image`
+- **Animations** with `motion-v`, helpers from `@vueuse/nuxt`
 
-## Quick Start
+## Stack
 
-```bash [Terminal]
-npm create nuxt@latest -- -t ui/portfolio
-```
-
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=portfolio&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fportfolio&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fportfolio-dark.png&demo-url=https%3A%2F%2Fportfolio-template.nuxt.dev%2F&demo-title=Nuxt%20Portfolio%20Template&demo-description=A%20sleek%20portfolio%20template%20to%20showcase%20your%20work%2C%20skills%20and%20blog%20powered%20by%20Nuxt%20Content.)
+| Category | Technologies |
+| --- | --- |
+| Framework | Nuxt 4, Vue 3, TypeScript |
+| UI | Nuxt UI v4, Tailwind CSS v4 |
+| Content | Nuxt Content v3 (SQLite) |
+| i18n | @nuxtjs/i18n |
+| Deployment | Vercel (Nitro `vercel` preset) |
 
 ## Setup
-
-Make sure to install the dependencies:
 
 ```bash
 pnpm install
@@ -35,28 +30,53 @@ pnpm install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
-
 ```bash
 pnpm dev
 ```
 
-## Production
+Server is available at `http://localhost:3000`.
 
-Build the application for production:
+## Production
 
 ```bash
 pnpm build
 ```
 
-Locally preview production build:
+Locally preview the production build:
 
 ```bash
 pnpm preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Other Commands
 
-## Renovate integration
+```bash
+pnpm lint          # ESLint
+pnpm typecheck     # Type checks
+pnpm test          # Unit tests (Vitest)
+pnpm test:e2e      # E2E tests (Playwright)
+```
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+## Structure
+
+```
+app/
+  pages/        # index, about, projects
+  components/   # UI components
+  layouts/      # Layouts
+content/
+  uk/           # Ukrainian content (YAML + projects)
+  en/           # English content
+  pl/           # Polish content
+locales/        # i18n messages
+```
+
+Content (texts, projects, experience) is edited in `content/<locale>/` and `locales/` — no component changes required.
+
+## Deploy
+
+The project is configured for [Vercel](https://vercel.com) (`vercel.json`, Nitro `vercel` preset). Required environment variable:
+
+```env
+NUXT_PUBLIC_SITE_URL=https://your-domain.com
+```
