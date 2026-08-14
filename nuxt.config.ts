@@ -16,6 +16,31 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  // Google Analytics 4 — official gtag.js snippet, SSR-rendered into <head>
+  // so Google's tag detector and crawlers see it in the raw HTML (a
+  // client-side-only injection is invisible to them). Loaded only when a
+  // measurement ID is configured via NUXT_PUBLIC_GTAG_ID. SPA navigations
+  // are covered by GA4 "Enhanced measurement" (browser history events).
+  app: {
+    head: {
+      script: process.env.NUXT_PUBLIC_GTAG_ID
+        ? [
+            {
+              src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NUXT_PUBLIC_GTAG_ID}`,
+              async: true
+            },
+            {
+              innerHTML:
+                'window.dataLayer = window.dataLayer || [];\n'
+                + 'function gtag(){dataLayer.push(arguments);}\n'
+                + 'gtag(\'js\', new Date());\n'
+                + `gtag('config', '${process.env.NUXT_PUBLIC_GTAG_ID}');`
+            }
+          ]
+        : []
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   content: {

@@ -10,6 +10,7 @@ Built with [Nuxt](https://nuxt.com) + [Nuxt UI](https://ui.nuxt.com) with conten
 - **Content in Markdown/YAML**: pages, projects and profile are driven by `content/` without touching code
 - **Nuxt Content with SQLite** (`better-sqlite3`) for fast content access
 - **On-the-fly OG images** via `nuxt-og-image`
+- **Google Analytics 4** — official `gtag.js` snippet SSR-rendered into `<head>` (enabled only when `NUXT_PUBLIC_GTAG_ID` is set)
 - **Animations** with `motion-v`, helpers from `@vueuse/nuxt`
 
 ## Stack
@@ -80,3 +81,11 @@ The project is configured for [Vercel](https://vercel.com) (`vercel.json`, Nitro
 ```env
 NUXT_PUBLIC_SITE_URL=https://your-domain.com
 ```
+
+Optional (Google Analytics 4 — measurement ID from GA4 Admin → Data Streams):
+
+```env
+NUXT_PUBLIC_GTAG_ID=G-XXXXXXXXXX
+```
+
+Without `NUXT_PUBLIC_GTAG_ID` analytics is completely disabled (no scripts loaded).
