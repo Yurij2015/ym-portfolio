@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10 max-w-[calc(100vw-1rem)]">
+  <div class="fixed top-2 sm:top-4 inset-x-0 mx-auto z-10 w-fit max-w-[calc(100vw-1rem)]">
     <UNavigationMenu
       :items="links"
       variant="link"
