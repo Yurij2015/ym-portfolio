@@ -14,6 +14,7 @@ defineProps<{
   <div
     class="w-full h-full flex bg-neutral-950 relative overflow-hidden"
     data-theme="dark"
+    :style="{ fontFamily: `'Inter', sans-serif` }"
   >
     <div class="absolute top-0 left-0 w-1.5 h-full bg-primary-400" />
 

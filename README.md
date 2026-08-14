@@ -89,3 +89,11 @@ NUXT_PUBLIC_GTAG_ID=G-XXXXXXXXXX
 ```
 
 Without `NUXT_PUBLIC_GTAG_ID` analytics is completely disabled (no scripts loaded).
+
+Optional (stable OG image URLs — keeps previously shared `/_og/*` links valid after redeploys; generate with `npx nuxt-og-image generate-secret`):
+
+```env
+NUXT_OG_IMAGE_SECRET=<64-char-hex-secret>
+```
+
+Without it, a new signing secret is generated on every build and OG image links shared before the last deploy stop working.

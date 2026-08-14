@@ -26,7 +26,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage('Portfolio', { title, description })
+defineOgImage('Portfolio', { title, description }, { alt: title })
 </script>
 
 <template>

@@ -9,7 +9,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
-    'nuxt-studio'
+    // nuxt-studio requires repository/auth config in non-dev loads
+    // (production builds, @nuxt/test-utils), which unit tests don't provide.
+    ...(process.env.VITEST ? [] : ['nuxt-studio'])
   ],
 
   devtools: {
@@ -113,6 +115,15 @@ export default defineNuxtConfig({
   // is disabled above (see the nitro hook comment), so with zeroRuntime on,
   // no images ever get generated and og:image is silently omitted.
   ogImage: {
-    zeroRuntime: false
+    zeroRuntime: false,
+    // OG templates render uk/pl copy; the default subsets (['latin']) would
+    // leave Cyrillic (and latin-ext) glyphs missing on deployments without
+    // system fonts (e.g. Vercel). Inter covers cyrillic + latin-ext.
+    fontSubsets: ['latin', 'latin-ext', 'cyrillic'],
+    // 1200x630 is the canonical Open Graph share size (Facebook/LinkedIn).
+    defaults: {
+      width: 1200,
+      height: 630
+    }
   }
 })
