@@ -32,7 +32,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage('Portfolio', { title, description }, { alt: title })
+defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, { alt: title })
 </script>
 
 <template>
@@ -79,7 +79,6 @@ defineOgImage('Portfolio', { title, description }, { alt: title })
       >
         <UPageCard
           :title="project.title"
-          :description="project.description"
           :to="project.url"
           orientation="horizontal"
           variant="naked"
@@ -89,6 +88,22 @@ defineOgImage('Portfolio', { title, description }, { alt: title })
             wrapper: 'max-sm:order-last'
           }"
         >
+          <template #description>
+            {{ project.description }}
+            <div
+              v-if="project.tags?.length"
+              class="mt-2 flex flex-wrap gap-1"
+            >
+              <UBadge
+                v-for="tag in project.tags"
+                :key="tag"
+                :label="tag"
+                size="sm"
+                color="neutral"
+                variant="subtle"
+              />
+            </div>
+          </template>
           <template #leading>
             <span class="text-sm text-muted">
               {{ formatProjectYear(project.date) }}
@@ -106,13 +121,24 @@ defineOgImage('Portfolio', { title, description }, { alt: title })
               />
             </ULink>
           </template>
-          <img
+          <NuxtImg
             :src="project.image"
             :alt="project.title"
+            width="1512"
+            height="806"
+            loading="lazy"
             class="object-cover w-full h-48 rounded-lg"
-          >
+          />
         </UPageCard>
       </Motion>
     </UPageSection>
+    <UPageCTA
+      :title="t('projectsCta.title')"
+      :description="t('projectsCta.description')"
+      :links="[
+        { label: t('contact.telegram'), to: global.meetingLink, color: 'primary', icon: 'i-simple-icons-telegram', target: '_blank' },
+        { label: t('contact.email'), to: `mailto:${global.email}`, color: 'neutral', icon: 'i-heroicons-envelope' }
+      ]"
+    />
   </UPage>
 </template>

@@ -1,15 +1,16 @@
-title: Hi, I'm Yurii Mokryi, a Full-Stack Developer
+title: Hi, I'm Yurii Mokryi — Senior Full-Stack PHP Developer
 about:
   title: About Me
   description: |
     Full-Stack developer with 10+ years of commercial experience. I build and maintain SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
     Deep expertise in Laravel (Filament, Octane, FrankenPHP) and Symfony, as well as Vue.js/Nuxt, multi-tenant architectures, and payment system integrations.
-description: 10+ years of commercial development. I build and maintain SaaS products, CRM systems, and high-load platforms. Not just a freelancer — a developer with real production launch experience.
+description: "10+ years of commercial development: SaaS, CRM and high-load ticketing platforms for Formula 1, MotoGP, EICMA and EuroLeague. Laravel/Symfony + Vue/Nuxt, AI integrations. I take products from empty repo to paying users."
 experience:
   title: Work Experience
   items:
     - position: Full-Stack Developer at
       date: 2021 — Present
+      description: "Ticketing platform for Formula 1, MotoGP, EICMA, EuroLeague: checkout, user accounts, Stripe/Dalenys, 3D seat-map."
       company:
         name: Platinium Group SAM
         logo: i-simple-icons-symfony
@@ -17,6 +18,7 @@ experience:
         color: "#6B7280"
     - position: Founder & Full-Stack Developer at
       date: 2022 — Present
+      description: "Founded the agency and built its products: DigiPulse, VetSpace, NetPostPanel — from architecture to production."
       company:
         name: DigiSpace
         logo: i-simple-icons-laravel
@@ -27,15 +29,14 @@ experience:
       company:
         name: SystemFreaks
         logo: i-heroicons-briefcase
-        url: "#"
         color: "#6B7280"
 hero:
   links:
-    - label: Available for new projects
+    - label: Discuss your project
       to: https://t.me/YuriiMokryi
       color: primary
       icon: i-simple-icons-telegram
-    - label: View portfolio
+    - label: See my work
       to: /projects
       color: neutral
       icon: i-heroicons-folder
@@ -58,12 +59,29 @@ seo:
   title: Yurii Mokryi - Senior Full-Stack PHP Developer
   description: Senior Full-Stack developer with 10+ years of commercial experience. Laravel, Filament, Symfony, Vue/Nuxt. SaaS products, high-load ticketing platforms, AI integrations.
 testimonials:
-  - quote: I design and ship SaaS products end-to-end — from architecture and billing to deployment and growth — on real high-load platforms for Formula 1, MotoGP, and my own SaaS products. Not a 'does everything' freelancer — a developer who has actually taken products from an empty repo to paying users.
+  - quote: "For 10+ years I've turned business problems into working products: from architecture and payments to deployment and scaling. My code sells tickets for Formula 1 and MotoGP, and my own SaaS products serve paying customers. Need a developer who owns the outcome? Message me."
     author:
       name: Yurii Mokryi
-      description: Senior Full-Stack PHP Developer
+      description: Senior Full-Stack PHP Developer • 10+ years • Poznań
       avatar:
-        src: https://github.com/Yurij2015.png
-        srcset: https://github.com/Yurij2015.png 2x
+        src: /images/avatar.jpg
 faq:
-  categories: []
+  title: Frequently asked questions
+  description: The short version on process, technologies and collaboration.
+  categories:
+    - title: Working together
+      questions:
+        - label: Do you take over existing projects?
+          content: "Yes. Most of my work is developing and maintaining production products: codebase audits, refactoring and new features without stopping releases."
+        - label: What does the collaboration process look like?
+          content: A short brief → estimate with deadlines → development with demos every 1–2 weeks → deployment and support.
+        - label: What happens after the release?
+          content: Monitoring, bug fixes and product evolution — I stay on support for as long as you need.
+    - title: Technologies
+      questions:
+        - label: What technologies do you work with?
+          content: Laravel (Filament, Octane, FrankenPHP) and Symfony on the backend, Vue.js/Nuxt on the frontend, Docker, Terraform, CI/CD, payment integrations and AI.
+        - label: Can you work with our in-house team?
+          content: "Yes, I integrate comfortably into existing teams: code reviews, shared pipeline, documentation and regular demos."
+        - label: What timezone do you work in?
+          content: CET (Poznań, Poland), with flexible overlap for Europe and the US.

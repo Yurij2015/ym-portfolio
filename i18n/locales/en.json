@@ -2,7 +2,8 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
-    "about": "About"
+    "about": "About",
+    "contact": "Contact"
   },
   "hero": {
     "available": "Available for new projects",
@@ -10,6 +11,16 @@
   },
   "common": {
     "viewProject": "View Project"
+  },
+  "contact": {
+    "title": "Let's discuss your project",
+    "description": "Tell me about your task — I'll propose architecture, timeline and estimate. I usually reply within 24 hours.",
+    "telegram": "Message me on Telegram",
+    "email": "Send an email"
+  },
+  "projectsCta": {
+    "title": "Like what you see?",
+    "description": "Tell me about your project — I'll propose an architecture and estimate within 24 hours."
   },
   "footer": {
     "rights": "All rights reserved"

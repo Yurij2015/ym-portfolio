@@ -50,6 +50,14 @@ export default defineNuxtConfig({
       sqliteConnector: 'better-sqlite3'
     }
   },
+
+  runtimeConfig: {
+    public: {
+      // Absolute site URL for canonical/hreflang/sitemap/OG links.
+      // Falls back to the request origin (correct on Vercel) when unset.
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || ''
+    }
+  },
   buildDir: '.nuxt',
 
   compatibilityDate: '2026-06-30',

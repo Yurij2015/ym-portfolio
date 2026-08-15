@@ -108,6 +108,10 @@ defineProps<{
         >
           <UButton v-bind="page.hero.links[0]" />
           <UButton
+            v-if="page.hero.links[1]"
+            v-bind="{ variant: 'outline', ...page.hero.links[1] }"
+          />
+          <UButton
             :color="global.available ? 'success' : 'error'"
             variant="ghost"
             class="gap-2"

@@ -5,19 +5,19 @@ content: |
 
   Moja główna praca to full-stack development platformy ticketingowej o wysokim obciążeniu dla dużych wydarzeń sportowych (Formula 1, MotoGP, EICMA, EuroLeague): checkout, konta użytkowników, panele administracyjne, integracja Stripe/Dalenys oraz rozwiązania 3D seat-map. Równolegle, jako założyciel DigiSpace, buduję własne produkty SaaS — DigiPulse (monitorowanie dostępności) i VetSpace (CRM dla klinik weterynaryjnych).
 
-  ### Mój stos technologiczny
+  ## Mój stos technologiczny
 
   Głęboka znajomość **Laravel** (Filament, Octane, FrankenPHP) oraz **Symfony**, a także Vue.js/Nuxt, architektur wielotenancyjnych, integracji systemów płatności (Stripe, Revolut, Dalenys) i zewnętrznych API. Regularnie pracuję z Linux/SSH, Docker, Caddy, CI/CD, Proxmox i Terraform — od rozwoju po wdrożenie produkcyjne i obsługę incydentów.
 
-  ### Filozofia techniczna
+  ## Filozofia techniczna
 
   Moja filozofia techniczna opiera się na **pragmatyzmie** i **wynikach**. Świetne oprogramowanie zaczyna się od zrozumienia problemu biznesowego i zbudowania najprostszego, skutecznego rozwiązania. Dążę do tworzenia systemów, które są łatwe w utrzymaniu, wydajne i rozwiązują realne problemy.
 
-  ### Poza ekranem
+  ## Poza ekranem
 
   Kiedy nie programuję, można mnie znaleźć odkrywającego kawiarnie w Poznaniu, śledzącego najnowsze technologie AI i chmurowe, lub kontrybuującego do projektów open-source.
 
-  Dziękuję za odwiedziny. Zapraszam do przejrzenia moich [projektów](/projects) lub [kontaktu ze mną](/#contact), jeśli chcesz nawiązać współpracę!
+  Masz produkt do zbudowania lub uratowania? [Opowiedz mi o nim](https://t.me/YuriiMokryi) — zaproponuję rozwiązanie i wycenę. Albo zobacz moje [projekty](/projects).
 images:
   - src: https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
     alt: Moje stanowisko pracy

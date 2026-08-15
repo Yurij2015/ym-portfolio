@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://yuriimokryi.vercel.app/sitemap.xml

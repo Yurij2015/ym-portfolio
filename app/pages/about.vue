@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { data: page } = await useAsyncData(
   () => `about-${locale.value}`,
@@ -26,7 +26,7 @@ useSeoMeta({
   ogDescription: description
 })
 
-defineOgImage('Portfolio', { title, description }, { alt: title })
+defineOgImage('Portfolio', { title, description, headline: t('nav.about') }, { alt: title })
 </script>
 
 <template>
@@ -34,6 +34,10 @@ defineOgImage('Portfolio', { title, description }, { alt: title })
     <UPageHero
       :title="page.title"
       :description="page.description"
+      :links="[
+        { label: t('contact.telegram'), to: global.meetingLink, color: 'primary', icon: 'i-simple-icons-telegram', target: '_blank' },
+        { label: t('contact.email'), to: `mailto:${global.email}`, color: 'neutral', icon: 'i-heroicons-envelope' }
+      ]"
       orientation="horizontal"
       :ui="{
         container: 'lg:flex sm:flex-row items-center',

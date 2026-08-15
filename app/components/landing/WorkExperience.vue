@@ -31,6 +31,7 @@ defineProps<{
           </p>
           <USeparator class="hidden sm:block w-4" />
           <ULink
+            v-if="experience.company.url"
             class="flex flex-wrap items-center gap-1"
             :to="experience.company.url"
             target="_blank"
@@ -46,6 +47,27 @@ defineProps<{
               <UIcon :name="experience.company.logo" />
             </div>
           </ULink>
+          <span
+            v-else
+            class="flex flex-wrap items-center gap-1"
+          >
+            <span class="text-sm">
+              {{ experience.position }}
+            </span>
+            <div
+              class="inline-flex items-center gap-1"
+              :style="{ color: experience.company.color }"
+            >
+              <span class="font-medium">{{ experience.company.name }}</span>
+              <UIcon :name="experience.company.logo" />
+            </div>
+          </span>
+          <p
+            v-if="experience.description"
+            class="w-full text-xs text-muted/80"
+          >
+            {{ experience.description }}
+          </p>
         </Motion>
       </div>
     </template>

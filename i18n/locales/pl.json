@@ -2,7 +2,8 @@
   "nav": {
     "home": "Główna",
     "projects": "Projekty",
-    "about": "O mnie"
+    "about": "O mnie",
+    "contact": "Kontakt"
   },
   "hero": {
     "available": "Dostępny dla nowych projektów",
@@ -10,6 +11,16 @@
   },
   "common": {
     "viewProject": "Zobacz projekt"
+  },
+  "contact": {
+    "title": "Omówmy Twój projekt",
+    "description": "Opowiedz o swoim zadaniu — zaproponuję architekturę, terminy i wycenę. Zwykle odpowiadam w ciągu 24 godzin.",
+    "telegram": "Napisz na Telegramie",
+    "email": "Napisz e-mail"
+  },
+  "projectsCta": {
+    "title": "Podobają Ci się projekty?",
+    "description": "Opowiedz o swoim — zaproponuję architekturę i wycenę w 24 godziny."
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone"

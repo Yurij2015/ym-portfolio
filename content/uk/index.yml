@@ -1,15 +1,15 @@
 seo:
   title: "Yurii Mokryi - Senior Full-Stack PHP Developer"
   description: "Senior Full-Stack розробник з 10+ роками комерційного досвіду. Laravel, Filament, Symfony, Vue/Nuxt. SaaS-продукти, high-load ticketing-платформи, AI-інтеграції."
-title: "Привіт, я Yurii Mokryi Full-Stack Developer"
-description: "10+ років комерційної розробки. Створюю та підтримую SaaS-продукти, CRM-системи та high-load платформи. Не просто фрілансер — розробник з досвідом запуску реальних продуктів у продакшн."
+title: "Привіт, я Yurii Mokryi — Senior Full-Stack PHP Developer"
+description: "10+ років комерційної розробки: SaaS, CRM і high-load ticketing-платформи для Formula 1, MotoGP, EICMA та EuroLeague. Laravel/Symfony + Vue/Nuxt, AI-інтеграції. Веду продукти від порожнього репозиторію до платних користувачів."
 hero:
   links:
-    - label: "Доступний для нових проектів"
+    - label: "Обговорити ваш проєкт"
       to: https://t.me/YuriiMokryi
       color: "primary"
       icon: "i-simple-icons-telegram"
-    - label: "Переглянути портфоліо"
+    - label: "Дивитися проєкти"
       to: "/projects"
       color: "neutral"
       icon: "i-heroicons-folder"
@@ -38,6 +38,7 @@ experience:
   items:
     - position: "Full-Stack Developer в"
       date: "2021 — тепер"
+      description: "Ticketing-платформа для Formula 1, MotoGP, EICMA, EuroLeague: checkout, особисті кабінети, Stripe/Dalenys, 3D seat-map."
       company:
         name: Platinium Group SAM
         logo: "i-simple-icons-symfony"
@@ -45,6 +46,7 @@ experience:
         color: "#6B7280"
     - position: "Засновник & Full-Stack Developer в"
       date: "2022 — тепер"
+      description: "Заснував агенцію та розробив її продукти: DigiPulse, VetSpace, NetPostPanel — від архітектури до продакшну."
       company:
         name: DigiSpace
         logo: "i-simple-icons-laravel"
@@ -55,13 +57,31 @@ experience:
       company:
         name: SystemFreaks
         logo: "i-heroicons-briefcase"
-        url: "#"
         color: "#6B7280"
 testimonials:
-  - quote: "Проєктую та доводжу SaaS-продукти від архітектури й білінгу до деплою і росту — на реальних high-load платформах для Formula 1, MotoGP та власних SaaS. Не 'універсальний' фрілансер, а розробник, який справді доводив продукти від порожнього репозиторію до платних користувачів."
+  - quote: "10+ років перетворюю бізнес-задачі на працюючі продукти: від архітектури й оплат до деплою і масштабування. Мій код продає квитки на Formula 1 і MotoGP, а власні SaaS обслуговують платних користувачів. Потрібен розробник, який відповідає за результат? Напишіть мені."
     author:
       name: 'Yurii Mokryi'
-      description: 'Senior Full-Stack PHP Developer'
+      description: 'Senior Full-Stack PHP Developer • 10+ років • Poznań'
       avatar:
-        src: 'https://github.com/Yurij2015.png'
-        srcset: 'https://github.com/Yurij2015.png 2x'
+        src: '/images/avatar.jpg'
+faq:
+  title: "Часті запитання"
+  description: "Коротко про процес, технології та співпрацю."
+  categories:
+    - title: "Співпраця"
+      questions:
+        - label: "Чи беретеся за підтримку наявного коду?"
+          content: "Так. Більшість моєї роботи — розвиток і підтримка продакшн-продуктів: аудит кодової бази, рефакторинг і нові фічі без зупинки релізів."
+        - label: "Як виглядає процес?"
+          content: "Короткий бриф → оцінка з термінами → розробка з демо кожні 1–2 тижні → деплой і підтримка."
+        - label: "Що після релізу?"
+          content: "Моніторинг, виправлення багів і розвиток продукту — залишаюся на підтримці стільки, скільки потрібно."
+    - title: "Технології"
+      questions:
+        - label: "З якими технологіями ви працюєте?"
+          content: "Laravel (Filament, Octane, FrankenPHP) і Symfony на бекенді, Vue.js/Nuxt на фронтенді, Docker, Terraform, CI/CD, платіжні інтеграції та AI."
+        - label: "Чи працюєте ви з командою клієнта?"
+          content: "Так, комфортно вбудовуюся в наявні команди: code review, спільний пайплайн, документація та регулярні демо."
+        - label: "У якому часовому поясі ви працюєте?"
+          content: "CET (Познань, Польща), з гнучким перетином робочих годин для Європи та США."

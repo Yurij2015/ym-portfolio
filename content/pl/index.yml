@@ -1,15 +1,15 @@
 seo:
   title: "Yurii Mokryi - Senior Full-Stack PHP Developer"
   description: "Senior Full-Stack developer z ponad 10-letnim doświadczeniem komercyjnym. Laravel, Filament, Symfony, Vue/Nuxt. Produkty SaaS, platformy ticketingowe o wysokim obciążeniu, integracje AI."
-title: "Cześć, jestem Yurii Mokryi, Full-Stack Developer"
-description: "Ponad 10 lat komercyjnego programowania. Buduję i utrzymuję produkty SaaS, systemy CRM oraz platformy o wysokim obciążeniu. Nie tylko freelancer — deweloper z realnym doświadczeniem wdrażania produktów na produkcję."
+title: "Cześć, jestem Yurii Mokryi — Senior Full-Stack PHP Developer"
+description: "Ponad 10 lat komercyjnego programowania: SaaS, CRM i wysokowydajne platformy ticketingowe dla Formula 1, MotoGP, EICMA i EuroLeague. Laravel/Symfony + Vue/Nuxt, integracje AI. Prowadzę produkty od pustego repozytorium do płacących użytkowników."
 hero:
   links:
-    - label: "Dostępny dla nowych projektów"
+    - label: "Omówmy Twój projekt"
       to: https://t.me/YuriiMokryi
       color: "primary"
       icon: "i-simple-icons-telegram"
-    - label: "Zobacz portfolio"
+    - label: "Zobacz projekty"
       to: "/projects"
       color: "neutral"
       icon: "i-heroicons-folder"
@@ -38,6 +38,7 @@ experience:
   items:
     - position: "Full-Stack Developer w"
       date: "2021 — obecnie"
+      description: "Platforma ticketingowa dla Formula 1, MotoGP, EICMA, EuroLeague: checkout, konta użytkowników, Stripe/Dalenys, 3D seat-map."
       company:
         name: Platinium Group SAM
         logo: "i-simple-icons-symfony"
@@ -45,6 +46,7 @@ experience:
         color: "#6B7280"
     - position: "Założyciel & Full-Stack Developer w"
       date: "2022 — obecnie"
+      description: "Założyłem agencję i zbudowałem jej produkty: DigiPulse, VetSpace, NetPostPanel — od architektury po produkcję."
       company:
         name: DigiSpace
         logo: "i-simple-icons-laravel"
@@ -55,13 +57,31 @@ experience:
       company:
         name: SystemFreaks
         logo: "i-heroicons-briefcase"
-        url: "#"
         color: "#6B7280"
 testimonials:
-  - quote: "Projektuję i dostarczam produkty SaaS od architektury i rozliczeń po wdrożenie i rozwój — na realnych platformach o wysokim obciążeniu dla Formula 1, MotoGP i własnych produktów SaaS. Nie jestem freelancerem 'od wszystkiego' — jestem deweloperem, który faktycznie doprowadził produkty od pustego repozytorium do płacących użytkowników."
+  - quote: "Od ponad 10 lat zamieniam problemy biznesowe w działające produkty: od architektury i płatności po wdrożenie i skalowanie. Mój kod sprzedaje bilety na Formula 1 i MotoGP, a moje własne produkty SaaS obsługują płacących klientów. Szukasz dewelopera, który odpowiada za rezultat? Napisz do mnie."
     author:
       name: 'Yurii Mokryi'
-      description: 'Senior Full-Stack PHP Developer'
+      description: 'Senior Full-Stack PHP Developer • 10+ lat • Poznań'
       avatar:
-        src: 'https://github.com/Yurij2015.png'
-        srcset: 'https://github.com/Yurij2015.png 2x'
+        src: '/images/avatar.jpg'
+faq:
+  title: "Często zadawane pytania"
+  description: "W skrócie o procesie, technologiach i współpracy."
+  categories:
+    - title: "Współpraca"
+      questions:
+        - label: "Czy przejmujesz istniejące projekty?"
+          content: "Tak. Większość mojej pracy to rozwój i utrzymanie produktów produkcyjnych: audyt kodu, refaktoryzacja i nowe funkcje bez zatrzymywania wydań."
+        - label: "Jak wygląda proces współpracy?"
+          content: "Krótki brief → wycena z terminami → rozwój z demo co 1–2 tygodnie → wdrożenie i wsparcie."
+        - label: "Co po wdrożeniu?"
+          content: "Monitoring, poprawki i rozwój produktu — zostaję we wsparciu tak długo, jak trzeba."
+    - title: "Technologie"
+      questions:
+        - label: "Z jakich technologii korzystasz?"
+          content: "Laravel (Filament, Octane, FrankenPHP) i Symfony po stronie backendu, Vue.js/Nuxt na froncie, Docker, Terraform, CI/CD, integracje płatności i AI."
+        - label: "Czy pracujesz z zespołem klienta?"
+          content: "Tak, swobodnie wchodzę w istniejące zespoły: code review, wspólny pipeline, dokumentacja i regularne demo."
+        - label: "W jakiej strefie czasowej pracujesz?"
+          content: "CET (Poznań, Polska), z elastycznym nakładaniem się godzin dla Europy i USA."

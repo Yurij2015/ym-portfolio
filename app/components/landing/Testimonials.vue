@@ -17,7 +17,7 @@ const testimonials = computed(() => props.page.testimonials)
     <UCarousel
       v-slot="{ item }"
       :items="testimonials"
-      :autoplay="{ delay: 4000 }"
+      :autoplay="testimonials.length > 1 ? { delay: 4000 } : false"
       loop
       dots
       :ui="{

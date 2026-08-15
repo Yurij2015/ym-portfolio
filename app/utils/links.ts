@@ -16,5 +16,9 @@ export const useNavLinks = () => {
     label: t('nav.about'),
     icon: 'i-lucide-user',
     to: localePath('/about')
+  }, {
+    label: t('nav.contact'),
+    icon: 'i-lucide-mail',
+    to: `${localePath('/')}#contact`
   }])
 }

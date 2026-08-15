@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+const { global } = useAppConfig()
 
 const { data: page } = await useAsyncData(
   () => `index-${locale.value}`,
@@ -17,14 +18,52 @@ if (!page.value) {
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
 
+// seo.title already contains the name — avoid the "- Yurii Mokryi" duplicate
 useSeoMeta({
   title,
+  titleTemplate: '%s',
   ogTitle: title,
   description,
   ogDescription: description
 })
 
-defineOgImage('Portfolio', { title, description }, { alt: title })
+defineOgImage('Portfolio', { title, description, headline: 'Senior Full-Stack PHP Developer' }, { alt: title })
+
+const origin = (useRuntimeConfig().public.siteUrl as string) || useRequestURL().origin
+
+const jsonLd: Record<string, unknown>[] = [{
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  'name': 'Yurii Mokryi',
+  'jobTitle': 'Senior Full-Stack PHP Developer',
+  description,
+  'url': origin,
+  'address': { '@type': 'PostalAddress', 'addressLocality': 'Poznań', 'addressCountry': 'PL' },
+  'sameAs': [
+    'https://github.com/Yurij2015',
+    'https://linkedin.com/in/yurii-mokryi',
+    'https://www.upwork.com/freelancers/mokryiyurii',
+    'https://t.me/YuriiMokryi'
+  ],
+  'knowsAbout': ['PHP', 'Laravel', 'Symfony', 'Vue.js', 'Nuxt', 'Docker', 'Terraform']
+}]
+
+const faqCategories = page.value.faq?.categories ?? []
+if (faqCategories.length) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqCategories.flatMap(category => category.questions.map(question => ({
+      '@type': 'Question',
+      'name': question.label,
+      'acceptedAnswer': { '@type': 'Answer', 'text': question.content }
+    })))
+  })
+}
+
+useHead({
+  script: jsonLd.map(schema => ({ type: 'application/ld+json', innerHTML: JSON.stringify(schema) }))
+})
 </script>
 
 <template>
@@ -40,5 +79,14 @@ defineOgImage('Portfolio', { title, description }, { alt: title })
     </UPageSection>
     <LandingTestimonials :page />
     <LandingFAQ :page />
+    <UPageCTA
+      id="contact"
+      :title="t('contact.title')"
+      :description="t('contact.description')"
+      :links="[
+        { label: t('contact.telegram'), to: global.meetingLink, color: 'primary', icon: 'i-simple-icons-telegram', target: '_blank' },
+        { label: t('contact.email'), to: `mailto:${global.email}`, color: 'neutral', icon: 'i-heroicons-envelope' }
+      ]"
+    />
   </UPage>
 </template>
