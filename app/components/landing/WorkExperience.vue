@@ -16,7 +16,7 @@ defineProps<{
     }"
   >
     <template #description>
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-6">
         <Motion
           v-for="(experience, index) in page.experience.items"
           :key="index"
@@ -24,47 +24,38 @@ defineProps<{
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="text-muted flex flex-wrap items-center gap-x-2 gap-y-1"
+          class="relative border-l border-default pl-5"
         >
-          <p class="text-sm shrink-0">
-            {{ experience.date }}
+          <span class="absolute -left-[5px] top-1.5 size-2.5 rounded-full bg-primary-400" />
+
+          <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5">
+            <ULink
+              v-if="experience.company.url"
+              :to="experience.company.url"
+              target="_blank"
+              class="inline-flex items-center gap-1.5 font-medium hover:underline"
+              :style="{ color: experience.company.color }"
+            >
+              {{ experience.company.name }}
+              <UIcon :name="experience.company.logo" />
+            </ULink>
+            <span
+              v-else
+              class="inline-flex items-center gap-1.5 font-medium"
+              :style="{ color: experience.company.color }"
+            >
+              {{ experience.company.name }}
+              <UIcon :name="experience.company.logo" />
+            </span>
+            <span class="text-xs text-muted">{{ experience.date }}</span>
+          </div>
+
+          <p class="mt-0.5 text-sm text-muted">
+            {{ experience.position }}
           </p>
-          <USeparator class="hidden sm:block w-4" />
-          <ULink
-            v-if="experience.company.url"
-            class="flex flex-wrap items-center gap-1"
-            :to="experience.company.url"
-            target="_blank"
-          >
-            <span class="text-sm">
-              {{ experience.position }}
-            </span>
-            <div
-              class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
-            >
-              <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
-            </div>
-          </ULink>
-          <span
-            v-else
-            class="flex flex-wrap items-center gap-1"
-          >
-            <span class="text-sm">
-              {{ experience.position }}
-            </span>
-            <div
-              class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
-            >
-              <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
-            </div>
-          </span>
           <p
             v-if="experience.description"
-            class="w-full text-xs text-muted/80"
+            class="mt-1 text-sm text-muted/90"
           >
             {{ experience.description }}
           </p>
@@ -73,7 +64,3 @@ defineProps<{
     </template>
   </UPageSection>
 </template>
-
-<style scoped>
-
-</style>

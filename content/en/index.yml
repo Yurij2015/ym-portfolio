@@ -8,7 +8,7 @@ description: "10+ years of commercial development: SaaS, CRM and high-load ticke
 experience:
   title: Work Experience
   items:
-    - position: Full-Stack Developer at
+    - position: Full-Stack Developer
       date: 2021 — Present
       description: "Ticketing platform for Formula 1, MotoGP, EICMA, EuroLeague: checkout, user accounts, Stripe/Dalenys, 3D seat-map."
       company:
@@ -16,7 +16,7 @@ experience:
         logo: i-simple-icons-symfony
         url: https://tickets.formula1.com
         color: "#6B7280"
-    - position: Founder & Full-Stack Developer at
+    - position: Founder & Full-Stack Developer
       date: 2022 — Present
       description: "Founded the agency and built its products: DigiPulse, VetSpace, NetPostPanel — from architecture to production."
       company:
@@ -24,7 +24,7 @@ experience:
         logo: i-simple-icons-laravel
         url: https://digispace.pro
         color: "#FF2D20"
-    - position: Full-Stack Developer at
+    - position: Full-Stack Developer
       date: Sep 2024 — Dec 2025
       company:
         name: SystemFreaks

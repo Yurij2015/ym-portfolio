@@ -36,7 +36,7 @@ about:
 experience:
   title: Doświadczenie zawodowe
   items:
-    - position: "Full-Stack Developer w"
+    - position: "Full-Stack Developer"
       date: "2021 — obecnie"
       description: "Platforma ticketingowa dla Formula 1, MotoGP, EICMA, EuroLeague: checkout, konta użytkowników, Stripe/Dalenys, 3D seat-map."
       company:
@@ -44,7 +44,7 @@ experience:
         logo: "i-simple-icons-symfony"
         url: "https://tickets.formula1.com"
         color: "#6B7280"
-    - position: "Założyciel & Full-Stack Developer w"
+    - position: "Założyciel & Full-Stack Developer"
       date: "2022 — obecnie"
       description: "Założyłem agencję i zbudowałem jej produkty: DigiPulse, VetSpace, NetPostPanel — od architektury po produkcję."
       company:
@@ -52,7 +52,7 @@ experience:
         logo: "i-simple-icons-laravel"
         url: "https://digispace.pro"
         color: "#FF2D20"
-    - position: "Full-Stack Developer w"
+    - position: "Full-Stack Developer"
       date: "Wrz 2024 — Gru 2025"
       company:
         name: SystemFreaks
