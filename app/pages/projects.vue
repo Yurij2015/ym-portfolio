@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const { locale, t } = useI18n()
+const localePath = useLocalePath()
+
+const projectSlug = (project: { stem?: string, id: string }) =>
+  String(project.stem ?? project.id).split('/').pop() ?? ''
 
 const { data: page } = await useAsyncData(
   () => `projects-page-${locale.value}`,
@@ -79,7 +83,7 @@ defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, 
       >
         <UPageCard
           :title="project.title"
-          :to="project.url"
+          :to="localePath(`/projects/${projectSlug(project)}`)"
           orientation="horizontal"
           variant="naked"
           :reverse="index % 2 === 1"

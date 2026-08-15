@@ -22,6 +22,9 @@
     "title": "Like what you see?",
     "description": "Tell me about your project — I'll propose an architecture and estimate within 24 hours."
   },
+  "projects": {
+    "back": "Back to projects"
+  },
   "tech": {
     "php": "My core server-side language — 10+ years in production",
     "laravel": "Primary framework: Octane, Reverb, Filament, Cashier",

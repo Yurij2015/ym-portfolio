@@ -22,6 +22,9 @@
     "title": "Podobają Ci się projekty?",
     "description": "Opowiedz o swoim — zaproponuję architekturę i wycenę w 24 godziny."
   },
+  "projects": {
+    "back": "Powrót do projektów"
+  },
   "tech": {
     "php": "Mój główny język backendowy — ponad 10 lat w produkcji",
     "laravel": "Podstawowy framework: Octane, Reverb, Filament, Cashier",

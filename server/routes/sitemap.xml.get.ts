@@ -6,6 +6,8 @@ const LOCALES = [
 
 const PATHS = ['/', '/about', '/projects']
 
+const PROJECT_SLUGS = ['digipulse', 'digispace', 'netpostpanel', 'vetspace']
+
 export default defineEventHandler((event) => {
   const config = useRuntimeConfig()
   const origin = (config.public.siteUrl as string)
@@ -25,7 +27,19 @@ export default defineEventHandler((event) => {
       alternates,
       '  </url>'
     ].join('\n')
-  }))
+  })).concat(LOCALES.flatMap(locale => PROJECT_SLUGS.map((slug) => {
+    const path = `/projects/${slug}`
+    const alternates = LOCALES.map(a =>
+      `    <xhtml:link rel="alternate" hreflang="${a.iso}" href="${urlFor(a.prefix, path)}" />`
+    ).join('\n')
+    return [
+      '  <url>',
+      `    <loc>${urlFor(locale.prefix, path)}</loc>`,
+      `    <lastmod>${lastmod}</lastmod>`,
+      alternates,
+      '  </url>'
+    ].join('\n')
+  })))
 
   setResponseHeader(event, 'content-type', 'application/xml; charset=utf-8')
   return [
