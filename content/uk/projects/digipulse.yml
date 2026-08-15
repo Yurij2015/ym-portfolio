@@ -1,5 +1,5 @@
 title: DigiPulse
-description: SaaS для моніторингу доступності — перевірки кожні 60 секунд, відстеження закінчення SSL, сповіщення через Telegram та email
+description: "SaaS для моніторингу доступності: event-driven архітектура — Laravel (Octane, Reverb) і Filament диспетчеризують перевірки через Redis у Go-воркер (<10 MB RAM); MCP-сервер дає дані моніторингу AI-асистентам; сповіщення Telegram/email"
 url: https://digipulse.cloud
 date: "2024-01-15"
 tags:
@@ -8,6 +8,8 @@ tags:
   - Go
   - Monitoring
   - MCP
+  - Redis
+  - Event-driven
 image: /hero/digipulse.avif
 featured: true
 stack:
@@ -19,6 +21,10 @@ stack:
     icon: i-simple-icons-go
   - name: PostgreSQL
     icon: i-simple-icons-postgresql
+  - name: Redis
+    icon: i-simple-icons-redis
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
   - name: MCP
     icon: i-heroicons-cpu-chip
 links:
@@ -27,7 +33,7 @@ links:
     color: primary
     icon: i-heroicons-arrow-top-right-on-square
   - label: GitHub
-    to: https://github.com/Yurij2015
+    to: https://github.com/Yurij2015/digipulse-backend
     color: neutral
     icon: i-simple-icons-github
 content: |

@@ -91,9 +91,20 @@ defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, 
           <template #description>
             {{ project.description }}
             <div
-              v-if="project.tags?.length"
-              class="mt-2 flex flex-wrap gap-1"
+              v-if="project.stack?.length || project.tags?.length"
+              class="mt-3 flex flex-wrap items-center gap-1"
             >
+              <span
+                v-for="tech in project.stack"
+                :key="tech.name"
+                :title="tech.name"
+                class="inline-flex items-center justify-center size-6 rounded-md bg-elevated/60 text-muted"
+              >
+                <UIcon
+                  :name="tech.icon"
+                  class="size-4"
+                />
+              </span>
               <UBadge
                 v-for="tag in project.tags"
                 :key="tag"

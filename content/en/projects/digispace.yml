@@ -1,5 +1,5 @@
 title: DigiSpace
-description: The code behind digispace.pro — a public agency site, admin panel, and custom CMS built with Laravel, Inertia, and Vue
+description: "Open-source code behind digispace.pro: the agency's public site, admin panel and custom CMS — Laravel + Inertia + Vue (Vite, Tailwind, MySQL), with PHPUnit/PHPStan tests and Docker"
 url: https://digispace.pro
 date: "2022-03-10"
 tags:
@@ -8,6 +8,7 @@ tags:
   - Vue
   - CMS
   - Open Source
+  - MySQL
 image: /hero/digispace.avif
 featured: true
 stack:
@@ -19,6 +20,10 @@ stack:
     icon: i-simple-icons-vuedotjs
   - name: Vite
     icon: i-simple-icons-vite
+  - name: MySQL
+    icon: i-simple-icons-mysql
+  - name: Tailwind CSS
+    icon: i-simple-icons-tailwindcss
   - name: CMS
     icon: i-heroicons-document-text
 links:
@@ -27,7 +32,7 @@ links:
     color: primary
     icon: i-heroicons-arrow-top-right-on-square
   - label: GitHub
-    to: https://github.com/Yurij2015
+    to: https://github.com/Yurij2015/DigiSpace
     color: neutral
     icon: i-simple-icons-github
 content: |
