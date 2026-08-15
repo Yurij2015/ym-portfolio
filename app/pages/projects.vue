@@ -102,7 +102,7 @@ defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, 
                 v-for="tech in project.stack"
                 :key="tech.name"
                 :title="tech.name"
-                class="inline-flex items-center justify-center size-6 rounded-md bg-elevated/60 text-muted"
+                class="inline-flex items-center justify-center size-6 rounded-md bg-elevated/60 text-dimmed"
               >
                 <UIcon
                   :name="tech.icon"
