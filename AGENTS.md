@@ -10,6 +10,8 @@
 ## Build / deploy
 
 - Production: Vercel (Nitro `vercel` preset), prerendering disabled (Nitro 2.13.4 bug), OG images are generated at runtime (`ogImage.zeroRuntime: false`).
+- **Production URL: https://yuriimokryi.vercel.app/** (Vercel project `digispace-projects/portfolio-template`; `ym-portfolio.vercel.app` and `aktpf.vercel.app` are unrelated/old projects — do not use them for verification).
+- Deploy = push to `origin/main` (Vercel auto-builds); check status with `vercel ls`.
 - Env vars: `NUXT_PUBLIC_SITE_URL`, `NUXT_PUBLIC_GTAG_ID` (GA4, optional), `NUXT_OG_IMAGE_SECRET` (stable OG URL signatures across deploys).
 
 ## Custom agents
