@@ -1,5 +1,7 @@
 # Dev server rules (portfolio-new-ym)
 
+- **NEVER commit or push without the user's explicit permission** for the specific change set. Show `git status`/diff summary and ask first.
+
 - **NEVER start the dev server** (`pnpm dev` / `nuxt dev`) — the user runs it themselves.
 - The project dev server is already running at **http://localhost:3002** — use it for all runtime checks (curl, e2e).
 - **Do not run `pnpm test`/vitest while the dev server is running**: both processes write to the same `.data/content/contents.sqlite` → the DB gets partially rebuilt (index/about/pages collections disappear, pages return 404). Fix: `touch content.config.ts` (or restart the dev server).

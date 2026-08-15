@@ -1,5 +1,9 @@
 # Agent Rules
 
+## Git workflow
+
+- **NEVER commit or push without the user's explicit permission for that specific change set.** Always show the change set (git status/diff summary) and ask before committing.
+
 ## Dev server
 
 - **NEVER start the dev server** (`pnpm dev` / `nuxt dev`) — the user runs it themselves.
