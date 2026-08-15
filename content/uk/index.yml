@@ -18,16 +18,36 @@ hero:
       alt: PHP
     - src: /hero/tech-laravel.avif
       alt: Laravel
-    - src: /hero/tech-symfony.avif
+    - src: /hero/tech-symfony.svg
       alt: Symfony
-    - src: /hero/tech-docker.avif
-      alt: Docker
-    - src: /hero/tech-terraform.avif
-      alt: Terraform
+    - src: /hero/tech-filament.svg
+      alt: Filament
     - src: /hero/tech-vue.avif
       alt: Vue.js
     - src: /hero/tech-nuxt.avif
       alt: Nuxt
+    - src: /hero/tech-typescript.svg
+      alt: TypeScript
+    - src: /hero/tech-tailwindcss.svg
+      alt: Tailwind CSS
+    - src: /hero/tech-vite.svg
+      alt: Vite
+    - src: /hero/tech-docker.avif
+      alt: Docker
+    - src: /hero/tech-terraform.avif
+      alt: Terraform
+    - src: /hero/tech-go.svg
+      alt: Go
+    - src: /hero/tech-postgresql.svg
+      alt: PostgreSQL
+    - src: /hero/tech-mysql.svg
+      alt: MySQL
+    - src: /hero/tech-redis.svg
+      alt: Redis
+    - src: /hero/tech-cloudflare.svg
+      alt: Cloudflare
+    - src: /hero/tech-stripe.svg
+      alt: Stripe
 about:
   title: "Про мене"
   description: |

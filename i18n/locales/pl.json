@@ -22,6 +22,25 @@
     "title": "Podobają Ci się projekty?",
     "description": "Opowiedz o swoim — zaproponuję architekturę i wycenę w 24 godziny."
   },
+  "tech": {
+    "php": "Mój główny język backendowy — ponad 10 lat w produkcji",
+    "laravel": "Podstawowy framework: Octane, Reverb, Filament, Cashier",
+    "symfony": "Backendy enterprise i wysokowydajny ticketing dla Formula 1",
+    "filament": "Własne panele administracyjne i CMS",
+    "vue": "Frontendy SPA i interaktywne interfejsy",
+    "nuxt": "Strony SSR z SEO — jak to portfolio",
+    "typescript": "Frontend i narzędzia z bezpieczeństwem typów",
+    "tailwindcss": "Stylowanie utility-first",
+    "vite": "Błyskawiczne buildy frontendu",
+    "docker": "Konteneryzacja od deva po produkcję",
+    "terraform": "Infrastruktura jako kod",
+    "go": "Workery monitoringu DigiPulse: <10 MB RAM",
+    "postgresql": "Relacyjna baza danych, także multi-tenant",
+    "mysql": "Bazy danych dla projektów Laravel i CMS",
+    "redis": "Kolejki, cache i architektura event-driven",
+    "cloudflare": "CDN, Turnstile i ochrona na edge",
+    "stripe": "Subskrypcje i płatności przez Cashier"
+  },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone"
   }

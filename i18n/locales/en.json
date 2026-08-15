@@ -22,6 +22,25 @@
     "title": "Like what you see?",
     "description": "Tell me about your project — I'll propose an architecture and estimate within 24 hours."
   },
+  "tech": {
+    "php": "My core server-side language — 10+ years in production",
+    "laravel": "Primary framework: Octane, Reverb, Filament, Cashier",
+    "symfony": "Enterprise backends and high-load ticketing for Formula 1",
+    "filament": "Custom admin panels and CMS",
+    "vue": "SPA frontends and interactive interfaces",
+    "nuxt": "SEO-friendly SSR sites — like this portfolio",
+    "typescript": "Type-safe frontends and tooling",
+    "tailwindcss": "Utility-first UI styling",
+    "vite": "Instant frontend builds",
+    "docker": "Containerization from dev to production",
+    "terraform": "Infrastructure as code",
+    "go": "DigiPulse monitoring workers: <10 MB RAM",
+    "postgresql": "Relational DB, including multi-tenant setups",
+    "mysql": "Databases for Laravel projects and CMS",
+    "redis": "Queues, caching and event-driven architecture",
+    "cloudflare": "CDN, Turnstile and edge protection",
+    "stripe": "Subscriptions and payments via Cashier"
+  },
   "footer": {
     "rights": "All rights reserved"
   }

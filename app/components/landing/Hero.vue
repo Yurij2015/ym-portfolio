@@ -2,11 +2,17 @@
 import type { IndexPageItem } from '~/utils/content-types'
 
 const { footer, global } = useAppConfig()
-const { t } = useI18n()
+const { t, te } = useI18n()
 
 defineProps<{
   page: IndexPageItem
 }>()
+
+const techTip = (img: { src: string, alt: string }) => {
+  const slug = img.src.replace(/^.*tech-/, '').replace(/\.[a-z]+$/, '')
+  const key = `tech.${slug}`
+  return te(key) ? t(key) : img.alt
+}
 </script>
 
 <template>
@@ -183,13 +189,15 @@ defineProps<{
           delay: index * 0.1
         }"
       >
-        <NuxtImg
-          width="234"
-          height="234"
-          class="rounded-lg aspect-square object-cover"
-          :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
-          v-bind="img"
-        />
+        <UTooltip :text="techTip(img)">
+          <NuxtImg
+            width="132"
+            height="132"
+            class="rounded-lg aspect-square object-cover"
+            :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
+            v-bind="img"
+          />
+        </UTooltip>
       </Motion>
     </UMarquee>
   </UPageHero>
