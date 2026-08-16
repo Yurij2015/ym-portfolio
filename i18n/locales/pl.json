@@ -25,6 +25,12 @@
   "projects": {
     "back": "Powrót do projektów"
   },
+  "facts": {
+    "years": "Ponad 10 lat komercyjnego doświadczenia",
+    "saas": "4 produkty SaaS od architektury po produkcję",
+    "ticketing": "Platformy ticketingowe dla Formula 1, MotoGP, EICMA, EuroLeague",
+    "reply": "Odpowiedź w ciągu 24 godzin"
+  },
   "tech": {
     "php": "Mój główny język backendowy — ponad 10 lat w produkcji",
     "laravel": "Podstawowy framework: Octane, Reverb, Filament, Cashier",

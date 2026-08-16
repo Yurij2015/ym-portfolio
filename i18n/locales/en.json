@@ -25,6 +25,12 @@
   "projects": {
     "back": "Back to projects"
   },
+  "facts": {
+    "years": "10+ years of commercial development",
+    "saas": "4 SaaS products from architecture to production",
+    "ticketing": "Ticketing platforms for Formula 1, MotoGP, EICMA, EuroLeague",
+    "reply": "Reply within 24 hours"
+  },
   "tech": {
     "php": "My core server-side language — 10+ years in production",
     "laravel": "Primary framework: Octane, Reverb, Filament, Cashier",
