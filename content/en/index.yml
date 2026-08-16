@@ -41,17 +41,17 @@ hero:
       color: neutral
       icon: i-heroicons-folder
   images:
-    - src: /hero/tech-php.avif
+    - src: /hero/tech-php.svg
       alt: PHP
-    - src: /hero/tech-laravel.avif
+    - src: /hero/tech-laravel.svg
       alt: Laravel
     - src: /hero/tech-symfony.svg
       alt: Symfony
     - src: /hero/tech-filament.svg
       alt: Filament
-    - src: /hero/tech-vue.avif
+    - src: /hero/tech-vue.svg
       alt: Vue.js
-    - src: /hero/tech-nuxt.avif
+    - src: /hero/tech-nuxt.svg
       alt: Nuxt
     - src: /hero/tech-typescript.svg
       alt: TypeScript
@@ -59,9 +59,9 @@ hero:
       alt: Tailwind CSS
     - src: /hero/tech-vite.svg
       alt: Vite
-    - src: /hero/tech-docker.avif
+    - src: /hero/tech-docker.svg
       alt: Docker
-    - src: /hero/tech-terraform.avif
+    - src: /hero/tech-terraform.svg
       alt: Terraform
     - src: /hero/tech-go.svg
       alt: Go
