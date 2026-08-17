@@ -52,7 +52,8 @@ export const indexSchema = z.object({
         logo: z.string().editor({ input: 'icon' }),
         color: z.string()
       })
-    }))
+    })),
+    link: createButtonSchema().optional()
   }),
   testimonials: z.array(createTestimonialSchema()),
   faq: createBaseSchema().extend({

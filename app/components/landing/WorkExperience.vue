@@ -60,6 +60,14 @@ defineProps<{
             {{ experience.description }}
           </p>
         </Motion>
+
+        <UButton
+          v-if="page.experience.link"
+          v-bind="page.experience.link"
+          target="_blank"
+          variant="link"
+          class="self-start px-0"
+        />
       </div>
     </template>
   </UPageSection>

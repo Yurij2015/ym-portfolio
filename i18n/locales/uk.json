@@ -26,13 +26,13 @@
     "back": "Назад до проєктів"
   },
   "facts": {
-    "years": "10+ років комерційної розробки",
+    "years": "8+ років комерційної розробки",
     "saas": "4 SaaS-продукти від архітектури до продакшну",
     "ticketing": "Ticketing-платформи для Formula 1, MotoGP, EICMA, EuroLeague",
     "reply": "Відповідь на запит — до 24 годин"
   },
   "tech": {
-    "php": "Основна серверна мова — 10+ років у продакшні",
+    "php": "Основна серверна мова — 8+ років у продакшні",
     "laravel": "Головний фреймворк: Octane, Reverb, Filament, Cashier",
     "symfony": "Enterprise-бекенди та high-load ticketing для Formula 1",
     "filament": "Кастомні адмін-панелі та CMS",

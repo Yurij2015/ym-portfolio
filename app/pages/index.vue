@@ -43,7 +43,8 @@ const jsonLd: Record<string, unknown>[] = [{
     'https://github.com/Yurij2015',
     'https://linkedin.com/in/yurii-mokryi',
     'https://www.upwork.com/freelancers/mokryiyurii',
-    'https://t.me/YuriiMokryi'
+    'https://t.me/YuriiMokryi',
+    'https://scholar.google.com/citations?user=efT-_VMAAAAJ&hl=uk'
   ],
   'knowsAbout': ['PHP', 'Laravel', 'Symfony', 'Vue.js', 'Nuxt', 'Docker', 'Terraform']
 }]

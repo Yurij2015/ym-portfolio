@@ -26,13 +26,13 @@
     "back": "Back to projects"
   },
   "facts": {
-    "years": "10+ years of commercial development",
+    "years": "8+ years of commercial development",
     "saas": "4 SaaS products from architecture to production",
     "ticketing": "Ticketing platforms for Formula 1, MotoGP, EICMA, EuroLeague",
     "reply": "Reply within 24 hours"
   },
   "tech": {
-    "php": "My core server-side language — 10+ years in production",
+    "php": "My core server-side language — 8+ years in production",
     "laravel": "Primary framework: Octane, Reverb, Filament, Cashier",
     "symfony": "Enterprise backends and high-load ticketing for Formula 1",
     "filament": "Custom admin panels and CMS",

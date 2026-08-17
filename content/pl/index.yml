@@ -1,8 +1,8 @@
 seo:
   title: "Yurii Mokryi - Senior Full-Stack PHP Developer"
-  description: "Senior Full-Stack developer z ponad 10-letnim doświadczeniem komercyjnym. Laravel, Filament, Symfony, Vue/Nuxt. Produkty SaaS, platformy ticketingowe o wysokim obciążeniu, integracje AI."
+  description: "Senior Full-Stack developer z ponad 8-letnim doświadczeniem komercyjnym. Laravel, Filament, Symfony, Vue/Nuxt. Produkty SaaS, platformy ticketingowe o wysokim obciążeniu, integracje AI."
 title: "Cześć, jestem Yurii Mokryi — Senior Full-Stack PHP Developer"
-description: "Ponad 10 lat komercyjnego programowania: SaaS, CRM i wysokowydajne platformy ticketingowe dla Formula 1, MotoGP, EICMA i EuroLeague. Laravel/Symfony + Vue/Nuxt, integracje AI. Prowadzę produkty od pustego repozytorium do płacących użytkowników."
+description: "Ponad 8 lat komercyjnego programowania: SaaS, CRM i wysokowydajne platformy ticketingowe dla Formula 1, MotoGP, EICMA i EuroLeague. Laravel/Symfony + Vue/Nuxt, integracje AI. Prowadzę produkty od pustego repozytorium do płacących użytkowników."
 hero:
   links:
     - label: "Omówmy Twój projekt"
@@ -51,7 +51,7 @@ hero:
 about:
   title: "O mnie"
   description: |
-    Full-Stack developer z ponad 10-letnim doświadczeniem komercyjnym. Buduję i utrzymuję produkty SaaS, systemy CRM, platformy ticketingowe/e-commerce oraz REST API.
+    Full-Stack developer z ponad 8-letnim doświadczeniem komercyjnym. Buduję i utrzymuję produkty SaaS, systemy CRM, platformy ticketingowe/e-commerce oraz REST API.
     Głęboka znajomość Laravel (Filament, Octane, FrankenPHP) oraz Symfony, a także Vue.js/Nuxt, architektur wielotenancyjnych i integracji systemów płatności.
 experience:
   title: Doświadczenie zawodowe
@@ -78,11 +78,16 @@ experience:
         name: SystemFreaks
         logo: "i-heroicons-briefcase"
         color: "#6B7280"
+  link:
+    label: "Więcej doświadczenia na LinkedIn"
+    to: "https://www.linkedin.com/in/yurii-mokryi/details/experience/"
+    icon: "i-simple-icons-linkedin"
+    target: "_blank"
 testimonials:
-  - quote: "Od ponad 10 lat zamieniam problemy biznesowe w działające produkty: od architektury i płatności po wdrożenie i skalowanie. Mój kod sprzedaje bilety na Formula 1 i MotoGP, a moje własne produkty SaaS obsługują płacących klientów. Szukasz dewelopera, który odpowiada za rezultat? Napisz do mnie."
+  - quote: "Od ponad 8 lat zamieniam problemy biznesowe w działające produkty: od architektury i płatności po wdrożenie i skalowanie. Mój kod sprzedaje bilety na Formula 1 i MotoGP, a moje własne produkty SaaS obsługują płacących klientów. Szukasz dewelopera, który odpowiada za rezultat? Napisz do mnie."
     author:
       name: 'Yurii Mokryi'
-      description: 'Senior Full-Stack PHP Developer • 10+ lat • Poznań'
+      description: 'Senior Full-Stack PHP Developer • 8+ lat • Poznań'
       avatar:
         src: '/images/avatar.jpg'
 faq:

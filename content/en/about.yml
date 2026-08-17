@@ -1,6 +1,6 @@
 title: About Me
 content: |
-  Hi, I'm **Yurii Mokryi**, a Senior Full-Stack PHP Developer based in Poznań, Poland. I have 10+ years of commercial development experience: building and maintaining SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
+  Hi, I'm **Yurii Mokryi**, a Senior Full-Stack PHP Developer based in Poznań, Poland. I have 8+ years of commercial development experience: building and maintaining SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
 
   My primary role is full-stack development on a high-load ticketing platform for major sporting events (Formula 1, MotoGP, EICMA, EuroLeague): checkout, user accounts, admin dashboards, Stripe/Dalenys integration, and 3D seat-map solutions. In parallel, as the founder of DigiSpace, I build my own SaaS products — DigiPulse (uptime monitoring) and VetSpace (CRM for veterinary clinics).
 
@@ -10,7 +10,7 @@ content: |
 
   ## Technical Philosophy
 
-  My technical philosophy is built on **pragmatism** and **results**. Great software starts with understanding the business problem and building the simplest effective solution. I aim to build systems that are maintainable, performant, and solve real problems.
+  My technical philosophy is built on **pragmatism** and **results**, rooted in a few years I spent working in science: a habit of methodological thinking (hypothesis → test → data-driven conclusion) that carries over into architecture design, requirements analysis, and development. Great software starts with understanding the business problem and building the simplest effective solution. I aim to build systems that are maintainable, performant, and solve real problems.
 
   ## Beyond the Screen
 

@@ -2,9 +2,9 @@ title: Hi, I'm Yurii Mokryi — Senior Full-Stack PHP Developer
 about:
   title: About Me
   description: |
-    Full-Stack developer with 10+ years of commercial experience. I build and maintain SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
+    Full-Stack developer with 8+ years of commercial experience. I build and maintain SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
     Deep expertise in Laravel (Filament, Octane, FrankenPHP) and Symfony, as well as Vue.js/Nuxt, multi-tenant architectures, and payment system integrations.
-description: "10+ years of commercial development: SaaS, CRM and high-load ticketing platforms for Formula 1, MotoGP, EICMA and EuroLeague. Laravel/Symfony + Vue/Nuxt, AI integrations. I take products from empty repo to paying users."
+description: "8+ years of commercial development: SaaS, CRM and high-load ticketing platforms for Formula 1, MotoGP, EICMA and EuroLeague. Laravel/Symfony + Vue/Nuxt, AI integrations. I take products from empty repo to paying users."
 experience:
   title: Work Experience
   items:
@@ -30,6 +30,11 @@ experience:
         name: SystemFreaks
         logo: i-heroicons-briefcase
         color: "#6B7280"
+  link:
+    label: "More experience on LinkedIn"
+    to: "https://www.linkedin.com/in/yurii-mokryi/details/experience/"
+    icon: i-simple-icons-linkedin
+    target: "_blank"
 hero:
   links:
     - label: Discuss your project
@@ -77,12 +82,12 @@ hero:
       alt: Stripe
 seo:
   title: Yurii Mokryi - Senior Full-Stack PHP Developer
-  description: Senior Full-Stack developer with 10+ years of commercial experience. Laravel, Filament, Symfony, Vue/Nuxt. SaaS products, high-load ticketing platforms, AI integrations.
+  description: Senior Full-Stack developer with 8+ years of commercial experience. Laravel, Filament, Symfony, Vue/Nuxt. SaaS products, high-load ticketing platforms, AI integrations.
 testimonials:
-  - quote: "For 10+ years I've turned business problems into working products: from architecture and payments to deployment and scaling. My code sells tickets for Formula 1 and MotoGP, and my own SaaS products serve paying customers. Need a developer who owns the outcome? Message me."
+  - quote: "For 8+ years I've turned business problems into working products: from architecture and payments to deployment and scaling. My code sells tickets for Formula 1 and MotoGP, and my own SaaS products serve paying customers. Need a developer who owns the outcome? Message me."
     author:
       name: Yurii Mokryi
-      description: Senior Full-Stack PHP Developer • 10+ years • Poznań
+      description: Senior Full-Stack PHP Developer • 8+ years • Poznań
       avatar:
         src: /images/avatar.jpg
 faq:
