@@ -63,9 +63,7 @@ defineProps<{
 
         <UButton
           v-if="page.experience.link"
-          v-bind="page.experience.link"
-          target="_blank"
-          variant="link"
+          v-bind="{ target: '_blank', variant: 'link', ...page.experience.link }"
           class="self-start px-0"
         />
       </div>
