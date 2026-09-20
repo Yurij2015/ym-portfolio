@@ -85,17 +85,22 @@ seo:
   title: Yurii Mokryi - Senior Full-Stack PHP Developer
   description: Senior Full-Stack developer with 8+ years of commercial experience. Laravel, Filament, Symfony, Vue/Nuxt. SaaS products, high-load ticketing platforms, AI integrations.
 testimonials:
+  - quote: "Yuri is a coding machine. From the moment he applied for the contract, it was clear he was a man of few words, but the interview went great and he was hired. He was able to design the database, set up the code architecture, and plan for future releases. He works independently, reviews and debugs code, and consistently suggests improvements while spotting logical flaws in the system. I've been working with freelancers since 2012, and he is the only one on Upwork who truly excelled at difficult tasks and added real value to the project. He deserves a senior pay rate. He has always been available to support the project when needed, never makes excuses, and communicates clearly."
+    author:
+      name: 'Upwork'
+      description: '★ 5.0 · Client review on Upwork'
+      to: 'https://www.upwork.com/freelancers/mokryiyurii'
   - quote: "I highly recommend Yurii as a reliable, proactive, and results-oriented professional. Yurii is a responsible specialist who can work autonomously on a wide range of tasks. He has solid expertise in PHP (Symfony, Laravel) and JavaScript frameworks (Vue.js, Angular) — able to independently investigate complex issues, identify root causes, and implement effective solutions."
     author:
-      name: 'Denys Shamrai'
-      description: 'Team Lead at Platinium Group SAM'
-      to: 'https://www.linkedin.com/in/denys-shamrai-79956948'
+      name: 'LinkedIn'
+      description: 'Recommendation on LinkedIn'
+      to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
   - quote: "For 8+ years I've turned business problems into working products: from architecture and payments to deployment and scaling. My code sells tickets for Formula 1 and MotoGP, and my own SaaS products serve paying customers. Need a developer who owns the outcome? Message me."
     author:
       name: Yurii Mokryi
       description: Senior Full-Stack PHP Developer • 8+ years • Poznań
       avatar:
-        src: /images/avatar-1.jpg
+        src: /images/avatar-2.jpeg
         alt: Yurii Mokryi
 faq:
   title: Frequently asked questions

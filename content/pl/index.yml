@@ -85,17 +85,22 @@ experience:
     icon: "i-simple-icons-linkedin"
     target: "_blank"
 testimonials:
+  - quote: "Yurii to maszyna do kodowania. Od momentu, gdy zgłosił się do kontraktu, było jasne, że jest człowiekiem niewielu słów, ale rozmowa poszła świetnie i został zatrudniony. Zaprojektował bazę danych, ustawił architekturę kodu i zaplanował przyszłe wydania. Pracuje samodzielnie, robi review i debuguje kod, stale proponuje ulepszenia i wychwytuje logiczne błędy w systemie. Pracuję z freelancerami od 2012 roku i on jest jedynym na Upwork, kto naprawdę poradził sobie z trudnymi zadaniami i wniósł realną wartość do projektu. Zasługuje na stawkę seniora. Zawsze był dostępny, gdy projekt tego potrzebował, nigdy nie szuka wymówek i komunikuje się jasno."
+    author:
+      name: 'Upwork'
+      description: '★ 5.0 · Opinia klienta na Upwork'
+      to: 'https://www.upwork.com/freelancers/mokryiyurii'
   - quote: "Gorąco polecam Yuriia jako niezawodnego, proaktywnego i zorientowanego na rezultaty profesjonalistę. Yurii to odpowiedzialny specjalista, który potrafi autonomicznie pracować nad szerokim zakresem zadań. Ma solidną ekspertyzę w PHP (Symfony, Laravel) i frameworkach JavaScript (Vue.js, Angular) — samodzielnie bada złożone problemy, znajduje ich pierwotne przyczyny i wdraża skuteczne rozwiązania."
     author:
-      name: 'Denys Shamrai'
-      description: 'Team Lead w Platinium Group SAM'
-      to: 'https://www.linkedin.com/in/denys-shamrai-79956948'
+      name: 'LinkedIn'
+      description: 'Rekomendacja na LinkedIn'
+      to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
   - quote: "Od ponad 8 lat zamieniam problemy biznesowe w działające produkty: od architektury i płatności po wdrożenie i skalowanie. Mój kod sprzedaje bilety na Formula 1 i MotoGP, a moje własne produkty SaaS obsługują płacących klientów. Szukasz dewelopera, który odpowiada za rezultat? Napisz do mnie."
     author:
       name: 'Yurii Mokryi'
       description: 'Senior Full-Stack PHP Developer • 8+ lat • Poznań'
       avatar:
-        src: '/images/avatar-1.jpg'
+        src: '/images/avatar-2.jpeg'
         alt: 'Yurii Mokryi'
 faq:
   title: "Często zadawane pytania"
