@@ -18,8 +18,8 @@ const testimonials = computed(() => props.page.testimonials)
       v-slot="{ item }"
       :items="testimonials"
       :autoplay="testimonials.length > 1 ? { delay: 4000 } : false"
-      loop
-      dots
+      :loop="testimonials.length > 1"
+      :dots="testimonials.length > 1"
       :ui="{
         viewport: '-mx-4 sm:-mx-12 lg:-mx-16 bg-elevated/50 max-w-(--ui-container)'
       }"
