@@ -1,0 +1,40 @@
+title: PHP
+description: "Senior PHP developer, 8+ lat komercyjnie: backendy Laravel i Symfony, high-load ticketing, produkty SaaS i API w produkcji."
+icon: i-simple-icons-php
+category: backend
+since: "2017"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - digipulse
+  - digispace
+  - netpostpanel
+  - vetcard
+  - digispace-studio
+links:
+  - label: php.net
+    to: https://www.php.net
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  PHP to mój główny język serwerowy — 8+ lat komercyjnej pracy na nowoczesnym PHP 8.x, głównie przez Laravel i Symfony, plus WordPress tam, gdzie projekt tego wymaga.
+
+  ## Jak używam PHP
+
+  - **Backendy frameworkowe** — Laravel dla własnych produktów SaaS, Symfony dla wysokoobciążonej platformy ticketingowej, nad którą pracuję komercyjnie.
+  - **API** — endpointy REST i GraphQL, obsługa webhooków, integracje płatności (Stripe, Revolut, Dalenys).
+  - **Nowoczesne runtime'y** — klasyczny PHP-FPM za Caddy oraz Octane/FrankenPHP tam, gdzie trwałe workery się opłacają.
+  - **Narzędzia jakości** — analiza statyczna PHPStan, testy PHPUnit/Pest, formatowanie Pint — wszystko wymuszone w CI przy każdym pushu.
+
+  ## Doświadczenie produkcyjne
+
+  PHP napędza checkout ticketingowy sprzedający miejsca na Formula 1, MotoGP, EICMA i EuroLeague — ruch, w którym wolne zapytanie w ranki wyścigowe to realny incydent, a nie metryka. Ten sam język obsługuje wszystkie moje produkty: VetSpace, DigiPulse, NetPostPanel, CMS DigiSpace i klienckie wdrożenia WordPress jak DigiSpace Studio.
+
+  ## Dlaczego PHP wciąż wygrywa w pracy produktowej
+
+  Nowoczesny stack — typowany język, dojrzałe frameworki, ekosystem Composera, opcache i trwałe runtime'y — zdejmuje stare zastrzeżenia. Dla biznesu, który potrzebuje szybko dowieźć utrzymywalny produkt, PHP pozostaje najpragmatyczniejszym znanym mi wyborem.
+faq:
+  - label: Z jakimi wersjami PHP pracujesz?
+    content: PHP 8.x w produkcji wszędzie — typowane właściwości, enum, readonly, atrybuty. Aktualizacje ze starszych wersji to część mojej pracy utrzymaniowej.
+  - label: Laravel czy Symfony — co wybierasz?
+    content: Laravel dla szybkości pracy produktowej i ekosystemu, Symfony dla długowiecznych platform enterprise. Oba w mojej produkcji — wybór według cyklu życia projektu, nie przyzwyczajenia.

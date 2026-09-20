@@ -1,0 +1,31 @@
+title: Caddy
+description: "Caddy jako reverse proxy dla routingu multi-tenant — automatyczny TLS, dwupoziomowe proxy i proste configi przed moimi SaaS."
+icon: i-simple-icons-caddy
+category: infrastructure
+since: "2022"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - digipulse
+  - netpostpanel
+links:
+  - label: caddyserver.com
+    to: https://caddyserver.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Caddy stoi przed każdym serwisem mojej infrastruktury — automatyczne HTTPS, dwupoziomowy setup proxy dla routingu multi-tenant i configi mieszczące się na jednym ekranie zamiast katalogu snippetów nginx.
+
+  ## Jak używam Caddy'ego
+
+  - **Dwupoziomowy reverse proxy** — brzegowy Caddy terminuje TLS i routuje po hostname; instancje na VM przekazują do właściwego kontenera. Domeny multi-tenant lądują na poprawnej aplikacji bez ręcznego configu per strona.
+  - **Automatyczne certyfikaty** — Let's Encrypt obsłużony po cichu: wydawanie, odnawianie, alerty o niepowodzeniach. TLS od lat nie jest zadaniem.
+  - **Wewnętrzna adresacja** — czyste hostname'y między kontenerami i VM, więc aplikacje adresują serwisy nazwami, nie IP zapisanymi kiedyś przez kogoś.
+
+  ## Doświadczenie produkcyjne
+
+  Przypadek multi-tenant to miejsce, gdzie Caddy zarabia swoje miejsce: domeny klinik rozwiązują się na jeden frontend VetSpace, a router mapuje hosta na tenanta bez edycji configu przy każdej rejestracji. W porównaniu do configów nginx, które utrzymywałem wcześniej, Caddyfile czyta się jak dokumentacja intencji, a nie jak rytuał.
+
+  ## Caddy vs nginx w moim stacku
+
+  nginx wciąż żyje w legacy-zakątkach, ale nowy routing idzie do Caddy'ego — sam automatyczny TLS usuwa całą klasę zadań operacyjnych, a powierzchnia configu jest na tyle mała, że można ją przejrzeć jednym rzutem oka podczas incydentu.

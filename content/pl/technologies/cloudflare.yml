@@ -1,0 +1,31 @@
+title: Cloudflare
+description: "Cloudflare CDN, DNS i ochrona Turnstile przed moimi SaaS-ami — edge cache i filtracja botów, która po prostu działa."
+icon: i-simple-icons-cloudflare
+category: infrastructure
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - vetcard
+  - vetspace
+  - digipulse
+links:
+  - label: cloudflare.com
+    to: https://www.cloudflare.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Cloudflare siedzi na krawędzi każdego mojego publicznego produktu — digipulse.cloud, vetcard.pro i vetspace.pro wszystkie na nim są. DNS, cache CDN i ochrona przed botami pochłaniają wrogie części internetu zanim dotrą do moich serwerów.
+
+  ## Jak używam Cloudflare
+
+  - **DNS i CDN** — wszystkie trzy domeny produktowe działają na serwerach nazw Cloudflare z proxy-cachem statyki: węzły edge serwują pliki bliżej odwiedzających, niż potrafi mój pojedynczy serwer.
+  - **Turnstile przeciw botom** — flow rezerwacji VetCard używa Turnstile, by automatyczny spam nie wpadał do pipeline'u wizyt — i bez zagadek captcha dla prawdziwych użytkowników.
+  - **TLS na krawędzi** — certyfikaty i nowoczesna terminacja TLS na edge z originem zamkniętym na zakresy IP Cloudflare.
+
+  ## Doświadczenie produkcyjne
+
+  Formularz rezerwacji to uczciwy test: publiczny endpoint przyjmujący wizyty to magnes na spam, a Turnstile odcina zautomatyzowane wysyłki bez tarcia kosztującego prawdziwe rezerwacje. Tymczasem CDN po cichu serwuje assety wszystkich trzech domen z cache'ów brzegowych — infrastrukturalna wygrana niewidoczna, dopóki nie spojrzysz na transfer originu, i analityka dashboardu pokazująca tysiące unikalnych odwiedzających miesięcznie, których mój origin niemal nie czuje.
+
+  ## Ochrona edge bez rachunku enterprise
+
+  Darmowy tier Cloudflare pokrywa DNS, CDN i Turnstile — realna ochrona dla bootstrap-SaaS bez faktury za WAF. Płatne funkcje istnieją na wypadek, gdyby ruch je uzasadnił; darmowa warstwa jak dotąd niosła wszystko.

@@ -1,0 +1,33 @@
+title: Filament
+description: "Filament admin panels and internal tools on Laravel — CRUD resources, dashboards and CMS features shipped in days, not weeks."
+icon: i-simple-icons-filament
+category: backend
+since: "2023"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - digispace
+links:
+  - label: filamentphp.com
+    to: https://filamentphp.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Filament is how I ship admin panels on Laravel without building a custom back office — resources, filters, dashboards and forms delivered in days instead of weeks of bespoke UI work.
+
+  ## How I use Filament
+
+  - **SaaS back offices** — the DigiPulse admin panel manages monitors, incidents and notification channels through Filament resources.
+  - **CMS features** — the DigiSpace company site pairs Filament-driven content management with the public-facing Blade site.
+  - **Operational dashboards** — widgets for queue health, monitoring status and content pipelines instead of raw database queries.
+
+  ## Production experience
+
+  Every internal tool I maintain is judged by one metric: how fast someone can find and change the thing they came for. Filament's resource model keeps that fast — a new entity goes from migration to a searchable, filterable, permission-aware admin screen in an afternoon. For the workflows Filament doesn't cover, custom Livewire components drop into the same panel without a second admin stack.
+
+  ## When I pick Filament
+
+  Any Laravel product that needs a non-public operational surface. If the admin panel is the product's second face — as in monitoring or CRM tools — Filament gets it to production quality without a dedicated frontend team.
+faq:
+  - label: Filament vs a custom admin panel?
+    content: Filament wins on speed and consistency for CRUD-heavy back offices. I add custom Livewire pages inside the panel when a workflow needs a bespoke UI — no second stack required.

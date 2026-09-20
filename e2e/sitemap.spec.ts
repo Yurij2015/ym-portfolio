@@ -1,14 +1,23 @@
 import { readdirSync, readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { expect, test } from '@playwright/test'
 import { parse } from 'yaml'
 
-const projectsDir = join(import.meta.dirname, '../content/en/projects')
+const projectsDir = join(dirname(fileURLToPath(import.meta.url)), '../content/en/projects')
 const projectFiles = readdirSync(projectsDir).filter(f => f.endsWith('.yml'))
 const projectSlugs = projectFiles.map(f => f.replace(/\.yml$/, ''))
 
-const latestContentDate = projectFiles
-  .map(f => new Date(parse(readFileSync(join(projectsDir, f), 'utf8')).date))
+const techDir = join(dirname(fileURLToPath(import.meta.url)), '../content/en/technologies')
+const techFiles = readdirSync(techDir).filter(f => f.endsWith('.yml'))
+const techSlugs = techFiles.map(f => f.replace(/\.yml$/, ''))
+
+const latestContentDate = [
+  ...projectFiles.map(f => parse(readFileSync(join(projectsDir, f), 'utf8')).date),
+  ...techFiles.map(f => parse(readFileSync(join(techDir, f), 'utf8')).updated)
+]
+  .filter(Boolean)
+  .map(d => new Date(d))
   .reduce((a, b) => (a > b ? a : b))
   .toISOString()
 
@@ -22,10 +31,13 @@ test('sitemap.xml serves XML with all localized routes and hreflang alternates',
   const xml = await response.text()
 
   const urlCount = (xml.match(/<url>/g) ?? []).length
-  expect(urlCount).toBe(3 * (3 + projectSlugs.length))
+  expect(urlCount).toBe(3 * (4 + projectSlugs.length + techSlugs.length))
 
   for (const slug of projectSlugs) {
     expect(xml).toContain(`/projects/${slug}</loc>`)
+  }
+  for (const slug of techSlugs) {
+    expect(xml).toContain(`/technologies/${slug}</loc>`)
   }
 
   for (const iso of [...LOCALES, 'x-default']) {

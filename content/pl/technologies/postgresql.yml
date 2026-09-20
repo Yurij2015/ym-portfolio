@@ -1,0 +1,30 @@
+title: PostgreSQL
+description: "PostgreSQL w produkcji: schematy SaaS multi-tenant, baza per tenant i zapytania utrzymujące dane monitoringu szybkimi."
+icon: i-simple-icons-postgresql
+category: database
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - digipulse
+links:
+  - label: postgresql.org
+    to: https://www.postgresql.org
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  PostgreSQL to moja domyślna relacyjna baza dla pracy SaaS — silnik za schematami multi-tenant, szeregami czasowymi monitoringu i wszystkim, gdzie integralność danych przewyższa wygodę.
+
+  ## Jak używam PostgreSQL
+
+  - **Dane multi-tenant** — DigiPulse trzyma monitory, wyniki testów i incydenty w Postgresie; bazy tenantów VetSpace działają na tym samym silniku — osobna izolowana baza per klinika.
+  - **Obciążenia typu time-series** — wyniki testów dostępności piszą się strumieniowo: indeksy po monitorze i czasie, agregacje dla raportów uptime bez osobnej TSDB.
+  - **Integralność transakcyjna** — flow rezerwacji i billingu, gdzie częściowy zapis jest gorszy niż nieudany.
+  - **JSONB tam, gdzie pasuje** — elastyczne kolumny na webhooki i odpowiedzi operatorów, odpytywane bez wychodzenia z modelu relacyjnego.
+
+  ## Doświadczenie produkcyjne
+
+  Postgres zarabia na nudnych gwarancjach: constrainty trzymają, indeksy zachowują się przewidywalnie, a EXPLAIN faktycznie wyjaśnia. Dla wzorca baza-per-tenant to praktyczny wybór — izolacja na poziomie kliniki, prosty eksport/usunięcie GDPR i zero egzotycznego toolinga między mną a danymi.
+
+  ## PostgreSQL vs MySQL w moim stacku
+
+  Postgres gdy produkt jest mój i model danych nietrywialny — JSONB, CTE i ściślejsza typizacja się opłacają. MySQL gdy ekosystem już nim mówi (WordPress, część dziedzictwa Laravel). Obie żyją w mojej infrastrukturze; wybór idzie za projektem, nie za preferencją.

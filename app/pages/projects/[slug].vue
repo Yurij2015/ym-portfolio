@@ -34,6 +34,8 @@ useSeoMeta({
 defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, { alt: title })
 
 const visibleLinks = computed(() => (project.value?.links ?? []).filter(link => link.to && link.to !== '#'))
+
+const { linkFor } = await useTechnologyLinks()
 </script>
 
 <template>
@@ -88,17 +90,14 @@ const visibleLinks = computed(() => (project.value?.links ?? []).filter(link => 
         v-if="project.stack?.length || project.tags?.length"
         class="mt-4 flex flex-wrap items-center gap-1"
       >
-        <span
+        <TechChip
           v-for="tech in project.stack"
           :key="tech.name"
-          :title="tech.name"
-          class="inline-flex items-center justify-center size-7 rounded-md bg-elevated/60 text-dimmed"
-        >
-          <UIcon
-            :name="tech.icon"
-            class="size-4"
-          />
-        </span>
+          :name="tech.name"
+          :icon="tech.icon"
+          :to="linkFor(tech.name)"
+          class="size-7"
+        />
         <UBadge
           v-for="tag in project.tags"
           :key="tag"

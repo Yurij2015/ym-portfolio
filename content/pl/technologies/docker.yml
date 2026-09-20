@@ -1,0 +1,36 @@
+title: Docker
+description: "Docker od dev do produkcji: skonteneryzowane stacki Laravel/Node, środowiska compose i obrazy na własnych VM Proxmox."
+icon: i-simple-icons-docker
+category: infrastructure
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - vetspace
+  - netpostpanel
+  - digispace
+links:
+  - label: docker.com
+    to: https://www.docker.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Docker to sposób, w który pakuję wszystko, co uruchamiam — ten sam obraz na laptopie dewelopera, w CI i na produkcyjnej VM. Każdy projekt ma plik compose, który sprawia, że „u mnie działa" przestaje być tematem.
+
+  ## Jak używam Dockera
+
+  - **Serwisy produkcyjne** — moje SaaS-y działają jako kontenery na VM Proxmox: aplikacja, worker, scheduler i baza opisane w compose, a CI je podciąga i restartuje.
+  - **Parity środowisk** — lokalne środowiska odzwierciedlają serwisy produkcyjne, więc bug reprodukuje się lokalnie zamiast tylko pod prawdziwym ruchem.
+  - **Buildy multi-stage** — smukłe obrazy runtime: zależności i narzędzia budowy zostają w stadium buildera, obraz produkcyjny niesie tylko to, co obsługuje żądania.
+  - **Pipeline'y CI** — buildy i testy działają w kontenerach na GitHub Actions, więc środowisko CI to repozytorium, a nie śnieżynka-runner.
+
+  ## Doświadczenie produkcyjne
+
+  Operacyjna wygrana pokazała się przy przeprowadzce z floty dropletów DigitalOcean na jeden serwer Hetzner: serwisy będące już kontenerami przeniosły się jako obrazy i pliki compose — migracja zajęła popołudnie, nie rearchitekturę. Ta przenośność to cały argument za Dockerem dla infrastruktury prowadzonej solo.
+
+  ## Docker bez ceremonii
+
+  Jeden plik compose na środowisko, obrazy budowane w CI, healthchecki pilnujące restartów. Zero orchestratora dla garstki VM — budżet złożoności idzie w produkt, nie w Kubernetes dla mody.
+faq:
+  - label: Docker Compose czy Kubernetes?
+    content: Compose na VM dla własnych produktów — garstka serwisów nie uzasadnia control plane'a. Sięgnę po Kubernetes, gdy obciążenie faktycznie będzie potrzebować szeregowania po węzłach.

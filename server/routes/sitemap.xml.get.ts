@@ -6,7 +6,7 @@ const LOCALES = [
   { code: 'pl', iso: 'pl-PL', prefix: '/pl' }
 ]
 
-const PATHS = ['/', '/about', '/projects']
+const PATHS = ['/', '/about', '/projects', '/technologies']
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
@@ -14,13 +14,17 @@ export default defineEventHandler(async (event) => {
     || `${getRequestProtocol(event)}://${getRequestHost(event)}`
 
   // Slugs are locale-independent — any collection gives all of them.
-  // lastmod = newest project date: the most recent known content change
-  // (far more honest than Date.now() on every request).
+  // lastmod = newest known content change (project dates + technology
+  // `updated` fields) — far more honest than Date.now() on every request.
   const projects = await queryCollection(event, 'projects_en').all()
+  const technologies = await queryCollection(event, 'technologies_en').all()
   const projectSlugs = projects.map(p => String(p.stem).split('/').pop() ?? '')
-  const lastmod = new Date(
-    projects.map(p => p.date).filter(Boolean).sort().pop() ?? Date.now()
-  ).toISOString()
+  const techSlugs = technologies.map(t => String(t.stem).split('/').pop() ?? '')
+  const dates = [
+    ...projects.map(p => p.date),
+    ...technologies.map(t => t.updated)
+  ].filter(Boolean).sort()
+  const lastmod = new Date(dates.pop() ?? Date.now()).toISOString()
 
   const urlFor = (prefix: string, path: string) => `${origin}${prefix}${path}`
 
@@ -40,7 +44,11 @@ export default defineEventHandler(async (event) => {
     ].join('\n')
   })
 
-  const urls = [...PATHS, ...projectSlugs.map(s => `/projects/${s}`)].flatMap(urlEntry)
+  const urls = [
+    ...PATHS,
+    ...projectSlugs.map(s => `/projects/${s}`),
+    ...techSlugs.map(s => `/technologies/${s}`)
+  ].flatMap(urlEntry)
 
   setResponseHeader(event, 'content-type', 'application/xml; charset=utf-8')
   return [

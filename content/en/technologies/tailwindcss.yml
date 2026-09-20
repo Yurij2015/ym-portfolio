@@ -1,0 +1,32 @@
+title: Tailwind CSS
+description: "Tailwind CSS interfaces in production: SaaS panels, SSR catalogs and this portfolio — utility-first styling that stays maintainable."
+icon: i-simple-icons-tailwindcss
+category: frontend
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - digispace
+  - vetcard
+  - vetspace
+links:
+  - label: tailwindcss.com
+    to: https://tailwindcss.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Tailwind CSS styles every interface I've shipped in the last years — admin panels, SSR catalogs and this portfolio. Utility classes keep styling local to the component and dead CSS close to zero.
+
+  ## How I use Tailwind
+
+  - **SaaS interfaces** — the VetSpace panel and VetCard portal: responsive layouts, dark-mode-aware components, per-clinic theming driven by a single color token.
+  - **This portfolio** — Tailwind v4 via the Vite plugin with Nuxt UI on top: no config file, theme through CSS, components stay composable.
+  - **Admin themes** — the DigiSpace Inertia admin uses Tailwind for the back-office UI next to the Blade public theme.
+  - **Per-tenant branding** — VetCard themes each clinic page from a single `color` field — CSS variables plus utilities beat a per-tenant stylesheet.
+
+  ## Production experience
+
+  The practical win is maintenance: a style lives in the template next to the markup it affects, so changing a card can't silently break a page three routes away. Paired with Nuxt UI for primitives, Tailwind covers everything from the marketing page to the booking flow without a context switch.
+
+  ## Utility-first without the mess
+
+  The rule that keeps Tailwind sane: extract a component when the same utility string appears three times, never earlier. The framework is at its best when the duplication it removes is real, not anticipated.

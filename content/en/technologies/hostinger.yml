@@ -1,0 +1,29 @@
+title: Hostinger
+description: "Hostinger shared/VPS hosting for client sites and WordPress builds — where a managed panel beats owning the whole stack."
+icon: i-simple-icons-hostinger
+category: infrastructure
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - digispace-studio
+links:
+  - label: hostinger.com
+    to: https://www.hostinger.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Hostinger hosts the projects where a managed panel beats self-managed infrastructure — client WordPress sites and smaller builds that need reliable hosting without my Hetzner server in the loop.
+
+  ## How I use Hostinger
+
+  - **Client WordPress sites** — DigiSpace Studio and similar builds live on Hostinger: PHP hosting, managed SSL, email and a control panel the client can navigate without me.
+  - **Handover-friendly hosting** — when a project ends, the client keeps a hosting account they understand, not SSH keys to my infrastructure.
+  - **Personal side sites** — small pages that don't justify a slot on the production server.
+
+  ## Production experience
+
+  Not every project belongs on my own hardware. A client site on Hostinger means they own their hosting relationship directly — billing in their name, panel they can open, support that isn't me at 23:00. For brochure sites and standard WordPress installs that's the pragmatic choice; my own products get the dedicated-server treatment instead.
+
+  ## Shared hosting vs my own server
+
+  Own infrastructure wins on control and marginal cost for always-on SaaS. Managed hosting wins on handover and simplicity for client work. Picking per project — rather than forcing one answer — is the actual skill.

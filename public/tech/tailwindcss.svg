@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480">
+  <defs>
+    <radialGradient id="a" cx="85%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#0891B2" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0891B2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="10%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="480" fill="#0a0a0a"/>
+  <rect width="1200" height="480" fill="url(#g)"/>
+  <rect width="1200" height="480" fill="url(#a)"/>
+  <rect width="1200" height="480" fill="url(#b)"/>
+  <rect width="6" height="480" fill="#0891B2"/>
+  <g transform="translate(980 240) rotate(-8)">
+    <svg x="-170" y="-170" width="340" height="340" viewBox="0 0 468 468">
+  <rect width="468" height="468" rx="48" fill="#0891B2"/>
+  <g fill="#FFFFFF" transform="translate(114 114) scale(10)"><path fill="#FFFFFF" d="M12.001 4.8q-4.8 0-6 4.8q1.8-2.4 4.2-1.8c.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12q4.8 0 6-4.8q-1.8 2.4-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8m-6 7.2q-4.8 0-6 4.8q1.8-2.4 4.2-1.8c.913.228 1.565.89 2.288 1.624c1.177 1.194 2.538 2.576 5.512 2.576q4.8 0 6-4.8q-1.8 2.4-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12"/></g>
+</svg>
+  </g>
+  <g transform="translate(80 90)" opacity="0.12">
+    <svg width="120" height="120" viewBox="0 0 468 468">
+  <rect width="468" height="468" rx="48" fill="#0891B2"/>
+  <g fill="#FFFFFF" transform="translate(114 114) scale(10)"><path fill="#FFFFFF" d="M12.001 4.8q-4.8 0-6 4.8q1.8-2.4 4.2-1.8c.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12q4.8 0 6-4.8q-1.8 2.4-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8m-6 7.2q-4.8 0-6 4.8q1.8-2.4 4.2-1.8c.913.228 1.565.89 2.288 1.624c1.177 1.194 2.538 2.576 5.512 2.576q4.8 0 6-4.8q-1.8 2.4-4.2 1.8c-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12"/></g>
+</svg>
+  </g>
+</svg>

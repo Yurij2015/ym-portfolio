@@ -1,0 +1,34 @@
+title: Stripe
+description: "Stripe payments and subscriptions in production: Laravel Cashier billing for SaaS, plus high-load checkout integrations for ticketing."
+icon: i-simple-icons-stripe
+category: tools
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - vetspace
+links:
+  - label: stripe.com
+    to: https://stripe.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Stripe handles the money in my products — subscriptions via Laravel Cashier on VetSpace, and card checkout in the ticketing platform I work on commercially, alongside providers like Dalenys and Revolut.
+
+  ## How I use Stripe
+
+  - **SaaS subscriptions** — VetSpace billing through Cashier: trials, plan changes, proration, dunning and webhook-driven state sync.
+  - **Checkout flows** — card payments inside the high-load ticketing checkout: 3DS, asynchronous confirmation and the failure paths that must not lose an order.
+  - **Webhooks as the source of truth** — subscription and payment state driven by webhook events, not by what the redirect says — redirects lie, webhooks don't.
+
+  ## Production experience
+
+  Payment code is where "works on my machine" is most expensive. The ticketing checkout taught the discipline: idempotent handlers, explicit state machines for pending/failed/paid, and logging that reconstructs exactly what the provider said. VetSpace's billing builds on the same rules — subscription lifecycle handled by Cashier's primitives rather than reinvented dunning logic.
+
+  ## Stripe vs the alternatives I've integrated
+
+  Stripe wins on developer experience and billing primitives; Dalenys and Revolut appear where the business or geography dictates. The provider-specific code stays behind an interface either way — checkout logic shouldn't know or care who processes the card.
+faq:
+  - label: Can you integrate Stripe subscriptions into an existing app?
+    content: "Yes — typically via Laravel Cashier: products/prices in Stripe, webhook-synced subscription state, trials and dunning without custom billing machinery."
+  - label: What about non-Stripe payment providers?
+    content: I've integrated Dalenys and Revolut in production checkout flows. Provider code lives behind an abstraction so switching or adding a gateway doesn't touch the order pipeline.

@@ -1,0 +1,30 @@
+title: MySQL
+description: "MySQL databases for Laravel apps and CMS sites — the workhorse behind the DigiSpace platform and WordPress builds."
+icon: i-simple-icons-mysql
+category: database
+since: "2017"
+updated: "2026-09-20"
+projects:
+  - digispace
+  - digispace-studio
+links:
+  - label: mysql.com
+    to: https://www.mysql.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  MySQL was my first production database and still runs a good share of what I maintain — Laravel applications, the DigiSpace CMS and every WordPress build, where it's the native engine.
+
+  ## How I use MySQL
+
+  - **Laravel + MySQL** — the DigiSpace company platform: pages, widgets, menus and blog content served from a MySQL 8 schema behind a custom CMS.
+  - **WordPress sites** — DigiSpace Studio and client builds: MySQL is non-negotiable there, so the work is tuning and schema hygiene rather than engine choice.
+  - **E-commerce and ticketing heritage** — earlier commercial work on storefronts and booking flows where MySQL was the platform standard.
+
+  ## Production experience
+
+  Years of MySQL in production taught the unglamorous essentials: index for the query you actually run, watch the slow query log before adding hardware, and keep migrations reversible. The DigiSpace CMS has run on MySQL through multiple redesigns — the schema outlived two frontend stacks, which is how a database should behave.
+
+  ## MySQL vs PostgreSQL in my stack
+
+  MySQL when the platform dictates it — WordPress, shared hosting, established Laravel schemas. PostgreSQL when I control the architecture and the data model benefits from JSONB and stricter semantics. Running both for years means the trade-offs are practical knowledge, not theory.

@@ -1,0 +1,33 @@
+title: GitHub Actions
+description: "GitHub Actions CI/CD on every push: lint, typecheck, tests, build and deploy pipelines for my SaaS products and this site."
+icon: i-simple-icons-githubactions
+category: infrastructure
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - digispace
+  - vetspace
+  - digipulse
+  - netpostpanel
+  - vetcard
+links:
+  - label: github.com/features/actions
+    to: https://github.com/features/actions
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  GitHub Actions is the pipeline behind every push — lint, typecheck, unit tests, build and deploy automated so that shipping is a git operation, not a checklist.
+
+  ## How I use GitHub Actions
+
+  - **Full CI gates** — this portfolio runs ESLint, vue-tsc typecheck, Vitest and a 15-spec Playwright suite on every push; a red check blocks the merge.
+  - **Deploy pipelines** — the DigiSpace platform deploys over SSH on push: build on CI, PHPUnit suite as a gate, release-symlink deploys with health checks and five-release rollback retention.
+  - **Content and image jobs** — scheduled and on-push workflows that keep generated artifacts and dependency updates flowing without manual runs.
+
+  ## Production experience
+
+  The discipline that matters: tests run in the pipeline, not on someone's laptop where they can be skipped. When a hardcoded project-count assertion broke my E2E suite after adding two projects, CI caught what local runs had missed — the pipeline earning its keep in the most literal way.
+
+  ## CI that earns its minutes
+
+  Fast feedback over exhaustive ceremony: lint and typecheck first (seconds), unit tests next, E2E last. Failing fast keeps the pipeline honest — a suite that takes twenty minutes gets ignored; one that fails in two gets fixed.

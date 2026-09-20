@@ -1,0 +1,32 @@
+title: Nuxt
+description: "Nuxt SSR developer: SEO-first catalogs, SaaS marketing sites and this portfolio — i18n, OG images, sitemaps and Vercel deploys."
+icon: i-simple-icons-nuxtdotjs
+category: frontend
+since: "2022"
+updated: "2026-09-20"
+projects:
+  - vetcard
+  - vetspace
+links:
+  - label: nuxt.com
+    to: https://nuxt.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Nuxt is how I build Vue applications that need to rank in search — server-side rendering, per-locale routing, structured content and deploy-ready output in one framework. This portfolio is a Nuxt 4 app; so is VetCard's public catalog.
+
+  ## How I use Nuxt
+
+  - **SEO-first public sites** — VetCard's clinic catalog renders server-side with localized URLs, sitemap, hreflang and JSON-LD — the pages that acquire customers.
+  - **Multi-tenant rendering** — one VetCard deployment serves many clinics, each routed by slug and themed per tenant.
+  - **Content-driven pages** — this portfolio runs on Nuxt Content with Zod-validated YAML per locale, OG images generated at runtime.
+  - **Hybrid rendering** — SSR for indexable pages, `ssr: false` route rules for client-only flows like booking calendars — per route, not per app.
+
+  ## Production experience
+
+  Nuxt pays off where organic traffic matters. VetCard exists to be found in search — every clinic page is SSR'd, localized and marked up, while the booking flow stays client-side to avoid hydration issues. The same discipline runs this site: sitemap generated from content, canonical/hreflang on every route, ISR caching on Vercel. When a page must both rank and act like an app, Nuxt is the shortest path I know.
+faq:
+  - label: Why Nuxt instead of a plain Vue SPA?
+    content: SEO and first paint. A SPA can't reliably rank a catalog or content page; Nuxt gives SSR, per-route rendering rules and meta control — the SPA model stays available where indexing doesn't matter.
+  - label: Which Nuxt version do you use?
+    content: Nuxt 4 in production — this portfolio and VetCard both run on it, with Nuxt Content, Nuxt Image, i18n and runtime OG images.

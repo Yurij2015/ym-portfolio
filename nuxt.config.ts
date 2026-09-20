@@ -70,6 +70,8 @@ export default defineNuxtConfig({
     '/about': { isr: true },
     '/projects': { isr: true },
     '/projects/**': { isr: true },
+    '/technologies': { isr: true },
+    '/technologies/**': { isr: true },
     '/en': { isr: true },
     '/en/**': { isr: true },
     '/pl': { isr: true },

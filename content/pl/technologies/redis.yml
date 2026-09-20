@@ -1,0 +1,31 @@
+title: Redis
+description: "Redis do kolejek, cache i stanu czasu rzeczywistego — workery Horizon, pipeline'y event-driven i cache gorącej ścieżki w produkcji."
+icon: i-simple-icons-redis
+category: database
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - netpostpanel
+links:
+  - label: redis.io
+    to: https://redis.io
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Redis to spoiwo mojego stacku Laravel — kolejki, cache i efemeryczny stan, który nie powinien dotykać głównej bazy. Każdy produkt z pracą w tle przechodzi przez niego.
+
+  ## Jak używam Redisa
+
+  - **Kolejki z Horizonem** — pipeline treści AI NetPostPanel (fetch → generate → index) i wysyłka powiadomień DigiPulse działają jako zadania Horizon na Redisie.
+  - **Cache aplikacji** — konfiguracje, agregaty i liczniki rate-limit na gorącej ścieżce: baza trzyma prawdę zapisów, Redis obsługuje odczyty.
+  - **Blokady i koordynacja** — atomowe locki pilnują, by zaplanowane testy monitoringu nie odpaliły dwa razy na różnych workerach.
+  - **Hydraulika zdarzeń** — pub/sub i backend broadcastingu tam, gdzie frontend potrzebuje aktualizacji na żywo.
+
+  ## Doświadczenie produkcyjne
+
+  Redis to element, który zamienia aplikacje „żądanie → odpowiedź" w systemy faktycznie robiące robotę: generowanie AI w kolejce, testy wg harmonogramu, deduplikowane powiadomienia. Najważniejszy operacyjny nawyk: traktuj Redis jako stan jednorazowy — wszystko w nim musi dać się odbudować z pierwotnego magazynu, bo pewnego dnia węzeł się zrestartuje i będziesz wdzięczny, że tak jest.
+
+  ## Gdzie Redis kontra alternatywy
+
+  Dla obciążeń Laravel wciąż pragmatyczny standard — Horizon, cache i broadcasting mówią nim natywnie. Po kolejki bazodanowe sięgam tylko przy najmniejszych deployach; gdy produkt ma prawdziwą pracę w tle, Redis już tam jest i robi trzy rzeczy naraz.

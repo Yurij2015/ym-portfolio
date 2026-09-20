@@ -1,0 +1,31 @@
+title: Cloudflare
+description: "Cloudflare CDN, DNS and Turnstile protection in front of my SaaS products — edge caching and bot filtering that just works."
+icon: i-simple-icons-cloudflare
+category: infrastructure
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - vetcard
+  - vetspace
+  - digipulse
+links:
+  - label: cloudflare.com
+    to: https://www.cloudflare.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Cloudflare sits at the edge of every public product I run — digipulse.cloud, vetcard.pro and vetspace.pro are all on it. DNS, CDN caching and bot protection absorb the hostile parts of the internet before they reach my servers.
+
+  ## How I use Cloudflare
+
+  - **DNS and CDN** — all three product domains run on Cloudflare nameservers with proxy caching for static assets; edge PoPs serve files closer to visitors than my single server can.
+  - **Turnstile bot protection** — VetCard's booking flow uses Turnstile to keep automated spam out of the appointment pipeline without punishing real users with captcha puzzles.
+  - **TLS edge** — certificates and modern TLS termination at the edge, with the origin locked to Cloudflare's IP ranges.
+
+  ## Production experience
+
+  The booking form is the honest test: a public endpoint that accepts appointments is a spam magnet, and Turnstile cut automated submissions without adding friction that costs real bookings. Meanwhile the CDN quietly serves assets for all three domains from edge caches — the kind of infrastructure win that's invisible until you look at origin bandwidth, and the dashboard analytics that show thousands of unique visitors per month hitting sites my origin barely feels.
+
+  ## Edge protection without the enterprise bill
+
+  Cloudflare's free tier covers DNS, CDN and Turnstile — meaningful protection for bootstrapped SaaS without a WAF invoice. The paid features exist if traffic ever justifies them; the free layer has carried everything so far.

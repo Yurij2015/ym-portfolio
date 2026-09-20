@@ -1,0 +1,29 @@
+title: DigitalOcean
+description: "Droplety DigitalOcean były pierwszym domem moich SaaS-ów — zanim konsolidacja na własnym sprzęcie Hetzner stała się bardziej opłacalna."
+icon: i-simple-icons-digitalocean
+category: infrastructure
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - digispace
+links:
+  - label: digitalocean.com
+    to: https://www.digitalocean.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  DigitalOcean hostował pierwsze produkcyjne wersje moich projektów — droplety, które nauczyły mnie prawdziwej administracji serwerami, zanim flota urosła na tyle, że dedykowany sprzęt wygrał cenowo.
+
+  ## Jak używałem DigitalOcean
+
+  - **Flota dropletów** — wczesne produkty i serwisy DigiSpace działały na osobnych dropletach: po jednym na obciążenie, każdy z własnymi aktualizacjami, regułami firewalla i harmonogramem backupów.
+  - **„Zarządzane" podstawy ręcznie** — serwery Ubuntu, nginx/Caddy, Let's Encrypt, tuning bazy — te administracyjne powtórki, które sprawiają, że późniejsze abstrakcje mają sens.
+  - **Krzywa kosztów** — świetna platforma, dopóki kilka zawsze włączonych VM nie zaczęło oznaczać płacenia chmurowych marż za obliczenia, które serwer dedykowany daje taniej.
+
+  ## Czego nauczyła migracja
+
+  Przejście z dropletów na dedykowany serwer Hetzner z Proxmoxem obniżyło miesięczny koszt i skonsolidowało flotę — możliwe, bo wszystko było już skonteneryzowane. DigitalOcean był właściwym pierwszym krokiem: szybki provisioning, dobra dokumentacja, łagodna krzywa wejścia. Zostaje w toolboxie dla obciążeń wymagających chmurowej elastyczności zamiast posiadanego sprzętu.
+
+  ## Kiedy wybrałbym go znowu
+
+  Krótko żyjące środowiska, projekty klienckie wymagające zarządzanej platformy bez administratora, albo cokolwiek, gdzie billing godzinowy bije posiadanie mocy. Moje stałe SaaS-y po prostu przerosły ten punkt cenowy.

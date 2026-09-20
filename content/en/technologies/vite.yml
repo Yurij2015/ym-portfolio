@@ -1,0 +1,29 @@
+title: Vite
+description: "Vite as the build tool behind my Vue/Nuxt frontends and Laravel Inertia apps — instant HMR, fast production builds."
+icon: i-simple-icons-vite
+category: frontend
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - digispace
+links:
+  - label: vite.dev
+    to: https://vite.dev
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Vite is the build layer under every frontend I ship — the instant HMR in development and the Rollup-powered bundles in production, both inside Nuxt and as Laravel's official frontend toolchain.
+
+  ## How I use Vite
+
+  - **Inside Nuxt** — VetCard and this portfolio build through Vite under the hood; Tailwind v4 is wired in as a Vite plugin.
+  - **Laravel + Inertia** — the DigiSpace admin panel builds with `laravel-vite-plugin`: HMR against the running backend, versioned assets on deploy.
+  - **Library and app bundles** — code-split entry points, asset hashing and modern ESM output without webpack-era configuration.
+
+  ## Production experience
+
+  Vite's contribution is mostly invisible — which is the point. Dev servers start in milliseconds, edits reflect before I reach for the browser, and production builds are small and predictable. The only time I think about the bundler anymore is when I'm not using Vite.
+
+  ## What replaced what
+
+  Vite took over from webpack/Laravel Mix across my projects. The migration was worth it purely on developer-loop time; the cleaner ESM output and simpler config were a bonus. Every new project starts on Vite by default.

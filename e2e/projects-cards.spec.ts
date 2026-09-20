@@ -1,8 +1,9 @@
 import { readdirSync } from 'node:fs'
-import { join } from 'node:path'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { expect, test } from '@playwright/test'
 
-const projectsDir = join(import.meta.dirname, '../content/en/projects')
+const projectsDir = join(dirname(fileURLToPath(import.meta.url)), '../content/en/projects')
 const projectCount = readdirSync(projectsDir).filter(f => f.endsWith('.yml')).length
 
 test('project cards show a real year, image and clickable link', async ({ page }) => {

@@ -58,6 +58,23 @@
     "cloudflare": "CDN, Turnstile i ochrona na edge",
     "stripe": "Subskrypcje i płatności przez Cashier"
   },
+  "technologies": {
+    "title": "Technologie, z którymi pracuję",
+    "description": "Narzędzia stojące za moimi produkcyjnymi projektami — od backendów PHP po własną infrastrukturę. Każda strona opisuje, czym jest technologia, jak jej używam i w jakich projektach.",
+    "back": "Wszystkie technologie",
+    "since": "Od {year} roku",
+    "usedIn": "Projekty zbudowane na {tech}",
+    "usedWith": "Projekty wykorzystujące {tech}",
+    "faq": "Najczęstsze pytania",
+    "ctaTitle": "Potrzebujesz projektu w {tech}?",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Bazy danych",
+      "infrastructure": "Infrastruktura",
+      "tools": "Narzędzia"
+    }
+  },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone"
   }

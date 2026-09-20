@@ -1,0 +1,31 @@
+title: TypeScript
+description: "TypeScript in production frontends: type-safe Vue/Nuxt apps, strict configs and typed API contracts across my SaaS projects."
+icon: i-simple-icons-typescript
+category: frontend
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - vetcard
+  - vetspace
+links:
+  - label: typescriptlang.org
+    to: https://www.typescriptlang.org
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  TypeScript is the default for every frontend I build — the vetting that catches API drift and prop mismatches at compile time instead of in a client's browser.
+
+  ## How I use TypeScript
+
+  - **Typed Nuxt apps** — VetCard and this portfolio are strict TypeScript: typed API responses, composable signatures and content schemas.
+  - **Contract safety** — clinic, appointment and booking types shared across the VetCard codebase keep the multi-tenant API surface honest.
+  - **Schema-validated content** — this site validates every YAML content file with Zod, so a missing field fails the build, not the page.
+  - **Tooling** — `vue-tsc` typecheck in CI alongside lint and unit tests; a red typecheck blocks a deploy the same as a failing test.
+
+  ## Production experience
+
+  The value shows up at maintenance time. When VetSpace's API added a field, the type error surfaced every frontend consumer in one pass — no grep, no runtime surprises. On a solo-maintained product that discipline is what keeps a codebase from becoming the kind of legacy nobody wants to touch.
+
+  ## Strictness that earns its cost
+
+  I keep `strict` on and resist `any` — the point isn't purity, it's that a year later the compiler still remembers the contract I forgot. Typed boundaries between API, state and template are the difference between a refactor and a rewrite.

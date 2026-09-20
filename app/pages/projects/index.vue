@@ -24,6 +24,8 @@ const { data: projects } = await useAsyncData(
   { watch: [locale] }
 )
 
+const { linkFor } = await useTechnologyLinks()
+
 const { global } = useAppConfig()
 
 const title = page.value?.seo?.title || page.value?.title
@@ -94,17 +96,14 @@ defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, 
               v-if="project.stack?.length || project.tags?.length"
               class="mt-3 flex flex-wrap items-center gap-1"
             >
-              <span
+              <TechChip
                 v-for="tech in project.stack"
                 :key="tech.name"
-                :title="tech.name"
-                class="inline-flex items-center justify-center size-6 rounded-md bg-elevated/60 text-dimmed"
-              >
-                <UIcon
-                  :name="tech.icon"
-                  class="size-4"
-                />
-              </span>
+                :name="tech.name"
+                :icon="tech.icon"
+                :to="linkFor(tech.name)"
+                class="size-6"
+              />
               <UBadge
                 v-for="tag in project.tags"
                 :key="tag"

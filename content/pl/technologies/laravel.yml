@@ -1,0 +1,42 @@
+title: Laravel
+description: "Programista Laravel z 8+ latami w produkcji: SaaS multi-tenant, panele Filament, billing Stripe i API REST/GraphQL. Prawdziwe projekty w środku."
+icon: i-simple-icons-laravel
+category: backend
+since: "2018"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - digipulse
+  - digispace
+  - netpostpanel
+  - vetcard
+links:
+  - label: laravel.com
+    to: https://laravel.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Laravel to mój główny framework backendowy. Buduję i utrzymuję na nim produkcyjne SaaS-y, panele administracyjne i API — od pierwszej migracji po monitorowany deploy na własnych serwerach.
+
+  ## Jak używam Laravela
+
+  - **API SaaS multi-tenant** — VetSpace działa na Laravel API z bazą-per-tenant: jedna baza kodu obsługuje publiczny katalog klinik i subskrypcyjny CRM.
+  - **Panele na Filament** — back-office'y DigiPulse i DigiSpace: zasoby, filtry, dashboardy i zarządzanie treścią bez budowy autorskiego panelu.
+  - **Billing** — subskrypcje Stripe przez Laravel Cashier: triale, zmiany planów, dunning, webhooki.
+  - **Kolejki i zadania** — workery pod Horizonem dla pipeline'ów AI i testów monitoringowych.
+  - **Projektowanie API** — REST dla powierzchni CRM, GraphQL dla złożonych zapytań katalogu — wersjonowane i udokumentowane.
+
+  ## Doświadczenie produkcyjne
+
+  Laravel niesie wszystkie moje produkty SaaS: VetSpace (platforma weterynaryjna), DigiPulse (monitoring dostępności), NetPostPanel (operacje treści AI) i stronę DigiSpace z autorskim CMS-em. Powtarzający się wzorzec: logika domenowa w serwisach, izolacja tenantów na poziomie bazy, a Octane/FrankenPHP daje zapas wydajności, gdy ruch rośnie.
+
+  ## Kiedy Laravel to dobry wybór
+
+  Najwięcej zyskują produkty wymagające panelu, billingu, kolejek i prawdziwego API — Laravel dostarcza to wszystko bez składania dziesiątki pakietów. Dla cienkiego bezstanowego serwisu lub ciężkiego workera czasem wybieram Go; dla wszystkiego produktowego — Laravel domyślnie.
+faq:
+  - label: Budujesz aplikacje Laravel od zera czy przejmujesz istniejące?
+    content: Jedno i drugie. Większość komercyjnej pracy to rozwijanie istniejących produkcyjnych baz kodu — audyty, refaktoryzacja, nowe funkcje bez zatrzymywania wydań. Projekty greenfield prowadzę tą samą dyscypliną od pierwszego dnia.
+  - label: Jakich narzędzi ekosystemu Laravel używasz?
+    content: Filament do paneli, Cashier do billingu Stripe, Horizon do kolejek, Octane z FrankenPHP tam, gdzie liczy się wydajność, plus Pest/PHPUnit i PHPStan w CI.
+  - label: Czy sam hostujesz i wdrażasz aplikacje Laravel?
+    content: "Tak — moje SaaS-y działają na własnym serwerze Hetzner: Proxmox, Docker, Caddy i pipeline'y GitHub Actions. Pokrywam całą drogę od commita do produkcji."

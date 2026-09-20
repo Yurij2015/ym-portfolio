@@ -1,0 +1,29 @@
+title: Hostinger
+description: "Hosting Hostinger dla stron klienckich i wdrożeń WordPress — tam, gdzie zarządzany panel bije posiadanie całego stacku."
+icon: i-simple-icons-hostinger
+category: infrastructure
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - digispace-studio
+links:
+  - label: hostinger.com
+    to: https://www.hostinger.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Hostinger hostuje projekty, gdzie zarządzany panel bije infrastrukturę self-managed — klienckie strony WordPress i mniejsze wdrożenia potrzebujące niezawodnego hostingu bez mojego serwera Hetzner w pętli.
+
+  ## Jak używam Hostingera
+
+  - **Klienckie strony WordPress** — DigiSpace Studio i podobne wdrożenia mieszkają na Hostingerze: hosting PHP, zarządzane SSL, poczta i panel, który klient otworzy beze mnie.
+  - **Hosting przyjazny przekazaniu** — gdy projekt się kończy, klient zostaje z kontem, które rozumie, a nie z kluczami SSH do mojej infrastruktury.
+  - **Osobiste strony poboczne** — małe strony, które nie uzasadniają slotu na serwerze produkcyjnym.
+
+  ## Doświadczenie produkcyjne
+
+  Nie każdy projekt należy do własnego sprzętu. Strona klienta na Hostingerze oznacza, że klient bezpośrednio posiada relację hostingową — billing na jego nazwisko, panel, który otworzy, i support, którym nie jestem ja o 23:00. Dla stron wizytówkowych i standardowych instalacji WordPress to pragmatyczny wybór; własne produkty dostają traktowanie serwerem dedykowanym.
+
+  ## Hosting współdzielony vs własny serwer
+
+  Własna infrastruktura wygrywa kontrolą i kosztem marginalnym dla zawsze włączonych SaaS-ów. Zarządzany hosting wygrywa przekazaniem projektu i prostotą dla pracy klienckiej. Wybieranie per projekt — zamiast wymuszać jedną odpowiedź — jest właściwą umiejętnością.

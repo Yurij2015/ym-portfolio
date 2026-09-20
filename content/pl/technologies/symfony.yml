@@ -1,0 +1,34 @@
+title: Symfony
+description: "Programista Symfony na high-load platformie ticketingowej dla Formula 1, MotoGP, EICMA i EuroLeague — checkout, płatności, mapy miejsc, admin."
+icon: i-simple-icons-symfony
+category: backend
+since: "2019"
+updated: "2026-09-20"
+projects: []
+links:
+  - label: symfony.com
+    to: https://symfony.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Symfony stoi za moją główną pracą komercyjną — wysokoobciążona platforma ticketingowa sprzedająca miejsca na wydarzenia Formula 1, MotoGP, EICMA i EuroLeague. Skala enterprise, długi cykl życia, zero tolerancji dla niedbałego kodu.
+
+  ## Jak używam Symfony
+
+  - **Checkout i płatności** — ścieżka zakupu: koszyk, wybór miejsc, operatorzy Stripe/Dalenys, potwierdzenie zamówienia i dostawa biletów.
+  - **Konta użytkowników** — rejestracja, profile, historia zamówień dla tysięcy uczestników wydarzeń.
+  - **Dashboardy administracyjne** — wewnętrzne narzędzia zarządzania wydarzeniami, inwentarzem i zamówieniami.
+  - **Integracje** — rozwiązania map miejsc 3D i zewnętrzne API wpięte w ścieżkę zakupu.
+
+  ## Doświadczenie produkcyjne
+
+  Ticketing to obciążenie, w którym spike jest sensem: tysiące równoczesnych kupujących w chwili otwarcia sprzedaży, a każde zapytanie uderza w inwentarz, który nie wolno oversellować. Ta platforma nauczyła mnie dyscypliny przenoszonej na wszystko inne — defensywnej obsługi płatności, ostrożnego cache'owania i czytelnego kodu, który następny programista może bezpiecznie zmieniać pod presją.
+
+  ## Symfony vs Laravel w mojej pracy
+
+  Symfony pasuje platformom żyjącym latami ze ścisłymi konwencjami i jawną architekturą — ticketing jest dokładnie taki. Laravel wygrywa szybkością iteracji produktowych. Oba w mojej produkcji — wybieram według cyklu życia projektu, nie preferencji.
+faq:
+  - label: Jakiej skali projekty Symfony masz w doświadczeniu?
+    content: Produkcyjna platforma ticketingowa obsługująca wydarzenia Formula 1, MotoGP, EICMA i EuroLeague — checkout, płatności i admin pod realnymi szczytami ruchu.
+  - label: Czy przejmujesz istniejące bazy kodu Symfony?
+    content: Tak — to rdzeń mojego doświadczenia. Zaczynam od audytu, stabilizuję testami tam, gdzie to ważne, potem rozwijam funkcje bez przerywania cyklu wydań.

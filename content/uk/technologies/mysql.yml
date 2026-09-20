@@ -1,0 +1,30 @@
+title: MySQL
+description: "Бази MySQL для Laravel-застосунків і CMS-сайтів — робоча конячка за платформою DigiSpace та WordPress-збірками."
+icon: i-simple-icons-mysql
+category: database
+since: "2017"
+updated: "2026-09-20"
+projects:
+  - digispace
+  - digispace-studio
+links:
+  - label: mysql.com
+    to: https://www.mysql.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  MySQL — моя перша продакшн-база, і вона досі обслуговує чималу частину того, що я підтримую: Laravel-застосунки, CMS DigiSpace й усі WordPress-збірки, де це рідний рушій.
+
+  ## Як я використовую MySQL
+
+  - **Laravel + MySQL** — платформа компанії DigiSpace: сторінки, віджети, меню й блог-контент із MySQL 8 за власною CMS.
+  - **WordPress-сайти** — DigiSpace Studio та клієнтські збірки: MySQL там безальтернативний, тож робота — це тюнінг і гігієна схеми, а не вибір рушія.
+  - **E-commerce й тікетинг-спадщина** — рання комерційна робота над вітринами та букінг-флоу, де MySQL був стандартом платформи.
+
+  ## Продакшн-досвід
+
+  Роки MySQL у продакшні навчили непоказних речей: індексуй під реальний запит, дивись slow query log до того, як купувати залізо, і тримай міграції оборотними. CMS DigiSpace пережила на MySQL кілька редизайнів — схема пережила два фронтенд-стеки, і саме так має поводитися база даних.
+
+  ## MySQL vs PostgreSQL у моєму стеку
+
+  MySQL — коли платформа диктує: WordPress, shared-хостинг, усталені Laravel-схеми. PostgreSQL — коли я контролюю архітектуру й модель даних виграє від JSONB та строгішої семантики. Обидві в продакшні роками — тож ці компроміси для мене практика, а не теорія.

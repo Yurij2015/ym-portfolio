@@ -90,6 +90,22 @@ export const projectSchema = z.object({
   content: z.string().optional()
 })
 
+export const technologySchema = z.object({
+  title: z.string().nonempty(),
+  description: z.string().nonempty().editor({ input: 'textarea' }),
+  icon: z.string().editor({ input: 'icon' }),
+  category: z.enum(['backend', 'frontend', 'database', 'infrastructure', 'tools']),
+  since: z.string().optional(),
+  projects: z.array(z.string()),
+  links: z.array(createButtonSchema()).optional(),
+  faq: z.array(z.object({
+    label: z.string().nonempty(),
+    content: z.string().nonempty().editor({ input: 'textarea' })
+  })).optional(),
+  updated: z.string().optional(),
+  content: z.string().editor({ input: 'textarea' })
+})
+
 export const pagesSchema = z.object({
   seo: createBaseSchema().optional(),
   links: z.array(createButtonSchema())

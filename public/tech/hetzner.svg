@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480">
+  <defs>
+    <radialGradient id="a" cx="85%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#D50C2D" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D50C2D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="10%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="480" fill="#0a0a0a"/>
+  <rect width="1200" height="480" fill="url(#g)"/>
+  <rect width="1200" height="480" fill="url(#a)"/>
+  <rect width="1200" height="480" fill="url(#b)"/>
+  <rect width="6" height="480" fill="#D50C2D"/>
+  <g transform="translate(980 240) rotate(-8)">
+    <svg x="-170" y="-170" width="340" height="340" viewBox="0 0 468 468">
+  <rect width="468" height="468" rx="48" fill="#D50C2D"/>
+  <g transform="translate(114 114) scale(10)"><path fill="#FFFFFF" d="M0 0v24h24V0zm4.602 4.025h2.244c.509 0 .716.215.716.717v5.64h8.883v-5.64c0-.509.215-.717.717-.717h2.229c.5 0 .71.23.724.717v14.516c0 .509-.215.717-.717.717h-2.23c-.51 0-.717-.215-.717-.717v-5.735H7.562v5.735c0 .516-.215.717-.716.717H4.602c-.51 0-.717-.208-.717-.717V4.742c0-.509.207-.717.717-.717"/></g>
+</svg>
+  </g>
+  <g transform="translate(80 90)" opacity="0.12">
+    <svg width="120" height="120" viewBox="0 0 468 468">
+  <rect width="468" height="468" rx="48" fill="#D50C2D"/>
+  <g transform="translate(114 114) scale(10)"><path fill="#FFFFFF" d="M0 0v24h24V0zm4.602 4.025h2.244c.509 0 .716.215.716.717v5.64h8.883v-5.64c0-.509.215-.717.717-.717h2.229c.5 0 .71.23.724.717v14.516c0 .509-.215.717-.717.717h-2.23c-.51 0-.717-.215-.717-.717v-5.735H7.562v5.735c0 .516-.215.717-.716.717H4.602c-.51 0-.717-.208-.717-.717V4.742c0-.509.207-.717.717-.717"/></g>
+</svg>
+  </g>
+</svg>

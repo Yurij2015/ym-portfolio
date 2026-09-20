@@ -1,0 +1,34 @@
+title: Symfony
+description: "Symfony developer on a high-load ticketing platform for Formula 1, MotoGP, EICMA and EuroLeague — checkout, payments, seat maps, admin."
+icon: i-simple-icons-symfony
+category: backend
+since: "2019"
+updated: "2026-09-20"
+projects: []
+links:
+  - label: symfony.com
+    to: https://symfony.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Symfony is the framework behind my main commercial work — a high-load ticketing platform that sells seats for Formula 1, MotoGP, EICMA and EuroLeague events. Enterprise-scale, long-lived, unforgiving of sloppy code.
+
+  ## How I use Symfony
+
+  - **Checkout and payments** — the purchase flow: cart, seat selection, Stripe/Dalenys payment providers, order confirmation and delivery.
+  - **User accounts** — registration, profiles, order history for thousands of event-goers.
+  - **Admin dashboards** — internal tooling for event, inventory and order management.
+  - **Integrations** — 3D seat-map solutions and third-party APIs wired into the purchase path.
+
+  ## Production experience
+
+  Ticketing is a workload where the spike is the point: thousands of concurrent buyers the moment sales open, and every request hits inventory that must not oversell. Working on this platform taught me the discipline that transfers to everything else — defensive payment handling, careful caching, readable code that the next developer can safely modify under pressure.
+
+  ## Symfony vs Laravel in my work
+
+  Symfony fits platforms that live for years with strict conventions and explicit architecture — the ticketing platform is exactly that. Laravel fits product iteration speed. I run both in production and pick per project lifecycle, not per preference.
+faq:
+  - label: What scale of Symfony projects have you worked on?
+    content: A production ticketing platform serving Formula 1, MotoGP, EICMA and EuroLeague events — checkout, payments and admin under real traffic spikes.
+  - label: Can you take over an existing Symfony codebase?
+    content: Yes — that is the bulk of my experience. I start with an audit, stabilize with tests where it matters, then extend features without breaking the release cycle.

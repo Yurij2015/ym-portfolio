@@ -1,0 +1,30 @@
+title: PostgreSQL
+description: "PostgreSQL in production: multi-tenant SaaS schemas, per-tenant databases and the queries that keep monitoring data fast."
+icon: i-simple-icons-postgresql
+category: database
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - digipulse
+links:
+  - label: postgresql.org
+    to: https://www.postgresql.org
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  PostgreSQL is my default relational database for SaaS work — the engine behind multi-tenant schemas, monitoring time series and anything where data integrity outranks convenience.
+
+  ## How I use PostgreSQL
+
+  - **Multi-tenant data** — DigiPulse stores monitors, check results and incidents in Postgres; VetSpace's tenant databases run on the same engine, one schema-isolated database per clinic.
+  - **Time-series-ish workloads** — uptime check results are append-heavy: indexed by monitor and timestamp, aggregated for uptime reports without a dedicated TSDB.
+  - **Transactional integrity** — booking and billing flows where a partial write is worse than a failed one.
+  - **JSONB where it fits** — flexible payload columns for webhook data and provider responses, queried without leaving the relational model.
+
+  ## Production experience
+
+  Postgres earns its keep on the boring guarantees: constraints that hold, indexes that behave predictably, and an EXPLAIN that actually explains. For the tenant-per-database pattern it's the practical choice — per-clinic isolation, straightforward GDPR export/delete, and no exotic tooling between me and the data.
+
+  ## PostgreSQL vs MySQL in my stack
+
+  Postgres when the product is mine and the data model is non-trivial — JSONB, CTEs and stricter typing pay off. MySQL when the ecosystem already speaks it (WordPress, some Laravel heritage). Both run in my infrastructure; the choice follows the project, not the preference.

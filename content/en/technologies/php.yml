@@ -1,0 +1,40 @@
+title: PHP
+description: "Senior PHP developer, 8+ years commercial: Laravel and Symfony backends, high-load ticketing, SaaS products and APIs in production."
+icon: i-simple-icons-php
+category: backend
+since: "2017"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - digipulse
+  - digispace
+  - netpostpanel
+  - vetcard
+  - digispace-studio
+links:
+  - label: php.net
+    to: https://www.php.net
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  PHP is my core server-side language — 8+ years of commercial development on modern PHP 8.x, mostly through Laravel and Symfony, plus WordPress where a project calls for it.
+
+  ## How I use PHP
+
+  - **Framework backends** — Laravel for my own SaaS products, Symfony for the high-load ticketing platform I work on commercially.
+  - **APIs** — REST and GraphQL endpoints, webhook handlers, payment integrations (Stripe, Revolut, Dalenys).
+  - **Modern runtime options** — classic PHP-FPM behind Caddy, and Octane/FrankenPHP where persistent workers pay off.
+  - **Quality tooling** — PHPStan static analysis, PHPUnit/Pest tests, Pint formatting — all enforced in CI on every push.
+
+  ## Production experience
+
+  PHP powers the ticketing checkout that sells seats for Formula 1, MotoGP, EICMA and EuroLeague events — the kind of traffic where a slow query on race-day morning is a real incident, not a metric. The same language runs all of my own products: VetSpace, DigiPulse, NetPostPanel, the DigiSpace CMS and client WordPress builds like DigiSpace Studio.
+
+  ## Why PHP still wins for product work
+
+  The modern stack — typed language, mature frameworks, Composer ecosystem, opcache and persistent runtimes — removes the old objections. For a business that needs a maintainable product shipped fast, PHP remains the most pragmatic choice I know.
+faq:
+  - label: Which PHP versions do you work with?
+    content: PHP 8.x in production everywhere — typed properties, enums, readonly, attributes. Legacy upgrades from older versions are part of my maintenance work.
+  - label: Laravel or Symfony — which do you prefer?
+    content: Laravel for product speed and ecosystem, Symfony for long-lived enterprise platforms. I run both in production and choose per project, not per habit.

@@ -1,0 +1,31 @@
+title: TypeScript
+description: "TypeScript w produkcyjnych frontendach: typowane aplikacje Vue/Nuxt, ścisłe konfiguracje i typowane kontrakty API w moich SaaS."
+icon: i-simple-icons-typescript
+category: frontend
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - vetcard
+  - vetspace
+links:
+  - label: typescriptlang.org
+    to: https://www.typescriptlang.org
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  TypeScript to domyślny wybór dla każdego frontendu, który buduję — kontrola łapiąca dryf API i niezgodności propów w czasie kompilacji zamiast w przeglądarce klienta.
+
+  ## Jak używam TypeScript
+
+  - **Typowane aplikacje Nuxt** — VetCard i to portfolio to ścisły TypeScript: typowane odpowiedzi API, sygnatury composables i schematy treści.
+  - **Bezpieczeństwo kontraktów** — typy klinik, wizyt i rezerwacji współdzielone po całej bazie kodu VetCard utrzymują powierzchnię API multi-tenant uczciwą.
+  - **Treść walidowana schematami** — ta strona waliduje każdy plik YAML treści przez Zod: brakujące pole psuje build, nie stronę.
+  - **Tooling** — `vue-tsc` w CI obok lintu i testów jednostkowych; czerwony typecheck blokuje deploy tak samo jak padnięty test.
+
+  ## Doświadczenie produkcyjne
+
+  Wartość pokazuje się przy utrzymaniu. Gdy API VetSpace dodało pole, błąd typu wskazał wszystkich konsumentów frontendu w jednym przebiegu — bez grepa i bez niespodzianek runtime'owych. W produkcie utrzymywanym solo ta dyscyplina jest tym, co nie pozwala bazie kodu stać się legacy, którego nikt nie chce dotykać.
+
+  ## Ścisłość, która zwraca koszt
+
+  Trzymam `strict` włączone i opieram się `any` — chodzi nie o czystość, lecz o to, że rok później kompilator wciąż pamięta kontrakt, który ja zapomniałem. Typowane granice między API, stanem i szablonem to różnica między refaktoryzacją a przepisaniem.

@@ -1,0 +1,42 @@
+title: Laravel
+description: "Laravel developer with 8+ years in production: multi-tenant SaaS, Filament admin panels, Stripe billing and REST/GraphQL APIs. Real projects inside."
+icon: i-simple-icons-laravel
+category: backend
+since: "2018"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - digipulse
+  - digispace
+  - netpostpanel
+  - vetcard
+links:
+  - label: laravel.com
+    to: https://laravel.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Laravel is my primary backend framework. I build and maintain production SaaS products, admin panels and APIs with it — from the first migration to a monitored deploy on my own servers.
+
+  ## How I use Laravel
+
+  - **Multi-tenant SaaS APIs** — VetSpace runs a database-per-tenant Laravel API that serves both the public clinic catalog and the subscription CRM from one codebase.
+  - **Admin panels with Filament** — back offices for DigiPulse and DigiSpace: resources, filters, dashboards and content management without a custom admin build.
+  - **Billing** — Stripe subscriptions through Laravel Cashier: trials, plan changes, dunning, webhooks.
+  - **Queues and jobs** — Horizon-managed workers for AI content pipelines and monitoring checks.
+  - **API design** — REST for CRM surfaces, GraphQL for complex catalog queries, versioned and documented.
+
+  ## Production experience
+
+  Laravel carries every SaaS product I run: VetSpace (veterinary platform), DigiPulse (uptime monitoring), NetPostPanel (AI content operations) and the DigiSpace company site with its custom CMS. The pattern that repeats across all of them: keep the domain logic in services, isolate tenants at the database level, and let Octane/FrankenPHP handle the performance headroom when traffic grows.
+
+  ## When Laravel is the right choice
+
+  Products that need an admin panel, billing, queues and a real API benefit most — Laravel ships all of it without assembling ten packages. For a thin stateless service or a heavy worker I sometimes pick Go instead; for everything product-shaped, Laravel is the default.
+faq:
+  - label: Do you build Laravel apps from scratch or take over existing ones?
+    content: Both. Most of my commercial work is evolving existing production codebases — audits, refactoring, new features without stopping releases. Greenfield builds follow the same discipline from day one.
+  - label: Which Laravel ecosystem tools do you use?
+    content: Filament for admin panels, Cashier for Stripe billing, Horizon for queues, Octane with FrankenPHP where performance matters, plus Pest/PHPUnit and PHPStan in CI.
+  - label: Can you host and deploy Laravel apps yourself?
+    content: Yes — my SaaS projects run on my own Hetzner server with Proxmox VMs, Docker, Caddy and GitHub Actions pipelines. I cover the full path from commit to production.

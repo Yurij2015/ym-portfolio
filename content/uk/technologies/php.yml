@@ -1,0 +1,40 @@
+title: PHP
+description: "Senior PHP-розробник, 8+ років комерційного досвіду: Laravel- і Symfony-бекенди, high-load тікетинг, SaaS-продукти й API у продакшні."
+icon: i-simple-icons-php
+category: backend
+since: "2017"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - digipulse
+  - digispace
+  - netpostpanel
+  - vetcard
+  - digispace-studio
+links:
+  - label: php.net
+    to: https://www.php.net
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  PHP — моя основна серверна мова: 8+ років комерційної розробки на сучасному PHP 8.x, переважно через Laravel і Symfony, плюс WordPress там, де проєкт цього потребує.
+
+  ## Як я використовую PHP
+
+  - **Фреймворк-бекенди** — Laravel для власних SaaS-продуктів, Symfony для високонавантаженої тікетинг-платформи, над якою працюю комерційно.
+  - **API** — REST- і GraphQL-ендпоінти, обробники вебхуків, інтеграції платіжних систем (Stripe, Revolut, Dalenys).
+  - **Сучасні рантайми** — класичний PHP-FPM за Caddy та Octane/FrankenPHP там, де persistent-воркери окупаються.
+  - **Інструменти якості** — статаналіз PHPStan, тести PHPUnit/Pest, форматування Pint — усе примусово в CI на кожен пуш.
+
+  ## Продакшн-досвід
+
+  PHP стоїть за тікетинг-чекаутом, який продає місця на Formula 1, MotoGP, EICMA та EuroLeague — трафік, де повільний запит у ранок гонки є реальним інцидентом, а не метрикою. Та сама мова керує всіма моїми продуктами: VetSpace, DigiPulse, NetPostPanel, CMS DigiSpace й клієнтськими WordPress-збірками на кшталт DigiSpace Studio.
+
+  ## Чому PHP досі виграє в продуктовій розробці
+
+  Сучасний стек — типізована мова, зрілі фреймворки, екосистема Composer, opcache і persistent-рантайми — знімає старі заперечення. Для бізнесу, якому треба швидко відправити в світ підтримуваний продукт, PHP лишається найпрагматичнішим вибором із відомих мені.
+faq:
+  - label: З якими версіями PHP ви працюєте?
+    content: PHP 8.x у продакшні всюди — типізовані властивості, enum, readonly, атрибути. Апгрейди зі старих версій — частина моєї роботи з підтримки.
+  - label: Laravel чи Symfony — що обираєте?
+    content: Laravel для швидкості продуктової розробки й екосистеми, Symfony для довгоживучих enterprise-платформ. Обидва в моєму продакшні — вибір за життєвим циклом проєкту, не за звичкою.

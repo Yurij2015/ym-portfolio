@@ -1,0 +1,31 @@
+title: Redis
+description: "Redis for queues, caching and real-time state — Horizon workers, event-driven pipelines and hot-path caching in production."
+icon: i-simple-icons-redis
+category: database
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - netpostpanel
+links:
+  - label: redis.io
+    to: https://redis.io
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Redis is the glue in my Laravel stack — queues, caches and ephemeral state that shouldn't touch the primary database. Every product with background work runs through it.
+
+  ## How I use Redis
+
+  - **Queues with Horizon** — NetPostPanel's AI content pipeline (fetch → generate → index) and DigiPulse's notification dispatches run as Horizon-managed jobs on Redis.
+  - **Application caching** — config, computed aggregates and rate-limit counters on the hot path; the database sees the write-heavy truth, Redis serves the reads.
+  - **Locks and coordination** — atomic locks keep scheduled monitoring checks from double-firing across workers.
+  - **Event plumbing** — pub/sub and broadcast backing where the frontend needs live updates.
+
+  ## Production experience
+
+  Redis is the piece that turns "request → response" apps into systems that actually do work: queued AI generation, scheduled checks, deduplicated notifications. The operational habit that matters most: treat Redis as disposable state — anything in it must be rebuildable from the primary store, because one day the node will restart and you'll be glad it was.
+
+  ## Where Redis fits vs alternatives
+
+  For Laravel workloads it's still the pragmatic default — Horizon, cache and broadcasting all speak it natively. I reach for database queues only on the smallest deployments; once a product has real background work, Redis is already there doing three jobs at once.

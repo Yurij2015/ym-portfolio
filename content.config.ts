@@ -1,5 +1,5 @@
 import { defineCollection, defineContentConfig } from '@nuxt/content'
-import { aboutSchema, indexSchema, pagesSchema, projectSchema } from './content.schemas'
+import { aboutSchema, indexSchema, pagesSchema, projectSchema, technologySchema } from './content.schemas'
 
 const locales = ['uk', 'en', 'pl'] as const
 
@@ -24,6 +24,11 @@ const localizedCollections = Object.fromEntries(
       type: 'page',
       source: `${locale}/about.yml`,
       schema: aboutSchema
+    })],
+    [`technologies_${locale}`, defineCollection({
+      type: 'data',
+      source: `${locale}/technologies/*.yml`,
+      schema: technologySchema
     })]
   ])
 )

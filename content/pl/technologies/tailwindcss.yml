@@ -1,0 +1,32 @@
+title: Tailwind CSS
+description: "Interfejsy Tailwind CSS w produkcji: panele SaaS, katalogi SSR i to portfolio — stylowanie utility-first, które zostaje utrzymywalne."
+icon: i-simple-icons-tailwindcss
+category: frontend
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - digispace
+  - vetcard
+  - vetspace
+links:
+  - label: tailwindcss.com
+    to: https://tailwindcss.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Tailwind CSS styliuje każdy interfejs, który wydałem w ostatnich latach — panele admina, katalogi SSR i to portfolio. Klasy utility trzymają style lokalnie przy komponencie, a martwy CSS blisko zera.
+
+  ## Jak używam Tailwind
+
+  - **Interfejsy SaaS** — panel VetSpace i portal VetCard: responsywne layouty, komponenty z dark mode i motywy per klinika sterowane jednym tokenem koloru.
+  - **To portfolio** — Tailwind v4 przez plugin Vite na Nuxt UI: bez pliku konfiguracyjnego, motyw w CSS, komponenty zostają komponowalne.
+  - **Motywy panelu admina** — admin Inertia DigiSpace używa Tailwind dla UI back-office'u obok publicznego motywu Blade.
+  - **Branding tenantów** — VetCard tematyzuje stronę każdej kliniki z jednego pola `color` — zmienne CSS plus utility wygrywają z osobnym arkuszem stylów na tenanta.
+
+  ## Doświadczenie produkcyjne
+
+  Praktyczna wygrana to utrzymanie: styl żyje w szablonie obok znaczników, które dotyczy, więc zmiana karty nie może po cichu zepsuć strony trzy route'y dalej. W parze z Nuxt UI jako bazą prymitywów Tailwind pokrywa wszystko — od strony marketingowej po flow rezerwacji — bez przełączania kontekstu.
+
+  ## Utility-first bez bałaganu
+
+  Reguła, która utrzymuje Tailwind w zdrowiu: wydziel komponent, gdy ten sam ciąg utility pojawił się trzeci raz — nie wcześniej. Framework jest najlepszy, gdy duplikacja, którą usuwa, jest realna, a nie przewidywana.

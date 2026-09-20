@@ -1,0 +1,33 @@
+title: GitHub Actions
+description: "CI/CD GitHub Actions przy każdym pushu: lint, typecheck, testy, build i pipeline'y deploya dla moich SaaS-ów i tej strony."
+icon: i-simple-icons-githubactions
+category: infrastructure
+since: "2020"
+updated: "2026-09-20"
+projects:
+  - digispace
+  - vetspace
+  - digipulse
+  - netpostpanel
+  - vetcard
+links:
+  - label: github.com/features/actions
+    to: https://github.com/features/actions
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  GitHub Actions to pipeline za każdym moim pushem — lint, typecheck, testy jednostkowe, build i deploy zautomatyzowane tak, że wysyłka zmian to operacja gitowa, a nie checklista.
+
+  ## Jak używam GitHub Actions
+
+  - **Pełne bramy CI** — to portfolio przepycha ESLint, vue-tsc, Vitest i 15 speców Playwright przy każdym pushu; czerwony check blokuje merge.
+  - **Pipeline'y deploya** — platforma DigiSpace wdraża się po SSH z pusha: build na CI, suita PHPUnit jako brama, wydania przez symlink z healthcheckami i retencją pięciu wydań dla rollbacku.
+  - **Zadania treści i obrazów** — workflowy scheduled i on-push utrzymują wygenerowane artefakty i aktualizacje zależności w ruchu bez ręcznych uruchomień.
+
+  ## Doświadczenie produkcyjne
+
+  Dyscyplina, która ma znaczenie: testy biegną w pipeline, nie na czyimś laptopie, gdzie można je pominąć. Gdy zahardkodowana liczba projektów zepsuła moją suitę E2E po dodaniu dwóch nowych, CI złapało to, co lokalne przebiegi przegapiły — pipeline odpłacił się w najbardziej dosłowny sposób.
+
+  ## CI, które zwraca swoje minuty
+
+  Szybki feedback ponad wyczerpującą ceremonię: najpierw lint i typecheck (sekundy), potem testy jednostkowe, E2E na końcu. Szybkie padanie utrzymuje pipeline uczciwym — suita dwudziestominutowa jest ignorowana; ta, która pada w dwie minuty, jest naprawiana.

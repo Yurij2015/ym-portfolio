@@ -1,0 +1,29 @@
+title: Terraform
+description: "Infrastruktura jako kod na Terraform: kontenery na własnych VM przez providera Docker, workspace'y rozdzielone per środowisko."
+icon: i-simple-icons-terraform
+category: infrastructure
+since: "2024"
+updated: "2026-09-20"
+projects:
+  - digipulse
+links:
+  - label: terraform.io
+    to: https://developer.hashicorp.com/terraform
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Terraform zarządza tymi częściami mojej infrastruktury, które kiedyś mieszkały w czyjejś pamięci — kontenery, sieci i konfiguracja wdrożeń zadeklarowane w kodzie, aplikowane z workspace'a per środowisko.
+
+  ## Jak używam Terraforma
+
+  - **Kontenery na VM** — infrastruktura DigiPulse provisionuje serwisy Docker na VM Proxmox przez providera Docker po SSH: bez uzależnienia od chmury, po prostu deklaratywne kontenery na własnym sprzęcie.
+  - **Separacja środowisk** — workspace'y i per-env tfvars izolują testing i production; ten sam plan kształtuje oba, różnią się tylko zmienne.
+  - **Dyscyplina stanu** — plany przeglądane przed apply, sekrety poza plikami var i poza gitem.
+
+  ## Doświadczenie produkcyjne
+
+  Konkretna wygrana: dodanie serwisu do DigiPulse stało się `terraform apply` zamiast „wejdź po SSH i miej nadzieję". Środowiska przestały dryfować, bo kod jest środowiskiem. Dla infrastruktury jednoosobowej to różnica między „pamiętam, jak to połączone" a „repo mówi, jak to połączone".
+
+  ## Jak daleko sięga IaC w solowym setupie
+
+  Terraform pokrywa provisioning i układ serwisów; deploye aplikacji idą przez CI/CD. Granica jest celowa — zmiany infrastruktury są rzadkie i przeglądane, deploye częste i zautomatyzowane. Mieszanie ich psuje jedno i drugie.

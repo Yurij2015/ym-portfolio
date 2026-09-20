@@ -58,6 +58,23 @@
     "cloudflare": "CDN, Turnstile and edge protection",
     "stripe": "Subscriptions and payments via Cashier"
   },
+  "technologies": {
+    "title": "Technologies I work with",
+    "description": "The tools behind my production work — from PHP backends to self-hosted infrastructure. Each page covers what the technology is, how I use it, and the projects that run on it.",
+    "back": "All technologies",
+    "since": "Since {year}",
+    "usedIn": "Projects built on {tech}",
+    "usedWith": "Projects using {tech}",
+    "faq": "Common questions",
+    "ctaTitle": "Need a {tech} project?",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Databases",
+      "infrastructure": "Infrastructure",
+      "tools": "Tools"
+    }
+  },
   "footer": {
     "rights": "All rights reserved"
   }

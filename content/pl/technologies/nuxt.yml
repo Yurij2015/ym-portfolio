@@ -1,0 +1,32 @@
+title: Nuxt
+description: "Programista Nuxt SSR: katalogi SEO-first, strony marketingowe SaaS i to portfolio — i18n, obrazy OG, sitemap i deploye na Vercel."
+icon: i-simple-icons-nuxtdotjs
+category: frontend
+since: "2022"
+updated: "2026-09-20"
+projects:
+  - vetcard
+  - vetspace
+links:
+  - label: nuxt.com
+    to: https://nuxt.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Nuxt to mój sposób budowania aplikacji Vue, które muszą rankować w wyszukiwarkach — renderowanie serwerowe, routing per-locale, strukturalna treść i gotowy do deploya output w jednym frameworku. To portfolio to aplikacja Nuxt 4; tak samo publiczny katalog VetCard.
+
+  ## Jak używam Nuxt
+
+  - **Publiczne strony SEO-first** — katalog klinik VetCard renderuje się serwerowo z lokalizowanymi URL-ami, sitemap, hreflang i JSON-LD — to strony, które pozyskują klientów.
+  - **Renderowanie multi-tenant** — jeden deploy VetCard obsługuje wiele klinik: routing po slugu i motywy per tenant.
+  - **Strony sterowane treścią** — to portfolio działa na Nuxt Content z walidowanymi Zod plikami YAML per locale i obrazami OG generowanymi w runtime.
+  - **Renderowanie hybrydowe** — SSR dla stron indeksowanych, `ssr: false` dla czysto klienckich flow jak kalendarz rezerwacji — per route, nie per aplikacja.
+
+  ## Doświadczenie produkcyjne
+
+  Nuxt opłaca się tam, gdzie liczy się ruch organiczny. VetCard istnieje, by być znajdowanym w wyszukiwarkach — każda strona kliniki jest renderowana serwerowo, zlokalizowana i oznaczona, podczas gdy flow rezerwacji zostaje klienckie, by uniknąć problemów hydratacji. Ta sama dyscyplina na tej stronie: sitemap generowany z treści, canonical/hreflang na każdej trasie, cache ISR na Vercel. Gdy strona ma i rankować, i zachowywać się jak aplikacja — Nuxt to najkrótsza znana mi droga.
+faq:
+  - label: Dlaczego Nuxt zamiast zwykłego SPA Vue?
+    content: SEO i pierwszy render. SPA nie potrafi wiarygodnie rankować katalogu czy strony treściowej; Nuxt daje SSR, reguły renderowania per route i kontrolę metadanych — a model SPA zostaje tam, gdzie indeksacja nie gra roli.
+  - label: Której wersji Nuxt używasz?
+    content: Nuxt 4 w produkcji — to portfolio i VetCard działają na nim, z Nuxt Content, Nuxt Image, i18n i generowaniem obrazów OG w runtime.

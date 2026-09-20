@@ -1,0 +1,36 @@
+title: Docker
+description: "Docker from dev to production: containerized Laravel/Node stacks, compose environments and images deployed on my own Proxmox VMs."
+icon: i-simple-icons-docker
+category: infrastructure
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - vetspace
+  - netpostpanel
+  - digispace
+links:
+  - label: docker.com
+    to: https://www.docker.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Docker is how everything I run gets packaged — the same image on a developer laptop, in CI and on the production VM. Every project ships with a compose file that makes "works on my machine" a non-conversation.
+
+  ## How I use Docker
+
+  - **Production services** — my SaaS products run as containers on Proxmox VMs: app, worker, scheduler and database services defined in compose, pulled and restarted by CI.
+  - **Local parity** — dev environments mirror production services, so a bug reproduces locally instead of only under real traffic.
+  - **Multi-stage builds** — slim runtime images: dependencies and build tools stay in the builder stage, production images carry only what serves requests.
+  - **CI pipelines** — builds and tests run inside containers on GitHub Actions, so the CI environment is the repo, not a snowflake runner.
+
+  ## Production experience
+
+  The operational payoff showed up when I moved hosting from a DigitalOcean droplet fleet to one Hetzner server: services that were already containers moved as images and compose files — the migration was an afternoon, not a re-architecture. That portability is the whole argument for Docker on solo-run infrastructure.
+
+  ## Docker without the ceremony
+
+  One compose file per environment, images built in CI, healthchecks that gate restarts. No orchestrator for a handful of VMs — the complexity budget goes to the product, not to running Kubernetes because it's fashionable.
+faq:
+  - label: Docker Compose or Kubernetes?
+    content: Compose on VMs for my own products — a handful of services doesn't justify a control plane. I'd reach for Kubernetes when the workload actually needs scheduling across nodes.

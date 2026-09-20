@@ -1,0 +1,38 @@
+title: Vue.js
+description: "Vue.js frontends in production: SaaS dashboards, Inertia admin panels and Nuxt SSR sites. Real projects and code overview inside."
+icon: i-simple-icons-vuedotjs
+category: frontend
+since: "2019"
+updated: "2026-09-20"
+projects:
+  - vetspace
+  - vetcard
+  - digipulse
+  - digispace
+links:
+  - label: vuejs.org
+    to: https://vuejs.org
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Vue.js is my frontend framework of choice — from interactive SaaS dashboards to SSR marketing sites. Most of what I ship on the web has Vue in it, either directly or through Nuxt.
+
+  ## How I use Vue
+
+  - **SaaS frontends** — the VetSpace clinic panel: authenticated multi-tenant UI with Pinia state, TypeScript and Tailwind.
+  - **SSR sites via Nuxt** — VetCard's public catalog and this portfolio render server-side for SEO, then hydrate into the same Vue app.
+  - **Inertia apps** — the DigiSpace admin panel pairs a Laravel backend with Vue pages, no separate API layer.
+  - **Interactive widgets** — booking flows, calendars and dynamic forms inside otherwise server-rendered pages.
+
+  ## Production experience
+
+  Vue's sweet spot in my work is the boundary between "site" and "app": the clinic catalog needs to rank in Google (SSR, fast first paint), while the booking flow on the same page needs client-side interactivity. Vue handles both without forcing a split into separate projects. Composition API + TypeScript keeps the codebases readable as they grow — VetSpace's panel is several years of features deep and still navigable.
+
+  ## Vue vs React in my work
+
+  A pragmatic pick: Vue's template syntax stays closer to HTML for mixed server-rendered sites, Nuxt is a mature SSR story, and the single-file component keeps template, logic and style in one reviewable unit. For PHP-backed products it integrates cleanly — no heavy separate frontend pipeline unless the project needs one.
+faq:
+  - label: Do you use Vue with Nuxt or standalone?
+    content: Both. Nuxt when the page must be indexed (catalogs, marketing sites), standalone Vue or Inertia for authenticated panels where SEO doesn't apply.
+  - label: Vue 2 to Vue 3 migrations?
+    content: Yes — I've migrated production frontends to Vue 3 + Composition API incrementally, route by route, without a big-bang rewrite.

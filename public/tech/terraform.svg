@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480">
+  <defs>
+    <radialGradient id="a" cx="85%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#844FBA" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#844FBA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="10%" cy="100%" r="70%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="480" fill="#0a0a0a"/>
+  <rect width="1200" height="480" fill="url(#g)"/>
+  <rect width="1200" height="480" fill="url(#a)"/>
+  <rect width="1200" height="480" fill="url(#b)"/>
+  <rect width="6" height="480" fill="#844FBA"/>
+  <g transform="translate(980 240) rotate(-8)">
+    <svg x="-170" y="-170" width="340" height="340" viewBox="0 0 468 468">
+  <rect width="468" height="468" rx="48" fill="#844FBA"/>
+  <g fill="#FFFFFF" transform="translate(114 114) scale(10)"><path fill="#FFFFFF" d="M1.44 0v7.575l6.561 3.79V3.787zm21.12 4.227l-6.561 3.791v7.574l6.56-3.787zM8.72 4.23v7.575l6.561 3.787V8.018zm0 8.405v7.575L15.28 24v-7.578z"/></g>
+</svg>
+  </g>
+  <g transform="translate(80 90)" opacity="0.12">
+    <svg width="120" height="120" viewBox="0 0 468 468">
+  <rect width="468" height="468" rx="48" fill="#844FBA"/>
+  <g fill="#FFFFFF" transform="translate(114 114) scale(10)"><path fill="#FFFFFF" d="M1.44 0v7.575l6.561 3.79V3.787zm21.12 4.227l-6.561 3.791v7.574l6.56-3.787zM8.72 4.23v7.575l6.561 3.787V8.018zm0 8.405v7.575L15.28 24v-7.578z"/></g>
+</svg>
+  </g>
+</svg>

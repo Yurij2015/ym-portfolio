@@ -1,0 +1,31 @@
+title: Hetzner
+description: "Dedykowany serwer Hetzner hostuje moje produkty SaaS — VM Proxmox na własnym sprzęcie, który zastąpił flotę chmurowych dropletów."
+icon: i-simple-icons-hetzner
+category: infrastructure
+since: "2023"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - vetspace
+  - netpostpanel
+links:
+  - label: hetzner.com
+    to: https://www.hetzner.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Dedykowany sprzęt Hetzner to miejsce, gdzie mieszkają moje produkty SaaS — fizyczny serwer z Proxmoxem, który zastąpił rosnącą flotę chmurowych dropletów, gdy matematyka przestała się spinać.
+
+  ## Jak używam Hetzner
+
+  - **Serwer dedykowany** — jedna fizyczna maszyna hostuje VM-y, na których działają DigiPulse, VetSpace, NetPostPanel i usługi wspierające.
+  - **Własna warstwa wirtualizacji** — Proxmox na bare metal: VM-y i kontenery wycięte per obciążenie, ze snapshotami i backupami pod moją kontrolą.
+  - **Przewidywalna ekonomia** — stały miesięczny koszt za prawdziwe rdzenie i RAM zamiast cen chmurowych per VM; oszczędności finansują zapas redundancji.
+
+  ## Doświadczenie produkcyjne
+
+  Posiadanie sprzętu oznacza też posiadanie incydentów — dla umierającego dysku czy krzywo ustawionego firewalla nie ma ticketa supportowego, jest konsola i odpowiedzialność naprawienia. Dokładnie taka wymiana mi odpowiadała: pełna kontrola nad stackiem od hypervisora po aplikację w cenie, która czyni bootstrap-SaaS zrównoważonym. Cała moja produkcja odpowiada tej maszynie.
+
+  ## Dedykowany vs chmura w moim stacku
+
+  Stałe, zawsze włączone obciążenia należą do posiadanego sprzętu; spikowe lub jednorazowe — do chmury. Moje produkty to pierwszy przypadek: przewidywalne obciążenie, znani sąsiedzi (ja) i zero niespodzianek w rachunku, gdy ruch rośnie.

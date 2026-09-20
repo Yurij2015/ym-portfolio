@@ -1,0 +1,30 @@
+title: Go
+description: "Go microservices next to PHP monoliths: monitoring workers and AI visit analysis — small, fast services where PHP would be the wrong fit."
+icon: i-simple-icons-go
+category: backend
+since: "2024"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - vetspace
+links:
+  - label: go.dev
+    to: https://go.dev
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Go is my second backend language — for the small, always-on services where a PHP request lifecycle is the wrong tool. Lightweight workers, not another monolith.
+
+  ## How I use Go
+
+  - **Monitoring workers** — DigiPulse's uptime checks run as Go services: thousands of concurrent HTTP probes with a fraction of the memory a PHP equivalent would need.
+  - **AI microservice** — VetSpace delegates visit analysis to a dedicated Go service, keeping the main Laravel API responsive while inference runs.
+  - **Single-binary deployment** — a compiled artifact drops into a Docker image with no runtime dependencies; the simplest deploys in my infrastructure.
+
+  ## Production experience
+
+  The pattern that works: keep the domain and billing in Laravel, push the concurrent or latency-sensitive edges out to Go. Monitoring is the textbook case — a worker that must fire thousands of checks on schedule, tolerate partial network failures and report fast. Go's goroutines and small memory footprint make that boring, which is exactly what infrastructure should be.
+
+  ## Go vs PHP in my stack
+
+  Complementary, not competing. PHP/Laravel owns the product; Go owns the jobs where concurrency per megabyte matters. If a service can be a cron-friendly Laravel command, it stays in Laravel — Go earns its place when the workload outgrows that shape.

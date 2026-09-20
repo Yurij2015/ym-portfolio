@@ -3,15 +3,30 @@ import type { IndexPageItem } from '~/utils/content-types'
 
 const { footer, global } = useAppConfig()
 const { t, te } = useI18n()
+const localePath = useLocalePath()
 
 defineProps<{
   page: IndexPageItem
 }>()
 
+const techSlug = (src: string) => techSlugFromImage(src)
+
 const techTip = (img: { src: string, alt: string }) => {
-  const slug = img.src.replace(/^.*tech-/, '').replace(/\.[a-z]+$/, '')
+  const slug = techSlug(img.src)
   const key = `tech.${slug}`
   return te(key) ? t(key) : img.alt
+}
+
+// The carousel is draggable — suppress the click after a real drag so
+// swiping through icons doesn't navigate away.
+let dragOrigin: { x: number, y: number } | null = null
+const onTechPointerDown = (e: PointerEvent) => {
+  dragOrigin = { x: e.clientX, y: e.clientY }
+}
+const onTechClick = (e: MouseEvent) => {
+  if (dragOrigin && Math.hypot(e.clientX - dragOrigin.x, e.clientY - dragOrigin.y) > 6) {
+    e.preventDefault()
+  }
 }
 </script>
 
@@ -196,13 +211,21 @@ const techTip = (img: { src: string, alt: string }) => {
             :text="techTip(img)"
             :delay-duration="100"
           >
-            <NuxtImg
-              width="132"
-              height="132"
-              draggable="false"
-              class="rounded-lg aspect-square object-cover select-none"
-              v-bind="img"
-            />
+            <NuxtLink
+              :to="localePath(`/technologies/${techSlug(img.src)}`)"
+              :aria-label="techTip(img)"
+              class="block"
+              @pointerdown="onTechPointerDown"
+              @click="onTechClick"
+            >
+              <NuxtImg
+                width="132"
+                height="132"
+                draggable="false"
+                class="rounded-lg aspect-square object-cover select-none"
+                v-bind="img"
+              />
+            </NuxtLink>
           </UTooltip>
         </Motion>
       </template>

@@ -1,0 +1,34 @@
+title: Stripe
+description: "Płatności i subskrypcje Stripe w produkcji: billing Laravel Cashier dla SaaS oraz integracje checkout high-load dla ticketingu."
+icon: i-simple-icons-stripe
+category: tools
+since: "2021"
+updated: "2026-09-20"
+projects:
+  - vetspace
+links:
+  - label: stripe.com
+    to: https://stripe.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Stripe obsługuje pieniądze w moich produktach — subskrypcje przez Laravel Cashier w VetSpace oraz checkout kartowy w platformie ticketingowej, nad którą pracuję komercyjnie, obok operatorów jak Dalenys i Revolut.
+
+  ## Jak używam Stripe
+
+  - **Subskrypcje SaaS** — billing VetSpace przez Cashier: triale, zmiany planów, prorata, dunning i synchronizacja stanu webhookami.
+  - **Flow checkout** — płatności kartą wewnątrz wysokoobciążonego checkoutu ticketingowego: 3DS, potwierdzenie asynchroniczne i ścieżki niepowodzeń, które nie mogą zgubić zamówienia.
+  - **Webhooki jako źródło prawdy** — stan subskrypcji i płatności prowadzony zdarzeniami webhooków, nie tym, co mówi przekierowanie — przekierowania kłamią, webhooki nie.
+
+  ## Doświadczenie produkcyjne
+
+  Kod płatności to miejsce, gdzie „u mnie działa" jest najdroższe. Checkout ticketingowy nauczył dyscypliny: idempotentne handlery, jawne maszyny stanu dla pending/failed/paid i logowanie rekonstruujące dokładnie to, co powiedział operator. Billing VetSpace stoi na tych samych zasadach — cykl życia subskrypcji na prymitywach Cashier zamiast autorskiej logiki dunningu.
+
+  ## Stripe vs alternatywy, które integrowałem
+
+  Stripe wygrywa DX i prymitywami billingowymi; Dalenys i Revolut pojawiają się tam, gdzie dyktuje biznes lub geografia. Kod specyficzny dla operatora w obu przypadkach siedzi za interfejsem — logika checkoutu nie powinna wiedzieć ani przejmować się tym, kto procesuje kartę.
+faq:
+  - label: Czy możesz zintegrować subskrypcje Stripe z istniejącą aplikacją?
+    content: "Tak — zwykle przez Laravel Cashier: produkty/ceny w Stripe, stan subskrypcji synchronizowany webhookami, triale i dunning bez autorskiej maszynerii billingowej."
+  - label: A co z operatorami płatności innymi niż Stripe?
+    content: Integrowałem Dalenys i Revolut w produkcyjnych checkoutach. Kod operatora żyje za abstrakcją, więc zmiana lub dodanie bramki nie dotyka pipeline'u zamówień.

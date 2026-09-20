@@ -1,0 +1,32 @@
+title: Proxmox
+description: "Wirtualizacja Proxmox na własnym serwerze Hetzner — VM i kontenery per obciążenie, snapshoty i izolacja dla hostingu SaaS."
+icon: i-simple-icons-proxmox
+category: infrastructure
+since: "2023"
+updated: "2026-09-20"
+projects:
+  - digipulse
+  - vetspace
+  - netpostpanel
+links:
+  - label: proxmox.com
+    to: https://www.proxmox.com
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Proxmox to warstwa wirtualizacji na moim dedykowanym serwerze — każde obciążenie dostaje własną VM lub kontener: izolowane, snapshotowane i jednorazowe, zamiast jednego monolitycznego hosta dla wszystkich.
+
+  ## Jak używam Proxmoxa
+
+  - **VM per obciążenie** — produkcyjne serwisy SaaS, środowiska stagingowe i narzędzia wewnętrzne mieszkają we własnych VM na maszynie Hetzner.
+  - **Snapshoty jako siatka bezpieczeństwa** — migawki przed aktualizacjami i migracjami zamieniają ryzykowne operacje w odwracalne.
+  - **Granice zasobów** — limity CPU i pamięci per VM nie pozwalają procesowi w jednym produkcie zagłodzić pozostałych.
+  - **Szablony** — obrazy bazowe z Dockerem, agentami i hardeningiem w środku, więc nowe środowisko to kwestia minut.
+
+  ## Doświadczenie produkcyjne
+
+  Proxmox czyni „jeden serwer, wiele produktów" zdrowym. Izolacja na poziomie VM odzwierciedla wzorzec baza-per-tenant w samych aplikacjach — ta sama filozofia na dwóch warstwach. Gdy VM umiera albo aktualizacja idzie źle, lekarstwem jest przywrócenie snapshotu, nie weekendowa przebudowa. Ten margines bezpieczeństwa to powód, dla którego mogę prowadzić produkcyjne SaaS-y solo, bez zespołu pagera.
+
+  ## Dlaczego nie po prostu Docker na hoście
+
+  Kontenery dzielą kernel i promień rażenia. Granice VM dają gwarancje zasobów per obciążenie, niezależne kernele tam, gdzie trzeba, i czystą separację między serwisami różnych produktów — warte niewielkiego narzutu dla spokojnej produkcji.
