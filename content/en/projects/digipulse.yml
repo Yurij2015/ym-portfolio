@@ -1,5 +1,5 @@
 title: DigiPulse
-description: "Uptime monitoring SaaS: event-driven architecture — Laravel (Octane, Reverb) + Filament dispatch checks through Redis to a Go worker (<10 MB RAM); an MCP server exposes monitoring data to AI assistants; Telegram/email alerts"
+description: "Uptime monitoring SaaS: event-driven architecture — Laravel (Octane, Reverb) + Filament dispatch checks through Redis to a lightweight Go worker; an MCP server exposes monitoring data to AI assistants; Telegram/email alerts"
 url: https://digipulse.cloud
 date: "2026-04-17"
 tags:
