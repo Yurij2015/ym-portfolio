@@ -41,7 +41,9 @@ export const indexSchema = z.object({
     images: z.array(createImageSchema())
   }),
   about: createBaseSchema(),
+  // The timeline replaces the section description slot, so it stays optional
   experience: createBaseSchema().extend({
+    description: z.string().optional(),
     items: z.array(z.object({
       date: z.string(),
       position: z.string(),
