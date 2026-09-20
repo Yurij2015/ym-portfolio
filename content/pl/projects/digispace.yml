@@ -40,12 +40,11 @@ content: |
 
   ## Kluczowe funkcje
 
-  - **Publiczna strona agencji** - Publiczna strona agencji
-  - **Panel administracyjny** - Panel administracyjny
-  - **Niestandardowy CMS** - Niestandardowy CMS
-  - **Open source** - Otwarty kod źródłowy
-  - **Gotowe do produkcji** - Kod gotowy do produkcji
-  - **Nowoczesny stos** - Nowoczesny stos technologiczny
+  - **Monolit zrobiony dobrze** - publiczna strona, panel administracyjny i własny CMS w jednej aplikacji Laravel + Inertia, bez osobnego API
+  - **Treść pod kontrolą** - strony, usługi i portfolio edytuje się w CMS — bez deploymentu dla zmiany tekstu
+  - **Bramy jakości** - testy PHPUnit i analiza statyczna PHPStan w CI
+  - **Identyczne środowiska** - Docker zapewnia paritet lokalny i produkcyjny
+  - **Otwarty domyślnie** - dokładnie ten kod, który obsługuje digispace.pro, jest publiczny na GitHub
 
   ## Stos technologiczny
 

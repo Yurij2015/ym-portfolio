@@ -29,29 +29,30 @@ links:
     to: https://vetspace.pro
     color: primary
     icon: i-heroicons-arrow-top-right-on-square
-  - label: GitHub
-    to: https://github.com/Yurij2015
+  - label: Огляд API
+    to: https://github.com/Yurij2015/vetspace-api
+    color: neutral
+    icon: i-simple-icons-github
+  - label: Огляд фронтенду
+    to: https://github.com/Yurij2015/vetspace-frontend
     color: neutral
     icon: i-simple-icons-github
 content: |
   Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів. Публічний каталог клінік, побудований для SEO-first набуття клієнтів, та підписка на основі CRM (призначення, візити, записи пацієнтів) як окремі Vue/Nuxt додатки над одним Laravel API. Архітектура database-per-tenant, підписки Stripe через Cashier, GraphQL + REST, та аналіз візитів з допомогою AI через присвячений Go мікросервіс.
 
-  ## Key Features
+  ## Ключові можливості
 
-  - **SEO clinic catalog** - SEO-каталог клінік
-  - **CRM system** - CRM система для ветеринарів
-  - **Appointment scheduling** - Призначення візитів
-  - **Patient records** - Записи пацієнтів
-  - **Stripe subscriptions** - Підписки через Stripe
-  - **Multi-tenant** - Database-per-tenant архітектура
-  - **AI analysis** - AI аналіз візитів
-  - **Go microservice** - Go мікросервіс для AI
+  - **Двостороння воронка** - SEO-каталог залучає клініки, а CRM за підпискою (візити, картки пацієнтів) їх утримує
+  - **Справжня ізоляція тенантів** - database-per-tenant тримає дані кожної клініки окремо, а GDPR-експорт/видалення — це операція на рівні бази
+  - **Дві грані API** - GraphQL для складних запитів каталогу, REST для CRM — одна кодова база Laravel
+  - **Білінг із коробки** - підписки Stripe через Cashier: тріали, зміна планів, dunning
+  - **AI там, де допомагає** - аналіз візитів виконує окремий Go-мікросервіс, не навантажуючи основний API
 
-  ## Tech Stack
+  ## Стек технологій
 
-  - **Backend**: Laravel (API)
-  - **Frontend**: Vue/Nuxt (окремі додатки)
-  - **Architecture**: Database-per-tenant multi-tenancy
-  - **Payments**: Stripe через Cashier
+  - **Бекенд**: Laravel (API)
+  - **Фронтенд**: Vue/Nuxt (окремі застосунки)
+  - **Архітектура**: Database-per-tenant multi-tenancy
+  - **Платежі**: Stripe через Cashier
   - **API**: GraphQL + REST
-  - **AI**: Go мікросервіс для аналізу візитів
+  - **AI**: Go-мікросервіс для аналізу візитів

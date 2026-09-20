@@ -32,13 +32,11 @@ content: |
 
   ## Key Features
 
-  - **Multi-provider AI** - Multi-provider generation (Gemini/OpenAI)
-  - **Semantic search** - Semantic search on Qdrant
-  - **RSS aggregation** - RSS/news aggregation engine
-  - **Content scraping** - Auto-discovery and content scraping
-  - **LLM observability** - Langfuse tracing
-  - **Job queues** - Horizon for job processing
-  - **Driver abstraction** - Driver abstraction for AI providers
+  - **Provider-agnostic AI** - Gemini and OpenAI sit behind a driver abstraction, so swapping models is config, not refactoring
+  - **Semantic pipeline** - Qdrant vector search deduplicates and clusters incoming stories before they reach generation
+  - **Autonomous aggregation** - RSS auto-discovery plus scraping turns a bare topic into a self-feeding content source
+  - **Observable LLM calls** - every generation is traced in Langfuse: tokens, latency, cost
+  - **Queue-driven** - Laravel Horizon runs generation and scraping jobs with retries and backpressure
 
   ## Tech Stack
 

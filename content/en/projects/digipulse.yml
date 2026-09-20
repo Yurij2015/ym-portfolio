@@ -41,14 +41,12 @@ content: |
 
   ## Key Features
 
-  - **60s uptime checks** - Availability checks every 60 seconds
-  - **SSL expiry tracking** - SSL certificate expiry monitoring
-  - **Telegram notifications** - Alerts via Telegram
-  - **Email alerts** - Email notifications
-  - **Admin panel** - Filament-based admin panel
-  - **MCP server** - MCP server for AI integrations
-  - **Google OAuth** - Google OAuth sign-in
-  - **Cloudflare Turnstile** - Cloudflare Turnstile integration
+  - **Dedicated Go engine** - availability checks run in a separate Go service, so constant 60-second polling never slows down the Laravel app
+  - **Real-time dashboard** - Reverb websockets push status changes to the UI live, no manual refresh
+  - **Octane + Filament** - resident-memory Laravel with a full admin panel for monitors, contacts and alert rules
+  - **MCP server** - monitors and incidents are queryable from AI assistants (Claude, Cursor) via the Model Context Protocol
+  - **Google OAuth + Turnstile** - passwordless sign-in and bot protection on public forms
+  - **Self-hosted** - deployed on a Proxmox homelab I manage end-to-end
 
   ## Tech Stack
 

@@ -29,8 +29,12 @@ links:
     to: https://vetspace.pro
     color: primary
     icon: i-heroicons-arrow-top-right-on-square
-  - label: GitHub
-    to: https://github.com/Yurij2015
+  - label: Przegląd API
+    to: https://github.com/Yurij2015/vetspace-api
+    color: neutral
+    icon: i-simple-icons-github
+  - label: Przegląd frontendu
+    to: https://github.com/Yurij2015/vetspace-frontend
     color: neutral
     icon: i-simple-icons-github
 content: |
@@ -38,14 +42,11 @@ content: |
 
   ## Kluczowe funkcje
 
-  - **Katalog SEO klinik** - Publiczny katalog klinik zoptymalizowany pod SEO
-  - **System CRM** - System CRM dla weterynarzy
-  - **Umawianie wizyt** - Umawianie wizyt
-  - **Rekordy pacjentów** - Zarządzanie rekordami pacjentów
-  - **Subskrypcje Stripe** - Subskrypcje przez Stripe
-  - **Multi-tenant** - Architektura database-per-tenant
-  - **Analiza AI** - Analiza wizyt wspomagana AI
-  - **Mikroserwis Go** - Mikroserwis Go do AI
+  - **Dwustronny lejek** - katalog SEO pozyskuje kliniki, a CRM w subskrypcji (wizyty, rekordy pacjentów) je utrzymuje
+  - **Prawdziwa izolacja tenantów** - database-per-tenant trzyma dane każdej kliniki osobno, a eksport/usuwanie GDPR to operacja na bazie
+  - **Dwa interfejsy API** - GraphQL dla złożonych zapytań katalogu, REST dla CRM — jedna baza kodu Laravel
+  - **Billing od ręki** - subskrypcje Stripe przez Cashier: triale, zmiany planów, dunning
+  - **AI tam, gdzie pomaga** - analizę wizyt wykonuje dedykowany mikroserwis w Go, nie obciążając głównego API
 
   ## Stos technologiczny
 

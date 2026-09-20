@@ -29,8 +29,12 @@ links:
     to: https://vetspace.pro
     color: primary
     icon: i-heroicons-arrow-top-right-on-square
-  - label: GitHub
-    to: https://github.com/Yurij2015
+  - label: API Overview
+    to: https://github.com/Yurij2015/vetspace-api
+    color: neutral
+    icon: i-simple-icons-github
+  - label: Frontend Overview
+    to: https://github.com/Yurij2015/vetspace-frontend
     color: neutral
     icon: i-simple-icons-github
 content: |
@@ -38,14 +42,11 @@ content: |
 
   ## Key Features
 
-  - **SEO clinic catalog** - Public SEO-optimized clinic catalog
-  - **CRM system** - CRM system for veterinarians
-  - **Appointment scheduling** - Appointment booking
-  - **Patient records** - Patient record management
-  - **Stripe subscriptions** - Subscriptions via Stripe
-  - **Multi-tenant** - Database-per-tenant architecture
-  - **AI analysis** - AI-assisted visit analysis
-  - **Go microservice** - Go microservice for AI
+  - **Two-sided funnel** - an SEO-first public catalog acquires clinics; the subscription CRM (appointments, patient records) retains them
+  - **True tenant isolation** - database-per-tenant keeps every clinic's data separate and makes GDPR export/delete a per-database operation
+  - **Dual API surface** - GraphQL for complex catalog queries, REST for the CRM — one Laravel codebase
+  - **Billing built-in** - Stripe subscriptions via Cashier: trials, plan changes, dunning
+  - **AI where it helps** - visit analysis runs in a dedicated Go microservice, keeping the main API unburdened
 
   ## Tech Stack
 

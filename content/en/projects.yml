@@ -5,6 +5,7 @@ links:
     to: https://t.me/YuriiMokryi
     color: "primary"
     icon: "i-simple-icons-telegram"
+    target: "_blank"
   - label: 'Email me'
     to: "mailto:admin@digispace.pro"
     color: "neutral"

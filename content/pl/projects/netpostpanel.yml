@@ -32,13 +32,11 @@ content: |
 
   ## Kluczowe funkcje
 
-  - **AI multi-provider** - Generacja multi-provider (Gemini/OpenAI)
-  - **Wyszukiwanie semantyczne** - Wyszukiwanie semantyczne na Qdrant
-  - **Agregacja RSS** - Silnik agregacji RSS/wiadomości
-  - **Scraping treści** - Auto-wykrywanie i scraping treści
-  - **Obserwowalność LLM** - Śledzenie Langfuse
-  - **Kolejki zadań** - Horizon do przetwarzania zadań
-  - **Abstrakcja driverów** - Abstrakcja driverów dla dostawców AI
+  - **AI bez przywiązania do dostawcy** - Gemini i OpenAI za abstrakcją driverów, więc zmiana modelu to konfiguracja, nie refaktoryzacja
+  - **Pipeline semantyczny** - wyszukiwanie wektorowe na Qdrant deduplikuje i grupuje newsy zanim trafią do generacji
+  - **Autonomiczna agregacja** - auto-wykrywanie kanałów RSS plus scraping zamieniają temat w samozasilające się źródło treści
+  - **Widoczne wywołania LLM** - każda generacja jest śledzona w Langfuse: tokeny, opóźnienie, koszt
+  - **Na kolejkach** - Laravel Horizon wykonuje zadania generacji i scrapingu z retry i kontrolą obciążenia
 
   ## Stos technologiczny
 

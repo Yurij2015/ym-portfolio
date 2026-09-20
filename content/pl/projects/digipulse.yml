@@ -41,14 +41,12 @@ content: |
 
   ## Kluczowe funkcje
 
-  - **Sprawdzanie co 60s** - Sprawdzanie dostępności co 60 sekund
-  - **Śledzenie SSL** - Śledzenie wygaśnięcia certyfikatów SSL
-  - **Powiadomienia Telegram** - Powiadomienia przez Telegram
-  - **Alerty email** - Powiadomienia email
-  - **Panel administracyjny** - Panel administracyjny na Filament
-  - **Serwer MCP** - Serwer MCP do integracji AI
-  - **Google OAuth** - Logowanie Google OAuth
-  - **Cloudflare Turnstile** - Integracja Cloudflare Turnstile
+  - **Dedykowany silnik w Go** - sprawdzanie dostępności wykonuje osobny serwis w Go, więc ciągłe odpytywanie co 60 sekund nie spowalnia aplikacji Laravel
+  - **Dashboard w czasie rzeczywistym** - websockety Reverb przesyłają zmiany statusu do UI na żywo, bez odświeżania
+  - **Octane + Filament** - Laravel rezydentny w pamięci z pełnym panelem administracyjnym dla monitorów, kontaktów i reguł alertów
+  - **Serwer MCP** - monitory i incydenty dostępne dla asystentów AI (Claude, Cursor) przez Model Context Protocol
+  - **Google OAuth + Turnstile** - logowanie bez hasła i ochrona przed botami na formularzach publicznych
+  - **Self-hosted** - wdrożone na własnym homelab Proxmox, którym zarządzam end-to-end
 
   ## Stos technologiczny
 

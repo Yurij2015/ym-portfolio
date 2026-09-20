@@ -74,6 +74,7 @@ experience:
         color: "#6B7280"
     - position: "Full-Stack Developer"
       date: "Wrz 2024 — Gru 2025"
+      description: "Full-stack development aplikacji webowych w PHP (Laravel) i autorskich frameworkach na część etatu: nowe funkcje, utrzymanie, poprawki błędów, REST API."
       company:
         name: SystemFreaks
         logo: "i-heroicons-briefcase"
@@ -84,12 +85,18 @@ experience:
     icon: "i-simple-icons-linkedin"
     target: "_blank"
 testimonials:
+  - quote: "Gorąco polecam Yuriia jako niezawodnego, proaktywnego i zorientowanego na rezultaty profesjonalistę. Yurii to odpowiedzialny specjalista, który potrafi autonomicznie pracować nad szerokim zakresem zadań. Ma solidną ekspertyzę w PHP (Symfony, Laravel) i frameworkach JavaScript (Vue.js, Angular) — samodzielnie bada złożone problemy, znajduje ich pierwotne przyczyny i wdraża skuteczne rozwiązania."
+    author:
+      name: 'Denys Shamrai'
+      description: 'Team Lead w Platinium Group SAM'
+      to: 'https://www.linkedin.com/in/denys-shamrai-79956948'
   - quote: "Od ponad 8 lat zamieniam problemy biznesowe w działające produkty: od architektury i płatności po wdrożenie i skalowanie. Mój kod sprzedaje bilety na Formula 1 i MotoGP, a moje własne produkty SaaS obsługują płacących klientów. Szukasz dewelopera, który odpowiada za rezultat? Napisz do mnie."
     author:
       name: 'Yurii Mokryi'
       description: 'Senior Full-Stack PHP Developer • 8+ lat • Poznań'
       avatar:
         src: '/images/avatar.jpg'
+        alt: 'Yurii Mokryi'
 faq:
   title: "Często zadawane pytania"
   description: "W skrócie o procesie, technologiach i współpracy."

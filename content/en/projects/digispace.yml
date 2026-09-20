@@ -40,12 +40,11 @@ content: |
 
   ## Key Features
 
-  - **Public agency site** - Public-facing agency website
-  - **Admin panel** - Admin panel
-  - **Custom CMS** - Custom-built CMS
-  - **Open source** - Open-source codebase
-  - **Production-ready** - Production-ready code
-  - **Modern stack** - Modern tech stack
+  - **Monolith done right** - public site, admin panel and custom CMS live in one Laravel + Inertia app, no separate API to maintain
+  - **Self-managed content** - pages, services and portfolio entries are edited in the CMS — no deploy needed for a text change
+  - **Quality gates** - PHPUnit tests and PHPStan static analysis run in CI
+  - **Identical environments** - Docker keeps local and production parity
+  - **Open by default** - the exact code serving digispace.pro is public on GitHub
 
   ## Tech Stack
 

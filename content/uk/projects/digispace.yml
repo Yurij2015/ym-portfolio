@@ -38,19 +38,18 @@ links:
 content: |
   Код за digispace.pro — публічний сайт агенції, адмін панель та кастомний CMS, збудований з Laravel, Inertia та Vue. Відкритий код: той самий production код, який працює на живому сайті.
 
-  ## Key Features
+  ## Ключові можливості
 
-  - **Public agency site** - Публічний сайт агенції
-  - **Admin panel** - Адмін панель
-  - **Custom CMS** - Кастомний CMS
-  - **Open source** - Відкритий код
-  - **Production-ready** - Production-ready код
-  - **Modern stack** - Сучасний стек
+  - **Моноліт як треба** - публічний сайт, адмін-панель і кастомна CMS в одному застосунку Laravel + Inertia, без окремого API
+  - **Самостійний контент** - сторінки, послуги й кейси редагуються в CMS — без деплою заради зміни тексту
+  - **Брама якості** - PHPUnit-тести та статичний аналіз PHPStan у CI
+  - **Ідентичні середовища** - Docker тримає паритет локалки й продакшену
+  - **Відкритий за замовчуванням** - саме той код, що обслуговує digispace.pro, публічний на GitHub
 
-  ## Tech Stack
+  ## Стек технологій
 
-  - **Backend**: Laravel
-  - **Frontend**: Vue.js
-  - **Connection**: Inertia.js
-  - **Build tool**: Vite
-  - **Architecture**: Custom CMS
+  - **Бекенд**: Laravel
+  - **Фронтенд**: Vue.js
+  - **Зв'язок**: Inertia.js
+  - **Збірка**: Vite
+  - **Архітектура**: Кастомна CMS

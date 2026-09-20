@@ -39,22 +39,20 @@ links:
 content: |
   SaaS для моніторингу доступності — перевірки кожні 60 секунд, відстеження закінчення SSL, сповіщення через Telegram та email. Адмін панель та основний бекенд побудовані з Laravel (Octane, Reverb websockets) та Filament, а моніторинг-движок — окремий Go сервіс. Інтеграція Google OAuth sign-in та Cloudflare Turnstile. Включає MCP сервер, який надає дані моніторингу безпосередньо до AI асистентів. Self-hosted на Proxmox.
 
-  ## Key Features
+  ## Ключові можливості
 
-  - **60s uptime checks** - Перевірки доступності кожні 60 секунд
-  - **SSL expiry tracking** - Відстеження закінчення SSL сертифікатів
-  - **Telegram notifications** - Сповіщення через Telegram
-  - **Email alerts** - Email сповіщення
-  - **Admin panel** - Адмін панель на Filament
-  - **MCP server** - MCP сервер для AI інтеграцій
-  - **Google OAuth** - Google OAuth sign-in
-  - **Cloudflare Turnstile** - Cloudflare Turnstile інтеграція
+  - **Окремий Go-движок** - перевірки доступності виконує окремий Go-сервіс, тож постійний поллінг кожні 60 секунд не гальмує Laravel-застосунок
+  - **Дашборд у реальному часі** - Reverb websockets передають зміни статусу в UI наживо, без ручного оновлення
+  - **Octane + Filament** - резидентний у пам'яті Laravel із повною адмін-панеллю для моніторів, контактів і правил сповіщень
+  - **MCP-сервер** - монітори та інциденти доступні для AI-асистентів (Claude, Cursor) через Model Context Protocol
+  - **Google OAuth + Turnstile** - вхід без пароля та захист від ботів на публічних формах
+  - **Self-hosted** - розгорнуто на власному Proxmox-хомлабі, який я адмініструю повністю
 
-  ## Tech Stack
+  ## Стек технологій
 
-  - **Backend**: Laravel (Octane, Reverb websockets)
-  - **Admin Panel**: Filament
-  - **Monitoring Engine**: Go (окремий сервіс)
-  - **Database**: PostgreSQL
-  - **AI Integration**: MCP сервер
-  - **Infrastructure**: Self-hosted на Proxmox
+  - **Бекенд**: Laravel (Octane, Reverb websockets)
+  - **Адмін-панель**: Filament
+  - **Движок моніторингу**: Go (окремий сервіс)
+  - **База даних**: PostgreSQL
+  - **Інтеграція AI**: MCP-сервер
+  - **Інфраструктура**: Self-hosted на Proxmox
