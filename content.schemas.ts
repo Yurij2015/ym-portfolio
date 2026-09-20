@@ -31,6 +31,7 @@ const createAuthorSchema = () => z.object({
 
 const createTestimonialSchema = () => z.object({
   quote: z.string(),
+  rating: z.number().min(1).max(5).optional(),
   author: createAuthorSchema()
 })
 

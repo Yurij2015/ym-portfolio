@@ -9,9 +9,8 @@ const { t } = useI18n()
 
 const testimonials = computed(() => props.page.testimonials)
 
-// All cards share one fixed quote height so the grid row stays level;
-// longer quotes get a "show more" toggle instead of stretching the row.
-const COLLAPSED_HEIGHT = 'h-28'
+// Collapsed quotes clamp to the same line count so the grid row stays
+// level; a toggle appears only where text is actually cut off.
 const expanded = ref<Set<number>>(new Set())
 const truncated = ref<boolean[]>([])
 const quoteEls = ref<(HTMLElement | null)[]>([])
@@ -48,25 +47,32 @@ watch(testimonials, measure)
         v-for="(item, index) in testimonials"
         :key="index"
         variant="subtle"
-        :ui="{ container: 'h-full' }"
+        spotlight
+        :ui="{
+          container: 'h-full',
+          description: 'min-h-24 flex flex-col'
+        }"
       >
         <template #description>
-          <p
-            :ref="el => setQuoteRef(el, index)"
-            class="text-base text-muted before:content-[open-quote] after:content-[close-quote]"
-            :class="expanded.has(index)
-              ? ''
-              : `${COLLAPSED_HEIGHT} overflow-hidden${truncated[index] ? ' [mask-image:linear-gradient(to_bottom,black_55%,transparent_95%)]' : ''}`"
-          >
-            {{ item.quote }}
-          </p>
-        </template>
-        <template #footer>
-          <div class="flex items-center justify-between gap-4">
-            <UUser
-              v-bind="item.author"
-              size="xl"
-            />
+          <div class="flex flex-1 flex-col gap-3">
+            <div
+              v-if="item.rating"
+              class="flex gap-0.5 text-amber-400"
+            >
+              <UIcon
+                v-for="n in item.rating"
+                :key="n"
+                name="i-heroicons-star-solid"
+                class="size-4"
+              />
+            </div>
+            <p
+              :ref="el => setQuoteRef(el, index)"
+              class="flex-1 text-base text-muted before:content-[open-quote] after:content-[close-quote]"
+              :class="{ 'line-clamp-4': !expanded.has(index) }"
+            >
+              {{ item.quote }}
+            </p>
             <UButton
               v-if="truncated[index] || expanded.has(index)"
               :label="expanded.has(index) ? t('common.showLess') : t('common.showMore')"
@@ -74,9 +80,16 @@ watch(testimonials, measure)
               color="neutral"
               variant="link"
               size="sm"
+              class="self-start px-0"
               @click="toggle(index)"
             />
           </div>
+        </template>
+        <template #footer>
+          <UUser
+            v-bind="item.author"
+            size="xl"
+          />
         </template>
       </UPageCard>
     </div>
