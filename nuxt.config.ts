@@ -25,21 +25,30 @@ export default defineNuxtConfig({
   // are covered by GA4 "Enhanced measurement" (browser history events).
   app: {
     head: {
-      script: process.env.NUXT_PUBLIC_GTAG_ID
-        ? [
-            {
-              src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NUXT_PUBLIC_GTAG_ID}`,
-              async: true
-            },
-            {
-              innerHTML:
-                'window.dataLayer = window.dataLayer || [];\n'
-                + 'function gtag(){dataLayer.push(arguments);}\n'
-                + 'gtag(\'js\', new Date());\n'
-                + `gtag('config', '${process.env.NUXT_PUBLIC_GTAG_ID}');`
-            }
-          ]
-        : []
+      script: [
+        ...(process.env.NUXT_PUBLIC_GTAG_ID
+          ? [
+              {
+                src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NUXT_PUBLIC_GTAG_ID}`,
+                async: true
+              },
+              {
+                innerHTML:
+                  'window.dataLayer = window.dataLayer || [];\n'
+                  + 'function gtag(){dataLayer.push(arguments);}\n'
+                  + 'gtag(\'js\', new Date());\n'
+                  + `gtag('config', '${process.env.NUXT_PUBLIC_GTAG_ID}');`
+              }
+            ]
+          : []),
+        ...(process.env.NUXT_PUBLIC_AHREFS_KEY
+          ? [{
+              'src': 'https://analytics.ahrefs.com/analytics.js',
+              'data-key': process.env.NUXT_PUBLIC_AHREFS_KEY,
+              'async': true
+            }]
+          : [])
+      ]
     }
   },
 
