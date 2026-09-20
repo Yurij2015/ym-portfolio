@@ -60,6 +60,24 @@ export default defineNuxtConfig({
   },
   buildDir: '.nuxt',
 
+  // Vercel ISR: cache rendered pages at the edge until the next deploy
+  // (isr: true = never expire; every deploy resets the cache anyway).
+  // This restores most of the TTFB lost to disabled prerendering.
+  // '/' is deliberately NOT cached — detectBrowserLanguage answers it
+  // with a per-request 302 based on Accept-Language/cookie, and a
+  // cached redirect would pin every visitor to the first locale seen.
+  routeRules: {
+    '/about': { isr: true },
+    '/projects': { isr: true },
+    '/projects/**': { isr: true },
+    '/en': { isr: true },
+    '/en/**': { isr: true },
+    '/pl': { isr: true },
+    '/pl/**': { isr: true },
+    '/sitemap.xml': { isr: true },
+    '/_og/**': { isr: true }
+  },
+
   compatibilityDate: '2026-06-30',
 
   // Nitro 2.13.4's prerender step corrupts the final build for any

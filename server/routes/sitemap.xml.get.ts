@@ -1,3 +1,5 @@
+import { queryCollection } from '@nuxt/content/nitro'
+
 const LOCALES = [
   { code: 'uk', iso: 'uk-UA', prefix: '' },
   { code: 'en', iso: 'en-US', prefix: '/en' },
@@ -6,20 +8,29 @@ const LOCALES = [
 
 const PATHS = ['/', '/about', '/projects']
 
-const PROJECT_SLUGS = ['digipulse', 'digispace', 'netpostpanel', 'vetspace']
-
-export default defineEventHandler((event) => {
+export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   const origin = (config.public.siteUrl as string)
     || `${getRequestProtocol(event)}://${getRequestHost(event)}`
-  const lastmod = new Date().toISOString()
+
+  // Slugs are locale-independent — any collection gives all of them.
+  // lastmod = newest project date: the most recent known content change
+  // (far more honest than Date.now() on every request).
+  const projects = await queryCollection(event, 'projects_en').all()
+  const projectSlugs = projects.map(p => String(p.stem).split('/').pop() ?? '')
+  const lastmod = new Date(
+    projects.map(p => p.date).filter(Boolean).sort().pop() ?? Date.now()
+  ).toISOString()
 
   const urlFor = (prefix: string, path: string) => `${origin}${prefix}${path}`
 
-  const urls = LOCALES.flatMap(locale => PATHS.map((path) => {
-    const alternates = LOCALES.map(a =>
-      `    <xhtml:link rel="alternate" hreflang="${a.iso}" href="${urlFor(a.prefix, path)}" />`
-    ).join('\n')
+  const urlEntry = (path: string) => LOCALES.map((locale) => {
+    const alternates = [
+      ...LOCALES.map(a =>
+        `    <xhtml:link rel="alternate" hreflang="${a.iso}" href="${urlFor(a.prefix, path)}" />`
+      ),
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${urlFor('', path)}" />`
+    ].join('\n')
     return [
       '  <url>',
       `    <loc>${urlFor(locale.prefix, path)}</loc>`,
@@ -27,19 +38,9 @@ export default defineEventHandler((event) => {
       alternates,
       '  </url>'
     ].join('\n')
-  })).concat(LOCALES.flatMap(locale => PROJECT_SLUGS.map((slug) => {
-    const path = `/projects/${slug}`
-    const alternates = LOCALES.map(a =>
-      `    <xhtml:link rel="alternate" hreflang="${a.iso}" href="${urlFor(a.prefix, path)}" />`
-    ).join('\n')
-    return [
-      '  <url>',
-      `    <loc>${urlFor(locale.prefix, path)}</loc>`,
-      `    <lastmod>${lastmod}</lastmod>`,
-      alternates,
-      '  </url>'
-    ].join('\n')
-  })))
+  })
+
+  const urls = [...PATHS, ...projectSlugs.map(s => `/projects/${s}`)].flatMap(urlEntry)
 
   setResponseHeader(event, 'content-type', 'application/xml; charset=utf-8')
   return [
