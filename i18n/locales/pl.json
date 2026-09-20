@@ -10,7 +10,9 @@
     "unavailable": "Obecnie niedostępny"
   },
   "common": {
-    "viewProject": "Zobacz projekt"
+    "viewProject": "Zobacz projekt",
+    "showMore": "Pokaż więcej",
+    "showLess": "Zwiń"
   },
   "contact": {
     "title": "Omówmy Twój projekt",

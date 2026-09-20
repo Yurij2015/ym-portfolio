@@ -5,7 +5,36 @@ const props = defineProps<{
   page: IndexPageItem
 }>()
 
+const { t } = useI18n()
+
 const testimonials = computed(() => props.page.testimonials)
+
+// All cards share one fixed quote height so the grid row stays level;
+// longer quotes get a "show more" toggle instead of stretching the row.
+const COLLAPSED_HEIGHT = 'h-28'
+const expanded = ref<Set<number>>(new Set())
+const truncated = ref<boolean[]>([])
+const quoteEls = ref<(HTMLElement | null)[]>([])
+
+const setQuoteRef = (el: Element | null, index: number) => {
+  quoteEls.value[index] = el as HTMLElement | null
+}
+
+const measure = async () => {
+  await nextTick()
+  truncated.value = quoteEls.value.map(el => !!el && el.scrollHeight > el.clientHeight + 1)
+}
+
+const toggle = (index: number) => {
+  if (expanded.value.has(index)) {
+    expanded.value.delete(index)
+  } else {
+    expanded.value.add(index)
+  }
+}
+
+onMounted(measure)
+watch(testimonials, measure)
 </script>
 
 <template>
@@ -14,32 +43,42 @@ const testimonials = computed(() => props.page.testimonials)
       container: 'px-0 pt-0!'
     }"
   >
-    <UCarousel
-      v-slot="{ item }"
-      :items="testimonials"
-      :autoplay="testimonials.length > 1 ? { delay: 4000 } : false"
-      :loop="testimonials.length > 1"
-      :dots="testimonials.length > 1"
-      :ui="{
-        viewport: '-mx-4 sm:-mx-12 lg:-mx-16 bg-elevated/50 max-w-(--ui-container)'
-      }"
-    >
-      <UPageCTA
-        v-if="item"
-        :description="item.quote"
-        variant="naked"
-        class="rounded-none"
-        :ui="{
-          container: 'sm:py-12 lg:py-12 sm:gap-8',
-          description: 'text-base! text-balance before:content-[open-quote] before:text-5xl lg:before:text-7xl before:inline-block before:text-dimmed before:absolute before:-ml-6 lg:before:-ml-10 before:-mt-2 lg:before:-mt-4 after:content-[close-quote] after:text-5xl lg:after:text-7xl after:inline-block after:text-dimmed after:absolute after:mt-1 lg:after:mt-0 after:ml-1 lg:after:ml-2'
-        }"
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <UPageCard
+        v-for="(item, index) in testimonials"
+        :key="index"
+        variant="subtle"
+        :ui="{ container: 'h-full' }"
       >
-        <UUser
-          v-bind="item.author"
-          size="xl"
-          class="justify-center"
-        />
-      </UPageCTA>
-    </UCarousel>
+        <template #description>
+          <p
+            :ref="el => setQuoteRef(el, index)"
+            class="text-base text-muted before:content-[open-quote] after:content-[close-quote]"
+            :class="expanded.has(index)
+              ? ''
+              : `${COLLAPSED_HEIGHT} overflow-hidden${truncated[index] ? ' [mask-image:linear-gradient(to_bottom,black_55%,transparent_95%)]' : ''}`"
+          >
+            {{ item.quote }}
+          </p>
+        </template>
+        <template #footer>
+          <div class="flex items-center justify-between gap-4">
+            <UUser
+              v-bind="item.author"
+              size="xl"
+            />
+            <UButton
+              v-if="truncated[index] || expanded.has(index)"
+              :label="expanded.has(index) ? t('common.showLess') : t('common.showMore')"
+              :trailing-icon="expanded.has(index) ? 'i-heroicons-chevron-up' : 'i-heroicons-chevron-down'"
+              color="neutral"
+              variant="link"
+              size="sm"
+              @click="toggle(index)"
+            />
+          </div>
+        </template>
+      </UPageCard>
+    </div>
   </UPageSection>
 </template>

@@ -10,7 +10,9 @@
     "unavailable": "Not available at the moment"
   },
   "common": {
-    "viewProject": "View Project"
+    "viewProject": "View Project",
+    "showMore": "Show more",
+    "showLess": "Show less"
   },
   "contact": {
     "title": "Let's discuss your project",
