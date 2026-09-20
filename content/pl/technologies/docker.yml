@@ -1,5 +1,5 @@
 title: Docker
-description: "Docker od dev do produkcji: skonteneryzowane stacki Laravel/Node, środowiska compose i obrazy na własnych VM Proxmox."
+description: "Docker dla Laravel i Node.js: powtarzalne środowiska, usługi Docker Compose i wdrażanie kontenerów w moich projektach SaaS."
 icon: i-simple-icons-docker
 category: infrastructure
 since: "2019"
@@ -14,23 +14,26 @@ links:
     to: https://www.docker.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://docs.docker.com/engine/containers/start-containers-automatically/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Docker to sposób, w który pakuję wszystko, co uruchamiam — ten sam obraz na laptopie dewelopera, w CI i na produkcyjnej VM. Każdy projekt ma plik compose, który sprawia, że „u mnie działa" przestaje być tematem.
+  Docker pozwala umieścić aplikację i jej zależności w obrazie kontenera. Używam go do usług Laravel i Node.js w DigiPulse, VetSpace oraz NetPostPanel, od lokalnej pracy po wdrożenia na maszynach wirtualnych.
 
-  ## Jak używam Dockera
+  ## Jak organizuję kontenery
 
-  - **Serwisy produkcyjne** — moje SaaS-y działają jako kontenery na VM Proxmox: aplikacja, worker, scheduler i baza opisane w compose, a CI je podciąga i restartuje.
-  - **Parity środowisk** — lokalne środowiska odzwierciedlają serwisy produkcyjne, więc bug reprodukuje się lokalnie zamiast tylko pod prawdziwym ruchem.
-  - **Buildy multi-stage** — smukłe obrazy runtime: zależności i narzędzia budowy zostają w stadium buildera, obraz produkcyjny niesie tylko to, co obsługuje żądania.
-  - **Pipeline'y CI** — buildy i testy działają w kontenerach na GitHub Actions, więc środowisko CI to repozytorium, a nie śnieżynka-runner.
+  - **Docker Compose** — wspólny opis aplikacji, procesów obsługujących zadania w tle i usług pomocniczych.
+  - **Budowanie wieloetapowe** — oddzielenie narzędzi budowania od końcowego obrazu uruchomieniowego.
+  - **Trwałe dane** — pliki bazy danych i przesłane materiały przechowywane poza wymienialnymi kontenerami.
 
-  ## Doświadczenie produkcyjne
+  ## Co daje przenośność
 
-  Operacyjna wygrana pokazała się przy przeprowadzce z floty dropletów DigitalOcean na jeden serwer Hetzner: serwisy będące już kontenerami przeniosły się jako obrazy i pliki compose — migracja zajęła popołudnie, nie rearchitekturę. Ta przenośność to cały argument za Dockerem dla infrastruktury prowadzonej solo.
+  Kontenery pomogły mi zmienić dostawcę hostingu bez odtwarzania środowiska aplikacji od podstaw. Na działanie systemu nadal wpływają konfiguracja, architektura procesora, sieć i dane. Sam Docker nie gwarantuje więc, że błąd z produkcji uda się odtworzyć lokalnie.
 
-  ## Docker bez ceremonii
+  ## Kontrola stanu i odzyskiwanie działania
 
-  Jeden plik compose na środowisko, obrazy budowane w CI, healthchecki pilnujące restartów. Zero orchestratora dla garstki VM — budżet złożoności idzie w produkt, nie w Kubernetes dla mody.
+  Health check zgłasza stan kontenera. Polityki restartu Dockera reagują na zakończenie procesu; sam status unhealthy nie powoduje ponownego uruchomienia. Trzeba to uwzględnić przy wdrażaniu i usuwaniu awarii, szczególnie w przypadku baz danych i procesów, które nie mogą zgubić rozpoczętych zadań.
 faq:
-  - label: Docker Compose czy Kubernetes?
-    content: Compose na VM dla własnych produktów — garstka serwisów nie uzasadnia control plane'a. Sięgnę po Kubernetes, gdy obciążenie faktycznie będzie potrzebować szeregowania po węzłach.
+  - label: Kiedy wybierasz Docker Compose zamiast Kubernetes?
+    content: Używam Compose do usług zarządzanych na pojedynczych maszynach wirtualnych. Kubernetes rozważam, gdy projekt potrzebuje rozdzielania zadań między węzły i ma zasoby na utrzymanie klastra.

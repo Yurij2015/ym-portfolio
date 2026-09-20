@@ -1,5 +1,5 @@
 title: Hetzner
-description: "Hetzner dedicated server hosting my SaaS products — Proxmox VMs on owned hardware that replaced a fleet of cloud droplets."
+description: "Hetzner dedicated hosting for my SaaS projects: a rented server, Proxmox virtual machines and responsibility for application operations."
 icon: i-simple-icons-hetzner
 category: infrastructure
 since: "2023"
@@ -13,19 +13,21 @@ links:
     to: https://www.hetzner.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://docs.hetzner.com/robot/dedicated-server/dedicated-server-hardware/dedicated-server-hardware-overview/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Hetzner dedicated hardware is where my SaaS products live — a physical server running Proxmox that replaced a growing fleet of cloud droplets once the math stopped making sense.
+  Hetzner provides the dedicated server I rent for SaaS workloads including DigiPulse, VetSpace and NetPostPanel. I manage the software stack, with Proxmox separating application environments into virtual machines.
 
-  ## How I use Hetzner
+  ## What I manage
 
-  - **Dedicated server** — one physical machine hosts the VMs that run DigiPulse, VetSpace, NetPostPanel and supporting services.
-  - **Own virtualization layer** — Proxmox on bare metal: VMs and containers carved per workload, snapshotted and backed up under my control.
-  - **Predictable economics** — fixed monthly cost for real cores and RAM instead of per-VM cloud pricing; the savings fund the redundancy headroom.
+  My responsibilities include the operating system, virtual machines, container deployments, network configuration and application recovery. Renting a dedicated server gives me control over how resources are allocated without making the hardware my property. Hardware faults and replacements are handled with the hosting provider.
 
-  ## Production experience
+  ## Why this setup fits my projects
 
-  Owning the metal means owning the incidents too — there's no support ticket for a failing disk or a misconfigured firewall, just a console and the responsibility to fix it. That's exactly the trade I wanted: full control over the stack from hypervisor to application, at a cost that makes bootstrapped SaaS sustainable. Everything production I run answers to this machine.
+  Several continuously running services can share the available capacity. That gives me a predictable base hosting cost and room to choose my own deployment tools. The full cost also includes storage, backups, administration time and any additional infrastructure.
 
-  ## Dedicated vs cloud in my stack
+  ## Availability is a separate decision
 
-  Steady, always-on workloads belong on owned hardware; spiky or disposable ones belong in the cloud. My products are the former — predictable load, known neighbors (me), and no bill surprises when traffic grows.
+  Multiple virtual machines on one server still share a physical point of failure. Proxmox isolation does not make that host highly available. When a project's availability requirements increase, backup recovery time and redundancy need their own design rather than simply adding another VM on the same machine.

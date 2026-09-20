@@ -1,5 +1,5 @@
 title: DigitalOcean
-description: "DigitalOcean droplets were the first home of my SaaS products — before consolidation onto own Hetzner hardware made more sense."
+description: "DigitalOcean hosting experience: Linux Droplets, application deployments and the move to a dedicated server for ongoing SaaS workloads."
 icon: i-simple-icons-digitalocean
 category: infrastructure
 since: "2020"
@@ -11,19 +11,21 @@ links:
     to: https://www.digitalocean.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://docs.digitalocean.com/products/droplets/details/policies/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  DigitalOcean hosted the first production versions of my projects — droplets that taught me real server operations before the fleet grew enough that dedicated hardware won on cost.
+  DigitalOcean is a cloud infrastructure provider. I used its Droplet virtual machines for early DigiSpace projects, managing the Linux environment and deploying the applications myself.
 
-  ## How I used DigitalOcean
+  ## Working with Droplets
 
-  - **Droplet fleet** — early DigiSpace products and services ran on separate droplets: one per workload, each with its own updates, firewall rules and backup schedule.
-  - **Managed basics done manually** — Ubuntu servers, nginx/Caddy, Let's Encrypt, database tuning — the sysadmin reps that make later abstractions make sense.
-  - **The cost curve** — a fine platform until several always-on VMs meant paying cloud margins for compute a dedicated server provides cheaper.
+  Running separate virtual machines gave each service its own configuration and release cycle. The work included web servers, database setup, firewall rules, operating system updates and backups. A Droplet is an unmanaged server: creating it is quick, but keeping its software running remains the operator's responsibility.
 
-  ## What the migration taught me
+  ## Moving to dedicated hosting
 
-  Moving off droplets onto a Hetzner dedicated server running Proxmox cut monthly cost and consolidated the fleet — possible because everything was already containerized. DigitalOcean was the right first step: fast to provision, well documented, gentle learning curve. It stays in the toolbox for workloads that want cloud elasticity rather than owned hardware.
+  As my hosting setup grew, I moved workloads to a rented Hetzner dedicated server with Proxmox. Docker made the application environments easier to transfer. Persistent data, DNS changes and recovery planning still needed separate attention.
 
-  ## When I'd pick it again
+  ## How I compare hosting options
 
-  Short-lived environments, client projects that need a managed platform without a sysadmin, or anything where per-hour billing beats owning capacity. My own steady-state SaaS simply outgrew the price point.
+  I consider resource use, maintenance time, backup storage and availability requirements together. Cloud virtual machines are useful when environments need to be created or resized independently. A dedicated server can suit steady workloads, but it also concentrates services on one physical machine. Neither option is automatically cheaper for every project.

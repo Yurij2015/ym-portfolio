@@ -1,5 +1,5 @@
 title: DigitalOcean
-description: "Droplety DigitalOcean były pierwszym domem moich SaaS-ów — zanim konsolidacja na własnym sprzęcie Hetzner stała się bardziej opłacalna."
+description: "Doświadczenie z DigitalOcean: serwery Droplet, wdrażanie aplikacji na Linuksie i przenoszenie usług SaaS na serwer dedykowany."
 icon: i-simple-icons-digitalocean
 category: infrastructure
 since: "2020"
@@ -11,19 +11,21 @@ links:
     to: https://www.digitalocean.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://docs.digitalocean.com/products/droplets/details/policies/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  DigitalOcean hostował pierwsze produkcyjne wersje moich projektów — droplety, które nauczyły mnie prawdziwej administracji serwerami, zanim flota urosła na tyle, że dedykowany sprzęt wygrał cenowo.
+  DigitalOcean to dostawca infrastruktury chmurowej. Korzystałem z maszyn wirtualnych Droplet przy pierwszych projektach DigiSpace, samodzielnie konfigurując środowisko Linux i wdrażając aplikacje.
 
-  ## Jak używałem DigitalOcean
+  ## Praca z serwerami Droplet
 
-  - **Flota dropletów** — wczesne produkty i serwisy DigiSpace działały na osobnych dropletach: po jednym na obciążenie, każdy z własnymi aktualizacjami, regułami firewalla i harmonogramem backupów.
-  - **„Zarządzane" podstawy ręcznie** — serwery Ubuntu, nginx/Caddy, Let's Encrypt, tuning bazy — te administracyjne powtórki, które sprawiają, że późniejsze abstrakcje mają sens.
-  - **Krzywa kosztów** — świetna platforma, dopóki kilka zawsze włączonych VM nie zaczęło oznaczać płacenia chmurowych marż za obliczenia, które serwer dedykowany daje taniej.
+  Oddzielne maszyny pozwalały niezależnie konfigurować i aktualizować usługi. Praca obejmowała serwery WWW, bazy danych, reguły zapory, aktualizacje systemu i kopie zapasowe. Droplet wymaga samodzielnej administracji: łatwo go utworzyć, ale utrzymanie oprogramowania pozostaje obowiązkiem użytkownika.
 
-  ## Czego nauczyła migracja
+  ## Przejście na serwer dedykowany
 
-  Przejście z dropletów na dedykowany serwer Hetzner z Proxmoxem obniżyło miesięczny koszt i skonsolidowało flotę — możliwe, bo wszystko było już skonteneryzowane. DigitalOcean był właściwym pierwszym krokiem: szybki provisioning, dobra dokumentacja, łagodna krzywa wejścia. Zostaje w toolboxie dla obciążeń wymagających chmurowej elastyczności zamiast posiadanego sprzętu.
+  Gdy infrastruktura się rozrosła, przeniosłem usługi na wynajęty serwer Hetzner z Proxmox VE. Docker ułatwił przenoszenie środowisk aplikacji. Dane, zmiany DNS i plan odtworzenia usług nadal wymagały osobnego przygotowania.
 
-  ## Kiedy wybrałbym go znowu
+  ## Jak porównuję warianty hostingu
 
-  Krótko żyjące środowiska, projekty klienckie wymagające zarządzanej platformy bez administratora, albo cokolwiek, gdzie billing godzinowy bije posiadanie mocy. Moje stałe SaaS-y po prostu przerosły ten punkt cenowy.
+  Biorę pod uwagę zużycie zasobów, czas administracji, miejsce na kopie zapasowe i wymaganą dostępność. Maszyny w chmurze są wygodne, gdy środowiska trzeba niezależnie tworzyć lub skalować. Serwer dedykowany może pasować do stałego obciążenia, ale skupia usługi na jednej fizycznej maszynie. Opłacalność zależy od konkretnego projektu.

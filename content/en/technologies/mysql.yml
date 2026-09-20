@@ -1,5 +1,5 @@
 title: MySQL
-description: "MySQL databases for Laravel apps and CMS sites — the workhorse behind the DigiSpace platform and WordPress builds."
+description: "MySQL for Laravel and WordPress: database design, query optimization and content storage in DigiSpace and DigiSpace Studio."
 icon: i-simple-icons-mysql
 category: database
 since: "2017"
@@ -12,19 +12,23 @@ links:
     to: https://www.mysql.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://wordpress.org/about/requirements/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  MySQL was my first production database and still runs a good share of what I maintain — Laravel applications, the DigiSpace CMS and every WordPress build, where it's the native engine.
+  MySQL is a relational database that I use with Laravel applications and WordPress websites. In DigiSpace, it stores the content behind the company website and CMS; DigiSpace Studio also uses it as part of its WordPress stack.
 
-  ## How I use MySQL
+  ## What database work involves
 
-  - **Laravel + MySQL** — the DigiSpace company platform: pages, widgets, menus and blog content served from a MySQL 8 schema behind a custom CMS.
-  - **WordPress sites** — DigiSpace Studio and client builds: MySQL is non-negotiable there, so the work is tuning and schema hygiene rather than engine choice.
-  - **E-commerce and ticketing heritage** — earlier commercial work on storefronts and booking flows where MySQL was the platform standard.
+  - **Schema design** — model pages, menus and related records with appropriate keys and constraints.
+  - **Query analysis** — inspect slow queries and execution plans before changing indexes or adding resources.
+  - **Migrations** — plan schema changes with existing data and deployment order in mind.
 
-  ## Production experience
+  ## MySQL and WordPress
 
-  Years of MySQL in production taught the unglamorous essentials: index for the query you actually run, watch the slow query log before adding hardware, and keep migrations reversible. The DigiSpace CMS has run on MySQL through multiple redesigns — the schema outlived two frontend stacks, which is how a database should behave.
+  MySQL is a common WordPress database choice, but it is not the only supported engine: WordPress also supports MariaDB. Hosting compatibility, existing data and operational experience all influence the choice. Changing database engines needs testing rather than an assumption of identical behavior.
 
-  ## MySQL vs PostgreSQL in my stack
+  ## MySQL or PostgreSQL?
 
-  MySQL when the platform dictates it — WordPress, shared hosting, established Laravel schemas. PostgreSQL when I control the architecture and the data model benefits from JSONB and stricter semantics. Running both for years means the trade-offs are practical knowledge, not theory.
+  I work with both. An established MySQL application may have no reason to migrate, while another project may benefit from PostgreSQL's data types or indexing options. For either engine, sound queries, backups and tested recovery matter more than a general claim that one database is always faster.

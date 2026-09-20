@@ -1,5 +1,5 @@
 title: Redis
-description: "Redis for queues, caching and real-time state — Horizon workers, event-driven pipelines and hot-path caching in production."
+description: "Redis in Laravel applications: background queues, application caching and coordination in DigiPulse and NetPostPanel."
 icon: i-simple-icons-redis
 category: database
 since: "2019"
@@ -12,20 +12,21 @@ links:
     to: https://redis.io
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Redis is the glue in my Laravel stack — queues, caches and ephemeral state that shouldn't touch the primary database. Every product with background work runs through it.
+  Redis is an in-memory data store that I use for application caching and background processing. In my Laravel stack, it supports the work that should happen outside a visitor's HTTP request.
 
-  ## How I use Redis
+  ## Examples from my projects
 
-  - **Queues with Horizon** — NetPostPanel's AI content pipeline (fetch → generate → index) and DigiPulse's notification dispatches run as Horizon-managed jobs on Redis.
-  - **Application caching** — config, computed aggregates and rate-limit counters on the hot path; the database sees the write-heavy truth, Redis serves the reads.
-  - **Locks and coordination** — atomic locks keep scheduled monitoring checks from double-firing across workers.
-  - **Event plumbing** — pub/sub and broadcast backing where the frontend needs live updates.
+  NetPostPanel uses Laravel Horizon for queued content generation workflows. DigiPulse uses Redis in its event-driven monitoring architecture. These jobs have different durability requirements from an ordinary page cache: losing pending work can affect the product, even if cached data can be rebuilt.
 
-  ## Production experience
+  ## Caching and coordination
 
-  Redis is the piece that turns "request → response" apps into systems that actually do work: queued AI generation, scheduled checks, deduplicated notifications. The operational habit that matters most: treat Redis as disposable state — anything in it must be rebuildable from the primary store, because one day the node will restart and you'll be glad it was.
+  Redis can hold computed values, request counters and short-lived locks. Cache keys and expiration rules need to match the data they represent. Locks can coordinate workers, but retries and failure handling must still prevent duplicate side effects.
 
-  ## Where Redis fits vs alternatives
+  ## Persistence matters for queues
 
-  For Laravel workloads it's still the pragmatic default — Horizon, cache and broadcasting all speak it natively. I reach for database queues only on the smallest deployments; once a product has real background work, Redis is already there doing three jobs at once.
+  Redis offers RDB snapshots and AOF persistence, with different recovery trade-offs. Restarting a node does not necessarily erase its data, and treating every Redis key as disposable is unsafe for queues. Persistence, eviction settings and job retry behavior need to be chosen together. Redis Pub/Sub, in contrast, does not retain messages for disconnected subscribers.

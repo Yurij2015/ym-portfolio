@@ -1,5 +1,5 @@
 title: Vue.js
-description: "Frontendy Vue.js w produkcji: dashboardy SaaS, panele Inertia i strony Nuxt SSR. Prawdziwe projekty i przegląd kodu w środku."
+description: "Tworzenie aplikacji Vue.js: panele SaaS, publiczne strony, wspólne komponenty, integracja z Laravel i renderowanie przez Nuxt."
 icon: i-simple-icons-vuedotjs
 category: frontend
 since: "2019"
@@ -15,24 +15,23 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Vue.js to mój framework frontendowy z wyboru — od interaktywnych dashboardów SaaS po strony SSR. Większość tego, co wysyłam do sieci, zawiera Vue — bezpośrednio albo przez Nuxt.
+  Vue.js to framework JavaScript do tworzenia interfejsów. Używam go w panelu placówki VetSpace, publicznej witrynie VetCard i interfejsach administracyjnych, między innymi w DigiSpace.
 
-  ## Jak używam Vue
+  ## Różne interfejsy, wspólne narzędzia
 
-  - **Frontendy SaaS** — panel kliniki VetSpace: uwierzytelniony UI multi-tenant ze stanem Pinia, TypeScript i Tailwind.
-  - **Strony SSR przez Nuxt** — publiczny katalog VetCard i to portfolio renderują się na serwerze dla SEO, potem hydratują w tę samą aplikację Vue.
-  - **Aplikacje Inertia** — panel DigiSpace łączy backend Laravel ze stronami Vue bez osobnej warstwy API.
-  - **Interaktywne widżety** — flow rezerwacji, kalendarze i dynamiczne formularze wewnątrz renderowanych serwerowo stron.
+  - **Panele aplikacji** — formularze, listy i procesy dla zalogowanych użytkowników.
+  - **Publiczne strony** — komponenty Vue w stronach Nuxt renderowanych na serwerze.
+  - **Integracja z Laravel** — Inertia łączy trasy serwerowe ze stronami Vue bez potrzeby osobnego publicznego API dla tych ekranów.
 
-  ## Doświadczenie produkcyjne
+  ## Przykład strony placówki
 
-  Mocna strona Vue w mojej pracy to granica między „stroną" a „aplikacją": katalog klinik musi rankować w Google (SSR, szybki pierwszy render), a flow rezerwacji na tej samej stronie wymaga interaktywności klienckiej. Vue obsługuje oba scenariusze bez rozpadu na osobne projekty. Composition API + TypeScript utrzymują kod czytelnym wraz z rozwojem — panel VetSpace ma lata nagromadzonych funkcji i wciąż jest przejrzysty.
+  VetCard potrzebuje zarówno czytelnych informacji o placówce, jak i interaktywnej rezerwacji wizyt. Nuxt odpowiada za renderowanie strony na serwerze, a Vue za interakcje użytkownika. Ta sama witryna pomaga więc poznać placówkę i wybrać termin wizyty.
 
-  ## Vue vs React w mojej pracy
+  ## Utrzymanie komponentów
 
-  Pragmatyczny wybór: składnia szablonów Vue bliższa HTML dla mieszanych stron serwerowych, Nuxt to dojrzała historia SSR, a single-file component trzyma szablon, logikę i styl w jednej przeglądalnej jednostce. Dla backendów PHP integruje się czysto — bez ciężkiego osobnego pipeline'u frontendowego, dopóki projekt go nie potrzebuje.
+  Composition API pomaga grupować powiązaną logikę, a TypeScript jasno określa parametry i wyniki. Oddzielam pobieranie danych, wspólną logikę i prezentację tam, gdzie poprawia to czytelność. Wybór frameworka nadal zależy od istniejącego projektu i zespołu: różne interfejsy mogą wymagać różnej architektury.
 faq:
-  - label: Vue z Nuxt czy standalone?
-    content: Oba. Nuxt gdy strona musi się indeksować (katalogi, strony marketingowe); standalone Vue lub Inertia dla uwierzytelnionych paneli, gdzie SEO nie ma zastosowania.
-  - label: Migracje Vue 2 do Vue 3?
-    content: Tak — migrowałem produkcyjne frontendy do Vue 3 + Composition API inkrementalnie, trasa po trasie, bez przepisywania od zera.
+  - label: Używasz Vue z Nuxt czy Laravel?
+    content: Korzystam z obu rozwiązań. Nuxt stosuję na publicznych stronach takich jak VetCard, a Vue z Laravel lub Inertia w interfejsach aplikacji. Wybór zależy od routingu, dostępu do danych i renderowania.
+  - label: Jak podszedłbyś do migracji z Vue 2 do Vue 3?
+    content: Najpierw sprawdziłbym zależności i niezgodne API, a potem zaplanował zmiany według komponentów lub tras, jeśli pozwala na to architektura. Testy i stopniowe wydania pomagają kontrolować przejście.

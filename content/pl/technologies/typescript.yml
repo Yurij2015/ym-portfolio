@@ -1,5 +1,5 @@
 title: TypeScript
-description: "TypeScript w produkcyjnych frontendach: typowane aplikacje Vue/Nuxt, ścisłe konfiguracje i typowane kontrakty API w moich SaaS."
+description: "TypeScript w Vue i Nuxt: typowane komponenty, modele API i bezpieczniejsza refaktoryzacja z walidacją danych zewnętrznych."
 icon: i-simple-icons-typescript
 category: frontend
 since: "2020"
@@ -12,20 +12,25 @@ links:
     to: https://www.typescriptlang.org
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  TypeScript to domyślny wybór dla każdego frontendu, który buduję — kontrola łapiąca dryf API i niezgodności propów w czasie kompilacji zamiast w przeglądarce klienta.
+  TypeScript dodaje statyczne sprawdzanie typów do JavaScript. Używam go w aplikacjach Vue i Nuxt, w tym VetCard i tym portfolio, aby interfejsy komponentów oraz modele danych były łatwiejsze do zrozumienia i zmiany.
 
-  ## Jak używam TypeScript
+  ## Co opisuję typami
 
-  - **Typowane aplikacje Nuxt** — VetCard i to portfolio to ścisły TypeScript: typowane odpowiedzi API, sygnatury composables i schematy treści.
-  - **Bezpieczeństwo kontraktów** — typy klinik, wizyt i rezerwacji współdzielone po całej bazie kodu VetCard utrzymują powierzchnię API multi-tenant uczciwą.
-  - **Treść walidowana schematami** — ta strona waliduje każdy plik YAML treści przez Zod: brakujące pole psuje build, nie stronę.
-  - **Tooling** — `vue-tsc` w CI obok lintu i testów jednostkowych; czerwony typecheck blokuje deploy tak samo jak padnięty test.
+  - **Komponenty** — parametry wejściowe, zdarzenia i wspólny stan.
+  - **Modele API** — oczekiwaną strukturę danych placówek i rezerwacji.
+  - **Wspólna logika** — argumenty i wyniki funkcji composable.
 
-  ## Doświadczenie produkcyjne
+  W tym repozytorium działa też sprawdzanie typów w CI oraz schematy przetłumaczonej treści. Te kontrole uzupełniają się, ale odpowiadają za różne zadania.
 
-  Wartość pokazuje się przy utrzymaniu. Gdy API VetSpace dodało pole, błąd typu wskazał wszystkich konsumentów frontendu w jednym przebiegu — bez grepa i bez niespodzianek runtime'owych. W produkcie utrzymywanym solo ta dyscyplina jest tym, co nie pozwala bazie kodu stać się legacy, którego nikt nie chce dotykać.
+  ## Gdzie kończy się sprawdzanie statyczne
 
-  ## Ścisłość, która zwraca koszt
+  Typy TypeScript są usuwane z wygenerowanego JavaScript. Adnotacja typu nie weryfikuje rzeczywistej odpowiedzi API. Dane zewnętrzne wymagają walidacji podczas działania aplikacji, a nieuzgodniona zmiana backendu nie pojawi się automatycznie jako błąd kompilatora.
 
-  Trzymam `strict` włączone i opieram się `any` — chodzi nie o czystość, lecz o to, że rok później kompilator wciąż pamięta kontrakt, który ja zapomniałem. Typowane granice między API, stanem i szablonem to różnica między refaktoryzacją a przepisaniem.
+  ## Łatwiejsze utrzymanie
+
+  Po zmianie zadeklarowanego modelu kontrola typów może wskazać niezgodne miejsca w kodzie. Pomaga to konsekwentnie zaktualizować formularze i szablony. Typowanie uzupełnia testy i walidację danych, zamiast usuwać potrzebę ich stosowania.

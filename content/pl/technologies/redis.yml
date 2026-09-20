@@ -1,5 +1,5 @@
 title: Redis
-description: "Redis do kolejek, cache i stanu czasu rzeczywistego — workery Horizon, pipeline'y event-driven i cache gorącej ścieżki w produkcji."
+description: "Redis w aplikacjach Laravel: kolejki zadań, pamięć podręczna i koordynacja pracy na przykładzie DigiPulse oraz NetPostPanel."
 icon: i-simple-icons-redis
 category: database
 since: "2019"
@@ -12,20 +12,21 @@ links:
     to: https://redis.io
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Redis to spoiwo mojego stacku Laravel — kolejki, cache i efemeryczny stan, który nie powinien dotykać głównej bazy. Każdy produkt z pracą w tle przechodzi przez niego.
+  Redis to magazyn danych w pamięci, którego używam do buforowania i przetwarzania w tle. W projektach Laravel pomaga wykonywać zadania, na które użytkownik nie powinien czekać w ramach żądania HTTP.
 
-  ## Jak używam Redisa
+  ## Przykłady z moich projektów
 
-  - **Kolejki z Horizonem** — pipeline treści AI NetPostPanel (fetch → generate → index) i wysyłka powiadomień DigiPulse działają jako zadania Horizon na Redisie.
-  - **Cache aplikacji** — konfiguracje, agregaty i liczniki rate-limit na gorącej ścieżce: baza trzyma prawdę zapisów, Redis obsługuje odczyty.
-  - **Blokady i koordynacja** — atomowe locki pilnują, by zaplanowane testy monitoringu nie odpaliły dwa razy na różnych workerach.
-  - **Hydraulika zdarzeń** — pub/sub i backend broadcastingu tam, gdzie frontend potrzebuje aktualizacji na żywo.
+  NetPostPanel korzysta z Laravel Horizon do kolejek generowania treści. W DigiPulse Redis uczestniczy w architekturze monitoringu opartej na zdarzeniach. Takie zadania wymagają innego podejścia do trwałości niż zwykła pamięć podręczna strony: utrata oczekującej pracy może wpłynąć na produkt, nawet jeśli cache da się odtworzyć.
 
-  ## Doświadczenie produkcyjne
+  ## Buforowanie i koordynacja
 
-  Redis to element, który zamienia aplikacje „żądanie → odpowiedź" w systemy faktycznie robiące robotę: generowanie AI w kolejce, testy wg harmonogramu, deduplikowane powiadomienia. Najważniejszy operacyjny nawyk: traktuj Redis jako stan jednorazowy — wszystko w nim musi dać się odbudować z pierwotnego magazynu, bo pewnego dnia węzeł się zrestartuje i będziesz wdzięczny, że tak jest.
+  Redis może przechowywać wyniki obliczeń, liczniki żądań i krótkotrwałe blokady. Klucze i czas wygaśnięcia muszą pasować do danych. Blokady pomagają koordynować procesy, ale ponawianie zadań nadal trzeba zaprojektować tak, aby nie powielało operacji biznesowych.
 
-  ## Gdzie Redis kontra alternatywy
+  ## Trwałość danych kolejki
 
-  Dla obciążeń Laravel wciąż pragmatyczny standard — Horizon, cache i broadcasting mówią nim natywnie. Po kolejki bazodanowe sięgam tylko przy najmniejszych deployach; gdy produkt ma prawdziwą pracę w tle, Redis już tam jest i robi trzy rzeczy naraz.
+  Redis oferuje migawki RDB i dziennik AOF z różnymi możliwościami odtwarzania. Restart nie musi oznaczać utraty danych, a traktowanie wszystkich kluczy jako jednorazowych jest niebezpieczne dla kolejek. Trwałość, usuwanie kluczy przy braku pamięci i ponawianie zadań trzeba skonfigurować razem. Natomiast Redis Pub/Sub nie przechowuje wiadomości dla odłączonych odbiorców.

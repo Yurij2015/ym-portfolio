@@ -1,5 +1,5 @@
 title: Caddy
-description: "Caddy jako reverse proxy dla routingu multi-tenant — automatyczny TLS, dwupoziomowe proxy i proste configi przed moimi SaaS."
+description: "Caddy w aplikacjach SaaS: odwrotne proxy, automatyczne HTTPS, obsługa domen i kierowanie żądań do usług w kontenerach Docker."
 icon: i-simple-icons-caddy
 category: infrastructure
 since: "2022"
@@ -13,19 +13,23 @@ links:
     to: https://caddyserver.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://caddyserver.com/docs/automatic-https
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Caddy stoi przed każdym serwisem mojej infrastruktury — automatyczne HTTPS, dwupoziomowy setup proxy dla routingu multi-tenant i configi mieszczące się na jednym ekranie zamiast katalogu snippetów nginx.
+  Caddy to serwer WWW i odwrotne proxy, którego używam do kierowania żądań do aplikacji SaaS. W projektach takich jak VetSpace i DigiPulse łączy publiczne domeny z usługami działającymi w kontenerach Docker.
 
-  ## Jak używam Caddy'ego
+  ## Jak korzystam z Caddy
 
-  - **Dwupoziomowy reverse proxy** — brzegowy Caddy terminuje TLS i routuje po hostname; instancje na VM przekazują do właściwego kontenera. Domeny multi-tenant lądują na poprawnej aplikacji bez ręcznego configu per strona.
-  - **Automatyczne certyfikaty** — Let's Encrypt obsłużony po cichu: wydawanie, odnawianie, alerty o niepowodzeniach. TLS od lat nie jest zadaniem.
-  - **Wewnętrzna adresacja** — czyste hostname'y między kontenerami i VM, więc aplikacje adresują serwisy nazwami, nie IP zapisanymi kiedyś przez kogoś.
+  - **Kierowanie ruchu** — przekazywanie żądań do aplikacji lub kontenera obsługującego daną domenę.
+  - **HTTPS** — automatyczne uzyskiwanie i odnawianie certyfikatów dla skonfigurowanych domen.
+  - **Czytelna konfiguracja** — reguły w pliku Caddyfile, które można przeglądać razem ze zmianami aplikacji.
 
-  ## Doświadczenie produkcyjne
+  ## Certyfikaty a dostęp do danych placówki
 
-  Przypadek multi-tenant to miejsce, gdzie Caddy zarabia swoje miejsce: domeny klinik rozwiązują się na jeden frontend VetSpace, a router mapuje hosta na tenanta bez edycji configu przy każdej rejestracji. W porównaniu do configów nginx, które utrzymywałem wcześniej, Caddyfile czyta się jak dokumentacja intencji, a nie jak rytuał.
+  Automatyczne HTTPS wymaga poprawnego DNS, weryfikacji domeny i trwałego przechowywania certyfikatów. Błędy odnawiania nadal trzeba monitorować. Sama aplikacja musi rozpoznawać placówkę i sprawdzać uprawnienia: odwrotne proxy nie zapewnia izolacji danych klientów.
 
-  ## Caddy vs nginx w moim stacku
+  ## Miejsce Caddy w infrastrukturze
 
-  nginx wciąż żyje w legacy-zakątkach, ale nowy routing idzie do Caddy'ego — sam automatyczny TLS usuwa całą klasę zadań operacyjnych, a powierzchnia configu jest na tyle mała, że można ją przejrzeć jednym rzutem oka podczas incydentu.
+  W moich środowiskach Docker Caddy ułatwia zarządzanie ruchem przychodzącym bez rozbudowanej konfiguracji proxy. Osobno trzeba dobrać limity czasu, przekazywane nagłówki i logi dostępu. Te szczegóły pomagają prześledzić na przykład nieudane żądanie rezerwacji od serwera proxy do API Laravel.

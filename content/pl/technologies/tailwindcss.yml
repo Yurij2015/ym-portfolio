@@ -1,5 +1,5 @@
 title: Tailwind CSS
-description: "Interfejsy Tailwind CSS w produkcji: panele SaaS, katalogi SSR i to portfolio — stylowanie utility-first, które zostaje utrzymywalne."
+description: "Tailwind CSS dla responsywnych interfejsów Vue i Nuxt: wspólne komponenty, kolory placówek i łatwiejsze utrzymanie stylów."
 icon: i-simple-icons-tailwindcss
 category: frontend
 since: "2021"
@@ -13,20 +13,23 @@ links:
     to: https://tailwindcss.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://tailwindcss.com/docs/detecting-classes-in-source-files
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Tailwind CSS styliuje każdy interfejs, który wydałem w ostatnich latach — panele admina, katalogi SSR i to portfolio. Klasy utility trzymają style lokalnie przy komponencie, a martwy CSS blisko zera.
+  Tailwind CSS to framework CSS oparty na klasach narzędziowych. Używam go w interfejsach aplikacji i publicznych witrynach, między innymi VetCard, VetSpace, DigiSpace oraz w tym portfolio.
 
-  ## Jak używam Tailwind
+  ## Stylowanie w praktyce
 
-  - **Interfejsy SaaS** — panel VetSpace i portal VetCard: responsywne layouty, komponenty z dark mode i motywy per klinika sterowane jednym tokenem koloru.
-  - **To portfolio** — Tailwind v4 przez plugin Vite na Nuxt UI: bez pliku konfiguracyjnego, motyw w CSS, komponenty zostają komponowalne.
-  - **Motywy panelu admina** — admin Inertia DigiSpace używa Tailwind dla UI back-office'u obok publicznego motywu Blade.
-  - **Branding tenantów** — VetCard tematyzuje stronę każdej kliniki z jednego pola `color` — zmienne CSS plus utility wygrywają z osobnym arkuszem stylów na tenanta.
+  W VetCard wspólne komponenty określają strukturę stron, a indywidualne kolory pozwalają zachować identyfikację placówek. W portfolio Tailwind CSS v4 współpracuje z Nuxt UI, a parametry motywu są zapisane w CSS. DigiSpace również korzysta z Tailwind w interfejsie administracyjnym.
 
-  ## Doświadczenie produkcyjne
+  ## Jak dbam o spójny wygląd
 
-  Praktyczna wygrana to utrzymanie: styl żyje w szablonie obok znaczników, które dotyczy, więc zmiana karty nie może po cichu zepsuć strony trzy route'y dalej. W parze z Nuxt UI jako bazą prymitywów Tailwind pokrywa wszystko — od strony marketingowej po flow rezerwacji — bez przełączania kontekstu.
+  - **Responsywny układ** — nawigacja, formularze i karty dopasowane do różnych ekranów.
+  - **Wspólne parametry projektu** — kolory i odstępy używane w wielu komponentach.
+  - **Ponowne użycie** — wydzielanie podobnych elementów w komponenty, gdy mają wspólne przeznaczenie.
 
-  ## Utility-first bez bałaganu
+  ## Czego nie gwarantują klasy narzędziowe
 
-  Reguła, która utrzymuje Tailwind w zdrowiu: wydziel komponent, gdy ten sam ciąg utility pojawił się trzeci raz — nie wcześniej. Framework jest najlepszy, gdy duplikacja, którą usuwa, jest realna, a nie przewidywana.
+  Klasy blisko znaczników ułatwiają czytanie stylów, ale zmiana wspólnego komponentu czy motywu może wpłynąć na wiele stron. Rozmiar CSS zależy od wykrytych klas i własnych stylów. Wygląd na telefonie, obsługę fokusu klawiatury i kontrast kolorów trzeba sprawdzić osobno — framework nie robi tego automatycznie.

@@ -1,5 +1,5 @@
 title: PHP
-description: "Senior PHP developer, 8+ lat komercyjnie: backendy Laravel i Symfony, high-load ticketing, produkty SaaS i API w produkcji."
+description: "Programowanie w PHP, Laravel i Symfony: aplikacje SaaS, sprzedaż biletów, integracje płatności i API z myślą o dalszym rozwoju."
 icon: i-simple-icons-php
 category: backend
 since: "2017"
@@ -17,24 +17,23 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  PHP to mój główny język serwerowy — 8+ lat komercyjnej pracy na nowoczesnym PHP 8.x, głównie przez Laravel i Symfony, plus WordPress tam, gdzie projekt tego wymaga.
+  PHP to mój główny język programowania po stronie serwera. Mam ponad osiem lat doświadczenia komercyjnego z Laravel, Symfony i WordPress, gdy odpowiada on potrzebom projektu. Obecnie pracuję z PHP 8.x; wcześniejsze doświadczenie obejmuje również starsze wersje języka.
 
-  ## Jak używam PHP
+  ## Gdzie korzystam z PHP
 
-  - **Backendy frameworkowe** — Laravel dla własnych produktów SaaS, Symfony dla wysokoobciążonej platformy ticketingowej, nad którą pracuję komercyjnie.
-  - **API** — endpointy REST i GraphQL, obsługa webhooków, integracje płatności (Stripe, Revolut, Dalenys).
-  - **Nowoczesne runtime'y** — klasyczny PHP-FPM za Caddy oraz Octane/FrankenPHP tam, gdzie trwałe workery się opłacają.
-  - **Narzędzia jakości** — analiza statyczna PHPStan, testy PHPUnit/Pest, formatowanie Pint — wszystko wymuszone w CI przy każdym pushu.
+  Laravel obsługuje projekty takie jak VetSpace, DigiPulse i NetPostPanel. Moja praca komercyjna z Symfony obejmuje platformę sprzedaży biletów na Formula 1, MotoGP, EICMA i EuroLeague. Zajmuję się składaniem zamówień, kontami użytkowników, narzędziami administracyjnymi i integracjami.
 
-  ## Doświadczenie produkcyjne
+  ## Na czym się skupiam
 
-  PHP napędza checkout ticketingowy sprzedający miejsca na Formula 1, MotoGP, EICMA i EuroLeague — ruch, w którym wolne zapytanie w ranki wyścigowe to realny incydent, a nie metryka. Ten sam język obsługuje wszystkie moje produkty: VetSpace, DigiPulse, NetPostPanel, CMS DigiSpace i klienckie wdrożenia WordPress jak DigiSpace Studio.
+  - **Logika biznesowa** — zrozumiałe procesy rezerwacji, subskrypcji i zamówień.
+  - **API i płatności** — walidacja, uprawnienia oraz niezawodna obsługa odpowiedzi zewnętrznych usług.
+  - **Utrzymanie** — automatyczne testy i analiza statyczna wspierające rozwój istniejącego kodu.
 
-  ## Dlaczego PHP wciąż wygrywa w pracy produktowej
+  ## Wybór środowiska wykonawczego
 
-  Nowoczesny stack — typowany język, dojrzałe frameworki, ekosystem Composera, opcache i trwałe runtime'y — zdejmuje stare zastrzeżenia. Dla biznesu, który potrzebuje szybko dowieźć utrzymywalny produkt, PHP pozostaje najpragmatyczniejszym znanym mi wyborem.
+  PHP-FPM sprawdza się przy typowej obsłudze żądań. Długotrwałe procesy, w tym aplikacje uruchamiane przez Octane i FrankenPHP, wymagają innego podejścia do stanu i pamięci. Dobieram środowisko do aplikacji i sprawdzam wyniki przy reprezentatywnym obciążeniu. Sam język czy framework nie gwarantuje wydajności.
 faq:
-  - label: Z jakimi wersjami PHP pracujesz?
-    content: PHP 8.x w produkcji wszędzie — typowane właściwości, enum, readonly, atrybuty. Aktualizacje ze starszych wersji to część mojej pracy utrzymaniowej.
-  - label: Laravel czy Symfony — co wybierasz?
-    content: Laravel dla szybkości pracy produktowej i ekosystemu, Symfony dla długowiecznych platform enterprise. Oba w mojej produkcji — wybór według cyklu życia projektu, nie przyzwyczajenia.
+  - label: Z którymi wersjami PHP pracujesz?
+    content: Obecnie pracuję z PHP 8.x. Przy aktualizacji starszej aplikacji sprawdzam wymagania frameworka i zależności oraz testuję zachowanie, na które wpływa zmiana wersji.
+  - label: Jak wybierasz między Laravel a Symfony?
+    content: "Uwzględniam istniejący kod, doświadczenie zespołu, integracje i wymagania utrzymaniowe. Oba nadają się do wieloletniego rozwoju: Laravel wykorzystuję we własnych produktach SaaS, a Symfony w komercyjnej sprzedaży biletów."

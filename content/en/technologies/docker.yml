@@ -1,5 +1,5 @@
 title: Docker
-description: "Docker from dev to production: containerized Laravel/Node stacks, compose environments and images deployed on my own Proxmox VMs."
+description: "Docker for Laravel and Node.js applications: reproducible environments, Compose services and container deployments for my SaaS projects."
 icon: i-simple-icons-docker
 category: infrastructure
 since: "2019"
@@ -14,23 +14,26 @@ links:
     to: https://www.docker.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://docs.docker.com/engine/containers/start-containers-automatically/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Docker is how everything I run gets packaged — the same image on a developer laptop, in CI and on the production VM. Every project ships with a compose file that makes "works on my machine" a non-conversation.
+  Docker packages applications and their dependencies into container images. I use it for Laravel and Node.js services in projects such as DigiPulse, VetSpace and NetPostPanel, from local development to deployment on virtual machines.
 
-  ## How I use Docker
+  ## How I structure containers
 
-  - **Production services** — my SaaS products run as containers on Proxmox VMs: app, worker, scheduler and database services defined in compose, pulled and restarted by CI.
-  - **Local parity** — dev environments mirror production services, so a bug reproduces locally instead of only under real traffic.
-  - **Multi-stage builds** — slim runtime images: dependencies and build tools stay in the builder stage, production images carry only what serves requests.
-  - **CI pipelines** — builds and tests run inside containers on GitHub Actions, so the CI environment is the repo, not a snowflake runner.
+  - **Docker Compose** — describe the application, background workers and supporting services together.
+  - **Multi-stage builds** — separate build tools from the final runtime image.
+  - **Persistent storage** — keep database files and uploads outside replaceable containers.
 
-  ## Production experience
+  ## What portability means in practice
 
-  The operational payoff showed up when I moved hosting from a DigitalOcean droplet fleet to one Hetzner server: services that were already containers moved as images and compose files — the migration was an afternoon, not a re-architecture. That portability is the whole argument for Docker on solo-run infrastructure.
+  Containers helped me move workloads between hosting providers without rebuilding the application environment from scratch. They reduce differences between machines, but configuration, CPU architecture, network access and data still affect behavior. A production problem does not automatically reproduce locally just because both environments use Docker.
 
-  ## Docker without the ceremony
+  ## Health checks and recovery
 
-  One compose file per environment, images built in CI, healthchecks that gate restarts. No orchestrator for a handful of VMs — the complexity budget goes to the product, not to running Kubernetes because it's fashionable.
+  A health check reports container health. Docker restart policies react to container exits; an unhealthy status alone does not trigger a restart. Deployment checks and recovery procedures need to account for that distinction, particularly for workers and databases that must preserve work across releases.
 faq:
-  - label: Docker Compose or Kubernetes?
-    content: Compose on VMs for my own products — a handful of services doesn't justify a control plane. I'd reach for Kubernetes when the workload actually needs scheduling across nodes.
+  - label: When do you use Docker Compose instead of Kubernetes?
+    content: I use Compose for services managed on individual virtual machines. Kubernetes becomes an option when the project needs cluster scheduling and has the operational capacity to support it.

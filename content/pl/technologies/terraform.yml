@@ -1,5 +1,5 @@
 title: Terraform
-description: "Infrastruktura jako kod na Terraform: kontenery na własnych VM przez providera Docker, workspace'y rozdzielone per środowisko."
+description: "Infrastruktura jako kod z Terraform: zasoby Docker, konfiguracje środowisk i weryfikacja zmian przed wdrożeniem usług SaaS."
 icon: i-simple-icons-terraform
 category: infrastructure
 since: "2024"
@@ -11,19 +11,21 @@ links:
     to: https://developer.hashicorp.com/terraform
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://developer.hashicorp.com/terraform/language/state/workspaces
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Terraform zarządza tymi częściami mojej infrastruktury, które kiedyś mieszkały w czyjejś pamięci — kontenery, sieci i konfiguracja wdrożeń zadeklarowane w kodzie, aplikowane z workspace'a per środowisko.
+  Terraform opisuje infrastrukturę w plikach konfiguracyjnych i zarządza zasobami za pomocą dostawców, czyli providerów. Korzystam z niego w infrastrukturze DigiPulse, aby konfigurację usług łatwiej było przeglądać i odtwarzać.
 
-  ## Jak używam Terraforma
+  ## Konfiguracja i plan zmian
 
-  - **Kontenery na VM** — infrastruktura DigiPulse provisionuje serwisy Docker na VM Proxmox przez providera Docker po SSH: bez uzależnienia od chmury, po prostu deklaratywne kontenery na własnym sprzęcie.
-  - **Separacja środowisk** — workspace'y i per-env tfvars izolują testing i production; ten sam plan kształtuje oba, różnią się tylko zmienne.
-  - **Dyscyplina stanu** — plany przeglądane przed apply, sekrety poza plikami var i poza gitem.
+  Provider Docker daje Terraform dostęp do zasobów Dockera. Wspólna konfiguracja może opisywać podobne środowiska z różnymi zmiennymi wejściowymi. Każde wymaga własnego planu uwzględniającego aktualny stan: zapisany plan nie jest szablonem do użycia w innym środowisku.
 
-  ## Doświadczenie produkcyjne
+  ## Przestrzenie robocze i sekrety
 
-  Konkretna wygrana: dodanie serwisu do DigiPulse stało się `terraform apply` zamiast „wejdź po SSH i miej nadzieję". Środowiska przestały dryfować, bo kod jest środowiskiem. Dla infrastruktury jednoosobowej to różnica między „pamiętam, jak to połączone" a „repo mówi, jak to połączone".
+  Przestrzenie robocze CLI rozdzielają stan, ale nie stanowią granicy uprawnień. Pliki stanu i planu mogą zawierać sekrety nawet dla wartości oznaczonych jako sensitive. Środowiska wymagające silniejszej izolacji potrzebują osobnych danych dostępowych, chronionego magazynu stanu i odpowiednich uprawnień.
 
-  ## Jak daleko sięga IaC w solowym setupie
+  ## Infrastruktura a wydania aplikacji
 
-  Terraform pokrywa provisioning i układ serwisów; deploye aplikacji idą przez CI/CD. Granica jest celowa — zmiany infrastruktury są rzadkie i przeglądane, deploye częste i zautomatyzowane. Mieszanie ich psuje jedno i drugie.
+  Konfiguracja infrastruktury opisuje zasoby i zależności, a wydania aplikacji mogą przechodzić przez oddzielny proces CI/CD. Terraform wykrywa różnice między opisanym a rzeczywistym stanem podczas tworzenia planu, ale nie zapobiega stale ręcznym zmianom. Plan trzeba przejrzeć przed zastosowaniem, zwłaszcza gdy przewiduje wymianę lub usunięcie zasobu.

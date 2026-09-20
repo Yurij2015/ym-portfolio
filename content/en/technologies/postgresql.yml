@@ -1,5 +1,5 @@
 title: PostgreSQL
-description: "PostgreSQL in production: multi-tenant SaaS schemas, per-tenant databases and the queries that keep monitoring data fast."
+description: "PostgreSQL for SaaS data: monitoring records in DigiPulse, relational constraints, query planning and options for tenant isolation."
 icon: i-simple-icons-postgresql
 category: database
 since: "2019"
@@ -11,20 +11,21 @@ links:
     to: https://www.postgresql.org
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://www.postgresql.org/docs/current/ddl-schemas.html
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  PostgreSQL is my default relational database for SaaS work — the engine behind multi-tenant schemas, monitoring time series and anything where data integrity outranks convenience.
+  PostgreSQL is a relational database with support for transactions, structured queries and JSON data. I use it in DigiPulse to store monitoring data that the application turns into status views and incident history.
 
-  ## How I use PostgreSQL
+  ## Working with monitoring records
 
-  - **Multi-tenant data** — DigiPulse stores monitors, check results and incidents in Postgres; VetSpace's tenant databases run on the same engine, one schema-isolated database per clinic.
-  - **Time-series-ish workloads** — uptime check results are append-heavy: indexed by monitor and timestamp, aggregated for uptime reports without a dedicated TSDB.
-  - **Transactional integrity** — booking and billing flows where a partial write is worse than a failed one.
-  - **JSONB where it fits** — flexible payload columns for webhook data and provider responses, queried without leaving the relational model.
+  Availability checks create data over time. Queries need to find results for a particular monitor and date range without reading unnecessary rows. Index selection, retention and aggregation all affect how that workload grows. Execution plans help show where a query spends its effort.
 
-  ## Production experience
+  ## Tenant isolation needs a precise design
 
-  Postgres earns its keep on the boring guarantees: constraints that hold, indexes that behave predictably, and an EXPLAIN that actually explains. For the tenant-per-database pattern it's the practical choice — per-clinic isolation, straightforward GDPR export/delete, and no exotic tooling between me and the data.
+  A database per tenant and a schema per tenant are different architectures. PostgreSQL supports both, but schemas share a database and require appropriate permissions and query scoping. Neither arrangement alone guarantees compliance or prevents every cross-tenant access mistake.
 
-  ## PostgreSQL vs MySQL in my stack
+  ## How I choose a database
 
-  Postgres when the product is mine and the data model is non-trivial — JSONB, CTEs and stricter typing pay off. MySQL when the ecosystem already speaks it (WordPress, some Laravel heritage). Both run in my infrastructure; the choice follows the project, not the preference.
+  PostgreSQL's relational constraints and JSONB type are useful when structured records and flexible payloads belong in the same application. MySQL is also a practical choice for established Laravel and WordPress projects. I compare the actual queries, data model and maintenance requirements before choosing an engine.

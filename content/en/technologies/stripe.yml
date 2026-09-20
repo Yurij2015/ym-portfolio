@@ -1,5 +1,5 @@
 title: Stripe
-description: "Stripe payments and subscriptions in production: Laravel Cashier billing for SaaS, plus high-load checkout integrations for ticketing."
+description: "Stripe integration for SaaS and ticketing: Laravel Cashier subscriptions, payment status handling and reliable webhook processing."
 icon: i-simple-icons-stripe
 category: tools
 since: "2021"
@@ -11,24 +11,26 @@ links:
     to: https://stripe.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://docs.stripe.com/webhooks
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Stripe handles the money in my products — subscriptions via Laravel Cashier on VetSpace, and card checkout in the ticketing platform I work on commercially, alongside providers like Dalenys and Revolut.
+  Stripe provides payment and subscription services. I integrate it into VetSpace through Laravel Cashier and work with card payment flows in a commercial ticketing platform.
 
-  ## How I use Stripe
+  ## Subscription and checkout workflows
 
-  - **SaaS subscriptions** — VetSpace billing through Cashier: trials, plan changes, proration, dunning and webhook-driven state sync.
-  - **Checkout flows** — card payments inside the high-load ticketing checkout: 3DS, asynchronous confirmation and the failure paths that must not lose an order.
-  - **Webhooks as the source of truth** — subscription and payment state driven by webhook events, not by what the redirect says — redirects lie, webhooks don't.
+  The work includes trial periods, plan changes, payment confirmation and failed-payment handling. Cashier provides Laravel integration, while Stripe settings and application rules determine the billing behavior. The customer interface also needs clear pending, successful and failed states.
 
-  ## Production experience
+  ## Handling webhook events
 
-  Payment code is where "works on my machine" is most expensive. The ticketing checkout taught the discipline: idempotent handlers, explicit state machines for pending/failed/paid, and logging that reconstructs exactly what the provider said. VetSpace's billing builds on the same rules — subscription lifecycle handled by Cashier's primitives rather than reinvented dunning logic.
+  A checkout redirect is not proof of payment. Webhook handlers must verify signatures, tolerate duplicate or out-of-order events and use the Stripe API when reconciliation is needed. An idempotent handler avoids applying the same business action twice.
 
-  ## Stripe vs the alternatives I've integrated
+  ## Keeping payment logic maintainable
 
-  Stripe wins on developer experience and billing primitives; Dalenys and Revolut appear where the business or geography dictates. The provider-specific code stays behind an interface either way — checkout logic shouldn't know or care who processes the card.
+  My experience also includes Dalenys and Revolut integrations. I keep provider-specific behavior separate from order and subscription workflows where practical. Different payment providers have different capabilities, so adding one still requires testing its status transitions and failure cases. The goal is a traceable payment flow that can be investigated when a customer reports a problem.
 faq:
-  - label: Can you integrate Stripe subscriptions into an existing app?
-    content: "Yes — typically via Laravel Cashier: products/prices in Stripe, webhook-synced subscription state, trials and dunning without custom billing machinery."
-  - label: What about non-Stripe payment providers?
-    content: I've integrated Dalenys and Revolut in production checkout flows. Provider code lives behind an abstraction so switching or adding a gateway doesn't touch the order pipeline.
+  - label: Can you add Stripe subscriptions to an existing Laravel application?
+    content: Yes. The work includes Cashier integration, Stripe products and prices, webhook handling and tests for the subscription lifecycle. Trial periods and failed-payment behavior are configured to match the product.
+  - label: Do you work with other payment providers?
+    content: I also have experience with Dalenys and Revolut. Each integration needs its own checks for payment states, authentication requirements and failure handling.

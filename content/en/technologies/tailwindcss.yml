@@ -1,5 +1,5 @@
 title: Tailwind CSS
-description: "Tailwind CSS interfaces in production: SaaS panels, SSR catalogs and this portfolio — utility-first styling that stays maintainable."
+description: "Tailwind CSS for responsive Vue and Nuxt interfaces: reusable components, clinic branding and styling across my web projects."
 icon: i-simple-icons-tailwindcss
 category: frontend
 since: "2021"
@@ -13,20 +13,23 @@ links:
     to: https://tailwindcss.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://tailwindcss.com/docs/detecting-classes-in-source-files
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Tailwind CSS styles every interface I've shipped in the last years — admin panels, SSR catalogs and this portfolio. Utility classes keep styling local to the component and dead CSS close to zero.
+  Tailwind CSS is a CSS framework built around utility classes. I use it for application interfaces and public websites, including VetCard, VetSpace, DigiSpace and this portfolio.
 
-  ## How I use Tailwind
+  ## Styling in practice
 
-  - **SaaS interfaces** — the VetSpace panel and VetCard portal: responsive layouts, dark-mode-aware components, per-clinic theming driven by a single color token.
-  - **This portfolio** — Tailwind v4 via the Vite plugin with Nuxt UI on top: no config file, theme through CSS, components stay composable.
-  - **Admin themes** — the DigiSpace Inertia admin uses Tailwind for the back-office UI next to the Blade public theme.
-  - **Per-tenant branding** — VetCard themes each clinic page from a single `color` field — CSS variables plus utilities beat a per-tenant stylesheet.
+  In VetCard, shared components provide the page structure while clinic-specific colors give each page its identity. In this portfolio, Tailwind CSS v4 works with Nuxt UI, and theme values are defined in CSS. DigiSpace also uses Tailwind in its administration interface.
 
-  ## Production experience
+  ## Keeping the interface consistent
 
-  The practical win is maintenance: a style lives in the template next to the markup it affects, so changing a card can't silently break a page three routes away. Paired with Nuxt UI for primitives, Tailwind covers everything from the marketing page to the booking flow without a context switch.
+  - **Responsive layouts** — adapt navigation, forms and cards to different screen widths.
+  - **Design tokens** — share colors and spacing across components.
+  - **Reusable components** — extract repeated patterns when they have a clear common purpose.
 
-  ## Utility-first without the mess
+  ## What utility classes do not guarantee
 
-  The rule that keeps Tailwind sane: extract a component when the same utility string appears three times, never earlier. The framework is at its best when the duplication it removes is real, not anticipated.
+  Keeping classes near the markup makes styling easier to follow, but shared components and global theme changes can still affect many pages. Generated CSS size depends on detected classes and custom styles. I review mobile layouts, keyboard focus and color contrast alongside the visual design rather than assuming the framework handles them automatically.

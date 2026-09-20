@@ -1,5 +1,5 @@
 title: PHP
-description: "Senior PHP developer, 8+ years commercial: Laravel and Symfony backends, high-load ticketing, SaaS products and APIs in production."
+description: "PHP development with Laravel and Symfony: SaaS applications, ticketing systems, payment integrations and maintainable backend APIs."
 icon: i-simple-icons-php
 category: backend
 since: "2017"
@@ -17,24 +17,23 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  PHP is my core server-side language — 8+ years of commercial development on modern PHP 8.x, mostly through Laravel and Symfony, plus WordPress where a project calls for it.
+  PHP is my main server-side programming language. I have more than eight years of commercial development experience, working with Laravel and Symfony as well as WordPress when it fits the project. My current work uses PHP 8.x; that experience also includes earlier PHP versions.
 
-  ## How I use PHP
+  ## Where I use PHP
 
-  - **Framework backends** — Laravel for my own SaaS products, Symfony for the high-load ticketing platform I work on commercially.
-  - **APIs** — REST and GraphQL endpoints, webhook handlers, payment integrations (Stripe, Revolut, Dalenys).
-  - **Modern runtime options** — classic PHP-FPM behind Caddy, and Octane/FrankenPHP where persistent workers pay off.
-  - **Quality tooling** — PHPStan static analysis, PHPUnit/Pest tests, Pint formatting — all enforced in CI on every push.
+  Laravel powers projects such as VetSpace, DigiPulse and NetPostPanel. My commercial Symfony work includes a ticketing platform for Formula 1, MotoGP, EICMA and EuroLeague events. The tasks span checkout, user accounts, administration tools and external integrations.
 
-  ## Production experience
+  ## What I focus on
 
-  PHP powers the ticketing checkout that sells seats for Formula 1, MotoGP, EICMA and EuroLeague events — the kind of traffic where a slow query on race-day morning is a real incident, not a metric. The same language runs all of my own products: VetSpace, DigiPulse, NetPostPanel, the DigiSpace CMS and client WordPress builds like DigiSpace Studio.
+  - **Business logic** — understandable workflows for bookings, subscriptions and orders.
+  - **APIs and payments** — validation, authorization and reliable handling of external responses.
+  - **Maintenance** — automated tests and static analysis to support changes in existing codebases.
 
-  ## Why PHP still wins for product work
+  ## Runtime choices
 
-  The modern stack — typed language, mature frameworks, Composer ecosystem, opcache and persistent runtimes — removes the old objections. For a business that needs a maintainable product shipped fast, PHP remains the most pragmatic choice I know.
+  PHP-FPM remains useful for conventional request handling. Long-running workers, including applications served through Octane and FrankenPHP, introduce different state and memory considerations. I choose the runtime around the application and verify the result under representative load. A language or framework alone does not guarantee performance.
 faq:
   - label: Which PHP versions do you work with?
-    content: PHP 8.x in production everywhere — typed properties, enums, readonly, attributes. Legacy upgrades from older versions are part of my maintenance work.
-  - label: Laravel or Symfony — which do you prefer?
-    content: Laravel for product speed and ecosystem, Symfony for long-lived enterprise platforms. I run both in production and choose per project, not per habit.
+    content: My current work uses PHP 8.x. When upgrading an older application, I check the framework and dependency requirements and test behavior affected by the version change.
+  - label: How do you choose between Laravel and Symfony?
+    content: I consider the existing codebase, team experience, integrations and maintenance needs. Both can support long-lived applications; I use Laravel for my SaaS projects and Symfony in commercial ticketing work.

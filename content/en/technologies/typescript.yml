@@ -1,5 +1,5 @@
 title: TypeScript
-description: "TypeScript in production frontends: type-safe Vue/Nuxt apps, strict configs and typed API contracts across my SaaS projects."
+description: "TypeScript for Vue and Nuxt: typed components, API models and safer refactoring, with runtime validation where external data enters the app."
 icon: i-simple-icons-typescript
 category: frontend
 since: "2020"
@@ -12,20 +12,25 @@ links:
     to: https://www.typescriptlang.org
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  TypeScript is the default for every frontend I build — the vetting that catches API drift and prop mismatches at compile time instead of in a client's browser.
+  TypeScript adds static type checking to JavaScript. I use it in Vue and Nuxt applications, including VetCard and this portfolio, to make component interfaces and data models easier to understand and change.
 
-  ## How I use TypeScript
+  ## What I type
 
-  - **Typed Nuxt apps** — VetCard and this portfolio are strict TypeScript: typed API responses, composable signatures and content schemas.
-  - **Contract safety** — clinic, appointment and booking types shared across the VetCard codebase keep the multi-tenant API surface honest.
-  - **Schema-validated content** — this site validates every YAML content file with Zod, so a missing field fails the build, not the page.
-  - **Tooling** — `vue-tsc` typecheck in CI alongside lint and unit tests; a red typecheck blocks a deploy the same as a failing test.
+  - **Components** — props, emitted events and shared state.
+  - **API models** — the clinic and appointment data expected by the frontend.
+  - **Reusable logic** — composable inputs and return values.
 
-  ## Production experience
+  This repository also runs a type check in CI and defines schemas for its translated content. Those are complementary checks with different responsibilities.
 
-  The value shows up at maintenance time. When VetSpace's API added a field, the type error surfaced every frontend consumer in one pass — no grep, no runtime surprises. On a solo-maintained product that discipline is what keeps a codebase from becoming the kind of legacy nobody wants to touch.
+  ## Where static checking stops
 
-  ## Strictness that earns its cost
+  TypeScript types are removed from the generated JavaScript. An API response is not validated simply because it has a TypeScript annotation. Unexpected external data needs runtime validation; an unannounced backend change will not automatically appear as a compiler error.
 
-  I keep `strict` on and resist `any` — the point isn't purity, it's that a year later the compiler still remembers the contract I forgot. Typed boundaries between API, state and template are the difference between a refactor and a rewrite.
+  ## Safer maintenance
+
+  When a declared model changes, type checking can identify incompatible uses in the codebase. That makes refactoring more deliberate, especially across forms and templates. It complements tests and input validation rather than replacing them.

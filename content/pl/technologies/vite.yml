@@ -1,5 +1,5 @@
 title: Vite
-description: "Vite jako bundler moich frontendów Vue/Nuxt i aplikacji Laravel Inertia — błyskawiczny HMR i szybkie buildy produkcyjne."
+description: "Vite w Vue, Nuxt i Laravel: wygodna praca lokalna, przygotowanie plików do publikacji i weryfikacja wersji produkcyjnej."
 icon: i-simple-icons-vite
 category: frontend
 since: "2021"
@@ -11,19 +11,21 @@ links:
     to: https://vite.dev
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://vite.dev/guide/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Vite to warstwa budowania pod każdym frontendem, który wysyłam — błyskawiczny HMR w developmencie i bundle Rollupa w produkcji, zarówno wewnątrz Nuxt, jak i jako oficjalny toolchain frontendowy Laravela.
+  Vite to narzędzie do tworzenia i budowania frontendu. Korzystam z niego przez Nuxt w VetCard i tym portfolio, a także przez integrację z Laravel w DigiSpace.
 
-  ## Jak używam Vite
+  ## Podczas pracy nad kodem
 
-  - **Wewnątrz Nuxt** — VetCard i to portfolio budują się przez Vite pod maską; Tailwind v4 jest podpięty jako plugin Vite.
-  - **Laravel + Inertia** — panel DigiSpace buduje się przez `laravel-vite-plugin`: HMR przeciwko działającemu backendowi, wersjonowane assety przy deployu.
-  - **Bundle aplikacji i bibliotek** — code-splitting punktów wejścia, hashowanie assetów i nowoczesny output ESM bez konfiguracji ery webpacka.
+  Serwer deweloperski obsługuje wymianę modułów bez pełnego przeładowania strony, czyli HMR. Wiele zmian można więc zobaczyć od razu w otwartej aplikacji. Rzeczywisty czas reakcji zależy jednak od projektu, wtyczek i komputera — nie jest bezwarunkową obietnicą natychmiastowej aktualizacji.
 
-  ## Doświadczenie produkcyjne
+  ## Przygotowanie do wdrożenia
 
-  Wkład Vite jest przeważnie niewidoczny — i o to chodzi. Dev-serwery startują w milisekundach, edycje odzwierciedlają się zanim sięgnę po przeglądarkę, a buildy produkcyjne są małe i przewidywalne. Jedyny moment, gdy myślę o bundlerze, to gdy nie używam Vite.
+  Budowanie przygotowuje pliki frontendu, w tym nazwy z hashem i podział kodu na części przy odpowiedniej konfiguracji. Nuxt i Laravel dodają własną integrację wokół wyniku. Wewnętrzny bundler zależy od wersji Vite, dlatego przy zmianie konfiguracji sprawdzam zainstalowane wersje narzędzi.
 
-  ## Co zastąpiło co
+  ## Co sprawdzam po zbudowaniu aplikacji
 
-  Vite wyparł webpack/Laravel Mix we wszystkich moich projektach. Migracja zwróciła się już na czasie pętli deweloperskiej; czystszy output ESM i prostszy config to bonus. Każdy nowy projekt startuje na Vite domyślnie.
+  Udane budowanie nie dowodzi, że każda strona działa. Adresy plików, zmienne środowiskowe, renderowanie na serwerze i zachowanie przeglądarki trzeba sprawdzić w docelowym środowisku. Vite jest częścią procesu wydania; testy przeglądarkowe i kontrola uruchomionej strony obejmują to, czego kompilacja nie weryfikuje.

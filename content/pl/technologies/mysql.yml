@@ -1,5 +1,5 @@
 title: MySQL
-description: "Bazy MySQL dla aplikacji Laravel i stron CMS — koń roboczy za platformą DigiSpace i wdrożeniami WordPress."
+description: "MySQL w Laravel i WordPress: projektowanie bazy, optymalizacja zapytań i przechowywanie treści w DigiSpace oraz DigiSpace Studio."
 icon: i-simple-icons-mysql
 category: database
 since: "2017"
@@ -12,19 +12,23 @@ links:
     to: https://www.mysql.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://wordpress.org/about/requirements/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  MySQL był moją pierwszą produkcyjną bazą i wciąż obsługuje sporą część tego, co utrzymuję — aplikacje Laravel, CMS DigiSpace i każde wdrożenie WordPress, gdzie jest natywnym silnikiem.
+  MySQL to relacyjna baza danych, której używam w aplikacjach Laravel i witrynach WordPress. W DigiSpace przechowuje treści strony firmowej oraz CMS, a w DigiSpace Studio jest częścią środowiska WordPress.
 
-  ## Jak używam MySQL
+  ## Na czym polega praca z bazą
 
-  - **Laravel + MySQL** — platforma firmy DigiSpace: strony, widżety, menu i treści bloga serwowane ze schematu MySQL 8 za autorskim CMS-em.
-  - **Strony WordPress** — DigiSpace Studio i wdrożenia klienckie: MySQL jest tam nie do negocjacji, więc praca to tuning i higiena schematu, nie wybór silnika.
-  - **Dziedzictwo e-commerce i ticketingowe** — wcześniejsza praca komercyjna nad witrynami i flow rezerwacji, gdzie MySQL był standardem platformy.
+  - **Model danych** — relacje między stronami, menu i innymi rekordami, klucze oraz ograniczenia integralności.
+  - **Analiza zapytań** — sprawdzanie wolnych zapytań i planów wykonania przed zmianą indeksów lub zwiększeniem zasobów.
+  - **Migracje** — planowanie zmian struktury z uwzględnieniem istniejących danych i kolejności wdrożenia.
 
-  ## Doświadczenie produkcyjne
+  ## MySQL w WordPress
 
-  Lata MySQL w produkcji nauczyły nieefektownego: indeksuj pod zapytanie, które faktycznie wykonujesz, patrz w slow query log zanim dokupisz sprzęt i trzymaj migracje odwracalne. CMS DigiSpace przeżył na MySQL kilka redesignów — schemat przeżył dwa stacki frontendowe, i dokładnie tak powinna zachowywać się baza danych.
+  MySQL jest częstym wyborem dla WordPress, ale nie jedynym obsługiwanym silnikiem: WordPress działa również z MariaDB. Decyzja zależy od hostingu, istniejących danych i doświadczenia w utrzymaniu. Zmiana silnika wymaga sprawdzenia zgodności.
 
-  ## MySQL vs PostgreSQL w moim stacku
+  ## MySQL czy PostgreSQL?
 
-  MySQL gdy platforma dyktuje — WordPress, hosting współdzielony, ustalone schematy Laravel. PostgreSQL gdy kontroluję architekturę, a model danych zyskuje na JSONB i ściślejszej semantyce. Obie w produkcji od lat — te kompromisy to dla mnie praktyka, nie teoria.
+  Pracuję z obiema bazami. Działająca aplikacja MySQL może nie potrzebować migracji, podczas gdy innemu projektowi przydadzą się typy danych lub indeksy PostgreSQL. W obu przypadkach jakość zapytań, kopie zapasowe i sprawdzone odtwarzanie są ważniejsze niż ogólna deklaracja, że jedna baza zawsze działa szybciej.

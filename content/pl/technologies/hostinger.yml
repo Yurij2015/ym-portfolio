@@ -1,5 +1,5 @@
 title: Hostinger
-description: "Hosting Hostinger dla stron klienckich i wdrożeń WordPress — tam, gdzie zarządzany panel bije posiadanie całego stacku."
+description: "Hostinger dla WordPress i stron klientów: konfiguracja hostingu, przekazanie projektu oraz podział obowiązków związanych z utrzymaniem."
 icon: i-simple-icons-hostinger
 category: infrastructure
 since: "2020"
@@ -11,19 +11,21 @@ links:
     to: https://www.hostinger.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://www.hostinger.com/support/8311982-what-is-managed-hosting-in-hostinger/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Hostinger hostuje projekty, gdzie zarządzany panel bije infrastrukturę self-managed — klienckie strony WordPress i mniejsze wdrożenia potrzebujące niezawodnego hostingu bez mojego serwera Hetzner w pętli.
+  Hostinger to dostawca hostingu, z którego korzystam przy WordPress i mniejszych stronach klientów, w tym DigiSpace Studio. Panel zarządzania ułatwia codzienną obsługę oraz przekazanie gotowego projektu.
 
-  ## Jak używam Hostingera
+  ## Co jest ważne dla strony firmowej
 
-  - **Klienckie strony WordPress** — DigiSpace Studio i podobne wdrożenia mieszkają na Hostingerze: hosting PHP, zarządzane SSL, poczta i panel, który klient otworzy beze mnie.
-  - **Hosting przyjazny przekazaniu** — gdy projekt się kończy, klient zostaje z kontem, które rozumie, a nie z kluczami SSH do mojej infrastruktury.
-  - **Osobiste strony poboczne** — małe strony, które nie uzasadniają slotu na serwerze produkcyjnym.
+  Strona potrzebuje wygodnej edycji treści, dostępu do konta hostingowego i jasnych zasad utrzymania. Przy konfiguracji sprawdzam wersje PHP, dostęp do bazy danych, kopie zapasowe i ustawienia domeny. Zakres dostępnych usług zależy od planu.
 
-  ## Doświadczenie produkcyjne
+  ## Hosting zarządzany a VPS
 
-  Nie każdy projekt należy do własnego sprzętu. Strona klienta na Hostingerze oznacza, że klient bezpośrednio posiada relację hostingową — billing na jego nazwisko, panel, który otworzy, i support, którym nie jestem ja o 23:00. Dla stron wizytówkowych i standardowych instalacji WordPress to pragmatyczny wybór; własne produkty dostają traktowanie serwerem dedykowanym.
+  Zarządzany hosting stron i VPS do samodzielnej administracji wiążą się z innym podziałem obowiązków. Sam panel nie oznacza, że dostawca aktualizuje aplikację, wtyczki czy oprogramowanie serwera. Najpierw sprawdzam zakres usługi, a potem ustalam, kto odpowiada za aktualizacje i odzyskiwanie danych.
 
-  ## Hosting współdzielony vs własny serwer
+  ## Przekazanie i dalsza opieka
 
-  Własna infrastruktura wygrywa kontrolą i kosztem marginalnym dla zawsze włączonych SaaS-ów. Zarządzany hosting wygrywa przekazaniem projektu i prostotą dla pracy klienckiej. Wybieranie per projekt — zamiast wymuszać jedną odpowiedź — jest właściwą umiejętnością.
+  W projekcie WordPress hosting powinien odpowiadać możliwościom klienta po uruchomieniu strony. Własność konta, opłaty za odnowienie i dostęp do kopii zapasowych muszą być jasno ustalone. Bardziej rozbudowane usługi SaaS mogą wymagać osobno administrowanego serwera z większą swobodą konfiguracji.

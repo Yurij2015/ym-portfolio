@@ -1,5 +1,5 @@
 title: PostgreSQL
-description: "PostgreSQL w produkcji: schematy SaaS multi-tenant, baza per tenant i zapytania utrzymujące dane monitoringu szybkimi."
+description: "PostgreSQL dla SaaS: dane monitoringu DigiPulse, integralność rekordów, analiza zapytań i warianty izolacji danych klientów."
 icon: i-simple-icons-postgresql
 category: database
 since: "2019"
@@ -11,20 +11,21 @@ links:
     to: https://www.postgresql.org
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://www.postgresql.org/docs/current/ddl-schemas.html
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  PostgreSQL to moja domyślna relacyjna baza dla pracy SaaS — silnik za schematami multi-tenant, szeregami czasowymi monitoringu i wszystkim, gdzie integralność danych przewyższa wygodę.
+  PostgreSQL to relacyjna baza danych obsługująca transakcje, zapytania SQL i dane JSON. Korzystam z niej w DigiPulse do przechowywania danych monitoringu, z których aplikacja tworzy widoki stanu usług oraz historię incydentów.
 
-  ## Jak używam PostgreSQL
+  ## Praca z wynikami monitoringu
 
-  - **Dane multi-tenant** — DigiPulse trzyma monitory, wyniki testów i incydenty w Postgresie; bazy tenantów VetSpace działają na tym samym silniku — osobna izolowana baza per klinika.
-  - **Obciążenia typu time-series** — wyniki testów dostępności piszą się strumieniowo: indeksy po monitorze i czasie, agregacje dla raportów uptime bez osobnej TSDB.
-  - **Integralność transakcyjna** — flow rezerwacji i billingu, gdzie częściowy zapis jest gorszy niż nieudany.
-  - **JSONB tam, gdzie pasuje** — elastyczne kolumny na webhooki i odpowiedzi operatorów, odpytywane bez wychodzenia z modelu relacyjnego.
+  Wyniki sprawdzeń dostępności przybywają z czasem. Zapytania powinny odnajdywać dane konkretnego monitora z wybranego okresu bez odczytywania zbędnych wierszy. Indeksy, okres przechowywania i agregacja wpływają na wydajność oraz rozmiar danych. Plan wykonania pokazuje, na co zapytanie zużywa zasoby.
 
-  ## Doświadczenie produkcyjne
+  ## Izolacja klientów wymaga precyzji
 
-  Postgres zarabia na nudnych gwarancjach: constrainty trzymają, indeksy zachowują się przewidywalnie, a EXPLAIN faktycznie wyjaśnia. Dla wzorca baza-per-tenant to praktyczny wybór — izolacja na poziomie kliniki, prosty eksport/usunięcie GDPR i zero egzotycznego toolinga między mną a danymi.
+  Osobna baza dla każdego klienta i osobny schemat we wspólnej bazie to różne architektury. PostgreSQL obsługuje obie, ale schematy wymagają odpowiednich uprawnień i ograniczenia zakresu zapytań. Żaden wariant sam w sobie nie zapewnia zgodności ze wszystkimi wymaganiami dotyczącymi danych ani ochrony przed każdym błędem dostępu.
 
-  ## PostgreSQL vs MySQL w moim stacku
+  ## Jak wybieram bazę danych
 
-  Postgres gdy produkt jest mój i model danych nietrywialny — JSONB, CTE i ściślejsza typizacja się opłacają. MySQL gdy ekosystem już nim mówi (WordPress, część dziedzictwa Laravel). Obie żyją w mojej infrastrukturze; wybór idzie za projektem, nie za preferencją.
+  Ograniczenia integralności i typ JSONB przydają się, gdy aplikacja łączy uporządkowane rekordy z elastyczną strukturą pól. MySQL również pasuje do wielu projektów Laravel i WordPress. Przed wyborem porównuję rzeczywiste zapytania, model danych i wymagania związane z utrzymaniem.

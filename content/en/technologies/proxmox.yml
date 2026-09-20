@@ -1,5 +1,5 @@
 title: Proxmox
-description: "Proxmox virtualization on my own Hetzner server — VMs and containers per workload, snapshots and isolation for SaaS hosting."
+description: "Proxmox VE for SaaS hosting: virtual machines on a dedicated server, workload separation, snapshots and backup planning."
 icon: i-simple-icons-proxmox
 category: infrastructure
 since: "2023"
@@ -13,20 +13,21 @@ links:
     to: https://www.proxmox.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://pve.proxmox.com/pve-docs/pve-admin-guide.pdf
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Proxmox is the virtualization layer on my dedicated server — every workload gets its own VM or container, isolated, snapshotted and disposable, instead of sharing one monolithic host.
+  Proxmox VE is a virtualization platform that I use on my rented Hetzner server. It lets me manage separate environments for SaaS applications and supporting services, including the infrastructure behind DigiPulse.
 
-  ## How I use Proxmox
+  ## How I organize environments
 
-  - **VM per workload** — production SaaS services, staging environments and internal tools each live in their own VM on the Hetzner box.
-  - **Snapshots as safety nets** — pre-upgrade and pre-migration snapshots turn risky operations into reversible ones.
-  - **Resource boundaries** — CPU and memory limits per VM keep a runaway process in one product from starving the others.
-  - **Templates** — base images with Docker, agents and hardening baked in, so a new environment is minutes of work.
+  Virtual machines provide separate operating systems and configurable resource allocations. Docker then runs application services inside those environments. This gives me a useful boundary for updates and troubleshooting without installing every service directly on the physical host.
 
-  ## Production experience
+  ## Snapshots and backups serve different purposes
 
-  Proxmox is what makes "one server, many products" sane. Tenant isolation at the VM level mirrors the database-per-tenant pattern in the apps themselves — the same philosophy at two layers. When a VM dies or an upgrade goes sideways, the fix is a snapshot restore, not a weekend rebuild. That safety margin is why I can run production SaaS alone without a pager team.
+  A snapshot can help roll back a change, depending on the storage setup and application state. It does not replace an independent backup or protect against losing the host's storage. Database consistency and the recovery process still need attention when restoring an environment.
 
-  ## Why not just bare Docker on the host
+  ## The limits of a single host
 
-  Containers share a kernel and a blast radius. VM boundaries give me per-workload resource guarantees, independent kernels where needed and clean separation between client-adjacent services — worth the small overhead for production peace of mind.
+  Virtual machines share the server's physical capacity and availability. Limits help manage resource use, but disk or host failures can affect multiple applications. I treat workload separation, backup recovery and high availability as separate concerns when deciding how an environment should be hosted.

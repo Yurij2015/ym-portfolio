@@ -1,5 +1,5 @@
 title: Cloudflare
-description: "Cloudflare CDN, DNS i ochrona Turnstile przed moimi SaaS-ami — edge cache i filtracja botów, która po prostu działa."
+description: "Cloudflare dla aplikacji SaaS: zarządzanie DNS, pamięć podręczna CDN i ochrona formularzy przed botami za pomocą Turnstile."
 icon: i-simple-icons-cloudflare
 category: infrastructure
 since: "2021"
@@ -13,19 +13,23 @@ links:
     to: https://www.cloudflare.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://developers.cloudflare.com/turnstile/get-started/server-side-validation/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Cloudflare siedzi na krawędzi każdego mojego publicznego produktu — digipulse.cloud, vetcard.pro i vetspace.pro wszystkie na nim są. DNS, cache CDN i ochrona przed botami pochłaniają wrogie części internetu zanim dotrą do moich serwerów.
+  Cloudflare udostępnia DNS, sieć dostarczania treści i usługi ochrony stron. Korzystam z niego przy publicznych produktach SaaS, aby zarządzać domenami, buforować pliki statyczne i ograniczać automatyczne wysyłanie formularzy.
 
-  ## Jak używam Cloudflare
+  ## Gdzie korzystam z Cloudflare
 
-  - **DNS i CDN** — wszystkie trzy domeny produktowe działają na serwerach nazw Cloudflare z proxy-cachem statyki: węzły edge serwują pliki bliżej odwiedzających, niż potrafi mój pojedynczy serwer.
-  - **Turnstile przeciw botom** — flow rezerwacji VetCard używa Turnstile, by automatyczny spam nie wpadał do pipeline'u wizyt — i bez zagadek captcha dla prawdziwych użytkowników.
-  - **TLS na krawędzi** — certyfikaty i nowoczesna terminacja TLS na edge z originem zamkniętym na zakresy IP Cloudflare.
+  VetCard, VetSpace i DigiPulse łączą publiczne strony z funkcjami aplikacji. Wymagają więc różnych reguł buforowania: obraz można udostępniać wielu odwiedzającym z tego samego cache, ale dane wizyt i kont muszą pozostać prywatne. DigiPulse korzysta również z Turnstile w publicznych formularzach.
 
-  ## Doświadczenie produkcyjne
+  ## Buforowanie i ochrona formularzy
 
-  Formularz rezerwacji to uczciwy test: publiczny endpoint przyjmujący wizyty to magnes na spam, a Turnstile odcina zautomatyzowane wysyłki bez tarcia kosztującego prawdziwe rezerwacje. Tymczasem CDN po cichu serwuje assety wszystkich trzech domen z cache'ów brzegowych — infrastrukturalna wygrana niewidoczna, dopóki nie spojrzysz na transfer originu, i analityka dashboardu pokazująca tysiące unikalnych odwiedzających miesięcznie, których mój origin niemal nie czuje.
+  - **Pliki statyczne** — obrazy, style i skrypty dostarczane z serwerów bliższych odwiedzającym.
+  - **Dane prywatne** — odpowiedzi zawierające dane użytkownika wyłączone ze wspólnej pamięci podręcznej.
+  - **Turnstile** — weryfikacja przesłanego tokena na serwerze; sam widżet w przeglądarce nie wystarcza.
 
-  ## Ochrona edge bez rachunku enterprise
+  ## Za co nadal odpowiada aplikacja
 
-  Darmowy tier Cloudflare pokrywa DNS, CDN i Turnstile — realna ochrona dla bootstrap-SaaS bez faktury za WAF. Płatne funkcje istnieją na wypadek, gdyby ruch je uzasadnił; darmowa warstwa jak dotąd niosła wszystko.
+  Cloudflare uzupełnia walidację danych, kontrolę uprawnień i ograniczanie liczby żądań. Reguły buforowania oraz zabezpieczenie połączenia z serwerem źródłowym pozostają częścią konfiguracji wdrożenia. Dostępne funkcje ochrony i limity zależą od wybranych usług i planu.

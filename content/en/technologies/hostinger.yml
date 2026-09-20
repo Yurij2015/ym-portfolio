@@ -1,5 +1,5 @@
 title: Hostinger
-description: "Hostinger shared/VPS hosting for client sites and WordPress builds — where a managed panel beats owning the whole stack."
+description: "Hostinger for WordPress and client websites: practical hosting setup, project handover and the difference between managed hosting and a VPS."
 icon: i-simple-icons-hostinger
 category: infrastructure
 since: "2020"
@@ -11,19 +11,21 @@ links:
     to: https://www.hostinger.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://www.hostinger.com/support/8311982-what-is-managed-hosting-in-hostinger/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Hostinger hosts the projects where a managed panel beats self-managed infrastructure — client WordPress sites and smaller builds that need reliable hosting without my Hetzner server in the loop.
+  Hostinger is a hosting provider I use for WordPress and smaller client websites, including DigiSpace Studio. For these projects, a hosting control panel can make everyday administration and handover easier.
 
-  ## How I use Hostinger
+  ## What matters for a client website
 
-  - **Client WordPress sites** — DigiSpace Studio and similar builds live on Hostinger: PHP hosting, managed SSL, email and a control panel the client can navigate without me.
-  - **Handover-friendly hosting** — when a project ends, the client keeps a hosting account they understand, not SSH keys to my infrastructure.
-  - **Personal side sites** — small pages that don't justify a slot on the production server.
+  A company website needs straightforward content editing, reliable access to the hosting account and a clear maintenance arrangement. I consider supported PHP versions, database access, backup options and domain configuration when setting up the environment. Included services vary by plan.
 
-  ## Production experience
+  ## Managed hosting and VPS hosting
 
-  Not every project belongs on my own hardware. A client site on Hostinger means they own their hosting relationship directly — billing in their name, panel they can open, support that isn't me at 23:00. For brochure sites and standard WordPress installs that's the pragmatic choice; my own products get the dedicated-server treatment instead.
+  A managed website hosting plan and a self-managed VPS involve different responsibilities. A control panel does not, by itself, mean that the provider maintains the application, plugins or server software. I check the scope of the selected service before agreeing who handles updates and recovery.
 
-  ## Shared hosting vs my own server
+  ## Handover and ongoing support
 
-  Own infrastructure wins on control and marginal cost for always-on SaaS. Managed hosting wins on handover and simplicity for client work. Picking per project — rather than forcing one answer — is the actual skill.
+  For a WordPress project, hosting should fit the client's ability to manage the site after delivery. Account ownership, renewal payments and backup access need to be clear. More specialized SaaS services may instead need the control offered by a separately administered server.

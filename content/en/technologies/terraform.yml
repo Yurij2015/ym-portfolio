@@ -1,5 +1,5 @@
 title: Terraform
-description: "Infrastructure as code with Terraform: containers provisioned on self-managed VMs via the Docker provider, env-separated workspaces."
+description: "Terraform infrastructure as code: Docker resources, environment configuration and reviewed provisioning changes for my SaaS infrastructure."
 icon: i-simple-icons-terraform
 category: infrastructure
 since: "2024"
@@ -11,19 +11,21 @@ links:
     to: https://developer.hashicorp.com/terraform
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://developer.hashicorp.com/terraform/language/state/workspaces
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Terraform manages the parts of my infrastructure that used to live in someone's memory — containers, networks and deploy configuration declared in code, applied from a workspace per environment.
+  Terraform describes infrastructure resources in configuration files and uses providers to manage them. I use it in the DigiPulse infrastructure to make service configuration easier to review and reproduce.
 
-  ## How I use Terraform
+  ## Configuration and plans
 
-  - **Containers on VMs** — DigiPulse's infrastructure provisions Docker services onto Proxmox VMs through the Docker provider over SSH: no cloud lock-in, just declarative containers on my own hardware.
-  - **Environment separation** — workspaces and per-env tfvars keep testing and production isolated; the same plan file shapes both, with only variables differing.
-  - **State discipline** — reviewed plans before applies, secrets kept out of var files and out of git.
+  The Docker provider connects Terraform to Docker resources. Shared configuration can describe similar environments with different input variables. Each environment needs its own plan based on its current state; a saved plan is not a reusable template for another environment.
 
-  ## Production experience
+  ## Workspaces and sensitive data
 
-  The concrete win: adding a service to DigiPulse became `terraform apply` instead of SSH-into-the-box-and-hope. Environments stopped drifting because the code is the environment. For a one-person infrastructure that's the difference between "I remember how it's wired" and "the repo says how it's wired".
+  CLI workspaces separate state, but are not an access-control boundary. State and plan files can contain secrets even when values are marked sensitive. Separate credentials, protected state storage and appropriate access controls are needed where environments require stronger isolation.
 
-  ## How far IaC goes in a solo setup
+  ## Infrastructure and application releases
 
-  Terraform covers provisioning and service layout; app deploys still run through CI/CD. The boundary is deliberate — infra changes are rare and reviewed, deploys are frequent and automated. Mixing them makes both worse.
+  I use infrastructure configuration to document resources and their relationships. Application releases can then follow their own CI/CD process. Terraform helps detect differences between declared and actual resources when a plan runs; it does not continuously prevent manual changes. Reviewing the plan is essential before applying changes that may replace or remove a resource.

@@ -1,5 +1,5 @@
 title: Stripe
-description: "Płatności i subskrypcje Stripe w produkcji: billing Laravel Cashier dla SaaS oraz integracje checkout high-load dla ticketingu."
+description: "Integracja Stripe dla SaaS i sprzedaży biletów: subskrypcje Laravel Cashier, stany płatności i niezawodna obsługa webhooków."
 icon: i-simple-icons-stripe
 category: tools
 since: "2021"
@@ -11,24 +11,26 @@ links:
     to: https://stripe.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://docs.stripe.com/webhooks
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Stripe obsługuje pieniądze w moich produktach — subskrypcje przez Laravel Cashier w VetSpace oraz checkout kartowy w platformie ticketingowej, nad którą pracuję komercyjnie, obok operatorów jak Dalenys i Revolut.
+  Stripe udostępnia usługi płatności i subskrypcji. Integruję go z VetSpace przez Laravel Cashier, a także pracuję nad płatnościami kartą w komercyjnej platformie sprzedaży biletów.
 
-  ## Jak używam Stripe
+  ## Subskrypcje i składanie zamówień
 
-  - **Subskrypcje SaaS** — billing VetSpace przez Cashier: triale, zmiany planów, prorata, dunning i synchronizacja stanu webhookami.
-  - **Flow checkout** — płatności kartą wewnątrz wysokoobciążonego checkoutu ticketingowego: 3DS, potwierdzenie asynchroniczne i ścieżki niepowodzeń, które nie mogą zgubić zamówienia.
-  - **Webhooki jako źródło prawdy** — stan subskrypcji i płatności prowadzony zdarzeniami webhooków, nie tym, co mówi przekierowanie — przekierowania kłamią, webhooki nie.
+  Praca obejmuje okresy próbne, zmiany planów, potwierdzanie płatności i obsługę nieudanych obciążeń. Cashier zapewnia integrację z Laravel, a szczegóły rozliczeń zależą od ustawień Stripe i reguł aplikacji. Interfejs powinien jasno pokazywać oczekiwanie, powodzenie i błąd płatności.
 
-  ## Doświadczenie produkcyjne
+  ## Obsługa webhooków
 
-  Kod płatności to miejsce, gdzie „u mnie działa" jest najdroższe. Checkout ticketingowy nauczył dyscypliny: idempotentne handlery, jawne maszyny stanu dla pending/failed/paid i logowanie rekonstruujące dokładnie to, co powiedział operator. Billing VetSpace stoi na tych samych zasadach — cykl życia subskrypcji na prymitywach Cashier zamiast autorskiej logiki dunningu.
+  Powrót użytkownika ze strony płatności nie potwierdza zapłaty. Obsługa webhooków musi sprawdzać podpis, uwzględniać duplikaty i zmienioną kolejność zdarzeń, a w razie potrzeby uzgadniać stan przez Stripe API. Idempotentna obsługa zapobiega ponownemu wykonaniu tej samej operacji biznesowej.
 
-  ## Stripe vs alternatywy, które integrowałem
+  ## Utrzymanie logiki płatności
 
-  Stripe wygrywa DX i prymitywami billingowymi; Dalenys i Revolut pojawiają się tam, gdzie dyktuje biznes lub geografia. Kod specyficzny dla operatora w obu przypadkach siedzi za interfejsem — logika checkoutu nie powinna wiedzieć ani przejmować się tym, kto procesuje kartę.
+  Mam również doświadczenie z integracjami Dalenys i Revolut. Tam, gdzie to praktyczne, oddzielam specyfikę operatora od procesów zamówień i subskrypcji. Operatorzy mają różne możliwości, więc dodanie kolejnego nadal wymaga testów stanów i błędów. Ważne, aby dało się prześledzić przebieg płatności, gdy klient zgłosi problem.
 faq:
-  - label: Czy możesz zintegrować subskrypcje Stripe z istniejącą aplikacją?
-    content: "Tak — zwykle przez Laravel Cashier: produkty/ceny w Stripe, stan subskrypcji synchronizowany webhookami, triale i dunning bez autorskiej maszynerii billingowej."
-  - label: A co z operatorami płatności innymi niż Stripe?
-    content: Integrowałem Dalenys i Revolut w produkcyjnych checkoutach. Kod operatora żyje za abstrakcją, więc zmiana lub dodanie bramki nie dotyka pipeline'u zamówień.
+  - label: Czy możesz dodać subskrypcje Stripe do istniejącej aplikacji Laravel?
+    content: Tak. Praca obejmuje integrację Cashier, produkty i ceny Stripe, obsługę webhooków oraz testy cyklu subskrypcji. Okresy próbne i działania po nieudanej płatności są dopasowywane do produktu.
+  - label: Czy pracujesz z innymi operatorami płatności?
+    content: Mam również doświadczenie z Dalenys i Revolut. Każda integracja wymaga osobnych kontroli stanów płatności, uwierzytelniania i obsługi błędów.

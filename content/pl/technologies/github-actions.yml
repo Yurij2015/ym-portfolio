@@ -1,5 +1,5 @@
 title: GitHub Actions
-description: "CI/CD GitHub Actions przy każdym pushu: lint, typecheck, testy, build i pipeline'y deploya dla moich SaaS-ów i tej strony."
+description: "GitHub Actions w CI/CD: automatyczna analiza kodu, sprawdzanie typów, testy i budowanie aplikacji na przykładzie moich projektów."
 icon: i-simple-icons-githubactions
 category: infrastructure
 since: "2020"
@@ -16,18 +16,16 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  GitHub Actions to pipeline za każdym moim pushem — lint, typecheck, testy jednostkowe, build i deploy zautomatyzowane tak, że wysyłka zmian to operacja gitowa, a nie checklista.
+  GitHub Actions uruchamia zautomatyzowane procesy na podstawie konfiguracji w repozytorium GitHub. Używam go do sprawdzania zmian i wspierania wdrożeń, przechowując opis procesu razem z kodem aplikacji.
 
-  ## Jak używam GitHub Actions
+  ## Co sprawdza to portfolio
 
-  - **Pełne bramy CI** — to portfolio przepycha ESLint, vue-tsc, Vitest i 15 speców Playwright przy każdym pushu; czerwony check blokuje merge.
-  - **Pipeline'y deploya** — platforma DigiSpace wdraża się po SSH z pusha: build na CI, suita PHPUnit jako brama, wydania przez symlink z healthcheckami i retencją pięciu wydań dla rollbacku.
-  - **Zadania treści i obrazów** — workflowy scheduled i on-push utrzymują wygenerowane artefakty i aktualizacje zależności w ruchu bez ręcznych uruchomień.
+  Po wysłaniu zmian do repozytorium uruchamiają się ESLint, sprawdzanie typów TypeScript, testy jednostkowe, budowanie wersji produkcyjnej i testy przeglądarkowe Playwright. Każdy etap dotyczy innego obszaru: spójności kodu, błędów typów, zachowania aplikacji lub gotowej witryny.
 
-  ## Doświadczenie produkcyjne
+  ## CI i wdrożenie to osobne procesy
 
-  Dyscyplina, która ma znaczenie: testy biegną w pipeline, nie na czyimś laptopie, gdzie można je pominąć. Gdy zahardkodowana liczba projektów zepsuła moją suitę E2E po dodaniu dwóch nowych, CI złapało to, co lokalne przebiegi przegapiły — pipeline odpłacił się w najbardziej dosłowny sposób.
+  To portfolio jest wdrażane przez integrację Vercel z Git. Nieudany przebieg GitHub Actions sam w sobie nie blokuje wdrożenia ani scalenia zmian: wymagane kontrole i warunki publikacji trzeba skonfigurować osobno. Obecność testów w CI nie oznacza automatycznie, że od ich wyniku zależy wydanie.
 
-  ## CI, które zwraca swoje minuty
+  ## Moje podejście do automatyzacji
 
-  Szybki feedback ponad wyczerpującą ceremonię: najpierw lint i typecheck (sekundy), potem testy jednostkowe, E2E na końcu. Szybkie padanie utrzymuje pipeline uczciwym — suita dwudziestominutowa jest ignorowana; ta, która pada w dwie minuty, jest naprawiana.
+  W projektach Laravel, takich jak DigiSpace, automatyczne testy pomagają weryfikować zmiany przed publikacją. Szybkie kontrole umieszczam na początku, aby wcześniej otrzymać czytelną informację o błędzie. Automatyzacja wdrożeń wymaga również kontroli dostępu, przydatnych logów i planu przywrócenia działania.

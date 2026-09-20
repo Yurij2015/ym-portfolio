@@ -1,5 +1,5 @@
 title: Vite
-description: "Vite as the build tool behind my Vue/Nuxt frontends and Laravel Inertia apps — instant HMR, fast production builds."
+description: "Vite for Vue, Nuxt and Laravel frontends: development feedback, production assets and integration with application build workflows."
 icon: i-simple-icons-vite
 category: frontend
 since: "2021"
@@ -11,19 +11,21 @@ links:
     to: https://vite.dev
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://vite.dev/guide/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Vite is the build layer under every frontend I ship — the instant HMR in development and the Rollup-powered bundles in production, both inside Nuxt and as Laravel's official frontend toolchain.
+  Vite is a frontend development and build tool. I use it through Nuxt in VetCard and this portfolio, and with Laravel's frontend integration in DigiSpace.
 
-  ## How I use Vite
+  ## During development
 
-  - **Inside Nuxt** — VetCard and this portfolio build through Vite under the hood; Tailwind v4 is wired in as a Vite plugin.
-  - **Laravel + Inertia** — the DigiSpace admin panel builds with `laravel-vite-plugin`: HMR against the running backend, versioned assets on deploy.
-  - **Library and app bundles** — code-split entry points, asset hashing and modern ESM output without webpack-era configuration.
+  The development server updates supported modules through hot module replacement, so many edits can be reviewed without a full page reload. The actual feedback time depends on the project, plugins and machine; it is not an unconditional promise of instant updates.
 
-  ## Production experience
+  ## For production
 
-  Vite's contribution is mostly invisible — which is the point. Dev servers start in milliseconds, edits reflect before I reach for the browser, and production builds are small and predictable. The only time I think about the bundler anymore is when I'm not using Vite.
+  The build prepares frontend assets for deployment, including hashed filenames and code splitting where configured. Nuxt and Laravel supply their own integration around that output. The production bundler depends on the Vite version, so I check the installed toolchain when changing build configuration.
 
-  ## What replaced what
+  ## What I verify after a build
 
-  Vite took over from webpack/Laravel Mix across my projects. The migration was worth it purely on developer-loop time; the cleaner ESM output and simpler config were a bonus. Every new project starts on Vite by default.
+  A successful build does not prove that every route works. Asset URLs, environment variables, server rendering and browser behavior need checks in the target setup. I treat Vite as one part of the application's delivery process, with browser tests and runtime checks covering behavior beyond compilation.

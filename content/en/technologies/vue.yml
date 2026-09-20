@@ -1,5 +1,5 @@
 title: Vue.js
-description: "Vue.js frontends in production: SaaS dashboards, Inertia admin panels and Nuxt SSR sites. Real projects and code overview inside."
+description: "Vue.js development for SaaS dashboards and public websites: reusable components, Laravel integration and server rendering through Nuxt."
 icon: i-simple-icons-vuedotjs
 category: frontend
 since: "2019"
@@ -15,24 +15,23 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Vue.js is my frontend framework of choice — from interactive SaaS dashboards to SSR marketing sites. Most of what I ship on the web has Vue in it, either directly or through Nuxt.
+  Vue.js is a JavaScript framework for building user interfaces. I use it for the VetSpace clinic panel, VetCard's public website and the administration interfaces in projects such as DigiSpace.
 
-  ## How I use Vue
+  ## Different interfaces, shared tools
 
-  - **SaaS frontends** — the VetSpace clinic panel: authenticated multi-tenant UI with Pinia state, TypeScript and Tailwind.
-  - **SSR sites via Nuxt** — VetCard's public catalog and this portfolio render server-side for SEO, then hydrate into the same Vue app.
-  - **Inertia apps** — the DigiSpace admin panel pairs a Laravel backend with Vue pages, no separate API layer.
-  - **Interactive widgets** — booking flows, calendars and dynamic forms inside otherwise server-rendered pages.
+  - **Application panels** — forms, lists and interactive workflows for signed-in users.
+  - **Public websites** — Vue components within Nuxt pages rendered on the server.
+  - **Laravel integration** — Inertia connects server-side routes with Vue pages without requiring a separate public API for those screens.
 
-  ## Production experience
+  ## A clinic page as an example
 
-  Vue's sweet spot in my work is the boundary between "site" and "app": the clinic catalog needs to rank in Google (SSR, fast first paint), while the booking flow on the same page needs client-side interactivity. Vue handles both without forcing a split into separate projects. Composition API + TypeScript keeps the codebases readable as they grow — VetSpace's panel is several years of features deep and still navigable.
+  VetCard needs both readable clinic information and an interactive booking interface. Nuxt handles the page's server rendering, while Vue manages user interactions. This lets the same site serve visitors reading about a clinic and those choosing an appointment.
 
-  ## Vue vs React in my work
+  ## Keeping components maintainable
 
-  A pragmatic pick: Vue's template syntax stays closer to HTML for mixed server-rendered sites, Nuxt is a mature SSR story, and the single-file component keeps template, logic and style in one reviewable unit. For PHP-backed products it integrates cleanly — no heavy separate frontend pipeline unless the project needs one.
+  The Composition API helps group related behavior, and TypeScript makes component contracts explicit. I separate data loading, reusable logic and presentation where that improves readability. Framework choice still depends on the existing codebase and team: Vue is my main tool, not a guarantee that every frontend problem needs the same architecture.
 faq:
-  - label: Do you use Vue with Nuxt or standalone?
-    content: Both. Nuxt when the page must be indexed (catalogs, marketing sites), standalone Vue or Inertia for authenticated panels where SEO doesn't apply.
-  - label: Vue 2 to Vue 3 migrations?
-    content: Yes — I've migrated production frontends to Vue 3 + Composition API incrementally, route by route, without a big-bang rewrite.
+  - label: Do you use Vue with Nuxt or Laravel?
+    content: Both. I use Nuxt for public websites such as VetCard, and Vue with Laravel or Inertia for application interfaces. The choice depends on routing, data access and rendering needs.
+  - label: How would you approach a Vue 2 to Vue 3 migration?
+    content: I would first review dependencies and incompatible APIs, then plan changes around components or routes where the architecture allows it. Tests and staged releases help manage the transition.

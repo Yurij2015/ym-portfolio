@@ -1,5 +1,5 @@
 title: Symfony
-description: "Programista Symfony na high-load platformie ticketingowej dla Formula 1, MotoGP, EICMA i EuroLeague — checkout, płatności, mapy miejsc, admin."
+description: "Programowanie w Symfony dla sprzedaży biletów: składanie zamówień, integracje płatności, konta użytkowników i narzędzia administracyjne."
 icon: i-simple-icons-symfony
 category: backend
 since: "2019"
@@ -11,24 +11,24 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Symfony stoi za moją główną pracą komercyjną — wysokoobciążona platforma ticketingowa sprzedająca miejsca na wydarzenia Formula 1, MotoGP, EICMA i EuroLeague. Skala enterprise, długi cykl życia, zero tolerancji dla niedbałego kodu.
+  Symfony to framework PHP, z którego korzystam w pracy komercyjnej nad platformą sprzedaży biletów na Formula 1, MotoGP, EICMA i EuroLeague. Pracuję zarówno nad procesem zakupu, jak i wewnętrznymi narzędziami administracyjnymi.
 
-  ## Jak używam Symfony
+  ## Czym się zajmuję
 
-  - **Checkout i płatności** — ścieżka zakupu: koszyk, wybór miejsc, operatorzy Stripe/Dalenys, potwierdzenie zamówienia i dostawa biletów.
-  - **Konta użytkowników** — rejestracja, profile, historia zamówień dla tysięcy uczestników wydarzeń.
-  - **Dashboardy administracyjne** — wewnętrzne narzędzia zarządzania wydarzeniami, inwentarzem i zamówieniami.
-  - **Integracje** — rozwiązania map miejsc 3D i zewnętrzne API wpięte w ścieżkę zakupu.
+  - **Składanie zamówień** — koszyk, wybór miejsc, potwierdzenie zakupu i dostarczanie biletów.
+  - **Płatności** — integracje z operatorami takimi jak Stripe i Dalenys.
+  - **Konta i administracja** — profile, historia zamówień oraz zarządzanie wydarzeniami i sprzedażą.
+  - **Usługi zewnętrzne** — mapy miejsc i API wykorzystywane podczas zakupu.
 
-  ## Doświadczenie produkcyjne
+  ## Czego wymaga sprzedaż biletów
 
-  Ticketing to obciążenie, w którym spike jest sensem: tysiące równoczesnych kupujących w chwili otwarcia sprzedaży, a każde zapytanie uderza w inwentarz, który nie wolno oversellować. Ta platforma nauczyła mnie dyscypliny przenoszonej na wszystko inne — defensywnej obsługi płatności, ostrożnego cache'owania i czytelnego kodu, który następny programista może bezpiecznie zmieniać pod presją.
+  Po rozpoczęciu sprzedaży platforma musi poradzić sobie ze zmianą popytu, zachowując spójność zamówień i dostępnych miejsc. Szczególne znaczenie mają więc transakcje, stany płatności i obsługa błędów. Szybka strona ma wartość wtedy, gdy klient może poprawnie dokończyć zakup.
 
-  ## Symfony vs Laravel w mojej pracy
+  ## Symfony i Laravel w mojej pracy
 
-  Symfony pasuje platformom żyjącym latami ze ścisłymi konwencjami i jawną architekturą — ticketing jest dokładnie taki. Laravel wygrywa szybkością iteracji produktowych. Oba w mojej produkcji — wybieram według cyklu życia projektu, nie preferencji.
+  Pracuję z oboma frameworkami. Wybór zależy od istniejącej architektury, zasad zespołu i integracji, a nie od sztywnego podziału na duże i małe produkty. W rozwijanej aplikacji Symfony skupiam się na zmianach, które można przejrzeć, przetestować i utrzymywać w kolejnych wydaniach.
 faq:
-  - label: Jakiej skali projekty Symfony masz w doświadczeniu?
-    content: Produkcyjna platforma ticketingowa obsługująca wydarzenia Formula 1, MotoGP, EICMA i EuroLeague — checkout, płatności i admin pod realnymi szczytami ruchu.
-  - label: Czy przejmujesz istniejące bazy kodu Symfony?
-    content: Tak — to rdzeń mojego doświadczenia. Zaczynam od audytu, stabilizuję testami tam, gdzie to ważne, potem rozwijam funkcje bez przerywania cyklu wydań.
+  - label: Przy jakich projektach Symfony pracowałeś?
+    content: "Moje doświadczenie komercyjne obejmuje platformę sprzedaży biletów na Formula 1, MotoGP, EICMA i EuroLeague: składanie zamówień, integracje płatności oraz narzędzia administracyjne."
+  - label: Czy możesz dołączyć do istniejącego projektu Symfony?
+    content: Tak. Najpierw poznaję architekturę i proces wydań, a następnie określam zmiany i testy potrzebne do bezpiecznego rozwoju aplikacji.

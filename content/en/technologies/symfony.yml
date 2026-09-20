@@ -1,5 +1,5 @@
 title: Symfony
-description: "Symfony developer on a high-load ticketing platform for Formula 1, MotoGP, EICMA and EuroLeague — checkout, payments, seat maps, admin."
+description: "Symfony development for ticketing platforms: checkout, payment integrations, user accounts and administration tools for event sales."
 icon: i-simple-icons-symfony
 category: backend
 since: "2019"
@@ -11,24 +11,24 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Symfony is the framework behind my main commercial work — a high-load ticketing platform that sells seats for Formula 1, MotoGP, EICMA and EuroLeague events. Enterprise-scale, long-lived, unforgiving of sloppy code.
+  Symfony is a PHP framework I use in my commercial work on a ticketing platform serving Formula 1, MotoGP, EICMA and EuroLeague events. My work covers both customer-facing purchase flows and internal administration tools.
 
-  ## How I use Symfony
+  ## What I work on
 
-  - **Checkout and payments** — the purchase flow: cart, seat selection, Stripe/Dalenys payment providers, order confirmation and delivery.
-  - **User accounts** — registration, profiles, order history for thousands of event-goers.
-  - **Admin dashboards** — internal tooling for event, inventory and order management.
-  - **Integrations** — 3D seat-map solutions and third-party APIs wired into the purchase path.
+  - **Checkout** — cart behavior, seat selection, order confirmation and ticket delivery.
+  - **Payments** — integrations with providers such as Stripe and Dalenys.
+  - **Accounts and administration** — customer profiles, order history and tools for managing events and orders.
+  - **External services** — seat-map solutions and third-party APIs in the purchase flow.
 
-  ## Production experience
+  ## What ticketing demands
 
-  Ticketing is a workload where the spike is the point: thousands of concurrent buyers the moment sales open, and every request hits inventory that must not oversell. Working on this platform taught me the discipline that transfers to everything else — defensive payment handling, careful caching, readable code that the next developer can safely modify under pressure.
+  When sales open, a platform must handle changes in demand while keeping orders and seat availability consistent. That makes transaction boundaries, payment states and error handling especially important. A fast page is useful only if the customer can complete the correct purchase.
 
-  ## Symfony vs Laravel in my work
+  ## Symfony and Laravel in my work
 
-  Symfony fits platforms that live for years with strict conventions and explicit architecture — the ticketing platform is exactly that. Laravel fits product iteration speed. I run both in production and pick per project lifecycle, not per preference.
+  I work with both frameworks. Existing architecture, team conventions and integrations influence the choice more than a fixed division between enterprise and smaller products. On an established Symfony application, I focus on changes that can be tested, reviewed and maintained through future releases.
 faq:
-  - label: What scale of Symfony projects have you worked on?
-    content: A production ticketing platform serving Formula 1, MotoGP, EICMA and EuroLeague events — checkout, payments and admin under real traffic spikes.
-  - label: Can you take over an existing Symfony codebase?
-    content: Yes — that is the bulk of my experience. I start with an audit, stabilize with tests where it matters, then extend features without breaking the release cycle.
+  - label: What kind of Symfony projects have you worked on?
+    content: My commercial work includes a ticketing platform for Formula 1, MotoGP, EICMA and EuroLeague events, covering checkout, payment integrations and administration tools.
+  - label: Can you work on an existing Symfony application?
+    content: Yes. I start by understanding the architecture and release process, then identify changes and tests needed to extend the application safely.

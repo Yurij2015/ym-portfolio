@@ -1,5 +1,5 @@
 title: Laravel
-description: "Programista Laravel z 8+ latami w produkcji: SaaS multi-tenant, panele Filament, billing Stripe i API REST/GraphQL. Prawdziwe projekty w środku."
+description: "Programowanie w Laravel: aplikacje SaaS, API, panele Filament, kolejki i subskrypcje Stripe na przykładzie VetSpace oraz DigiPulse."
 icon: i-simple-icons-laravel
 category: backend
 since: "2018"
@@ -15,28 +15,31 @@ links:
     to: https://laravel.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://laravel.com/framework/docs/12.x/horizon
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Laravel to mój główny framework backendowy. Buduję i utrzymuję na nim produkcyjne SaaS-y, panele administracyjne i API — od pierwszej migracji po monitorowany deploy na własnych serwerach.
+  Laravel to framework PHP, którego używam do produktów SaaS, API i narzędzi administracyjnych. Moje projekty obejmują VetSpace, DigiPulse, NetPostPanel i stronę DigiSpace. Każdy ma własne reguły biznesowe i potrzeby integracyjne.
 
-  ## Jak używam Laravela
+  ## Jak korzystam z Laravel
 
-  - **API SaaS multi-tenant** — VetSpace działa na Laravel API z bazą-per-tenant: jedna baza kodu obsługuje publiczny katalog klinik i subskrypcyjny CRM.
-  - **Panele na Filament** — back-office'y DigiPulse i DigiSpace: zasoby, filtry, dashboardy i zarządzanie treścią bez budowy autorskiego panelu.
-  - **Billing** — subskrypcje Stripe przez Laravel Cashier: triale, zmiany planów, dunning, webhooki.
-  - **Kolejki i zadania** — workery pod Horizonem dla pipeline'ów AI i testów monitoringowych.
-  - **Projektowanie API** — REST dla powierzchni CRM, GraphQL dla złożonych zapytań katalogu — wersjonowane i udokumentowane.
+  - **VetSpace** — wspólne API katalogu placówek i CRM, dostęp z uwzględnieniem placówki oraz subskrypcje Stripe przez Cashier.
+  - **DigiPulse** — aplikacja monitoringu i panel Filament obok osobnej usługi sprawdzającej dostępność, napisanej w Go.
+  - **NetPostPanel** — generowanie treści w tle z wykorzystaniem kolejek i Horizon.
+  - **DigiSpace** — wielojęzyczna strona z własnym CMS i panelem Filament.
 
-  ## Doświadczenie produkcyjne
+  ## Framework i jego ekosystem
 
-  Laravel niesie wszystkie moje produkty SaaS: VetSpace (platforma weterynaryjna), DigiPulse (monitoring dostępności), NetPostPanel (operacje treści AI) i stronę DigiSpace z autorskim CMS-em. Powtarzający się wzorzec: logika domenowa w serwisach, izolacja tenantów na poziomie bazy, a Octane/FrankenPHP daje zapas wydajności, gdy ruch rośnie.
+  Laravel zapewnia routing, walidację, dostęp do bazy danych i API kolejek. Filament, Cashier i Horizon to dodatkowe narzędzia, które dobieram i konfiguruję dla projektu. Płatności, uprawnienia i izolacja danych klientów nadal wymagają osobnego projektu oraz testów.
 
-  ## Kiedy Laravel to dobry wybór
+  ## Utrzymanie po wdrożeniu
 
-  Najwięcej zyskują produkty wymagające panelu, billingu, kolejek i prawdziwego API — Laravel dostarcza to wszystko bez składania dziesiątki pakietów. Dla cienkiego bezstanowego serwisu lub ciężkiego workera czasem wybieram Go; dla wszystkiego produktowego — Laravel domyślnie.
+  Staram się oddzielać logikę biznesową od obsługi żądań HTTP i ekranów administracyjnych. Ułatwia to ponowne wykorzystanie procesu w API lub zadaniu w tle. Optymalizację zaczynam od pomiarów: Octane może pomóc przy odpowiednim obciążeniu, ale nie zastępuje poprawy zapytań ani kontroli stanu aplikacji.
 faq:
-  - label: Budujesz aplikacje Laravel od zera czy przejmujesz istniejące?
-    content: Jedno i drugie. Większość komercyjnej pracy to rozwijanie istniejących produkcyjnych baz kodu — audyty, refaktoryzacja, nowe funkcje bez zatrzymywania wydań. Projekty greenfield prowadzę tą samą dyscypliną od pierwszego dnia.
-  - label: Jakich narzędzi ekosystemu Laravel używasz?
-    content: Filament do paneli, Cashier do billingu Stripe, Horizon do kolejek, Octane z FrankenPHP tam, gdzie liczy się wydajność, plus Pest/PHPUnit i PHPStan w CI.
-  - label: Czy sam hostujesz i wdrażasz aplikacje Laravel?
-    content: "Tak — moje SaaS-y działają na własnym serwerze Hetzner: Proxmox, Docker, Caddy i pipeline'y GitHub Actions. Pokrywam całą drogę od commita do produkcji."
+  - label: Tworzysz nowe aplikacje Laravel czy utrzymujesz istniejące?
+    content: Jedno i drugie. Zajmuję się nowymi aplikacjami, audytami, refaktoryzacją i rozwojem działających produktów. Podejście zależy od stanu kodu oraz wymagań dotyczących wydań.
+  - label: Z jakich narzędzi Laravel korzystasz?
+    content: Z Filament do administracji, Cashier do subskrypcji Stripe i Horizon do kolejek Redis. Pracuję też z Octane i FrankenPHP, gdy aplikacja korzysta na długotrwałych procesach.
+  - label: Czy możesz zająć się hostingiem i wdrożeniem Laravel?
+    content: Tak. Pracuję z Docker, Caddy, Proxmox i CI/CD, także na wynajętym serwerze dedykowanym Hetzner. Konfiguracja zależy od wymaganej dostępności i sposobu utrzymania projektu.

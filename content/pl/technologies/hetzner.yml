@@ -1,5 +1,5 @@
 title: Hetzner
-description: "Dedykowany serwer Hetzner hostuje moje produkty SaaS — VM Proxmox na własnym sprzęcie, który zastąpił flotę chmurowych dropletów."
+description: "Serwer dedykowany Hetzner dla SaaS: wynajęty sprzęt, maszyny wirtualne Proxmox i samodzielne utrzymanie aplikacji."
 icon: i-simple-icons-hetzner
 category: infrastructure
 since: "2023"
@@ -13,19 +13,21 @@ links:
     to: https://www.hetzner.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://docs.hetzner.com/robot/dedicated-server/dedicated-server-hardware/dedicated-server-hardware-overview/
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Dedykowany sprzęt Hetzner to miejsce, gdzie mieszkają moje produkty SaaS — fizyczny serwer z Proxmoxem, który zastąpił rosnącą flotę chmurowych dropletów, gdy matematyka przestała się spinać.
+  Hetzner udostępnia serwer dedykowany, który wynajmuję dla DigiPulse, VetSpace, NetPostPanel i usług pomocniczych. Zarządzam oprogramowaniem, a Proxmox rozdziela środowiska aplikacji między maszyny wirtualne.
 
-  ## Jak używam Hetzner
+  ## Za co odpowiadam
 
-  - **Serwer dedykowany** — jedna fizyczna maszyna hostuje VM-y, na których działają DigiPulse, VetSpace, NetPostPanel i usługi wspierające.
-  - **Własna warstwa wirtualizacji** — Proxmox na bare metal: VM-y i kontenery wycięte per obciążenie, ze snapshotami i backupami pod moją kontrolą.
-  - **Przewidywalna ekonomia** — stały miesięczny koszt za prawdziwe rdzenie i RAM zamiast cen chmurowych per VM; oszczędności finansują zapas redundancji.
+  Zajmuję się systemem operacyjnym, maszynami wirtualnymi, wdrażaniem kontenerów, konfiguracją sieci i odtwarzaniem aplikacji. Wynajem daje kontrolę nad przydziałem zasobów, ale sprzęt pozostaje własnością dostawcy. Awarie i wymianę podzespołów rozwiązuje się z obsługą hostingu.
 
-  ## Doświadczenie produkcyjne
+  ## Dlaczego ten model pasuje do moich projektów
 
-  Posiadanie sprzętu oznacza też posiadanie incydentów — dla umierającego dysku czy krzywo ustawionego firewalla nie ma ticketa supportowego, jest konsola i odpowiedzialność naprawienia. Dokładnie taka wymiana mi odpowiadała: pełna kontrola nad stackiem od hypervisora po aplikację w cenie, która czyni bootstrap-SaaS zrównoważonym. Cała moja produkcja odpowiada tej maszynie.
+  Kilka stale działających usług może korzystać ze wspólnej puli zasobów. Daje mi to przewidywalny podstawowy koszt hostingu i swobodę wyboru narzędzi wdrożeniowych. Pełny koszt obejmuje również przechowywanie danych, kopie zapasowe, czas administracji i dodatkową infrastrukturę.
 
-  ## Dedykowany vs chmura w moim stacku
+  ## Dostępność wymaga osobnego planu
 
-  Stałe, zawsze włączone obciążenia należą do posiadanego sprzętu; spikowe lub jednorazowe — do chmury. Moje produkty to pierwszy przypadek: przewidywalne obciążenie, znani sąsiedzi (ja) i zero niespodzianek w rachunku, gdy ruch rośnie.
+  Maszyny wirtualne na jednym serwerze nadal zależą od tego samego fizycznego sprzętu. Izolacja w Proxmox nie zapewnia wysokiej dostępności hosta. Gdy wymagania projektu rosną, trzeba osobno zaplanować redundancję i czas odtworzenia usług. Kolejna maszyna wirtualna na tym samym serwerze nie rozwiązuje tego problemu.

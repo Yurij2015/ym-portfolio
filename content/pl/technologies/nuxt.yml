@@ -1,5 +1,5 @@
 title: Nuxt
-description: "Programista Nuxt SSR: katalogi SEO-first, strony marketingowe SaaS i to portfolio — i18n, obrazy OG, sitemap i deploye na Vercel."
+description: "Tworzenie wielojęzycznych stron w Nuxt: renderowanie na serwerze, metadane SEO, katalogi placówek i strony oparte na treści."
 icon: i-simple-icons-nuxtdotjs
 category: frontend
 since: "2022"
@@ -12,21 +12,26 @@ links:
     to: https://nuxt.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Nuxt to mój sposób budowania aplikacji Vue, które muszą rankować w wyszukiwarkach — renderowanie serwerowe, routing per-locale, strukturalna treść i gotowy do deploya output w jednym frameworku. To portfolio to aplikacja Nuxt 4; tak samo publiczny katalog VetCard.
+  Nuxt to framework do aplikacji Vue z routingiem i renderowaniem na serwerze. Korzystam z niego w publicznym katalogu VetCard oraz w tym portfolio, gdzie treść strony powinna być dostępna dla odwiedzających i wyszukiwarek już w odpowiedzi serwera.
 
-  ## Jak używam Nuxt
+  ## Przykłady z moich projektów
 
-  - **Publiczne strony SEO-first** — katalog klinik VetCard renderuje się serwerowo z lokalizowanymi URL-ami, sitemap, hreflang i JSON-LD — to strony, które pozyskują klientów.
-  - **Renderowanie multi-tenant** — jeden deploy VetCard obsługuje wiele klinik: routing po slugu i motywy per tenant.
-  - **Strony sterowane treścią** — to portfolio działa na Nuxt Content z walidowanymi Zod plikami YAML per locale i obrazami OG generowanymi w runtime.
-  - **Renderowanie hybrydowe** — SSR dla stron indeksowanych, `ssr: false` dla czysto klienckich flow jak kalendarz rezerwacji — per route, nie per aplikacja.
+  VetCard łączy strony placówek weterynaryjnych z interaktywną rezerwacją wizyt. Jedna aplikacja obsługuje wiele placówek, wersje językowe i indywidualne kolory. To portfolio korzysta z Nuxt Content do tłumaczonych plików YAML, a obrazy do udostępniania w mediach społecznościowych generuje podczas działania serwera.
 
-  ## Doświadczenie produkcyjne
+  ## Co obejmuje praca nad SEO
 
-  Nuxt opłaca się tam, gdzie liczy się ruch organiczny. VetCard istnieje, by być znajdowanym w wyszukiwarkach — każda strona kliniki jest renderowana serwerowo, zlokalizowana i oznaczona, podczas gdy flow rezerwacji zostaje klienckie, by uniknąć problemów hydratacji. Ta sama dyscyplina na tej stronie: sitemap generowany z treści, canonical/hreflang na każdej trasie, cache ISR na Vercel. Gdy strona ma i rankować, i zachowywać się jak aplikacja — Nuxt to najkrótsza znana mi droga.
+  Renderowanie na serwerze dostarcza treść HTML bez czekania na wykonanie JavaScript w przeglądarce. Osobno konfiguruję metadane, adresy kanoniczne, wersje językowe i mapę witryny. Ułatwia to odnajdywanie oraz interpretowanie stron, ale nie gwarantuje indeksacji ani pozycji. Wyszukiwarki potrafią wykonywać JavaScript, lecz wymaga to dodatkowego etapu przetwarzania.
+
+  ## Renderowanie i wdrożenie
+
+  Nuxt obsługuje różne sposoby renderowania. Dobieram je do strony: sama interaktywność nie wymaga wyłączenia renderowania serwerowego. To portfolio korzysta z renderowania na serwerze i pamięci podręcznej ISR w Vercel dla wybranych tras; generowanie stron z wyprzedzeniem jest wyłączone w wersji produkcyjnej.
 faq:
-  - label: Dlaczego Nuxt zamiast zwykłego SPA Vue?
-    content: SEO i pierwszy render. SPA nie potrafi wiarygodnie rankować katalogu czy strony treściowej; Nuxt daje SSR, reguły renderowania per route i kontrolę metadanych — a model SPA zostaje tam, gdzie indeksacja nie gra roli.
-  - label: Której wersji Nuxt używasz?
-    content: Nuxt 4 w produkcji — to portfolio i VetCard działają na nim, z Nuxt Content, Nuxt Image, i18n i generowaniem obrazów OG w runtime.
+  - label: Dlaczego warto użyć Nuxt na publicznej stronie?
+    content: Renderowanie na serwerze udostępnia treść w początkowej odpowiedzi HTML. Nuxt daje też narzędzia do routingu i metadanych. Strony JavaScript mogą być indeksowane, ale renderowanie serwerowe zmniejsza zależność od wykonywania kodu przez robota wyszukiwarki.
+  - label: Z której wersji Nuxt korzystasz?
+    content: To portfolio i VetCard korzystają z Nuxt 4. Portfolio używa też Nuxt Content, Nuxt Image, lokalizacji i generowania obrazów do mediów społecznościowych podczas działania serwera. Dobór modułów zależy od projektu.

@@ -1,5 +1,5 @@
 title: Caddy
-description: "Caddy reverse proxy for multi-tenant routing — automatic TLS, two-tier proxying and simple configs fronting my SaaS products."
+description: "Caddy reverse proxy for SaaS applications: automatic HTTPS, domain routing and container access in my self-managed infrastructure."
 icon: i-simple-icons-caddy
 category: infrastructure
 since: "2022"
@@ -13,19 +13,23 @@ links:
     to: https://caddyserver.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Technical reference
+    to: https://caddyserver.com/docs/automatic-https
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Caddy fronts every service on my infrastructure — automatic HTTPS, a two-tier proxy setup for multi-tenant routing, and configs that fit on one screen instead of a directory of nginx snippets.
+  Caddy is a web server and reverse proxy that I use to route requests to my SaaS applications. It sits in front of services such as VetSpace and DigiPulse, connecting public domains to applications running in Docker.
 
   ## How I use Caddy
 
-  - **Two-tier reverse proxy** — an edge Caddy terminates TLS and routes by hostname; per-VM Caddy instances forward to the right container. Multi-tenant domains land on the correct tenant app without manual per-site config.
-  - **Automatic certificates** — Let's Encrypt handled silently: issuance, renewal, renewal failure alerts. TLS has been a non-task for years.
-  - **Internal service mesh-lite** — clean hostnames between containers and VMs, so apps address services by name, not by IP someone once wrote down.
+  - **Request routing** — forward traffic to the application or container responsible for a domain.
+  - **HTTPS** — automate certificate issuance and renewal for configured domains.
+  - **Readable configuration** — keep proxy rules in a Caddyfile so I can review changes alongside application deployments.
 
-  ## Production experience
+  ## HTTPS and tenant routing
 
-  The multi-tenant case is where Caddy earns its keep: clinic domains resolve to a single VetSpace frontend, and the router maps host to tenant without a config edit per signup. Compared to the nginx configs I maintained before, the Caddyfile reads like documentation of intent rather than a ritual.
+  Automatic HTTPS depends on correct DNS, certificate validation and persistent certificate storage. Certificate failures still need monitoring. The application must also identify the clinic and enforce access permissions; a reverse proxy does not provide tenant isolation on its own.
 
-  ## Caddy vs nginx in my stack
+  ## Where Caddy fits
 
-  nginx still exists in legacy corners, but new routing goes to Caddy — automatic TLS alone removes a whole class of operational tasks, and the config surface is small enough to review at a glance during an incident.
+  For my Docker deployments, Caddy provides a manageable entry point without a large proxy configuration. I still plan timeouts, forwarded headers and access logging around the needs of each service. Those details matter when tracing a failed booking request across the proxy and Laravel API.

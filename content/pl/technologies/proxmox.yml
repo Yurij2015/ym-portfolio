@@ -1,5 +1,5 @@
 title: Proxmox
-description: "Wirtualizacja Proxmox na własnym serwerze Hetzner — VM i kontenery per obciążenie, snapshoty i izolacja dla hostingu SaaS."
+description: "Proxmox VE dla hostingu SaaS: maszyny wirtualne na serwerze dedykowanym, podział środowisk, migawki i planowanie kopii zapasowych."
 icon: i-simple-icons-proxmox
 category: infrastructure
 since: "2023"
@@ -13,20 +13,21 @@ links:
     to: https://www.proxmox.com
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://pve.proxmox.com/pve-docs/pve-admin-guide.pdf
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Proxmox to warstwa wirtualizacji na moim dedykowanym serwerze — każde obciążenie dostaje własną VM lub kontener: izolowane, snapshotowane i jednorazowe, zamiast jednego monolitycznego hosta dla wszystkich.
+  Proxmox VE to platforma wirtualizacji, z której korzystam na wynajętym serwerze Hetzner. Pozwala zarządzać osobnymi środowiskami aplikacji SaaS i usług pomocniczych, w tym infrastrukturą DigiPulse.
 
-  ## Jak używam Proxmoxa
+  ## Jak organizuję środowiska
 
-  - **VM per obciążenie** — produkcyjne serwisy SaaS, środowiska stagingowe i narzędzia wewnętrzne mieszkają we własnych VM na maszynie Hetzner.
-  - **Snapshoty jako siatka bezpieczeństwa** — migawki przed aktualizacjami i migracjami zamieniają ryzykowne operacje w odwracalne.
-  - **Granice zasobów** — limity CPU i pamięci per VM nie pozwalają procesowi w jednym produkcie zagłodzić pozostałych.
-  - **Szablony** — obrazy bazowe z Dockerem, agentami i hardeningiem w środku, więc nowe środowisko to kwestia minut.
+  Maszyny wirtualne mają oddzielne systemy operacyjne i konfigurowalny przydział zasobów. Wewnątrz nich Docker uruchamia usługi aplikacji. Dzięki temu łatwiej aktualizować i diagnozować poszczególne środowiska niż instalować wszystkie usługi bezpośrednio na fizycznym hoście.
 
-  ## Doświadczenie produkcyjne
+  ## Migawki i kopie zapasowe
 
-  Proxmox czyni „jeden serwer, wiele produktów" zdrowym. Izolacja na poziomie VM odzwierciedla wzorzec baza-per-tenant w samych aplikacjach — ta sama filozofia na dwóch warstwach. Gdy VM umiera albo aktualizacja idzie źle, lekarstwem jest przywrócenie snapshotu, nie weekendowa przebudowa. Ten margines bezpieczeństwa to powód, dla którego mogę prowadzić produkcyjne SaaS-y solo, bez zespołu pagera.
+  Migawka może pomóc wycofać zmianę, zależnie od pamięci masowej i stanu aplikacji. Nie zastępuje niezależnej kopii zapasowej ani nie chroni przed utratą dysków hosta. Przy odtwarzaniu środowiska trzeba też uwzględnić spójność bazy danych i kolejność uruchamiania usług.
 
-  ## Dlaczego nie po prostu Docker na hoście
+  ## Ograniczenia jednego hosta
 
-  Kontenery dzielą kernel i promień rażenia. Granice VM dają gwarancje zasobów per obciążenie, niezależne kernele tam, gdzie trzeba, i czystą separację między serwisami różnych produktów — warte niewielkiego narzutu dla spokojnej produkcji.
+  Maszyny wirtualne współdzielą zasoby fizyczne i zależą od dostępności serwera. Limity pomagają rozdzielać obciążenie, ale awaria dysku lub hosta może dotknąć wiele aplikacji. Dlatego oddzielenie środowisk, odtwarzanie z kopii i wysoka dostępność wymagają osobnych rozwiązań.

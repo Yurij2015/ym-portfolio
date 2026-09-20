@@ -1,5 +1,5 @@
 title: Go
-description: "Mikroserwisy Go obok monolitów PHP: workery monitoringu i analiza wizyt AI — małe szybkie serwisy tam, gdzie PHP nie pasuje."
+description: "Go w aplikacjach SaaS: osobna usługa monitoringu DigiPulse i analiza wizyt weterynaryjnych z pomocą AI w VetSpace."
 icon: i-simple-icons-go
 category: backend
 since: "2024"
@@ -12,19 +12,21 @@ links:
     to: https://go.dev
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
+  - label: Dokumentacja techniczna
+    to: https://go.dev/doc/faq
+    color: neutral
+    icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Go to mój drugi język backendowy — dla małych, zawsze włączonych serwisów, gdzie cykl żądania PHP jest złym narzędziem. Lekkie workery, nie kolejny monolit.
+  Go to kompilowany język programowania, którego używam do usług działających obok aplikacji Laravel. W moich projektach wykonują one konkretne zadania, dla których przydatny jest osobny proces i niezależny cykl wdrożeń.
 
-  ## Jak używam Go
+  ## Go w DigiPulse i VetSpace
 
-  - **Workery monitoringu** — testy dostępności DigiPulse działają jako serwisy Go: tysiące równoczesnych prób HTTP przy ułamku pamięci, jakiej wymagałby odpowiednik PHP.
-  - **Mikroserwis AI** — VetSpace deleguje analizę wizyt dedykowanemu serwisowi Go, więc główne API Laravel pozostaje responsywne podczas inferencji.
-  - **Deploy jednym binarkiem** — skompilowany artefakt wpada do obrazu Docker bez zależności runtime; najprostsze wdrożenia w mojej infrastrukturze.
+  DigiPulse korzysta z osobnej usługi Go do sprawdzania dostępności stron. Laravel obsługuje aplikację i panel administracyjny, a usługa monitoringu wysyła żądania HTTP i przekazuje wyniki. W VetSpace oddzielna usługa Go uczestniczy w analizie wizyt z pomocą AI.
 
-  ## Doświadczenie produkcyjne
+  ## Organizacja pracy w tle
 
-  Wzorzec, który działa: domena i billing zostają w Laravel, a równoległe lub wrażliwe na latencję krawędzie wychodzą do Go. Monitoring to podręcznikowy przypadek — worker musi odpalić tysiące testów zgodnie z harmonogramem, tolerować częściowe awarie sieci i raportować szybko. Gorutyny i mała pamięć Go czynią to nudnym — dokładnie taka ma być infrastruktura.
+  Gorutyny ułatwiają współbieżne wykonywanie zadań, ale ich liczbę nadal trzeba kontrolować. Limity czasu, anulowanie żądań i ograniczone kolejki pomagają obsługiwać wolne lub niedostępne strony. Liczy się to, czy usługa niezawodnie kończy sprawdzenia przy dostępnych zasobach. Ogólne stwierdzenie, że Go jest szybsze od PHP, nie zastąpi pomiarów.
 
-  ## Go vs PHP w moim stacku
+  ## Wdrożenie i wybór języka
 
-  Uzupełniające się, nie konkurencyjne. PHP/Laravel włada produktem; Go — zadaniami, gdzie liczy się równoległość na megabajt. Jeśli serwis może być przyjazną cronowi komendą Laravel — zostaje w Laravel; Go zarabia swoje miejsce, gdy obciążenie przerasta ten kształt.
+  Aplikacje Go można wdrażać jako skompilowane pliki wykonywalne. To, czy potrzebują bibliotek systemowych, zależy od ustawień budowania i zależności. Zwykłe procesy aplikacji pozostawiam w Laravel, a Go wybieram wtedy, gdy wydzielenie usługi upraszcza jej działanie i utrzymanie.
