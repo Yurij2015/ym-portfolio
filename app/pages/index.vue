@@ -38,6 +38,7 @@ const jsonLd: Record<string, unknown>[] = [{
   'jobTitle': 'Senior Full-Stack PHP Developer',
   description,
   'url': origin,
+  'image': `${origin}/images/avatar-2.jpeg`,
   'address': { '@type': 'PostalAddress', 'addressLocality': 'Poznań', 'addressCountry': 'PL' },
   'sameAs': [
     'https://github.com/Yurij2015',
