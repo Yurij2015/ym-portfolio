@@ -1,14 +1,14 @@
 title: DigiSpace
-description: "Open-source'owy kod produkcyjnej strony digispace.pro: publiczny serwis agencji, panel administracyjny i własny CMS — Laravel + Inertia + Vue (Vite, Tailwind, MySQL), z testami PHPUnit/PHPStan i Dockerem"
+description: "Wielojęzyczna (EN/UK/PL) produkcyjna strona agencji z autorskim CMS — panel Filament z rozbudowanym edytorem treści, tłumaczenia, JSON-LD i zlokalizowane sitemapy wbudowane obok starego panelu na Inertia + Vue"
 url: https://digispace.pro
 date: "2022-10-05"
 tags:
   - Laravel
+  - Filament
   - Inertia
   - Vue
-  - CMS
-  - Open Source
-  - MySQL
+  - i18n
+  - SEO
 image: /hero/digispace.avif
 featured: true
 stack:
@@ -24,6 +24,8 @@ stack:
     icon: i-simple-icons-mysql
   - name: Tailwind CSS
     icon: i-simple-icons-tailwindcss
+  - name: Filament
+    icon: i-simple-icons-filament
   - name: CMS
     icon: i-heroicons-document-text
 links:
@@ -36,20 +38,22 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  Kod za digispace.pro — publiczna strona agencji, panel administracyjny i niestandardowy CMS zbudowany na Laravel, Inertia i Vue. Open source: dokładnie ten sam kod produkcyjny, który działa na żywej stronie.
+  Produkcyjna strona digispace.pro — publiczny serwis agencji, panel administracyjny i autorski CMS w jednej aplikacji Laravel, teraz w pełni wielojęzyczna (EN/UK/PL), z panelem Filament obok starego panelu na Inertia + Vue. Ten sam kod, który obsługuje żywą stronę, jest dostępny na GitHub.
 
   ## Kluczowe funkcje
 
-  - **Monolit zrobiony dobrze** - publiczna strona, panel administracyjny i własny CMS w jednej aplikacji Laravel + Inertia, bez osobnego API
-  - **Treść pod kontrolą** - strony, usługi i portfolio edytuje się w CMS — bez deploymentu dla zmiany tekstu
+  - **Panel administracyjny Filament** - równoległy panel `/control` (24 zasoby) z edytorem TipTap, przesyłaniem obrazów bezpośrednio do MinIO i nawigacją zorientowaną na treść, wdrażany zasób po zasobie obok istniejącego panelu Inertia
+  - **Wielojęzyczność od podstaw** - tłumaczone są nie tylko strony, ale i strukturalne teksty UI (menu, stopka, przyciski) dla każdej lokalizacji, z routingiem opartym na hreflang
+  - **SEO wbudowane** - dane strukturalne JSON-LD, zlokalizowane sitemapy i poprawna obsługa 404 dla każdej lokalizacji
+  - **Monolit zrobiony dobrze** - publiczna strona i oba panele administracyjne w jednej aplikacji Laravel, bez osobnego API
+  - **Treść pod kontrolą** - strony, usługi i portfolio edytuje się w CMS — bez deploymentu dla zmiany tekstu czy tłumaczenia
   - **Bramy jakości** - testy PHPUnit i analiza statyczna PHPStan w CI
-  - **Identyczne środowiska** - Docker zapewnia paritet lokalny i produkcyjny
-  - **Otwarty domyślnie** - dokładnie ten kod, który obsługuje digispace.pro, jest publiczny na GitHub
+  - **Otwarty kod** - dokładnie ten kod, który obsługuje digispace.pro, jest publiczny na GitHub
 
   ## Stos technologiczny
 
   - **Backend**: Laravel
-  - **Frontend**: Vue.js
-  - **Połączenie**: Inertia.js
-  - **Narzędzie build**: Vite
+  - **Panel admina**: Filament 5 (`/control`) + stary panel na Inertia.js + Vue
+  - **Frontend**: Vue.js, Vite
+  - **Lokalizacja**: tłumaczenia treści i struktury EN/UK/PL
   - **Architektura**: Niestandardowy CMS

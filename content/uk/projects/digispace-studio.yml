@@ -1,0 +1,31 @@
+title: DigiSpace Studio
+description: "Маркетинговий сайт нішевої IT-студії для ветеринарних клінік та pet-брендів — WordPress із темою Blocksy та Gutenberg-блоками"
+url: https://digispace.studio
+date: "2024-06-27"
+tags:
+  - WordPress
+  - Маркетинг
+  - SEO
+image: /hero/digispace-studio.avif
+featured: true
+stack:
+  - name: WordPress
+    icon: i-simple-icons-wordpress
+  - name: PHP
+    icon: i-simple-icons-php
+  - name: MySQL
+    icon: i-simple-icons-mysql
+links:
+  - label: Live Demo
+    to: https://digispace.studio
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+content: |
+  Маркетинговий сайт DigiSpace Studio — спеціалізованої веб-студії для ветеринарних клінік та pet-брендів. Побудований на WordPress із темою Blocksy та Stackable/Gutenberg-блоками, дочірньою темою для кастомізації, блогом та захопленням лідів через контактні форми.
+
+  ## Ключові особливості
+
+  - **Нішеве позиціювання** — сайт говорить безпосередньо з ветклініками та pet-брендами, а не про "агенцію для всіх"
+  - **Блочне редагування** — блоки Stackable та Ultimate Gutenberg дозволяють будувати нові лендінги без коду
+  - **Дочірня тема** — кастомізації живуть у Blocksy child theme, тож оновлення теми не зносять дизайн
+  - **Блог + захоплення лідів** — контент-маркетинг для SEO з Contact Form 7 для запитів

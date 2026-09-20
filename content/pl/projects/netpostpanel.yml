@@ -1,14 +1,14 @@
 title: NetPostPanel
-description: Platforma treści AI — generacja multi-provider, wyszukiwanie semantyczne na Qdrant, agregacja RSS z auto-wykrywaniem
+description: Platforma AI do operacji na treści — pipeline RAG (research → scraping → generacja → wektoryzacja), zewnętrzne API dla innych aplikacji oraz Auto Pilot do generacji bez udziału człowieka
 url: https://net-post-panel.digispace.pro
 date: "2024-11-10"
 tags:
   - AI
   - Laravel
+  - RAG
+  - External API
   - Qdrant
-  - Langfuse
-  - RSS
-  - LLM
+  - Horizon
 image: /hero/netpostpanel.avif
 featured: true
 stack:
@@ -23,26 +23,30 @@ stack:
   - name: Horizon
     icon: i-simple-icons-laravelhorizon
 links:
-  - label: Coming Soon
-    to: "#"
+  - label: Przegląd projektu
+    to: https://github.com/Yurij2015/net-post-panel-overview
     color: neutral
-    icon: i-heroicons-clock
+    icon: i-simple-icons-github
 content: |
-  Platforma treści AI z generacją multi-provider (Gemini/OpenAI za abstrakcją driverów), wyszukiwaniem semantycznym na Qdrant, silnikiem agregacji RSS/wiadomości z auto-wykrywaniem i scrapingiem treści oraz śledzeniem Langfuse dla obserwowalności LLM.
+  Wewnętrzna platforma AI do operacji na treści, która zamienia research tematu w gotową treść: pełny pipeline RAG (Google Custom Search + RSS → scraping → generacja multi-provider → wektoryzacja), plus wersjonowane zewnętrzne API zasilające procesy treściowe innych projektów, w tym pipeline bloga DigiSpace.
 
   ## Kluczowe funkcje
 
+  - **Zewnętrzne API** - wersjonowane `POST /api/v1/generate` + `/translate` z kluczami i limitami per klient udostępnia cały pipeline innym aplikacjom, synchronicznie lub asynchronicznie z callbackami
+  - **Auto Pilot** - codzienne zaplanowane uruchomienia generują treść z nowych inspiracji lub własnych tematów, w pełni automatycznie
   - **AI bez przywiązania do dostawcy** - Gemini i OpenAI za abstrakcją driverów, więc zmiana modelu to konfiguracja, nie refaktoryzacja
   - **Pipeline semantyczny** - wyszukiwanie wektorowe na Qdrant deduplikuje i grupuje newsy zanim trafią do generacji
-  - **Autonomiczna agregacja** - auto-wykrywanie kanałów RSS plus scraping zamieniają temat w samozasilające się źródło treści
+  - **Autonomiczna agregacja** - auto-wykrywanie kanałów RSS oraz Google Custom Search plus scraping zamieniają temat w samozasilające się źródło treści
   - **Widoczne wywołania LLM** - każda generacja jest śledzona w Langfuse: tokeny, opóźnienie, koszt
-  - **Na kolejkach** - Laravel Horizon wykonuje zadania generacji i scrapingu z retry i kontrolą obciążenia
+  - **Dostęp oparty na rolach** - role admin/content manager/editor, każde zapytanie ograniczone do właściciela poza adminem
 
   ## Stos technologiczny
 
-  - **Backend**: Laravel
-  - **AI**: Multi-provider (Gemini/OpenAI)
+  - **Backend**: Laravel, agenci `laravel/ai`
+  - **Frontend**: Inertia.js + Vue 3 (SPA Search & Creation, edytor TipTap)
+  - **AI**: Multi-provider (Gemini/OpenAI) za abstrakcją driverów
+  - **Research**: Google Custom Search + agregacja RSS, scraping stron
   - **Baza wektorowa**: Qdrant do wyszukiwania semantycznego
   - **Obserwowalność**: Langfuse do śledzenia LLM
   - **Kolejka**: Laravel Horizon
-  - **Architektura**: Wzorzec abstrakcji driverów
+  - **Testy**: PHPUnit/Pest + Cypress E2E

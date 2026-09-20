@@ -1,0 +1,49 @@
+title: VetCard
+description: "Multi-tenant catalog of veterinary clinics: SEO clinic pages, online appointment booking, per-clinic branding — one Nuxt app serves every clinic"
+url: https://vetcard.pro
+date: "2026-09-20"
+tags:
+  - Nuxt
+  - Vue
+  - Multi-tenant
+  - SEO
+  - SSR
+image: /hero/vetcard.avif
+featured: true
+stack:
+  - name: Nuxt
+    icon: i-simple-icons-nuxtdotjs
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
+  - name: TypeScript
+    icon: i-simple-icons-typescript
+  - name: Tailwind CSS
+    icon: i-simple-icons-tailwindcss
+  - name: Laravel API
+    icon: i-simple-icons-laravel
+links:
+  - label: Live Demo
+    to: https://vetcard.pro
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: Overview
+    to: https://github.com/Yurij2015/vetspace-vetcard
+    color: neutral
+    icon: i-simple-icons-github
+content: |
+  The public-facing side of VetSpace — a multi-tenant catalog of veterinary clinics. A single Nuxt SSR deployment serves every clinic: SEO-first clinic card pages, online appointment booking proxied to each clinic's own tenant backend, per-clinic theming, and multi-branch support.
+
+  ## Key Features
+
+  - **One deployment, many clinics** — a single app routes by clinic slug; booking and slot requests are proxied to each clinic's own tenant backend
+  - **SEO-first catalog** — 590+ clinics with SSR pages, structured data and localized routes built to be indexed
+  - **Per-clinic branding** — every clinic page is themed by its own brand color, with a "Powered by VetSpace" badge
+  - **Real booking UX** — available slots show free-doctor counts with scarcity color-coding
+  - **Fully localized** — Ukrainian, English and Polish with prefix-based routing
+
+  ## Tech Stack
+
+  - **Frontend**: Nuxt 4 / Vue 3, Tailwind CSS v4
+  - **Backend**: Laravel catalog API + per-tenant appointment endpoints
+  - **Rendering**: SSR for SEO pages, CSR for booking flows
+  - **Testing**: Vitest unit tests + Cypress E2E against a real backend

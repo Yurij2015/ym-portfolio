@@ -1,0 +1,49 @@
+title: VetCard
+description: "Мультитенантний каталог ветеринарних клінік: SEO-сторінки клінік, онлайн-запис на прийом, брендинг кожної клініки — один Nuxt-застосунок обслуговує всіх"
+url: https://vetcard.pro
+date: "2026-09-20"
+tags:
+  - Nuxt
+  - Vue
+  - Multi-tenant
+  - SEO
+  - SSR
+image: /hero/vetcard.avif
+featured: true
+stack:
+  - name: Nuxt
+    icon: i-simple-icons-nuxtdotjs
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
+  - name: TypeScript
+    icon: i-simple-icons-typescript
+  - name: Tailwind CSS
+    icon: i-simple-icons-tailwindcss
+  - name: Laravel API
+    icon: i-simple-icons-laravel
+links:
+  - label: Live Demo
+    to: https://vetcard.pro
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: Огляд проєкту
+    to: https://github.com/Yurij2015/vetspace-vetcard
+    color: neutral
+    icon: i-simple-icons-github
+content: |
+  Публічна частина VetSpace — мультитенантний каталог ветеринарних клінік. Один Nuxt SSR-деплой обслуговує всі клініки: SEO-сторінки клінік, онлайн-запис на прийом з проксуванням до tenant-бекенду кожної клініки, темізація під бренд клініки та підтримка філій.
+
+  ## Ключові особливості
+
+  - **Один деплой — багато клінік** — застосунок маршрутизує за slug клініки; запити на запис і слоти проксуються до власного tenant-бекенду кожної клініки
+  - **SEO-first каталог** — 590+ клінік з SSR-сторінками, структурованими даними та локалізованими маршрутами
+  - **Брендинг кожної клініки** — сторінка клініки темізується її кольором, з бейджем "Powered by VetSpace"
+  - **Реальний UX запису** — вільні слоти показують кількість вільних лікарів із кольоровим кодуванням дефіциту
+  - **Повна локалізація** — українська, англійська та польська з prefix-маршрутизацією
+
+  ## Технології
+
+  - **Фронтенд**: Nuxt 4 / Vue 3, Tailwind CSS v4
+  - **Бекенд**: Laravel catalog API + tenant-ендпоінти для запису
+  - **Рендеринг**: SSR для SEO-сторінок, CSR для флоу запису
+  - **Тестування**: Vitest юніт-тести + Cypress E2E проти реального бекенду

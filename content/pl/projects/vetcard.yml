@@ -1,0 +1,49 @@
+title: VetCard
+description: "Multi-tenant katalog klinik weterynaryjnych: SEO strony klinik, rezerwacja wizyt online, branding każdej kliniki — jedna aplikacja Nuxt obsługuje wszystkie"
+url: https://vetcard.pro
+date: "2026-09-20"
+tags:
+  - Nuxt
+  - Vue
+  - Multi-tenant
+  - SEO
+  - SSR
+image: /hero/vetcard.avif
+featured: true
+stack:
+  - name: Nuxt
+    icon: i-simple-icons-nuxtdotjs
+  - name: Vue
+    icon: i-simple-icons-vuedotjs
+  - name: TypeScript
+    icon: i-simple-icons-typescript
+  - name: Tailwind CSS
+    icon: i-simple-icons-tailwindcss
+  - name: Laravel API
+    icon: i-simple-icons-laravel
+links:
+  - label: Live Demo
+    to: https://vetcard.pro
+    color: primary
+    icon: i-heroicons-arrow-top-right-on-square
+  - label: Przegląd projektu
+    to: https://github.com/Yurij2015/vetspace-vetcard
+    color: neutral
+    icon: i-simple-icons-github
+content: |
+  Publiczna część VetSpace — multi-tenant katalog klinik weterynaryjnych. Jeden deployment Nuxt SSR obsługuje wszystkie kliniki: strony klinik zoptymalizowane pod SEO, rezerwację wizyt online z proxy do własnego backendu tenant każdej kliniki, tematyzację pod markę kliniki oraz obsługę wielu oddziałów.
+
+  ## Kluczowe funkcje
+
+  - **Jeden deployment — wiele klinik** — aplikacja routuje po slugu kliniki; żądania rezerwacji i slotów są proxy'owane do backendu tenant danej kliniki
+  - **Katalog SEO-first** — 590+ klinik ze stronami SSR, danymi strukturalnymi i zlokalizowanymi trasami
+  - **Branding każdej kliniki** — strona kliniki jest tematyzowana jej kolorem, z badge'em "Powered by VetSpace"
+  - **Realny UX rezerwacji** — wolne sloty pokazują liczbę dostępnych lekarzy z kodowaniem kolorami
+  - **Pełna lokalizacja** — ukraiński, angielski i polski z routingiem opartym na prefiksach
+
+  ## Stack technologiczny
+
+  - **Frontend**: Nuxt 4 / Vue 3, Tailwind CSS v4
+  - **Backend**: Laravel catalog API + endpointy tenant do rezerwacji
+  - **Renderowanie**: SSR dla stron SEO, CSR dla flow rezerwacji
+  - **Testowanie**: testy jednostkowe Vitest + Cypress E2E na realnym backendzie

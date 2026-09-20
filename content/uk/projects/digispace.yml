@@ -1,14 +1,14 @@
 title: DigiSpace
-description: "Open-source код production-сайту digispace.pro: публічний сайт агенції, адмін-панель і кастомна CMS — Laravel + Inertia + Vue (Vite, Tailwind, MySQL), з PHPUnit/PHPStan і Docker"
+description: "Мультимовний (EN/UK/PL) production-сайт агенції з кастомною CMS — Filament-панель з розширеним редактором контенту, переклади, JSON-LD і локалізовані sitemap із коробки, поруч зі старою адмінкою на Inertia + Vue"
 url: https://digispace.pro
 date: "2022-10-05"
 tags:
   - Laravel
+  - Filament
   - Inertia
   - Vue
-  - CMS
-  - Open Source
-  - MySQL
+  - i18n
+  - SEO
 image: /hero/digispace.avif
 featured: true
 stack:
@@ -24,6 +24,8 @@ stack:
     icon: i-simple-icons-mysql
   - name: Tailwind CSS
     icon: i-simple-icons-tailwindcss
+  - name: Filament
+    icon: i-simple-icons-filament
   - name: CMS
     icon: i-heroicons-document-text
 links:
@@ -36,20 +38,22 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  Код за digispace.pro — публічний сайт агенції, адмін панель та кастомний CMS, збудований з Laravel, Inertia та Vue. Відкритий код: той самий production код, який працює на живому сайті.
+  Production-сайт digispace.pro — публічний сайт агенції, адмін-панель та кастомна CMS в одному застосунку Laravel, тепер повністю мультимовний (EN/UK/PL), з Filament-панеллю поруч зі старою адмінкою на Inertia + Vue. Той самий код, що працює на живому сайті, доступний на GitHub.
 
   ## Ключові можливості
 
-  - **Моноліт як треба** - публічний сайт, адмін-панель і кастомна CMS в одному застосунку Laravel + Inertia, без окремого API
-  - **Самостійний контент** - сторінки, послуги й кейси редагуються в CMS — без деплою заради зміни тексту
+  - **Адмін-панель на Filament** - паралельна панель `/control` (24 ресурси) з TipTap-редактором, заливкою зображень напряму в MinIO та контент-орієнтованою навігацією, впроваджена ресурс за ресурсом поруч з існуючою Inertia-адмінкою
+  - **Мультимовність за задумом** - перекладаються не лише сторінки, а й структурні UI-рядки (меню, футер, кнопки) для кожної локалі, з hreflang-маршрутизацією
+  - **SEO з коробки** - структуровані дані JSON-LD, локалізовані sitemap та коректна обробка 404 для кожної локалі
+  - **Моноліт як треба** - публічний сайт і обидві адмінки в одному застосунку Laravel, без окремого API
+  - **Самостійний контент** - сторінки, послуги й кейси редагуються в CMS — без деплою заради зміни тексту чи перекладу
   - **Брама якості** - PHPUnit-тести та статичний аналіз PHPStan у CI
-  - **Ідентичні середовища** - Docker тримає паритет локалки й продакшену
-  - **Відкритий за замовчуванням** - саме той код, що обслуговує digispace.pro, публічний на GitHub
+  - **Відкритий код** - саме той код, що обслуговує digispace.pro, публічний на GitHub
 
   ## Стек технологій
 
   - **Бекенд**: Laravel
-  - **Фронтенд**: Vue.js
-  - **Зв'язок**: Inertia.js
-  - **Збірка**: Vite
+  - **Адмінка**: Filament 5 (`/control`) + стара адмінка на Inertia.js + Vue
+  - **Фронтенд**: Vue.js, Vite
+  - **Локалізація**: переклади контенту й структури EN/UK/PL
   - **Архітектура**: Кастомна CMS

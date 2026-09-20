@@ -1,14 +1,14 @@
 title: NetPostPanel
-description: AI content platform — multi-provider generation, semantic search on Qdrant, RSS aggregation with auto-discovery
+description: AI content-operations platform — a RAG pipeline (research → scrape → generate → vectorize), an external API other apps call, and Auto Pilot for unattended scheduled generation
 url: https://net-post-panel.digispace.pro
 date: "2024-11-10"
 tags:
   - AI
   - Laravel
+  - RAG
+  - External API
   - Qdrant
-  - Langfuse
-  - RSS
-  - LLM
+  - Horizon
 image: /hero/netpostpanel.avif
 featured: true
 stack:
@@ -23,26 +23,30 @@ stack:
   - name: Horizon
     icon: i-simple-icons-laravelhorizon
 links:
-  - label: Coming Soon
-    to: "#"
+  - label: Overview
+    to: https://github.com/Yurij2015/net-post-panel-overview
     color: neutral
-    icon: i-heroicons-clock
+    icon: i-simple-icons-github
 content: |
-  An AI content platform with multi-provider generation (Gemini/OpenAI behind a driver abstraction), semantic search on Qdrant, an RSS/news aggregation engine with auto-discovery and content scraping, and Langfuse tracing for LLM observability.
+  An internal AI content-operations platform that turns topic research into publishable content: a full RAG pipeline (Google Custom Search + RSS → scraping → multi-provider generation → vectorization), plus a versioned external API that powers content workflows in other projects, including the DigiSpace blog pipeline.
 
   ## Key Features
 
+  - **External API** - a versioned `POST /api/v1/generate` + `/translate` API with per-client keys and rate limits exposes the whole pipeline to other apps, sync or async with callbacks
+  - **Auto Pilot** - scheduled daily runs generate content from new inspiration items or custom topics, fully unattended
   - **Provider-agnostic AI** - Gemini and OpenAI sit behind a driver abstraction, so swapping models is config, not refactoring
   - **Semantic pipeline** - Qdrant vector search deduplicates and clusters incoming stories before they reach generation
-  - **Autonomous aggregation** - RSS auto-discovery plus scraping turns a bare topic into a self-feeding content source
+  - **Autonomous aggregation** - RSS auto-discovery and Google Custom Search plus scraping turn a bare topic into a self-feeding content source
   - **Observable LLM calls** - every generation is traced in Langfuse: tokens, latency, cost
-  - **Queue-driven** - Laravel Horizon runs generation and scraping jobs with retries and backpressure
+  - **Role-based access** - admin/content manager/editor roles, with every query scoped to its owner unless admin
 
   ## Tech Stack
 
-  - **Backend**: Laravel
-  - **AI**: Multi-provider (Gemini/OpenAI)
+  - **Backend**: Laravel, `laravel/ai` agents
+  - **Frontend**: Inertia.js + Vue 3 (Search & Creation SPA, TipTap editor)
+  - **AI**: Multi-provider (Gemini/OpenAI) behind a driver abstraction
+  - **Research**: Google Custom Search + RSS aggregation, page scraping
   - **Vector DB**: Qdrant for semantic search
   - **Observability**: Langfuse for LLM tracing
   - **Queue**: Laravel Horizon
-  - **Architecture**: Driver abstraction pattern
+  - **Tests**: PHPUnit/Pest + Cypress E2E
