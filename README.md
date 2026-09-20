@@ -35,7 +35,7 @@ pnpm install
 pnpm dev
 ```
 
-Server is available at `http://localhost:3000`.
+Server is available at `http://localhost:3002` (`PORT=3002 pnpm dev`).
 
 ## Production
 
