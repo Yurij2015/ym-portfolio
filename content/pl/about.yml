@@ -21,10 +21,16 @@ content: |
 images:
   - src: /images/about/workspace.jpeg
     alt: Moje stanowisko pracy
-  - src: /images/about/websummit.jpeg
+  - src: /images/about/websummit-1.jpeg
     alt: Web Summit, Lizbona
   - src: /images/about/websummit-2.jpeg
     alt: Główna scena Web Summit 2023
+  - src: /images/about/poznan-1.jpeg
+    alt: Kościół w Poznaniu nocą
+  - src: /images/about/poznan-2.jpeg
+    alt: Wieczorna ulica w Poznaniu
+  - src: /images/about/poznan-3.jpeg
+    alt: Kamienice w Poznaniu nocą
   - src: /images/about/camping.jpeg
     alt: Kemping na łonie natury
   - src: /images/about/yaht.jpeg

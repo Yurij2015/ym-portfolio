@@ -21,10 +21,16 @@ description: Learn more about my journey as a Senior Full-Stack PHP Developer ba
 images:
   - src: /images/about/workspace.jpeg
     alt: My workstation
-  - src: /images/about/websummit.jpeg
+  - src: /images/about/websummit-1.jpeg
     alt: Web Summit, Lisbon
   - src: /images/about/websummit-2.jpeg
     alt: Web Summit 2023 main stage
+  - src: /images/about/poznan-1.jpeg
+    alt: A church in Poznań at night
+  - src: /images/about/poznan-2.jpeg
+    alt: Poznań street at night
+  - src: /images/about/poznan-3.jpeg
+    alt: Poznań townhouses at night
   - src: /images/about/camping.jpeg
     alt: Camping outdoors
   - src: /images/about/yaht.jpeg

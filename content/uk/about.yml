@@ -21,10 +21,16 @@ content: |
 images:
   - src: /images/about/workspace.jpeg
     alt: Моя робоча станція
-  - src: /images/about/websummit.jpeg
+  - src: /images/about/websummit-1.jpeg
     alt: Web Summit, Лісабон
   - src: /images/about/websummit-2.jpeg
     alt: Головна сцена Web Summit 2023
+  - src: /images/about/poznan-1.jpeg
+    alt: Церква в Познані вночі
+  - src: /images/about/poznan-2.jpeg
+    alt: Вечірня вулиця Познаня
+  - src: /images/about/poznan-3.jpeg
+    alt: Кам'яниці Познаня вночі
   - src: /images/about/camping.jpeg
     alt: Кемпінг на природі
   - src: /images/about/yaht.jpeg

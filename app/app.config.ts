@@ -1,8 +1,8 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: '/images/avatar.jpg',
-      light: '/images/avatar.jpg',
+      dark: '/images/avatar-1.jpg',
+      light: '/images/avatar-1.jpg',
       alt: 'Yurii Mokryi'
     },
     meetingLink: 'https://t.me/YuriiMokryi',

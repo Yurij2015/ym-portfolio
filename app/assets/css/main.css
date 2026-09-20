@@ -12,6 +12,13 @@ html {
   overflow-x: hidden;
 }
 
+/* Polaroid captions need a handwritten face with cyrillic coverage —
+   'Instrument Serif' is latin-only, so uk/pl alt text fell back to a
+   mismatched system serif. Caveat covers latin + cyrillic. */
+.polaroid-caption {
+  font-family: 'Caveat', 'Public Sans', cursive;
+}
+
 :root {
   --ui-container: var(--container-4xl);
 
