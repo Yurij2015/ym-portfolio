@@ -18,6 +18,14 @@
 - Deploy = push to `origin/main` (Vercel auto-builds); check status with `vercel ls`.
 - Env vars: `NUXT_PUBLIC_SITE_URL`, `NUXT_PUBLIC_GTAG_ID` (GA4, optional), `NUXT_OG_IMAGE_SECRET` (stable OG URL signatures across deploys).
 
+## OpenSpec (spec-driven changes)
+
+- This project uses **OpenSpec** (`openspec/` dir, schema `spec-driven` in `openspec/config.yaml`; CLI via `npx @fission-ai/openspec`).
+- `openspec/specs/` is the source of truth for current behavior; `openspec/changes/` holds active changes (proposal/design/delta specs/tasks); completed ones move to `openspec/changes/archive/`.
+- Workflow: propose → apply → archive. Use the `openspec-*` skills/commands (`/opsx:propose`, `/opsx:apply`, `/opsx:archive`, also `explore`, `update`, `sync`).
+- For non-trivial changes prefer an OpenSpec change over ad-hoc edits; small fixes/typos can go without one.
+- `openspec/config.yaml` `context:` carries the tech stack/conventions — keep it current when the stack changes.
+
 ## Custom agents
 
 Project-scoped agent definitions live in `.cline/agents/` (Cline Agents tab) and `.claude/agents/` (Claude Code), kept in sync:
