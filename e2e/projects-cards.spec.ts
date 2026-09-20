@@ -1,10 +1,15 @@
+import { readdirSync } from 'node:fs'
+import { join } from 'node:path'
 import { expect, test } from '@playwright/test'
+
+const projectsDir = join(import.meta.dirname, '../content/en/projects')
+const projectCount = readdirSync(projectsDir).filter(f => f.endsWith('.yml')).length
 
 test('project cards show a real year, image and clickable link', async ({ page }) => {
   await page.goto('/projects')
 
   const cards = page.locator('main a[href^="http"]').filter({ hasText: /Переглянути проєкт/ })
-  await expect(cards).toHaveCount(4)
+  await expect(cards).toHaveCount(projectCount)
 
   for (const card of await cards.all()) {
     const href = await card.getAttribute('href')
