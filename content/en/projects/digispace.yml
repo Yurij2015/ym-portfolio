@@ -1,7 +1,7 @@
 title: DigiSpace
 description: "Open-source code behind digispace.pro: the agency's public site, admin panel and custom CMS — Laravel + Inertia + Vue (Vite, Tailwind, MySQL), with PHPUnit/PHPStan tests and Docker"
 url: https://digispace.pro
-date: "2022-03-10"
+date: "2022-10-05"
 tags:
   - Laravel
   - Inertia

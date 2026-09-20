@@ -1,7 +1,7 @@
 title: DigiSpace
 description: "Open-source код production-сайту digispace.pro: публічний сайт агенції, адмін-панель і кастомна CMS — Laravel + Inertia + Vue (Vite, Tailwind, MySQL), з PHPUnit/PHPStan і Docker"
 url: https://digispace.pro
-date: "2022-03-10"
+date: "2022-10-05"
 tags:
   - Laravel
   - Inertia

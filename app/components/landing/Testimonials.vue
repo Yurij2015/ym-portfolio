@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { ComponentPublicInstance } from 'vue'
 import type { IndexPageItem } from '~/utils/content-types'
 
 const props = defineProps<{
@@ -15,7 +16,7 @@ const expanded = ref<Set<number>>(new Set())
 const truncated = ref<boolean[]>([])
 const quoteEls = ref<(HTMLElement | null)[]>([])
 
-const setQuoteRef = (el: Element | null, index: number) => {
+const setQuoteRef = (el: Element | ComponentPublicInstance | null, index: number) => {
   quoteEls.value[index] = el as HTMLElement | null
 }
 
@@ -67,7 +68,7 @@ watch(testimonials, measure)
               />
             </div>
             <p
-              :ref="el => setQuoteRef(el, index)"
+              :ref="(el: Element | ComponentPublicInstance | null) => setQuoteRef(el, index)"
               class="flex-1 text-base text-muted before:content-[open-quote] after:content-[close-quote]"
               :class="{ 'line-clamp-4': !expanded.has(index) }"
             >

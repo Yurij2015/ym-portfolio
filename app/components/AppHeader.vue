@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { DropdownMenuItem, NavigationMenuItem } from '@nuxt/ui'
 
-defineProps<{
+const props = defineProps<{
   links: NavigationMenuItem[]
 }>()
+
+const menuLinks = computed<DropdownMenuItem[]>(() =>
+  props.links.map(link => ({
+    label: link.label,
+    icon: link.icon,
+    to: link.to
+  }))
+)
 </script>
 
 <template>
@@ -12,7 +20,7 @@ defineProps<{
       :items="links"
       variant="link"
       color="neutral"
-      class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5 overflow-x-auto flex-nowrap"
+      class="max-sm:hidden bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
       :ui="{
         list: 'flex-nowrap',
         link: 'px-1.5 sm:px-2 py-1 shrink-0',
@@ -27,5 +35,25 @@ defineProps<{
         </div>
       </template>
     </UNavigationMenu>
+
+    <!-- On phones the pill can't fit 4 links + 3 controls — collapse the
+         links into a menu so nothing scrolls or clips. -->
+    <div class="sm:hidden flex items-center gap-1 bg-muted/80 backdrop-blur-sm rounded-full px-2 py-1 border border-muted/50 shadow-lg shadow-neutral-950/5">
+      <UDropdownMenu
+        :items="menuLinks"
+        :ui="{ content: 'w-48' }"
+      >
+        <UButton
+          icon="i-heroicons-bars-3"
+          color="neutral"
+          variant="ghost"
+          size="sm"
+          aria-label="Menu"
+        />
+      </UDropdownMenu>
+      <LanguageSwitcher />
+      <BackgroundVariantButton />
+      <ColorModeButton />
+    </div>
   </div>
 </template>

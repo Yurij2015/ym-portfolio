@@ -58,6 +58,7 @@ experience:
   items:
     - position: "Full-Stack Developer"
       date: "2021 — тепер"
+      current: true
       description: "Ticketing-платформа для Formula 1, MotoGP, EICMA, EuroLeague: checkout, особисті кабінети, Stripe/Dalenys, 3D seat-map."
       company:
         name: Platinium Group SAM
@@ -66,6 +67,7 @@ experience:
         color: "#6B7280"
     - position: "Засновник & Full-Stack Developer"
       date: "2022 — тепер"
+      current: true
       description: "Заснував агенцію та розробив її продукти: DigiPulse, VetSpace, NetPostPanel — від архітектури до продакшну."
       company:
         name: DigiSpace
@@ -77,6 +79,7 @@ experience:
       description: "Part-time full-stack розробка вебзастосунків на PHP (Laravel) та кастомних фреймворках: нові фічі, підтримка, виправлення багів, REST API."
       company:
         name: SystemFreaks
+        url: "https://www.systemfreaks.com/"
         logo: "i-heroicons-briefcase"
         color: "#6B7280"
   link:

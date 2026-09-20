@@ -38,7 +38,7 @@ const visibleLinks = computed(() => (project.value?.links ?? []).filter(link => 
 
 <template>
   <UPage v-if="project">
-    <UPageSection :ui="{ container: 'pt-0!' }">
+    <UPageSection :ui="{ container: 'pt-20! sm:pt-24!' }">
       <UButton
         :to="localePath('/projects')"
         variant="ghost"
@@ -52,14 +52,17 @@ const visibleLinks = computed(() => (project.value?.links ?? []).filter(link => 
         :title="title"
         :description="description"
         :ui="{
-          container: 'py-8 sm:py-10',
+          container: 'pt-0! pb-10 lg:pb-12',
           title: 'mx-0! text-left',
           description: 'mx-0! text-left',
           links: 'justify-start'
         }"
       >
         <template #headline>
-          <span class="text-sm text-muted">{{ formatProjectYear(project.date) }}</span>
+          <div class="flex w-fit items-center gap-1.5 rounded-full bg-elevated/60 px-3 py-1 text-xs font-medium text-muted">
+            <UIcon name="i-lucide-calendar" class="size-3.5" />
+            {{ formatProjectYear(project.date) }}
+          </div>
         </template>
         <template #links>
           <div class="flex flex-wrap items-center gap-2">

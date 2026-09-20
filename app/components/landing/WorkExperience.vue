@@ -16,46 +16,54 @@ defineProps<{
     }"
   >
     <template #description>
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-8 text-left">
         <Motion
           v-for="(experience, index) in page.experience.items"
           :key="index"
           :initial="{ opacity: 0, transform: 'translateY(20px)' }"
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
-          :transition="{ delay: 0.4 + 0.2 * index }"
+          :transition="{ delay: 0.2 + 0.15 * index }"
           :in-view-options="{ once: true }"
-          class="relative border-l border-default pl-5"
+          class="relative pl-6 before:absolute before:left-[4.5px] before:top-4 before:-bottom-8 before:w-px before:bg-default last:before:hidden"
         >
-          <span class="absolute -left-[5px] top-1.5 size-2.5 rounded-full bg-primary-400" />
+          <span
+            class="absolute left-0 top-1.5 size-2.5 rounded-full"
+            :class="experience.current
+              ? 'bg-success ring-4 ring-success/20'
+              : 'bg-muted ring-2 ring-default'"
+          />
 
-          <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5">
-            <ULink
-              v-if="experience.company.url"
-              :to="experience.company.url"
-              target="_blank"
-              class="inline-flex items-center gap-1.5 font-medium hover:underline"
-              :style="{ color: experience.company.color }"
-            >
-              {{ experience.company.name }}
-              <UIcon :name="experience.company.logo" />
-            </ULink>
-            <span
-              v-else
-              class="inline-flex items-center gap-1.5 font-medium"
-              :style="{ color: experience.company.color }"
-            >
-              {{ experience.company.name }}
-              <UIcon :name="experience.company.logo" />
+          <div class="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
+            <p class="font-semibold text-highlighted">
+              {{ experience.position }}
+            </p>
+            <span class="text-xs text-muted whitespace-nowrap">
+              {{ experience.date }}
             </span>
-            <span class="text-xs text-muted">{{ experience.date }}</span>
           </div>
 
-          <p class="mt-0.5 text-sm text-muted">
-            {{ experience.position }}
-          </p>
+          <ULink
+            v-if="experience.company.url"
+            :to="experience.company.url"
+            target="_blank"
+            class="mt-0.5 inline-flex items-center gap-1.5 text-sm font-medium hover:underline"
+            :style="{ color: experience.company.color }"
+          >
+            {{ experience.company.name }}
+            <UIcon :name="experience.company.logo" />
+          </ULink>
+          <span
+            v-else
+            class="mt-0.5 inline-flex items-center gap-1.5 text-sm font-medium"
+            :style="{ color: experience.company.color }"
+          >
+            {{ experience.company.name }}
+            <UIcon :name="experience.company.logo" />
+          </span>
+
           <p
             v-if="experience.description"
-            class="mt-1 text-sm text-muted/90"
+            class="mt-2 text-sm leading-relaxed text-muted"
           >
             {{ experience.description }}
           </p>

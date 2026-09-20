@@ -116,7 +116,8 @@ defineOgImage('Portfolio', { title, description, headline: t('nav.projects') }, 
             </div>
           </template>
           <template #leading>
-            <span class="text-sm text-muted">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-elevated/60 px-3 py-1 text-xs font-medium text-muted">
+              <UIcon name="i-lucide-calendar" class="size-3.5" />
               {{ formatProjectYear(project.date) }}
             </span>
           </template>

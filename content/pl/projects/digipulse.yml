@@ -1,7 +1,7 @@
 title: DigiPulse
 description: "SaaS do monitorowania dostępności: architektura event-driven — Laravel (Octane, Reverb) i Filament wysyłają zadania przez Redis do workera w Go (<10 MB RAM); serwer MCP udostępnia dane monitoringu asystentom AI; powiadomienia Telegram/e-mail"
 url: https://digipulse.cloud
-date: "2024-01-15"
+date: "2026-04-17"
 tags:
   - SaaS
   - Laravel

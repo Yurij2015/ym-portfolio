@@ -48,6 +48,7 @@ export const indexSchema = z.object({
     items: z.array(z.object({
       date: z.string(),
       position: z.string(),
+      current: z.boolean().optional(),
       description: z.string().optional(),
       company: z.object({
         name: z.string(),

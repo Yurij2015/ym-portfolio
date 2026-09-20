@@ -1,7 +1,7 @@
 title: VetSpace
 description: Двостороння ветеринарна платформа — SEO-каталог клінік та CRM для підписки з призначеннями та записами пацієнтів
 url: https://vetspace.pro
-date: "2023-06-20"
+date: "2026-09-19"
 tags:
   - SaaS
   - Laravel
@@ -35,6 +35,10 @@ links:
     icon: i-simple-icons-github
   - label: Огляд фронтенду
     to: https://github.com/Yurij2015/vetspace-frontend
+    color: neutral
+    icon: i-simple-icons-github
+  - label: Огляд VetCard
+    to: https://github.com/Yurij2015/vetspace-vetcard
     color: neutral
     icon: i-simple-icons-github
 content: |
