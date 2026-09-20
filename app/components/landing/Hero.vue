@@ -167,37 +167,45 @@ const techTip = (img: { src: string, alt: string }) => {
       </div>
     </template>
 
-    <UMarquee
-      pause-on-hover
-      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
+    <UCarousel
+      loop
+      drag-free
+      :items="page.hero.images"
+      :auto-scroll="{ speed: 1, stopOnInteraction: false, stopOnMouseEnter: false }"
+      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 cursor-grab active:cursor-grabbing"
+      :ui="{ item: 'basis-auto mr-3' }"
     >
-      <Motion
-        v-for="(img, index) in page.hero.images"
-        :key="index"
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.6,
-          delay: index * 0.1
-        }"
-      >
-        <UTooltip :text="techTip(img)">
-          <NuxtImg
-            width="132"
-            height="132"
-            class="rounded-lg aspect-square object-cover"
-            v-bind="img"
-          />
-        </UTooltip>
-      </Motion>
-    </UMarquee>
+      <template #default="{ item: img, index }">
+        <Motion
+          :initial="{
+            scale: 1.1,
+            opacity: 0,
+            filter: 'blur(20px)'
+          }"
+          :animate="{
+            scale: 1,
+            opacity: 1,
+            filter: 'blur(0px)'
+          }"
+          :transition="{
+            duration: 0.6,
+            delay: index * 0.1
+          }"
+        >
+          <UTooltip
+            :text="techTip(img)"
+            :delay-duration="100"
+          >
+            <NuxtImg
+              width="132"
+              height="132"
+              draggable="false"
+              class="rounded-lg aspect-square object-cover select-none"
+              v-bind="img"
+            />
+          </UTooltip>
+        </Motion>
+      </template>
+    </UCarousel>
   </UPageHero>
 </template>
