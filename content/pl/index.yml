@@ -36,6 +36,18 @@ hero:
       alt: Docker
     - src: /hero/tech-terraform.svg
       alt: Terraform
+    - src: /hero/tech-digitalocean.svg
+      alt: DigitalOcean
+    - src: /hero/tech-hetzner.svg
+      alt: Hetzner
+    - src: /hero/tech-proxmox.svg
+      alt: Proxmox
+    - src: /hero/tech-caddy.svg
+      alt: Caddy
+    - src: /hero/tech-github-actions.svg
+      alt: GitHub Actions
+    - src: /hero/tech-hostinger.svg
+      alt: Hostinger
     - src: /hero/tech-go.svg
       alt: Go
     - src: /hero/tech-postgresql.svg
