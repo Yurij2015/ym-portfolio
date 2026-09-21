@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'motion-v/nuxt',
+    '@vercel/analytics/nuxt',
     // nuxt-studio requires repository/auth config in non-dev loads
     // (production builds, @nuxt/test-utils), which unit tests don't provide.
     ...(process.env.VITEST ? [] : ['nuxt-studio'])
