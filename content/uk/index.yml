@@ -116,7 +116,7 @@ testimonials:
       name: 'Yurii Mokryi'
       description: 'Senior Full-Stack PHP Developer • 8+ років • Poznań'
       avatar:
-        src: '/images/avatar-2.jpeg'
+        src: '/images/avatar-3.jpeg'
         alt: 'Yurii Mokryi'
 faq:
   title: "Часті запитання"
