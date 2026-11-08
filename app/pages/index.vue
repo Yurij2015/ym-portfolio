@@ -43,7 +43,7 @@ const jsonLd: Record<string, unknown>[] = [{
   'sameAs': [
     'https://github.com/Yurij2015',
     'https://linkedin.com/in/yurii-mokryi',
-    'https://www.upwork.com/freelancers/mokryiyurii',
+    'https://www.upwork.com/freelancers/~012af578c90561eb11',
     'https://t.me/YuriiMokryi',
     'https://scholar.google.com/citations?user=efT-_VMAAAAJ&hl=uk'
   ],

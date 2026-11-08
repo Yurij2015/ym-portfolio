@@ -77,10 +77,10 @@ experience:
         logo: "i-simple-icons-symfony"
         url: "https://www.pg-mc.com/"
         color: "#6B7280"
-    - position: "Засновник & Full-Stack Developer"
+    - position: "Засновник, Software Architect & Product Owner"
       date: "2022 — тепер"
       current: true
-      description: "Заснував агенцію та розробив її продукти: DigiPulse, VetSpace, NetPostPanel — від архітектури до продакшну."
+      description: "Заснував агенцію і веду її продукти від початку до кінця: архітектура, продуктові рішення, розробка та інфраструктура для DigiPulse, VetSpace, VetCard і NetPostPanel."
       company:
         name: DigiSpace
         logo: "i-simple-icons-laravel"
@@ -105,7 +105,7 @@ testimonials:
     author:
       name: 'Upwork'
       description: 'Відгук клієнта на Upwork'
-      to: 'https://www.upwork.com/freelancers/mokryiyurii'
+      to: 'https://www.upwork.com/freelancers/~012af578c90561eb11'
   - quote: "Гаряче рекомендую Юрія як надійного, проактивного й орієнтованого на результат професіонала. Юрій — відповідальний спеціаліст, який може автономно працювати над широким спектром задач. Має сильну експертизу в PHP (Symfony, Laravel) та JavaScript-фреймворках (Vue.js, Angular) — самостійно досліджує складні проблеми, знаходить першопричини та впроваджує ефективні рішення."
     author:
       name: 'LinkedIn'

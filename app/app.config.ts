@@ -42,7 +42,7 @@ export default defineAppConfig({
       'aria-label': 'LinkedIn'
     }, {
       'icon': 'i-simple-icons-upwork',
-      'to': 'https://www.upwork.com/freelancers/mokryiyurii',
+      'to': 'https://www.upwork.com/freelancers/~012af578c90561eb11',
       'target': '_blank',
       'aria-label': 'Upwork'
     }]

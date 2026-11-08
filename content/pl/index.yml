@@ -77,10 +77,10 @@ experience:
         logo: "i-simple-icons-symfony"
         url: "https://www.pg-mc.com/"
         color: "#6B7280"
-    - position: "Założyciel & Full-Stack Developer"
+    - position: "Założyciel, Software Architect & Product Owner"
       date: "2022 — obecnie"
       current: true
-      description: "Założyłem agencję i zbudowałem jej produkty: DigiPulse, VetSpace, NetPostPanel — od architektury po produkcję."
+      description: "Założyłem agencję i odpowiadam za jej produkty od początku do końca: architektura, decyzje produktowe, rozwój i infrastruktura dla DigiPulse, VetSpace, VetCard i NetPostPanel."
       company:
         name: DigiSpace
         logo: "i-simple-icons-laravel"
@@ -105,7 +105,7 @@ testimonials:
     author:
       name: 'Upwork'
       description: 'Opinia klienta na Upwork'
-      to: 'https://www.upwork.com/freelancers/mokryiyurii'
+      to: 'https://www.upwork.com/freelancers/~012af578c90561eb11'
   - quote: "Gorąco polecam Yuriia jako niezawodnego, proaktywnego i zorientowanego na rezultaty profesjonalistę. Yurii to odpowiedzialny specjalista, który potrafi autonomicznie pracować nad szerokim zakresem zadań. Ma solidną ekspertyzę w PHP (Symfony, Laravel) i frameworkach JavaScript (Vue.js, Angular) — samodzielnie bada złożone problemy, znajduje ich pierwotne przyczyny i wdraża skuteczne rozwiązania."
     author:
       name: 'LinkedIn'

@@ -53,7 +53,7 @@ content: |
   ## Stos technologiczny
 
   - **Backend**: Laravel
-  - **Panel admina**: Filament 5 (`/control`) + stary panel na Inertia.js + Vue
+  - **Panel admina**: Filament 5+ (`/control`) + stary panel na Inertia.js + Vue
   - **Frontend**: Vue.js, Vite
   - **Lokalizacja**: tłumaczenia treści i struktury EN/UK/PL
   - **Architektura**: Niestandardowy CMS

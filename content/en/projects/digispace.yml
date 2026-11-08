@@ -53,7 +53,7 @@ content: |
   ## Tech Stack
 
   - **Backend**: Laravel
-  - **Admin**: Filament 5 (`/control`) + legacy Inertia.js + Vue admin
+  - **Admin**: Filament 5+ (`/control`) + legacy Inertia.js + Vue admin
   - **Frontend**: Vue.js, Vite
   - **Localization**: EN/UK/PL content and structure translations
   - **Architecture**: Custom CMS
