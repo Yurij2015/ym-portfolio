@@ -1,7 +1,7 @@
 indexable: false
 title: Senior programista PHP i Laravel do Twojego zespołu
 description: "Wsparcie projektów PHP, Laravel i Symfony: funkcje, integracje, przeglądy kodu i praca z backlogiem."
-summary: "Dołączam do zespołów jako Senior Full-Stack PHP Developer, przejmując funkcje produktu, integracje i zadania z backlogu. Przez ponad 8 lat pracy komercyjnej zdobyłem doświadczenie z Laravel, Symfony, Vue oraz systemami płatności. Pozwala mi ono prowadzić zadanie od wymagań po kod i testy, a także wspierać zespół w przeglądach kodu i analizie problemów w systemie."
+summary: "Dołączam do zespołów jako Senior Full-Stack PHP Developer, zajmując się rozwojem funkcji produktu, integracjami i zadaniami z backlogu. Mam ponad 8 lat doświadczenia komercyjnego w pracy z Laravelem, Symfony, Vue i systemami płatności. Pozwala mi ono prowadzić zadanie od wymagań po kod i testy, a także wspierać zespół w przeglądach kodu i analizie problemów w systemie."
 icon: i-lucide-user-check
 group: development
 order: 40
@@ -12,10 +12,10 @@ updated: 2026-11-13
 deliverables:
   - Funkcje obejmujące backend i interfejs, z testami oraz pull requestem w Twoim repozytorium
   - Testy i przeglądy kodu w uzgodnionym zakresie
-  - Ewidencja czasu i informacje o postępach lub blokadach
+  - Zestawienie przepracowanych godzin oraz krótkie informacje o postępach i przeszkodach
 process:
   - title: Poznanie zespołu
-    description: Omawiamy technologie, najbliższe zadania, grafik i komunikację.
+    description: Omawiamy technologie, najbliższe zadania, godziny pracy i sposób komunikacji.
   - title: Pierwsze zadanie
     description: Ustalamy zakres zadania, kryteria odbioru i szacowany czas.
   - title: Dalsza współpraca
@@ -34,12 +34,12 @@ faq:
   - label: Czy można zacząć od krótkiego zadania?
     content: Tak. Pierwsze płatne zadanie pozwala sprawdzić współpracę i poznać projekt. Zakres oraz warunki ustalamy wcześniej.
   - label: W jakiej strefie czasowej pracujesz?
-    content: Pracuję z Poznania. Godziny pracy i czas wspólny z zespołem uzgadniamy osobno. Komunikuję się po ukraińsku i angielsku.
+    content: Pracuję w Poznaniu. Na początku ustalamy godziny pracy i ich pokrycie z godzinami Twojego zespołu. Komunikuję się po ukraińsku i angielsku.
 content: |-
   ## Nad czym pracuję
 
-  Pracuję nad sklepami biletowymi opartymi na Symfony, MySQL, Redis i Vue.js, z płatnościami przez Stripe i Dalenys. Równolegle rozwijam własne produkty: VetSpace — CRM dla klinik weterynaryjnych z osobnymi bazami danych i subskrypcjami Stripe, DigiPulse na Laravel i Go oraz NetPostPanel z kolejkami i integracjami AI.
+  Pracuję nad sklepami biletowymi opartymi na Symfony, MySQL, Redis i Vue.js, z płatnościami przez Stripe i Dalenys. Równolegle rozwijam własne produkty: VetSpace — CRM dla klinik weterynaryjnych z oddzielnymi bazami danych i subskrypcjami Stripe, DigiPulse na Laravel i Go oraz NetPostPanel z kolejkami i integracjami AI.
 
   Z tego doświadczenia korzystam również w pracy zespołowej, gdy przejmuję osobną funkcję lub część backlogu. Najpierw poznaję powiązany kod i proponuję rozwiązanie, a następnie przygotowuję zmiany z testami i przekazuję je do przeglądu przez pull request. Sprawdzam też kod innych programistów i od razu zgłaszam pytania lub zależności wpływające na rozwiązanie.
 
-  Na początek prześlij stos technologiczny i dwa lub trzy zadania z backlogu, które chcesz przekazać. Na ich przykładzie ustalimy moją rolę i potrzebny wymiar czasu. Stawka zaczyna się od $50 za godzinę, a liczbę godzin i termin rozpoczęcia uzgadniamy z uwzględnieniem mojej dostępności.
+  Na początek prześlij stos technologiczny i dwa lub trzy zadania z backlogu, które chcesz przekazać. Na ich podstawie ustalimy zakres współpracy i potrzebną liczbę godzin. Stawka zaczyna się od $50 za godzinę, a liczbę godzin i termin rozpoczęcia uzgadniamy z uwzględnieniem mojej dostępności.

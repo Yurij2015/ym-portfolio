@@ -1,12 +1,12 @@
 indexable: false
 title: API development and integration
 description: APIs for frontends, mobile apps and partner services, with access rules, documentation and tests.
-summary: "I build APIs that let mobile apps, frontends and partner services read and update data, run searches and start background operations. Alongside the implementation, I document requests, responses and errors so another team can connect its application. When extending an existing API, I plan changes around the clients that already use it."
+summary: "I build APIs that let mobile apps, frontends and partner services read and update data, run searches and start background operations. Alongside the implementation, I document requests, responses and errors so another team can connect its application. When extending an existing API, I account for the applications that already use it."
 icon: i-lucide-webhook
 group: development
 order: 31
 priceFrom: 1800
-timeline: Estimated after agreeing resources, operations and integrations
+timeline: Estimated once we agree on the resources, operations and integrations
 updated: 2026-11-13
 deliverables:
   - Endpoints for the operations you need, such as record search, data updates or starting a background job
@@ -14,11 +14,11 @@ deliverables:
   - Tests and example requests for the integration team
 process:
   - title: Define the contract
-    description: We clarify consumers, data, operations, authentication and limits.
+    description: We define which applications will use the API, the data and operations they need, and the access rules and limits.
   - title: Implement
     description: I build endpoints and checks and prepare documentation.
   - title: Verify integration
-    description: We check the API with its client application or agreed requests.
+    description: We test the API with the client application or a set of test requests.
 technologies:
   - laravel
   - symfony
@@ -32,16 +32,16 @@ projects:
   - digipulse
 faq:
   - label: Can you extend an existing API?
-    content: Yes. I review its contract and consumers first, then plan compatible changes or a new version.
+    content: Yes. I first review the API contract and the applications using it, then plan compatible changes or a new version.
   - label: Does it have to be REST?
-    content: No. We choose the format for the consumers and operations. A suitable existing REST API does not need replacement just to adopt another approach.
+    content: No. The right format depends on the applications using the API and the operations they need. If an existing REST API meets those needs, there is no reason to replace it.
 content: |-
-  ## APIs built around their clients
+  ## APIs designed for the applications that use them
 
   In VetSpace, one Laravel API serves two parts of the product: the public directory through GraphQL and the CRM through REST. In NetPostPanel, other applications can request content generation and translation, receiving the result immediately or through a callback. These examples show why it is worth defining who will call an API and how long its operations will take before development begins.
 
   Another example is a client marketplace where I built a REST API with Sanctum authentication and Swagger documentation. It supports listings, orders, chat and support tickets, making access rules and error handling part of each workflow.
 
-  I therefore start by defining the operations, available data and responses the client application should receive. For long-running tasks, I plan background execution and a way to retrieve the result. This becomes the basis for the implementation, documentation and tests.
+  With those requirements in mind, I define which operations the API will support, what data each client can access and how it should handle responses and errors. For long-running tasks, I plan background execution and a way to retrieve the result. This becomes the basis for the implementation, documentation and tests.
 
-  To estimate your task, describe the operations you need and include sample data. If an API already exists, its current documentation will also help. A group of related operations with documentation and tests starts at $1,800.
+  To estimate your task, describe the operations you need and include sample data. If an API already exists, its current documentation will also help. Development of a set of related API operations, including documentation and tests, starts at $1,800.

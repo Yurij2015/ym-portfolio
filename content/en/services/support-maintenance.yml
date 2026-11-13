@@ -1,7 +1,7 @@
 indexable: false
 title: PHP and Laravel application maintenance
 description: "Ongoing PHP, Laravel and Symfony maintenance: fixes, dependency reviews, backup checks and monitoring."
-summary: "I maintain PHP, Laravel and Symfony applications after launch, handling fixes, dependency updates and small improvements. Under the agreed plan, I also monitor queues, backups and monitoring alerts. I record completed work and open issues in reports so you can see the application’s condition and how the time was spent."
+summary: "I maintain PHP, Laravel and Symfony applications after launch, handling fixes, dependency updates and small improvements. Depending on the maintenance plan, I also check queues and backups and review monitoring alerts. I record completed work and open issues in reports so you can see what needs attention and how the time was spent."
 icon: i-lucide-shield-check
 group: support
 order: 41
@@ -31,14 +31,14 @@ projects:
   - digipulse
 faq:
   - label: Do you maintain code written by others?
-    content: Yes. An initial review is needed first. If the application cannot run or credentials are missing, we assess stabilization before ongoing maintenance.
+    content: Yes. I start by reviewing the project. If the application cannot run or credentials are missing, we assess stabilization before ongoing maintenance.
   - label: Is round-the-clock emergency support included?
-    content: Continuous 24/7 coverage is not part of the base hourly service. Availability and response times must be separately agreed before the engagement.
+    content: The hourly service does not include 24/7 on-call support. We agree on availability and response times before starting work.
 content: |-
   ## What we agree on at the start
 
-  A live product often needs fixes, dependency updates and small improvements at the same time. To divide the time between them, I first review the application's condition, then work with you to agree on priorities, a budget and a maintenance schedule. Major upgrades and new modules receive separate estimates.
+  A live product often needs fixes, dependency updates and small improvements at the same time. To decide what to tackle first, I review the application's condition, then work with you to agree on priorities, a budget and a maintenance schedule. Major upgrades and new modules receive separate estimates.
 
   The plan also covers how to respond to failures. My DigiPulse service can monitor website availability and send alerts through Telegram and email. Before work begins, we agree on who receives those messages and what happens next.
 
-  To discuss support for your product, tell me who maintains it now and which tasks are building up. This will help us define the frequency of checks and how to submit requests. Work is billed hourly, starting at $50.
+  To discuss support for your product, tell me who maintains it now and which tasks are building up. We can then agree on how often to run checks and how you will send me tasks. Work is billed hourly, starting at $50.

@@ -1,7 +1,7 @@
 indexable: false
 title: PHP code audit
 description: Review of PHP, Laravel or Symfony code with specific findings, priorities and recommendations for your team.
-summary: "I review PHP code to find the causes of errors and determine which fixes should come first. Depending on the task, I focus on data access, payments, database queries, queues or tests. I put the findings into a report with code references, consequences and priorities your team can use to plan further work."
+summary: "I review PHP code to find the causes of errors and determine which fixes should come first. Depending on the task, I focus on data access, payments, database queries, queues or tests. You receive a report with references to the code, an explanation of each issue’s impact and priorities to help your team plan the fixes."
 icon: i-lucide-search-code
 group: support
 order: 22
@@ -18,7 +18,7 @@ process:
   - title: Review
     description: I read code, check dependencies and tests and reproduce workflows when an environment is available.
   - title: Report
-    description: I document confirmed issues, separate assumptions and explain recommendations.
+    description: I distinguish confirmed issues from assumptions and explain my recommendations.
 technologies:
   - php
   - laravel
@@ -34,8 +34,8 @@ faq:
 content: |-
   ## Where an audit starts
 
-  First, we define the questions the review needs to answer: why payments fail, where access checks are missing or what makes a module hard to develop further. For a general review, we choose the most important parts of the system so the available time goes to them.
+  First, we define the questions the review needs to answer: why payments fail, where access checks are missing or what makes a module hard to develop further. For a broader review, we agree on the most important areas to focus on within the available time.
 
-  That focus also shapes the report: I describe the areas reviewed and conclusions supported by the code or a reproduced error. For each issue, I explain its consequences and recommend a fix, keeping advice about code structure separate from defects. This gives the team both priorities and a clear view of the review's limits.
+  That focus also shapes the report: I describe the areas reviewed and conclusions supported by the code or a reproduced error. For each issue, I explain its consequences and recommend a fix, keeping advice about code structure separate from defects. Your team can then see what needs attention first and which areas the review covered.
 
-  To define the audit scope, send a short description of the application and the questions that concern you. We can then agree on the modules to review. Their analysis and the report start at $1,000.
+  To define the audit scope, send a short description of the application and the questions that concern you. We can then agree on the modules to review. Reviewing the agreed modules and preparing the report starts at $1,000.

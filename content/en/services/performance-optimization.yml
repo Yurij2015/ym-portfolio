@@ -1,7 +1,7 @@
 indexable: false
 title: PHP application performance optimization
 description: Investigate slow PHP, Laravel and Symfony applications. Measurements, targeted changes and before-and-after comparisons.
-summary: "I help with slow pages, APIs and background jobs in PHP applications. I start with the operation causing the most frustration for users or staff, then investigate where time is being spent: database queries, data processing, external calls or queues. After the fix, I compare measurements so you can see what changed."
+summary: "I help with slow pages, APIs and background jobs in PHP applications. I start with the operation causing the most frustration for users or staff, then investigate where time is being spent: database queries, data processing, external calls or queues. After making a change, I compare the before-and-after measurements so you can see the difference."
 icon: i-lucide-gauge
 group: support
 order: 24
@@ -11,7 +11,7 @@ updated: 2026-11-13
 deliverables:
   - "Measurements of the slow operation: execution time, database queries and the limiting factor"
   - Agreed changes to code, queries or configuration
-  - A results comparison and monitoring recommendations
+  - Before-and-after measurements and monitoring recommendations
 process:
   - title: Reproduce the delay
     description: I collect examples, logs and measurements and check when the issue occurs.
@@ -36,8 +36,8 @@ faq:
 content: |-
   ## Measuring a specific operation
 
-  A slow report and a slow appointment booking may have different causes, so the first step is to reproduce the delay users experience. I measure response times, check data volumes and examine external dependencies. Once the source of the delay is clear, we can choose a change and agree on the measurements used to assess it.
+  A slow report and a slow appointment booking may have different causes, so the first step is to reproduce the delay users experience. I measure response times, check data volumes and examine external dependencies. Once the source of the delay is clear, we can agree on a fix and how to measure its effect.
 
   After the fix, I repeat the same operation with a comparable amount of data and compare execution time and resource usage. I also check that the response is correct, since a faster report still needs to return the same data.
 
-  To get started, show me the page or operation people are waiting for and describe when the delay occurs. Any logs or measurements you already have will help with diagnosis. Diagnosis and work on one specific cause start at $1,200.
+  To get started, show me the page or operation people are waiting for and describe when the delay occurs. Any logs or measurements you already have will help with diagnosis. Investigating and addressing one specific cause starts at $1,200.

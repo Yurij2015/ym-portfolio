@@ -1,7 +1,7 @@
 indexable: false
 title: Rozwój i modyfikacje aplikacji PHP
-description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP na Laravel, Symfony lub z autorskim kodem.
-summary: "Rozwijam istniejące aplikacje PHP na Laravel, Symfony i bez frameworka, gdy trzeba zmienić obliczenia, dodać raport lub wymianę danych albo naprawić błąd. Przed zmianami poznaję działanie danej części systemu i jej powiązania. Pozwala mi to sprawdzić poprawkę razem z innymi operacjami, na które wpływa."
+description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP opartych na Laravelu, Symfony lub napisanych bez frameworka.
+summary: "Rozwijam istniejące aplikacje PHP oparte na Laravelu, Symfony lub napisane bez frameworka. Zajmuję się zmianami w obliczeniach, raportami, wymianą danych z innymi usługami i naprawą błędów. Przed zmianami poznaję działanie danej części systemu i jej powiązania. Pozwala mi to sprawdzić poprawkę razem z innymi operacjami, na które wpływa."
 icon: i-simple-icons-php
 group: development
 order: 12
@@ -14,7 +14,7 @@ deliverables:
   - Instrukcja konfiguracji i wdrożenia zmienionych elementów
 process:
   - title: Przegląd aplikacji
-    description: Sprawdzam uruchamianie projektu, miejsce implementacji danej logiki i zależności od innych usług.
+    description: Sprawdzam uruchamianie projektu, kod odpowiedzialny za daną funkcję i zależności od innych usług.
   - title: Uzgodnienie zakresu
     description: Opisuję pierwszy etap, jego cenę i sposób sprawdzenia wyniku.
   - title: Realizacja i przekazanie
@@ -39,8 +39,8 @@ content: |-
 
   Nawet niewielka zmiana może dotyczyć kilku części aplikacji. Nowa integracja wpływa na przykład na wymianę danych, a zmiana obliczeń — na powiązane raporty. Dlatego przed rozpoczęciem prac ustalam te zależności i sposób sprawdzenia wyniku w istniejącym systemie.
 
-  Z takimi powiązaniami pracuję między innymi w DigiSpace, gdzie publiczna strona, treści i panele administracyjne rozwijają się w jednej bazie kodu na Laravel. Zmiany w pojedynczej funkcji trzeba tu uzgadniać z resztą logiki — to samo podejście stosuję w aplikacjach klientów.
+  Przykładem jest DigiSpace, gdzie publiczna strona, obsługa treści i panele administracyjne korzystają ze wspólnego kodu w Laravelu. Zmiany pojedynczej funkcji muszą uwzględniać pozostałą logikę aplikacji — to samo podejście stosuję w aplikacjach klientów.
 
   Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji — przykład oczekiwanego wyniku. Dzięki tym materiałom mogę określić, jaki kod trzeba przejrzeć, i wycenić pracę.
 
-  Budżet początkowy od $1 800 dotyczy uzgodnionego rozszerzenia lub poprawki, na przykład raportu albo wymiany danych, wraz z testami i instrukcją wdrożenia.
+  Koszt uzgodnionych prac, takich jak dodanie raportu czy wymiany danych z inną usługą, zaczyna się od $1 800 i obejmuje sprawdzenie zmian oraz instrukcję wdrożenia.

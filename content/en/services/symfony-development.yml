@@ -1,7 +1,7 @@
 indexable: false
 title: Symfony development
 description: Modules, integrations and background workflows in Symfony. I help extend existing applications.
-summary: "I help develop Symfony applications by adding order processing, payment integrations, APIs and background jobs. I work with these workflows in ticket shops that serve large numbers of visitors. I draw on that experience when adding a module, changing business rules or investigating data exchange errors in your system."
+summary: "I help develop Symfony applications by adding order processing, payment integrations, APIs and background jobs. I work on these features for high-traffic ticketing websites. I draw on that experience when adding a module, changing business rules or investigating data exchange errors in your system."
 icon: i-simple-icons-symfony
 group: development
 order: 11
@@ -34,10 +34,10 @@ faq:
   - label: Is Messenger always required?
     content: No. Queues are useful for workflows that need asynchronous execution; we decide this when reviewing the task.
 content: |-
-  ## Ticket shops built with Symfony
+  ## Ticketing websites built with Symfony
 
-  I work on multi-tenant shops selling tickets to sporting events, including football, basketball and motor racing, as well as museums, exhibitions and festivals. Their backend uses Symfony with Doctrine, MySQL, Redis and queues, the interface is built with Vue.js, and payments go through Stripe and Dalenys.
+  I work on multi-tenant ticketing websites for sporting events, including football, basketball and motorcycle and car racing, as well as museums, exhibitions and festivals. Their backend uses Symfony with Doctrine, MySQL, Redis and queues, the interface is built with Vue.js, and payments go through Stripe and Dalenys.
 
-  In these projects, I work on ordering, payments and data exchange with external services. When one of these workflows needs changing, I first investigate how it is implemented and which parts of the application it affects. This helps me plan the work and test it alongside the related logic.
+  My work on these projects covers order processing, payments and data exchange with external services. When one of these workflows needs changing, I first investigate how it is implemented and which parts of the application it affects. This helps me plan the work and test it alongside the related logic.
 
-  To estimate your task, describe the workflow you need to add or change and include your Symfony and PHP versions. This will help identify related modules and external dependencies. A standalone module with tests starts at $3,200, with any required integrations included in the overall estimate.
+  To estimate your task, describe the workflow you need to add or change and include your Symfony and PHP versions. This will help identify related modules and external dependencies. Development of a module with tests starts at $3,200. I account for any external integrations in the overall estimate.

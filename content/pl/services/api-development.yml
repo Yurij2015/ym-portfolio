@@ -1,7 +1,7 @@
 indexable: false
 title: Tworzenie i integracja API
 description: "API dla frontendu, aplikacji mobilnej i partnerów: uprawnienia, dokumentacja, obsługa błędów oraz testy."
-summary: "Tworzę API, przez które aplikacje mobilne, frontend i serwisy partnerskie mogą pobierać oraz aktualizować dane, wyszukiwać informacje i uruchamiać zadania w tle. Wraz z implementacją przygotowuję dokumentację zapytań, odpowiedzi i błędów, aby inny zespół mógł podłączyć swoją aplikację. Rozbudowując istniejące API, uwzględniam klientów, którzy już z niego korzystają."
+summary: "Tworzę API dla aplikacji mobilnych, frontendu i serwisów partnerskich. Za ich pomocą można pobierać i aktualizować dane, wyszukiwać informacje oraz uruchamiać zadania w tle. Wraz z implementacją przygotowuję dokumentację zapytań, odpowiedzi i błędów, aby inny zespół mógł podłączyć swoją aplikację. Rozbudowując istniejące API, uwzględniam aplikacje, które już z niego korzystają."
 icon: i-lucide-webhook
 group: development
 order: 31
@@ -11,7 +11,7 @@ updated: 2026-11-13
 deliverables:
   - Endpointy potrzebnych operacji, na przykład wyszukiwania rekordów, zmiany danych lub uruchomienia zadania w tle
   - Dokumentacja zapytań, odpowiedzi i błędów
-  - Testy oraz przykłady zapytań dla zespołu integracji
+  - Testy oraz przykłady zapytań dla zespołu wdrażającego integrację
 process:
   - title: Kontrakt API
     description: Ustalamy odbiorców, dane, operacje, uwierzytelnianie i limity.
@@ -32,16 +32,16 @@ projects:
   - digipulse
 faq:
   - label: Czy rozwijasz istniejące API?
-    content: Tak. Najpierw analizuję kontrakt i odbiorców, potem planuję zgodne zmiany lub nową wersję.
+    content: Tak. Najpierw sprawdzam kontrakt API i aplikacje, które z niego korzystają. Następnie planuję zmiany zachowujące zgodność albo przygotowanie nowej wersji.
   - label: Czy zawsze potrzebny jest REST?
-    content: Nie. Format dobieramy do odbiorców i operacji. Jeśli istniejący REST spełnia potrzeby, nie trzeba go zastępować innym podejściem.
+    content: Nie. Format dobieramy do potrzeb aplikacji korzystających z API i wykonywanych operacji. Jeśli istniejący REST spełnia potrzeby, nie trzeba go zastępować innym podejściem.
 content: |-
   ## API dopasowane do aplikacji klienckich
 
-  W VetSpace jedno API na Laravel obsługuje dwie części produktu: publiczny katalog przez GraphQL i CRM przez REST. W NetPostPanel inne aplikacje mogą zlecić generowanie oraz tłumaczenie treści i otrzymać wynik od razu lub przez callback. Te przykłady pokazują, dlaczego przed rozpoczęciem prac warto ustalić, kto będzie wywoływać API i ile czasu zajmą jego operacje.
+  W VetSpace jedno API w Laravelu obsługuje dwie części produktu: publiczny katalog przez GraphQL i CRM przez REST. W NetPostPanel inne aplikacje mogą zlecić generowanie oraz tłumaczenie treści i otrzymać wynik od razu lub przez callback. Dlatego przed rozpoczęciem prac ustalam, jakie aplikacje będą korzystać z API i jak długo mogą trwać poszczególne operacje.
 
-  Osobnym przykładem jest marketplace klienta, dla którego pisałem REST API z uwierzytelnianiem przez Sanctum i dokumentacją Swagger. Obsługuje ono ogłoszenia, zamówienia, czat i zgłoszenia do pomocy technicznej, dlatego reguły dostępu i obsługa błędów są częścią każdego scenariusza.
+  Dla platformy marketplace jednego z klientów przygotowałem z kolei REST API z uwierzytelnianiem przez Sanctum i dokumentacją Swagger. Obsługuje ono ogłoszenia, zamówienia, czat i zgłoszenia do pomocy technicznej, dlatego reguły dostępu i obsługa błędów są częścią każdego scenariusza.
 
   Pracę zaczynam więc od określenia operacji, dostępnych danych i odpowiedzi, które powinna otrzymywać aplikacja kliencka. Dla długich zadań przewiduję wykonanie w tle i sposób odebrania wyniku. Na tej podstawie przygotowuję implementację, dokumentację oraz testy.
 
-  Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane. Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Koszt grupy powiązanych operacji z dokumentacją i testami zaczyna się od $1 800.
+  Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane. Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Koszt wdrożenia zestawu powiązanych operacji API wraz z dokumentacją i testami zaczyna się od $1 800.

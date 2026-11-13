@@ -2,9 +2,9 @@ title: Laravel development
 content: |-
   ## Examples from my projects
 
-  In VetSpace, I develop the clinic CRM, working with clinic data and Stripe subscriptions. In DigiPulse, Laravel manages monitors and notifications, while a separate Go service runs network checks. In both products, new modules need to work with the existing logic.
+  In VetSpace, I develop the CRM, including clinic data management and Stripe subscriptions. In DigiPulse, Laravel manages monitors and notifications, while a separate Go service runs network checks. In both products, new modules need to work with the existing logic.
 
-  My client work includes a Laravel marketplace with listings and paid packages. Alongside its core features, I worked on chat, LiveKit video calls, Meilisearch and support tickets that can also be created from incoming email.
+  My client work includes a Laravel marketplace with listings and paid packages. Alongside its core features, I worked on chat, LiveKit video calls, Meilisearch-powered search and support tickets that can also be created from incoming email.
 
   Adding a similar feature to an existing application starts with understanding its data structures, dependencies and deployment process. With that context, I can plan changes and checks so the new module works with the rest of the system.
 
@@ -16,9 +16,9 @@ deliverables:
 description: New modules, user accounts and integrations in Laravel. I work on new products and existing applications.
 faq:
   - label: What does “from $2,400” mean?
-    content: It is a starting budget for a module or integration with tests and release preparation, such as role-based user accounts or order processing. Before work begins, we agree on the module’s features, acceptance criteria and cost.
+    content: It is the starting budget for a module such as role-based user accounts or order processing, or for an integration. It includes tests and preparation for release. Before work begins, we agree on the module’s features, acceptance criteria and cost.
   - label: Do we need a separate frontend?
-    content: I use Filament for internal panels and options such as Inertia and Vue for user accounts. Nuxt can serve public pages, as in VetCard. The interface and future maintenance determine the choice.
+    content: I use Filament for internal admin panels and tools such as Inertia and Vue for user portals. For public pages, Nuxt can be a good fit, as it is in VetCard. The choice depends on the interface you need and who will maintain it.
 group: development
 icon: i-simple-icons-laravel
 indexable: false
@@ -36,7 +36,7 @@ projects:
   - digipulse
   - netpostpanel
   - digispace
-summary: "I build Laravel user accounts, order workflows, reports and integrations, taking a module from requirements to a working release. This includes designing the data structures, writing backend logic and interfaces, and setting up permissions. For an existing product, I test the new feature together with the workflows it affects."
+summary: "I build Laravel user accounts, order workflows, reports and integrations, taking each module from requirements through to release. This includes designing the data structures, writing backend logic and interfaces, and setting up permissions. For an existing product, I test the new feature together with the workflows it affects."
 technologies:
   - laravel
   - php

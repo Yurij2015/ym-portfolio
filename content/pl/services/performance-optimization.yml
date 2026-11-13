@@ -1,7 +1,7 @@
 indexable: false
 title: Optymalizacja wydajności aplikacji PHP
 description: Diagnoza powolnych aplikacji PHP, Laravel i Symfony. Pomiary, konkretne zmiany i porównanie wyników.
-summary: "Pomagam przy wolno działających stronach, API i zadaniach w tle w aplikacjach PHP. Zaczynam od operacji, która najbardziej utrudnia pracę użytkownikom lub pracownikom, i sprawdzam, gdzie zużywany jest czas: w zapytaniach do bazy, przetwarzaniu danych, wywołaniach zewnętrznych czy kolejkach. Po poprawce porównuję pomiary, aby było widać, co się zmieniło."
+summary: "Przyspieszam działanie stron, API i zadań w tle w aplikacjach PHP. Zaczynam od operacji, która najbardziej utrudnia pracę użytkownikom lub pracownikom, i sprawdzam, co zajmuje najwięcej czasu: zapytania do bazy, przetwarzanie danych, wywołania zewnętrzne czy obsługa kolejek. Po wprowadzeniu zmian porównuję wyniki pomiarów, żeby pokazać ich efekt."
 icon: i-lucide-gauge
 group: support
 order: 24
@@ -11,7 +11,7 @@ updated: 2026-11-13
 deliverables:
   - "Pomiary powolnej operacji: czas wykonania, zapytania do bazy i wykryte ograniczenie"
   - Uzgodnione zmiany kodu, zapytań lub konfiguracji
-  - Porównanie wyników i zalecenia monitorowania
+  - Porównanie wyników przed zmianami i po nich oraz zalecenia dotyczące monitoringu
 process:
   - title: Odtworzenie opóźnienia
     description: Zbieram przykłady, logi i pomiary oraz sprawdzam warunki występowania.
@@ -30,14 +30,14 @@ projects:
   - digipulse
 faq:
   - label: Czy potrzebny jest mocniejszy serwer?
-    content: Być może. Najpierw ustalamy ograniczający zasób i możliwość zmniejszenia obciążenia przez zmiany aplikacji.
+    content: Być może. Najpierw sprawdzam, którego zasobu brakuje i czy zmiany w aplikacji mogą zmniejszyć obciążenie.
   - label: Czy wystarczy schemat bazy?
     content: Pomaga zrozumieć strukturę, ale analiza wydajności może wymagać planów zapytań, statystyk i reprezentatywnych danych testowych.
 content: |-
   ## Pomiar konkretnej operacji
 
-  Wolny raport i powolna rezerwacja wizyty mogą mieć różne przyczyny, dlatego najpierw trzeba odtworzyć opóźnienie odczuwane przez użytkowników. W tym celu mierzę czas odpowiedzi, sprawdzam ilość danych i zależności zewnętrzne. Kiedy wiadomo już, gdzie powstaje opóźnienie, można wybrać zmianę i uzgodnić wskaźniki oceny wyniku.
+  Długie generowanie raportu i powolny zapis na wizytę mogą mieć różne przyczyny, dlatego najpierw trzeba odtworzyć opóźnienie odczuwane przez użytkowników. W tym celu mierzę czas odpowiedzi, sprawdzam ilość danych i zależności zewnętrzne. Kiedy wiadomo już, gdzie powstaje opóźnienie, możemy uzgodnić poprawkę i sposób zmierzenia jej efektu.
 
   Po poprawce powtarzam tę samą operację z porównywalną ilością danych i zestawiam czas wykonania oraz zużycie zasobów. Jednocześnie sprawdzam poprawność odpowiedzi, ponieważ szybszy raport nadal musi zwracać te same dane.
 
-  Na początek pokaż stronę lub operację, na którą trzeba czekać, i opisz, kiedy pojawia się opóźnienie. Jeśli masz już logi lub pomiary, pomogą one w diagnozie. Koszt diagnozy i pracy nad jedną konkretną przyczyną zaczyna się od $1 200.
+  Na początek pokaż stronę lub operację, na którą trzeba czekać, i opisz, kiedy pojawia się opóźnienie. Jeśli masz już logi lub pomiary, pomogą one w diagnozie. Koszt diagnozy i prac nad jedną konkretną przyczyną zaczyna się od $1 200.

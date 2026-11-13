@@ -1,7 +1,7 @@
 indexable: false
 title: A Senior PHP and Laravel developer for your team
 description: "PHP, Laravel and Symfony project support: feature development, integrations, code reviews and backlog delivery."
-summary: "I join teams as a Senior Full-Stack PHP Developer to work on product features, integrations and existing backlogs. Over more than 8 years of commercial development, I have worked with Laravel, Symfony, Vue and payment systems. This experience lets me take a task from requirements through code and tests, while also helping colleagues with reviews and investigating problems in the system."
+summary: "I join teams as a Senior Full-Stack PHP Developer to work on product features, integrations and existing backlogs. I have more than 8 years of professional development experience with Laravel, Symfony, Vue and payment systems. This experience lets me take a task from requirements through code and tests, while also helping colleagues with reviews and investigating problems in the system."
 icon: i-lucide-user-check
 group: development
 order: 40
@@ -12,12 +12,12 @@ updated: 2026-11-13
 deliverables:
   - Features covering backend logic and interface, with tests and pull requests in your repository
   - Tests and code reviews within the agreed scope
-  - Time records and progress or blocker updates
+  - Time tracking and brief updates on progress and blockers
 process:
   - title: Meet the team
     description: We discuss the stack, immediate tasks, schedule and communication.
   - title: A first task
-    description: We agree a bounded task, acceptance criteria and time estimate.
+    description: We choose an initial task and agree on its scope, acceptance criteria and estimated time.
   - title: Ongoing work
     description: I work through the backlog, join agreed discussions and submit changes for review.
 technologies:
@@ -32,14 +32,14 @@ projects:
   - digipulse
 faq:
   - label: Can we start with a short task?
-    content: Yes. A first paid task helps assess collaboration and establish project context. We agree scope and terms beforehand.
+    content: Yes. A small paid task gives us a chance to see how we work together while I get to know the project. We agree on the scope and terms before starting.
   - label: What is your time zone?
     content: I work from Poznań, Poland. We agree working hours and overlap with your team separately. I communicate in Ukrainian and English.
 content: |-
   ## What I work on
 
-  I work on ticket shops built with Symfony, MySQL, Redis and Vue.js, with payments through Stripe and Dalenys. Alongside this, I develop my own products: VetSpace, a veterinary clinic CRM with separate databases and Stripe subscriptions; DigiPulse, built with Laravel and Go; and NetPostPanel, with queues and AI integrations.
+  I work on ticketing websites built with Symfony, MySQL, Redis and Vue.js, with payments through Stripe and Dalenys. Alongside this, I develop my own products: VetSpace, a veterinary clinic CRM with separate databases and Stripe subscriptions; DigiPulse, built with Laravel and Go; and NetPostPanel, with queues and AI integrations.
 
   I draw on this experience when taking on a feature or part of a team's backlog. I start by reviewing the related code and proposing an implementation, then prepare the changes with tests and submit a pull request for review. I also review colleagues' code and raise questions or dependencies as soon as they affect the solution.
 
-  To discuss your needs, send me the stack and two or three backlog items you would like to hand over. We can use them to define my role and the time required. My rate starts at $50 per hour; we agree on the hours and start date based on my availability.
+  To discuss your needs, send me the stack and two or three backlog items you would like to hand over. We can use them to define my role and how many hours you need. My rate starts at $50 per hour; we agree on the hours and start date based on my availability.

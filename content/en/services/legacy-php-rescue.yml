@@ -1,7 +1,7 @@
 indexable: false
 title: Stabilizing an existing PHP project
 description: "PHP project troubleshooting: setup, backups, errors and deployment. Start with diagnosis and an agreed work plan."
-summary: "I help with PHP projects that are difficult to run, restore or change. Depending on the problem, I review the code, infrastructure and backups, reproduce errors and get deployment working. I start with what is blocking you now so we can identify the first fixes and plan the rest of the recovery."
+summary: "I help get PHP projects running again when they are difficult to set up, restore or maintain. Depending on the problem, I review the code, infrastructure and backups, reproduce errors and fix the deployment process. I start with what is blocking you now so we can identify the first fixes and plan the rest of the recovery."
 icon: i-lucide-life-buoy
 group: support
 order: 23
@@ -16,7 +16,7 @@ process:
   - title: Take inventory
     description: I establish which code, credentials, data and backups are available.
   - title: Reproduce the setup
-    description: I check running a copy and restoring data in an available test environment.
+    description: I run a copy of the project and test data recovery in a test environment.
   - title: Make initial fixes
     description: I address agreed issues and document the changes.
 technologies:
@@ -35,8 +35,8 @@ faq:
 content: |-
   ## First, establish what is available
 
-  Without startup instructions, known dependencies or verified backups, even a small change is hard to estimate. I therefore begin by gathering information about the code and infrastructure, working out how to run a copy of the project and checking whether its data can be restored.
+  When setup instructions are missing, dependencies are unclear and backups have not been tested, even a small change is hard to estimate. I therefore begin by gathering information about the code and infrastructure, working out how to run a copy of the project and checking whether its data can be restored.
 
-  This provides a basis for the first fixes and a longer-term plan. After diagnosis, I describe the current state, address the agreed blockers and identify the next steps. If further environment setup, data recovery or deployment changes are needed, I prepare a separate scope and estimate for them.
+  This provides a basis for the first fixes and a longer-term plan. After investigating the problem, I document the current state, make the agreed initial fixes and set out the next steps. If further environment setup, data recovery or deployment changes are needed, I prepare a separate scope and estimate for them.
 
-  We can start with a description of what stopped working and whatever materials remain: code, access credentials, backups or error messages. These help identify where recovery should begin. Diagnosis and the first agreed stabilization work start at $1,800.
+  We can start with a description of what stopped working and whatever you still have available: source code, access to the system, backups or error messages. These help identify where recovery should begin. The initial investigation and agreed stabilization work start at $1,800.

@@ -1,7 +1,7 @@
 indexable: false
 title: Aktualizacja Laravela
 description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu, testy i plan wdrożenia."
-summary: "Aktualizuję Laravel i PHP w istniejących aplikacjach, dostosowując pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam te scenariusze. Następnie przygotowuję wdrożenie z uwzględnieniem migracji bazy, restartu workerów i możliwości powrotu do poprzedniej wersji."
+summary: "Aktualizuję Laravela i PHP w istniejących aplikacjach, dostosowując pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam te scenariusze. Następnie przygotowuję wdrożenie uwzględniające migracje bazy, restart procesów kolejek i możliwość powrotu do poprzedniej wersji."
 icon: i-lucide-circle-arrow-up
 group: support
 order: 20
@@ -15,7 +15,7 @@ deliverables:
 process:
   - title: Sprawdzenie zgodności
     description: Przeglądam composer.json, wersje, testy i wymagania serwera.
-  - title: Aktualizacja na środowisku testowym
+  - title: Aktualizacja w środowisku testowym
     description: Dostosowuję pakiety i kod oraz sprawdzam zmiany zachowania aplikacji.
   - title: Przygotowanie wydania
     description: Uzgadniamy migracje, restart procesów kolejek i kontrolę po uruchomieniu.
@@ -38,6 +38,6 @@ content: |-
 
   O złożoności aktualizacji decyduje stan aplikacji: czy jej pakiety są nadal utrzymywane, jak bardzo zmieniła się konfiguracja i którą część własnego kodu trzeba dostosować. Sama różnica między obecną a docelową wersją nie wystarcza do wyceny, dlatego zaczynam od przeglądu zależności i sposobu uruchamiania.
 
-  Kolejne pytanie dotyczy sprawdzenia zachowania systemu po zmianach. We własnych produktach Laravel, VetSpace i DigiPulse, pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
+  Kiedy zakres zmian jest już znany, planuję sprawdzenie działania systemu po aktualizacji. We własnych produktach opartych na Laravelu — VetSpace i DigiPulse — pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
 
-  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt przejścia między uzgodnionymi wersjami zaczyna się od $1 600. Jeśli potrzebne są wymiana porzuconych pakietów lub napisanie brakujących testów, uwzględniam te prace w wycenie.
+  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt aktualizacji do uzgodnionej wersji zaczyna się od $1 600. Jeśli potrzebne są wymiana porzuconych pakietów lub napisanie brakujących testów, uwzględniam te prace w wycenie.

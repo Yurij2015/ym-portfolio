@@ -1,7 +1,7 @@
 indexable: false
 title: Tworzenie SaaS w Laravelu
 description: "SaaS w Laravelu: konta firm, uprawnienia, subskrypcje i funkcje produktu. Rozwój w uzgodnionych etapach."
-summary: "Buduję SaaS w Laravelu, w którym firmy mogą się rejestrować, zapraszać pracowników, zarządzać dostępem i opłacać subskrypcję. Znam te zadania z pracy nad własnym VetSpace — CRM dla klinik z rozliczeniami Stripe. Przy tworzeniu Twojego produktu pomogę określić funkcje potrzebne do uruchomienia i zaplanować kolejne etapy."
+summary: "Buduję SaaS w Laravelu, w którym firmy mogą się rejestrować, zapraszać pracowników, zarządzać dostępem i opłacać subskrypcję. Z tymi funkcjami pracuję we własnym VetSpace — systemie CRM dla klinik z rozliczeniami Stripe. Przy tworzeniu Twojego produktu pomogę określić funkcje potrzebne do uruchomienia i zaplanować kolejne etapy."
 icon: i-lucide-layers
 group: development
 order: 30
@@ -33,14 +33,14 @@ faq:
   - label: Czy każdy klient potrzebuje osobnej bazy?
     content: Zależy to od wymagań dotyczących danych, kopii zapasowych i infrastruktury. Porównamy osobne bazy ze wspólną bazą i kontrolą dostępu.
   - label: Co obejmuje cena początkowa?
-    content: Pierwszy uzgodniony etap rozwoju SaaS. Przed wyceną określamy, jakie konta firmowe, role, funkcje i scenariusze subskrypcji obejmuje oraz jaki działający rezultat otrzymasz na koniec etapu.
+    content: Pierwszy uzgodniony etap rozwoju SaaS. Przed wyceną określamy, jakie konta firmowe, role, funkcje i scenariusze subskrypcji obejmuje i z czego będzie można korzystać po jego zakończeniu.
 content: |-
   ## Doświadczenie z VetSpace
 
-  W VetSpace każda klinika ma własną bazę danych, a subskrypcje działają przez Stripe i Cashier. W tym produkcie dane są rozdzielone właśnie w ten sposób; w nowym SaaS wybieram sposób izolacji na podstawie wymagań dotyczących dostępu, kopii zapasowych i infrastruktury.
+  W VetSpace każda klinika ma własną bazę danych, a subskrypcje działają przez Stripe i Cashier. W nowym produkcie SaaS sposób oddzielenia danych klientów dobieram do wymagań dotyczących dostępu, kopii zapasowych i infrastruktury.
 
-  Obok dostępu do danych trzeba przemyśleć reguły subskrypcji: kiedy użytkownik otrzymuje dostęp, jak zmienia plan i co dzieje się po nieudanej płatności. Od tych zasad zależą funkcje produktu. Na przykład w marketplace klienta zakupiony pakiet określał liczbę aktywnych ogłoszeń i wersji roboczych, które mógł mieć użytkownik.
+  Obok dostępu do danych trzeba przemyśleć reguły subskrypcji: kiedy użytkownik otrzymuje dostęp, jak zmienia plan i co dzieje się po nieudanej płatności. Od tych zasad zależą funkcje produktu. Na przykład na platformie marketplace jednego z klientów zakupiony pakiet określał, ile aktywnych ogłoszeń i wersji roboczych może mieć użytkownik.
 
-  Na początek wystarczy więc opisać, kto będzie korzystać z Twojego SaaS, jakie główne zadanie ma on rozwiązywać i jak planujesz pobierać opłaty. Pomoże to wyznaczyć pierwszy etap i uzgodnić jego rezultat.
+  Na początek wystarczy więc opisać, kto będzie korzystać z Twojego SaaS, w czym produkt ma pomagać i jak planujesz pobierać opłaty. Pomoże to wyznaczyć pierwszy etap i uzgodnić jego rezultat.
 
-  Budżet początkowy od $4 800 dotyczy pierwszego uzgodnionego etapu rozwoju. Objęte nim funkcje, scenariusze rozliczeń i integracje zapisujemy w wycenie przed rozpoczęciem prac.
+  Koszt pierwszego uzgodnionego etapu prac zaczyna się od $4 800. Przed rozpoczęciem zapisujemy w wycenie, jakie funkcje, zasady rozliczeń i integracje obejmuje ten etap.

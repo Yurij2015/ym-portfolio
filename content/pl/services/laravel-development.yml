@@ -1,7 +1,7 @@
 indexable: false
 title: Programowanie w Laravelu
 description: Nowe moduły, konta użytkowników i integracje w Laravelu. Rozwijam nowe produkty oraz istniejące aplikacje.
-summary: "Tworzę w Laravelu konta użytkowników, obsługę zamówień, raporty i integracje, prowadząc moduł od wymagań do działającej wersji. W ramach tych prac projektuję strukturę danych, piszę logikę serwerową i interfejs oraz konfiguruję uprawnienia. Jeśli produkt już działa, sprawdzam nową funkcję razem z procesami, na które wpływa."
+summary: "Tworzę w Laravelu konta użytkowników, obsługę zamówień, raporty i integracje, zajmując się modułem od ustalenia wymagań po wdrożenie. W ramach tych prac projektuję strukturę danych, piszę logikę serwerową i interfejs oraz konfiguruję uprawnienia. Jeśli produkt już działa, sprawdzam nową funkcję razem z procesami, na które wpływa."
 icon: i-simple-icons-laravel
 group: development
 order: 10
@@ -34,16 +34,16 @@ projects:
   - digispace
 faq:
   - label: Co oznacza cena od $2 400?
-    content: To początkowy budżet na osobny moduł lub integrację z testami i przygotowaniem wdrożenia, na przykład konta użytkowników z rolami albo obsługę zamówień. Przed rozpoczęciem prac uzgadniamy funkcje modułu, kryteria odbioru i koszt.
+    content: To budżet początkowy na moduł, taki jak panel użytkownika z rolami lub obsługa zamówień, albo na integrację. Obejmuje testy i przygotowanie do wdrożenia. Przed rozpoczęciem prac uzgadniamy funkcje modułu, kryteria odbioru i koszt.
   - label: Czy potrzebny jest osobny frontend?
-    content: Do paneli wewnętrznych wykorzystuję Filament, a do kont użytkowników między innymi Inertia i Vue. Nuxt może obsługiwać strony publiczne, jak w VetCard. Wybór zależy od interfejsu i dalszego utrzymania.
+    content: Do paneli wewnętrznych wykorzystuję Filament, a do paneli użytkowników między innymi Inertia i Vue. Nuxt może obsługiwać strony publiczne, jak w VetCard. Wybór zależy od interfejsu i dalszego utrzymania.
 content: |-
   ## Przykłady z moich projektów
 
-  W VetSpace rozwijam CRM dla klinik, pracując z ich danymi i subskrypcjami Stripe. W DigiPulse Laravel odpowiada za zarządzanie monitorami i powiadomieniami, a osobny serwis Go wykonuje kontrole sieciowe. W obu produktach nowe moduły muszą współpracować z istniejącą logiką.
+  W VetSpace rozwijam CRM dla klinik, w tym obsługę ich danych i subskrypcji Stripe. W DigiPulse Laravel odpowiada za zarządzanie monitorami i powiadomieniami, a osobny serwis Go wykonuje kontrole sieciowe. W obu produktach nowe moduły muszą współpracować z istniejącą logiką.
 
-  Wśród projektów klienckich jest marketplace na Laravel z ogłoszeniami i płatnymi pakietami. Oprócz podstawowych funkcji pracowałem w nim nad czatem, rozmowami wideo przez LiveKit, wyszukiwaniem w Meilisearch oraz zgłoszeniami do pomocy technicznej, które powstają również z wiadomości email.
+  Dla jednego z klientów rozwijałem platformę marketplace w Laravelu, z ogłoszeniami i płatnymi pakietami. Oprócz podstawowych funkcji pracowałem na niej nad czatem, rozmowami wideo przez LiveKit, wyszukiwaniem w Meilisearch oraz zgłoszeniami do pomocy technicznej, które powstają również z wiadomości email.
 
   Dodanie podobnej funkcji do istniejącej aplikacji wymaga najpierw poznania jej struktury danych, zależności i sposobu wdrażania. Dopiero na tej podstawie można zaplanować zmiany i testy tak, aby nowy moduł współpracował z resztą systemu.
 
-  Możemy zacząć od opisu tego, co użytkownik ma móc zrobić, oraz obejrzenia obecnej aplikacji lub makiet. Na tej podstawie zaproponuję realizację z wyceną i szacowanym czasem prac.
+  Możemy zacząć od opisu tego, jakie działania ma wykonywać użytkownik, oraz obejrzenia obecnej aplikacji lub makiet. Na tej podstawie zaproponuję sposób realizacji, wycenę i przewidywany czas prac.

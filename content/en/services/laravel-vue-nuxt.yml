@@ -1,7 +1,7 @@
 indexable: false
 title: Laravel, Vue and Nuxt development
 description: "Laravel backends with Vue or Nuxt interfaces: user accounts, public pages, APIs and their integration."
-summary: "I build user portals, directories and online booking with Vue or Nuxt interfaces and Laravel backends. Working on both parts lets me handle the full workflow, from a user action in the browser to validation and data storage on the server. For public Nuxt pages, I also configure server rendering and metadata."
+summary: "I build user portals, directories and online booking with Vue or Nuxt interfaces and Laravel backends. Because I work on both the frontend and backend, I can build the full workflow, from a user action in the browser to validation and data storage on the server. For public Nuxt pages, I also configure server rendering and metadata."
 icon: i-simple-icons-nuxtdotjs
 group: development
 order: 35
@@ -14,7 +14,7 @@ deliverables:
   - Main workflow checks and setup documentation for both parts
 process:
   - title: Application structure
-    description: We define public pages, private accounts, data and search requirements.
+    description: We map out public pages, user portals, data needs and search visibility requirements.
   - title: Implementation
     description: I build the interface and required APIs or server actions.
   - title: Browser checks
@@ -34,12 +34,12 @@ faq:
   - label: Inertia or a separate Nuxt application?
     content: Inertia supports Vue within Laravel. A separate Nuxt application may suit public pages needing server rendering. The requirements determine the choice.
   - label: Do I need a finished design?
-    content: I can work from a design or an agreed component library. Creating a separate visual identity needs to be included in the scope.
+    content: I can work from a design or an agreed component library. If you need a custom visual design, we include that work in the scope.
 content: |-
   ## The VetCard example
 
-  In VetCard, public clinic pages run on Nuxt and get information and online booking data from a Laravel API. For a user to choose an appointment time and receive confirmation, the interface and backend need to handle the whole booking together, from loading available data to responding to the submitted form.
+  In VetCard, public clinic pages run on Nuxt and get information and online booking data from a Laravel API. The frontend and backend work together throughout the booking, loading available appointment times, processing the form and confirming the result to the user.
 
-  During development, I therefore check both the page layout and what people see as they use it: loading states, error messages and confirmation of completed actions. For public pages, I also configure metadata and server rendering so the main content is included in the server's HTML response.
+  When testing a feature like this, I check the page layout as well as the feedback users receive: loading states, error messages and confirmation of completed actions. For public pages, I also configure metadata and server rendering so the main content is included in the server's HTML response.
 
-  To discuss a similar task, send a list of screens and actions users need, along with mockups if you have them. We can use these to define the changes needed in both parts of the application. A section of an application with an interface and backend starts at $2,400.
+  To discuss a similar task, send a list of screens and actions users need, along with mockups if you have them. We can use these to define the changes needed in both parts of the application. Development of a feature covering both frontend and backend starts at $2,400.

@@ -1,7 +1,7 @@
 indexable: false
 title: PHP application development and improvements
 description: Features, reports, integrations and fixes for PHP applications using Laravel, Symfony or a custom codebase.
-summary: "I work on existing PHP applications built with Laravel, Symfony or without a framework when you need to change a calculation, add a report or data exchange, or fix an error. Before making changes, I investigate how the relevant part of the system works and what it connects to. This lets me test the changes alongside the other operations they affect."
+summary: "I update existing PHP applications built with Laravel, Symfony or without a framework. This can mean changing a calculation, adding a report, connecting another service or fixing a bug. Before making changes, I investigate how the relevant part of the system works and what it connects to. This lets me test the changes alongside the other operations they affect."
 icon: i-simple-icons-php
 group: development
 order: 12
@@ -39,8 +39,8 @@ content: |-
 
   Even a small change can affect several parts of an application. A new integration, for example, affects data exchange, while a calculation change can affect related reports. Before starting, I establish these connections and decide how to check the result in the existing system.
 
-  I work with these connections in DigiSpace, where the public website, content and admin panels share a Laravel codebase. Changes to one feature need to fit the rest of the logic, and I use the same approach in client applications.
+  In DigiSpace, for example, the public website, content and admin panels share a Laravel codebase. Changes to one feature need to fit the rest of the logic, and I use the same approach in client applications.
 
   To get started, describe the task and include your PHP version. For an error, reproduction steps and log messages help; for a new feature, an example of the expected result is useful. These materials let me identify which code needs reviewing and estimate the work.
 
-  The starting budget of $1,800 covers an agreed change, such as a report or data exchange, together with checks and deployment instructions.
+  An agreed piece of work, such as adding a report or connecting the application to another service, starts at $1,800, including checks and deployment instructions.

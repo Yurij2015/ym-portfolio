@@ -1,7 +1,7 @@
 indexable: false
 title: Laravel upgrades
 description: "Laravel and PHP upgrades: dependency review, code changes, tests and a deployment plan."
-summary: "I upgrade Laravel and PHP in existing applications, adapting packages, custom code, configuration and tests to the target version. Since the changes can affect sign-in, payments and background jobs, I check those workflows separately. I then prepare deployment around database migrations, worker restarts and the option to roll back."
+summary: "I upgrade Laravel and PHP in existing applications, adapting packages, custom code, configuration and tests to the target version. Since the changes can affect sign-in, payments and background jobs, I check those workflows separately. I then prepare a deployment plan covering database migrations, worker restarts and rollback options."
 icon: i-lucide-circle-arrow-up
 group: support
 order: 20
@@ -16,7 +16,7 @@ process:
   - title: Check compatibility
     description: I review composer.json, versions, tests and server requirements.
   - title: Upgrade in a test environment
-    description: I adapt packages and code and check changes in application behavior.
+    description: I update packages and adapt the code, then check whether the application behaves as expected.
   - title: Prepare the release
     description: We agree migrations, worker restarts and post-deployment checks.
 technologies:
@@ -38,6 +38,6 @@ content: |-
 
   The application's condition determines the complexity of an upgrade: whether its packages are still maintained, how much configuration has changed and which custom code needs adapting. The gap between the current and target versions is not enough to estimate the work, so I start by reviewing dependencies and how the application runs.
 
-  The next question is how to check the system's behavior after the changes. In my Laravel products, VetSpace and DigiPulse, I work with subscriptions, queues and integrations where a successful application startup is only the beginning of testing. The operations themselves also need to run and return the correct results.
+  Once the required changes are clear, I plan how to check that the system still works as expected. In my Laravel products, VetSpace and DigiPulse, I work with subscriptions, queues and integrations where a successful application startup is only the beginning of testing. I also test those workflows to check that they still produce the correct results.
 
-  To estimate your upgrade, send composer.json, composer.lock and a short description of how the application runs. An upgrade between agreed versions starts at $1,600. If abandoned packages need replacing or missing tests need writing, I include that work in the estimate.
+  To estimate your upgrade, send composer.json, composer.lock and a short description of how the application runs. Upgrading to an agreed target version starts at $1,600. If abandoned packages need replacing or missing tests need writing, I include that work in the estimate.

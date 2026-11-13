@@ -1,7 +1,7 @@
 indexable: false
 title: Utrzymanie aplikacji PHP i Laravel
 description: "Regularne wsparcie PHP, Laravel i Symfony: poprawki, przegląd zależności, kontrola kopii zapasowych i monitoringu."
-summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach uzgodnionego planu nadzoruję również kolejki, kopie zapasowe i powiadomienia monitoringu. Wykonane prace oraz otwarte problemy zapisuję w raportach, aby było widać stan aplikacji i wykorzystany czas."
+summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach uzgodnionego planu sprawdzam też kolejki, kopie zapasowe i powiadomienia z monitoringu. Wykonane prace oraz otwarte problemy zapisuję w raportach, żeby było wiadomo, co wymaga uwagi i na co został przeznaczony czas."
 icon: i-lucide-shield-check
 group: support
 order: 41
@@ -31,14 +31,14 @@ projects:
   - digipulse
 faq:
   - label: Czy utrzymujesz kod innych programistów?
-    content: Tak. Najpierw potrzebny jest przegląd. Jeśli aplikacji nie da się uruchomić lub brakuje dostępów, najpierw wyceniamy stabilizację.
+    content: Tak. Najpierw potrzebny jest przegląd. Jeśli aplikacji nie da się uruchomić lub brakuje dostępu do systemu, zaczynamy od ustalenia prac potrzebnych do przywrócenia jej działania.
   - label: Czy obejmuje to całodobową obsługę awarii?
-    content: Stały dyżur 24/7 nie jest częścią podstawowej usługi godzinowej. Dostępność i czas reakcji wymagają osobnego uzgodnienia przed współpracą.
+    content: Usługa godzinowa nie obejmuje dyżuru 24/7. Dostępność i czas reakcji ustalamy przed rozpoczęciem współpracy.
 content: |-
   ## Co ustalamy na początku
 
-  Działający produkt często potrzebuje jednocześnie poprawek, aktualizacji zależności i niewielkich zmian. Aby podzielić czas między te zadania, najpierw przeglądam stan aplikacji, a następnie wspólnie ustalamy priorytety, budżet i harmonogram utrzymania. Duże aktualizacje oraz nowe moduły wyceniam osobno.
+  Działający produkt często potrzebuje jednocześnie poprawek, aktualizacji zależności i niewielkich zmian. Żeby ustalić kolejność prac, najpierw przeglądam stan aplikacji, a następnie wspólnie ustalamy priorytety, budżet i harmonogram utrzymania. Duże aktualizacje oraz nowe moduły wyceniam osobno.
 
-  Plan obejmuje też sposób reagowania na awarie. Dostępność strony można śledzić przez mój serwis DigiPulse z powiadomieniami w Telegram i email. Przed rozpoczęciem prac uzgadniamy, kto otrzymuje te wiadomości i jakie działania podejmuje dalej.
+  Plan obejmuje też sposób reagowania na awarie. Dostępność strony można śledzić przez mój serwis DigiPulse wysyłający powiadomienia przez Telegram i email. Przed rozpoczęciem prac uzgadniamy, kto otrzymuje te wiadomości i jakie działania podejmuje dalej.
 
-  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania się gromadzą. Pomoże to ustalić częstotliwość kontroli oraz sposób zgłaszania potrzeb. Praca jest rozliczana godzinowo, według stawki od $50.
+  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania czekają na realizację. Pomoże to ustalić częstotliwość kontroli oraz sposób zgłaszania potrzeb. Rozliczam się godzinowo, a stawka zaczyna się od $50 za godzinę.

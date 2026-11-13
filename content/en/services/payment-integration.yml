@@ -1,7 +1,7 @@
 indexable: false
 title: Payment and third-party API integration
 description: Stripe, Revolut and Dalenys payments, subscriptions and external services for PHP applications, with webhook handling, retries and error checks.
-summary: "I integrate payments and subscriptions into PHP and Laravel applications, from creating a payment through confirmation, plan changes or cancellation. To keep statuses and user access correct, I also test repeated webhooks, declined payments and provider outages. I take the same approach to third-party APIs used to exchange data between services."
+summary: "I integrate payments and subscriptions into PHP and Laravel applications, from creating a payment through confirmation, plan changes or cancellation. To make sure payment statuses and user access stay in sync, I also test repeated webhooks, declined payments and provider outages. I take the same approach to third-party APIs used to exchange data between services."
 icon: i-lucide-credit-card
 group: development
 order: 33
@@ -11,14 +11,14 @@ updated: 2026-11-13
 deliverables:
   - Payments or subscriptions connected to your application, from payment creation to status and user access updates
   - Event, retry and error handling with operation logs
-  - Tests and instructions for credentials and launch
+  - Tests and instructions for configuring API keys and going live
 process:
   - title: Define the workflow
     description: We clarify operations, statuses, subscriptions or refunds and provider capabilities.
   - title: Build the test integration
     description: I implement requests and event handlers and check failures and repeated delivery.
   - title: Launch and reconcile
-    description: We agree the switch to live credentials and verify operation statuses.
+    description: We switch to live API keys and check that transaction statuses match the provider’s records.
 technologies:
   - stripe
   - laravel
@@ -38,8 +38,8 @@ content: |-
 
   After a payment, the application needs to confirm the transaction on its side and update its status. If the provider's response is delayed or a webhook arrives more than once, the system needs to handle those events correctly and show the user a clear status. The integration therefore covers the full process, including errors and repeated messages.
 
-  I work with Stripe subscriptions in my own product, VetSpace. For a client Laravel marketplace, I implemented a more involved payment flow using Stripe Connect: sellers connect their own accounts, the buyer pays through Checkout and the platform retains its commission. Affiliate program participants also receive their commission, while webhooks from the platform and connected accounts update order statuses.
+  I work with Stripe subscriptions in my own product, VetSpace. For a client Laravel marketplace, I implemented a more complex payment flow using Stripe Connect: sellers connect their own accounts, the buyer pays through Checkout and the platform retains its commission. Affiliate program participants also receive their commission, while webhooks from the platform and connected accounts update order statuses.
 
-  Other external services need similar attention to errors and statuses. In NetPostPanel, for example, their APIs are called from background content preparation jobs, where the outcome needs to remain clear after the request itself has finished.
+  I also handle errors and track operation status when integrating other external services. In NetPostPanel, for example, API calls run as background content preparation jobs, so the application needs to track whether each job succeeds or fails after the initial request has ended.
 
   To estimate a payment integration, tell me which provider you have chosen and which operations you need: one-off payments, subscriptions or refunds. For another API, documentation and a description of the data exchange will help. Integrations start at $1,600, with provider fees paid separately.

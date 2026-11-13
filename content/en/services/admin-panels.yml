@@ -16,7 +16,7 @@ process:
   - title: Review the workflow
     description: We look at current operations and the data needed on each screen.
   - title: Choose the tool and build
-    description: I choose Filament, Flowbite or AdminLTE to fit the existing code, then create forms, filters and business actions.
+    description: I choose Filament, Flowbite or AdminLTE to fit the existing code, then create forms, filters and the actions staff need.
   - title: Review with users
     description: Staff try the panel and I fix usability and permission issues.
 technologies:
@@ -33,7 +33,7 @@ projects:
   - vetspace
 faq:
   - label: Filament, Flowbite or AdminLTE?
-    content: Filament fits a Laravel application whose panel is made of standard screens with lists, forms, filters and roles. I use Flowbite when the panel needs its own look or unusual screens, or when the frontend is a separate Vue or Nuxt application. AdminLTE makes sense when the project already uses Bootstrap or has an AdminLTE admin that needs more work.
+    content: Filament works well for Laravel applications that need standard admin screens with lists, forms, filters and user roles. I use Flowbite when the panel needs a custom design or more specialized screens, or when the frontend is a separate Vue or Nuxt application. AdminLTE makes sense when the project already uses Bootstrap or has an AdminLTE panel that needs extending.
   - label: Can Filament be added to an existing Laravel app?
     content: Yes, after checking version, model and authentication compatibility. Resources can be introduced one at a time without touching the rest of the application.
   - label: What if the backend is not Laravel?
@@ -41,12 +41,12 @@ faq:
 content: |-
   ## Examples from my projects
 
-  In DigiSpace, I am gradually moving screens from the old Inertia and Vue admin panel to Filament. Both panels run alongside each other, and the new one already supports content, translations and SEO metadata. I also use Filament in DigiPulse to manage monitors, contacts and notification rules.
+  In DigiSpace, I am gradually moving screens from the old Inertia and Vue admin panel to Filament. The two panels run side by side, and the new one already lets users edit content, translations and SEO metadata. I also use Filament in DigiPulse to manage monitors, contacts and notification rules.
 
   For Vue and Nuxt interfaces, I also work with Flowbite. It powers NetPostPanel and the VetSpace clinic panel, as well as client projects: a marketplace admin panel with users, listings and orders, and a service for photographers with galleries and service packages.
 
   I have also built two admin panels for Laravel applications using AdminLTE. One fetches data from an external API on a schedule, letting an agency view and export statistics and expenses. The other manages the collection and filtering of social network data through job queues.
 
-  In each case, the scope comes from the team's daily work: which records they create and edit, how they find them, and which actions need confirmation. To estimate your panel, it helps to see the current screens or spreadsheets and understand what the team still does manually.
+  In each case, the scope depends on how the team works day to day: which records they create and edit, how they find them, and which actions need confirmation. To estimate your panel, it helps to see the current screens or spreadsheets and understand what the team still does manually.
 
-  A set of related screens starts at $1,600. If you need imports, reports or custom operations, I factor their complexity into the overall estimate.
+  Development of a set of related screens starts at $1,600. If you need imports, reports or custom operations, I factor their complexity into the overall estimate.

@@ -1,7 +1,7 @@
 indexable: false
 title: Symfony upgrades
 description: "Upgrade Symfony and PHP in an existing application: dependencies, deprecated calls, tests and release preparation."
-summary: "I upgrade Symfony and PHP in existing systems, checking bundle compatibility and adapting configuration, deprecated calls and custom extensions. After these changes, I test the related operations and prepare the application for release. If the task involves moving custom PHP code to Symfony, I separately plan which parts can be migrated gradually."
+summary: "I upgrade Symfony and PHP in existing systems, checking bundle compatibility and adapting configuration, deprecated calls and custom extensions. After these changes, I test the related operations and prepare the application for release. For a migration from a custom PHP application to Symfony, I prepare a separate plan for moving the application over in stages."
 icon: i-lucide-refresh-cw
 group: support
 order: 21
@@ -34,8 +34,8 @@ faq:
 content: |-
   ## An upgrade planned around your application
 
-  Working on ticket shops has involved several generations of Symfony and PHP. Moving between versions can affect configuration, third-party bundles and custom code, so I start the estimate by reviewing them.
+  My work on ticketing websites has spanned several versions of Symfony and PHP. Moving between versions can affect configuration, third-party bundles and custom code, so I start the estimate by reviewing them.
 
   Deprecation warnings help identify some of the changes needed, while dependency compatibility and API changes need separate checks. If a bundle is no longer maintained, I propose a replacement or discuss adapting the feature that depends on it. I then test the integrations and business workflows affected by the upgrade.
 
-  To get started, send your Symfony and PHP versions, dependency files and the reason for upgrading. These let me define the scope of the move to your target version, starting at $1,800. Moving a custom system to Symfony receives a separate estimate.
+  To get started, send your Symfony and PHP versions, dependency files and the reason for upgrading. These let me define the scope of the move to your target version, starting at $1,800. Migrating a custom PHP application to Symfony is estimated separately.
