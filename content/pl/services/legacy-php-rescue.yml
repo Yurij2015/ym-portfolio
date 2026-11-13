@@ -1,0 +1,42 @@
+indexable: false
+title: Stabilizacja istniejącego projektu PHP
+description: "Diagnoza projektu PHP: uruchamianie, kopie zapasowe, błędy i wdrażanie. Najpierw analiza i uzgodniony plan prac."
+summary: "Pomagam przywrócić projekt PHP do stanu, w którym można go uruchamiać i zmieniać. Zbieram informacje o kodzie i infrastrukturze, sprawdzam kopie, odtwarzam błędy oraz naprawiam wdrażanie. Zaczynam od bieżącej blokady: niedziałającej funkcji, nieudanego wydania lub braku środowiska testowego."
+icon: i-lucide-life-buoy
+group: support
+order: 23
+priceFrom: 1800
+timeline: Diagnozę i poprawki wyceniam jako osobne etapy
+updated: 2026-11-11
+deliverables:
+  - "Mapa projektu: lokalizacja kodu i danych, dostępne uprawnienia oraz przeszkody w uruchomieniu lub odtworzeniu"
+  - Uzgodnione poprawki oraz konfiguracja środowiska
+  - Instrukcja uruchomienia i lista dalszych prac
+process:
+  - title: Inwentaryzacja
+    description: Ustalam, jaki kod, dostępy, dane i kopie są dostępne.
+  - title: Odtworzenie środowiska
+    description: Sprawdzam uruchomienie kopii i odtworzenie danych na dostępnym środowisku testowym.
+  - title: Pierwsze poprawki
+    description: Usuwam uzgodnione problemy i dokumentuję zmiany.
+technologies:
+  - php
+  - laravel
+  - docker
+  - github-actions
+  - mysql
+  - postgresql
+projects: []
+faq:
+  - label: Co jeśli brakuje dostępu do serwera?
+    content: Trzeba ustalić właściciela konta i procedurę odzyskania u dostawcy. Pomogę technicznie, ale wynik zależy od uprawnień i materiałów.
+  - label: Czy projekt trzeba przepisać?
+    content: Oceniamy to po diagnozie. Najpierw sprawdzamy, co można utrzymywać i jakie zmiany są potrzebne do działania.
+content: |-
+  ## Najpierw ustalenie dostępnych materiałów
+
+  Brak instrukcji uruchomienia, nieznane zależności i niesprawdzone kopie utrudniają nawet drobne zmiany. Pierwszy etap zbiera te informacje i określa kolejność działań. Może też ujawnić dodatkowe ograniczenia.
+
+  Docker, automatyzacja wdrożeń lub aktualizacja PHP mogą być częścią rozwiązania, ale zakres zależy od projektu. Terminu pełnego przywrócenia nie da się ustalić wyłącznie z opisu błędu.
+
+  Opisz, co przestało działać i jakie kod, dostępy oraz kopie pozostały. Cena od $1 800 jest orientacyjnym budżetem wstępnej analizy i określonych prac stabilizacyjnych.

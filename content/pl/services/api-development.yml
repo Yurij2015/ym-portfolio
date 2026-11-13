@@ -1,0 +1,47 @@
+indexable: false
+title: Tworzenie i integracja API
+description: "API dla frontendu, aplikacji mobilnej i partnerów: uprawnienia, dokumentacja, obsługa błędów oraz testy."
+summary: "Tworzę API dla aplikacji mobilnych, frontendów i partnerów: odczyt oraz aktualizację danych, uwierzytelnianie, wyszukiwanie i operacje w tle. Dokumentuję zapytania, odpowiedzi i błędy, aby inny zespół mógł podłączyć aplikację. Rozwijam też istniejące API z uwzględnieniem obecnych odbiorców."
+icon: i-lucide-webhook
+group: development
+order: 31
+priceFrom: 1800
+timeline: Po uzgodnieniu zasobów, operacji i integracji
+updated: 2026-11-13
+deliverables:
+  - Endpointy potrzebnych operacji, na przykład wyszukiwania rekordów, zmiany danych lub uruchomienia zadania w tle
+  - Dokumentacja zapytań, odpowiedzi i błędów
+  - Testy oraz przykłady zapytań dla zespołu integracji
+process:
+  - title: Kontrakt API
+    description: Ustalamy odbiorców, dane, operacje, uwierzytelnianie i limity.
+  - title: Implementacja
+    description: Tworzę endpointy, kontrole dostępu i dokumentację.
+  - title: Weryfikacja integracji
+    description: Sprawdzamy API z aplikacją kliencką lub uzgodnionymi zapytaniami.
+technologies:
+  - laravel
+  - symfony
+  - go
+  - postgresql
+  - redis
+  - docker
+projects:
+  - netpostpanel
+  - vetspace
+  - digipulse
+faq:
+  - label: Czy rozwijasz istniejące API?
+    content: Tak. Najpierw analizuję kontrakt i odbiorców, potem planuję zgodne zmiany lub nową wersję.
+  - label: Czy zawsze potrzebny jest REST?
+    content: Nie. Format dobieramy do odbiorców i operacji. Jeśli istniejący REST spełnia potrzeby, nie trzeba go zastępować innym podejściem.
+content: |-
+  ## API dopasowane do odbiorcy
+
+  W VetSpace API obsługuje publiczny katalog i CRM. NetPostPanel udostępnia innym aplikacjom generowanie oraz tłumaczenie treści. Te procesy różnią się uprawnieniami, czasem wykonania i sposobem zwracania wyniku.
+
+  Dla marketplace klienta napisałem REST API z uwierzytelnianiem Sanctum i dokumentacją Swagger. Obsługuje ogłoszenia, zamówienia, czat i zgłoszenia do wsparcia.
+
+  Przed implementacją ustalam, kto wywołuje API, jakie dane może zobaczyć i co powinien otrzymać przy błędzie. Dla długich operacji omawiamy wykonanie w tle oraz sprawdzanie statusu.
+
+  Do wyceny prześlij operacje i przykładowe dane. Jeśli API już istnieje, dodaj dokumentację. Cena od $1 800 jest orientacyjnym budżetem na powiązaną grupę operacji z dokumentacją oraz testami.

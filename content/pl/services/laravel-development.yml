@@ -1,0 +1,49 @@
+indexable: false
+title: Programowanie w Laravelu
+description: Nowe moduły, konta użytkowników i integracje w Laravelu. Rozwijam nowe produkty oraz istniejące aplikacje.
+summary: "Tworzę w Laravelu konta użytkowników, obsługę zamówień, raporty i integracje. Mogę zrealizować całą funkcję: strukturę danych, logikę serwerową, uprawnienia oraz interfejs. Pracuję z nowymi produktami i istniejącymi aplikacjami, w których zmiana musi współpracować z resztą systemu."
+icon: i-simple-icons-laravel
+group: development
+order: 10
+priceFrom: 2400
+timeline: Termin zależy od funkcji modułu i stanu aplikacji
+updated: 2026-11-13
+deliverables:
+  - Działający moduł, na przykład konta użytkowników z rolami, obsługa zamówień lub integracja z usługą zewnętrzną
+  - Kontrola uprawnień i testy głównych scenariuszy
+  - Kod w repozytorium oraz dokumentacja uruchomienia i utrzymania
+process:
+  - title: Analiza zadania
+    description: Przeglądam aplikację i określam działania oraz dane potrzebne użytkownikom.
+  - title: Budowa modułu
+    description: Tworzę strukturę danych, logikę i ekrany oraz udostępniam działające zmiany do sprawdzenia.
+  - title: Testy i wdrożenie
+    description: Sprawdzam uprawnienia i powiązane operacje, przygotowuję uruchomienie oraz dokumentację.
+technologies:
+  - laravel
+  - php
+  - filament
+  - postgresql
+  - redis
+  - docker
+  - vue
+projects:
+  - vetspace
+  - digipulse
+  - netpostpanel
+  - digispace
+faq:
+  - label: Co oznacza cena od $2 400?
+    content: To początkowy budżet na osobny moduł lub integrację z testami i przygotowaniem wdrożenia. Przykładem są konta użytkowników z rolami albo obsługa zamówień; nie są to gotowe pakiety w tej samej cenie. Drobna poprawka i nowy produkt wymagają różnych wycen.
+  - label: Czy potrzebny jest osobny frontend?
+    content: Do paneli wewnętrznych wykorzystuję Filament, a do kont użytkowników między innymi Inertia i Vue. Nuxt może obsługiwać strony publiczne, jak w VetCard. Wybór zależy od interfejsu i dalszego utrzymania.
+content: |-
+  ## Przykłady z projektów
+
+  W VetSpace pracuję z procesami CRM weterynaryjnego, danymi klinik i subskrypcjami Stripe. W DigiPulse Laravel zarządza monitorami i powiadomieniami, a osobny serwis Go wykonuje testy sieciowe. Dobór rozwiązania zależy od konkretnego procesu.
+
+  Dla klienta tworzyłem w Laravelu marketplace z ogłoszeniami i płatnymi pakietami. Ma czat, rozmowy wideo przez LiveKit, wyszukiwanie w Meilisearch oraz zgłoszenia do wsparcia tworzone także z wiadomości e-mail.
+
+  W istniejącej aplikacji najpierw przeglądam zależności, strukturę danych i wdrażanie. Nowa funkcja musi współpracować z tą logiką i zostać sprawdzona razem z powiązanymi procesami.
+
+  Opisz działania użytkownika i pokaż obecną aplikację lub makiety. Przeanalizuję część techniczną i zaproponuję realizację z wyceną oraz szacowanym czasem.

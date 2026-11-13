@@ -1,0 +1,43 @@
+indexable: false
+title: Laravel upgrades
+description: "Laravel and PHP upgrades: dependency review, code changes, tests and a deployment plan."
+summary: I upgrade Laravel and PHP by replacing incompatible packages and adapting code, configuration and tests. I check login, payments and background jobs that may behave differently after the transition. I prepare deployment around database migrations, workers and options for returning to the previous release.
+icon: i-lucide-circle-arrow-up
+group: support
+order: 20
+priceFrom: 1600
+timeline: Estimated after reviewing dependencies and the upgrade scope
+updated: 2026-11-11
+deliverables:
+  - A list of incompatible packages and code changes needed for the target version
+  - Updated dependencies and adapted code with tests for agreed scenarios
+  - Release plan, post-deployment checks and rollback considerations
+process:
+  - title: Check compatibility
+    description: I review composer.json, versions, tests and server requirements.
+  - title: Upgrade in a test environment
+    description: I adapt packages and code and check changes in application behavior.
+  - title: Prepare the release
+    description: We agree migrations, worker restarts and post-deployment checks.
+technologies:
+  - laravel
+  - php
+  - github-actions
+  - docker
+  - redis
+projects:
+  - digipulse
+  - vetspace
+faq:
+  - label: What if there are no tests?
+    content: We agree which critical workflows need checks and test coverage before the upgrade. This work is included in the estimate.
+  - label: Can the upgrade avoid downtime?
+    content: That depends on infrastructure and database changes. We agree the deployment approach and any maintenance window beforehand.
+content: |-
+  ## Before choosing the target version
+
+  An upgrade may require replacing an abandoned package, changing configuration or adapting application code. The estimate depends on more than the number of versions involved.
+
+  I work on my own Laravel products, VetSpace and DigiPulse, which involve subscriptions, queues and integrations. These workflows need separate checks during an upgrade: starting the application successfully does not verify them.
+
+  For an estimate I need composer.json, composer.lock and the application setup. The starting price of $1,600 is a guide for an upgrade between defined versions. Replacing abandoned packages and adding missing tests affect the work required.

@@ -1,0 +1,45 @@
+indexable: false
+title: Integracja AI z aplikacjami PHP
+description: Wyszukiwanie w dokumentach, przygotowanie tekstów i przetwarzanie danych z AI w PHP i Laravelu. Ocena jakości i kosztów przed uruchomieniem.
+summary: "Dodaję funkcje AI do PHP i Laravel: odczyt pól z dokumentów, klasyfikację zgłoszeń, przygotowanie tekstów i wyszukiwanie w bazie wiedzy. Oceniam odpowiedzi na Twoich danych, łączę model z aplikacją oraz dodaję rejestrowanie użycia i obsługę błędów. Tam, gdzie wyniki wymagają sprawdzenia, uwzględniam kontrolę człowieka."
+icon: i-lucide-sparkles
+group: development
+order: 34
+priceFrom: 2200
+timeline: Termin zależy od jakości danych i złożoności funkcji AI
+updated: 2026-11-11
+deliverables:
+  - "Wyniki próby na Twoich przykładach: z czym model sobie radzi, gdzie popełnia błędy i jakich danych potrzebuje"
+  - Funkcja AI z obsługą błędów i rejestrowaniem użycia
+  - Opis konfiguracji, ograniczeń i sposobu sprawdzania wyników
+process:
+  - title: Przykłady i kryteria
+    description: Ustalamy dane wejściowe, oczekiwany wynik i dopuszczalne błędy.
+  - title: Sprawdzenie podejścia
+    description: Porównuję odpowiedzi, potrzebę wyszukiwania w dokumentach oraz koszty.
+  - title: Integracja
+    description: Podłączam uzgodniony proces, logowanie i kontrolę przez człowieka, jeśli jest potrzebna.
+technologies:
+  - laravel
+  - php
+  - postgresql
+  - redis
+  - go
+  - docker
+projects:
+  - netpostpanel
+  - digipulse
+  - vetspace
+faq:
+  - label: Czy potrzebujemy RAG?
+    content: Wyszukiwanie fragmentów może pomóc, gdy odpowiedź ma korzystać z Twoich dokumentów. Klasyfikacja lub odczyt pól może nie wymagać osobnej bazy wiedzy.
+  - label: Co z prywatnością i kosztami?
+    content: Przed uruchomieniem sprawdzam zasady przetwarzania i przechowywania danych dostawcy. Koszty szacuję z modelu i liczby zapytań; użycie API jest opłacane osobno.
+content: |-
+  ## Doświadczenie z NetPostPanel i DigiPulse
+
+  W NetPostPanel wyszukiwanie źródeł, generowanie treści i Qdrant łączą się przez kolejki Horizon. Langfuse rejestruje wywołania modeli. W DigiPulse serwer MCP udostępnia asystentom AI dane monitoringu.
+
+  To różne sposoby integracji. Dla Twojego zadania najpierw sprawdzamy, czy model daje przydatny wynik. Wyszukiwanie dokumentów i uporządkowany format odpowiedzi nie eliminują błędów, dlatego osobno uzgadniamy kontrolę wyników.
+
+  Prześlij przykładowe dane i oczekiwane wyniki, liczbę zapytań oraz ograniczenia dotyczące danych. Cena od $2 200 jest orientacyjnym budżetem osobnej funkcji AI z integracją; użycie API modelu jest opłacane oddzielnie.

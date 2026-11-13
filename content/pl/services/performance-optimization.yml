@@ -1,0 +1,43 @@
+indexable: false
+title: Optymalizacja wydajności aplikacji PHP
+description: Diagnoza powolnych aplikacji PHP, Laravel i Symfony. Pomiary, konkretne zmiany i porównanie wyników.
+summary: Znajduję przyczyny powolnych stron, API i zadań w tle w aplikacjach PHP. Sprawdzam zapytania do bazy, ilość danych, wywołania zewnętrzne i kolejki. Usuwam wykrytą przyczynę i porównuję czas przed zmianą oraz po niej. Zaczynamy od operacji, która obecnie utrudnia pracę użytkownikom lub zespołowi.
+icon: i-lucide-gauge
+group: support
+order: 24
+priceFrom: 1200
+timeline: Najpierw diagnoza; termin poprawek po pomiarach
+updated: 2026-11-11
+deliverables:
+  - "Pomiary powolnej operacji: czas wykonania, zapytania do bazy i wykryte ograniczenie"
+  - Uzgodnione zmiany kodu, zapytań lub konfiguracji
+  - Porównanie wyników i zalecenia monitorowania
+process:
+  - title: Odtworzenie opóźnienia
+    description: Zbieram przykłady, logi i pomiary oraz sprawdzam warunki występowania.
+  - title: Usunięcie przyczyny
+    description: "Pracuję nad wykrytym ograniczeniem: zapytaniami, danymi, usługami zewnętrznymi lub kolejkami."
+  - title: Ponowny pomiar
+    description: Porównuję czas i zasoby oraz sprawdzam poprawność wyniku.
+technologies:
+  - postgresql
+  - mysql
+  - php
+  - laravel
+  - symfony
+  - redis
+projects:
+  - digipulse
+faq:
+  - label: Czy potrzebny jest mocniejszy serwer?
+    content: Być może. Najpierw ustalamy ograniczający zasób i możliwość zmniejszenia obciążenia przez zmiany aplikacji.
+  - label: Czy wystarczy schemat bazy?
+    content: Pomaga zrozumieć strukturę, ale analiza wydajności może wymagać planów zapytań, statystyk i reprezentatywnych danych testowych.
+content: |-
+  ## Pomiar konkretnego procesu
+
+  Wolny raport i wolna rezerwacja mogą mieć różne przyczyny. Zaczynam od operacji, którą da się odtworzyć: sprawdzam czas, ilość danych i zależności zewnętrzne. Następnie można wybrać zmianę i zmierzyć jej efekt.
+
+  W DigiPulse testy sieciowe wykonuje osobny serwis Go zamiast Laravela. To podział pracy pod konkretny cel, a nie ogólne zalecenie przepisywania PHP na inny język.
+
+  Prześlij wolną stronę lub operację, warunki występowania opóźnienia i dostępne logi. Cena od $1 200 jest orientacyjnym budżetem diagnozy oraz pracy nad konkretnym ograniczeniem. Wynik liczbowy można ocenić dopiero po pomiarze początkowym.

@@ -1,0 +1,43 @@
+indexable: false
+title: Aktualizacja Laravela
+description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu, testy i plan wdrożenia."
+summary: "Aktualizuję Laravel i PHP: wymieniam niezgodne pakiety, dostosowuję kod, konfigurację oraz testy. Sprawdzam logowanie, płatności i zadania w tle, których zachowanie może się zmienić. Przygotowuję wdrożenie z uwzględnieniem migracji bazy, procesów kolejek i możliwości powrotu do poprzedniej wersji."
+icon: i-lucide-circle-arrow-up
+group: support
+order: 20
+priceFrom: 1600
+timeline: Termin ustalam po przeglądzie zależności i zakresu aktualizacji
+updated: 2026-11-11
+deliverables:
+  - Lista niezgodnych pakietów i zmian kodu potrzebnych do przejścia na wersję docelową
+  - Zaktualizowane zależności i kod z testami uzgodnionych scenariuszy
+  - Plan wydania, kontroli po wdrożeniu i ewentualnego wycofania zmian
+process:
+  - title: Sprawdzenie zgodności
+    description: Przeglądam composer.json, wersje, testy i wymagania serwera.
+  - title: Aktualizacja na środowisku testowym
+    description: Dostosowuję pakiety i kod oraz sprawdzam zmiany zachowania aplikacji.
+  - title: Przygotowanie wydania
+    description: Uzgadniamy migracje, restart procesów kolejek i kontrolę po uruchomieniu.
+technologies:
+  - laravel
+  - php
+  - github-actions
+  - docker
+  - redis
+projects:
+  - digipulse
+  - vetspace
+faq:
+  - label: Co jeśli aplikacja nie ma testów?
+    content: Ustalimy, które krytyczne procesy trzeba sprawdzić i objąć testami przed aktualizacją. Uwzględniam to w wycenie.
+  - label: Czy można uniknąć przestoju?
+    content: Zależy to od infrastruktury i zmian bazy danych. Sposób wdrożenia oraz ewentualne okno serwisowe uzgadniamy wcześniej.
+content: |-
+  ## Przed wyborem wersji docelowej
+
+  Aktualizacja może wymagać wymiany porzuconego pakietu, zmiany konfiguracji lub dostosowania kodu aplikacji. Wycenę określa więc więcej niż liczba wersji do przejścia.
+
+  Rozwijam własne produkty Laravel, VetSpace i DigiPulse, z subskrypcjami, kolejkami oraz integracjami. Przy aktualizacji te procesy wymagają osobnych testów: samo uruchomienie aplikacji nie potwierdza ich działania.
+
+  Do wyceny potrzebuję composer.json, composer.lock i opisu uruchamiania aplikacji. Cena od $1 600 jest orientacyjnym budżetem przejścia między określonymi wersjami. Wymiana porzuconych pakietów i dodanie brakujących testów wpływają na zakres pracy.

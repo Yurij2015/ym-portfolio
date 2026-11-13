@@ -1,0 +1,45 @@
+indexable: false
+title: Senior programista PHP i Laravel do Twojego zespołu
+description: "Wsparcie projektów PHP, Laravel i Symfony: funkcje, integracje, przeglądy kodu i praca z backlogiem."
+summary: Dołączam do zespołów jako Senior Full-Stack PHP Developer. Mam ponad osiem lat doświadczenia komercyjnego z Laravelem, Symfony, płatnościami i interfejsami Vue. Mogę przejąć funkcję od analizy wymagań po kod i testy, znaleźć przyczynę problemu w istniejącym systemie lub sprawdzić rozwiązanie innego programisty.
+icon: i-lucide-user-check
+group: development
+order: 40
+priceFrom: 50
+priceUnit: hour
+timeline: Termin rozpoczęcia i liczbę godzin ustalamy osobno
+updated: 2026-11-11
+deliverables:
+  - Funkcje obejmujące backend i interfejs, z testami oraz pull requestem w Twoim repozytorium
+  - Testy i przeglądy kodu w uzgodnionym zakresie
+  - Ewidencja czasu i informacje o postępach lub blokadach
+process:
+  - title: Poznanie zespołu
+    description: Omawiamy technologie, najbliższe zadania, grafik i komunikację.
+  - title: Pierwsze zadanie
+    description: Ustalamy zakres zadania, kryteria odbioru i szacowany czas.
+  - title: Dalsza współpraca
+    description: Pracuję z backlogiem, uczestniczę w uzgodnionych rozmowach i przekazuję kod do przeglądu.
+technologies:
+  - laravel
+  - symfony
+  - php
+  - vue
+  - postgresql
+  - docker
+projects:
+  - vetspace
+  - digipulse
+faq:
+  - label: Czy można zacząć od krótkiego zadania?
+    content: Tak. Pierwsze płatne zadanie pozwala sprawdzić współpracę i poznać projekt. Zakres oraz warunki ustalamy wcześniej.
+  - label: W jakiej strefie czasowej pracujesz?
+    content: Pracuję z Poznania. Godziny pracy i czas wspólny z zespołem uzgadniamy osobno. Komunikuję się po ukraińsku i angielsku.
+content: |-
+  ## Doświadczenie w rozwoju i utrzymaniu produktów
+
+  Pracuję nad sklepami biletowymi opartymi na Symfony, MySQL, Redis i Vue.js, z płatnościami Stripe i Dalenys. We własnym VetSpace rozwijam CRM weterynaryjny z oddzielnymi danymi klinik i subskrypcjami Stripe. W DigiPulse pracuję z Laravelem, Go i monitoringiem, a w NetPostPanel z kolejkami i integracjami AI.
+
+  Mogę przejąć funkcję lub część backlogu: przeanalizować powiązany kod, zaproponować implementację, napisać testy i przygotować pull request. Prowadzę też przeglądy zmian innych programistów. Pytania i zależności wpływające na realizację zgłaszam w trakcie pracy.
+
+  Prześlij technologie i dwa lub trzy zadania z backlogu, które chcesz przekazać. Pomoże to określić moją rolę i potrzebny czas. Stawka godzinowa zaczyna się od $50; liczbę godzin i termin rozpoczęcia ustalamy według dostępności.

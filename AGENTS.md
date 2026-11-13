@@ -26,7 +26,7 @@
 - For non-trivial changes prefer an OpenSpec change over ad-hoc edits; small fixes/typos can go without one.
 - `openspec/config.yaml` `context:` carries the tech stack/conventions — keep it current when the stack changes.
 
-## Custom agents
+## Custom agents & skills
 
 Project-scoped agent definitions live in `.cline/agents/` (Cline Agents tab) and `.claude/agents/` (Claude Code), kept in sync:
 
@@ -34,3 +34,10 @@ Project-scoped agent definitions live in `.cline/agents/` (Cline Agents tab) and
 - `content-translator` — syncs content uk → en/pl keeping `content.schemas.ts` parity.
 - `code-reviewer` — read-only review of diffs against repo conventions.
 - `test-runner` — runs lint/typecheck/unit/e2e in the right order under the dev-server constraints.
+
+Content authoring skills and prompts (ported from DigiSpace, adapted for Yurii's personal developer portfolio in first-person singular):
+
+- `.agents/skills/technical-author` — evidence-based technical writing in a practical voice (distinguish facts, interpretations, recommendations, and limitations).
+- `.agents/skills/technical-artist` — visual architecture & diagram guidelines.
+- `.agents/skills/copywriting`, `.agents/skills/seo-audit`, `.agents/skills/ai-seo`, `.agents/skills/schema` — conversion copy, AI writing detection rules, structured data, and search extractability.
+- `docs/content-authoring-prompts.md` — reusable prompts and editorial rules for service descriptions, technical articles, and diagrams.

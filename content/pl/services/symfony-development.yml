@@ -1,0 +1,43 @@
+indexable: false
+title: Programowanie w Symfony
+description: Moduły, integracje i procesy w tle w Symfony. Pomagam rozwijać istniejące aplikacje.
+summary: Tworzę w Symfony obsługę zamówień, integracje płatności, API i zadania w tle, m.in. dla sklepów biletowych z dużym ruchem. Mogę dodać moduł do aplikacji, zmienić reguły biznesowe lub znaleźć przyczynę błędów wymiany danych.
+icon: i-simple-icons-symfony
+group: development
+order: 11
+priceFrom: 3200
+timeline: Termin zależy od modułu i zewnętrznych zależności
+updated: 2026-11-11
+deliverables:
+  - Działający moduł zamówień, integracja z dostawcą lub zadanie w tle w Symfony
+  - Testy reguł biznesowych i obsługi błędów
+  - Dokumentacja konfiguracji, kolejek i wdrożenia
+process:
+  - title: Analiza modułu
+    description: Przeglądam serwisy, encje Doctrine, komunikaty i wywołania zewnętrzne związane z zadaniem.
+  - title: Realizacja
+    description: Wprowadzam zmiany z uwzględnieniem istniejących kontraktów i zależności.
+  - title: Weryfikacja
+    description: Sprawdzam poprawne scenariusze i awarie oraz przygotowuję zmiany do wydania.
+technologies:
+  - symfony
+  - php
+  - postgresql
+  - mysql
+  - redis
+  - vue
+  - docker
+projects: []
+faq:
+  - label: Czy pracujesz z istniejącymi projektami Symfony?
+    content: Tak. Potrzebuję opisu zadania, wersji zależności i dostępu do przeglądu kodu.
+  - label: Czy Messenger jest zawsze potrzebny?
+    content: Nie. Kolejka służy procesom wymagającym działania asynchronicznego. Ustalamy to podczas analizy zadania.
+content: |-
+  ## Praca z aplikacjami Symfony
+
+  Usługa obejmuje zamówienia, integracje, API i operacje w tle. Pracuję nad multi-tenantowymi sklepami biletowymi, w których sprzedawane są bilety na mecze piłki nożnej i koszykówki, wyścigi motocyklowe i samochodowe, a także do muzeów, na wystawy i festiwale. Działają na Symfony z Doctrine, MySQL, Redis i kolejkach, z interfejsem Vue.js oraz płatnościami Stripe i Dalenys.
+
+  Przy integracji ustalam zachowanie aplikacji przy opóźnionej odpowiedzi, ponowionym komunikacie lub niedostępności dostawcy. Uwzględniamy te sytuacje w zakresie testów.
+
+  Opisz proces do dodania lub zmiany i podaj wersje Symfony oraz PHP. Cena od $3 200 jest orientacyjnym budżetem na moduł z testami; zależności i integracje wpływają na wycenę.

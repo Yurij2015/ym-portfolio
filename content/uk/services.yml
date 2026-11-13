@@ -1,0 +1,29 @@
+# Each `indexable` controls one page in this locale only:
+# the /services overview and the two direction pages.
+indexable: false
+title: Розробка й підтримка PHP-проєктів на Laravel і Symfony
+description: "Розробка на Laravel і Symfony та підтримка наявних PHP-проєктів: оновлення, аудит, стабілізація. Для кожної послуги описано обсяг робіт, процес і ціну."
+intro: "Працюю у двох напрямах. У розробці це нові застосунки, SaaS, API, адмін-панелі та інтеграції на Laravel, Symfony чи PHP. У підтримці це робота з наявним кодом: оновлення версій, аудит, стабілізація, швидкодія та регулярний супровід. На сторінці кожної послуги написано, що я роблю, що ви отримуєте і від якої суми починається оцінка."
+directions:
+  development:
+    indexable: false
+    label: Розробка
+    title: Розробка на PHP, Laravel і Symfony
+    description: "Розробка застосунків на Laravel, Symfony та PHP: SaaS, API, адмін-панелі, платежі, AI-функції, фронтенд на Vue і Nuxt. Обсяг робіт, процес і ціни."
+    intro: "Тут зібрані послуги, де я пишу нову функціональність: окремий модуль, інтеграцію або SaaS із підписками. Можу взяти проєкт цілком або працювати у вашій команді як розробник. Якщо застосунок уже є і його треба оновити чи стабілізувати, дивіться розділ підтримки."
+    featured:
+      - laravel-development
+      - symfony-development
+      - laravel-saas-development
+      - api-development
+  support:
+    indexable: false
+    label: Підтримка
+    title: Підтримка й оновлення PHP-проєктів на Laravel і Symfony
+    description: "Підтримка наявних PHP-проєктів: оновлення Laravel і Symfony, аудит коду, стабілізація legacy, швидкодія та регулярний супровід. Обсяг робіт, процес і ціни."
+    intro: "Тут зібрані послуги для застосунків, які вже працюють. Оновлюю версії Laravel і Symfony, перевіряю код перед змінами чи передачею іншій команді, розбираюся з нестабільним legacy та повільними сторінками. Якщо потрібна постійна допомога, беру застосунок на супровід із погодинною оплатою."
+    featured:
+      - laravel-upgrade
+      - legacy-php-rescue
+      - php-code-audit
+      - support-maintenance

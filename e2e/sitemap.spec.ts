@@ -12,9 +12,14 @@ const techDir = join(dirname(fileURLToPath(import.meta.url)), '../content/en/tec
 const techFiles = readdirSync(techDir).filter(f => f.endsWith('.yml'))
 const techSlugs = techFiles.map(f => f.replace(/\.yml$/, ''))
 
+const servicesDir = join(dirname(fileURLToPath(import.meta.url)), '../content/en/services')
+const serviceFiles = readdirSync(servicesDir).filter(f => f.endsWith('.yml'))
+const serviceSlugs = serviceFiles.map(f => f.replace(/\.yml$/, ''))
+
 const latestContentDate = [
   ...projectFiles.map(f => parse(readFileSync(join(projectsDir, f), 'utf8')).date),
-  ...techFiles.map(f => parse(readFileSync(join(techDir, f), 'utf8')).updated)
+  ...techFiles.map(f => parse(readFileSync(join(techDir, f), 'utf8')).updated),
+  ...serviceFiles.map(f => parse(readFileSync(join(servicesDir, f), 'utf8')).updated)
 ]
   .filter(Boolean)
   .map(d => new Date(d))
@@ -31,13 +36,16 @@ test('sitemap.xml serves XML with all localized routes and hreflang alternates',
   const xml = await response.text()
 
   const urlCount = (xml.match(/<url>/g) ?? []).length
-  expect(urlCount).toBe(3 * (4 + projectSlugs.length + techSlugs.length))
+  expect(urlCount).toBe(3 * (7 + projectSlugs.length + techSlugs.length + serviceSlugs.length))
 
   for (const slug of projectSlugs) {
     expect(xml).toContain(`/projects/${slug}</loc>`)
   }
   for (const slug of techSlugs) {
     expect(xml).toContain(`/technologies/${slug}</loc>`)
+  }
+  for (const slug of [...serviceSlugs, 'development', 'support']) {
+    expect(xml).toContain(`/services/${slug}</loc>`)
   }
 
   for (const iso of [...LOCALES, 'x-default']) {

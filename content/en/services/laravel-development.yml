@@ -1,0 +1,49 @@
+title: Laravel development
+content: |-
+  ## Examples from projects
+
+  In VetSpace, I work with veterinary CRM workflows, clinic data and Stripe subscriptions. In DigiPulse, Laravel manages monitors and notifications while a separate Go service runs network checks. Different workflows need different implementation choices.
+
+  For a client I built a Laravel marketplace with listings and paid packages. It includes chat, video calls through LiveKit, Meilisearch search and support tickets that are also created from incoming email.
+
+  For an existing application I first review dependencies, data structures and deployment. A new feature needs to fit that system and be checked alongside related behavior.
+
+  Describe what the user needs to do and share the current application or designs. I will work through the technical requirements and propose an implementation with time and cost estimates.
+deliverables:
+  - A working module, such as role-based user accounts, order processing or an external service integration
+  - Access checks and tests for the main scenarios
+  - Repository changes and documentation for setup and maintenance
+description: New modules, user accounts and integrations in Laravel. I work on new products and existing applications.
+faq:
+  - label: What does “from $2,400” mean?
+    content: It is a starting budget for a module or integration, including tests and release preparation. Examples include role-based user accounts or order processing; these are not fixed packages at the same price. A small fix and a new product need different estimates.
+  - label: Do we need a separate frontend?
+    content: I use Filament for internal panels and options such as Inertia and Vue for user accounts. Nuxt can serve public pages, as in VetCard. The interface and future maintenance determine the choice.
+group: development
+icon: i-simple-icons-laravel
+indexable: false
+order: 10
+priceFrom: 2400
+process:
+  - title: Understand the task
+    description: I review the application and identify the actions and data users need.
+  - title: Build the module
+    description: I implement data structures, logic and screens and share working changes for review.
+  - title: Verify and release
+    description: I test permissions and related operations and prepare deployment and documentation.
+projects:
+  - vetspace
+  - digipulse
+  - netpostpanel
+  - digispace
+summary: I build Laravel user accounts, order workflows, reports and integrations. I can deliver a feature across data structures, backend logic, permissions and interface. I work on new products and existing applications where a change needs to fit the system and preserve the behavior people already rely on.
+technologies:
+  - laravel
+  - php
+  - filament
+  - postgresql
+  - redis
+  - docker
+  - vue
+timeline: Timing depends on the module’s features and the application’s condition
+updated: 2026-11-13

@@ -1,0 +1,46 @@
+indexable: false
+title: Laravel SaaS development
+description: Laravel SaaS products with company accounts, permissions, subscriptions and your product’s workflows. Development in agreed stages.
+summary: I build Laravel SaaS products with company registration, staff invitations, roles, subscriptions and core product features. In my own VetSpace product I work with clinic CRM workflows and Stripe billing. I help separate what is needed for launch from features that can be added later.
+icon: i-lucide-layers
+group: development
+order: 30
+priceFrom: 4800
+timeline: First-release timeline depends on the agreed features
+updated: 2026-11-13
+deliverables:
+  - Company accounts with users, roles and access restricted to their own data
+  - Agreed product features, user interface and subscription management
+  - Access tests, deployment setup and documentation
+process:
+  - title: Define the first release
+    description: We clarify users, the main workflow, access rules and payment model.
+  - title: Develop in stages
+    description: I build the foundation and features and share a working version for review.
+  - title: Launch
+    description: I check data isolation and subscriptions; we agree deployment and follow-up work.
+technologies:
+  - laravel
+  - filament
+  - stripe
+  - postgresql
+  - redis
+  - docker
+projects:
+  - vetspace
+  - digipulse
+faq:
+  - label: Does every customer need a separate database?
+    content: It depends on data, backup and infrastructure requirements. We compare separate databases with a shared database and scoped access.
+  - label: What does the starting price cover?
+    content: An agreed development stage. Roles, integrations and features are defined before estimating; the price does not cover an unlimited MVP scope.
+content: |-
+  ## Experience from VetSpace
+
+  In my own product VetSpace, I work with clinic accounts, veterinary CRM workflows and Stripe subscriptions. Clinic data is separated into individual databases. For a new product I choose isolation after reviewing requirements; this architecture is not necessary for every SaaS.
+
+  Subscriptions need explicit rules too: when access starts, what happens after a failed payment and how plan changes work. We discuss these alongside first-release features.
+
+  In a client marketplace, the purchased package set how many active listings and drafts a user could have.
+
+  Describe your users, their main task and payment model. The starting price of $4,800 is a guide for a first release with a limited feature set. Billing, data imports and external integrations affect the estimate.

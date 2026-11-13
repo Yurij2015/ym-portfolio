@@ -1,0 +1,29 @@
+# Each `indexable` controls one page in this locale only:
+# the /services overview and the two direction pages.
+indexable: false
+title: PHP development and support for Laravel and Symfony projects
+description: "Laravel and Symfony development and support for existing PHP projects: upgrades, audits and stabilization. Each service lists its scope, process and price."
+intro: "I work in two directions. Development covers new applications, SaaS, APIs, admin panels and integrations in Laravel, Symfony or PHP. Support covers work on existing code: version upgrades, audits, stabilization, performance and ongoing maintenance. Each service page says what I do, what you get and where the estimate starts."
+directions:
+  development:
+    indexable: false
+    label: Development
+    title: PHP, Laravel and Symfony development
+    description: "Application development in Laravel, Symfony and PHP: SaaS, APIs, admin panels, payments, AI features and Vue or Nuxt frontends. Scope, process and prices."
+    intro: "These are the services where I write new functionality: a single module, an integration or a SaaS with subscriptions. I can take on the whole project or work in your team as a developer. If the application already exists and needs an upgrade or stabilization, see the support section."
+    featured:
+      - laravel-development
+      - symfony-development
+      - laravel-saas-development
+      - api-development
+  support:
+    indexable: false
+    label: Support
+    title: Support and upgrades for Laravel and Symfony PHP projects
+    description: "Support for existing PHP projects: Laravel and Symfony upgrades, code audits, legacy stabilization, performance and maintenance. Scope, process and prices."
+    intro: "These are the services for applications that are already running. I upgrade Laravel and Symfony versions, review code before changes or a handover to another team, and deal with unstable legacy code and slow pages. If you need continuing help, I maintain the application at an hourly rate."
+    featured:
+      - laravel-upgrade
+      - legacy-php-rescue
+      - php-code-audit
+      - support-maintenance

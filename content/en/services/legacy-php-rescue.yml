@@ -1,0 +1,42 @@
+indexable: false
+title: Stabilizing an existing PHP project
+description: "PHP project troubleshooting: setup, backups, errors and deployment. Start with diagnosis and an agreed work plan."
+summary: "I help bring PHP projects back to a state where they can be run and changed. I document code and infrastructure, check backups, reproduce errors and repair deployment. I start with what is blocking work now: a broken feature, failed release or missing test environment."
+icon: i-lucide-life-buoy
+group: support
+order: 23
+priceFrom: 1800
+timeline: Diagnosis and fixes estimated as separate stages
+updated: 2026-11-11
+deliverables:
+  - A project map showing code and data locations, available access and blockers to setup or recovery
+  - Agreed fixes and environment changes
+  - Setup instructions and a list of follow-up work
+process:
+  - title: Take inventory
+    description: I establish which code, credentials, data and backups are available.
+  - title: Reproduce the setup
+    description: I check running a copy and restoring data in an available test environment.
+  - title: Make initial fixes
+    description: I address agreed issues and document the changes.
+technologies:
+  - php
+  - laravel
+  - docker
+  - github-actions
+  - mysql
+  - postgresql
+projects: []
+faq:
+  - label: What if server access is missing?
+    content: We need to identify the account owner and provider recovery process. I can assist technically, but recovery depends on ownership rights and available materials.
+  - label: Does the project need a rewrite?
+    content: We assess this after diagnosis, starting with what can be maintained and what changes are needed to keep it working.
+content: |-
+  ## Establishing what is available
+
+  Missing setup instructions, unknown dependencies and untested backups make even small changes difficult. The first stage gathers that information and establishes a work order. It may uncover further constraints.
+
+  Docker, deployment automation or a PHP upgrade can be part of the solution, but the scope depends on the project. A full recovery timeline cannot be established from an error description alone.
+
+  Describe what stopped working and which code, credentials and backups remain available. The starting price of $1,800 is a guide for an initial investigation and defined stabilization work.

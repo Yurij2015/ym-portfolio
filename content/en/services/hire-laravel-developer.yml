@@ -1,0 +1,45 @@
+indexable: false
+title: A Senior PHP and Laravel developer for your team
+description: "PHP, Laravel and Symfony project support: feature development, integrations, code reviews and backlog delivery."
+summary: I join teams as a Senior Full-Stack PHP Developer with over eight years of commercial experience across Laravel, Symfony, payment integrations and Vue interfaces. I can take a feature from requirements through implementation and tests, investigate an issue in an existing system or review another developer’s approach.
+icon: i-lucide-user-check
+group: development
+order: 40
+priceFrom: 50
+priceUnit: hour
+timeline: Start date and hours agreed separately
+updated: 2026-11-11
+deliverables:
+  - Features covering backend logic and interface, with tests and pull requests in your repository
+  - Tests and code reviews within the agreed scope
+  - Time records and progress or blocker updates
+process:
+  - title: Meet the team
+    description: We discuss the stack, immediate tasks, schedule and communication.
+  - title: A first task
+    description: We agree a bounded task, acceptance criteria and time estimate.
+  - title: Ongoing work
+    description: I work through the backlog, join agreed discussions and submit changes for review.
+technologies:
+  - laravel
+  - symfony
+  - php
+  - vue
+  - postgresql
+  - docker
+projects:
+  - vetspace
+  - digipulse
+faq:
+  - label: Can we start with a short task?
+    content: Yes. A first paid task helps assess collaboration and establish project context. We agree scope and terms beforehand.
+  - label: What is your time zone?
+    content: I work from Poznań, Poland. We agree working hours and overlap with your team separately. I communicate in Ukrainian and English.
+content: |-
+  ## Experience building and maintaining products
+
+  I work on ticket shops built with Symfony, MySQL, Redis and Vue.js, with Stripe and Dalenys payments. In my own VetSpace product, I develop a veterinary CRM with separate clinic data and Stripe subscriptions. DigiPulse involves Laravel, Go and monitoring; NetPostPanel involves queues and AI integrations.
+
+  I can take a feature or part of your backlog: review the relevant code, propose an implementation, write tests and prepare a pull request. I also review changes from other developers. I raise questions and dependencies that affect the implementation as they arise.
+
+  Share your stack and two or three backlog tasks you would like me to take on. This helps define my role and the time needed. My hourly rate starts at $50; hours and start date depend on availability.

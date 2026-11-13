@@ -1,0 +1,44 @@
+indexable: false
+title: Rozwój i modyfikacje aplikacji PHP
+description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP na Laravel, Symfony lub z autorskim kodem.
+summary: "Dodaję funkcje i usuwam problemy w aplikacjach PHP: obliczeniach, wymianie danych, raportach oraz integracjach. Pracuję z Laravelem, Symfony i systemami autorskimi. Analizuję powiązaną logikę, wprowadzam zmianę i sprawdzam jej wpływ na pozostałą część aplikacji."
+icon: i-simple-icons-php
+group: development
+order: 12
+priceFrom: 1800
+timeline: Termin pierwszego etapu ustalam po przeglądzie kodu
+updated: 2026-11-11
+deliverables:
+  - Funkcja lub poprawka w aplikacji, na przykład obliczenia, raport albo wymiana danych z inną usługą
+  - Testy uzgodnionych scenariuszy i sprawdzenie zgodności
+  - Instrukcja konfiguracji i wdrożenia zmienionych elementów
+process:
+  - title: Przegląd aplikacji
+    description: Sprawdzam uruchamianie projektu, miejsce implementacji danej logiki i zależności od innych usług.
+  - title: Uzgodnienie zakresu
+    description: Opisuję pierwszy etap, jego cenę i sposób sprawdzenia wyniku.
+  - title: Realizacja i przekazanie
+    description: Wprowadzam zmiany, sprawdzam scenariusze i przekazuję kod oraz instrukcje.
+technologies:
+  - php
+  - postgresql
+  - mysql
+  - docker
+  - redis
+  - github-actions
+projects:
+  - digispace
+  - vetspace
+faq:
+  - label: Czy pracujesz z autorskim kodem PHP?
+    content: Tak. Przed wyceną potrzebuję poznać strukturę kodu, zależności i sposób uruchomienia.
+  - label: Czy trzeba przejść na framework?
+    content: Nie przy każdym zadaniu. Rozważamy migrację, jeśli ułatwi dalszą pracę i uzasadni poniesione koszty.
+content: |-
+  ## Zmiany w działającym systemie
+
+  Integracja, zmiana obliczeń lub poprawka błędu może dotyczyć kilku części aplikacji. Przed wdrożeniem analizuję powiązane procesy i sposób sprawdzenia wyniku. Przepisanie aplikacji nie jest obowiązkową częścią tej usługi.
+
+  W DigiSpace rozwijam aplikację Laravel łączącą publiczną stronę, treści i panele administracyjne. To doświadczenie przydaje się przy zmianach, które muszą współpracować z istniejącą logiką.
+
+  Prześlij zadanie i wersję PHP. Przy błędzie pomogą kroki odtworzenia i logi; przy nowej funkcji — przykład wyniku. Cena od $1 800 jest orientacyjnym budżetem na samodzielny zakres prac programistycznych.

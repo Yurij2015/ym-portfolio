@@ -3,7 +3,7 @@ import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { parse } from 'yaml'
 import { describe, expect, it } from 'vitest'
-import { aboutSchema, indexSchema, pagesSchema, projectSchema } from './content.schemas'
+import { aboutSchema, indexSchema, pagesSchema, projectSchema, serviceDirections, serviceSchema, serviceSettingsSchema } from './content.schemas'
 
 const locales = ['uk', 'en', 'pl'] as const
 
@@ -74,5 +74,90 @@ describe('localized page content', () => {
         expect(image.src.startsWith('/')).toBe(true)
       }
     })
+  }
+})
+
+describe('service content files', () => {
+  it('requires an explicit boolean opt-in for indexing', () => {
+    const { indexable: _listIndexable, ...settings } = readYml('uk', 'services.yml') as Record<string, unknown>
+    expect(serviceSettingsSchema.parse(settings).indexable).toBe(false)
+    expect(serviceSettingsSchema.parse({ ...settings, indexable: false }).indexable).toBe(false)
+    expect(serviceSettingsSchema.parse({ ...settings, indexable: true }).indexable).toBe(true)
+    expect(serviceSettingsSchema.safeParse({ ...settings, indexable: 'true' }).success).toBe(false)
+
+    const directions = settings.directions as Record<string, Record<string, unknown>>
+    const { indexable: _directionIndexable, ...development } = directions.development!
+    const parsed = serviceSettingsSchema.parse({ ...settings, directions: { ...directions, development } })
+    expect(parsed.directions.development.indexable).toBe(false)
+
+    const service = readYml('uk', 'services/laravel-development.yml') as Record<string, unknown>
+    const { indexable: _indexable, ...legacyService } = service
+    expect(serviceSchema.parse(legacyService).indexable).toBe(false)
+    expect(serviceSchema.parse({ ...legacyService, indexable: true }).indexable).toBe(true)
+  })
+
+  for (const locale of locales) {
+    it(`${locale}/services.yml matches the service list settings schema`, () => {
+      expect(serviceSettingsSchema.safeParse(readYml(locale, 'services.yml')).success).toBe(true)
+    })
+  }
+
+  const serviceFiles = (locale: string) =>
+    readdirSync(contentDir(locale, 'services')).filter(f => f.endsWith('.yml')).sort()
+
+  it('has the same service slugs in every locale', () => {
+    const [uk, ...others] = locales.map(serviceFiles)
+    expect(uk!.length).toBeGreaterThan(0)
+    for (const files of others) {
+      expect(files).toEqual(uk)
+    }
+  })
+
+  // /services/development and /services/support are static pages that
+  // would shadow a service with the same slug.
+  it('has no service slug equal to a direction slug', () => {
+    const slugs = serviceFiles('uk').map(f => f.replace(/\.yml$/, ''))
+    for (const direction of serviceDirections) {
+      expect(slugs).not.toContain(direction)
+    }
+  })
+
+  const groupOf = (locale: string, slug: string) =>
+    (readYml(locale, `services/${slug}.yml`) as { group: string }).group
+
+  it('assigns every service to the same direction in every locale', () => {
+    for (const file of serviceFiles('uk')) {
+      const slug = file.replace(/\.yml$/, '')
+      expect(serviceDirections).toContain(groupOf('uk', slug))
+      for (const locale of locales) {
+        expect(groupOf(locale, slug), `${locale}/${slug}`).toBe(groupOf('uk', slug))
+      }
+    }
+  })
+
+  it('features only existing services of the matching direction, identically in every locale', () => {
+    const featuredOf = (locale: string) => {
+      const settings = serviceSettingsSchema.parse(readYml(locale, 'services.yml'))
+      return Object.fromEntries(serviceDirections.map(d => [d, settings.directions[d].featured]))
+    }
+    const uk = featuredOf('uk')
+    for (const direction of serviceDirections) {
+      for (const slug of uk[direction]!) {
+        expect(serviceFiles('uk'), slug).toContain(`${slug}.yml`)
+        expect(groupOf('uk', slug), slug).toBe(direction)
+      }
+    }
+    for (const locale of locales) {
+      expect(featuredOf(locale), locale).toEqual(uk)
+    }
+  })
+
+  for (const locale of locales) {
+    for (const file of serviceFiles(locale)) {
+      it(`${locale}/${file} matches the service schema`, () => {
+        const result = serviceSchema.safeParse(readYml(locale, `services/${file}`))
+        expect(result.success, JSON.stringify(result.error?.issues)).toBe(true)
+      })
+    }
   }
 })

@@ -1,0 +1,29 @@
+# Each `indexable` controls one page in this locale only:
+# the /services overview and the two direction pages.
+indexable: false
+title: Tworzenie i utrzymanie projektów PHP w Laravelu i Symfony
+description: "Programowanie w Laravelu i Symfony oraz utrzymanie istniejących projektów PHP: aktualizacje, audyt, stabilizacja. Każda usługa ma opisany zakres, proces i cenę."
+intro: "Pracuję w dwóch obszarach. Rozwój to nowe aplikacje, SaaS, API, panele administracyjne i integracje w Laravelu, Symfony lub PHP. Utrzymanie to praca z istniejącym kodem: aktualizacje wersji, audyt, stabilizacja, wydajność i stała opieka. Na stronie każdej usługi opisuję, co robię, co otrzymujesz i od jakiej kwoty zaczyna się wycena."
+directions:
+  development:
+    indexable: false
+    label: Rozwój
+    title: Programowanie w PHP, Laravelu i Symfony
+    description: "Tworzenie aplikacji w Laravelu, Symfony i PHP: SaaS, API, panele administracyjne, płatności, funkcje AI oraz frontend w Vue i Nuxt. Zakres, proces i ceny."
+    intro: "Tu znajdziesz usługi, w których piszę nową funkcjonalność: pojedynczy moduł, integrację albo SaaS z subskrypcjami. Mogę przejąć cały projekt lub pracować w Twoim zespole jako programista. Jeśli aplikacja już istnieje i wymaga aktualizacji lub stabilizacji, zajrzyj do działu utrzymania."
+    featured:
+      - laravel-development
+      - symfony-development
+      - laravel-saas-development
+      - api-development
+  support:
+    indexable: false
+    label: Utrzymanie
+    title: Utrzymanie i aktualizacje projektów PHP w Laravelu i Symfony
+    description: "Utrzymanie istniejących projektów PHP: aktualizacje Laravela i Symfony, audyt kodu, stabilizacja legacy, wydajność i stała opieka. Zakres, proces i ceny."
+    intro: "Tu znajdziesz usługi dla aplikacji, które już działają. Aktualizuję wersje Laravela i Symfony, sprawdzam kod przed zmianami lub przekazaniem innemu zespołowi, zajmuję się niestabilnym legacy i wolnymi stronami. Jeśli potrzebujesz stałej pomocy, opiekuję się aplikacją w rozliczeniu godzinowym."
+    featured:
+      - laravel-upgrade
+      - legacy-php-rescue
+      - php-code-audit
+      - support-maintenance

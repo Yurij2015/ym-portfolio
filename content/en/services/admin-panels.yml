@@ -1,0 +1,52 @@
+indexable: false
+title: Admin panels for PHP and Laravel applications
+description: "Admin panels for Laravel and PHP built with Filament, Flowbite or AdminLTE: forms, tables, permissions, reports and the actions your team uses daily."
+summary: "I build admin panels for Laravel and PHP applications: customer and order editing, content management, search, filters and reports. I pick the tool to fit the project: Filament, Flowbite on Tailwind or AdminLTE on Bootstrap. I can create a new panel or gradually replace screens in an existing admin interface."
+icon: i-lucide-layout-dashboard
+group: development
+order: 32
+priceFrom: 1600
+timeline: Estimated after defining screens, roles and custom actions
+updated: 2026-11-13
+deliverables:
+  - "Data management screens: customer or order forms, searchable tables, filters and the actions staff need"
+  - Access rules and checks for data operations
+  - Tests for important actions and panel usage instructions
+process:
+  - title: Review the workflow
+    description: We look at current operations and the data needed on each screen.
+  - title: Choose the tool and build
+    description: I choose Filament, Flowbite or AdminLTE to fit the existing code, then create forms, filters and business actions.
+  - title: Review with users
+    description: Staff try the panel and I fix usability and permission issues.
+technologies:
+  - filament
+  - laravel
+  - php
+  - tailwindcss
+  - vue
+  - nuxt
+projects:
+  - digispace
+  - digipulse
+  - netpostpanel
+  - vetspace
+faq:
+  - label: Filament, Flowbite or AdminLTE?
+    content: Filament fits a Laravel application whose panel is made of standard screens with lists, forms, filters and roles. I use Flowbite when the panel needs its own look or unusual screens, or when the frontend is a separate Vue or Nuxt application. AdminLTE makes sense when the project already uses Bootstrap or has an AdminLTE admin that needs more work.
+  - label: Can Filament be added to an existing Laravel app?
+    content: Yes, after checking version, model and authentication compatibility. Resources can be introduced one at a time without touching the rest of the application.
+  - label: What if the backend is not Laravel?
+    content: Then Filament is not an option. A Flowbite or AdminLTE panel can be built into the existing PHP application or run separately and read data through an API. The second route adds integration work.
+content: |-
+  ## Examples from projects
+
+  DigiSpace runs a Filament panel alongside its earlier Inertia and Vue admin interface. The panel manages content, translations and SEO metadata, and screens move over from the old admin gradually. In DigiPulse, Filament handles monitors, contacts and notification rules.
+
+  I use Flowbite in NetPostPanel, where the frontend is Inertia and Vue, and in the VetSpace clinic panel built with Nuxt. The admin of a client marketplace, with users, roles, listings and orders, is built on it too, as is a service for photographers with galleries and service packages.
+
+  With AdminLTE I built two Laravel panels. The first collects data on a schedule through an external service's API and shows an agency its statistics, costs and exports. The second manages collecting and filtering social network data through job queues.
+
+  The scope of a panel depends on operations rather than the number of database tables: which records people create and edit, what they filter by and which actions need confirmation.
+
+  Show me current screens or spreadsheets and explain the manual work involved. The starting price of $1,600 is a guide for a related set of screens; imports, reports and custom operations are estimated by complexity.

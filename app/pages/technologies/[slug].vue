@@ -37,6 +37,17 @@ const { data: techProjects } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
+// Services that list this technology — tech pages are the main entry
+// from search for "<tech> developer", so they should lead to the offers.
+const { data: techServices } = await useAsyncData(
+  () => `technology-services-${locale.value}-${slug.value}`,
+  async () => {
+    const all = await queryCollection(`services_${locale.value}` as 'services_uk').order('order', 'ASC').all()
+    return all.filter(service => service.technologies.includes(slug.value))
+  },
+  { watch: [locale, slug] }
+)
+
 const title = tech.value.title
 const description = tech.value.description
 
@@ -216,6 +227,32 @@ useHead({
                 {{ project.description }}
               </p>
             </div>
+          </NuxtLink>
+        </div>
+      </div>
+
+      <div
+        v-if="techServices?.length"
+        class="mt-12"
+      >
+        <h2 class="text-2xl font-semibold text-highlighted mb-4">
+          {{ t('technologies.services', { tech: title }) }}
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <NuxtLink
+            v-for="service in techServices"
+            :key="service.stem"
+            :to="localePath(`/services/${techSlug(service)}`)"
+            class="group flex gap-3 rounded-xl border border-default bg-elevated/30 p-4 transition-colors hover:border-primary/50"
+          >
+            <UIcon
+              :name="service.icon"
+              class="size-5 shrink-0 text-primary mt-0.5"
+            />
+            <span>
+              <span class="block font-semibold text-highlighted group-hover:text-primary transition-colors">{{ service.title }}</span>
+              <span class="mt-1 block text-sm text-muted line-clamp-2">{{ service.description }}</span>
+            </span>
           </NuxtLink>
         </div>
       </div>

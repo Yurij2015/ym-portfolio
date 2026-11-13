@@ -1,0 +1,43 @@
+indexable: false
+title: Symfony development
+description: Modules, integrations and background workflows in Symfony. I help extend existing applications.
+summary: I develop order processing, payment integrations, APIs and background jobs in Symfony, including for ticket shops with heavy traffic. I can add a module to an existing application, change business rules or investigate failures in data exchange.
+icon: i-simple-icons-symfony
+group: development
+order: 11
+priceFrom: 3200
+timeline: Timeline depends on the module and external dependencies
+updated: 2026-11-11
+deliverables:
+  - A working order module, supplier integration or background job in Symfony
+  - Tests for business rules and failure handling
+  - Configuration, queue and deployment documentation
+process:
+  - title: Review the module
+    description: I inspect the services, Doctrine entities, messages and external calls involved.
+  - title: Implement changes
+    description: I work within the existing contracts and dependencies.
+  - title: Verify behavior
+    description: I check successful and failure scenarios and prepare the change for release.
+technologies:
+  - symfony
+  - php
+  - postgresql
+  - mysql
+  - redis
+  - vue
+  - docker
+projects: []
+faq:
+  - label: Do you work on existing Symfony projects?
+    content: Yes. I need the task, dependency versions and access to review the code.
+  - label: Is Messenger always required?
+    content: No. Queues are useful for workflows that need asynchronous execution; we decide this when reviewing the task.
+content: |-
+  ## Working on Symfony applications
+
+  This service covers orders, integrations, APIs and background workflows. I work on multi-tenant ticket shops selling tickets for football, basketball, motorcycle and car racing, as well as museums, exhibitions and festivals. They run on Symfony with Doctrine, MySQL, Redis and queues, with a Vue.js interface and Stripe and Dalenys payments.
+
+  For each integration I clarify what should happen when a response is delayed, a message is repeated or a supplier is unavailable. We include these conditions in the agreed testing scope.
+
+  Describe the workflow to add or change and share the Symfony and PHP versions. The starting price of $3,200 is a guide for a module with tests; dependencies and external integrations affect the estimate.

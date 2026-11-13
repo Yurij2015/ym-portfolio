@@ -1,0 +1,45 @@
+indexable: false
+title: Laravel, Vue and Nuxt development
+description: "Laravel backends with Vue or Nuxt interfaces: user accounts, public pages, APIs and their integration."
+summary: "I build web applications with Laravel backends and Vue or Nuxt interfaces: user accounts, directories, forms and booking. I work across API requests, data storage and what users see in the browser. For public pages I add server rendering and metadata when the project needs them."
+icon: i-simple-icons-nuxtdotjs
+group: development
+order: 35
+priceFrom: 2400
+timeline: Estimated after defining screens and backend features
+updated: 2026-11-11
+deliverables:
+  - Pages connected to the backend, such as data entry forms, search, user accounts or service booking
+  - Form, authentication and error-state handling
+  - Main workflow checks and setup documentation for both parts
+process:
+  - title: Application structure
+    description: We define public pages, private accounts, data and search requirements.
+  - title: Implementation
+    description: I build the interface and required APIs or server actions.
+  - title: Browser checks
+    description: I verify workflows, mobile layouts, errors and deployment.
+technologies:
+  - nuxt
+  - vue
+  - typescript
+  - tailwindcss
+  - laravel
+  - vite
+projects:
+  - vetcard
+  - vetspace
+  - digispace
+faq:
+  - label: Inertia or a separate Nuxt application?
+    content: Inertia supports Vue within Laravel. A separate Nuxt application may suit public pages needing server rendering. The requirements determine the choice.
+  - label: Do I need a finished design?
+    content: I can work from a design or an agreed component library. Creating a separate visual identity needs to be included in the scope.
+content: |-
+  ## An example from VetCard
+
+  VetCard uses Nuxt for public clinic pages and a Laravel API for data and appointment booking. Both parts must work together: users need current information, a booking form and a clear result.
+
+  For public pages I configure metadata and server rendering as required. This helps make content accessible to search engines but does not promise rankings or indexing.
+
+  Share the screens, designs if available and required actions. The starting price of $2,400 is a guide for a defined part of an application with frontend and backend work, not a product of any size.

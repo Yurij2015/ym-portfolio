@@ -1,0 +1,43 @@
+indexable: false
+title: PHP application performance optimization
+description: Investigate slow PHP, Laravel and Symfony applications. Measurements, targeted changes and before-and-after comparisons.
+summary: I investigate slow pages, APIs and background jobs in PHP applications. I check database queries, data volume, external calls and queues, address the cause and compare execution time before and after. We start with an operation that is currently slowing down customers or staff.
+icon: i-lucide-gauge
+group: support
+order: 24
+priceFrom: 1200
+timeline: Diagnosis first; fixes estimated after measurements
+updated: 2026-11-11
+deliverables:
+  - "Measurements of the slow operation: execution time, database queries and the limiting factor"
+  - Agreed changes to code, queries or configuration
+  - A results comparison and monitoring recommendations
+process:
+  - title: Reproduce the delay
+    description: I collect examples, logs and measurements and check when the issue occurs.
+  - title: Address the cause
+    description: "I work on the identified constraint: queries, data volume, external calls or queues."
+  - title: Measure again
+    description: I compare time and resource usage and check that the output remains correct.
+technologies:
+  - postgresql
+  - mysql
+  - php
+  - laravel
+  - symfony
+  - redis
+projects:
+  - digipulse
+faq:
+  - label: Do we need a larger server?
+    content: Possibly. First we need to identify the limiting resource and whether application changes can reduce the load.
+  - label: Is the database schema enough?
+    content: It helps explain structure, but performance analysis may also need query plans, statistics and representative test data.
+content: |-
+  ## Measure a specific workflow
+
+  A slow report and a slow booking action can have different causes. I start with a reproducible operation, checking response time, data volume and external dependencies. Then we can choose a change and measure its effect.
+
+  DigiPulse runs network checks in a separate Go service rather than Laravel. This is task-specific workload separation, not a general recommendation to rewrite PHP in another language.
+
+  Share the slow page or operation, conditions that trigger the delay and available logs. The starting price of $1,200 is a guide for diagnosis and work on a specific bottleneck. Measurable improvement can only be assessed after taking a baseline.

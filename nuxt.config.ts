@@ -91,6 +91,8 @@ export default defineNuxtConfig({
     '/projects/**': { isr: true },
     '/technologies': { isr: true },
     '/technologies/**': { isr: true },
+    '/services': { isr: true },
+    '/services/**': { isr: true },
     '/en': { isr: true },
     '/en/**': { isr: true },
     '/pl': { isr: true },

@@ -1,0 +1,41 @@
+indexable: false
+title: Aktualizacja Symfony
+description: "Aktualizacja Symfony i PHP: zależności, przestarzałe wywołania, testy i przygotowanie wydania."
+summary: "Aktualizuję istniejące systemy Symfony i PHP: sprawdzam bundle, usuwam przestarzałe wywołania, zmieniam konfigurację i dostosowuję własne rozszerzenia. Testuję powiązane operacje i przygotowuję wydanie. Przy migracji autorskiego PHP najpierw wydzielam części systemu, które można przenosić stopniowo."
+icon: i-lucide-refresh-cw
+group: support
+order: 21
+priceFrom: 1800
+timeline: Po przeglądzie wersji, bundli i własnych rozszerzeń
+updated: 2026-11-11
+deliverables:
+  - Plan przejścia wskazujący bundle do aktualizacji lub wymiany oraz miejsca zmian własnego kodu
+  - Kod i konfiguracja dostosowane do uzgodnionej wersji
+  - Wyniki kontroli i instrukcja wdrożenia
+process:
+  - title: Przegląd obecnego stanu
+    description: Analizuję bundle, deprecations, rozszerzenia kontenera i konfigurację.
+  - title: Stopniowe zmiany
+    description: Aktualizuję zależności i kod w krokach możliwych do sprawdzenia, dodaję uzgodnione testy.
+  - title: Przygotowanie uruchomienia
+    description: Sprawdzam pamięć podręczną, migracje i procesy w tle na środowisku testowym.
+technologies:
+  - symfony
+  - php
+  - docker
+  - github-actions
+  - redis
+projects: []
+faq:
+  - label: Którą wersję Symfony wybrać?
+    content: Porównamy okres wsparcia, wymagania PHP i zgodność pakietów. Najnowsza wersja nie zawsze będzie właściwym celem.
+  - label: Czy można przenieść autorski PHP?
+    content: Taka migracja wymaga osobnego planu tras, danych i części starego systemu pozostających w użyciu.
+content: |-
+  ## Zakres aktualizacji zależy od aplikacji
+
+  W sklepach biletowych, nad którymi pracuję, miałem do czynienia z różnymi generacjami Symfony i PHP. To doświadczenie pomaga sprawdzać konfigurację, integracje i procesy biznesowe, a nie tylko instalować nowsze pakiety.
+
+  Ostrzeżenia o przestarzałych wywołaniach dają część informacji potrzebnych do przejścia. Osobno analizuję zewnętrzne bundle, zmiany API i własny kod. Dla nieutrzymywanego pakietu proponuję zamiennik lub zmianę danej funkcji.
+
+  Prześlij wersje Symfony i PHP, pliki zależności i powód aktualizacji. Cena od $1 800 jest orientacyjnym budżetem przejścia na określoną wersję. Migracja autorskiego systemu do Symfony to osobna praca.

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "services": "Services",
     "about": "About",
     "contact": "Contact"
   },
@@ -65,6 +66,7 @@
     "since": "Since {year}",
     "usedIn": "Projects built on {tech}",
     "usedWith": "Projects using {tech}",
+    "services": "Services with {tech}",
     "faq": "Common questions",
     "ctaTitle": "Need a {tech} project?",
     "categories": {
@@ -74,6 +76,18 @@
       "infrastructure": "Infrastructure",
       "tools": "Tools"
     }
+  },
+  "services": {
+    "priceFrom": "From ${price}",
+    "priceFromHourly": "From ${price}/h",
+    "deliverables": "What you get",
+    "process": "How the work goes",
+    "relatedProjects": "Related projects",
+    "relatedTechnologies": "Technologies used",
+    "faq": "Common questions",
+    "ctaTitle": "Want to discuss your project?",
+    "ctaIndexTitle": "Not sure which service fits?",
+    "allInDirection": "All {label} services ({count})"
   },
   "footer": {
     "rights": "All rights reserved"

@@ -1,0 +1,45 @@
+indexable: false
+title: Payment and third-party API integration
+description: Stripe, Revolut and Dalenys payments, subscriptions and external services for PHP applications, with webhook handling, retries and error checks.
+summary: "I connect payments and subscriptions to PHP and Laravel applications: payment creation, confirmations, plan changes and cancellation. I check repeated webhooks, declined payments and provider outages. I also integrate third-party APIs to exchange data between services, including the handling needed when requests fail or responses are delayed."
+icon: i-lucide-credit-card
+group: development
+order: 33
+priceFrom: 1600
+timeline: Depends on the provider and agreed workflows
+updated: 2026-11-13
+deliverables:
+  - Payments or subscriptions connected to your application, from payment creation to status and user access updates
+  - Event, retry and error handling with operation logs
+  - Tests and instructions for credentials and launch
+process:
+  - title: Define the workflow
+    description: We clarify operations, statuses, subscriptions or refunds and provider capabilities.
+  - title: Build the test integration
+    description: I implement requests and event handlers and check failures and repeated delivery.
+  - title: Launch and reconcile
+    description: We agree the switch to live credentials and verify operation statuses.
+technologies:
+  - stripe
+  - laravel
+  - php
+  - redis
+  - postgresql
+projects:
+  - vetspace
+  - netpostpanel
+faq:
+  - label: Which payment systems have you worked with?
+    content: Stripe in my own VetSpace product (subscriptions through Cashier) and in ticket shops that also use Dalenys. In a client marketplace I set up Stripe Connect. I have integrated Revolut as well. For another provider I review its documentation before estimating.
+  - label: Can subscriptions be added to an existing product?
+    content: Yes. We need rules for plans, access after payment, plan changes, cancellation and failed payments.
+content: |-
+  ## Agreeing the complete workflow
+
+  A payment success page is only part of the integration. We need to define how the application confirms an operation, what it shows during a delay and how it handles repeated provider events.
+
+  In VetSpace I work with Stripe subscriptions. In NetPostPanel, external integrations are part of a background content workflow. Both need error handling and an understandable operation status.
+
+  In a marketplace I built for a client in Laravel, payments run through Stripe Connect. Sellers connect their own Stripe account, buyers pay through Checkout, the platform keeps a fee and affiliates receive their commission as a transfer. Webhooks from the platform and from connected accounts update order status.
+
+  For payments, share the provider and required operations: one-off charges, subscriptions or refunds. For another API, share its documentation and the data to exchange. The price starts at $1,600 as an integration budget guide; provider fees are separate.

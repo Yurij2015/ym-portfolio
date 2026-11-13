@@ -1,0 +1,41 @@
+indexable: false
+title: PHP code audit
+description: Review of PHP, Laravel or Symfony code with specific findings, priorities and recommendations for your team.
+summary: I review PHP code to investigate errors and produce a useful list of fixes. Depending on the problem, I examine data access, payments, database queries, queues and tests. You receive code references, an explanation of consequences and priorities your team can use to plan and implement changes.
+icon: i-lucide-search-code
+group: support
+order: 22
+priceFrom: 1000
+timeline: Depends on selected modules and review depth
+updated: 2026-11-11
+deliverables:
+  - A report with file and line references, the issue, its consequences and a recommended fix
+  - Prioritized recommendations explaining their impact
+  - A discussion of results and possible next steps
+process:
+  - title: Choose the focus
+    description: "We identify issues and modules: access, payments, database, queues or maintainability."
+  - title: Review
+    description: I read code, check dependencies and tests and reproduce workflows when an environment is available.
+  - title: Report
+    description: I document confirmed issues, separate assumptions and explain recommendations.
+technologies:
+  - php
+  - laravel
+  - symfony
+  - postgresql
+  - redis
+projects: []
+faq:
+  - label: Do you need production access?
+    content: A repository and problem description are usually enough to start. Logs, test data and environment access depend on the agreed scope.
+  - label: Are fixes included?
+    content: The audit delivers a report. Fixes can be agreed separately or handled by your team.
+content: |-
+  ## A review with a defined purpose
+
+  An audit should answer a question: why a payment fails, where access checks are missing or what makes a module difficult to extend. For a general review we first choose priority areas.
+
+  The report states what was checked and which conclusions are supported by code or reproduced behavior. Structural recommendations are separate from defects. A limited review does not establish that no other issues exist.
+
+  Share the application context and questions the audit should answer. The starting price of $1,000 is a guide for reviewing defined modules and producing a report. Implementing the findings is not included in the audit.

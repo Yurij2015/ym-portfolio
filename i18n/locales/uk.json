@@ -2,6 +2,7 @@
   "nav": {
     "home": "Головна",
     "projects": "Проєкти",
+    "services": "Послуги",
     "about": "Про мене",
     "contact": "Контакти"
   },
@@ -65,6 +66,7 @@
     "since": "З {year} року",
     "usedIn": "Проєкти на {tech}",
     "usedWith": "Проєкти, які використовують {tech}",
+    "services": "Послуги з {tech}",
     "faq": "Поширені питання",
     "ctaTitle": "Потрібен проєкт на {tech}?",
     "categories": {
@@ -74,6 +76,18 @@
       "infrastructure": "Інфраструктура",
       "tools": "Інструменти"
     }
+  },
+  "services": {
+    "priceFrom": "Від ${price}",
+    "priceFromHourly": "Від ${price}/год",
+    "deliverables": "Що ви отримуєте",
+    "process": "Як проходить робота",
+    "relatedProjects": "Пов’язані проєкти",
+    "relatedTechnologies": "Технології",
+    "faq": "Поширені питання",
+    "ctaTitle": "Обговоримо ваш проєкт?",
+    "ctaIndexTitle": "Не впевнені, яка послуга вам потрібна?",
+    "allInDirection": "Усі послуги розділу «{label}» ({count})"
   },
   "footer": {
     "rights": "Всі права захищені"

@@ -106,6 +106,66 @@ export const technologySchema = z.object({
   content: z.string().editor({ input: 'textarea' })
 })
 
+// Default to noindex until the editor explicitly approves each localized page.
+const serviceIndexingSchema = z.boolean().default(false).editor({
+  label: 'Дозволити індексацію / Allow indexing',
+  description: 'Увімкніть після перевірки цієї мовної версії. Off = noindex.'
+})
+
+export const serviceDirections = ['development', 'support'] as const
+
+const serviceDirectionSchema = z.object({
+  indexable: serviceIndexingSchema,
+  // Short name for breadcrumbs and links ("Розробка" / "Підтримка")
+  label: z.string().nonempty(),
+  title: z.string().nonempty(),
+  // Meta description — keep under ~160 chars
+  description: z.string().nonempty().editor({ input: 'textarea' }),
+  intro: z.string().nonempty().editor({ input: 'textarea' }),
+  // Service slugs shown on the /services overview for this direction
+  featured: z.array(z.string().nonempty()).min(3).max(4)
+})
+
+export const serviceSettingsSchema = z.object({
+  indexable: serviceIndexingSchema,
+  title: z.string().nonempty(),
+  description: z.string().nonempty().editor({ input: 'textarea' }),
+  intro: z.string().nonempty().editor({ input: 'textarea' }),
+  directions: z.object({
+    development: serviceDirectionSchema,
+    support: serviceDirectionSchema
+  })
+})
+
+export const serviceSchema = z.object({
+  indexable: serviceIndexingSchema,
+  title: z.string().nonempty(),
+  // Meta description — keep under ~160 chars
+  description: z.string().nonempty().editor({ input: 'textarea' }),
+  // Direct-answer lead shown in the hero (~35–60 words; inflected languages run shorter)
+  summary: z.string().nonempty().editor({ input: 'textarea' }),
+  icon: z.string().editor({ input: 'icon' }),
+  group: z.enum(serviceDirections),
+  order: z.number(),
+  priceFrom: z.number(),
+  // Hourly engagements show "From $X/h" instead of a project price
+  priceUnit: z.enum(['project', 'hour']).optional(),
+  timeline: z.string().nonempty(),
+  deliverables: z.array(z.string().nonempty()).min(3),
+  process: z.array(z.object({
+    title: z.string().nonempty(),
+    description: z.string().nonempty()
+  })).min(3),
+  technologies: z.array(z.string()),
+  projects: z.array(z.string()),
+  faq: z.array(z.object({
+    label: z.string().nonempty(),
+    content: z.string().nonempty().editor({ input: 'textarea' })
+  })).optional(),
+  updated: z.string(),
+  content: z.string().editor({ input: 'textarea' })
+})
+
 export const pagesSchema = z.object({
   seo: createBaseSchema().optional(),
   links: z.array(createButtonSchema())

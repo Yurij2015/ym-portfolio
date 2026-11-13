@@ -1,0 +1,52 @@
+indexable: false
+title: Panele administracyjne dla aplikacji PHP i Laravel
+description: "Panele administracyjne dla Laravela i PHP w Filamencie, Flowbite lub AdminLTE: formularze, tabele, uprawnienia, raporty i codzienne operacje zespołu."
+summary: "Tworzę panele administracyjne dla aplikacji Laravel i PHP: edycję klientów i zamówień, zarządzanie treściami, wyszukiwanie, filtry oraz raporty. Narzędzie dobieram do projektu: Filament, Flowbite na Tailwindzie albo AdminLTE na Bootstrapie. Mogę zbudować nowy panel lub stopniowo zastępować ekrany w istniejącej administracji."
+icon: i-lucide-layout-dashboard
+group: development
+order: 32
+priceFrom: 1600
+timeline: Po określeniu ekranów, ról i niestandardowych operacji
+updated: 2026-11-13
+deliverables:
+  - "Ekrany do pracy z danymi: formularze klientów lub zamówień, tabele z wyszukiwaniem, filtrami i potrzebnymi działaniami"
+  - Uprawnienia i kontrole operacji na danych
+  - Testy ważnych działań oraz instrukcja obsługi panelu
+process:
+  - title: Analiza pracy zespołu
+    description: Przeglądamy obecne operacje i dane potrzebne na poszczególnych ekranach.
+  - title: Wybór narzędzia i budowa
+    description: Dobieram Filament, Flowbite lub AdminLTE do istniejącego kodu, potem tworzę formularze, filtry i działania biznesowe.
+  - title: Sprawdzenie z użytkownikami
+    description: Pracownicy testują panel, a ja poprawiam wygodę obsługi i uprawnienia.
+technologies:
+  - filament
+  - laravel
+  - php
+  - tailwindcss
+  - vue
+  - nuxt
+projects:
+  - digispace
+  - digipulse
+  - netpostpanel
+  - vetspace
+faq:
+  - label: Filament, Flowbite czy AdminLTE?
+    content: Filament pasuje do aplikacji w Laravelu, w której panel składa się z typowych ekranów z listami, formularzami, filtrami i rolami. Po Flowbite sięgam, gdy panel ma mieć własny wygląd lub nietypowe ekrany albo gdy frontend jest osobną aplikacją w Vue lub Nuxt. AdminLTE ma sens, jeśli projekt korzysta już z Bootstrapa lub ma administrację na AdminLTE, którą trzeba rozwinąć.
+  - label: Czy można dodać Filament do istniejącej aplikacji Laravel?
+    content: Tak, po sprawdzeniu zgodności wersji, modeli i uwierzytelniania. Zasoby można wprowadzać pojedynczo, bez zmian w reszcie aplikacji.
+  - label: Co jeśli backend nie korzysta z Laravela?
+    content: Wtedy Filament odpada. Panel na Flowbite lub AdminLTE można wbudować w istniejącą aplikację PHP albo uruchomić osobno, z dostępem do danych przez API. Druga droga oznacza dodatkową pracę integracyjną.
+content: |-
+  ## Przykłady z projektów
+
+  W DigiSpace panel Filament działa obok wcześniejszej administracji w Inertii i Vue. Obsługuje treści, tłumaczenia i metadane SEO, a ekrany przechodzą ze starej administracji stopniowo. W DigiPulse Filament służy do zarządzania monitorami, kontaktami i regułami powiadomień.
+
+  Flowbite używam w NetPostPanel, gdzie frontend działa na Inertii i Vue, oraz w panelu kliniki VetSpace w Nuxt. Na nim powstała też administracja marketplace klienta z użytkownikami, rolami, ogłoszeniami i zamówieniami oraz serwis dla fotografów z galeriami i pakietami usług.
+
+  Na AdminLTE zbudowałem dwa panele w Laravelu. Pierwszy pobiera według harmonogramu dane przez API zewnętrznego serwisu i pokazuje agencji statystyki, koszty oraz eksport. Drugi zarządza zbieraniem i filtrowaniem danych z serwisu społecznościowego za pomocą kolejek zadań.
+
+  Zakres panelu wynika z operacji, a nie z liczby tabel w bazie: tworzenia i edycji rekordów, filtrów oraz działań wymagających potwierdzenia.
+
+  Pokaż obecne ekrany lub arkusze i wyjaśnij, co pracownicy robią ręcznie. Cena od $1 600 jest orientacyjnym budżetem na powiązany zestaw ekranów; import, raporty i niestandardowe operacje wyceniam według złożoności.

@@ -1,0 +1,45 @@
+indexable: false
+title: AI integration for PHP applications
+description: Document search, text preparation and data processing with AI in PHP and Laravel. Check output quality and costs before launch.
+summary: "I add AI features to PHP and Laravel: document field extraction, request classification, text preparation and knowledge-base search. I evaluate outputs using your sample data, connect the model to the application and add usage tracking and error handling. Where answers need checking, I include a human review step."
+icon: i-lucide-sparkles
+group: development
+order: 34
+priceFrom: 2200
+timeline: Timing depends on data quality and the complexity of the AI feature
+updated: 2026-11-11
+deliverables:
+  - "Evaluation results on your examples: what the model handles, where it fails and which data it needs"
+  - An AI feature with error handling and usage tracking
+  - Configuration notes, limitations and an output review approach
+process:
+  - title: Examples and criteria
+    description: We define inputs, expected output and acceptable errors.
+  - title: Evaluate the approach
+    description: I compare outputs, assess document retrieval needs and estimate usage costs.
+  - title: Integrate
+    description: I connect the agreed workflow, logging and human review where required.
+technologies:
+  - laravel
+  - php
+  - postgresql
+  - redis
+  - go
+  - docker
+projects:
+  - netpostpanel
+  - digipulse
+  - vetspace
+faq:
+  - label: Do we need RAG?
+    content: Retrieving relevant passages can help when answers must use your documents. Classification or field extraction may not need a separate knowledge base.
+  - label: What about privacy and cost?
+    content: Before launch I check provider data processing and retention terms. Costs are estimated from the model and request volume; API usage is billed separately.
+content: |-
+  ## Experience from NetPostPanel and DigiPulse
+
+  NetPostPanel connects source discovery, content generation and Qdrant through Horizon queues. Langfuse tracks model calls. In DigiPulse, an MCP server exposes monitoring data to AI assistants.
+
+  These are different integration patterns. For your task we first need to test whether a model produces a useful result. Document retrieval and structured output do not eliminate mistakes, so we agree how results should be reviewed.
+
+  Share sample inputs and desired outputs, request volume and data restrictions. The starting price of $2,200 is a budget guide for one integrated AI feature; model API usage is billed separately.

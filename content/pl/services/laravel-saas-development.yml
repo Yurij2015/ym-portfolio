@@ -1,0 +1,46 @@
+indexable: false
+title: Tworzenie SaaS w Laravelu
+description: "SaaS w Laravelu: konta firm, uprawnienia, subskrypcje i funkcje produktu. Rozwój w uzgodnionych etapach."
+summary: "Buduję SaaS w Laravelu: rejestrację firm, zaproszenia pracowników, role, subskrypcje i główne funkcje produktu. We własnym VetSpace pracuję z CRM dla klinik oraz rozliczeniami Stripe. Pomagam oddzielić funkcje potrzebne do uruchomienia od tych, które można dodać później."
+icon: i-lucide-layers
+group: development
+order: 30
+priceFrom: 4800
+timeline: Termin pierwszej wersji zależy od uzgodnionych funkcji
+updated: 2026-11-13
+deliverables:
+  - Konta firm z użytkownikami, rolami i dostępem ograniczonym do własnych danych
+  - Uzgodnione funkcje produktu, panel użytkownika i obsługa subskrypcji
+  - Testy dostępu, konfiguracja wdrożenia i dokumentacja
+process:
+  - title: Pierwsza wersja
+    description: Ustalamy użytkowników, główny proces, uprawnienia i model płatności.
+  - title: Rozwój etapami
+    description: Buduję podstawę i funkcje, udostępniając działającą wersję do sprawdzenia.
+  - title: Uruchomienie
+    description: Sprawdzam izolację danych i subskrypcje; uzgadniamy wdrożenie oraz dalsze prace.
+technologies:
+  - laravel
+  - filament
+  - stripe
+  - postgresql
+  - redis
+  - docker
+projects:
+  - vetspace
+  - digipulse
+faq:
+  - label: Czy każdy klient potrzebuje osobnej bazy?
+    content: Zależy to od wymagań dotyczących danych, kopii zapasowych i infrastruktury. Porównamy osobne bazy ze wspólną bazą i kontrolą dostępu.
+  - label: Co obejmuje cena początkowa?
+    content: Uzgodniony etap prac. Role, integracje i funkcje określamy przed wyceną; cena nie oznacza nieograniczonego zakresu MVP.
+content: |-
+  ## Doświadczenie z VetSpace
+
+  We własnym produkcie VetSpace pracuję z kontami klinik, procesami CRM weterynaryjnego i subskrypcjami Stripe. Dane klinik są przechowywane w osobnych bazach. W nowym produkcie wybieram izolację po analizie wymagań; nie każdy SaaS potrzebuje tej architektury.
+
+  Subskrypcje wymagają jasnych zasad: kiedy otwierany jest dostęp, co dzieje się po nieudanej płatności i jak zmienia się plan. Omawiamy to razem z funkcjami pierwszej wersji.
+
+  W marketplace klienta wykupiony pakiet określał, ile aktywnych ogłoszeń i szkiców może mieć użytkownik.
+
+  Opisz użytkowników, ich główne zadanie i sposób płatności. Cena od $4 800 jest orientacyjnym budżetem pierwszej wersji z ograniczonym zestawem funkcji. Rozliczenia, import danych i integracje wpływają na wycenę.

@@ -6,7 +6,7 @@ const LOCALES = [
   { code: 'pl', iso: 'pl-PL', prefix: '/pl' }
 ]
 
-const PATHS = ['/', '/about', '/projects', '/technologies']
+const PATHS = ['/', '/about', '/projects', '/technologies', '/services', '/services/development', '/services/support']
 
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
@@ -18,11 +18,14 @@ export default defineEventHandler(async (event) => {
   // `updated` fields) — far more honest than Date.now() on every request.
   const projects = await queryCollection(event, 'projects_en').all()
   const technologies = await queryCollection(event, 'technologies_en').all()
+  const services = await queryCollection(event, 'services_en').all()
   const projectSlugs = projects.map(p => String(p.stem).split('/').pop() ?? '')
   const techSlugs = technologies.map(t => String(t.stem).split('/').pop() ?? '')
+  const serviceSlugs = services.map(s => String(s.stem).split('/').pop() ?? '')
   const dates = [
     ...projects.map(p => p.date),
-    ...technologies.map(t => t.updated)
+    ...technologies.map(t => t.updated),
+    ...services.map(s => s.updated)
   ].filter(Boolean).sort()
   const lastmod = new Date(dates.pop() ?? Date.now()).toISOString()
 
@@ -47,7 +50,8 @@ export default defineEventHandler(async (event) => {
   const urls = [
     ...PATHS,
     ...projectSlugs.map(s => `/projects/${s}`),
-    ...techSlugs.map(s => `/technologies/${s}`)
+    ...techSlugs.map(s => `/technologies/${s}`),
+    ...serviceSlugs.map(s => `/services/${s}`)
   ].flatMap(urlEntry)
 
   setResponseHeader(event, 'content-type', 'application/xml; charset=utf-8')

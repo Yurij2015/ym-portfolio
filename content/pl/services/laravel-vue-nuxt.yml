@@ -1,0 +1,45 @@
+indexable: false
+title: Programowanie Laravel, Vue i Nuxt
+description: "Backend Laravel i interfejs Vue lub Nuxt: konta, strony publiczne, API oraz połączenie obu części."
+summary: "Tworzę aplikacje z backendem Laravel i interfejsem Vue lub Nuxt: konta, katalogi, formularze i rezerwacje. Pracuję nad zapytaniami API, zapisem danych i tym, co użytkownik widzi w przeglądarce. Dla stron publicznych dodaję renderowanie serwerowe i metadane, gdy wymaga tego projekt."
+icon: i-simple-icons-nuxtdotjs
+group: development
+order: 35
+priceFrom: 2400
+timeline: Po określeniu ekranów i funkcji backendu
+updated: 2026-11-11
+deliverables:
+  - Strony połączone z backendem, na przykład formularze zapisu danych, wyszukiwanie, konto lub rezerwacja usługi
+  - Obsługa formularzy, logowania i stanów błędów
+  - Kontrola głównych procesów oraz dokumentacja uruchomienia obu części
+process:
+  - title: Struktura aplikacji
+    description: Określamy strony publiczne, konta prywatne, dane i wymagania wyszukiwarek.
+  - title: Implementacja
+    description: Buduję interfejs oraz potrzebne API lub operacje serwerowe.
+  - title: Kontrola w przeglądarce
+    description: Sprawdzam procesy, widoki mobilne, błędy i wdrożenie.
+technologies:
+  - nuxt
+  - vue
+  - typescript
+  - tailwindcss
+  - laravel
+  - vite
+projects:
+  - vetcard
+  - vetspace
+  - digispace
+faq:
+  - label: Inertia czy osobny Nuxt?
+    content: Inertia pozwala używać Vue wewnątrz Laravela. Osobny Nuxt może pasować do publicznych stron renderowanych na serwerze. Wybór zależy od wymagań.
+  - label: Czy potrzebny jest gotowy projekt graficzny?
+    content: Mogę pracować z makietą lub uzgodnioną biblioteką komponentów. Opracowanie osobnego stylu wizualnego trzeba uwzględnić w zakresie.
+content: |-
+  ## Przykład VetCard
+
+  VetCard korzysta z Nuxt dla publicznych stron klinik oraz Laravel API do danych i rezerwacji wizyt. Obie części muszą współpracować: użytkownik potrzebuje aktualnych informacji, formularza rezerwacji i czytelnego wyniku.
+
+  Dla stron publicznych konfiguruję metadane i renderowanie serwerowe zgodnie z zadaniem. Ułatwia to dostęp do treści wyszukiwarkom, ale nie gwarantuje pozycji ani indeksowania.
+
+  Prześlij ekrany, makiety, jeśli są dostępne, i potrzebne działania. Cena od $2 400 jest orientacyjnym budżetem na określoną część aplikacji z frontendem i backendem, a nie produkt dowolnej wielkości.
