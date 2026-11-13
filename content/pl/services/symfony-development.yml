@@ -1,7 +1,7 @@
 indexable: false
 title: Programowanie w Symfony
 description: Moduły, integracje i procesy w tle w Symfony. Pomagam rozwijać istniejące aplikacje.
-summary: "Pomagam rozwijać aplikacje w Symfony, dodając obsługę zamówień, integracje płatności, API i zadania w tle. Pracuję z tymi procesami między innymi w sklepach biletowych obsługujących dużą liczbę odwiedzających. To doświadczenie wykorzystuję przy dodawaniu modułów, zmianach reguł biznesowych i rozwiązywaniu problemów z wymianą danych w Twoim systemie."
+summary: "Pomagam rozwijać aplikacje w Symfony, dodając obsługę zamówień, integracje płatności, API i zadania w tle. Zajmuję się nimi między innymi w serwisach sprzedaży biletów o dużym ruchu. To doświadczenie wykorzystuję przy dodawaniu modułów, zmianach reguł biznesowych i rozwiązywaniu problemów z wymianą danych w Twoim systemie."
 icon: i-simple-icons-symfony
 group: development
 order: 11
@@ -38,6 +38,6 @@ content: |-
 
   Pracuję nad serwisami sprzedaży biletów w architekturze multi-tenant. Oferują one bilety na mecze piłki nożnej i koszykówki, wyścigi motocyklowe i samochodowe, a także do muzeów, na wystawy i festiwale. Backend jest oparty na Symfony z Doctrine, MySQL, Redis i kolejkami, interfejs na Vue.js, a płatności obsługują Stripe i Dalenys.
 
-  W tych projektach pracuję z zamówieniami, płatnościami i wymianą danych z usługami zewnętrznymi. Gdy trzeba zmienić jeden z tych procesów, najpierw sprawdzam jego działanie i powiązania z pozostałymi częściami aplikacji. Pomaga to zaplanować prace i przetestować je razem z powiązaną logiką.
+  W tych projektach pracuję z zamówieniami, płatnościami i wymianą danych z usługami zewnętrznymi. Gdy trzeba zmienić jeden z tych procesów, najpierw sprawdzam jego działanie i powiązania z pozostałymi częściami aplikacji. Dzięki temu mogę zaplanować zmiany i przetestować cały proces po ich wprowadzeniu.
 
-  Do wyceny zadania opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP. Pomoże to określić powiązane moduły i zależności zewnętrzne. Koszt przygotowania modułu z testami zaczyna się od $3 200, a potrzebne integracje uwzględniam w łącznej wycenie.
+  Opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP. Sprawdzę, jakich modułów i usług zewnętrznych dotyczy zadanie. Przygotowanie modułu z testami kosztuje od $3 200; potrzebne integracje uwzględniam w wycenie.

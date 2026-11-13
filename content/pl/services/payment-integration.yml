@@ -1,7 +1,7 @@
 indexable: false
 title: Integracja płatności i zewnętrznych API
 description: Płatności Stripe, Revolut i Dalenys, subskrypcje i zewnętrzne usługi w aplikacjach PHP. Obsługa webhooków, ponowień i błędów.
-summary: "Wdrażam płatności i subskrypcje w aplikacjach PHP i Laravel, od utworzenia płatności po jej potwierdzenie, zmianę planu lub anulowanie. Aby status płatności i uprawnienia użytkownika były zgodne, sprawdzam również powtórzone webhooki, odrzucone płatności i niedostępność dostawcy. W ten sam sposób podchodzę do zewnętrznych API służących do wymiany danych między serwisami."
+summary: "Wdrażam płatności i subskrypcje w aplikacjach PHP i Laravel, od utworzenia płatności po jej potwierdzenie, zmianę planu lub anulowanie. Sprawdzam też, co dzieje się po ponownym otrzymaniu webhooka, odrzuceniu płatności lub awarii dostawcy, żeby status płatności i dostęp użytkownika aktualizowały się prawidłowo. W ten sam sposób podchodzę do zewnętrznych API służących do wymiany danych między serwisami."
 icon: i-lucide-credit-card
 group: development
 order: 33
@@ -40,6 +40,6 @@ content: |-
 
   Z subskrypcjami Stripe pracuję we własnym VetSpace. Na platformie marketplace jednego z klientów wdrożyłem bardziej złożony podział płatności, korzystając z Laravela i Stripe Connect: sprzedawcy podłączają własne konta, kupujący płaci przez Checkout, a platforma zatrzymuje swoją prowizję. Uczestnicy programu partnerskiego również otrzymują prowizję, natomiast statusy zamówień aktualizują webhooki platformy i podłączonych kont.
 
-  Przy integracji innych usług zewnętrznych również dbam o obsługę błędów i śledzenie statusu operacji. W NetPostPanel wywołania API są częścią zadań przygotowania treści wykonywanych w tle. Aplikacja musi więc odnotować powodzenie lub błąd zadania także wtedy, gdy pierwotne zapytanie już się zakończyło.
+  Przy integracji innych usług zewnętrznych również dbam o obsługę błędów i śledzenie statusu operacji. W NetPostPanel wywołania API są częścią zadań przygotowania treści wykonywanych w tle. Aplikacja musi więc zapisać, czy zadanie się powiodło, także po zakończeniu pierwotnego zapytania.
 
-  Do wyceny integracji płatności podaj wybranego dostawcę i potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty. W przypadku innego API przydadzą się dokumentacja i opis wymienianych danych. Koszt integracji zaczyna się od $1 600, a opłaty dostawcy są rozliczane osobno.
+  Jeśli potrzebujesz integracji płatności, podaj wybranego dostawcę i opisz potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty. W przypadku innego API przydadzą się dokumentacja i opis wymienianych danych. Integracja kosztuje od $1 600. Opłaty dostawcy są rozliczane osobno.

@@ -1,7 +1,7 @@
 indexable: false
 title: Stabilizacja istniejącego projektu PHP
 description: "Diagnoza projektu PHP: uruchamianie, kopie zapasowe, błędy i wdrażanie. Najpierw analiza i uzgodniony plan prac."
-summary: "Pomagam uporządkować projekt PHP, który trudno uruchomić, odtworzyć lub zmienić. Zależnie od problemu sprawdzam kod, infrastrukturę i kopie zapasowe, odtwarzam błędy oraz przywracam działające wdrożenie. Zaczynam od problemu, który blokuje Cię teraz. Na tej podstawie ustalam pierwsze poprawki i plan dalszych prac."
+summary: "Pomagam uporządkować projekt PHP, który trudno uruchomić, odtworzyć lub zmienić. Zależnie od problemu sprawdzam kod, infrastrukturę i kopie zapasowe, odtwarzam błędy oraz przywracam działające wdrożenie. Zaczynam od problemu, który blokuje Cię teraz, a potem ustalam kolejność poprawek i dalszych prac."
 icon: i-lucide-life-buoy
 group: support
 order: 23
@@ -37,6 +37,6 @@ content: |-
 
   Gdy brakuje instrukcji uruchomienia, nie wiadomo, od czego zależy aplikacja, a kopie zapasowe nie były sprawdzane, trudno wycenić nawet niewielką zmianę. Dlatego najpierw zbieram informacje o kodzie i infrastrukturze, ustalam sposób uruchomienia kopii projektu oraz sprawdzam możliwość odtworzenia danych.
 
-  Na tej podstawie mogę zaplanować pierwsze poprawki i kolejne etapy prac. Po diagnozie opisuję obecny stan, usuwam uzgodnione problemy blokujące pracę i określam kolejne kroki. Jeśli potrzebne są dodatkowa konfiguracja środowiska, odzyskanie danych lub zmiana wdrażania, przygotowuję dla nich osobny zakres i wycenę.
+  Po tej analizie opisuję stan projektu i usuwam uzgodnione problemy, które blokują pracę. Pozostałe ustalenia zbieram w planie dalszych działań. Jeśli dalsze prace wymagają konfiguracji środowiska, odzyskania danych lub zmiany sposobu wdrażania, wyceniam je osobno.
 
-  Możemy zacząć od opisu tego, co przestało działać, i informacji o tym, co jest dostępne: kodzie, dostępie do systemu, kopiach zapasowych czy komunikatach o błędach. Pomogą one ustalić, od czego rozpocząć przywracanie projektu. Koszt diagnozy i pierwszych uzgodnionych prac stabilizacyjnych zaczyna się od $1 800.
+  Opisz, co przestało działać, i daj znać, czy masz kod, dostęp do systemu, kopie zapasowe lub komunikaty o błędach. To wystarczy, żeby ustalić punkt wyjścia. Diagnoza i pierwsze uzgodnione prace nad przywróceniem projektu do działania kosztują od $1 800.

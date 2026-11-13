@@ -1,7 +1,7 @@
 indexable: false
 title: Utrzymanie aplikacji PHP i Laravel
 description: "Regularne wsparcie PHP, Laravel i Symfony: poprawki, przegląd zależności, kontrola kopii zapasowych i monitoringu."
-summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach uzgodnionego planu sprawdzam też kolejki, kopie zapasowe i powiadomienia z monitoringu. Wykonane prace oraz otwarte problemy zapisuję w raportach, żeby było wiadomo, co wymaga uwagi i na co został przeznaczony czas."
+summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach uzgodnionego planu sprawdzam też kolejki, kopie zapasowe i powiadomienia z monitoringu. W raportach podsumowuję wykonane zadania, nierozwiązane problemy i przepracowane godziny, żeby było wiadomo, co jeszcze wymaga uwagi."
 icon: i-lucide-shield-check
 group: support
 order: 41
@@ -37,8 +37,8 @@ faq:
 content: |-
   ## Co ustalamy na początku
 
-  Działający produkt często potrzebuje jednocześnie poprawek, aktualizacji zależności i niewielkich zmian. Żeby ustalić kolejność prac, najpierw przeglądam stan aplikacji, a następnie wspólnie ustalamy priorytety, budżet i harmonogram utrzymania. Duże aktualizacje oraz nowe moduły wyceniam osobno.
+  Działający produkt często potrzebuje jednocześnie poprawek, aktualizacji zależności i niewielkich zmian. Zaczynam od przeglądu aplikacji, a potem wspólnie ustalamy, czym zająć się najpierw, jaki mamy budżet i jak często potrzebne będzie wsparcie. Duże aktualizacje oraz nowe moduły wyceniam osobno.
 
   Plan obejmuje też sposób reagowania na awarie. Dostępność strony można śledzić przez mój serwis DigiPulse wysyłający powiadomienia przez Telegram i email. Przed rozpoczęciem prac uzgadniamy, kto otrzymuje te wiadomości i jakie działania podejmuje dalej.
 
-  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania czekają na realizację. Pomoże to ustalić częstotliwość kontroli oraz sposób zgłaszania potrzeb. Rozliczam się godzinowo, a stawka zaczyna się od $50 za godzinę.
+  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania czekają na realizację. Ustalimy wtedy, jak często sprawdzać aplikację i w jaki sposób zgłaszać zadania. Rozliczam się godzinowo, a stawka zaczyna się od $50 za godzinę.

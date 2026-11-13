@@ -43,10 +43,10 @@ content: |-
 
   W DigiSpace stopniowo przenoszę ekrany ze starego panelu opartego na Inertia i Vue do Filament. Oba panele działają równolegle. W nowym można już edytować treści, tłumaczenia i metadane SEO. Z Filament korzystam również w DigiPulse, gdzie służy do zarządzania monitorami, kontaktami i regułami powiadomień.
 
-  Do budowy interfejsów w Vue i Nuxt wykorzystuję też Flowbite. Korzystam z niego w NetPostPanel i panelu kliniki VetSpace. Na tej bibliotece powstały też projekty dla klientów: panel platformy marketplace do zarządzania użytkownikami, ogłoszeniami i zamówieniami oraz serwis dla fotografów z galeriami i pakietami usług.
+  Do budowy interfejsów w Vue i Nuxt wykorzystuję Flowbite, między innymi w NetPostPanel i panelu kliniki VetSpace. Z tej biblioteki korzystałem również w projektach dla klientów: panel platformy marketplace do zarządzania użytkownikami, ogłoszeniami i zamówieniami oraz serwis dla fotografów z galeriami i pakietami usług.
 
   Mam też doświadczenie z AdminLTE, na którym zbudowałem dwa panele do aplikacji Laravel. Jeden pobiera dane z zewnętrznego API według harmonogramu i pozwala agencji przeglądać oraz eksportować statystyki i wydatki. Drugi zarządza zbieraniem i filtrowaniem danych z serwisu społecznościowego przez kolejki zadań.
 
   W każdym z tych przypadków zakres prac zależy od tego, jakie dane zespół tworzy i edytuje, jak je wyszukuje oraz które operacje wymagają potwierdzenia. Dlatego do wyceny przydadzą się obecne ekrany lub arkusze oraz opis czynności, które zespół nadal wykonuje ręcznie.
 
-  Koszt przygotowania zestawu powiązanych ekranów zaczyna się od $1 600. Jeśli potrzebne są importy, raporty lub niestandardowe operacje, uwzględniam ich złożoność w całościowej wycenie.
+  Koszt przygotowania zestawu powiązanych ekranów zaczyna się od $1 600. Jeśli potrzebne są importy, raporty lub niestandardowe operacje, uwzględniam je w wycenie zależnie od stopnia złożoności.

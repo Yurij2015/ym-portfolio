@@ -1,7 +1,7 @@
 indexable: false
 title: Tworzenie aplikacji w Laravelu, Vue i Nuxt
 description: "Backend w Laravelu i interfejs w Vue lub Nuxt: konta, strony publiczne, API oraz połączenie obu części."
-summary: "Tworzę panele użytkowników, katalogi i rezerwacje online z interfejsem w Vue lub Nuxt i backendem w Laravelu. Ponieważ zajmuję się zarówno frontendem, jak i backendem, mogę zrealizować cały proces: od działania użytkownika w przeglądarce po walidację i zapis danych na serwerze. Dla publicznej części na Nuxt konfiguruję również renderowanie serwerowe i metadane."
+summary: "Tworzę panele użytkowników, katalogi i rezerwacje online z interfejsem w Vue lub Nuxt i backendem w Laravelu. Ponieważ zajmuję się zarówno frontendem, jak i backendem, mogę zrealizować cały proces: od działania użytkownika w przeglądarce po walidację i zapis danych na serwerze. Na publicznych stronach w Nuxt konfiguruję też renderowanie serwerowe i metadane."
 icon: i-simple-icons-nuxtdotjs
 group: development
 order: 35
@@ -42,4 +42,4 @@ content: |-
 
   Dlatego podczas prac sprawdzam zarówno wygląd strony, jak i to, co użytkownik widzi w trakcie korzystania z niej: stan ładowania, komunikaty o błędach i potwierdzenie wykonanej operacji. Dla stron publicznych dodatkowo konfiguruję metadane oraz renderowanie serwerowe, aby główna treść znajdowała się w odpowiedzi HTML serwera.
 
-  Aby omówić podobne zadanie, prześlij listę ekranów i działań dostępnych dla użytkownika oraz makiety, jeśli je masz. Na tej podstawie określimy zmiany potrzebne w obu częściach aplikacji. Koszt wdrożenia funkcji obejmującej frontend i backend zaczyna się od $2 400.
+  Jeśli planujesz podobną funkcję, prześlij listę ekranów i opis tego, co użytkownik ma na nich robić. Dołącz też makiety, jeśli je masz. Wspólnie określimy, co trzeba przygotować po stronie frontendu i backendu. Wdrożenie takiej funkcji kosztuje od $2 400.

@@ -1,7 +1,7 @@
 indexable: false
 title: Aktualizacja Laravela
 description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu, testy i plan wdrożenia."
-summary: "Aktualizuję Laravela i PHP w istniejących aplikacjach, dostosowując pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam te scenariusze. Następnie przygotowuję wdrożenie uwzględniające migracje bazy, restart procesów kolejek i możliwość powrotu do poprzedniej wersji."
+summary: "Aktualizuję Laravela i PHP w istniejących aplikacjach, dostosowując pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam te scenariusze. Następnie planuję wdrożenie: migracje bazy, restart procesów kolejek i możliwość powrotu do poprzedniej wersji."
 icon: i-lucide-circle-arrow-up
 group: support
 order: 20
@@ -38,6 +38,6 @@ content: |-
 
   O złożoności aktualizacji decyduje stan aplikacji: czy jej pakiety są nadal utrzymywane, jak bardzo zmieniła się konfiguracja i którą część własnego kodu trzeba dostosować. Sama różnica między obecną a docelową wersją nie wystarcza do wyceny, dlatego zaczynam od przeglądu zależności i sposobu uruchamiania.
 
-  Kiedy zakres zmian jest już znany, planuję sprawdzenie działania systemu po aktualizacji. We własnych produktach opartych na Laravelu — VetSpace i DigiPulse — pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
+  Gdy wiem już, co trzeba zmienić, ustalam, jak sprawdzić działanie systemu po aktualizacji. We własnych produktach opartych na Laravelu — VetSpace i DigiPulse — pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
 
-  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt aktualizacji do uzgodnionej wersji zaczyna się od $1 600. Jeśli potrzebne są wymiana porzuconych pakietów lub napisanie brakujących testów, uwzględniam te prace w wycenie.
+  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt aktualizacji do uzgodnionej wersji zaczyna się od $1 600. W wycenie uwzględniam też wymianę porzuconych pakietów i napisanie brakujących testów, jeśli okażą się potrzebne.

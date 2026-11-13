@@ -1,7 +1,7 @@
 indexable: false
 title: Rozwój i modyfikacje aplikacji PHP
 description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP opartych na Laravelu, Symfony lub napisanych bez frameworka.
-summary: "Rozwijam istniejące aplikacje PHP oparte na Laravelu, Symfony lub napisane bez frameworka. Zajmuję się zmianami w obliczeniach, raportami, wymianą danych z innymi usługami i naprawą błędów. Przed zmianami poznaję działanie danej części systemu i jej powiązania. Pozwala mi to sprawdzić poprawkę razem z innymi operacjami, na które wpływa."
+summary: "Rozwijam istniejące aplikacje PHP oparte na Laravelu, Symfony lub napisane bez frameworka. Zajmuję się zmianami w obliczeniach, raportami, wymianą danych z innymi usługami i naprawą błędów. Zanim zmienię kod, sprawdzam, jak działa dana część systemu i z czym jest powiązana. Dzięki temu mogę przetestować poprawkę razem z operacjami, na które wpływa."
 icon: i-simple-icons-php
 group: development
 order: 12
@@ -41,6 +41,6 @@ content: |-
 
   Przykładem jest DigiSpace, gdzie publiczna strona, obsługa treści i panele administracyjne korzystają ze wspólnego kodu w Laravelu. Zmiany pojedynczej funkcji muszą uwzględniać pozostałą logikę aplikacji — to samo podejście stosuję w aplikacjach klientów.
 
-  Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji — przykład oczekiwanego wyniku. Dzięki tym materiałom mogę określić, jaki kod trzeba przejrzeć, i wycenić pracę.
+  Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji — przykład oczekiwanego wyniku. Te informacje pomogą mi znaleźć odpowiednie miejsca w kodzie i wycenić pracę.
 
-  Koszt uzgodnionych prac, takich jak dodanie raportu czy wymiany danych z inną usługą, zaczyna się od $1 800 i obejmuje sprawdzenie zmian oraz instrukcję wdrożenia.
+  Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od $1 800. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia.

@@ -1,7 +1,7 @@
 indexable: false
 title: Integracja AI z aplikacjami PHP
 description: Wyszukiwanie w dokumentach, przygotowanie tekstów i przetwarzanie danych z AI w PHP i Laravelu. Ocena jakości odpowiedzi i kosztów przed uruchomieniem.
-summary: "Wdrażam w aplikacjach PHP i Laravel funkcje AI, które odczytują dane z dokumentów, klasyfikują zgłoszenia, przygotowują teksty i przeszukują bazę wiedzy. Aby sprawdzić, czy model nadaje się do zadania, najpierw testuję go na Twoich przykładach. Na podstawie wyników planuję integrację, obsługę błędów i pomiar wykorzystania API. W razie potrzeby dodaję też etap, na którym człowiek sprawdza odpowiedź."
+summary: "Wdrażam w aplikacjach PHP i Laravel funkcje AI, które odczytują dane z dokumentów, klasyfikują zgłoszenia, przygotowują teksty i przeszukują bazę wiedzy. Aby sprawdzić, czy model nadaje się do zadania, najpierw testuję go na Twoich przykładach. Wyniki testów pomagają mi zaplanować integrację, obsługę błędów i śledzenie wykorzystania API. W razie potrzeby dodaję też etap, na którym człowiek sprawdza odpowiedź."
 icon: i-lucide-sparkles
 group: development
 order: 34
@@ -38,8 +38,8 @@ faq:
 content: |-
   ## Doświadczenie z NetPostPanel i DigiPulse
 
-  W NetPostPanel pracuję z wyszukiwaniem źródeł, generowaniem treści i wyszukiwaniem wektorowym w Qdrant. Operacje te działają przez kolejki Horizon, a wywołania modeli są śledzone w Langfuse. W DigiPulse integracja wygląda inaczej: serwer MCP udostępnia asystentom AI dane z monitoringu.
+  W NetPostPanel pracuję z wyszukiwaniem źródeł, generowaniem treści i wyszukiwaniem wektorowym w Qdrant. Te zadania wykonują się w kolejkach obsługiwanych przez Horizon, a wywołania modeli śledzę w Langfuse. W DigiPulse integracja wygląda inaczej: serwer MCP udostępnia asystentom AI dane z monitoringu.
 
-  Zanim wybiorę sposób integracji, sprawdzam, czy model daje użyteczne wyniki na Twoich danych i w jakich przypadkach się myli. Jeśli odpowiedzi mają opierać się na dokumentach, dodaję wyszukiwanie odpowiednich fragmentów; jeśli ma je przetwarzać aplikacja, określam format odpowiedzi. Ponieważ błędy są możliwe także przy takich ustawieniach, sposób weryfikacji odpowiedzi uzgadniamy przed uruchomieniem.
+  Zanim wybiorę sposób integracji, sprawdzam, czy model daje użyteczne wyniki na Twoich danych i w jakich przypadkach się myli. Jeśli odpowiedzi mają opierać się na dokumentach, dodaję wyszukiwanie odpowiednich fragmentów; jeśli ma je przetwarzać aplikacja, określam format odpowiedzi. Takie rozwiązania nie eliminują wszystkich błędów, dlatego jeszcze przed uruchomieniem ustalamy, jak sprawdzać odpowiedzi.
 
-  Do testów potrzebuję kilku przykładów danych wejściowych i oczekiwanych odpowiedzi. Wraz z przewidywaną liczbą zapytań i ograniczeniami dotyczącymi danych pomogą one wycenić integrację. Koszt jednej funkcji AI połączonej z aplikacją zaczyna się od $2 200.
+  Do testów potrzebuję kilku przykładów danych wejściowych i oczekiwanych odpowiedzi. Do wyceny przydadzą się też przewidywana liczba zapytań i wymagania dotyczące przetwarzania danych. Wdrożenie jednej funkcji AI w aplikacji kosztuje od $2 200.

@@ -42,8 +42,8 @@ content: |-
 
   W VetSpace rozwijam CRM dla klinik, w tym obsługę ich danych i subskrypcji Stripe. W DigiPulse Laravel odpowiada za zarządzanie monitorami i powiadomieniami, a osobny serwis Go wykonuje kontrole sieciowe. W obu produktach nowe moduły muszą współpracować z istniejącą logiką.
 
-  Dla jednego z klientów rozwijałem platformę marketplace w Laravelu, z ogłoszeniami i płatnymi pakietami. Oprócz podstawowych funkcji pracowałem na niej nad czatem, rozmowami wideo przez LiveKit, wyszukiwaniem w Meilisearch oraz zgłoszeniami do pomocy technicznej, które powstają również z wiadomości email.
+  Dla jednego z klientów rozwijałem platformę marketplace w Laravelu, z ogłoszeniami i płatnymi pakietami. Oprócz podstawowych funkcji rozwijałem czat, rozmowy wideo przez LiveKit, wyszukiwanie w Meilisearch oraz obsługę zgłoszeń do pomocy technicznej, tworzonych również z wiadomości email.
 
-  Dodanie podobnej funkcji do istniejącej aplikacji wymaga najpierw poznania jej struktury danych, zależności i sposobu wdrażania. Dopiero na tej podstawie można zaplanować zmiany i testy tak, aby nowy moduł współpracował z resztą systemu.
+  Dodanie podobnej funkcji do istniejącej aplikacji wymaga najpierw poznania jej struktury danych, zależności i sposobu wdrażania. Znając te elementy, mogę zaplanować zmiany i testy tak, żeby nowy moduł współpracował z resztą systemu.
 
-  Możemy zacząć od opisu tego, jakie działania ma wykonywać użytkownik, oraz obejrzenia obecnej aplikacji lub makiet. Na tej podstawie zaproponuję sposób realizacji, wycenę i przewidywany czas prac.
+  Opisz, co użytkownik ma robić w aplikacji, i pokaż obecną wersję lub makiety. Pozwoli mi to zaproponować sposób realizacji, wycenę i przewidywany czas prac.

@@ -36,8 +36,8 @@ faq:
 content: |-
   ## Pomiar konkretnej operacji
 
-  Długie generowanie raportu i powolny zapis na wizytę mogą mieć różne przyczyny, dlatego najpierw trzeba odtworzyć opóźnienie odczuwane przez użytkowników. W tym celu mierzę czas odpowiedzi, sprawdzam ilość danych i zależności zewnętrzne. Kiedy wiadomo już, gdzie powstaje opóźnienie, możemy uzgodnić poprawkę i sposób zmierzenia jej efektu.
+  Raport może generować się zbyt długo z innego powodu niż zapis na wizytę. Dlatego najpierw odtwarzam operację, przy której użytkownicy zauważają opóźnienie. W tym celu mierzę czas odpowiedzi, sprawdzam ilość danych i zależności zewnętrzne. Kiedy wiadomo już, gdzie powstaje opóźnienie, możemy uzgodnić poprawkę i sposób zmierzenia jej efektu.
 
   Po poprawce powtarzam tę samą operację z porównywalną ilością danych i zestawiam czas wykonania oraz zużycie zasobów. Jednocześnie sprawdzam poprawność odpowiedzi, ponieważ szybszy raport nadal musi zwracać te same dane.
 
-  Na początek pokaż stronę lub operację, na którą trzeba czekać, i opisz, kiedy pojawia się opóźnienie. Jeśli masz już logi lub pomiary, pomogą one w diagnozie. Koszt diagnozy i prac nad jedną konkretną przyczyną zaczyna się od $1 200.
+  Na początek pokaż stronę lub operację, na którą trzeba czekać, i opisz, kiedy pojawia się opóźnienie. Jeśli masz już logi lub pomiary, pomogą one w diagnozie. Diagnoza i prace nad rozwiązaniem wskazanego problemu kosztują od $1 200. W tej cenie zajmuję się jedną zidentyfikowaną przyczyną opóźnienia.

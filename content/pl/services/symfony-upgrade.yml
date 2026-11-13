@@ -1,7 +1,7 @@
 indexable: false
 title: Aktualizacja Symfony
 description: "Aktualizacja Symfony i PHP: zależności, przestarzałe wywołania, testy i przygotowanie wydania."
-summary: "Aktualizuję Symfony i PHP w istniejących systemach, sprawdzając zgodność bundli i dostosowując konfigurację, przestarzałe wywołania oraz własne rozszerzenia. Po tych zmianach testuję powiązane operacje i przygotowuję aplikację do wdrożenia. Przy migracji autorskiej aplikacji PHP do Symfony przygotowuję osobny plan stopniowego przenoszenia jej części."
+summary: "Aktualizuję Symfony i PHP w istniejących systemach, sprawdzając zgodność bundli i dostosowując konfigurację, przestarzałe wywołania oraz własne rozszerzenia. Następnie testuję procesy, których dotyczyła aktualizacja, i przygotowuję aplikację do wdrożenia. Przy migracji autorskiej aplikacji PHP do Symfony przygotowuję osobny plan stopniowego przenoszenia jej części."
 icon: i-lucide-refresh-cw
 group: support
 order: 21
@@ -36,6 +36,6 @@ content: |-
 
   W pracy nad sklepami biletowymi miałem do czynienia z różnymi wersjami Symfony i PHP. Przejście między wersjami może wymagać zmian w konfiguracji, zewnętrznych bundlach i własnym kodzie, dlatego wycenę zaczynam od ich przeglądu.
 
-  Ostrzeżenia o przestarzałych wywołaniach pomagają znaleźć część potrzebnych zmian, natomiast zgodność zależności i zmiany API sprawdzam osobno. Jeśli bundle nie jest już utrzymywany, proponuję zamiennik lub ustalamy, jak zmienić funkcję, która z niego korzysta. Następnie sprawdzam integracje i scenariusze biznesowe, których dotyczyła aktualizacja.
+  Ostrzeżenia o przestarzałych wywołaniach wskazują część miejsc do poprawy. Osobno sprawdzam zgodność zależności i zmiany w API. Jeśli bundle nie jest już utrzymywany, proponuję zamiennik lub ustalamy, jak zmienić funkcję, która z niego korzysta. Następnie sprawdzam integracje i scenariusze biznesowe, których dotyczyła aktualizacja.
 
-  Na początek prześlij wersje Symfony i PHP, pliki zależności oraz powód aktualizacji. Na ich podstawie określę zakres aktualizacji do docelowej wersji. Koszt prac zaczyna się od $1 800. Jeśli potrzebna jest migracja autorskiego systemu PHP do Symfony, przygotowuję osobną wycenę.
+  Na początek prześlij wersje Symfony i PHP, pliki zależności oraz powód aktualizacji. Pozwolą mi one ocenić, co trzeba zmienić, aby przejść na docelową wersję. Aktualizacja kosztuje od $1 800. Jeśli potrzebna jest migracja autorskiego systemu PHP do Symfony, przygotowuję osobną wycenę.

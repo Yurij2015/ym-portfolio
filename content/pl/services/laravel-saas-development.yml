@@ -39,8 +39,8 @@ content: |-
 
   W VetSpace każda klinika ma własną bazę danych, a subskrypcje działają przez Stripe i Cashier. W nowym produkcie SaaS sposób oddzielenia danych klientów dobieram do wymagań dotyczących dostępu, kopii zapasowych i infrastruktury.
 
-  Obok dostępu do danych trzeba przemyśleć reguły subskrypcji: kiedy użytkownik otrzymuje dostęp, jak zmienia plan i co dzieje się po nieudanej płatności. Od tych zasad zależą funkcje produktu. Na przykład na platformie marketplace jednego z klientów zakupiony pakiet określał, ile aktywnych ogłoszeń i wersji roboczych może mieć użytkownik.
+  Razem z dostępem do danych ustalamy zasady subskrypcji: kiedy użytkownik otrzymuje dostęp, jak zmienia plan i co dzieje się po nieudanej płatności. Od tych zasad zależą funkcje produktu. Na przykład na platformie marketplace jednego z klientów zakupiony pakiet określał, ile aktywnych ogłoszeń i wersji roboczych może mieć użytkownik.
 
-  Na początek wystarczy więc opisać, kto będzie korzystać z Twojego SaaS, w czym produkt ma pomagać i jak planujesz pobierać opłaty. Pomoże to wyznaczyć pierwszy etap i uzgodnić jego rezultat.
+  Na początek wystarczy więc opisać, kto będzie korzystać z Twojego SaaS, w czym produkt ma pomagać i jak planujesz pobierać opłaty. W ten sposób ustalimy, co zbudować w pierwszym etapie i co będzie gotowe po jego zakończeniu.
 
-  Koszt pierwszego uzgodnionego etapu prac zaczyna się od $4 800. Przed rozpoczęciem zapisujemy w wycenie, jakie funkcje, zasady rozliczeń i integracje obejmuje ten etap.
+  Pierwszy uzgodniony etap prac kosztuje od $4 800. Wycena określa, jakie funkcje, scenariusze rozliczeń i integracje obejmuje, zanim zaczniemy pisać kod.
