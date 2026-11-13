@@ -1,5 +1,5 @@
 title: VetSpace
-description: A two-sided veterinary platform — an SEO clinic catalog and a subscription-based CRM with appointments and patient records
+description: "A platform for veterinary clinics with a public directory and a subscription CRM for appointments, visits and patient records"
 url: https://vetspace.pro
 date: "2026-09-19"
 tags:
@@ -42,15 +42,15 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  A two-sided veterinary platform — an SEO clinic catalog and a subscription-based CRM with appointments and patient records. A public clinic catalog built for SEO-first customer acquisition, and a subscription-based CRM (appointments, visits, patient records) as separate Vue/Nuxt apps on top of a single Laravel API. Database-per-tenant architecture, Stripe subscriptions via Cashier, GraphQL + REST, and AI-assisted visit analysis through a dedicated Go microservice.
+  VetSpace combines a public directory of veterinary clinics with a subscription CRM for appointments, visits and patient records. The directory and CRM run as separate Vue/Nuxt applications with a shared Laravel API. Each clinic has its own database, subscriptions use Stripe and Cashier, and a separate Go service handles AI-assisted visit analysis.
 
   ## Key Features
 
-  - **Two-sided funnel** - an SEO-first public catalog acquires clinics; the subscription CRM (appointments, patient records) retains them
-  - **True tenant isolation** - database-per-tenant keeps every clinic's data separate and makes GDPR export/delete a per-database operation
-  - **Dual API surface** - GraphQL for complex catalog queries, REST for the CRM — one Laravel codebase
-  - **Billing built-in** - Stripe subscriptions via Cashier: trials, plan changes, dunning
-  - **AI where it helps** - visit analysis runs in a dedicated Go microservice, keeping the main API unburdened
+  - **Directory and CRM** — public clinic pages and a separate workspace for visits and patient records
+  - **Separate databases** — each clinic’s data is stored in its own database
+  - **GraphQL and REST** - GraphQL for complex catalog queries, REST for the CRM — one Laravel codebase
+  - **Stripe subscriptions** - Stripe subscriptions via Cashier: trials, plan changes, dunning
+  - **Visit analysis** — AI processing runs in a separate Go service
 
   ## Tech Stack
 

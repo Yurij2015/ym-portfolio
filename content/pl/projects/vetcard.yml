@@ -36,10 +36,10 @@ content: |
   ## Kluczowe funkcje
 
   - **Jeden deployment — wiele klinik** — aplikacja routuje po slugu kliniki; żądania rezerwacji i slotów są proxy'owane do backendu tenant danej kliniki
-  - **Katalog SEO-first** — 590+ klinik ze stronami SSR, danymi strukturalnymi i zlokalizowanymi trasami
+  - **Strony katalogu** — 590+ klinik ze stronami SSR, danymi strukturalnymi i zlokalizowanymi trasami
   - **Branding każdej kliniki** — strona kliniki jest tematyzowana jej kolorem, z badge'em "Powered by VetSpace"
-  - **Realny UX rezerwacji** — wolne sloty pokazują liczbę dostępnych lekarzy z kodowaniem kolorami
-  - **Pełna lokalizacja** — ukraiński, angielski i polski z routingiem opartym na prefiksach
+  - **Wybór terminu wizyty** — wolne sloty pokazują liczbę dostępnych lekarzy z kodowaniem kolorami
+  - **Trzy wersje językowe** — ukraiński, angielski i polski z routingiem opartym na prefiksach
 
   ## Stack technologiczny
 

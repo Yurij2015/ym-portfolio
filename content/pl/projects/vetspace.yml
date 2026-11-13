@@ -1,5 +1,5 @@
 title: VetSpace
-description: Dwustronna platforma weterynaryjna — katalog SEO klinik i CRM oparty na subskrypcji z wizytami i rekordami pacjentów
+description: "Platforma dla klinik weterynaryjnych: publiczny katalog i CRM w subskrypcji do rezerwacji wizyt, ich obsługi oraz prowadzenia kart pacjentów"
 url: https://vetspace.pro
 date: "2026-09-19"
 tags:
@@ -42,15 +42,15 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  Dwustronna platforma weterynaryjna — katalog SEO klinik i CRM oparty na subskrypcji z wizytami i rekordami pacjentów. Publiczny katalog klinik zbudowany pod kątem pozyskiwania klientów przez SEO oraz CRM oparty na subskrypcji (wizyty, rekordy pacjentów) jako osobne aplikacje Vue/Nuxt na jednym API Laravel. Architektura database-per-tenant, subskrypcje Stripe przez Cashier, GraphQL + REST oraz analiza wizyt wspomagana AI przez dedykowany mikroserwis w Go.
+  VetSpace łączy publiczny katalog klinik weterynaryjnych z CRM w subskrypcji do rezerwacji wizyt, ich obsługi i prowadzenia kart pacjentów. Katalog i CRM działają jako osobne aplikacje Vue/Nuxt ze wspólnym API w Laravelu. Każda klinika ma własną bazę danych, subskrypcje obsługują Stripe i Cashier, a do analizy wizyt z pomocą AI służy osobny serwis Go.
 
   ## Kluczowe funkcje
 
-  - **Dwustronny lejek** - katalog SEO pozyskuje kliniki, a CRM w subskrypcji (wizyty, rekordy pacjentów) je utrzymuje
-  - **Prawdziwa izolacja tenantów** - database-per-tenant trzyma dane każdej kliniki osobno, a eksport/usuwanie GDPR to operacja na bazie
-  - **Dwa interfejsy API** - GraphQL dla złożonych zapytań katalogu, REST dla CRM — jedna baza kodu Laravel
-  - **Billing od ręki** - subskrypcje Stripe przez Cashier: triale, zmiany planów, dunning
-  - **AI tam, gdzie pomaga** - analizę wizyt wykonuje dedykowany mikroserwis w Go, nie obciążając głównego API
+  - **Katalog i CRM** — publiczne strony klinik i osobny panel do obsługi wizyt oraz kart pacjentów
+  - **Osobne bazy danych** — dane każdej kliniki są przechowywane w oddzielnej bazie
+  - **GraphQL i REST** - GraphQL dla złożonych zapytań katalogu, REST dla CRM — jedna baza kodu Laravel
+  - **Subskrypcje Stripe** - subskrypcje Stripe przez Cashier: triale, zmiany planów, dunning
+  - **Analiza wizyt** — przetwarzanie z pomocą AI odbywa się w osobnym serwisie Go
 
   ## Stos technologiczny
 

@@ -1,5 +1,5 @@
 title: DigiPulse
-description: "SaaS do monitorowania dostępności: architektura event-driven — Laravel (Octane, Reverb) i Filament wysyłają zadania przez Redis do lekkiego workera w Go; serwer MCP udostępnia dane monitoringu asystentom AI; powiadomienia Telegram/e-mail"
+description: "SaaS do monitorowania dostępności: architektura event-driven — Laravel (Octane, Reverb) i Filament wysyłają zadania przez Redis do osobnego serwisu Go; serwer MCP udostępnia dane monitoringu asystentom AI; powiadomienia Telegram/e-mail"
 url: https://digipulse.cloud
 date: "2026-04-17"
 tags:
@@ -41,12 +41,12 @@ content: |
 
   ## Kluczowe funkcje
 
-  - **Dedykowany silnik w Go** - sprawdzanie dostępności wykonuje osobny serwis w Go, więc ciągłe odpytywanie co 60 sekund nie spowalnia aplikacji Laravel
+  - **Osobny serwis monitoringu** — serwis Go sprawdza strony co 60 sekund, a Laravel zarządza monitorami, kontaktami i powiadomieniami
   - **Dashboard w czasie rzeczywistym** - websockety Reverb przesyłają zmiany statusu do UI na żywo, bez odświeżania
   - **Octane + Filament** - Laravel rezydentny w pamięci z pełnym panelem administracyjnym dla monitorów, kontaktów i reguł alertów
   - **Serwer MCP** - monitory i incydenty dostępne dla asystentów AI (Claude, Cursor) przez Model Context Protocol
   - **Google OAuth + Turnstile** - logowanie bez hasła i ochrona przed botami na formularzach publicznych
-  - **Self-hosted** - wdrożone na własnym homelab Proxmox, którym zarządzam end-to-end
+  - **Self-hosted** — wdrożony w środowisku Proxmox, w którym administruję maszynami wirtualnymi i usługami
 
   ## Stos technologiczny
 

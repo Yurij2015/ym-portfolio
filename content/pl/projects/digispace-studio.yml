@@ -25,7 +25,7 @@ content: |
 
   ## Kluczowe funkcje
 
-  - **Niszowe pozycjonowanie** — strona mówi bezpośrednio do klinik weterynaryjnych i marek pet, a nie ogólnej publiczności
+  - **Dla klinik weterynaryjnych i marek pet** — opisy usług i treści dotyczą współpracy z tymi klientami
   - **Edycja blokowa** — bloki Stackable i Ultimate Gutenberg pozwalają budować nowe landing page bez kodu
-  - **Motyw potomny** — customizacje żyją w Blocksy child theme, więc aktualizacje motywu nie nadpisują designu
+  - **Motyw potomny** — zmiany wyglądu są zapisane w motywie potomnym Blocksy, oddzielnie od plików motywu głównego
   - **Blog + lead capture** — content marketing pod SEO z Contact Form 7 do zapytań

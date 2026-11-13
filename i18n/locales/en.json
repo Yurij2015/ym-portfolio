@@ -23,7 +23,7 @@
   },
   "projectsCta": {
     "title": "Like what you see?",
-    "description": "Tell me about your project — I'll propose an architecture and estimate within 24 hours."
+    "description": "Tell me what you would like to build. We can discuss the task and the information needed for an estimate."
   },
   "projects": {
     "back": "Back to projects"
@@ -37,13 +37,13 @@
   "tech": {
     "php": "My core server-side language — 8+ years in production",
     "laravel": "Primary framework: Octane, Reverb, Filament, Cashier",
-    "symfony": "Enterprise backends and high-load ticketing for Formula 1",
+    "symfony": "Orders, payments and APIs in ticketing platforms",
     "filament": "Custom admin panels and CMS",
     "vue": "SPA frontends and interactive interfaces",
     "nuxt": "SEO-friendly SSR sites — like this portfolio",
     "typescript": "Type-safe frontends and tooling",
     "tailwindcss": "Utility-first UI styling",
-    "vite": "Instant frontend builds",
+    "vite": "Frontend builds and module updates during development",
     "docker": "Containerization from dev to production",
     "terraform": "IaC: containers on self-managed VMs via the Docker SSH provider",
     "digitalocean": "DigiSpace's first host — droplets, until more VMs meant more cost",
@@ -52,7 +52,7 @@
     "caddy": "Two-tier reverse proxy for multi-tenant routing",
     "github-actions": "CI/CD: build, test and deploy on every push",
     "hostinger": "Hosting for some client and personal sites",
-    "go": "Lightweight monitoring workers for DigiPulse",
+    "go": "A separate uptime monitoring service for DigiPulse",
     "postgresql": "Relational DB, including multi-tenant setups",
     "mysql": "Databases for Laravel projects and CMS",
     "redis": "Queues, caching and event-driven architecture",

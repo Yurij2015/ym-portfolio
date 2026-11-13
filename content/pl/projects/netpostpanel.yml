@@ -28,16 +28,16 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  Wewnętrzna platforma AI do operacji na treści, która zamienia research tematu w gotową treść: pełny pipeline RAG (Google Custom Search + RSS → scraping → generacja multi-provider → wektoryzacja), plus wersjonowane zewnętrzne API zasilające procesy treściowe innych projektów, w tym pipeline bloga DigiSpace.
+  NetPostPanel to wewnętrzna platforma do wyszukiwania źródeł i przygotowywania treści z pomocą AI. Łączy Google Custom Search, RSS, scraping stron, generowanie tekstu i wyszukiwanie wektorowe. Inne aplikacje korzystają z tych funkcji przez wersjonowane API, między innymi w procesie przygotowywania artykułów dla DigiSpace.
 
   ## Kluczowe funkcje
 
   - **Zewnętrzne API** - wersjonowane `POST /api/v1/generate` + `/translate` z kluczami i limitami per klient udostępnia cały pipeline innym aplikacjom, synchronicznie lub asynchronicznie z callbackami
   - **Auto Pilot** - codzienne zaplanowane uruchomienia generują treść z nowych inspiracji lub własnych tematów, w pełni automatycznie
-  - **AI bez przywiązania do dostawcy** - Gemini i OpenAI za abstrakcją driverów, więc zmiana modelu to konfiguracja, nie refaktoryzacja
+  - **Sterowniki dostawców AI** — integracje Gemini i OpenAI mają wspólny interfejs; obsługiwany model wybiera się w konfiguracji
   - **Pipeline semantyczny** - wyszukiwanie wektorowe na Qdrant deduplikuje i grupuje newsy zanim trafią do generacji
-  - **Autonomiczna agregacja** - auto-wykrywanie kanałów RSS oraz Google Custom Search plus scraping zamieniają temat w samozasilające się źródło treści
-  - **Widoczne wywołania LLM** - każda generacja jest śledzona w Langfuse: tokeny, opóźnienie, koszt
+  - **Zbieranie źródeł** — wyszukiwanie kanałów RSS, Google Custom Search i scraping stron dla wybranych tematów
+  - **Śledzenie wywołań LLM** - każda generacja jest śledzona w Langfuse: tokeny, opóźnienie, koszt
   - **Dostęp oparty na rolach** - role admin/content manager/editor, każde zapytanie ograniczone do właściciela poza adminem
 
   ## Stos technologiczny

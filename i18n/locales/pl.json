@@ -23,7 +23,7 @@
   },
   "projectsCta": {
     "title": "Podobają Ci się projekty?",
-    "description": "Opowiedz o swoim — zaproponuję architekturę i wycenę w 24 godziny."
+    "description": "Opisz, co chcesz zrobić. Omówimy zadanie i informacje potrzebne do wyceny."
   },
   "projects": {
     "back": "Powrót do projektów"
@@ -37,13 +37,13 @@
   "tech": {
     "php": "Mój główny język backendowy — ponad 8 lat w produkcji",
     "laravel": "Podstawowy framework: Octane, Reverb, Filament, Cashier",
-    "symfony": "Backendy enterprise i wysokowydajny ticketing dla Formula 1",
+    "symfony": "Zamówienia, płatności i API w platformach sprzedaży biletów",
     "filament": "Własne panele administracyjne i CMS",
     "vue": "Frontendy SPA i interaktywne interfejsy",
     "nuxt": "Strony SSR z SEO — jak to portfolio",
     "typescript": "Frontend i narzędzia z bezpieczeństwem typów",
     "tailwindcss": "Stylowanie utility-first",
-    "vite": "Błyskawiczne buildy frontendu",
+    "vite": "Budowanie frontendu i aktualizacje modułów podczas pracy",
     "docker": "Konteneryzacja od deva po produkcję",
     "terraform": "IaC: kontenery na własnych VM przez dostawcę Docker SSH",
     "digitalocean": "Pierwszy hosting DigiSpace — droplety, dopóki więcej maszyn nie oznaczało więcej kosztów",
@@ -52,7 +52,7 @@
     "caddy": "Dwupoziomowe reverse proxy dla routingu multi-tenant",
     "github-actions": "CI/CD: build, testy i deploy przy każdym pushu",
     "hostinger": "Hosting dla części stron klienckich i własnych",
-    "go": "Lekkie workery monitoringu DigiPulse",
+    "go": "Osobny serwis sprawdzania dostępności DigiPulse",
     "postgresql": "Relacyjna baza danych, także multi-tenant",
     "mysql": "Bazy danych dla projektów Laravel i CMS",
     "redis": "Kolejki, cache i architektura event-driven",

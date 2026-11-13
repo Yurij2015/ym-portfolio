@@ -3,8 +3,8 @@ about:
   title: About Me
   description: |
     Full-Stack developer with 8+ years of commercial experience. I build and maintain SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
-    Deep expertise in Laravel (Filament, Octane, FrankenPHP) and Symfony, as well as Vue.js/Nuxt, multi-tenant architectures, and payment system integrations.
-description: "8+ years of commercial development: SaaS, CRM and high-load ticketing platforms for Formula 1, MotoGP, EICMA and EuroLeague. Laravel/Symfony + Vue/Nuxt, AI integrations. I take products from empty repo to paying users."
+    I work with Laravel (Filament, Octane, FrankenPHP) and Symfony on the backend, and Vue.js and Nuxt on the frontend. My tasks include separating customer data in SaaS products and integrating payment systems.
+description: "I have more than 8 years of experience developing and maintaining SaaS products, CRM systems and ticketing platforms. I use PHP, Laravel, Symfony and Vue/Nuxt to build user portals, payments, subscriptions and APIs, with Docker and CI/CD for deployment."
 experience:
   title: Work Experience
   items:
@@ -20,7 +20,7 @@ experience:
     - position: Founder, Software Architect & Product Owner
       date: 2022 — Present
       current: true
-      description: "Founded the agency and own its products end to end: architecture, product decisions, development and infrastructure for DigiPulse, VetSpace, VetCard and NetPostPanel."
+      description: "I founded DigiSpace and develop DigiPulse, VetSpace, VetCard and NetPostPanel, working on product features, code and infrastructure."
       company:
         name: DigiSpace
         logo: i-simple-icons-laravel
@@ -111,7 +111,7 @@ testimonials:
       name: 'LinkedIn'
       description: 'Recommendation on LinkedIn'
       to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
-  - quote: "For 8+ years I've turned business problems into working products: from architecture and payments to deployment and scaling. My code sells tickets for Formula 1 and MotoGP, and my own SaaS products serve paying customers. Need a developer who owns the outcome? Message me."
+  - quote: "I work on ticketing platforms and my own SaaS products, covering backend logic, interfaces, payments and deployment. If you need a developer for a new module or help maintaining an existing application, we can discuss the task."
     author:
       name: Yurii Mokryi
       description: Senior Full-Stack PHP Developer • 8+ years • Poznań
@@ -125,16 +125,16 @@ faq:
     - title: Working together
       questions:
         - label: Do you take over existing projects?
-          content: "Yes. Most of my work is developing and maintaining production products: codebase audits, refactoring and new features without stopping releases."
+          content: "Yes. Much of my work involves developing and maintaining applications after launch, including code reviews, refactoring and new features. Before making changes, I get to know the project and its release process."
         - label: What does the collaboration process look like?
           content: A short brief → estimate with deadlines → development with demos every 1–2 weeks → deployment and support.
         - label: What happens after the release?
-          content: Monitoring, bug fixes and product evolution — I stay on support for as long as you need.
+          content: "I can continue working on the product, fixing bugs, reviewing monitoring alerts and adding features. We agree separately on the scope of support and my availability."
     - title: Technologies
       questions:
         - label: What technologies do you work with?
           content: Laravel (Filament, Octane, FrankenPHP) and Symfony on the backend, Vue.js/Nuxt on the frontend, Docker, Terraform, CI/CD, payment integrations and AI.
         - label: Can you work with our in-house team?
-          content: "Yes, I integrate comfortably into existing teams: code reviews, shared pipeline, documentation and regular demos."
+          content: "Yes. I work with the team’s backlog, prepare pull requests and take part in code reviews and technical discussions. We agree on reports and demos at the start of the collaboration."
         - label: What timezone do you work in?
           content: CET (Poznań, Poland), with flexible overlap for Europe and the US.

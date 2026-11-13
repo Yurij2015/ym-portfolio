@@ -28,16 +28,16 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  An internal AI content-operations platform that turns topic research into publishable content: a full RAG pipeline (Google Custom Search + RSS → scraping → multi-provider generation → vectorization), plus a versioned external API that powers content workflows in other projects, including the DigiSpace blog pipeline.
+  NetPostPanel is an internal platform for finding sources and preparing content with AI. It combines Google Custom Search, RSS, page scraping, text generation and vector search. Other applications use these features through a versioned API, including the article preparation workflow for DigiSpace.
 
   ## Key Features
 
   - **External API** - a versioned `POST /api/v1/generate` + `/translate` API with per-client keys and rate limits exposes the whole pipeline to other apps, sync or async with callbacks
   - **Auto Pilot** - scheduled daily runs generate content from new inspiration items or custom topics, fully unattended
-  - **Provider-agnostic AI** - Gemini and OpenAI sit behind a driver abstraction, so swapping models is config, not refactoring
+  - **AI provider drivers** — Gemini and OpenAI integrations share an interface; supported models are selected in configuration
   - **Semantic pipeline** - Qdrant vector search deduplicates and clusters incoming stories before they reach generation
-  - **Autonomous aggregation** - RSS auto-discovery and Google Custom Search plus scraping turn a bare topic into a self-feeding content source
-  - **Observable LLM calls** - every generation is traced in Langfuse: tokens, latency, cost
+  - **Source collection** — RSS discovery, Google Custom Search and page scraping for selected topics
+  - **LLM call tracking** - every generation is traced in Langfuse: tokens, latency, cost
   - **Role-based access** - admin/content manager/editor roles, with every query scoped to its owner unless admin
 
   ## Tech Stack

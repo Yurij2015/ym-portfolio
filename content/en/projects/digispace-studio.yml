@@ -25,7 +25,7 @@ content: |
 
   ## Key Features
 
-  - **Niche positioning** — the site speaks directly to vet clinics and pet brands, not a generic agency pitch
+  - **For veterinary clinics and pet brands** — service descriptions and site content focus on these clients
   - **Block-based editing** — Stackable and Ultimate Gutenberg blocks let non-developers build new landing pages without touching code
-  - **Child theme** — customizations live in a Blocksy child theme, so theme updates never wipe the design
+  - **Child theme** — design changes are stored in a Blocksy child theme, separately from the parent theme files
   - **Blog + lead capture** — content marketing for SEO with Contact Form 7 for inquiries

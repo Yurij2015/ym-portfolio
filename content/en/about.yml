@@ -6,18 +6,18 @@ content: |
 
   ## My Stack
 
-  Deep expertise in **Laravel** (Filament, Octane, FrankenPHP) and **Symfony**, as well as Vue.js/Nuxt, multi-tenant architectures, payment system integrations (Stripe, Revolut, Dalenys), and third-party APIs. I regularly work with Linux/SSH, Docker, Caddy, CI/CD, Proxmox, and Terraform — from development to production deployment and incident response.
+  I work with **Laravel** (Filament, Octane, FrankenPHP) and **Symfony** on the backend, and Vue.js and Nuxt on the frontend. In SaaS projects, I handle customer data separation, subscriptions and integrations with Stripe, Revolut, Dalenys and other APIs. For deployment and maintenance, I use Linux/SSH, Docker, Caddy, CI/CD, Proxmox and Terraform.
 
-  ## Technical Philosophy
+  ## How I work
 
-  My technical philosophy is built on **pragmatism** and **results**, rooted in a few years I spent working in science: a habit of methodological thinking (hypothesis → test → data-driven conclusion) that carries over into architecture design, requirements analysis, and development. Great software starts with understanding the business problem and building the simplest effective solution. I aim to build systems that are maintainable, performant, and solve real problems.
+  Before becoming a developer, I spent several years working in science. That left me with a habit of testing assumptions: first establish what is known about a problem, then choose a way to test it and draw conclusions. When working on an application, I start by understanding what users need and how the system works now. I then propose changes and agree on how to check the result.
 
   ## Beyond the Screen
 
-  When I'm not coding, you'll find me exploring coffee shops in Poznań, keeping up with the latest AI and cloud technologies, or contributing to open-source projects.
+  Outside work, I enjoy exploring coffee shops in Poznań, following AI and cloud technologies, and contributing to open-source projects.
 
-  Have a product to build or rescue? [Tell me about it](https://t.me/YuriiMokryi) — I'll suggest an approach and an estimate. Or browse my [projects](/projects).
-description: Learn more about my journey as a Senior Full-Stack PHP Developer based in Poznań, my stack, and my experience working on high-load production platforms.
+  If you need a developer for a new or existing product, [tell me about the task](https://t.me/YuriiMokryi). We can discuss what needs doing and what information I will need to estimate the work. You can find examples in my [projects](/projects).
+description: "My experience with PHP development, ticketing platforms and my own SaaS products."
 images:
   - src: /images/about/workspace.jpeg
     alt: My workstation

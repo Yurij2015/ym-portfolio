@@ -36,10 +36,10 @@ content: |
   ## Key Features
 
   - **One deployment, many clinics** — a single app routes by clinic slug; booking and slot requests are proxied to each clinic's own tenant backend
-  - **SEO-first catalog** — 590+ clinics with SSR pages, structured data and localized routes built to be indexed
+  - **Directory pages** — 590+ clinics with SSR pages, structured data and localized routes built to be indexed
   - **Per-clinic branding** — every clinic page is themed by its own brand color, with a "Powered by VetSpace" badge
-  - **Real booking UX** — available slots show free-doctor counts with scarcity color-coding
-  - **Fully localized** — Ukrainian, English and Polish with prefix-based routing
+  - **Appointment time selection** — available slots show free-doctor counts with scarcity color-coding
+  - **Three languages** — Ukrainian, English and Polish with prefix-based routing
 
   ## Tech Stack
 

@@ -1,5 +1,5 @@
 title: O mnie
-description: Dowiedz się więcej o mojej drodze jako Senior Full-Stack PHP Developer z Poznania, moim stosie technologicznym i doświadczeniu w pracy nad platformami produkcyjnymi o wysokim obciążeniu.
+description: "Moje doświadczenie w programowaniu w PHP, pracy nad platformami sprzedaży biletów i rozwijaniu własnych produktów SaaS."
 content: |
   Cześć, jestem **Yurii Mokryi**, Senior Full-Stack PHP Developer z Poznania. Mam ponad 8 lat komercyjnego doświadczenia: buduję i utrzymuję produkty SaaS, systemy CRM, platformy ticketingowe/e-commerce oraz REST API.
 
@@ -7,17 +7,17 @@ content: |
 
   ## Mój stos technologiczny
 
-  Głęboka znajomość **Laravel** (Filament, Octane, FrankenPHP) oraz **Symfony**, a także Vue.js/Nuxt, architektur wielotenancyjnych, integracji systemów płatności (Stripe, Revolut, Dalenys) i zewnętrznych API. Regularnie pracuję z Linux/SSH, Docker, Caddy, CI/CD, Proxmox i Terraform — od rozwoju po wdrożenie produkcyjne i obsługę incydentów.
+  Na backendzie pracuję z **Laravelem** (Filament, Octane, FrankenPHP) i **Symfony**, a na frontendzie z Vue.js i Nuxt. W projektach SaaS zajmuję się oddzieleniem danych klientów, subskrypcjami oraz integracjami ze Stripe, Revolut, Dalenys i innymi API. Do wdrażania i utrzymania wykorzystuję Linux/SSH, Docker, Caddy, CI/CD, Proxmox i Terraform.
 
-  ## Filozofia techniczna
+  ## Jak pracuję
 
-  Moja filozofia techniczna opiera się na **pragmatyzmie** i **wynikach**, a jej korzenie sięgają kilku lat pracy w nauce: nawyk myślenia metodologicznego (hipoteza → weryfikacja → wniosek oparty na danych) przenoszę na projektowanie architektury, analizę wymagań i rozwój oprogramowania. Świetne oprogramowanie zaczyna się od zrozumienia problemu biznesowego i zbudowania najprostszego, skutecznego rozwiązania. Dążę do tworzenia systemów, które są łatwe w utrzymaniu, wydajne i rozwiązują realne problemy.
+  Zanim zająłem się programowaniem, przez kilka lat pracowałem w nauce. Został mi z tego nawyk sprawdzania założeń: najpierw ustalam, co wiadomo o problemie, potem wybieram sposób weryfikacji i wyciągam wnioski. Przy pracy nad aplikacją zaczynam od potrzeb użytkowników i poznania obecnego działania systemu. Następnie proponuję zmiany i uzgadniam, jak sprawdzimy ich efekt.
 
   ## Poza ekranem
 
-  Kiedy nie programuję, można mnie znaleźć odkrywającego kawiarnie w Poznaniu, śledzącego najnowsze technologie AI i chmurowe, lub kontrybuującego do projektów open-source.
+  Po pracy lubię odkrywać kawiarnie w Poznaniu, śledzę rozwój AI i technologii chmurowych oraz uczestniczę w projektach open source.
 
-  Masz produkt do zbudowania lub uratowania? [Opowiedz mi o nim](https://t.me/YuriiMokryi) — zaproponuję rozwiązanie i wycenę. Albo zobacz moje [projekty](/projects).
+  Jeśli szukasz programisty do nowego lub istniejącego produktu, [opisz zadanie](https://t.me/YuriiMokryi). Omówimy, co trzeba zrobić i jakie informacje będą potrzebne do wyceny. Przykłady mojej pracy znajdziesz w [projektach](/projects).
 images:
   - src: /images/about/workspace.jpeg
     alt: Moje stanowisko pracy

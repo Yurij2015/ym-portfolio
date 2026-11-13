@@ -1,5 +1,5 @@
 title: DigiSpace
-description: "The agency's multilingual (EN/UK/PL) production site with a custom CMS — a Filament admin panel with a rich content editor, content translations, JSON-LD and localized sitemaps built in, alongside the legacy Inertia + Vue admin"
+description: "The agency’s multilingual website (EN/UK/PL), built with Laravel and a custom CMS. A Filament panel manages content and translations, with JSON-LD and localized sitemaps. The legacy Inertia and Vue admin panel runs alongside it."
 url: https://digispace.pro
 date: "2022-10-05"
 tags:
@@ -38,16 +38,16 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  The production website behind digispace.pro — the agency's public site, admin panel and custom CMS in a single Laravel app, now fully multilingual (EN/UK/PL) with a Filament admin panel running alongside the legacy Inertia + Vue one. The same code that runs the live site is available on GitHub.
+  DigiSpace combines the agency’s public website, admin panel and custom CMS in one Laravel application. Content and interface text are available in English, Ukrainian and Polish. Admin screens are gradually moving to Filament, while the legacy Inertia and Vue panel continues to run alongside it. The application’s source code is available on GitHub.
 
   ## Key Features
 
   - **Filament admin panel** - a parallel `/control` panel (24 resources) with a TipTap rich editor, straight-to-MinIO image uploads and content-first navigation, rolled out resource-by-resource next to the existing Inertia admin
-  - **Multilingual by design** - both content and structural UI strings (menus, footer, buttons) are translated per locale, not just page text, with hreflang-aware localized routing
-  - **SEO built in** - JSON-LD structured data, localized sitemaps and proper 404 handling across every locale
-  - **Monolith done right** - public site and two admin surfaces live in one Laravel app, no separate API to maintain
-  - **Self-managed content** - pages, services and portfolio entries are edited in the CMS — no deploy needed for a text or translation change
-  - **Quality gates** - PHPUnit tests and PHPStan static analysis run in CI
+  - **Content and interface translations** - both content and structural UI strings (menus, footer, buttons) are translated per locale, not just page text, with hreflang-aware localized routing
+  - **SEO configuration** - JSON-LD structured data, localized sitemaps and proper 404 handling across every locale
+  - **Shared codebase** - public site and two admin surfaces live in one Laravel app, no separate API to maintain
+  - **Content editing in the CMS** - pages, services and portfolio entries are edited in the CMS — no deploy needed for a text or translation change
+  - **Code checks** - PHPUnit tests and PHPStan static analysis run in CI
   - **Source available** - the exact code serving digispace.pro is public on GitHub
 
   ## Tech Stack

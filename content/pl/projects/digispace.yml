@@ -1,5 +1,5 @@
 title: DigiSpace
-description: "Wielojęzyczna (EN/UK/PL) produkcyjna strona agencji z autorskim CMS — panel Filament z rozbudowanym edytorem treści, tłumaczenia, JSON-LD i zlokalizowane sitemapy wbudowane obok starego panelu na Inertia + Vue"
+description: "Wielojęzyczna strona agencji (EN/UK/PL) w Laravelu z autorskim CMS: panel Filament do treści i tłumaczeń, JSON-LD oraz mapy witryny dla poszczególnych języków. Obok działa starszy panel na Inertia i Vue."
 url: https://digispace.pro
 date: "2022-10-05"
 tags:
@@ -38,16 +38,16 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  Produkcyjna strona digispace.pro — publiczny serwis agencji, panel administracyjny i autorski CMS w jednej aplikacji Laravel, teraz w pełni wielojęzyczna (EN/UK/PL), z panelem Filament obok starego panelu na Inertia + Vue. Ten sam kod, który obsługuje żywą stronę, jest dostępny na GitHub.
+  DigiSpace łączy publiczną stronę agencji, panel administracyjny i autorski CMS w jednej aplikacji Laravel. Treści i interfejs są dostępne po angielsku, ukraińsku i polsku. Ekrany administracyjne stopniowo przenoszę do Filament, a starszy panel na Inertia i Vue nadal działa równolegle. Kod aplikacji jest dostępny na GitHub.
 
   ## Kluczowe funkcje
 
   - **Panel administracyjny Filament** - równoległy panel `/control` (24 zasoby) z edytorem TipTap, przesyłaniem obrazów bezpośrednio do MinIO i nawigacją zorientowaną na treść, wdrażany zasób po zasobie obok istniejącego panelu Inertia
-  - **Wielojęzyczność od podstaw** - tłumaczone są nie tylko strony, ale i strukturalne teksty UI (menu, stopka, przyciski) dla każdej lokalizacji, z routingiem opartym na hreflang
-  - **SEO wbudowane** - dane strukturalne JSON-LD, zlokalizowane sitemapy i poprawna obsługa 404 dla każdej lokalizacji
-  - **Monolit zrobiony dobrze** - publiczna strona i oba panele administracyjne w jednej aplikacji Laravel, bez osobnego API
-  - **Treść pod kontrolą** - strony, usługi i portfolio edytuje się w CMS — bez deploymentu dla zmiany tekstu czy tłumaczenia
-  - **Bramy jakości** - testy PHPUnit i analiza statyczna PHPStan w CI
+  - **Tłumaczenia treści i interfejsu** - tłumaczone są nie tylko strony, ale i strukturalne teksty UI (menu, stopka, przyciski) dla każdej lokalizacji, z routingiem opartym na hreflang
+  - **Konfiguracja SEO** - dane strukturalne JSON-LD, zlokalizowane sitemapy i poprawna obsługa 404 dla każdej lokalizacji
+  - **Wspólny kod aplikacji** - publiczna strona i oba panele administracyjne w jednej aplikacji Laravel, bez osobnego API
+  - **Edycja treści w CMS** - strony, usługi i portfolio edytuje się w CMS — bez deploymentu dla zmiany tekstu czy tłumaczenia
+  - **Kontrola kodu** - testy PHPUnit i analiza statyczna PHPStan w CI
   - **Otwarty kod** - dokładnie ten kod, który obsługuje digispace.pro, jest publiczny na GitHub
 
   ## Stos technologiczny

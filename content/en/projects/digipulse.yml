@@ -1,5 +1,5 @@
 title: DigiPulse
-description: "Uptime monitoring SaaS: event-driven architecture — Laravel (Octane, Reverb) + Filament dispatch checks through Redis to a lightweight Go worker; an MCP server exposes monitoring data to AI assistants; Telegram/email alerts"
+description: "Uptime monitoring SaaS: event-driven architecture — Laravel (Octane, Reverb) + Filament dispatch checks through Redis to a separate Go service; an MCP server exposes monitoring data to AI assistants; Telegram/email alerts"
 url: https://digipulse.cloud
 date: "2026-04-17"
 tags:
@@ -41,12 +41,12 @@ content: |
 
   ## Key Features
 
-  - **Dedicated Go engine** - availability checks run in a separate Go service, so constant 60-second polling never slows down the Laravel app
+  - **Separate monitoring service** — a Go service checks websites every 60 seconds, while Laravel manages monitors, contacts and notifications
   - **Real-time dashboard** - Reverb websockets push status changes to the UI live, no manual refresh
   - **Octane + Filament** - resident-memory Laravel with a full admin panel for monitors, contacts and alert rules
   - **MCP server** - monitors and incidents are queryable from AI assistants (Claude, Cursor) via the Model Context Protocol
   - **Google OAuth + Turnstile** - passwordless sign-in and bot protection on public forms
-  - **Self-hosted** - deployed on a Proxmox homelab I manage end-to-end
+  - **Self-hosted** — deployed in a Proxmox environment where I administer virtual machines and services
 
   ## Tech Stack
 
