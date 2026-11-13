@@ -1,13 +1,13 @@
 indexable: false
 title: Stabilizing an existing PHP project
 description: "PHP project troubleshooting: setup, backups, errors and deployment. Start with diagnosis and an agreed work plan."
-summary: "I help bring PHP projects back to a state where they can be run and changed. I document code and infrastructure, check backups, reproduce errors and repair deployment. I start with what is blocking work now: a broken feature, failed release or missing test environment."
+summary: "I help with PHP projects that are difficult to run, restore or change. Depending on the problem, I review the code, infrastructure and backups, reproduce errors and get deployment working. I start with what is blocking you now so we can identify the first fixes and plan the rest of the recovery."
 icon: i-lucide-life-buoy
 group: support
 order: 23
 priceFrom: 1800
 timeline: Diagnosis and fixes estimated as separate stages
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - A project map showing code and data locations, available access and blockers to setup or recovery
   - Agreed fixes and environment changes
@@ -33,10 +33,10 @@ faq:
   - label: Does the project need a rewrite?
     content: We assess this after diagnosis, starting with what can be maintained and what changes are needed to keep it working.
 content: |-
-  ## Establishing what is available
+  ## First, establish what is available
 
-  Missing setup instructions, unknown dependencies and untested backups make even small changes difficult. The first stage gathers that information and establishes a work order. It may uncover further constraints.
+  Without startup instructions, known dependencies or verified backups, even a small change is hard to estimate. I therefore begin by gathering information about the code and infrastructure, working out how to run a copy of the project and checking whether its data can be restored.
 
-  Docker, deployment automation or a PHP upgrade can be part of the solution, but the scope depends on the project. A full recovery timeline cannot be established from an error description alone.
+  This provides a basis for the first fixes and a longer-term plan. After diagnosis, I describe the current state, address the agreed blockers and identify the next steps. If further environment setup, data recovery or deployment changes are needed, I prepare a separate scope and estimate for them.
 
-  Describe what stopped working and which code, credentials and backups remain available. The starting price of $1,800 is a guide for an initial investigation and defined stabilization work.
+  We can start with a description of what stopped working and whatever materials remain: code, access credentials, backups or error messages. These help identify where recovery should begin. Diagnosis and the first agreed stabilization work start at $1,800.

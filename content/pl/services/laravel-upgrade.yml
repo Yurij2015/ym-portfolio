@@ -1,13 +1,13 @@
 indexable: false
 title: Aktualizacja Laravela
 description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu, testy i plan wdrożenia."
-summary: "Aktualizuję Laravel i PHP: wymieniam niezgodne pakiety, dostosowuję kod, konfigurację oraz testy. Sprawdzam logowanie, płatności i zadania w tle, których zachowanie może się zmienić. Przygotowuję wdrożenie z uwzględnieniem migracji bazy, procesów kolejek i możliwości powrotu do poprzedniej wersji."
+summary: "Aktualizuję Laravel i PHP w istniejących aplikacjach, dostosowując pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam te scenariusze. Następnie przygotowuję wdrożenie z uwzględnieniem migracji bazy, restartu workerów i możliwości powrotu do poprzedniej wersji."
 icon: i-lucide-circle-arrow-up
 group: support
 order: 20
 priceFrom: 1600
 timeline: Termin ustalam po przeglądzie zależności i zakresu aktualizacji
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - Lista niezgodnych pakietów i zmian kodu potrzebnych do przejścia na wersję docelową
   - Zaktualizowane zależności i kod z testami uzgodnionych scenariuszy
@@ -34,10 +34,10 @@ faq:
   - label: Czy można uniknąć przestoju?
     content: Zależy to od infrastruktury i zmian bazy danych. Sposób wdrożenia oraz ewentualne okno serwisowe uzgadniamy wcześniej.
 content: |-
-  ## Przed wyborem wersji docelowej
+  ## Od czego zależy zakres
 
-  Aktualizacja może wymagać wymiany porzuconego pakietu, zmiany konfiguracji lub dostosowania kodu aplikacji. Wycenę określa więc więcej niż liczba wersji do przejścia.
+  O złożoności aktualizacji decyduje stan aplikacji: czy jej pakiety są nadal utrzymywane, jak bardzo zmieniła się konfiguracja i którą część własnego kodu trzeba dostosować. Sama różnica między obecną a docelową wersją nie wystarcza do wyceny, dlatego zaczynam od przeglądu zależności i sposobu uruchamiania.
 
-  Rozwijam własne produkty Laravel, VetSpace i DigiPulse, z subskrypcjami, kolejkami oraz integracjami. Przy aktualizacji te procesy wymagają osobnych testów: samo uruchomienie aplikacji nie potwierdza ich działania.
+  Kolejne pytanie dotyczy sprawdzenia zachowania systemu po zmianach. We własnych produktach Laravel, VetSpace i DigiPulse, pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
 
-  Do wyceny potrzebuję composer.json, composer.lock i opisu uruchamiania aplikacji. Cena od $1 600 jest orientacyjnym budżetem przejścia między określonymi wersjami. Wymiana porzuconych pakietów i dodanie brakujących testów wpływają na zakres pracy.
+  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt przejścia między uzgodnionymi wersjami zaczyna się od $1 600. Jeśli potrzebne są wymiana porzuconych pakietów lub napisanie brakujących testów, uwzględniam te prace w wycenie.

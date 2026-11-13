@@ -1,7 +1,7 @@
 indexable: false
 title: Laravel SaaS development
 description: Laravel SaaS products with company accounts, permissions, subscriptions and your product’s workflows. Development in agreed stages.
-summary: I build Laravel SaaS products with company registration, staff invitations, roles, subscriptions and core product features. In my own VetSpace product I work with clinic CRM workflows and Stripe billing. I help separate what is needed for launch from features that can be added later.
+summary: "I build SaaS products in Laravel where companies can register, invite staff, manage access and pay for a subscription. I know these workflows from developing my own product, VetSpace, a clinic CRM with Stripe billing. For your product, I can help define the features needed for launch and plan the stages that follow."
 icon: i-lucide-layers
 group: development
 order: 30
@@ -33,14 +33,14 @@ faq:
   - label: Does every customer need a separate database?
     content: It depends on data, backup and infrastructure requirements. We compare separate databases with a shared database and scoped access.
   - label: What does the starting price cover?
-    content: An agreed development stage. Roles, integrations and features are defined before estimating; the price does not cover an unlimited MVP scope.
+    content: The first agreed stage of SaaS development. Before estimating, we define the company accounts, roles, features and subscription workflows it includes, along with the working result you will receive at the end of the stage.
 content: |-
-  ## Experience from VetSpace
+  ## Experience with VetSpace
 
-  In my own product VetSpace, I work with clinic accounts, veterinary CRM workflows and Stripe subscriptions. Clinic data is separated into individual databases. For a new product I choose isolation after reviewing requirements; this architecture is not necessary for every SaaS.
+  In VetSpace, each clinic has its own database, and subscriptions use Stripe and Cashier. That is how data is separated in this product; for a new SaaS, I choose an isolation approach based on access, backup and infrastructure requirements.
 
-  Subscriptions need explicit rules too: when access starts, what happens after a failed payment and how plan changes work. We discuss these alongside first-release features.
+  Alongside data access, we need to define subscription rules: when users gain access, how they change plans and what happens after a failed payment. These rules affect the product's features. For example, in a client marketplace, the purchased package determined how many active listings and drafts a user could have.
 
-  In a client marketplace, the purchased package set how many active listings and drafts a user could have.
+  To get started, describe who will use your SaaS, the main task it helps them with and how you plan to charge for it. This will help us define the first stage and agree on its outcome.
 
-  Describe your users, their main task and payment model. The starting price of $4,800 is a guide for a first release with a limited feature set. Billing, data imports and external integrations affect the estimate.
+  The starting budget of $4,800 covers the first agreed development stage. Before work begins, we record the features, billing workflows and integrations it includes in the estimate.

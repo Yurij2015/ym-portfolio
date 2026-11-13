@@ -1,13 +1,13 @@
 indexable: false
 title: Programowanie w Symfony
 description: Moduły, integracje i procesy w tle w Symfony. Pomagam rozwijać istniejące aplikacje.
-summary: Tworzę w Symfony obsługę zamówień, integracje płatności, API i zadania w tle, m.in. dla sklepów biletowych z dużym ruchem. Mogę dodać moduł do aplikacji, zmienić reguły biznesowe lub znaleźć przyczynę błędów wymiany danych.
+summary: "Pomagam rozwijać aplikacje na Symfony, dodając obsługę zamówień, integracje płatności, API i zadania w tle. Pracuję z tymi procesami między innymi w sklepach biletowych obsługujących dużą liczbę odwiedzających. Korzystam z tego doświadczenia, gdy trzeba dodać moduł, zmienić reguły biznesowe lub znaleźć przyczynę błędów wymiany danych w Twoim systemie."
 icon: i-simple-icons-symfony
 group: development
 order: 11
 priceFrom: 3200
 timeline: Termin zależy od modułu i zewnętrznych zależności
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - Działający moduł zamówień, integracja z dostawcą lub zadanie w tle w Symfony
   - Testy reguł biznesowych i obsługi błędów
@@ -34,10 +34,10 @@ faq:
   - label: Czy Messenger jest zawsze potrzebny?
     content: Nie. Kolejka służy procesom wymagającym działania asynchronicznego. Ustalamy to podczas analizy zadania.
 content: |-
-  ## Praca z aplikacjami Symfony
+  ## Sklepy biletowe na Symfony
 
-  Usługa obejmuje zamówienia, integracje, API i operacje w tle. Pracuję nad multi-tenantowymi sklepami biletowymi, w których sprzedawane są bilety na mecze piłki nożnej i koszykówki, wyścigi motocyklowe i samochodowe, a także do muzeów, na wystawy i festiwale. Działają na Symfony z Doctrine, MySQL, Redis i kolejkach, z interfejsem Vue.js oraz płatnościami Stripe i Dalenys.
+  Pracuję nad sklepami w architekturze multi-tenant, które sprzedają bilety na wydarzenia sportowe, w tym piłkę nożną, koszykówkę oraz wyścigi motocyklowe i samochodowe, a także do muzeów, na wystawy i festiwale. Backend jest oparty na Symfony z Doctrine, MySQL, Redis i kolejkami, interfejs na Vue.js, a płatności przechodzą przez Stripe i Dalenys.
 
-  Przy integracji ustalam zachowanie aplikacji przy opóźnionej odpowiedzi, ponowionym komunikacie lub niedostępności dostawcy. Uwzględniamy te sytuacje w zakresie testów.
+  W tych projektach pracuję z zamówieniami, płatnościami i wymianą danych z usługami zewnętrznymi. Gdy trzeba zmienić jeden z tych procesów, najpierw poznaję jego implementację i sprawdzam, na które części aplikacji wpływa. Pomaga to zaplanować prace i przetestować je razem z powiązaną logiką.
 
-  Opisz proces do dodania lub zmiany i podaj wersje Symfony oraz PHP. Cena od $3 200 jest orientacyjnym budżetem na moduł z testami; zależności i integracje wpływają na wycenę.
+  Do wyceny zadania opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP. Pomoże to określić powiązane moduły i zależności zewnętrzne. Koszt osobnego modułu z testami zaczyna się od $3 200, a potrzebne integracje uwzględniam w całościowej wycenie.

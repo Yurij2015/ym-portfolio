@@ -1,13 +1,13 @@
 indexable: false
 title: Programowanie Laravel, Vue i Nuxt
 description: "Backend Laravel i interfejs Vue lub Nuxt: konta, strony publiczne, API oraz połączenie obu części."
-summary: "Tworzę aplikacje z backendem Laravel i interfejsem Vue lub Nuxt: konta, katalogi, formularze i rezerwacje. Pracuję nad zapytaniami API, zapisem danych i tym, co użytkownik widzi w przeglądarce. Dla stron publicznych dodaję renderowanie serwerowe i metadane, gdy wymaga tego projekt."
+summary: "Tworzę panele użytkowników, katalogi i rezerwacje online z interfejsem na Vue lub Nuxt oraz backendem na Laravel. Praca z obiema częściami pozwala mi prowadzić cały proces: od działania użytkownika w przeglądarce po walidację i zapis danych na serwerze. Dla publicznej części na Nuxt konfiguruję również renderowanie serwerowe i metadane."
 icon: i-simple-icons-nuxtdotjs
 group: development
 order: 35
 priceFrom: 2400
 timeline: Po określeniu ekranów i funkcji backendu
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - Strony połączone z backendem, na przykład formularze zapisu danych, wyszukiwanie, konto lub rezerwacja usługi
   - Obsługa formularzy, logowania i stanów błędów
@@ -38,8 +38,8 @@ faq:
 content: |-
   ## Przykład VetCard
 
-  VetCard korzysta z Nuxt dla publicznych stron klinik oraz Laravel API do danych i rezerwacji wizyt. Obie części muszą współpracować: użytkownik potrzebuje aktualnych informacji, formularza rezerwacji i czytelnego wyniku.
+  W VetCard publiczne strony klinik działają na Nuxt, a informacje i dane do rezerwacji online pobierają z API na Laravel. Aby użytkownik mógł wybrać termin wizyty i otrzymać potwierdzenie, interfejs oraz backend muszą wspólnie obsłużyć całą rezerwację — od pobrania dostępnych danych po odpowiedź na wysłany formularz.
 
-  Dla stron publicznych konfiguruję metadane i renderowanie serwerowe zgodnie z zadaniem. Ułatwia to dostęp do treści wyszukiwarkom, ale nie gwarantuje pozycji ani indeksowania.
+  Dlatego podczas prac sprawdzam zarówno wygląd strony, jak i to, co użytkownik widzi w trakcie korzystania z niej: stan ładowania, komunikaty o błędach i potwierdzenie wykonanej operacji. Dla stron publicznych dodatkowo konfiguruję metadane oraz renderowanie serwerowe, aby główna treść znajdowała się w odpowiedzi HTML serwera.
 
-  Prześlij ekrany, makiety, jeśli są dostępne, i potrzebne działania. Cena od $2 400 jest orientacyjnym budżetem na określoną część aplikacji z frontendem i backendem, a nie produkt dowolnej wielkości.
+  Aby omówić podobne zadanie, prześlij listę ekranów i działań dostępnych dla użytkownika oraz makiety, jeśli je masz. Na tej podstawie określimy zmiany potrzebne w obu częściach aplikacji. Koszt osobnej części z interfejsem i backendem zaczyna się od $2 400.

@@ -1,7 +1,7 @@
 indexable: false
 title: Panele administracyjne dla aplikacji PHP i Laravel
 description: "Panele administracyjne dla Laravela i PHP w Filamencie, Flowbite lub AdminLTE: formularze, tabele, uprawnienia, raporty i codzienne operacje zespołu."
-summary: "Tworzę panele administracyjne dla aplikacji Laravel i PHP: edycję klientów i zamówień, zarządzanie treściami, wyszukiwanie, filtry oraz raporty. Narzędzie dobieram do projektu: Filament, Flowbite na Tailwindzie albo AdminLTE na Bootstrapie. Mogę zbudować nowy panel lub stopniowo zastępować ekrany w istniejącej administracji."
+summary: "Tworzę panele administracyjne, w których zespół może obsługiwać klientów i zamówienia, edytować treści oraz przeglądać raporty. Zależnie od aplikacji i potrzebnych ekranów korzystam z Filament, Flowbite z Tailwind lub AdminLTE z Bootstrap. Mogę zbudować nowy panel albo stopniowo zastępować dotychczasowy."
 icon: i-lucide-layout-dashboard
 group: development
 order: 32
@@ -39,14 +39,14 @@ faq:
   - label: Co jeśli backend nie korzysta z Laravela?
     content: Wtedy Filament odpada. Panel na Flowbite lub AdminLTE można wbudować w istniejącą aplikację PHP albo uruchomić osobno, z dostępem do danych przez API. Druga droga oznacza dodatkową pracę integracyjną.
 content: |-
-  ## Przykłady z projektów
+  ## Przykłady z moich projektów
 
-  W DigiSpace panel Filament działa obok wcześniejszej administracji w Inertii i Vue. Obsługuje treści, tłumaczenia i metadane SEO, a ekrany przechodzą ze starej administracji stopniowo. W DigiPulse Filament służy do zarządzania monitorami, kontaktami i regułami powiadomień.
+  W DigiSpace stopniowo przenoszę ekrany ze starego panelu opartego na Inertia i Vue do Filament. Oba panele działają równolegle, a nowy pozwala już edytować treści, tłumaczenia i metadane SEO. Z Filament korzystam również w DigiPulse, gdzie służy do zarządzania monitorami, kontaktami i regułami powiadomień.
 
-  Flowbite używam w NetPostPanel, gdzie frontend działa na Inertii i Vue, oraz w panelu kliniki VetSpace w Nuxt. Na nim powstała też administracja marketplace klienta z użytkownikami, rolami, ogłoszeniami i zamówieniami oraz serwis dla fotografów z galeriami i pakietami usług.
+  Przy interfejsach na Vue i Nuxt pracuję także z Flowbite. Wykorzystuję go w NetPostPanel i panelu kliniki VetSpace, a wśród projektów klienckich — w panelu marketplace z użytkownikami, ogłoszeniami i zamówieniami oraz w serwisie dla fotografów z galeriami i pakietami usług.
 
-  Na AdminLTE zbudowałem dwa panele w Laravelu. Pierwszy pobiera według harmonogramu dane przez API zewnętrznego serwisu i pokazuje agencji statystyki, koszty oraz eksport. Drugi zarządza zbieraniem i filtrowaniem danych z serwisu społecznościowego za pomocą kolejek zadań.
+  Mam też doświadczenie z AdminLTE, na którym zbudowałem dwa panele do aplikacji Laravel. Jeden pobiera dane z zewnętrznego API według harmonogramu i pozwala agencji przeglądać oraz eksportować statystyki i wydatki. Drugi zarządza zbieraniem i filtrowaniem danych z serwisu społecznościowego przez kolejki zadań.
 
-  Zakres panelu wynika z operacji, a nie z liczby tabel w bazie: tworzenia i edycji rekordów, filtrów oraz działań wymagających potwierdzenia.
+  W każdym z tych przypadków zakres prac wynika z codziennych działań zespołu: jakie dane tworzy i edytuje, jak je wyszukuje oraz które operacje wymagają potwierdzenia. Dlatego przy wycenie najlepiej zacząć od obecnych ekranów lub arkuszy i opisu tego, co nadal trzeba robić ręcznie.
 
-  Pokaż obecne ekrany lub arkusze i wyjaśnij, co pracownicy robią ręcznie. Cena od $1 600 jest orientacyjnym budżetem na powiązany zestaw ekranów; import, raporty i niestandardowe operacje wyceniam według złożoności.
+  Koszt zestawu powiązanych ekranów zaczyna się od $1 600. Jeśli potrzebne są importy, raporty lub niestandardowe operacje, uwzględniam ich złożoność w całościowej wycenie.

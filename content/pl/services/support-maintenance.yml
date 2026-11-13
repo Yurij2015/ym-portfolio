@@ -1,14 +1,14 @@
 indexable: false
 title: Utrzymanie aplikacji PHP i Laravel
 description: "Regularne wsparcie PHP, Laravel i Symfony: poprawki, przegląd zależności, kontrola kopii zapasowych i monitoringu."
-summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu: usuwam błędy, aktualizuję zależności i sprawdzam kolejki, kopie oraz powiadomienia monitoringu. Wprowadzam drobne zmiany i prowadzę listę problemów wymagających uwagi. Widzisz, co wykonano, co pozostaje otwarte i na co przeznaczono czas."
+summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach uzgodnionego planu nadzoruję również kolejki, kopie zapasowe i powiadomienia monitoringu. Wykonane prace oraz otwarte problemy zapisuję w raportach, aby było widać stan aplikacji i wykorzystany czas."
 icon: i-lucide-shield-check
 group: support
 order: 41
 priceFrom: 50
 priceUnit: hour
 timeline: Grafik, dostępność i zakres ustalamy przed rozpoczęciem
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - "Regularna praca według priorytetów: poprawki, aktualizacje zależności i kontrola działania aplikacji"
   - Poprawki i aktualizacje z opisem zmian
@@ -35,10 +35,10 @@ faq:
   - label: Czy obejmuje to całodobową obsługę awarii?
     content: Stały dyżur 24/7 nie jest częścią podstawowej usługi godzinowej. Dostępność i czas reakcji wymagają osobnego uzgodnienia przed współpracą.
 content: |-
-  ## Ustalenia na początku współpracy
+  ## Co ustalamy na początku
 
-  Utrzymanie może obejmować poprawki, aktualizacje zależności, kontrolę kopii i drobne zmiany produktu. To różne zadania, dlatego najpierw określamy priorytety i dostępny czas. Duże aktualizacje oraz nowe moduły wyceniam osobno.
+  Działający produkt często potrzebuje jednocześnie poprawek, aktualizacji zależności i niewielkich zmian. Aby podzielić czas między te zadania, najpierw przeglądam stan aplikacji, a następnie wspólnie ustalamy priorytety, budżet i harmonogram utrzymania. Duże aktualizacje oraz nowe moduły wyceniam osobno.
 
-  Do monitorowania dostępności można wykorzystać mój DigiPulse z powiadomieniami Telegram i email. Monitoring pomaga wykryć awarię, ale nie zastępuje ustalonego procesu reagowania.
+  Plan obejmuje też sposób reagowania na awarie. Dostępność strony można śledzić przez mój serwis DigiPulse z powiadomieniami w Telegram i email. Przed rozpoczęciem prac uzgadniamy, kto otrzymuje te wiadomości i jakie działania podejmuje dalej.
 
-  Napisz, kto obecnie utrzymuje produkt i jakie zadania się zbierają. Stawka zaczyna się od $50 za godzinę pracy. Częstotliwość kontroli, dostępność i obsługę zgłoszeń ustalamy przed rozpoczęciem; stały dyżur nie jest częścią podstawowej usługi.
+  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania się gromadzą. Pomoże to ustalić częstotliwość kontroli oraz sposób zgłaszania potrzeb. Praca jest rozliczana godzinowo, według stawki od $50.

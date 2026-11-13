@@ -1,7 +1,7 @@
 indexable: false
 title: Integracja płatności i zewnętrznych API
 description: Płatności Stripe, Revolut i Dalenys, subskrypcje i zewnętrzne usługi w aplikacjach PHP. Obsługa webhooków, ponowień i błędów.
-summary: "Podłączam płatności i subskrypcje do aplikacji PHP oraz Laravel: tworzenie płatności, potwierdzenia, zmianę planu i anulowanie. Sprawdzam powtórzone webhooki, odrzucone płatności i niedostępność dostawcy. Integruję również zewnętrzne API do wymiany danych między usługami, z obsługą błędów i opóźnionych odpowiedzi."
+summary: "Podłączam płatności i subskrypcje do aplikacji PHP i Laravel, od utworzenia płatności po jej potwierdzenie, zmianę planu lub anulowanie. Aby statusy i dostęp użytkownika aktualizowały się prawidłowo, sprawdzam również powtórzone webhooki, odrzucone płatności i niedostępność dostawcy. W ten sam sposób podchodzę do zewnętrznych API służących do wymiany danych między serwisami."
 icon: i-lucide-credit-card
 group: development
 order: 33
@@ -34,12 +34,12 @@ faq:
   - label: Czy można dodać subskrypcje do istniejącego produktu?
     content: Tak. Ustalamy plany, dostęp po opłaceniu, zmianę taryfy, anulowanie i zachowanie po nieudanej płatności.
 content: |-
-  ## Uzgodnienie całego procesu
+  ## Co obejmuje integracja
 
-  Strona udanej płatności to tylko część integracji. Trzeba określić potwierdzanie operacji, komunikat przy opóźnieniu i obsługę ponowionego zdarzenia od dostawcy.
+  Po płatności aplikacja musi potwierdzić transakcję po swojej stronie i zaktualizować jej status. Jeśli odpowiedź dostawcy się opóźnia lub webhook dociera ponownie, system powinien prawidłowo obsłużyć te zdarzenia i pokazać użytkownikowi zrozumiały stan. Dlatego integracja obejmuje cały proces, wraz z błędami i powtórzonymi komunikatami.
 
-  W VetSpace pracuję z subskrypcjami Stripe. W NetPostPanel integracje z usługami zewnętrznymi są częścią przetwarzania treści w tle. W obu przypadkach potrzebna jest obsługa błędów i czytelny stan operacji.
+  Z subskrypcjami Stripe pracuję we własnym VetSpace. Bardziej złożony podział płatności wdrożyłem przez Stripe Connect w marketplace klienta na Laravel: sprzedawcy podłączają własne konta, kupujący płaci przez Checkout, a platforma zatrzymuje swoją prowizję. Uczestnicy programu partnerskiego również otrzymują prowizję, natomiast statusy zamówień aktualizują webhooki platformy i podłączonych kont.
 
-  W marketplace, który tworzyłem dla klienta w Laravelu, płatności działają przez Stripe Connect. Sprzedawcy podłączają własne konto Stripe, kupujący płaci przez Checkout, platforma pobiera prowizję, a uczestnicy programu partnerskiego otrzymują swoją prowizję przelewem. Status zamówień aktualizują webhooki platformy i podłączonych kont.
+  Podobnej uwagi do błędów i statusów wymagają inne usługi zewnętrzne. Na przykład w NetPostPanel ich API są wywoływane w zadaniach przygotowania treści wykonywanych w tle, gdzie wynik musi być czytelny również po zakończeniu samego zapytania.
 
-  Dla płatności podaj dostawcę i potrzebne operacje: płatność jednorazową, subskrypcje lub zwroty. Dla innego API prześlij dokumentację i dane do wymiany. Cena od $1 600 jest orientacyjnym budżetem integracji; prowizje dostawcy są osobnym kosztem.
+  Do wyceny integracji płatności podaj wybranego dostawcę i potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty. W przypadku innego API przydadzą się dokumentacja i opis wymienianych danych. Koszt integracji zaczyna się od $1 600, a opłaty dostawcy są rozliczane osobno.

@@ -1,13 +1,13 @@
 indexable: false
 title: Rozwój i modyfikacje aplikacji PHP
 description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP na Laravel, Symfony lub z autorskim kodem.
-summary: "Dodaję funkcje i usuwam problemy w aplikacjach PHP: obliczeniach, wymianie danych, raportach oraz integracjach. Pracuję z Laravelem, Symfony i systemami autorskimi. Analizuję powiązaną logikę, wprowadzam zmianę i sprawdzam jej wpływ na pozostałą część aplikacji."
+summary: "Rozwijam istniejące aplikacje PHP na Laravel, Symfony i bez frameworka, gdy trzeba zmienić obliczenia, dodać raport lub wymianę danych albo naprawić błąd. Przed zmianami poznaję działanie danej części systemu i jej powiązania. Pozwala mi to sprawdzić poprawkę razem z innymi operacjami, na które wpływa."
 icon: i-simple-icons-php
 group: development
 order: 12
 priceFrom: 1800
 timeline: Termin pierwszego etapu ustalam po przeglądzie kodu
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - Funkcja lub poprawka w aplikacji, na przykład obliczenia, raport albo wymiana danych z inną usługą
   - Testy uzgodnionych scenariuszy i sprawdzenie zgodności
@@ -37,8 +37,10 @@ faq:
 content: |-
   ## Zmiany w działającym systemie
 
-  Integracja, zmiana obliczeń lub poprawka błędu może dotyczyć kilku części aplikacji. Przed wdrożeniem analizuję powiązane procesy i sposób sprawdzenia wyniku. Przepisanie aplikacji nie jest obowiązkową częścią tej usługi.
+  Nawet niewielka zmiana może dotyczyć kilku części aplikacji. Nowa integracja wpływa na przykład na wymianę danych, a zmiana obliczeń — na powiązane raporty. Dlatego przed rozpoczęciem prac ustalam te zależności i sposób sprawdzenia wyniku w istniejącym systemie.
 
-  W DigiSpace rozwijam aplikację Laravel łączącą publiczną stronę, treści i panele administracyjne. To doświadczenie przydaje się przy zmianach, które muszą współpracować z istniejącą logiką.
+  Z takimi powiązaniami pracuję między innymi w DigiSpace, gdzie publiczna strona, treści i panele administracyjne rozwijają się w jednej bazie kodu na Laravel. Zmiany w pojedynczej funkcji trzeba tu uzgadniać z resztą logiki — to samo podejście stosuję w aplikacjach klientów.
 
-  Prześlij zadanie i wersję PHP. Przy błędzie pomogą kroki odtworzenia i logi; przy nowej funkcji — przykład wyniku. Cena od $1 800 jest orientacyjnym budżetem na samodzielny zakres prac programistycznych.
+  Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji — przykład oczekiwanego wyniku. Dzięki tym materiałom mogę określić, jaki kod trzeba przejrzeć, i wycenić pracę.
+
+  Budżet początkowy od $1 800 dotyczy uzgodnionego rozszerzenia lub poprawki, na przykład raportu albo wymiany danych, wraz z testami i instrukcją wdrożenia.

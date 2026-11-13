@@ -1,13 +1,13 @@
 indexable: false
 title: Laravel, Vue and Nuxt development
 description: "Laravel backends with Vue or Nuxt interfaces: user accounts, public pages, APIs and their integration."
-summary: "I build web applications with Laravel backends and Vue or Nuxt interfaces: user accounts, directories, forms and booking. I work across API requests, data storage and what users see in the browser. For public pages I add server rendering and metadata when the project needs them."
+summary: "I build user portals, directories and online booking with Vue or Nuxt interfaces and Laravel backends. Working on both parts lets me handle the full workflow, from a user action in the browser to validation and data storage on the server. For public Nuxt pages, I also configure server rendering and metadata."
 icon: i-simple-icons-nuxtdotjs
 group: development
 order: 35
 priceFrom: 2400
 timeline: Estimated after defining screens and backend features
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - Pages connected to the backend, such as data entry forms, search, user accounts or service booking
   - Form, authentication and error-state handling
@@ -36,10 +36,10 @@ faq:
   - label: Do I need a finished design?
     content: I can work from a design or an agreed component library. Creating a separate visual identity needs to be included in the scope.
 content: |-
-  ## An example from VetCard
+  ## The VetCard example
 
-  VetCard uses Nuxt for public clinic pages and a Laravel API for data and appointment booking. Both parts must work together: users need current information, a booking form and a clear result.
+  In VetCard, public clinic pages run on Nuxt and get information and online booking data from a Laravel API. For a user to choose an appointment time and receive confirmation, the interface and backend need to handle the whole booking together, from loading available data to responding to the submitted form.
 
-  For public pages I configure metadata and server rendering as required. This helps make content accessible to search engines but does not promise rankings or indexing.
+  During development, I therefore check both the page layout and what people see as they use it: loading states, error messages and confirmation of completed actions. For public pages, I also configure metadata and server rendering so the main content is included in the server's HTML response.
 
-  Share the screens, designs if available and required actions. The starting price of $2,400 is a guide for a defined part of an application with frontend and backend work, not a product of any size.
+  To discuss a similar task, send a list of screens and actions users need, along with mockups if you have them. We can use these to define the changes needed in both parts of the application. A section of an application with an interface and backend starts at $2,400.

@@ -1,13 +1,13 @@
 indexable: false
 title: Audyt kodu PHP
 description: "Przegląd kodu PHP, Laravel lub Symfony: konkretne ustalenia, priorytety i zalecenia dla zespołu."
-summary: Sprawdzam kod PHP, aby znaleźć przyczyny błędów i przygotować listę poprawek. Zależnie od problemu analizuję dostęp do danych, płatności, zapytania do bazy, kolejki i testy. Otrzymujesz odnośniki do kodu, opis konsekwencji oraz priorytety, na których zespół może oprzeć dalszą pracę.
+summary: "Sprawdzam kod PHP, aby znaleźć przyczyny błędów i ustalić, które poprawki powinny być pierwsze. Zależnie od zadania skupiam się na dostępie do danych, płatnościach, zapytaniach do bazy, kolejkach lub testach. Wyniki zbieram w raporcie z odnośnikami do kodu, opisem konsekwencji i priorytetami, na których Twój zespół może oprzeć dalsze prace."
 icon: i-lucide-search-code
 group: support
 order: 22
 priceFrom: 1000
 timeline: Zależy od wybranych modułów i głębokości analizy
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - Raport z plikiem i numerem wiersza, opisem problemu, konsekwencjami oraz zalecaną poprawką
   - Priorytety poprawek z opisem wpływu
@@ -32,10 +32,10 @@ faq:
   - label: Czy poprawki są w cenie?
     content: Wynikiem audytu jest raport. Poprawki możemy uzgodnić osobno lub przekazać Twojemu zespołowi.
 content: |-
-  ## Przegląd z określonym celem
+  ## Od czego zaczyna się audyt
 
-  Audyt powinien odpowiadać na pytanie: dlaczego nie działa płatność, gdzie brakuje kontroli dostępu lub co utrudnia rozwój modułu. Przy ogólnym przeglądzie najpierw wybieramy obszary priorytetowe.
+  Najpierw określamy pytania, na które ma odpowiedzieć przegląd: dlaczego płatność nie przechodzi, gdzie brakuje kontroli dostępu lub co utrudnia rozwój modułu. Jeśli potrzebny jest ogólny przegląd, wybieramy najważniejsze części systemu, aby poświęcić czas właśnie im.
 
-  Raport opisuje sprawdzony zakres i wnioski potwierdzone kodem lub odtworzeniem błędu. Zalecenia dotyczące struktury oddzielam od defektów. Ograniczony przegląd nie potwierdza braku innych problemów.
+  Ten zakres wyznacza również zawartość raportu: opisuję w nim sprawdzone obszary i wnioski potwierdzone kodem lub odtworzonym błędem. Dla każdego problemu wyjaśniam konsekwencje i zalecam poprawkę, a uwagi dotyczące struktury kodu przedstawiam osobno od defektów. Dzięki temu zespół widzi zarówno priorytety, jak i granice przeprowadzonej analizy.
 
-  Prześlij opis aplikacji i pytania, na które ma odpowiedzieć audyt. Cena od $1 000 jest orientacyjnym budżetem przeglądu określonych modułów z raportem. Wdrażanie poprawek nie jest częścią audytu.
+  Aby określić zakres audytu, prześlij krótki opis aplikacji oraz pytania, które Cię niepokoją. Na tej podstawie uzgodnimy moduły do sprawdzenia. Koszt ich analizy i przygotowania raportu zaczyna się od $1 000.

@@ -1,7 +1,7 @@
 indexable: false
 title: API development and integration
 description: APIs for frontends, mobile apps and partner services, with access rules, documentation and tests.
-summary: "I build APIs for mobile apps, frontends and partner services: reading and updating data, authentication, search and background operations. I document requests, responses and errors so another team can connect its application. I also extend existing APIs while accounting for clients that already use them."
+summary: "I build APIs that let mobile apps, frontends and partner services read and update data, run searches and start background operations. Alongside the implementation, I document requests, responses and errors so another team can connect its application. When extending an existing API, I plan changes around the clients that already use it."
 icon: i-lucide-webhook
 group: development
 order: 31
@@ -36,12 +36,12 @@ faq:
   - label: Does it have to be REST?
     content: No. We choose the format for the consumers and operations. A suitable existing REST API does not need replacement just to adopt another approach.
 content: |-
-  ## An API for its consumers
+  ## APIs built around their clients
 
-  In VetSpace, APIs serve the public directory and CRM. NetPostPanel exposes content generation and translation to other applications. These workflows have different access rules, execution times and ways of returning results.
+  In VetSpace, one Laravel API serves two parts of the product: the public directory through GraphQL and the CRM through REST. In NetPostPanel, other applications can request content generation and translation, receiving the result immediately or through a callback. These examples show why it is worth defining who will call an API and how long its operations will take before development begins.
 
-  For a client marketplace I wrote a REST API with Sanctum authentication and Swagger documentation. It serves listings, orders, chat and support tickets.
+  Another example is a client marketplace where I built a REST API with Sanctum authentication and Swagger documentation. It supports listings, orders, chat and support tickets, making access rules and error handling part of each workflow.
 
-  Before implementation I clarify who calls the API, which data they may access and what an error response should contain. For long operations we discuss background execution and status checks.
+  I therefore start by defining the operations, available data and responses the client application should receive. For long-running tasks, I plan background execution and a way to retrieve the result. This becomes the basis for the implementation, documentation and tests.
 
-  For an estimate, share the operations and sample data. Include documentation if an API already exists. The starting price of $1,800 is a guide for a related set of operations with documentation and tests.
+  To estimate your task, describe the operations you need and include sample data. If an API already exists, its current documentation will also help. A group of related operations with documentation and tests starts at $1,800.

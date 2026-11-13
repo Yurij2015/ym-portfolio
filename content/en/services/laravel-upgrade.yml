@@ -1,13 +1,13 @@
 indexable: false
 title: Laravel upgrades
 description: "Laravel and PHP upgrades: dependency review, code changes, tests and a deployment plan."
-summary: I upgrade Laravel and PHP by replacing incompatible packages and adapting code, configuration and tests. I check login, payments and background jobs that may behave differently after the transition. I prepare deployment around database migrations, workers and options for returning to the previous release.
+summary: "I upgrade Laravel and PHP in existing applications, adapting packages, custom code, configuration and tests to the target version. Since the changes can affect sign-in, payments and background jobs, I check those workflows separately. I then prepare deployment around database migrations, worker restarts and the option to roll back."
 icon: i-lucide-circle-arrow-up
 group: support
 order: 20
 priceFrom: 1600
 timeline: Estimated after reviewing dependencies and the upgrade scope
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - A list of incompatible packages and code changes needed for the target version
   - Updated dependencies and adapted code with tests for agreed scenarios
@@ -34,10 +34,10 @@ faq:
   - label: Can the upgrade avoid downtime?
     content: That depends on infrastructure and database changes. We agree the deployment approach and any maintenance window beforehand.
 content: |-
-  ## Before choosing the target version
+  ## What determines the scope
 
-  An upgrade may require replacing an abandoned package, changing configuration or adapting application code. The estimate depends on more than the number of versions involved.
+  The application's condition determines the complexity of an upgrade: whether its packages are still maintained, how much configuration has changed and which custom code needs adapting. The gap between the current and target versions is not enough to estimate the work, so I start by reviewing dependencies and how the application runs.
 
-  I work on my own Laravel products, VetSpace and DigiPulse, which involve subscriptions, queues and integrations. These workflows need separate checks during an upgrade: starting the application successfully does not verify them.
+  The next question is how to check the system's behavior after the changes. In my Laravel products, VetSpace and DigiPulse, I work with subscriptions, queues and integrations where a successful application startup is only the beginning of testing. The operations themselves also need to run and return the correct results.
 
-  For an estimate I need composer.json, composer.lock and the application setup. The starting price of $1,600 is a guide for an upgrade between defined versions. Replacing abandoned packages and adding missing tests affect the work required.
+  To estimate your upgrade, send composer.json, composer.lock and a short description of how the application runs. An upgrade between agreed versions starts at $1,600. If abandoned packages need replacing or missing tests need writing, I include that work in the estimate.

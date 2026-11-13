@@ -1,13 +1,13 @@
 indexable: false
 title: PHP application development and improvements
 description: Features, reports, integrations and fixes for PHP applications using Laravel, Symfony or a custom codebase.
-summary: I add features and fix problems in existing PHP applications, including calculations, data exchange, reports and integrations. I work with Laravel, Symfony and custom codebases. I review the related logic, implement the change and check its effects on the rest of the application.
+summary: "I work on existing PHP applications built with Laravel, Symfony or without a framework when you need to change a calculation, add a report or data exchange, or fix an error. Before making changes, I investigate how the relevant part of the system works and what it connects to. This lets me test the changes alongside the other operations they affect."
 icon: i-simple-icons-php
 group: development
 order: 12
 priceFrom: 1800
 timeline: First-stage timeline agreed after reviewing the code
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - A feature or fix in your application, such as a calculation, report or data exchange with another service
   - Tests for the agreed scenarios and compatibility checks
@@ -35,10 +35,12 @@ faq:
   - label: Does the application need a framework migration?
     content: Not for every task. We discuss a migration when it makes future work easier and justifies the cost.
 content: |-
-  ## Changes to an existing system
+  ## Changes to a working system
 
-  An integration, calculation change or bug fix can affect several parts of an application. Before implementation I review the related workflows and decide how to verify the result. Rewriting the application is not a required part of this service.
+  Even a small change can affect several parts of an application. A new integration, for example, affects data exchange, while a calculation change can affect related reports. Before starting, I establish these connections and decide how to check the result in the existing system.
 
-  In DigiSpace, I work on a Laravel codebase combining the public website, content and admin panels. That experience is useful when a change needs to fit existing behavior.
+  I work with these connections in DigiSpace, where the public website, content and admin panels share a Laravel codebase. Changes to one feature need to fit the rest of the logic, and I use the same approach in client applications.
 
-  Share the task and PHP version. For an error, reproduction steps and logs help; for a new feature, show the expected result. The starting price of $1,800 is a budget guide for a self-contained piece of development.
+  To get started, describe the task and include your PHP version. For an error, reproduction steps and log messages help; for a new feature, an example of the expected result is useful. These materials let me identify which code needs reviewing and estimate the work.
+
+  The starting budget of $1,800 covers an agreed change, such as a report or data exchange, together with checks and deployment instructions.

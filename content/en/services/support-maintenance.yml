@@ -1,14 +1,14 @@
 indexable: false
 title: PHP and Laravel application maintenance
 description: "Ongoing PHP, Laravel and Symfony maintenance: fixes, dependency reviews, backup checks and monitoring."
-summary: "I maintain PHP, Laravel and Symfony applications after launch: fixing errors, updating dependencies and checking queues, backups and monitoring alerts. I make small improvements and track issues that need attention. You can see what has been done, what remains open and where the working time goes."
+summary: "I maintain PHP, Laravel and Symfony applications after launch, handling fixes, dependency updates and small improvements. Under the agreed plan, I also monitor queues, backups and monitoring alerts. I record completed work and open issues in reports so you can see the application’s condition and how the time was spent."
 icon: i-lucide-shield-check
 group: support
 order: 41
 priceFrom: 50
 priceUnit: hour
 timeline: Schedule, availability and scope agreed before work starts
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - "Regular prioritized work: fixes, dependency updates and application health checks"
   - Fixes and updates with a record of changes
@@ -35,10 +35,10 @@ faq:
   - label: Is round-the-clock emergency support included?
     content: Continuous 24/7 coverage is not part of the base hourly service. Availability and response times must be separately agreed before the engagement.
 content: |-
-  ## What we agree at the start
+  ## What we agree on at the start
 
-  Maintenance can include fixes, dependency updates, backup checks and small product changes. These are different tasks, so we first set priorities and available time. Major upgrades and new modules receive separate estimates.
+  A live product often needs fixes, dependency updates and small improvements at the same time. To divide the time between them, I first review the application's condition, then work with you to agree on priorities, a budget and a maintenance schedule. Major upgrades and new modules receive separate estimates.
 
-  My DigiPulse service can monitor availability and send Telegram and email notifications. Monitoring helps detect an outage; it does not replace an agreed response process.
+  The plan also covers how to respond to failures. My DigiPulse service can monitor website availability and send alerts through Telegram and email. Before work begins, we agree on who receives those messages and what happens next.
 
-  Tell me who currently maintains the product and which tasks are accumulating. The rate starts at $50 per working hour. We define check frequency, availability and request handling before starting; continuous on-call coverage is not part of the base service.
+  To discuss support for your product, tell me who maintains it now and which tasks are building up. This will help us define the frequency of checks and how to submit requests. Work is billed hourly, starting at $50.

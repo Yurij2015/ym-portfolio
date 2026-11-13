@@ -1,7 +1,7 @@
 indexable: false
 title: Admin panels for PHP and Laravel applications
 description: "Admin panels for Laravel and PHP built with Filament, Flowbite or AdminLTE: forms, tables, permissions, reports and the actions your team uses daily."
-summary: "I build admin panels for Laravel and PHP applications: customer and order editing, content management, search, filters and reports. I pick the tool to fit the project: Filament, Flowbite on Tailwind or AdminLTE on Bootstrap. I can create a new panel or gradually replace screens in an existing admin interface."
+summary: "I build admin panels where your team can manage customers and orders, edit content and view reports. Depending on the application and the screens you need, I use Filament, Flowbite with Tailwind or AdminLTE with Bootstrap. I can build a new panel or gradually replace an existing one."
 icon: i-lucide-layout-dashboard
 group: development
 order: 32
@@ -39,14 +39,14 @@ faq:
   - label: What if the backend is not Laravel?
     content: Then Filament is not an option. A Flowbite or AdminLTE panel can be built into the existing PHP application or run separately and read data through an API. The second route adds integration work.
 content: |-
-  ## Examples from projects
+  ## Examples from my projects
 
-  DigiSpace runs a Filament panel alongside its earlier Inertia and Vue admin interface. The panel manages content, translations and SEO metadata, and screens move over from the old admin gradually. In DigiPulse, Filament handles monitors, contacts and notification rules.
+  In DigiSpace, I am gradually moving screens from the old Inertia and Vue admin panel to Filament. Both panels run alongside each other, and the new one already supports content, translations and SEO metadata. I also use Filament in DigiPulse to manage monitors, contacts and notification rules.
 
-  I use Flowbite in NetPostPanel, where the frontend is Inertia and Vue, and in the VetSpace clinic panel built with Nuxt. The admin of a client marketplace, with users, roles, listings and orders, is built on it too, as is a service for photographers with galleries and service packages.
+  For Vue and Nuxt interfaces, I also work with Flowbite. It powers NetPostPanel and the VetSpace clinic panel, as well as client projects: a marketplace admin panel with users, listings and orders, and a service for photographers with galleries and service packages.
 
-  With AdminLTE I built two Laravel panels. The first collects data on a schedule through an external service's API and shows an agency its statistics, costs and exports. The second manages collecting and filtering social network data through job queues.
+  I have also built two admin panels for Laravel applications using AdminLTE. One fetches data from an external API on a schedule, letting an agency view and export statistics and expenses. The other manages the collection and filtering of social network data through job queues.
 
-  The scope of a panel depends on operations rather than the number of database tables: which records people create and edit, what they filter by and which actions need confirmation.
+  In each case, the scope comes from the team's daily work: which records they create and edit, how they find them, and which actions need confirmation. To estimate your panel, it helps to see the current screens or spreadsheets and understand what the team still does manually.
 
-  Show me current screens or spreadsheets and explain the manual work involved. The starting price of $1,600 is a guide for a related set of screens; imports, reports and custom operations are estimated by complexity.
+  A set of related screens starts at $1,600. If you need imports, reports or custom operations, I factor their complexity into the overall estimate.

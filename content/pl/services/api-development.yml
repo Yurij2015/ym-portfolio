@@ -1,7 +1,7 @@
 indexable: false
 title: Tworzenie i integracja API
 description: "API dla frontendu, aplikacji mobilnej i partnerów: uprawnienia, dokumentacja, obsługa błędów oraz testy."
-summary: "Tworzę API dla aplikacji mobilnych, frontendów i partnerów: odczyt oraz aktualizację danych, uwierzytelnianie, wyszukiwanie i operacje w tle. Dokumentuję zapytania, odpowiedzi i błędy, aby inny zespół mógł podłączyć aplikację. Rozwijam też istniejące API z uwzględnieniem obecnych odbiorców."
+summary: "Tworzę API, przez które aplikacje mobilne, frontend i serwisy partnerskie mogą pobierać oraz aktualizować dane, wyszukiwać informacje i uruchamiać zadania w tle. Wraz z implementacją przygotowuję dokumentację zapytań, odpowiedzi i błędów, aby inny zespół mógł podłączyć swoją aplikację. Rozbudowując istniejące API, uwzględniam klientów, którzy już z niego korzystają."
 icon: i-lucide-webhook
 group: development
 order: 31
@@ -36,12 +36,12 @@ faq:
   - label: Czy zawsze potrzebny jest REST?
     content: Nie. Format dobieramy do odbiorców i operacji. Jeśli istniejący REST spełnia potrzeby, nie trzeba go zastępować innym podejściem.
 content: |-
-  ## API dopasowane do odbiorcy
+  ## API dopasowane do aplikacji klienckich
 
-  W VetSpace API obsługuje publiczny katalog i CRM. NetPostPanel udostępnia innym aplikacjom generowanie oraz tłumaczenie treści. Te procesy różnią się uprawnieniami, czasem wykonania i sposobem zwracania wyniku.
+  W VetSpace jedno API na Laravel obsługuje dwie części produktu: publiczny katalog przez GraphQL i CRM przez REST. W NetPostPanel inne aplikacje mogą zlecić generowanie oraz tłumaczenie treści i otrzymać wynik od razu lub przez callback. Te przykłady pokazują, dlaczego przed rozpoczęciem prac warto ustalić, kto będzie wywoływać API i ile czasu zajmą jego operacje.
 
-  Dla marketplace klienta napisałem REST API z uwierzytelnianiem Sanctum i dokumentacją Swagger. Obsługuje ogłoszenia, zamówienia, czat i zgłoszenia do wsparcia.
+  Osobnym przykładem jest marketplace klienta, dla którego pisałem REST API z uwierzytelnianiem przez Sanctum i dokumentacją Swagger. Obsługuje ono ogłoszenia, zamówienia, czat i zgłoszenia do pomocy technicznej, dlatego reguły dostępu i obsługa błędów są częścią każdego scenariusza.
 
-  Przed implementacją ustalam, kto wywołuje API, jakie dane może zobaczyć i co powinien otrzymać przy błędzie. Dla długich operacji omawiamy wykonanie w tle oraz sprawdzanie statusu.
+  Pracę zaczynam więc od określenia operacji, dostępnych danych i odpowiedzi, które powinna otrzymywać aplikacja kliencka. Dla długich zadań przewiduję wykonanie w tle i sposób odebrania wyniku. Na tej podstawie przygotowuję implementację, dokumentację oraz testy.
 
-  Do wyceny prześlij operacje i przykładowe dane. Jeśli API już istnieje, dodaj dokumentację. Cena od $1 800 jest orientacyjnym budżetem na powiązaną grupę operacji z dokumentacją oraz testami.
+  Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane. Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Koszt grupy powiązanych operacji z dokumentacją i testami zaczyna się od $1 800.

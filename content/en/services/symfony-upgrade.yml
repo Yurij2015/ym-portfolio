@@ -1,13 +1,13 @@
 indexable: false
 title: Symfony upgrades
 description: "Upgrade Symfony and PHP in an existing application: dependencies, deprecated calls, tests and release preparation."
-summary: "I upgrade existing Symfony and PHP systems: reviewing bundles, removing deprecated calls, changing configuration and adapting custom extensions. I test the affected operations and prepare the release. A migration from custom PHP starts by identifying parts of the system that can be moved gradually."
+summary: "I upgrade Symfony and PHP in existing systems, checking bundle compatibility and adapting configuration, deprecated calls and custom extensions. After these changes, I test the related operations and prepare the application for release. If the task involves moving custom PHP code to Symfony, I separately plan which parts can be migrated gradually."
 icon: i-lucide-refresh-cw
 group: support
 order: 21
 priceFrom: 1800
 timeline: Estimated after reviewing versions, bundles and custom extensions
-updated: 2026-11-11
+updated: 2026-11-13
 deliverables:
   - An upgrade map showing which bundles can be updated, which need replacement and where custom code changes
   - Code and configuration adapted for the agreed version
@@ -32,10 +32,10 @@ faq:
   - label: Can you migrate custom PHP?
     content: That requires a separate plan covering routes, data and the parts of the old system that remain in use.
 content: |-
-  ## The application determines the upgrade
+  ## An upgrade planned around your application
 
-  In the ticket shops I work on, I have dealt with several generations of Symfony and PHP. That experience informs checks around configuration, integrations and business workflows, beyond installing newer packages.
+  Working on ticket shops has involved several generations of Symfony and PHP. Moving between versions can affect configuration, third-party bundles and custom code, so I start the estimate by reviewing them.
 
-  Deprecation notices provide part of the upgrade plan. Third-party bundles, API changes and custom code also need review. If a package is no longer maintained, I propose a replacement or discuss changing the affected feature.
+  Deprecation warnings help identify some of the changes needed, while dependency compatibility and API changes need separate checks. If a bundle is no longer maintained, I propose a replacement or discuss adapting the feature that depends on it. I then test the integrations and business workflows affected by the upgrade.
 
-  Share Symfony and PHP versions, dependency files and the reason for upgrading. The starting price of $1,800 is a guide for an upgrade with a defined target. Moving a custom system to Symfony is separate work.
+  To get started, send your Symfony and PHP versions, dependency files and the reason for upgrading. These let me define the scope of the move to your target version, starting at $1,800. Moving a custom system to Symfony receives a separate estimate.
