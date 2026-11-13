@@ -1,8 +1,8 @@
 seo:
   title: "Yurii Mokryi - Senior Full-Stack PHP Developer"
-  description: "Senior Full-Stack developer z ponad 8-letnim doświadczeniem komercyjnym. Laravel, Filament, Symfony, Vue/Nuxt. Produkty SaaS, platformy ticketingowe o wysokim obciążeniu, integracje AI."
+  description: "Programista PHP z ponad 8-letnim doświadczeniem. Laravel, Symfony, Vue i Nuxt: SaaS, CRM, płatności, API i utrzymanie istniejących aplikacji."
 title: "Cześć, jestem Yurii Mokryi — Senior Full-Stack PHP Developer"
-description: "Od ponad 8 lat rozwijam i utrzymuję produkty SaaS, systemy CRM oraz platformy sprzedaży biletów. W PHP, Laravelu, Symfony i Vue/Nuxt tworzę panele użytkowników, obsługę płatności, subskrypcje i API. Do wdrażania wykorzystuję Docker i CI/CD."
+description: "Mam ponad 8 lat doświadczenia w pracy z PHP. Rozwijam produkty SaaS, systemy CRM i platformy sprzedaży biletów w Laravelu i Symfony, a ich interfejsy tworzę w Vue i Nuxt. Zajmuję się panelami użytkowników, płatnościami, subskrypcjami i integracjami z innymi usługami. Przygotowuję też wdrożenia i utrzymuję aplikacje po uruchomieniu."
 hero:
   links:
     - label: "Omówmy Twój projekt"
@@ -63,15 +63,15 @@ hero:
 about:
   title: "O mnie"
   description: |
-    Full-Stack developer z ponad 8-letnim doświadczeniem komercyjnym. Buduję i utrzymuję produkty SaaS, systemy CRM, platformy ticketingowe/e-commerce oraz REST API.
-    Na backendzie pracuję z Laravelem (Filament, Octane, FrankenPHP) i Symfony, a na frontendzie z Vue.js i Nuxt. Zajmuję się między innymi oddzieleniem danych klientów w produktach SaaS oraz integracją systemów płatności.
+    Rozwijam własne produkty i pracuję przy projektach klientów. W VetSpace zajmuję się CRM dla klinik weterynaryjnych, w DigiPulse monitoringiem dostępności stron, a w NetPostPanel przygotowywaniem treści z pomocą AI.
+    W tych produktach korzystam z Laravela, Filament, kolejek i API. Interfejsy tworzę w Vue i Nuxt, a osobne serwisy w Go. Przykłady i szczegóły techniczne znajdziesz poniżej w projektach.
 experience:
   title: Doświadczenie zawodowe
   items:
     - position: "Full-Stack Developer"
       date: "2021 — obecnie"
       current: true
-      description: "Platforma ticketingowa dla Formula 1, MotoGP, EICMA, EuroLeague: checkout, konta użytkowników, Stripe/Dalenys, 3D seat-map."
+      description: "Rozwijam funkcje platformy sprzedaży biletów: składanie zamówień, konta użytkowników, panele administracyjne, płatności przez Stripe i Dalenys oraz integracje z mapami wyboru miejsc. Pracuję z Symfony i Vue.js."
       company:
         name: Platinium Group SAM
         logo: "i-simple-icons-symfony"
@@ -88,7 +88,7 @@ experience:
         color: "#6B7280"
     - position: "Full-Stack Developer"
       date: "Wrz 2024 — Gru 2025"
-      description: "Full-stack development aplikacji webowych w PHP (Laravel) i autorskich frameworkach na część etatu: nowe funkcje, utrzymanie, poprawki błędów, REST API."
+      description: "Pracowałem w niepełnym wymiarze godzin nad aplikacjami w Laravelu i autorskim PHP: dodawałem funkcje, naprawiałem błędy oraz tworzyłem i rozbudowywałem REST API."
       company:
         name: SystemFreaks
         url: "https://www.systemfreaks.com/"
@@ -111,7 +111,7 @@ testimonials:
       name: 'LinkedIn'
       description: 'Rekomendacja na LinkedIn'
       to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
-  - quote: "Pracuję nad platformami sprzedaży biletów i własnymi produktami SaaS. Zajmuję się logiką serwerową, interfejsami, płatnościami i wdrażaniem. Jeśli szukasz programisty do nowego modułu lub utrzymania istniejącej aplikacji, możemy omówić Twoje zadanie."
+  - quote: "Możesz zgłosić się z pojedynczym zadaniem lub zaprosić mnie do pracy nad produktem. Na początek wystarczy opisać, co trzeba zrobić, i pokazać aplikację lub materiały, które już masz."
     author:
       name: 'Yurii Mokryi'
       description: 'Senior Full-Stack PHP Developer • 8+ lat • Poznań'
@@ -127,14 +127,14 @@ faq:
         - label: "Czy przejmujesz istniejące projekty?"
           content: "Tak. Duża część mojej pracy to rozwój i utrzymanie aplikacji po uruchomieniu: przegląd kodu, refaktoryzacja i nowe funkcje. Zanim wprowadzę zmiany, poznaję projekt i sposób przygotowywania kolejnych wydań."
         - label: "Jak wygląda proces współpracy?"
-          content: "Krótki brief → wycena z terminami → rozwój z demo co 1–2 tygodnie → wdrożenie i wsparcie."
+          content: "Zaczynamy od rozmowy o zadaniu i przeglądu dostępnych materiałów. Następnie proponuję plan prac z wyceną i szacowanym czasem realizacji. W trakcie rozwoju pokazuję działające zmiany; częstotliwość prezentacji i sposób wdrożenia ustalamy wspólnie."
         - label: "Co po wdrożeniu?"
           content: "Mogę dalej pracować nad produktem: naprawiać błędy, sprawdzać powiadomienia z monitoringu i dodawać funkcje. Zakres wsparcia i moją dostępność ustalamy osobno."
     - title: "Technologie"
       questions:
         - label: "Z jakich technologii korzystasz?"
-          content: "Laravel (Filament, Octane, FrankenPHP) i Symfony po stronie backendu, Vue.js/Nuxt na froncie, Docker, Terraform, CI/CD, integracje płatności i AI."
+          content: "Na backendzie pracuję z PHP, Laravelem i Symfony, a na frontendzie z Vue i Nuxt. We własnych produktach korzystam też z Filament, Redis, Go i integracji z dostawcami AI. Narzędzia do konkretnego zadania dobieram do istniejącego projektu."
         - label: "Czy pracujesz z zespołem klienta?"
           content: "Tak. Realizuję zadania z backlogu zespołu, przygotowuję pull requesty i uczestniczę w przeglądach kodu oraz rozmowach o rozwiązaniach. Sposób raportowania i prezentacji postępów ustalamy na początku współpracy."
         - label: "W jakiej strefie czasowej pracujesz?"
-          content: "CET (Poznań, Polska), z elastycznym nakładaniem się godzin dla Europy i USA."
+          content: "Pracuję w Poznaniu. Na początku współpracy ustalamy godziny kontaktu i czas wspólnej pracy z Twoim zespołem."

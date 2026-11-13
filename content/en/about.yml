@@ -1,23 +1,29 @@
 title: About Me
 content: |
-  Hi, I'm **Yurii Mokryi**, a Senior Full-Stack PHP Developer based in Poznań, Poland. I have 8+ years of commercial development experience: building and maintaining SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
+  Hi, I’m **Yurii Mokryi**, a Full-Stack PHP Developer based in Poznań. I work on web applications, from backend logic and interfaces to deployment and ongoing maintenance.
 
-  My primary role is full-stack development on a high-load ticketing platform for major sporting events (Formula 1, MotoGP, EICMA, EuroLeague): checkout, user accounts, admin dashboards, Stripe/Dalenys integration, and 3D seat-map solutions. In parallel, as the founder of DigiSpace, I build my own SaaS products — DigiPulse (uptime monitoring) and VetSpace (CRM for veterinary clinics).
+  My background is in science. I started out with freelance WordPress and PHP projects. Since 2021, I have worked on applications as part of professional development teams. Scientific work left me with a habit of testing assumptions: understanding what is known about a problem and finding a way to check a possible explanation.
 
-  ## My Stack
+  ## What I work on
 
-  I work with **Laravel** (Filament, Octane, FrankenPHP) and **Symfony** on the backend, and Vue.js and Nuxt on the frontend. In SaaS projects, I handle customer data separation, subscriptions and integrations with Stripe, Revolut, Dalenys and other APIs. For deployment and maintenance, I use Linux/SSH, Docker, Caddy, CI/CD, Proxmox and Terraform.
+  My client work includes Symfony ticketing platforms, where I develop checkout flows, user accounts, admin tools and payments through Stripe and Dalenys. I work with Doctrine, MySQL, Redis and queues, and build interfaces with Vue.js.
 
-  ## How I work
+  Alongside that work, I develop my own products through DigiSpace. VetSpace is a CRM for veterinary clinics, while VetCard provides their public pages and online booking. In DigiPulse, I work on website uptime monitoring; in NetPostPanel, source discovery and AI-assisted content preparation.
 
-  Before becoming a developer, I spent several years working in science. That left me with a habit of testing assumptions: first establish what is known about a problem, then choose a way to test it and draw conclusions. When working on an application, I start by understanding what users need and how the system works now. I then propose changes and agree on how to check the result.
+  These products use Laravel, Filament, Vue and Nuxt, with separate Go services handling some tasks. In DigiPulse, for example, a Go service checks website availability while Laravel manages monitors and notifications.
 
-  ## Beyond the Screen
+  ## From development to maintenance
 
-  Outside work, I enjoy exploring coffee shops in Poznań, following AI and cloud technologies, and contributing to open-source projects.
+  For my own products, I also manage environments, deployment and the services running after launch. The applications run in Docker, I manage virtual machines with Proxmox, and Caddy handles reverse proxying. Part of DigiPulse’s infrastructure is defined in Terraform, with releases automated through GitHub Actions.
 
-  If you need a developer for a new or existing product, [tell me about the task](https://t.me/YuriiMokryi). We can discuss what needs doing and what information I will need to estimate the work. You can find examples in my [projects](/projects).
-description: "My experience with PHP development, ticketing platforms and my own SaaS products."
+  This work is part of day-to-day development: a code change may also involve data migrations, background processes and environment settings. When joining an existing project, I therefore get to know how the application is run, tested and updated as well as the code itself.
+
+  ## Outside work
+
+  I enjoy exploring coffee shops in Poznań and following developments in AI and cloud technologies. I publish some of my projects’ source code on [GitHub](https://github.com/Yurij2015).
+
+  You can find examples and technical details in my [projects](/projects). If you would like to discuss your application, [send me a message](https://t.me/YuriiMokryi) and tell me what you are working on.
+description: "My path from science and freelance projects to PHP development, ticketing platforms and my own SaaS products."
 images:
   - src: /images/about/workspace.jpeg
     alt: My workstation

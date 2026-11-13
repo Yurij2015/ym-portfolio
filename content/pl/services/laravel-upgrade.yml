@@ -38,6 +38,6 @@ content: |-
 
   O złożoności aktualizacji decyduje stan aplikacji: czy jej pakiety są nadal utrzymywane, jak bardzo zmieniła się konfiguracja i którą część własnego kodu trzeba dostosować. Sama różnica między obecną a docelową wersją nie wystarcza do wyceny, dlatego zaczynam od przeglądu zależności i sposobu uruchamiania.
 
-  Gdy wiem już, co trzeba zmienić, ustalam, jak sprawdzić działanie systemu po aktualizacji. We własnych produktach opartych na Laravelu — VetSpace i DigiPulse — pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
+  Gdy wiem już, co trzeba zmienić, ustalam, jak sprawdzić działanie systemu po aktualizacji. We własnych produktach opartych na Laravelu, VetSpace i DigiPulse, pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
 
   Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt aktualizacji do uzgodnionej wersji zaczyna się od $1 600. W wycenie uwzględniam też wymianę porzuconych pakietów i napisanie brakujących testów, jeśli okażą się potrzebne.

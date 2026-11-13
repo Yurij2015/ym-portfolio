@@ -1,23 +1,29 @@
 title: O mnie
-description: "Moje doświadczenie w programowaniu w PHP, pracy nad platformami sprzedaży biletów i rozwijaniu własnych produktów SaaS."
+description: "Moja droga od nauki i zleceń freelancerskich do pracy z PHP, platformami sprzedaży biletów i własnymi produktami SaaS."
 content: |
-  Cześć, jestem **Yurii Mokryi**, Senior Full-Stack PHP Developer z Poznania. Mam ponad 8 lat komercyjnego doświadczenia: buduję i utrzymuję produkty SaaS, systemy CRM, platformy ticketingowe/e-commerce oraz REST API.
+  Cześć, jestem **Yurii Mokryi**, Full-Stack PHP Developer. Mieszkam w Poznaniu i pracuję nad aplikacjami internetowymi: od logiki serwerowej i interfejsów po wdrożenie i dalsze utrzymanie.
 
-  Moja główna praca to full-stack development platformy ticketingowej o wysokim obciążeniu dla dużych wydarzeń sportowych (Formula 1, MotoGP, EICMA, EuroLeague): checkout, konta użytkowników, panele administracyjne, integracja Stripe/Dalenys oraz rozwiązania 3D seat-map. Równolegle, jako założyciel DigiSpace, buduję własne produkty SaaS — DigiPulse (monitorowanie dostępności) i VetSpace (CRM dla klinik weterynaryjnych).
+  Wcześniej pracowałem naukowo. Programowanie zaczynałem od zleceń na WordPress i PHP, a od 2021 roku pracuję nad aplikacjami w zespołach komercyjnych. Z pracy naukowej został mi nawyk sprawdzania założeń: ustalenia, co wiadomo o problemie, i znalezienia sposobu na zweryfikowanie możliwego wyjaśnienia.
 
-  ## Mój stos technologiczny
+  ## Nad czym pracuję
 
-  Na backendzie pracuję z **Laravelem** (Filament, Octane, FrankenPHP) i **Symfony**, a na frontendzie z Vue.js i Nuxt. W projektach SaaS zajmuję się oddzieleniem danych klientów, subskrypcjami oraz integracjami ze Stripe, Revolut, Dalenys i innymi API. Do wdrażania i utrzymania wykorzystuję Linux/SSH, Docker, Caddy, CI/CD, Proxmox i Terraform.
+  W projektach klientów rozwijam platformy sprzedaży biletów w Symfony. Zajmuję się składaniem zamówień, kontami użytkowników, narzędziami administracyjnymi i płatnościami przez Stripe oraz Dalenys. Pracuję z Doctrine, MySQL, Redis i kolejkami, a interfejsy tworzę w Vue.js.
 
-  ## Jak pracuję
+  Równolegle rozwijam własne produkty w ramach DigiSpace. VetSpace to CRM dla klinik weterynaryjnych, a VetCard udostępnia ich publiczne strony i rezerwację wizyt online. W DigiPulse pracuję nad monitoringiem dostępności stron, a w NetPostPanel nad wyszukiwaniem źródeł i przygotowywaniem treści z pomocą AI.
 
-  Zanim zająłem się programowaniem, przez kilka lat pracowałem w nauce. Został mi z tego nawyk sprawdzania założeń: najpierw ustalam, co wiadomo o problemie, potem wybieram sposób weryfikacji i wyciągam wnioski. Przy pracy nad aplikacją zaczynam od potrzeb użytkowników i poznania obecnego działania systemu. Następnie proponuję zmiany i uzgadniam, jak sprawdzimy ich efekt.
+  W tych produktach korzystam z Laravela, Filament, Vue i Nuxt. Część zadań wykonują osobne serwisy Go. Na przykład w DigiPulse taki serwis sprawdza dostępność stron, a Laravel odpowiada za zarządzanie monitorami i powiadomieniami.
 
-  ## Poza ekranem
+  ## Od rozwoju do utrzymania
 
-  Po pracy lubię odkrywać kawiarnie w Poznaniu, śledzę rozwój AI i technologii chmurowych oraz uczestniczę w projektach open source.
+  We własnych produktach zajmuję się też środowiskami, wdrażaniem i działaniem usług po uruchomieniu. Aplikacje działają w Dockerze, maszynami wirtualnymi zarządzam przez Proxmox, a Caddy pełni rolę reverse proxy. Część infrastruktury DigiPulse jest opisana w Terraform, natomiast kolejne wersje wdrażam automatycznie przez GitHub Actions.
 
-  Jeśli szukasz programisty do nowego lub istniejącego produktu, [opisz zadanie](https://t.me/YuriiMokryi). Omówimy, co trzeba zrobić i jakie informacje będą potrzebne do wyceny. Przykłady mojej pracy znajdziesz w [projektach](/projects).
+  Ta praca łączy się z codziennym programowaniem: zmiana kodu może wymagać migracji danych, uwzględnienia procesów w tle i konfiguracji środowiska. Dlatego poznając istniejący projekt, sprawdzam również, jak aplikacja jest uruchamiana, testowana i aktualizowana.
+
+  ## Po pracy
+
+  Lubię odkrywać kawiarnie w Poznaniu i śledzić rozwój AI oraz technologii chmurowych. Część kodu własnych projektów publikuję na [GitHub](https://github.com/Yurij2015).
+
+  Przykłady i szczegóły techniczne znajdziesz w [projektach](/projects). Jeśli chcesz porozmawiać o swojej aplikacji, [napisz do mnie](https://t.me/YuriiMokryi) i opowiedz, nad czym pracujesz.
 images:
   - src: /images/about/workspace.jpeg
     alt: Moje stanowisko pracy

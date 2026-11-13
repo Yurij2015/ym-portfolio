@@ -43,7 +43,7 @@ content: |-
 
   In DigiSpace, I am gradually moving screens from the old Inertia and Vue admin panel to Filament. The two panels run side by side, and the new one already lets users edit content, translations and SEO metadata. I also use Filament in DigiPulse to manage monitors, contacts and notification rules.
 
-  For Vue and Nuxt interfaces, I also work with Flowbite. It powers NetPostPanel and the VetSpace clinic panel, as well as client projects: a marketplace admin panel with users, listings and orders, and a service for photographers with galleries and service packages.
+  I also work with Flowbite. It powers NetPostPanel and the VetSpace clinic panel, as well as client projects: a marketplace admin panel with users, listings and orders, and a service for photographers with galleries and service packages.
 
   I have also built two admin panels for Laravel applications using AdminLTE. One fetches data from an external API on a schedule, letting an agency view and export statistics and expenses. The other manages the collection and filtering of social network data through job queues.
 

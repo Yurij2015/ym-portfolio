@@ -37,10 +37,10 @@ faq:
 content: |-
   ## Zmiany w działającym systemie
 
-  Nawet niewielka zmiana może dotyczyć kilku części aplikacji. Nowa integracja wpływa na przykład na wymianę danych, a zmiana obliczeń — na powiązane raporty. Dlatego przed rozpoczęciem prac ustalam te zależności i sposób sprawdzenia wyniku w istniejącym systemie.
+  Nawet niewielka zmiana może dotyczyć kilku części aplikacji. Nowa integracja wpływa na przykład na wymianę danych, a zmiana obliczeń zmienia powiązane raporty. Dlatego przed rozpoczęciem prac ustalam te zależności i sposób sprawdzenia wyniku w istniejącym systemie.
 
-  Przykładem jest DigiSpace, gdzie publiczna strona, obsługa treści i panele administracyjne korzystają ze wspólnego kodu w Laravelu. Zmiany pojedynczej funkcji muszą uwzględniać pozostałą logikę aplikacji — to samo podejście stosuję w aplikacjach klientów.
+  Przykładem jest DigiSpace, gdzie publiczna strona, obsługa treści i panele administracyjne korzystają ze wspólnego kodu w Laravelu. Zmiany pojedynczej funkcji muszą uwzględniać pozostałą logikę aplikacji. To samo podejście stosuję w aplikacjach klientów.
 
-  Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji — przykład oczekiwanego wyniku. Te informacje pomogą mi znaleźć odpowiednie miejsca w kodzie i wycenić pracę.
+  Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji przykład oczekiwanego wyniku. Te informacje pomogą mi znaleźć odpowiednie miejsca w kodzie i wycenić pracę.
 
   Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od $1 800. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia.

@@ -2,16 +2,16 @@ title: Hi, I'm Yurii Mokryi — Senior Full-Stack PHP Developer
 about:
   title: About Me
   description: |
-    Full-Stack developer with 8+ years of commercial experience. I build and maintain SaaS products, CRM systems, ticketing/e-commerce platforms, and REST APIs.
-    I work with Laravel (Filament, Octane, FrankenPHP) and Symfony on the backend, and Vue.js and Nuxt on the frontend. My tasks include separating customer data in SaaS products and integrating payment systems.
-description: "I have more than 8 years of experience developing and maintaining SaaS products, CRM systems and ticketing platforms. I use PHP, Laravel, Symfony and Vue/Nuxt to build user portals, payments, subscriptions and APIs, with Docker and CI/CD for deployment."
+    I work on my own products and contribute to client projects. In VetSpace, I develop a CRM for veterinary clinics; in DigiPulse, website uptime monitoring; and in NetPostPanel, AI-assisted content preparation.
+    These products involve Laravel, Filament, queues and APIs. I use Vue and Nuxt for interfaces and Go for separate services. The projects below include examples and technical details.
+description: "I have more than 8 years of experience with PHP. I develop SaaS products, CRM systems and ticketing platforms with Laravel and Symfony, with interfaces built in Vue and Nuxt. My work covers user portals, payments, subscriptions and integrations with other services. I also set up deployment and maintain applications after launch."
 experience:
   title: Work Experience
   items:
     - position: Full-Stack Developer
       date: 2021 — Present
       current: true
-      description: "Ticketing platform for Formula 1, MotoGP, EICMA, EuroLeague: checkout, user accounts, Stripe/Dalenys, 3D seat-map."
+      description: "I develop features for a ticketing platform, including checkout, user accounts, admin panels, Stripe and Dalenys payments, and seat selection integrations. I work with Symfony and Vue.js."
       company:
         name: Platinium Group SAM
         logo: i-simple-icons-symfony
@@ -28,7 +28,7 @@ experience:
         color: "#6B7280"
     - position: Full-Stack Developer
       date: Sep 2024 — Dec 2025
-      description: "Part-time full-stack development of web applications with PHP (Laravel) and custom frameworks: new features, maintenance, bug fixes, REST APIs."
+      description: "I worked part-time on Laravel and custom PHP applications, adding features, fixing bugs, and developing and extending REST APIs."
       company:
         name: SystemFreaks
         url: "https://www.systemfreaks.com/"
@@ -98,7 +98,7 @@ hero:
       alt: Stripe
 seo:
   title: Yurii Mokryi - Senior Full-Stack PHP Developer
-  description: Senior Full-Stack developer with 8+ years of commercial experience. Laravel, Filament, Symfony, Vue/Nuxt. SaaS products, high-load ticketing platforms, AI integrations.
+  description: "PHP developer with more than 8 years of experience. Laravel, Symfony, Vue and Nuxt for SaaS, CRM, payments, APIs and application maintenance."
 testimonials:
   - quote: "Yuri is a coding machine. From the moment he applied for the contract, it was clear he was a man of few words, but the interview went great and he was hired. He was able to design the database, set up the code architecture, and plan for future releases. He works independently, reviews and debugs code, and consistently suggests improvements while spotting logical flaws in the system. I've been working with freelancers since 2012, and he is the only one on Upwork who truly excelled at difficult tasks and added real value to the project. He deserves a senior pay rate. He has always been available to support the project when needed, never makes excuses, and communicates clearly."
     rating: 5
@@ -111,7 +111,7 @@ testimonials:
       name: 'LinkedIn'
       description: 'Recommendation on LinkedIn'
       to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
-  - quote: "I work on ticketing platforms and my own SaaS products, covering backend logic, interfaces, payments and deployment. If you need a developer for a new module or help maintaining an existing application, we can discuss the task."
+  - quote: "You can get in touch about an individual task or bring me into ongoing product development. To get started, describe what needs doing and share the application or any materials you already have."
     author:
       name: Yurii Mokryi
       description: Senior Full-Stack PHP Developer • 8+ years • Poznań
@@ -127,14 +127,14 @@ faq:
         - label: Do you take over existing projects?
           content: "Yes. Much of my work involves developing and maintaining applications after launch, including code reviews, refactoring and new features. Before making changes, I get to know the project and its release process."
         - label: What does the collaboration process look like?
-          content: A short brief → estimate with deadlines → development with demos every 1–2 weeks → deployment and support.
+          content: "We start by discussing the task and reviewing the available materials. I then propose a work plan with a time and cost estimate. During development, I share working changes; we agree together on demo frequency and the release process."
         - label: What happens after the release?
           content: "I can continue working on the product, fixing bugs, reviewing monitoring alerts and adding features. We agree separately on the scope of support and my availability."
     - title: Technologies
       questions:
         - label: What technologies do you work with?
-          content: Laravel (Filament, Octane, FrankenPHP) and Symfony on the backend, Vue.js/Nuxt on the frontend, Docker, Terraform, CI/CD, payment integrations and AI.
+          content: "I use PHP, Laravel and Symfony on the backend, and Vue and Nuxt on the frontend. My own products also use Filament, Redis, Go and integrations with AI providers. For each task, I choose tools that fit the existing project."
         - label: Can you work with our in-house team?
           content: "Yes. I work with the team’s backlog, prepare pull requests and take part in code reviews and technical discussions. We agree on reports and demos at the start of the collaboration."
         - label: What timezone do you work in?
-          content: CET (Poznań, Poland), with flexible overlap for Europe and the US.
+          content: "I work from Poznań, Poland. We discuss communication hours and overlap with your team at the start of the collaboration."
