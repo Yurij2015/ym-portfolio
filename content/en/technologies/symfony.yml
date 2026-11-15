@@ -11,7 +11,7 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Symfony is a PHP framework I use in my commercial work on a ticketing platform serving Formula 1, MotoGP, EICMA and EuroLeague events. My work covers both customer-facing purchase flows and internal administration tools.
+  Symfony is a PHP framework I use in my commercial work on a ticket sales platform. My work covers both customer-facing purchase flows and internal administration tools.
 
   ## What I work on
 
@@ -29,6 +29,6 @@ content: |
   I work with both frameworks. Existing architecture, team conventions and integrations influence the choice more than a fixed division between enterprise and smaller products. On an established Symfony application, I focus on changes that can be tested, reviewed and maintained through future releases.
 faq:
   - label: What kind of Symfony projects have you worked on?
-    content: My commercial work includes a ticketing platform for Formula 1, MotoGP, EICMA and EuroLeague events, covering checkout, payment integrations and administration tools.
+    content: My commercial work includes a ticket sales platform, covering checkout, payment integrations and administration tools.
   - label: Can you work on an existing Symfony application?
     content: Yes. I start by understanding the architecture and release process, then identify changes and tests needed to extend the application safely.

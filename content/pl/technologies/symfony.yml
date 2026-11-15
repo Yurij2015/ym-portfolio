@@ -11,7 +11,7 @@ links:
     color: neutral
     icon: i-heroicons-arrow-top-right-on-square
 content: |
-  Symfony to framework PHP, z którego korzystam w pracy komercyjnej nad platformą sprzedaży biletów na Formula 1, MotoGP, EICMA i EuroLeague. Pracuję zarówno nad procesem zakupu, jak i wewnętrznymi narzędziami administracyjnymi.
+  Symfony to framework PHP, z którego korzystam w pracy komercyjnej nad platformą sprzedaży biletów. Pracuję zarówno nad procesem zakupu, jak i wewnętrznymi narzędziami administracyjnymi.
 
   ## Czym się zajmuję
 
@@ -29,6 +29,6 @@ content: |
   Pracuję z oboma frameworkami. Wybór zależy od istniejącej architektury, zasad zespołu i integracji, a nie od sztywnego podziału na duże i małe produkty. W rozwijanej aplikacji Symfony skupiam się na zmianach, które można przejrzeć, przetestować i utrzymywać w kolejnych wydaniach.
 faq:
   - label: Przy jakich projektach Symfony pracowałeś?
-    content: "Moje doświadczenie komercyjne obejmuje platformę sprzedaży biletów na Formula 1, MotoGP, EICMA i EuroLeague: składanie zamówień, integracje płatności oraz narzędzia administracyjne."
+    content: "Moje doświadczenie komercyjne obejmuje platformę sprzedaży biletów: składanie zamówień, integracje płatności oraz narzędzia administracyjne."
   - label: Czy możesz dołączyć do istniejącego projektu Symfony?
     content: Tak. Najpierw poznaję architekturę i proces wydań, a następnie określam zmiany i testy potrzebne do bezpiecznego rozwoju aplikacji.

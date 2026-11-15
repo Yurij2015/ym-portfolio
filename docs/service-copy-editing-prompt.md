@@ -19,7 +19,7 @@ Edit the service pages of Yurii Mokryi's personal portfolio: `content/uk/service
 ## Facts and boundaries
 
 - Sources: `content/uk/projects/*.yml`, `content/uk/about.yml`. Do not invent clients, load figures, metrics, testimonials or certifications.
-- Commercial work: multi-tenant ticket shops selling tickets for football, basketball, motorcycle and car racing, museums, exhibitions and festivals. Symfony with Doctrine, MySQL, Redis, queues, Vue.js, Stripe and Dalenys payments. Do not name clients or events (Formula 1, MotoGP, etc.) on service pages.
+- Commercial work: multi-tenant ticket shops selling tickets for football, basketball, motorcycle and car racing, museums, exhibitions and festivals. Symfony with Doctrine, MySQL, Redis, queues, Vue.js, Stripe and Dalenys payments. Never name clients, events or event brands anywhere on the site.
 - Payment providers from experience: Stripe (VetSpace via Cashier; ticket shops), Dalenys (ticket shops), Revolut.
 - Own projects: VetSpace — clinic CRM, separate database per clinic, Stripe subscriptions; VetCard — Nuxt SSR clinic pages and online booking via a Laravel API; DigiPulse — Laravel/Filament, checks in a separate Go service, Redis, MCP, Telegram/email alerts; NetPostPanel — source discovery, generation, Horizon, Qdrant, Langfuse, external API; DigiSpace — multilingual Laravel CMS with Filament alongside an older Inertia/Vue admin.
 - Do not change slug, icon, group, order, priceFrom, priceUnit, technologies, projects or `indexable`. The price is a guide for a first agreed stage, not a package.

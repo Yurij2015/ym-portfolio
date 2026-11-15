@@ -31,7 +31,7 @@
   "facts": {
     "years": "8+ years of commercial development",
     "saas": "SaaS products live in production: VetSpace, DigiPulse, NetPostPanel",
-    "ticketing": "Ticketing platforms for Formula 1, MotoGP, EICMA, EuroLeague",
+    "ticketing": "Ticket sales platforms built with Symfony",
     "reply": "Reply within 24 hours"
   },
   "tech": {
