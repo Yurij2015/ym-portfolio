@@ -1,20 +1,27 @@
 indexable: false
 title: Rozwój i modyfikacje aplikacji PHP
-description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP opartych na Laravelu, Symfony lub napisanych bez frameworka.
-summary: "Rozwijam istniejące aplikacje PHP oparte na Laravelu, Symfony lub napisane bez frameworka. Zajmuję się zmianami w obliczeniach, raportami, wymianą danych z innymi usługami i naprawą błędów. Zanim zmienię kod, sprawdzam, jak działa dana część systemu i z czym jest powiązana. Dzięki temu mogę przetestować poprawkę razem z operacjami, na które wpływa."
+description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP opartych
+  na Laravelu, Symfony lub napisanych bez frameworka.
+summary: "Rozwijam istniejące aplikacje PHP oparte na Laravelu, Symfony lub
+  napisane bez frameworka. Zajmuję się zmianami w obliczeniach, raportami,
+  wymianą danych z innymi usługami i naprawą błędów. Zanim zmienię kod,
+  sprawdzam, jak działa dana część systemu i z czym jest powiązana. Dzięki temu
+  mogę przetestować poprawkę razem z operacjami, na które wpływa."
 icon: i-simple-icons-php
 group: development
 order: 12
-priceFrom: 1800
+priceFrom: 7200
 timeline: Termin pierwszego etapu ustalam po przeglądzie kodu
 updated: 2026-11-13
 deliverables:
-  - Funkcja lub poprawka w aplikacji, na przykład obliczenia, raport albo wymiana danych z inną usługą
+  - Funkcja lub poprawka w aplikacji, na przykład obliczenia, raport albo
+    wymiana danych z inną usługą
   - Testy uzgodnionych scenariuszy i sprawdzenie zgodności
   - Instrukcja konfiguracji i wdrożenia zmienionych elementów
 process:
   - title: Przegląd aplikacji
-    description: Sprawdzam uruchamianie projektu, kod odpowiedzialny za daną funkcję i zależności od innych usług.
+    description: Sprawdzam uruchamianie projektu, kod odpowiedzialny za daną funkcję
+      i zależności od innych usług.
   - title: Uzgodnienie zakresu
     description: Opisuję pierwszy etap, jego cenę i sposób sprawdzenia wyniku.
   - title: Realizacja i przekazanie
@@ -31,11 +38,17 @@ projects:
   - vetspace
 faq:
   - label: Czy pracujesz z autorskim kodem PHP?
-    content: Tak. Przed wyceną potrzebuję poznać strukturę kodu, zależności i sposób uruchomienia.
+    content: Tak. Przed wyceną potrzebuję poznać strukturę kodu, zależności i sposób
+      uruchomienia.
   - label: Czy trzeba przejść na framework?
-    content: Nie przy każdym zadaniu. Rozważamy migrację, jeśli ułatwi dalszą pracę i uzasadni poniesione koszty.
+    content: Nie przy każdym zadaniu. Rozważamy migrację, jeśli ułatwi dalszą pracę
+      i uzasadni poniesione koszty.
   - label: "Czy mogę zgłosić się z małym zadaniem?"
-    content: "Tak. Pojedynczą poprawkę lub niewielką zmianę możemy omówić w rozliczeniu godzinowym, ze stawką od 140 zł za godzinę. Prześlij opis, żebyśmy mogli omówić stawkę i potrzebny czas, uwzględniając złożoność zadania i stan projektu. Cena od $1 800 dotyczy określonego zakresu prac, a nie każdego zgłoszenia."
+    content: "Tak. Pojedynczą poprawkę lub niewielką zmianę możemy omówić w
+      rozliczeniu godzinowym, ze stawką od 140 zł za godzinę. Prześlij opis,
+      żebyśmy mogli omówić stawkę i potrzebny czas, uwzględniając złożoność
+      zadania i stan projektu. Cena od 7200 złdotyczy określonego zakresu prac,
+      a nie każdego zgłoszenia."
 content: |-
   ## Zmiany w działającym systemie
 
@@ -45,4 +58,5 @@ content: |-
 
   Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji przykład oczekiwanego wyniku. Te informacje pomogą mi znaleźć odpowiednie miejsca w kodzie i wycenić pracę.
 
-  Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od $1 800. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia. Przy drobnej poprawce możemy omówić rozliczenie godzinowe, ze stawką od 140 zł za godzinę. Stawkę i przewidywany czas ustalamy po zapoznaniu się z zadaniem i stanem projektu.
+  Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od 7200 zł. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia. Przy drobnej poprawce możemy omówić rozliczenie godzinowe, ze stawką od 140 zł za godzinę. Stawkę i przewidywany czas ustalamy po zapoznaniu się z zadaniem i stanem projektu.
+priceCurrency: PLN

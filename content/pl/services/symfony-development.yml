@@ -1,11 +1,16 @@
 indexable: false
 title: Programowanie w Symfony
-description: Moduły, integracje i procesy w tle w Symfony. Pomagam rozwijać istniejące aplikacje.
-summary: "Pomagam rozwijać aplikacje w Symfony, dodając obsługę zamówień, integracje płatności, API i zadania w tle. Zajmuję się nimi między innymi w serwisach sprzedaży biletów o dużym ruchu. To doświadczenie wykorzystuję przy dodawaniu modułów, zmianach reguł biznesowych i rozwiązywaniu problemów z wymianą danych w Twoim systemie."
+description: Moduły, integracje i procesy w tle w Symfony. Pomagam rozwijać
+  istniejące aplikacje.
+summary: "Pomagam rozwijać aplikacje w Symfony, dodając obsługę zamówień,
+  integracje płatności, API i zadania w tle. Zajmuję się nimi między innymi w
+  serwisach sprzedaży biletów o dużym ruchu. To doświadczenie wykorzystuję przy
+  dodawaniu modułów, zmianach reguł biznesowych i rozwiązywaniu problemów z
+  wymianą danych w Twoim systemie."
 icon: i-simple-icons-symfony
 group: development
 order: 11
-priceFrom: 3200
+priceFrom: 12800
 timeline: Termin zależy od modułu i zewnętrznych zależności
 updated: 2026-11-13
 deliverables:
@@ -14,11 +19,13 @@ deliverables:
   - Dokumentacja konfiguracji, kolejek i wdrożenia
 process:
   - title: Analiza modułu
-    description: Przeglądam serwisy, encje Doctrine, komunikaty i wywołania zewnętrzne związane z zadaniem.
+    description: Przeglądam serwisy, encje Doctrine, komunikaty i wywołania
+      zewnętrzne związane z zadaniem.
   - title: Realizacja
     description: Wprowadzam zmiany z uwzględnieniem istniejących kontraktów i zależności.
   - title: Weryfikacja
-    description: Sprawdzam poprawne scenariusze i awarie oraz przygotowuję zmiany do wydania.
+    description: Sprawdzam poprawne scenariusze i awarie oraz przygotowuję zmiany do
+      wydania.
 technologies:
   - symfony
   - php
@@ -30,9 +37,11 @@ technologies:
 projects: []
 faq:
   - label: Czy pracujesz z istniejącymi projektami Symfony?
-    content: Tak. Potrzebuję opisu zadania, wersji zależności i dostępu do przeglądu kodu.
+    content: Tak. Potrzebuję opisu zadania, wersji zależności i dostępu do przeglądu
+      kodu.
   - label: Czy Messenger jest zawsze potrzebny?
-    content: Nie. Kolejka służy procesom wymagającym działania asynchronicznego. Ustalamy to podczas analizy zadania.
+    content: Nie. Kolejka służy procesom wymagającym działania asynchronicznego.
+      Ustalamy to podczas analizy zadania.
 content: |-
   ## Serwisy sprzedaży biletów oparte na Symfony
 
@@ -40,4 +49,5 @@ content: |-
 
   W tych projektach pracuję z zamówieniami, płatnościami i wymianą danych z usługami zewnętrznymi. Gdy trzeba zmienić jeden z tych procesów, najpierw sprawdzam jego działanie i powiązania z pozostałymi częściami aplikacji. Dzięki temu mogę zaplanować zmiany i przetestować cały proces po ich wprowadzeniu.
 
-  Opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP. Sprawdzę, jakich modułów i usług zewnętrznych dotyczy zadanie. Przygotowanie modułu z testami kosztuje od $3 200; potrzebne integracje uwzględniam w wycenie.
+  Opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP. Sprawdzę, jakich modułów i usług zewnętrznych dotyczy zadanie. Przygotowanie modułu z testami kosztuje od 12 800 zł; potrzebne integracje uwzględniam w wycenie.
+priceCurrency: PLN

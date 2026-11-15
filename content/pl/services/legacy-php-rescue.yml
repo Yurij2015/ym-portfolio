@@ -1,22 +1,30 @@
 indexable: false
 title: Stabilizacja istniejącego projektu PHP
-description: "Diagnoza projektu PHP: uruchamianie, kopie zapasowe, błędy i wdrażanie. Najpierw analiza i uzgodniony plan prac."
-summary: "Pomagam uporządkować projekt PHP, który trudno uruchomić, odtworzyć lub zmienić. Zależnie od problemu sprawdzam kod, infrastrukturę i kopie zapasowe, odtwarzam błędy oraz przywracam działające wdrożenie. Zaczynam od problemu, który blokuje Cię teraz, a potem ustalam kolejność poprawek i dalszych prac."
+description: "Diagnoza projektu PHP: uruchamianie, kopie zapasowe, błędy i
+  wdrażanie. Najpierw analiza i uzgodniony plan prac."
+summary: "Pomagam uporządkować projekt PHP, który trudno uruchomić, odtworzyć
+  lub zmienić. Zależnie od problemu sprawdzam kod, infrastrukturę i kopie
+  zapasowe, odtwarzam błędy oraz przywracam działające wdrożenie. Zaczynam od
+  problemu, który blokuje Cię teraz, a potem ustalam kolejność poprawek i
+  dalszych prac."
 icon: i-lucide-life-buoy
 group: support
 order: 23
-priceFrom: 1800
+priceFrom: 7200
 timeline: Diagnozę i poprawki wyceniam jako osobne etapy
 updated: 2026-11-13
 deliverables:
-  - "Mapa projektu: lokalizacja kodu i danych, dostępne uprawnienia oraz przeszkody w uruchomieniu lub odtworzeniu"
+  - "Mapa projektu: lokalizacja kodu i danych, dostępne uprawnienia oraz
+    przeszkody w uruchomieniu lub odtworzeniu"
   - Uzgodnione poprawki oraz konfiguracja środowiska
   - Instrukcja uruchomienia i lista dalszych prac
 process:
   - title: Inwentaryzacja
-    description: Sprawdzam, gdzie znajdują się kod i dane, do czego mamy dostęp i czy zachowały się kopie zapasowe.
+    description: Sprawdzam, gdzie znajdują się kod i dane, do czego mamy dostęp i
+      czy zachowały się kopie zapasowe.
   - title: Odtworzenie środowiska
-    description: Sprawdzam uruchomienie kopii i odtworzenie danych w dostępnym środowisku testowym.
+    description: Sprawdzam uruchomienie kopii i odtworzenie danych w dostępnym
+      środowisku testowym.
   - title: Pierwsze poprawki
     description: Usuwam uzgodnione problemy i dokumentuję zmiany.
 technologies:
@@ -29,9 +37,12 @@ technologies:
 projects: []
 faq:
   - label: Co jeśli brakuje dostępu do serwera?
-    content: Trzeba ustalić właściciela konta i procedurę odzyskania u dostawcy. Mogę pomóc od strony technicznej, ale możliwość odzyskania dostępu zależy od uprawnień właściciela i tego, co udało się zachować.
+    content: Trzeba ustalić właściciela konta i procedurę odzyskania u dostawcy.
+      Mogę pomóc od strony technicznej, ale możliwość odzyskania dostępu zależy
+      od uprawnień właściciela i tego, co udało się zachować.
   - label: Czy projekt trzeba przepisać?
-    content: Oceniamy to po diagnozie. Najpierw sprawdzamy, co można utrzymywać i jakie zmiany są potrzebne do działania.
+    content: Oceniamy to po diagnozie. Najpierw sprawdzamy, co można utrzymywać i
+      jakie zmiany są potrzebne do działania.
 content: |-
   ## Najpierw ustalić, co jest dostępne
 
@@ -39,4 +50,5 @@ content: |-
 
   Po tej analizie opisuję stan projektu i usuwam uzgodnione problemy, które blokują pracę. Pozostałe ustalenia zbieram w planie dalszych działań. Jeśli dalsze prace wymagają konfiguracji środowiska, odzyskania danych lub zmiany sposobu wdrażania, wyceniam je osobno.
 
-  Opisz, co przestało działać, i daj znać, czy masz kod, dostęp do systemu, kopie zapasowe lub komunikaty o błędach. To wystarczy, żeby ustalić punkt wyjścia. Diagnoza i pierwsze uzgodnione prace nad przywróceniem projektu do działania kosztują od $1 800.
+  Opisz, co przestało działać, i daj znać, czy masz kod, dostęp do systemu, kopie zapasowe lub komunikaty o błędach. To wystarczy, żeby ustalić punkt wyjścia. Diagnoza i pierwsze uzgodnione prace nad przywróceniem projektu do działania kosztują od 7200 zł.
+priceCurrency: PLN

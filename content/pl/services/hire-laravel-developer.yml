@@ -1,7 +1,8 @@
 indexable: false
 title: Senior programista PHP i Laravel do Twojego zespołu
-description: "Wsparcie projektów PHP, Laravel i Symfony: funkcje, integracje, przeglądy kodu i praca z backlogiem."
-summary: "Dołączam do zespołów jako Senior Full-Stack PHP Developer, zajmując się rozwojem funkcji produktu, integracjami i zadaniami z backlogu. Mam ponad 8 lat doświadczenia komercyjnego w pracy z Laravelem, Symfony, Vue i systemami płatności. Dzięki temu mogę zająć się zadaniem od ustalenia wymagań po kod i testy, a także pomóc zespołowi w przeglądach kodu i rozwiązywaniu problemów."
+description: "Wsparcie projektów PHP, Laravel i Symfony: funkcje, integracje,
+  przeglądy kodu i praca z backlogiem."
+summary: "Dołączam do zespołów jako Senior Full-Stack PHP Developer, rozwijając funkcje produktu, integracje i zadania z backlogu. Mam ponad 8 lat doświadczenia w tworzeniu aplikacji internetowych z użyciem Laravela i Symfony, a także w pracy z Vue i systemami płatności. Dzięki temu mogę prowadzić zadania od wymagań przez kod i testy, a także pomagać zespołowi w przeglądach kodu i analizie problemów."
 icon: i-lucide-user-check
 group: development
 order: 40
@@ -11,16 +12,20 @@ priceUnit: hour
 timeline: Termin rozpoczęcia i liczbę godzin ustalamy osobno
 updated: 2026-11-13
 deliverables:
-  - Funkcje obejmujące backend i interfejs, z testami oraz pull requestem w Twoim repozytorium
+  - Funkcje obejmujące backend i interfejs, z testami oraz pull requestem w
+    Twoim repozytorium
   - Testy i przeglądy kodu w uzgodnionym zakresie
-  - Zestawienie przepracowanych godzin oraz krótkie informacje o postępach i przeszkodach
+  - Zestawienie przepracowanych godzin oraz krótkie informacje o postępach i
+    przeszkodach
 process:
   - title: Poznanie zespołu
-    description: Omawiamy technologie, najbliższe zadania, godziny pracy i sposób komunikacji.
+    description: Omawiamy technologie, najbliższe zadania, godziny pracy i sposób
+      komunikacji.
   - title: Pierwsze zadanie
     description: Ustalamy zakres zadania, kryteria odbioru i szacowany czas.
   - title: Dalsza współpraca
-    description: Pracuję z backlogiem, uczestniczę w uzgodnionych rozmowach i przekazuję kod do przeglądu.
+    description: Pracuję z backlogiem, uczestniczę w uzgodnionych rozmowach i
+      przekazuję kod do przeglądu.
 technologies:
   - laravel
   - symfony
@@ -33,9 +38,11 @@ projects:
   - digipulse
 faq:
   - label: Czy można zacząć od krótkiego zadania?
-    content: Tak. Pierwsze płatne zadanie pozwala sprawdzić współpracę i poznać projekt. Zakres oraz warunki ustalamy wcześniej.
+    content: Tak. Pierwsze płatne zadanie pozwala sprawdzić współpracę i poznać
+      projekt. Zakres oraz warunki ustalamy wcześniej.
   - label: W jakiej strefie czasowej pracujesz?
-    content: Pracuję w Poznaniu. Na początku ustalamy godziny pracy i ich pokrycie z godzinami Twojego zespołu. Komunikuję się po ukraińsku i angielsku.
+    content: Pracuję w Poznaniu. Na początku ustalamy godziny pracy i ich pokrycie z
+      godzinami Twojego zespołu. Komunikuję się po ukraińsku i angielsku.
 content: |-
   ## Nad czym pracuję
 

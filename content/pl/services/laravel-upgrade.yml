@@ -1,15 +1,21 @@
 indexable: false
 title: Aktualizacja Laravela
-description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu, testy i plan wdrożenia."
-summary: "Aktualizuję Laravela i PHP w istniejących aplikacjach, dostosowując pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam te scenariusze. Następnie planuję wdrożenie: migracje bazy, restart procesów kolejek i możliwość powrotu do poprzedniej wersji."
+description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu,
+  testy i plan wdrożenia."
+summary: "Aktualizuję Laravela i PHP w istniejących aplikacjach, dostosowując
+  pakiety, własny kod, konfigurację oraz testy do docelowej wersji. Ponieważ
+  zmiany mogą wpłynąć na logowanie, płatności i zadania w tle, osobno sprawdzam
+  te scenariusze. Następnie planuję wdrożenie: migracje bazy, restart procesów
+  kolejek i możliwość powrotu do poprzedniej wersji."
 icon: i-lucide-circle-arrow-up
 group: support
 order: 20
-priceFrom: 1600
+priceFrom: 6400
 timeline: Termin ustalam po przeglądzie zależności i zakresu aktualizacji
 updated: 2026-11-13
 deliverables:
-  - Lista niezgodnych pakietów i zmian kodu potrzebnych do przejścia na wersję docelową
+  - Lista niezgodnych pakietów i zmian kodu potrzebnych do przejścia na wersję
+    docelową
   - Zaktualizowane zależności i kod z testami uzgodnionych scenariuszy
   - Plan wydania, kontroli po wdrożeniu i ewentualnego wycofania zmian
 process:
@@ -30,9 +36,11 @@ projects:
   - vetspace
 faq:
   - label: Co jeśli aplikacja nie ma testów?
-    content: Ustalimy, które krytyczne procesy trzeba sprawdzić i objąć testami przed aktualizacją. Uwzględniam to w wycenie.
+    content: Ustalimy, które krytyczne procesy trzeba sprawdzić i objąć testami
+      przed aktualizacją. Uwzględniam to w wycenie.
   - label: Czy można uniknąć przestoju?
-    content: Zależy to od infrastruktury i zmian bazy danych. Sposób wdrożenia oraz ewentualne okno serwisowe uzgadniamy wcześniej.
+    content: Zależy to od infrastruktury i zmian bazy danych. Sposób wdrożenia oraz
+      ewentualne okno serwisowe uzgadniamy wcześniej.
 content: |-
   ## Od czego zależy zakres
 
@@ -40,4 +48,5 @@ content: |-
 
   Gdy wiem już, co trzeba zmienić, ustalam, jak sprawdzić działanie systemu po aktualizacji. We własnych produktach opartych na Laravelu, VetSpace i DigiPulse, pracuję z subskrypcjami, kolejkami oraz integracjami, dla których uruchomienie aplikacji jest dopiero początkiem testów. Trzeba również wykonać same operacje i upewnić się, że nadal zwracają prawidłowe wyniki.
 
-  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt aktualizacji do uzgodnionej wersji zaczyna się od $1 600. W wycenie uwzględniam też wymianę porzuconych pakietów i napisanie brakujących testów, jeśli okażą się potrzebne.
+  Do wyceny aktualizacji prześlij composer.json, composer.lock i krótki opis uruchamiania aplikacji. Koszt aktualizacji do uzgodnionej wersji zaczyna się od 6400 zł. W wycenie uwzględniam też wymianę porzuconych pakietów i napisanie brakujących testów, jeśli okażą się potrzebne.
+priceCurrency: PLN

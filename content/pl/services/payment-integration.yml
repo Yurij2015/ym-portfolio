@@ -1,15 +1,22 @@
 indexable: false
 title: Integracja płatności i zewnętrznych API
-description: Płatności Stripe, Revolut i Dalenys, subskrypcje i zewnętrzne usługi w aplikacjach PHP. Obsługa webhooków, ponowień i błędów.
-summary: "Wdrażam płatności i subskrypcje w aplikacjach PHP i Laravel, od utworzenia płatności po jej potwierdzenie, zmianę planu lub anulowanie. Sprawdzam też, co dzieje się po ponownym otrzymaniu webhooka, odrzuceniu płatności lub awarii dostawcy, żeby status płatności i dostęp użytkownika aktualizowały się prawidłowo. W ten sam sposób podchodzę do zewnętrznych API służących do wymiany danych między serwisami."
+description: Płatności Stripe, Revolut i Dalenys, subskrypcje i zewnętrzne
+  usługi w aplikacjach PHP. Obsługa webhooków, ponowień i błędów.
+summary: "Wdrażam płatności i subskrypcje w aplikacjach PHP i Laravel, od
+  utworzenia płatności po jej potwierdzenie, zmianę planu lub anulowanie.
+  Sprawdzam też, co dzieje się po ponownym otrzymaniu webhooka, odrzuceniu
+  płatności lub awarii dostawcy, żeby status płatności i dostęp użytkownika
+  aktualizowały się prawidłowo. W ten sam sposób podchodzę do zewnętrznych API
+  służących do wymiany danych między serwisami."
 icon: i-lucide-credit-card
 group: development
 order: 33
-priceFrom: 1600
+priceFrom: 6400
 timeline: Zależy od dostawcy i uzgodnionych procesów
 updated: 2026-11-13
 deliverables:
-  - "Płatności lub subskrypcje połączone z aplikacją: od utworzenia płatności po aktualizację statusu i dostępu użytkownika"
+  - "Płatności lub subskrypcje połączone z aplikacją: od utworzenia płatności po
+    aktualizację statusu i dostępu użytkownika"
   - Obsługa zdarzeń, ponowień i błędów z rejestrem operacji
   - Testy oraz instrukcja konfiguracji kluczy i uruchomienia
 process:
@@ -30,9 +37,14 @@ projects:
   - netpostpanel
 faq:
   - label: Jakie systemy płatności integrowałeś?
-    content: Pracowałem ze Stripe we własnym VetSpace, gdzie subskrypcje obsługuje Cashier, oraz w sklepach biletowych korzystających również z Dalenys. W marketplace klienta wdrażałem Stripe Connect. Integrowałem również Revolut. W przypadku nowego dostawcy najpierw zapoznaję się z jego dokumentacją.
+    content: Pracowałem ze Stripe we własnym VetSpace, gdzie subskrypcje obsługuje
+      Cashier, oraz w sklepach biletowych korzystających również z Dalenys. W
+      marketplace klienta wdrażałem Stripe Connect. Integrowałem również
+      Revolut. W przypadku nowego dostawcy najpierw zapoznaję się z jego
+      dokumentacją.
   - label: Czy można dodać subskrypcje do istniejącego produktu?
-    content: Tak. Ustalamy plany, dostęp po opłaceniu, zmianę taryfy, anulowanie i zachowanie po nieudanej płatności.
+    content: Tak. Ustalamy plany, dostęp po opłaceniu, zmianę taryfy, anulowanie i
+      zachowanie po nieudanej płatności.
 content: |-
   ## Co obejmuje integracja
 
@@ -42,4 +54,5 @@ content: |-
 
   Przy integracji innych usług zewnętrznych również dbam o obsługę błędów i śledzenie statusu operacji. W NetPostPanel wywołania API są częścią zadań przygotowania treści wykonywanych w tle. Aplikacja musi więc zapisać, czy zadanie się powiodło, także po zakończeniu pierwotnego zapytania.
 
-  Jeśli potrzebujesz integracji płatności, podaj wybranego dostawcę i opisz potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty. W przypadku innego API przydadzą się dokumentacja i opis wymienianych danych. Integracja kosztuje od $1 600. Opłaty dostawcy są rozliczane osobno.
+  Jeśli potrzebujesz integracji płatności, podaj wybranego dostawcę i opisz potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty. W przypadku innego API przydadzą się dokumentacja i opis wymienianych danych. Integracja kosztuje od 6400 zł. Opłaty dostawcy są rozliczane osobno.
+priceCurrency: PLN

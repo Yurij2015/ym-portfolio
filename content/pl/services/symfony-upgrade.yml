@@ -1,22 +1,31 @@
 indexable: false
 title: Aktualizacja Symfony
-description: "Aktualizacja Symfony i PHP: zależności, przestarzałe wywołania, testy i przygotowanie wydania."
-summary: "Aktualizuję Symfony i PHP w istniejących systemach, sprawdzając zgodność bundli i dostosowując konfigurację, przestarzałe wywołania oraz własne rozszerzenia. Następnie testuję procesy, których dotyczyła aktualizacja, i przygotowuję aplikację do wdrożenia. Przy migracji autorskiej aplikacji PHP do Symfony przygotowuję osobny plan stopniowego przenoszenia jej części."
+description: "Aktualizacja Symfony i PHP: zależności, przestarzałe wywołania,
+  testy i przygotowanie wydania."
+summary: "Aktualizuję Symfony i PHP w istniejących systemach, sprawdzając
+  zgodność bundli i dostosowując konfigurację, przestarzałe wywołania oraz
+  własne rozszerzenia. Następnie testuję procesy, których dotyczyła
+  aktualizacja, i przygotowuję aplikację do wdrożenia. Przy migracji autorskiej
+  aplikacji PHP do Symfony przygotowuję osobny plan stopniowego przenoszenia jej
+  części."
 icon: i-lucide-refresh-cw
 group: support
 order: 21
-priceFrom: 1800
+priceFrom: 7200
 timeline: Po przeglądzie wersji, bundli i własnych rozszerzeń
 updated: 2026-11-13
 deliverables:
-  - Plan przejścia wskazujący bundle do aktualizacji lub wymiany oraz miejsca zmian własnego kodu
+  - Plan przejścia wskazujący bundle do aktualizacji lub wymiany oraz miejsca
+    zmian własnego kodu
   - Kod i konfiguracja dostosowane do uzgodnionej wersji
   - Wyniki kontroli i instrukcja wdrożenia
 process:
   - title: Przegląd obecnego stanu
-    description: Sprawdzam bundle, ostrzeżenia o przestarzałych wywołaniach, rozszerzenia kontenera i konfigurację.
+    description: Sprawdzam bundle, ostrzeżenia o przestarzałych wywołaniach,
+      rozszerzenia kontenera i konfigurację.
   - title: Stopniowe zmiany
-    description: Aktualizuję zależności i kod w krokach możliwych do sprawdzenia, dodaję uzgodnione testy.
+    description: Aktualizuję zależności i kod w krokach możliwych do sprawdzenia,
+      dodaję uzgodnione testy.
   - title: Przygotowanie uruchomienia
     description: Sprawdzam pamięć podręczną, migracje i procesy w tle w środowisku testowym.
 technologies:
@@ -28,9 +37,11 @@ technologies:
 projects: []
 faq:
   - label: Którą wersję Symfony wybrać?
-    content: Porównamy okres wsparcia, wymagania PHP i zgodność pakietów. Najnowsza wersja nie zawsze będzie właściwym celem.
+    content: Porównamy okres wsparcia, wymagania PHP i zgodność pakietów. Najnowsza
+      wersja nie zawsze będzie właściwym celem.
   - label: Czy można przenieść autorską aplikację PHP do Symfony?
-    content: Taka migracja wymaga osobnego planu tras, danych i części starego systemu pozostających w użyciu.
+    content: Taka migracja wymaga osobnego planu tras, danych i części starego
+      systemu pozostających w użyciu.
 content: |-
   ## Aktualizacja dopasowana do aplikacji
 
@@ -38,4 +49,5 @@ content: |-
 
   Ostrzeżenia o przestarzałych wywołaniach wskazują część miejsc do poprawy. Osobno sprawdzam zgodność zależności i zmiany w API. Jeśli bundle nie jest już utrzymywany, proponuję zamiennik lub ustalamy, jak zmienić funkcję, która z niego korzysta. Następnie sprawdzam integracje i scenariusze biznesowe, których dotyczyła aktualizacja.
 
-  Na początek prześlij wersje Symfony i PHP, pliki zależności oraz powód aktualizacji. Pozwolą mi one ocenić, co trzeba zmienić, aby przejść na docelową wersję. Aktualizacja kosztuje od $1 800. Jeśli potrzebna jest migracja autorskiego systemu PHP do Symfony, przygotowuję osobną wycenę.
+  Na początek prześlij wersje Symfony i PHP, pliki zależności oraz powód aktualizacji. Pozwolą mi one ocenić, co trzeba zmienić, aby przejść na docelową wersję. Aktualizacja kosztuje od 7200 zł. Jeśli potrzebna jest migracja autorskiego systemu PHP do Symfony, przygotowuję osobną wycenę.
+priceCurrency: PLN

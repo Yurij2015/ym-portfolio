@@ -1,11 +1,16 @@
 indexable: false
 title: Tworzenie SaaS w Laravelu
-description: "SaaS w Laravelu: konta firm, uprawnienia, subskrypcje i funkcje produktu. Rozwój w uzgodnionych etapach."
-summary: "Buduję SaaS w Laravelu, w którym firmy mogą się rejestrować, zapraszać pracowników, zarządzać dostępem i opłacać subskrypcję. Z tymi funkcjami pracuję we własnym VetSpace — systemie CRM dla klinik z rozliczeniami Stripe. Przy tworzeniu Twojego produktu pomogę określić funkcje potrzebne do uruchomienia i zaplanować kolejne etapy."
+description: "SaaS w Laravelu: konta firm, uprawnienia, subskrypcje i funkcje
+  produktu. Rozwój w uzgodnionych etapach."
+summary: "Buduję SaaS w Laravelu, w którym firmy mogą się rejestrować, zapraszać
+  pracowników, zarządzać dostępem i opłacać subskrypcję. Z tymi funkcjami
+  pracuję we własnym VetSpace — systemie CRM dla klinik z rozliczeniami Stripe.
+  Przy tworzeniu Twojego produktu pomogę określić funkcje potrzebne do
+  uruchomienia i zaplanować kolejne etapy."
 icon: i-lucide-layers
 group: development
 order: 30
-priceFrom: 4800
+priceFrom: 19200
 timeline: Termin pierwszej wersji zależy od uzgodnionych funkcji
 updated: 2026-11-13
 deliverables:
@@ -18,7 +23,8 @@ process:
   - title: Rozwój etapami
     description: Buduję podstawę i funkcje, udostępniając działającą wersję do sprawdzenia.
   - title: Uruchomienie
-    description: Sprawdzam izolację danych i subskrypcje; uzgadniamy wdrożenie oraz dalsze prace.
+    description: Sprawdzam izolację danych i subskrypcje; uzgadniamy wdrożenie oraz
+      dalsze prace.
 technologies:
   - laravel
   - filament
@@ -31,9 +37,12 @@ projects:
   - digipulse
 faq:
   - label: Czy każdy klient potrzebuje osobnej bazy?
-    content: Zależy to od wymagań dotyczących danych, kopii zapasowych i infrastruktury. Porównamy osobne bazy ze wspólną bazą i kontrolą dostępu.
+    content: Zależy to od wymagań dotyczących danych, kopii zapasowych i
+      infrastruktury. Porównamy osobne bazy ze wspólną bazą i kontrolą dostępu.
   - label: Co obejmuje cena początkowa?
-    content: Pierwszy uzgodniony etap rozwoju SaaS. Przed wyceną określamy, jakie konta firmowe, role, funkcje i scenariusze subskrypcji obejmuje i z czego będzie można korzystać po jego zakończeniu.
+    content: Pierwszy uzgodniony etap rozwoju SaaS. Przed wyceną określamy, jakie
+      konta firmowe, role, funkcje i scenariusze subskrypcji obejmuje i z czego
+      będzie można korzystać po jego zakończeniu.
 content: |-
   ## Doświadczenie z VetSpace
 
@@ -43,4 +52,5 @@ content: |-
 
   Na początek wystarczy więc opisać, kto będzie korzystać z Twojego SaaS, w czym produkt ma pomagać i jak planujesz pobierać opłaty. W ten sposób ustalimy, co zbudować w pierwszym etapie i co będzie gotowe po jego zakończeniu.
 
-  Pierwszy uzgodniony etap prac kosztuje od $4 800. Wycena określa, jakie funkcje, scenariusze rozliczeń i integracje obejmuje, zanim zaczniemy pisać kod.
+  Pierwszy uzgodniony etap prac kosztuje od 19 200 zł. Wycena określa, jakie funkcje, scenariusze rozliczeń i integracje obejmuje, zanim zaczniemy pisać kod.
+priceCurrency: PLN

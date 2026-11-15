@@ -29,13 +29,13 @@
     "back": "Powrót do projektów"
   },
   "facts": {
-    "years": "Ponad 8 lat komercyjnego doświadczenia",
+    "years": "Ponad 8 lat doświadczenia w tworzeniu aplikacji internetowych",
     "saas": "Produkty SaaS w produkcji: VetSpace, DigiPulse, NetPostPanel",
     "ticketing": "Platformy sprzedaży biletów w Symfony",
     "reply": "Odpowiedź w ciągu 24 godzin"
   },
   "tech": {
-    "php": "Mój główny język backendowy — ponad 8 lat w produkcji",
+    "php": "Mój główny język backendowy — ponad 8 lat doświadczenia w programowaniu",
     "laravel": "Podstawowy framework: Octane, Reverb, Filament, Cashier",
     "symfony": "Zamówienia, płatności i API w platformach sprzedaży biletów",
     "filament": "Własne panele administracyjne i CMS",

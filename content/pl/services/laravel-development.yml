@@ -1,24 +1,32 @@
 indexable: false
 title: Programowanie w Laravelu
-description: Nowe moduły, konta użytkowników i integracje w Laravelu. Rozwijam nowe produkty oraz istniejące aplikacje.
-summary: "Tworzę w Laravelu konta użytkowników, obsługę zamówień, raporty i integracje, zajmując się modułem od ustalenia wymagań po wdrożenie. W ramach tych prac projektuję strukturę danych, piszę logikę serwerową i interfejs oraz konfiguruję uprawnienia. Jeśli produkt już działa, sprawdzam nową funkcję razem z procesami, na które wpływa."
+description: Nowe moduły, konta użytkowników i integracje w Laravelu. Rozwijam
+  nowe produkty oraz istniejące aplikacje.
+summary: "Tworzę w Laravelu konta użytkowników, obsługę zamówień, raporty i
+  integracje, zajmując się modułem od ustalenia wymagań po wdrożenie. W ramach
+  tych prac projektuję strukturę danych, piszę logikę serwerową i interfejs oraz
+  konfiguruję uprawnienia. Jeśli produkt już działa, sprawdzam nową funkcję
+  razem z procesami, na które wpływa."
 icon: i-simple-icons-laravel
 group: development
 order: 10
-priceFrom: 2400
+priceFrom: 9600
 timeline: Termin zależy od funkcji modułu i stanu aplikacji
 updated: 2026-11-13
 deliverables:
-  - Działający moduł, na przykład konta użytkowników z rolami, obsługa zamówień lub integracja z usługą zewnętrzną
+  - Działający moduł, na przykład konta użytkowników z rolami, obsługa zamówień
+    lub integracja z usługą zewnętrzną
   - Kontrola uprawnień i testy głównych scenariuszy
   - Kod w repozytorium oraz dokumentacja uruchomienia i utrzymania
 process:
   - title: Analiza zadania
     description: Przeglądam aplikację i określam działania oraz dane potrzebne użytkownikom.
   - title: Budowa modułu
-    description: Tworzę strukturę danych, logikę i ekrany oraz udostępniam działające zmiany do sprawdzenia.
+    description: Tworzę strukturę danych, logikę i ekrany oraz udostępniam
+      działające zmiany do sprawdzenia.
   - title: Testy i wdrożenie
-    description: Sprawdzam uprawnienia i powiązane operacje, przygotowuję uruchomienie oraz dokumentację.
+    description: Sprawdzam uprawnienia i powiązane operacje, przygotowuję
+      uruchomienie oraz dokumentację.
 technologies:
   - laravel
   - php
@@ -33,10 +41,15 @@ projects:
   - netpostpanel
   - digispace
 faq:
-  - label: Co oznacza cena od $2 400?
-    content: To budżet początkowy na moduł, taki jak panel użytkownika z rolami lub obsługa zamówień, albo na integrację. Obejmuje testy i przygotowanie do wdrożenia. Przed rozpoczęciem prac uzgadniamy funkcje modułu, kryteria odbioru i koszt.
+  - label: Co oznacza cena od 9600 zł?
+    content: To budżet początkowy na moduł, taki jak panel użytkownika z rolami lub
+      obsługa zamówień, albo na integrację. Obejmuje testy i przygotowanie do
+      wdrożenia. Przed rozpoczęciem prac uzgadniamy funkcje modułu, kryteria
+      odbioru i koszt.
   - label: Czy potrzebny jest osobny frontend?
-    content: Do paneli wewnętrznych wykorzystuję Filament, a do paneli użytkowników między innymi Inertia i Vue. Nuxt może obsługiwać strony publiczne, jak w VetCard. Wybór zależy od interfejsu i dalszego utrzymania.
+    content: Do paneli wewnętrznych wykorzystuję Filament, a do paneli użytkowników
+      między innymi Inertia i Vue. Nuxt może obsługiwać strony publiczne, jak w
+      VetCard. Wybór zależy od interfejsu i dalszego utrzymania.
 content: |-
   ## Przykłady z moich projektów
 
@@ -47,3 +60,4 @@ content: |-
   Dodanie podobnej funkcji do istniejącej aplikacji wymaga najpierw poznania jej struktury danych, zależności i sposobu wdrażania. Znając te elementy, mogę zaplanować zmiany i testy tak, żeby nowy moduł współpracował z resztą systemu.
 
   Opisz, co użytkownik ma robić w aplikacji, i pokaż obecną wersję lub makiety. Pozwoli mi to zaproponować sposób realizacji, wycenę i przewidywany czas prac.
+priceCurrency: PLN

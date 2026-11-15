@@ -1,24 +1,34 @@
 indexable: false
 title: Integracja AI z aplikacjami PHP
-description: Wyszukiwanie w dokumentach, przygotowanie tekstów i przetwarzanie danych z AI w PHP i Laravelu. Ocena jakości odpowiedzi i kosztów przed uruchomieniem.
-summary: "Wdrażam w aplikacjach PHP i Laravel funkcje AI, które odczytują dane z dokumentów, klasyfikują zgłoszenia, przygotowują teksty i przeszukują bazę wiedzy. Aby sprawdzić, czy model nadaje się do zadania, najpierw testuję go na Twoich przykładach. Wyniki testów pomagają mi zaplanować integrację, obsługę błędów i śledzenie wykorzystania API. W razie potrzeby dodaję też etap, na którym człowiek sprawdza odpowiedź."
+description: Wyszukiwanie w dokumentach, przygotowanie tekstów i przetwarzanie
+  danych z AI w PHP i Laravelu. Ocena jakości odpowiedzi i kosztów przed
+  uruchomieniem.
+summary: "Wdrażam w aplikacjach PHP i Laravel funkcje AI, które odczytują dane z
+  dokumentów, klasyfikują zgłoszenia, przygotowują teksty i przeszukują bazę
+  wiedzy. Aby sprawdzić, czy model nadaje się do zadania, najpierw testuję go na
+  Twoich przykładach. Wyniki testów pomagają mi zaplanować integrację, obsługę
+  błędów i śledzenie wykorzystania API. W razie potrzeby dodaję też etap, na
+  którym człowiek sprawdza odpowiedź."
 icon: i-lucide-sparkles
 group: development
 order: 34
-priceFrom: 2200
+priceFrom: 8800
 timeline: Termin zależy od jakości danych i złożoności funkcji AI
 updated: 2026-11-13
 deliverables:
-  - "Wyniki próby na Twoich przykładach: z czym model sobie radzi, gdzie popełnia błędy i jakich danych potrzebuje"
+  - "Wyniki próby na Twoich przykładach: z czym model sobie radzi, gdzie
+    popełnia błędy i jakich danych potrzebuje"
   - Funkcja AI z obsługą błędów i rejestrowaniem użycia
   - Opis konfiguracji, ograniczeń i sposobu sprawdzania wyników
 process:
   - title: Przykłady i kryteria
     description: Ustalamy dane wejściowe, oczekiwany wynik i dopuszczalne błędy.
   - title: Sprawdzenie podejścia
-    description: Porównuję odpowiedzi modeli, szacuję koszty i sprawdzam, czy potrzebne jest wyszukiwanie w dokumentach.
+    description: Porównuję odpowiedzi modeli, szacuję koszty i sprawdzam, czy
+      potrzebne jest wyszukiwanie w dokumentach.
   - title: Integracja
-    description: Wdrażam funkcję w aplikacji, dodaję rejestrowanie zdarzeń i w razie potrzeby etap weryfikacji odpowiedzi.
+    description: Wdrażam funkcję w aplikacji, dodaję rejestrowanie zdarzeń i w razie
+      potrzeby etap weryfikacji odpowiedzi.
 technologies:
   - laravel
   - php
@@ -32,9 +42,13 @@ projects:
   - vetspace
 faq:
   - label: Czy potrzebujemy RAG?
-    content: Wyszukiwanie fragmentów może pomóc, gdy odpowiedź ma korzystać z Twoich dokumentów. Klasyfikacja lub odczyt pól może nie wymagać osobnej bazy wiedzy.
+    content: Wyszukiwanie fragmentów może pomóc, gdy odpowiedź ma korzystać z Twoich
+      dokumentów. Klasyfikacja lub odczyt pól może nie wymagać osobnej bazy
+      wiedzy.
   - label: Co z prywatnością i kosztami?
-    content: Przed uruchomieniem sprawdzam zasady, na jakich dostawca przetwarza i przechowuje dane. Koszty szacuję na podstawie wybranego modelu i liczby zapytań. Opłaty za korzystanie z API są rozliczane osobno.
+    content: Przed uruchomieniem sprawdzam zasady, na jakich dostawca przetwarza i
+      przechowuje dane. Koszty szacuję na podstawie wybranego modelu i liczby
+      zapytań. Opłaty za korzystanie z API są rozliczane osobno.
 content: |-
   ## Doświadczenie z NetPostPanel i DigiPulse
 
@@ -42,4 +56,5 @@ content: |-
 
   Zanim wybiorę sposób integracji, sprawdzam, czy model daje użyteczne wyniki na Twoich danych i w jakich przypadkach się myli. Jeśli odpowiedzi mają opierać się na dokumentach, dodaję wyszukiwanie odpowiednich fragmentów; jeśli ma je przetwarzać aplikacja, określam format odpowiedzi. Takie rozwiązania nie eliminują wszystkich błędów, dlatego jeszcze przed uruchomieniem ustalamy, jak sprawdzać odpowiedzi.
 
-  Do testów potrzebuję kilku przykładów danych wejściowych i oczekiwanych odpowiedzi. Do wyceny przydadzą się też przewidywana liczba zapytań i wymagania dotyczące przetwarzania danych. Wdrożenie jednej funkcji AI w aplikacji kosztuje od $2 200.
+  Do testów potrzebuję kilku przykładów danych wejściowych i oczekiwanych odpowiedzi. Do wyceny przydadzą się też przewidywana liczba zapytań i wymagania dotyczące przetwarzania danych. Wdrożenie jednej funkcji AI w aplikacji kosztuje od 8800 zł.
+priceCurrency: PLN

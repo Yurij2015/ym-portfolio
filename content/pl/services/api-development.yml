@@ -1,15 +1,21 @@
 indexable: false
 title: Tworzenie i integracja API
-description: "API dla frontendu, aplikacji mobilnej i partnerów: uprawnienia, dokumentacja, obsługa błędów oraz testy."
-summary: "Tworzę API dla aplikacji mobilnych, frontendu i serwisów partnerskich. Za ich pomocą można pobierać i aktualizować dane, wyszukiwać informacje oraz uruchamiać zadania w tle. Dokumentuję też zapytania, odpowiedzi i błędy, żeby inny zespół mógł podłączyć swoją aplikację. Rozbudowując istniejące API, uwzględniam aplikacje, które już z niego korzystają."
+description: "API dla frontendu, aplikacji mobilnej i partnerów: uprawnienia,
+  dokumentacja, obsługa błędów oraz testy."
+summary: "Tworzę API dla aplikacji mobilnych, frontendu i serwisów partnerskich.
+  Za ich pomocą można pobierać i aktualizować dane, wyszukiwać informacje oraz
+  uruchamiać zadania w tle. Dokumentuję też zapytania, odpowiedzi i błędy, żeby
+  inny zespół mógł podłączyć swoją aplikację. Rozbudowując istniejące API,
+  uwzględniam aplikacje, które już z niego korzystają."
 icon: i-lucide-webhook
 group: development
 order: 31
-priceFrom: 1800
+priceFrom: 7200
 timeline: Po uzgodnieniu zasobów, operacji i integracji
 updated: 2026-11-13
 deliverables:
-  - Endpointy potrzebnych operacji, na przykład wyszukiwania rekordów, zmiany danych lub uruchomienia zadania w tle
+  - Endpointy potrzebnych operacji, na przykład wyszukiwania rekordów, zmiany
+    danych lub uruchomienia zadania w tle
   - Dokumentacja zapytań, odpowiedzi i błędów
   - Testy oraz przykłady zapytań dla zespołu wdrażającego integrację
 process:
@@ -32,9 +38,13 @@ projects:
   - digipulse
 faq:
   - label: Czy rozwijasz istniejące API?
-    content: Tak. Najpierw sprawdzam kontrakt API i aplikacje, które z niego korzystają. Następnie planuję zmiany zachowujące zgodność albo przygotowanie nowej wersji.
+    content: Tak. Najpierw sprawdzam kontrakt API i aplikacje, które z niego
+      korzystają. Następnie planuję zmiany zachowujące zgodność albo
+      przygotowanie nowej wersji.
   - label: Czy zawsze potrzebny jest REST?
-    content: Nie. Format dobieramy do potrzeb aplikacji korzystających z API i wykonywanych operacji. Jeśli istniejący REST spełnia potrzeby, nie trzeba go zastępować innym podejściem.
+    content: Nie. Format dobieramy do potrzeb aplikacji korzystających z API i
+      wykonywanych operacji. Jeśli istniejący REST spełnia potrzeby, nie trzeba
+      go zastępować innym podejściem.
 content: |-
   ## API dopasowane do aplikacji klienckich
 
@@ -44,4 +54,5 @@ content: |-
 
   Pracę zaczynam więc od określenia operacji, dostępnych danych i odpowiedzi, które powinna otrzymywać aplikacja kliencka. Przy dłuższych zadaniach planuję wykonanie w tle i sposób odebrania wyniku. Zgodnie z tymi ustaleniami piszę kod, dokumentację i testy.
 
-  Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane. Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Wdrożenie zestawu powiązanych operacji API, wraz z dokumentacją i testami, kosztuje od $1 800.
+  Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane. Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Wdrożenie zestawu powiązanych operacji API, wraz z dokumentacją i testami, kosztuje od 7200 zł.
+priceCurrency: PLN

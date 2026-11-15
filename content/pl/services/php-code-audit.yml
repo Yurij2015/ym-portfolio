@@ -1,24 +1,33 @@
 indexable: false
 title: Audyt kodu PHP
-description: "Przegląd kodu PHP, Laravel lub Symfony: konkretne ustalenia, priorytety i zalecenia dla zespołu."
-summary: "Sprawdzam kod PHP, aby znaleźć przyczyny błędów i ustalić, co warto naprawić w pierwszej kolejności. Zależnie od zadania skupiam się na dostępie do danych, płatnościach, zapytaniach do bazy, kolejkach lub testach. W raporcie wskazuję konkretne miejsca w kodzie, wyjaśniam skutki problemów i proponuję kolejność poprawek, żeby Twój zespół mógł zaplanować dalsze prace."
+description: "Przegląd kodu PHP, Laravel lub Symfony: konkretne ustalenia,
+  priorytety i zalecenia dla zespołu."
+summary: "Sprawdzam kod PHP, aby znaleźć przyczyny błędów i ustalić, co warto
+  naprawić w pierwszej kolejności. Zależnie od zadania skupiam się na dostępie
+  do danych, płatnościach, zapytaniach do bazy, kolejkach lub testach. W
+  raporcie wskazuję konkretne miejsca w kodzie, wyjaśniam skutki problemów i
+  proponuję kolejność poprawek, żeby Twój zespół mógł zaplanować dalsze prace."
 icon: i-lucide-search-code
 group: support
 order: 22
-priceFrom: 1000
+priceFrom: 4000
 timeline: Zależy od wybranych modułów i szczegółowości analizy
 updated: 2026-11-13
 deliverables:
-  - Raport z odnośnikami do plików i wierszy kodu, opisem problemów, ich skutków i proponowanych rozwiązań
+  - Raport z odnośnikami do plików i wierszy kodu, opisem problemów, ich skutków
+    i proponowanych rozwiązań
   - Priorytety poprawek z opisem wpływu
   - Omówienie wyników i propozycje dalszych działań
 process:
   - title: Cel przeglądu
-    description: "Określamy problemy i moduły: dostęp, płatności, bazę, kolejki lub utrzymanie."
+    description: "Określamy problemy i moduły: dostęp, płatności, bazę, kolejki lub
+      utrzymanie."
   - title: Analiza
-    description: Czytam kod, sprawdzam zależności i testy; odtwarzam scenariusze, jeśli dostępne jest środowisko.
+    description: Czytam kod, sprawdzam zależności i testy; odtwarzam scenariusze,
+      jeśli dostępne jest środowisko.
   - title: Raport
-    description: Zapisuję potwierdzone problemy, oddzielam przypuszczenia i wyjaśniam zalecenia.
+    description: Zapisuję potwierdzone problemy, oddzielam przypuszczenia i
+      wyjaśniam zalecenia.
 technologies:
   - php
   - laravel
@@ -28,9 +37,12 @@ technologies:
 projects: []
 faq:
   - label: Czy potrzebujesz dostępu do produkcji?
-    content: Na początek zwykle wystarcza repozytorium i opis problemu. W zależności od zakresu mogą być też potrzebne logi, dane testowe lub dostęp do środowiska.
+    content: Na początek zwykle wystarcza repozytorium i opis problemu. W zależności
+      od zakresu mogą być też potrzebne logi, dane testowe lub dostęp do
+      środowiska.
   - label: Czy poprawki są w cenie?
-    content: Wynikiem audytu jest raport. Poprawki możemy uzgodnić osobno lub przekazać Twojemu zespołowi.
+    content: Wynikiem audytu jest raport. Poprawki możemy uzgodnić osobno lub
+      przekazać Twojemu zespołowi.
 content: |-
   ## Od czego zaczyna się audyt
 
@@ -38,4 +50,5 @@ content: |-
 
   W raporcie zaznaczam, które obszary sprawdziłem i jakie wnioski potwierdza kod lub odtworzony błąd. Przy każdym problemie wyjaśniam jego skutki i proponuję rozwiązanie, a sugestie dotyczące struktury kodu oddzielam od błędów. Dzięki temu zespół wie, co naprawić najpierw i jakie obszary zostały sprawdzone.
 
-  Prześlij krótki opis aplikacji i pytania, na które chcesz uzyskać odpowiedź. Pozwoli nam to wybrać moduły do sprawdzenia. Ich analiza wraz z raportem kosztuje od $1 000.
+  Prześlij krótki opis aplikacji i pytania, na które chcesz uzyskać odpowiedź. Pozwoli nam to wybrać moduły do sprawdzenia. Ich analiza wraz z raportem kosztuje od 4000 zł.
+priceCurrency: PLN

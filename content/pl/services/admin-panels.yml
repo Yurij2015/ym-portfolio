@@ -1,22 +1,30 @@
 indexable: false
 title: Panele administracyjne dla aplikacji PHP i Laravel
-description: "Panele administracyjne dla Laravela i PHP w Filamencie, Flowbite lub AdminLTE: formularze, tabele, uprawnienia, raporty i codzienne operacje zespołu."
-summary: "Tworzę panele administracyjne, w których zespół może obsługiwać klientów i zamówienia, edytować treści oraz przeglądać raporty. Narzędzia dobieram do aplikacji i potrzebnych ekranów: Filament, Flowbite z Tailwind CSS lub AdminLTE z Bootstrapem. Mogę zbudować nowy panel albo stopniowo zastępować dotychczasowy."
+description: "Panele administracyjne dla Laravela i PHP w Filamencie, Flowbite
+  lub AdminLTE: formularze, tabele, uprawnienia, raporty i codzienne operacje
+  zespołu."
+summary: "Tworzę panele administracyjne, w których zespół może obsługiwać
+  klientów i zamówienia, edytować treści oraz przeglądać raporty. Narzędzia
+  dobieram do aplikacji i potrzebnych ekranów: Filament, Flowbite z Tailwind CSS
+  lub AdminLTE z Bootstrapem. Mogę zbudować nowy panel albo stopniowo zastępować
+  dotychczasowy."
 icon: i-lucide-layout-dashboard
 group: development
 order: 32
-priceFrom: 1600
+priceFrom: 6400
 timeline: Po określeniu ekranów, ról i niestandardowych operacji
 updated: 2026-11-13
 deliverables:
-  - "Ekrany do pracy z danymi: formularze klientów lub zamówień, tabele z wyszukiwaniem, filtrami i potrzebnymi działaniami"
+  - "Ekrany do pracy z danymi: formularze klientów lub zamówień, tabele z
+    wyszukiwaniem, filtrami i potrzebnymi działaniami"
   - Uprawnienia i kontrole operacji na danych
   - Testy ważnych działań oraz instrukcja obsługi panelu
 process:
   - title: Analiza pracy zespołu
     description: Przeglądamy obecne operacje i dane potrzebne na poszczególnych ekranach.
   - title: Wybór narzędzia i budowa
-    description: Dobieram Filament, Flowbite lub AdminLTE do istniejącego kodu, potem tworzę formularze, filtry i działania biznesowe.
+    description: Dobieram Filament, Flowbite lub AdminLTE do istniejącego kodu,
+      potem tworzę formularze, filtry i działania biznesowe.
   - title: Sprawdzenie z użytkownikami
     description: Pracownicy testują panel, a ja poprawiam wygodę obsługi i uprawnienia.
 technologies:
@@ -33,11 +41,19 @@ projects:
   - vetspace
 faq:
   - label: Filament, Flowbite czy AdminLTE?
-    content: Filament pasuje do aplikacji w Laravelu, w której panel składa się z typowych ekranów z listami, formularzami, filtrami i rolami. Po Flowbite sięgam, gdy panel ma mieć własny wygląd lub nietypowe ekrany albo gdy frontend jest osobną aplikacją w Vue lub Nuxt. AdminLTE ma sens, jeśli projekt korzysta już z Bootstrapa lub ma administrację na AdminLTE, którą trzeba rozwinąć.
+    content: Filament pasuje do aplikacji w Laravelu, w której panel składa się z
+      typowych ekranów z listami, formularzami, filtrami i rolami. Po Flowbite
+      sięgam, gdy panel ma mieć własny wygląd lub nietypowe ekrany albo gdy
+      frontend jest osobną aplikacją w Vue lub Nuxt. AdminLTE ma sens, jeśli
+      projekt korzysta już z Bootstrapa lub ma administrację na AdminLTE, którą
+      trzeba rozwinąć.
   - label: Czy można dodać Filament do istniejącej aplikacji Laravel?
-    content: Tak, po sprawdzeniu zgodności wersji, modeli i uwierzytelniania. Zasoby można wprowadzać pojedynczo, bez zmian w reszcie aplikacji.
+    content: Tak, po sprawdzeniu zgodności wersji, modeli i uwierzytelniania. Zasoby
+      można wprowadzać pojedynczo, bez zmian w reszcie aplikacji.
   - label: Co jeśli backend nie korzysta z Laravela?
-    content: Wtedy Filament odpada. Panel na Flowbite lub AdminLTE można wbudować w istniejącą aplikację PHP albo uruchomić osobno, z dostępem do danych przez API. Druga droga oznacza dodatkową pracę integracyjną.
+    content: Wtedy Filament odpada. Panel na Flowbite lub AdminLTE można wbudować w
+      istniejącą aplikację PHP albo uruchomić osobno, z dostępem do danych przez
+      API. Druga droga oznacza dodatkową pracę integracyjną.
 content: |-
   ## Przykłady z moich projektów
 
@@ -49,4 +65,5 @@ content: |-
 
   W każdym z tych przypadków zakres prac zależy od tego, jakie dane zespół tworzy i edytuje, jak je wyszukuje oraz które operacje wymagają potwierdzenia. Dlatego do wyceny przydadzą się obecne ekrany lub arkusze oraz opis czynności, które zespół nadal wykonuje ręcznie.
 
-  Koszt przygotowania zestawu powiązanych ekranów zaczyna się od $1 600. Jeśli potrzebne są importy, raporty lub niestandardowe operacje, uwzględniam je w wycenie zależnie od stopnia złożoności.
+  Koszt przygotowania zestawu powiązanych ekranów zaczyna się od 6400 zł. Jeśli potrzebne są importy, raporty lub niestandardowe operacje, uwzględniam je w wycenie zależnie od stopnia złożoności.
+priceCurrency: PLN

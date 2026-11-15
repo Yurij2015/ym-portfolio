@@ -1,7 +1,12 @@
 indexable: false
 title: Utrzymanie aplikacji PHP i Laravel
-description: "Regularne wsparcie PHP, Laravel i Symfony: poprawki, przegląd zależności, kontrola kopii zapasowych i monitoringu."
-summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach uzgodnionego planu sprawdzam też kolejki, kopie zapasowe i powiadomienia z monitoringu. W raportach podsumowuję wykonane zadania, nierozwiązane problemy i przepracowane godziny, żeby było wiadomo, co jeszcze wymaga uwagi."
+description: "Regularne wsparcie PHP, Laravel i Symfony: poprawki, przegląd
+  zależności, kontrola kopii zapasowych i monitoringu."
+summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując
+  się poprawkami, aktualizacją zależności i drobnymi zmianami. W ramach
+  uzgodnionego planu sprawdzam też kolejki, kopie zapasowe i powiadomienia z
+  monitoringu. W raportach podsumowuję wykonane zadania, nierozwiązane problemy
+  i przepracowane godziny, żeby było wiadomo, co jeszcze wymaga uwagi."
 icon: i-lucide-shield-check
 group: support
 order: 41
@@ -11,7 +16,8 @@ priceUnit: hour
 timeline: Grafik, dostępność i zakres ustalamy przed rozpoczęciem
 updated: 2026-11-13
 deliverables:
-  - "Regularna praca według priorytetów: poprawki, aktualizacje zależności i kontrola działania aplikacji"
+  - "Regularna praca według priorytetów: poprawki, aktualizacje zależności i
+    kontrola działania aplikacji"
   - Poprawki i aktualizacje z opisem zmian
   - Podsumowanie wykonanych zadań, otwartych problemów i dalszych zaleceń
 process:
@@ -32,9 +38,12 @@ projects:
   - digipulse
 faq:
   - label: Czy utrzymujesz kod innych programistów?
-    content: Tak. Najpierw potrzebny jest przegląd. Jeśli aplikacji nie da się uruchomić lub brakuje dostępu do systemu, zaczynamy od ustalenia prac potrzebnych do przywrócenia jej działania.
+    content: Tak. Najpierw potrzebny jest przegląd. Jeśli aplikacji nie da się
+      uruchomić lub brakuje dostępu do systemu, zaczynamy od ustalenia prac
+      potrzebnych do przywrócenia jej działania.
   - label: Czy obejmuje to całodobową obsługę awarii?
-    content: Usługa godzinowa nie obejmuje dyżuru 24/7. Dostępność i czas reakcji ustalamy przed rozpoczęciem współpracy.
+    content: Usługa godzinowa nie obejmuje dyżuru 24/7. Dostępność i czas reakcji
+      ustalamy przed rozpoczęciem współpracy.
 content: |-
   ## Co ustalamy na początku
 

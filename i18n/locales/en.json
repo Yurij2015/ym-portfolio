@@ -29,13 +29,13 @@
     "back": "Back to projects"
   },
   "facts": {
-    "years": "8+ years of commercial development",
+    "years": "Over 8 years of web development experience",
     "saas": "SaaS products live in production: VetSpace, DigiPulse, NetPostPanel",
     "ticketing": "Ticket sales platforms built with Symfony",
     "reply": "Reply within 24 hours"
   },
   "tech": {
-    "php": "My core server-side language — 8+ years in production",
+    "php": "My core server-side language — over 8 years of experience",
     "laravel": "Primary framework: Octane, Reverb, Filament, Cashier",
     "symfony": "Orders, payments and APIs in ticketing platforms",
     "filament": "Custom admin panels and CMS",
