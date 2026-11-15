@@ -4,7 +4,7 @@ about:
   description: |
     I work on my own products and contribute to client projects. In VetSpace, I develop a CRM for veterinary clinics; in DigiPulse, website uptime monitoring; and in NetPostPanel, AI-assisted content preparation.
     These products involve Laravel, Filament, queues and APIs. I use Vue and Nuxt for interfaces and Go for separate services. The projects below include examples and technical details.
-description: "I have more than 8 years of experience with PHP. I develop SaaS products, CRM systems and ticketing platforms with Laravel and Symfony, with interfaces built in Vue and Nuxt. My work covers user portals, payments, subscriptions and integrations with other services. I also set up deployment and maintain applications after launch."
+description: "I built my first website in 2010, and I’ve worked with PHP for more than 8 years, building SaaS products, CRM systems and ticketing platforms with Laravel and Symfony, plus interfaces with Vue and Nuxt. I handle payments, subscriptions and integrations, set up deployments, and maintain applications after launch."
 experience:
   title: Work Experience
   items:

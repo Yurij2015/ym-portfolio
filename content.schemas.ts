@@ -172,6 +172,11 @@ export const pagesSchema = z.object({
   links: z.array(createButtonSchema())
 })
 
+export const firstWebsiteSchema = z.object({
+  seo: createBaseSchema().optional(),
+  content: z.string()
+})
+
 export const aboutSchema = z.object({
   seo: createBaseSchema().optional(),
   content: z.string(),

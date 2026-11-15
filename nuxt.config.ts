@@ -87,6 +87,7 @@ export default defineNuxtConfig({
   // cached redirect would pin every visitor to the first locale seen.
   routeRules: {
     '/about': { isr: true },
+    '/about/**': { isr: true },
     '/projects': { isr: true },
     '/projects/**': { isr: true },
     '/technologies': { isr: true },
