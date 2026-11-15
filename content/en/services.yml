@@ -3,14 +3,14 @@
 indexable: false
 title: PHP development and support for Laravel and Symfony projects
 description: "Laravel and Symfony development and support for existing PHP projects: upgrades, audits and stabilization. Each service lists its scope, process and price."
-intro: "I work in two directions. Development covers new applications, SaaS, APIs, admin panels and integrations in Laravel, Symfony or PHP. Support covers work on existing code: version upgrades, audits, stabilization, performance and ongoing maintenance. Each service page says what I do, what you get and where the estimate starts."
+intro: "I add features to PHP applications and help maintain existing ones. For a new product, module or integration, start with Development. For bug fixes, dependency upgrades, performance issues or ongoing maintenance, see Support. The starting prices apply to the scope described on each page; for smaller tasks, we can discuss hourly work starting at $35 per hour. We discuss the final rate based on the complexity of the tasks, the project’s condition and how we will work together."
 directions:
   development:
     indexable: false
     label: Development
     title: PHP, Laravel and Symfony development
     description: "Application development in Laravel, Symfony and PHP: SaaS, APIs, admin panels, payments, AI features and Vue or Nuxt frontends. Scope, process and prices."
-    intro: "These are the services where I write new functionality: a single module, an integration or a SaaS with subscriptions. I can take on the whole project or work in your team as a developer. If the application already exists and needs an upgrade or stabilization, see the support section."
+    intro: "Choose this section for a new application or a new feature in an existing product, such as a user portal, report, API, integration or subscriptions. I can work on a module or join your team. For bug fixes, version upgrades or ongoing maintenance, see Support. Smaller changes can be discussed on an hourly basis, starting at $35 per hour. We confirm the rate after discussing the features, existing code and length of the engagement."
     featured:
       - laravel-development
       - symfony-development
@@ -21,7 +21,7 @@ directions:
     label: Support
     title: Support and upgrades for Laravel and Symfony PHP projects
     description: "Support for existing PHP projects: Laravel and Symfony upgrades, code audits, legacy stabilization, performance and maintenance. Scope, process and prices."
-    intro: "These are the services for applications that are already running. I upgrade Laravel and Symfony versions, review code before changes or a handover to another team, and deal with unstable legacy code and slow pages. If you need continuing help, I maintain the application at an hourly rate."
+    intro: "This section covers fixing and maintaining PHP applications: bugs, slow pages, Laravel or Symfony upgrades, code reviews and ongoing support. I can also help when a project will not run. Small tasks and regular maintenance can be billed hourly, starting at $35 per hour. We discuss the rate based on the project’s condition, task complexity and how regularly you need support. For a new feature or integration, see Development."
     featured:
       - laravel-upgrade
       - legacy-php-rescue

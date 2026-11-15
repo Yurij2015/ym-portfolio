@@ -1,5 +1,5 @@
 title: VetCard
-description: "Multi-tenant catalog of veterinary clinics: SEO clinic pages, online appointment booking, per-clinic branding — one Nuxt app serves every clinic"
+description: "Public veterinary clinic pages with service information and online booking. Each clinic has its own branding within a shared directory."
 url: https://vetcard.pro
 date: "2026-09-20"
 tags:
@@ -32,6 +32,10 @@ links:
     icon: i-simple-icons-github
 content: |
   The public-facing side of VetSpace — a multi-tenant catalog of veterinary clinics. A single Nuxt SSR deployment serves every clinic: SEO-first clinic card pages, online appointment booking proxied to each clinic's own tenant backend, per-clinic theming, and multi-branch support.
+
+  ## My work on the project
+
+  I develop the public Nuxt application and connect it to the VetSpace Laravel API. My work covers clinic pages, appointment time selection and booking forms, along with language versions, metadata and server rendering.
 
   ## Key Features
 

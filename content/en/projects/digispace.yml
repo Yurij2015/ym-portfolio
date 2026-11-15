@@ -1,5 +1,5 @@
 title: DigiSpace
-description: "The agency’s multilingual website (EN/UK/PL), built with Laravel and a custom CMS. A Filament panel manages content and translations, with JSON-LD and localized sitemaps. The legacy Inertia and Vue admin panel runs alongside it."
+description: "The multilingual DigiSpace website, with a blog, service catalogue and custom CMS for editing pages, translations and media."
 url: https://digispace.pro
 date: "2022-10-05"
 tags:
@@ -39,6 +39,10 @@ links:
     icon: i-simple-icons-github
 content: |
   DigiSpace combines the agency’s public website, admin panel and custom CMS in one Laravel application. Content and interface text are available in English, Ukrainian and Polish. Admin screens are gradually moving to Filament, while the legacy Inertia and Vue panel continues to run alongside it. The application’s source code is available on GitHub.
+
+  ## My work on the project
+
+  I develop and maintain the Laravel website and CMS, including public pages, translations and admin tools. I am gradually moving admin screens from Inertia and Vue to Filament while keeping the existing site running.
 
   ## Key Features
 

@@ -34,6 +34,8 @@ faq:
     content: Tak. Przed wyceną potrzebuję poznać strukturę kodu, zależności i sposób uruchomienia.
   - label: Czy trzeba przejść na framework?
     content: Nie przy każdym zadaniu. Rozważamy migrację, jeśli ułatwi dalszą pracę i uzasadni poniesione koszty.
+  - label: "Czy mogę zgłosić się z małym zadaniem?"
+    content: "Tak. Pojedynczą poprawkę lub niewielką zmianę możemy omówić w rozliczeniu godzinowym, ze stawką od 140 zł za godzinę. Prześlij opis, żebyśmy mogli omówić stawkę i potrzebny czas, uwzględniając złożoność zadania i stan projektu. Cena od $1 800 dotyczy określonego zakresu prac, a nie każdego zgłoszenia."
 content: |-
   ## Zmiany w działającym systemie
 
@@ -43,4 +45,4 @@ content: |-
 
   Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji przykład oczekiwanego wyniku. Te informacje pomogą mi znaleźć odpowiednie miejsca w kodzie i wycenić pracę.
 
-  Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od $1 800. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia.
+  Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od $1 800. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia. Przy drobnej poprawce możemy omówić rozliczenie godzinowe, ze stawką od 140 zł za godzinę. Stawkę i przewidywany czas ustalamy po zapoznaniu się z zadaniem i stanem projektu.

@@ -17,7 +17,7 @@
   },
   "contact": {
     "title": "Let's discuss your project",
-    "description": "Tell me about your task — I'll propose architecture, timeline and estimate. I usually reply within 24 hours.",
+    "description": "Describe what you would like to build, or show me a problem in your existing application. I will ask for any details needed to estimate the work. I usually reply within 24 hours.",
     "telegram": "Message me on Telegram",
     "email": "Send an email"
   },
@@ -87,7 +87,9 @@
     "faq": "Common questions",
     "ctaTitle": "Want to discuss your project?",
     "ctaIndexTitle": "Not sure which service fits?",
-    "allInDirection": "All {label} services ({count})"
+    "allInDirection": "All {label} services ({count})",
+    "priceFromPln": "From {price} PLN",
+    "priceFromHourlyPln": "From {price} PLN/h"
   },
   "footer": {
     "rights": "All rights reserved"

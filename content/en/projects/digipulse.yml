@@ -1,5 +1,5 @@
 title: DigiPulse
-description: "Uptime monitoring SaaS: event-driven architecture — Laravel (Octane, Reverb) + Filament dispatch checks through Redis to a separate Go service; an MCP server exposes monitoring data to AI assistants; Telegram/email alerts"
+description: "Website monitoring that checks uptime and SSL expiry and sends outage alerts through Telegram and email."
 url: https://digipulse.cloud
 date: "2026-04-17"
 tags:
@@ -37,7 +37,11 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  Uptime monitoring SaaS — 60-second checks, SSL expiry tracking, Telegram and email notifications. The admin panel and core backend are built with Laravel (Octane, Reverb websockets) and Filament, while the monitoring engine is a separate Go service. Includes Google OAuth sign-in and Cloudflare Turnstile integration, plus an MCP server that exposes monitoring data directly to AI assistants. Self-hosted on Proxmox.
+  DigiPulse checks website availability and SSL certificate expiry. Users add monitors and contacts, configure alert rules and receive outage notifications through Telegram or email. Checks run every 60 seconds, and the dashboard updates as statuses change.
+
+  ## My work on the project
+
+  This is my product. I develop its Laravel backend, Filament panel and separate Go monitoring service. I also work on the MCP server that gives AI assistants access to monitoring data, and manage deployment and infrastructure.
 
   ## Key Features
 

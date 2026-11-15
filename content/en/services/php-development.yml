@@ -34,6 +34,8 @@ faq:
     content: Yes. I first need to understand its structure, dependencies and setup before estimating changes.
   - label: Does the application need a framework migration?
     content: Not for every task. We discuss a migration when it makes future work easier and justifies the cost.
+  - label: "Can I get in touch about a small task?"
+    content: "Yes. We can discuss an individual fix or small change on an hourly basis, starting at $35 per hour. Send a description so we can discuss the rate and estimated time, taking the task’s complexity and the project’s condition into account. The $1,800 starting price applies to a scoped piece of work, not every request."
 content: |-
   ## Changes to a working system
 
@@ -43,4 +45,4 @@ content: |-
 
   To get started, describe the task and include your PHP version. For an error, reproduction steps and log messages help; for a new feature, an example of the expected result is useful. These materials let me identify which code needs reviewing and estimate the work.
 
-  An agreed piece of work, such as adding a report or connecting the application to another service, starts at $1,800, including checks and deployment instructions.
+  The starting budget of $1,800 covers an agreed piece of work, such as adding a report or connecting another service, including checks and deployment instructions. For a small fix, we can discuss hourly work starting at $35 per hour. We discuss the rate and estimated time after reviewing the task and the project’s condition.

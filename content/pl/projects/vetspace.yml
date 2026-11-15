@@ -1,5 +1,5 @@
 title: VetSpace
-description: "Platforma dla klinik weterynaryjnych: publiczny katalog i CRM w subskrypcji do rezerwacji wizyt, ich obsługi oraz prowadzenia kart pacjentów"
+description: "CRM dla klinik weterynaryjnych do rezerwacji wizyt, ich obsługi i prowadzenia kart pacjentów. Wspólne API łączy publiczny katalog i strony klinik z ich panelem roboczym."
 url: https://vetspace.pro
 date: "2026-09-19"
 tags:
@@ -43,6 +43,10 @@ links:
     icon: i-simple-icons-github
 content: |
   VetSpace łączy publiczny katalog klinik weterynaryjnych z CRM w subskrypcji do rezerwacji wizyt, ich obsługi i prowadzenia kart pacjentów. Katalog i CRM działają jako osobne aplikacje Vue/Nuxt ze wspólnym API w Laravelu. Każda klinika ma własną bazę danych, subskrypcje obsługują Stripe i Cashier, a do analizy wizyt z pomocą AI służy osobny serwis Go.
+
+  ## Moja praca w projekcie
+
+  To mój produkt. Pracuję nad API w Laravelu i interfejsem kliniki, oddzieleniem danych poszczególnych klinik oraz subskrypcjami Stripe. Rozwijam też integrację z publicznymi stronami VetCard i osobnym serwisem Go do analizy wizyt z pomocą AI.
 
   ## Kluczowe funkcje
 

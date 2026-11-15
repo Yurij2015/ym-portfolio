@@ -1,5 +1,5 @@
 title: DigiSpace Studio
-description: "Marketing site for a niche IT studio for veterinary clinics and pet brands — WordPress with Blocksy theme and Gutenberg blocks"
+description: "A studio website for veterinary clinics and pet brands, with service pages, a blog and contact forms. Content is managed in WordPress."
 url: https://digispace.studio
 date: "2024-06-27"
 tags:
@@ -22,6 +22,10 @@ links:
     icon: i-heroicons-arrow-top-right-on-square
 content: |
   Marketing site for DigiSpace Studio — a specialized web studio for veterinary clinics and pet brands. Built on WordPress with the Blocksy theme and Stackable/Gutenberg blocks, a child theme for customization, a blog, and lead capture through contact forms.
+
+  ## My work on the project
+
+  I built the WordPress site using Blocksy and Gutenberg blocks, and set up the blog and contact forms. Design changes are kept in a child theme, separately from the parent theme files.
 
   ## Key Features
 

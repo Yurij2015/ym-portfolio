@@ -1,5 +1,5 @@
 title: VetCard
-description: "Multi-tenant katalog klinik weterynaryjnych: SEO strony klinik, rezerwacja wizyt online, branding każdej kliniki — jedna aplikacja Nuxt obsługuje wszystkie"
+description: "Publiczne strony klinik weterynaryjnych z informacjami o usługach i rezerwacją wizyt online. Każda klinika ma własne kolory w ramach wspólnego katalogu."
 url: https://vetcard.pro
 date: "2026-09-20"
 tags:
@@ -32,6 +32,10 @@ links:
     icon: i-simple-icons-github
 content: |
   Publiczna część VetSpace — multi-tenant katalog klinik weterynaryjnych. Jeden deployment Nuxt SSR obsługuje wszystkie kliniki: strony klinik zoptymalizowane pod SEO, rezerwację wizyt online z proxy do własnego backendu tenant każdej kliniki, tematyzację pod markę kliniki oraz obsługę wielu oddziałów.
+
+  ## Moja praca w projekcie
+
+  Rozwijam publiczną aplikację Nuxt i łączę ją z API VetSpace w Laravelu. Pracuję nad stronami klinik, wyborem terminu i formularzem rezerwacji, a także wersjami językowymi, metadanymi i renderowaniem serwerowym.
 
   ## Kluczowe funkcje
 

@@ -3,14 +3,14 @@
 indexable: false
 title: Tworzenie i utrzymanie projektów PHP w Laravelu i Symfony
 description: "Programowanie w Laravelu i Symfony oraz utrzymanie istniejących projektów PHP: aktualizacje, audyt, stabilizacja. Każda usługa ma opisany zakres, proces i cenę."
-intro: "Pracuję w dwóch obszarach. Rozwój to nowe aplikacje, SaaS, API, panele administracyjne i integracje w Laravelu, Symfony lub PHP. Utrzymanie to praca z istniejącym kodem: aktualizacje wersji, audyt, stabilizacja, wydajność i stała opieka. Na stronie każdej usługi opisuję, co robię, co otrzymujesz i od jakiej kwoty zaczyna się wycena."
+intro: "Dodaję funkcje do aplikacji PHP i pomagam je utrzymywać. Jeśli potrzebujesz nowego produktu, modułu lub integracji, zacznij od działu Rozwój. Jeśli chcesz naprawić błąd, zaktualizować zależności, przyspieszyć aplikację lub zapewnić jej stałe utrzymanie, zajrzyj do działu Utrzymanie. Ceny „od” dotyczą prac opisanych na poszczególnych stronach. Mniejsze zadania możemy omówić w rozliczeniu godzinowym, ze stawką od 140 zł za godzinę. Ostateczną stawkę ustalamy po rozmowie o złożoności zadań, stanie projektu i formie współpracy."
 directions:
   development:
     indexable: false
     label: Rozwój
     title: Programowanie w PHP, Laravelu i Symfony
     description: "Tworzenie aplikacji w Laravelu, Symfony i PHP: SaaS, API, panele administracyjne, płatności, funkcje AI oraz frontend w Vue i Nuxt. Zakres, proces i ceny."
-    intro: "Tu znajdziesz usługi, w których piszę nową funkcjonalność: pojedynczy moduł, integrację albo SaaS z subskrypcjami. Mogę przejąć cały projekt lub pracować w Twoim zespole jako programista. Jeśli aplikacja już istnieje i wymaga aktualizacji lub stabilizacji, zajrzyj do działu utrzymania."
+    intro: "Ten dział obejmuje nowe aplikacje i nowe funkcje w istniejących produktach, takie jak panel użytkownika, raport, API, integracja czy subskrypcje. Mogę zająć się modułem lub dołączyć do Twojego zespołu. Naprawę błędów, aktualizacje i stałą opiekę znajdziesz w dziale Utrzymanie. Mniejsze zmiany możemy rozliczać godzinowo, według stawki od 140 zł za godzinę. Stawkę doprecyzowujemy po omówieniu funkcji, istniejącego kodu i planowanej długości współpracy."
     featured:
       - laravel-development
       - symfony-development
@@ -21,7 +21,7 @@ directions:
     label: Utrzymanie
     title: Utrzymanie i aktualizacje projektów PHP w Laravelu i Symfony
     description: "Utrzymanie istniejących projektów PHP: aktualizacje Laravela i Symfony, audyt kodu, stabilizacja legacy, wydajność i stała opieka. Zakres, proces i ceny."
-    intro: "Tu znajdziesz usługi dla aplikacji, które już działają. Aktualizuję wersje Laravela i Symfony, sprawdzam kod przed zmianami lub przekazaniem innemu zespołowi, zajmuję się niestabilnym legacy i wolnymi stronami. Jeśli potrzebujesz stałej pomocy, opiekuję się aplikacją w rozliczeniu godzinowym."
+    intro: "Tutaj znajdziesz pomoc w naprawie i utrzymaniu aplikacji PHP: usuwanie błędów, przyspieszanie stron, aktualizacje Laravela i Symfony, przegląd kodu oraz stałą opiekę. Pomagam również wtedy, gdy projektu nie da się uruchomić. Mniejsze zadania i regularne prace możemy rozliczać godzinowo, ze stawką od 140 zł za godzinę. Stawkę ustalamy zależnie od stanu projektu, złożoności zadań i tego, jak często potrzebujesz wsparcia. Jeśli potrzebujesz nowej funkcji lub integracji, zajrzyj do działu Rozwój."
     featured:
       - laravel-upgrade
       - legacy-php-rescue

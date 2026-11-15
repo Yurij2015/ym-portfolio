@@ -1,5 +1,5 @@
 title: VetSpace
-description: "A platform for veterinary clinics with a public directory and a subscription CRM for appointments, visits and patient records"
+description: "A veterinary clinic CRM for appointments, visits and patient records. A shared API connects the public directory and clinic pages to the clinic workspace."
 url: https://vetspace.pro
 date: "2026-09-19"
 tags:
@@ -43,6 +43,10 @@ links:
     icon: i-simple-icons-github
 content: |
   VetSpace combines a public directory of veterinary clinics with a subscription CRM for appointments, visits and patient records. The directory and CRM run as separate Vue/Nuxt applications with a shared Laravel API. Each clinic has its own database, subscriptions use Stripe and Cashier, and a separate Go service handles AI-assisted visit analysis.
+
+  ## My work on the project
+
+  This is my product. I work on the Laravel API and clinic interface, data separation between clinics and Stripe subscriptions. I also develop integrations with the public VetCard pages and a separate Go service for AI-assisted visit analysis.
 
   ## Key Features
 

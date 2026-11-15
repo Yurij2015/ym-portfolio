@@ -5,7 +5,8 @@ summary: "Utrzymuję aplikacje PHP, Laravel i Symfony po uruchomieniu, zajmując
 icon: i-lucide-shield-check
 group: support
 order: 41
-priceFrom: 50
+priceFrom: 140
+priceCurrency: PLN
 priceUnit: hour
 timeline: Grafik, dostępność i zakres ustalamy przed rozpoczęciem
 updated: 2026-11-13
@@ -41,4 +42,4 @@ content: |-
 
   Plan obejmuje też sposób reagowania na awarie. Dostępność strony można śledzić przez mój serwis DigiPulse wysyłający powiadomienia przez Telegram i email. Przed rozpoczęciem prac uzgadniamy, kto otrzymuje te wiadomości i jakie działania podejmuje dalej.
 
-  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania czekają na realizację. Ustalimy wtedy, jak często sprawdzać aplikację i w jaki sposób zgłaszać zadania. Rozliczam się godzinowo, a stawka zaczyna się od $50 za godzinę.
+  Aby omówić utrzymanie Twojego produktu, opowiedz, kto zajmuje się nim obecnie i jakie zadania czekają na realizację. Ustalimy wtedy, jak często sprawdzać aplikację i w jaki sposób zgłaszać zadania. Rozliczam się godzinowo, a stawka zaczyna się od 140 zł za godzinę. Ostateczna stawka zależy od stanu aplikacji, potrzebnych prac i ich częstotliwości. Omawiamy ją przed rozpoczęciem współpracy.

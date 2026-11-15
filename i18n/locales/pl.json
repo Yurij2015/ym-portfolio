@@ -17,7 +17,7 @@
   },
   "contact": {
     "title": "Omówmy Twój projekt",
-    "description": "Opowiedz o swoim zadaniu — zaproponuję architekturę, terminy i wycenę. Zwykle odpowiadam w ciągu 24 godzin.",
+    "description": "Opisz, co chcesz zrobić, lub pokaż problem w istniejącej aplikacji. Dopytam o szczegóły potrzebne do wyceny. Zwykle odpowiadam w ciągu 24 godzin.",
     "telegram": "Napisz na Telegramie",
     "email": "Napisz e-mail"
   },
@@ -87,7 +87,9 @@
     "faq": "Najczęstsze pytania",
     "ctaTitle": "Porozmawiamy o Twoim projekcie?",
     "ctaIndexTitle": "Nie wiesz, która usługa pasuje?",
-    "allInDirection": "Wszystkie usługi w dziale „{label}” ({count})"
+    "allInDirection": "Wszystkie usługi w dziale „{label}” ({count})",
+    "priceFromPln": "Od {price} zł",
+    "priceFromHourlyPln": "Od {price} zł/h"
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone"

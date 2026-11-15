@@ -148,7 +148,8 @@ export const serviceSchema = z.object({
   group: z.enum(serviceDirections),
   order: z.number(),
   priceFrom: z.number(),
-  // Hourly engagements show "From $X/h" instead of a project price
+  priceCurrency: z.enum(['USD', 'PLN']).default('USD'),
+  // Hourly engagements show the price per hour in the configured currency
   priceUnit: z.enum(['project', 'hour']).optional(),
   timeline: z.string().nonempty(),
   deliverables: z.array(z.string().nonempty()).min(3),

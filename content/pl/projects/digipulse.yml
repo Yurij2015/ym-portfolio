@@ -1,5 +1,5 @@
 title: DigiPulse
-description: "SaaS do monitorowania dostępności: architektura event-driven — Laravel (Octane, Reverb) i Filament wysyłają zadania przez Redis do osobnego serwisu Go; serwer MCP udostępnia dane monitoringu asystentom AI; powiadomienia Telegram/e-mail"
+description: "Monitoring stron: sprawdzanie dostępności i ważności certyfikatów SSL oraz powiadomienia o awariach przez Telegram i email."
 url: https://digipulse.cloud
 date: "2026-04-17"
 tags:
@@ -37,7 +37,11 @@ links:
     color: neutral
     icon: i-simple-icons-github
 content: |
-  SaaS do monitorowania dostępności — sprawdzanie co 60 sekund, śledzenie wygaśnięcia SSL, powiadomienia przez Telegram i email. Panel administracyjny i podstawowy backend zbudowane na Laravel (Octane, websockety Reverb) i Filament, a silnik monitorujący to osobny serwis w Go. Integracja logowania Google OAuth i Cloudflare Turnstile. Zawiera serwer MCP, który udostępnia dane monitoringu bezpośrednio asystentom AI. Self-hosted na Proxmox.
+  DigiPulse sprawdza dostępność stron i termin ważności certyfikatów SSL. Użytkownik dodaje monitory i kontakty, ustala reguły powiadomień, a informacje o awariach otrzymuje przez Telegram lub email. Kontrole odbywają się co 60 sekund, a panel pokazuje zmiany statusu bez ręcznego odświeżania.
+
+  ## Moja praca w projekcie
+
+  To mój produkt. Rozwijam backend w Laravelu, panel Filament i osobny serwis monitoringu w Go. Pracuję też nad serwerem MCP udostępniającym dane asystentom AI oraz zajmuję się wdrażaniem i infrastrukturą.
 
   ## Kluczowe funkcje
 

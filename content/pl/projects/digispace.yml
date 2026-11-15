@@ -1,5 +1,5 @@
 title: DigiSpace
-description: "Wielojęzyczna strona agencji (EN/UK/PL) w Laravelu z autorskim CMS: panel Filament do treści i tłumaczeń, JSON-LD oraz mapy witryny dla poszczególnych języków. Obok działa starszy panel na Inertia i Vue."
+description: "Wielojęzyczna strona DigiSpace z blogiem, katalogiem usług i autorskim CMS do edycji stron, tłumaczeń i plików multimedialnych."
 url: https://digispace.pro
 date: "2022-10-05"
 tags:
@@ -39,6 +39,10 @@ links:
     icon: i-simple-icons-github
 content: |
   DigiSpace łączy publiczną stronę agencji, panel administracyjny i autorski CMS w jednej aplikacji Laravel. Treści i interfejs są dostępne po angielsku, ukraińsku i polsku. Ekrany administracyjne stopniowo przenoszę do Filament, a starszy panel na Inertia i Vue nadal działa równolegle. Kod aplikacji jest dostępny na GitHub.
+
+  ## Moja praca w projekcie
+
+  Rozwijam i utrzymuję stronę oraz CMS w Laravelu. Pracuję nad stronami publicznymi, tłumaczeniami i narzędziami administracyjnymi. Stopniowo przenoszę ekrany z Inertia i Vue do Filament, zachowując działanie obecnego serwisu.
 
   ## Kluczowe funkcje
 

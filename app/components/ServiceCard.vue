@@ -7,6 +7,7 @@ defineProps<{
     icon: string
     priceFrom: number
     priceUnit?: 'project' | 'hour'
+    priceCurrency?: 'USD' | 'PLN'
   }
 }>()
 
@@ -35,7 +36,7 @@ const slugOf = (service: { stem?: string }) =>
       {{ service.description }}
     </p>
     <p class="mt-4 text-sm font-medium text-default">
-      {{ t(service.priceUnit === 'hour' ? 'services.priceFromHourly' : 'services.priceFrom', { price: service.priceFrom }) }}
+      {{ t(servicePriceKey(service), { price: service.priceFrom }) }}
     </p>
   </NuxtLink>
 </template>

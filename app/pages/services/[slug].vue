@@ -103,7 +103,7 @@ const jsonLd = computed(() => {
         'priceSpecification': {
           '@type': 'PriceSpecification',
           'minPrice': service.value?.priceFrom,
-          'priceCurrency': 'USD',
+          'priceCurrency': service.value?.priceCurrency ?? 'USD',
           ...(service.value?.priceUnit === 'hour' ? { unitText: 'HOUR' } : {})
         }
       }
@@ -177,7 +177,7 @@ useHead({
               variant="subtle"
               size="lg"
               icon="i-lucide-tag"
-              :label="t(service.priceUnit === 'hour' ? 'services.priceFromHourly' : 'services.priceFrom', { price: service.priceFrom })"
+              :label="t(servicePriceKey(service), { price: service.priceFrom })"
             />
             <UBadge
               color="neutral"

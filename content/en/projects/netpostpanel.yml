@@ -1,5 +1,5 @@
 title: NetPostPanel
-description: AI content-operations platform — a RAG pipeline (research → scrape → generate → vectorize), an external API other apps call, and Auto Pilot for unattended scheduled generation
+description: "An internal tool for finding sources, drafting and translating content with AI. Other applications can use these features through an API."
 url: https://net-post-panel.digispace.pro
 date: "2024-11-10"
 tags:
@@ -29,6 +29,10 @@ links:
     icon: i-simple-icons-github
 content: |
   NetPostPanel is an internal platform for finding sources and preparing content with AI. It combines Google Custom Search, RSS, page scraping, text generation and vector search. Other applications use these features through a versioned API, including the article preparation workflow for DigiSpace.
+
+  ## My work on the project
+
+  I design and develop this internal tool for my own content workflows. My work covers source discovery, AI provider integrations, generation queues and an API for other applications. I also configure vector search in Qdrant and model call tracing in Langfuse.
 
   ## Key Features
 

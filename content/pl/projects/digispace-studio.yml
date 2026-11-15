@@ -1,5 +1,5 @@
 title: DigiSpace Studio
-description: "Strona marketingowa niszowego studia IT dla klinik weterynaryjnych i marek pet — WordPress z motywem Blocksy i blokami Gutenberg"
+description: "Strona studia dla klinik weterynaryjnych i marek pet: opisy usług, blog i formularze kontaktowe. Treści można edytować w WordPressie."
 url: https://digispace.studio
 date: "2024-06-27"
 tags:
@@ -22,6 +22,10 @@ links:
     icon: i-heroicons-arrow-top-right-on-square
 content: |
   Strona marketingowa DigiSpace Studio — wyspecjalizowanego studia webowego dla klinik weterynaryjnych i marek pet. Zbudowana na WordPress z motywem Blocksy i blokami Stackable/Gutenberg, motywem potomnym do customizacji, blogiem i przechwytywaniem leadów przez formularze kontaktowe.
+
+  ## Moja praca w projekcie
+
+  Przygotowałem stronę na WordPressie z motywem Blocksy i blokami Gutenberg, skonfigurowałem blog oraz formularze kontaktowe. Zmiany wyglądu umieściłem w motywie potomnym, oddzielnie od plików głównego motywu.
 
   ## Kluczowe funkcje
 

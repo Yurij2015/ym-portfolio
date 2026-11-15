@@ -30,7 +30,7 @@ Every service SHALL belong to exactly one direction, `development` or `support`.
 - **THEN** the page links to `/services/development` and `/services/support` and shows the featured services of each
 
 ### Requirement: Structured data
-Each service page SHALL embed JSON-LD with `Service` (provider Person, offer minPrice in USD), `BreadcrumbList` (Home → Services → Direction → Service), and `FAQPage` when FAQ exists. Direction pages SHALL embed `BreadcrumbList` (Home → Services → Direction).
+Each service page SHALL embed JSON-LD with `Service` (provider Person, offer minPrice in the service’s configured priceCurrency, default USD), `BreadcrumbList` (Home → Services → Direction → Service), and `FAQPage` when FAQ exists. Direction pages SHALL embed `BreadcrumbList` (Home → Services → Direction).
 
 #### Scenario: Service JSON-LD present
 - **WHEN** the page HTML is fetched
@@ -65,3 +65,15 @@ The services overview, both direction pages and every service detail page SHALL 
 - **WHEN** the editor sets `indexable: true` for a service or localized service list and publishes the change
 - **THEN** that page emits `index, follow` in both robots meta and X-Robots-Tag
 - **AND** other service pages keep their own indexing settings
+
+
+### Requirement: Localized hourly pricing
+Service content SHALL support an explicit `priceCurrency` of `USD` or `PLN`, defaulting to `USD` for existing content. Cards, detail-page price labels and JSON-LD SHALL use the same amount and currency.
+
+#### Scenario: Polish hourly engagement
+- **WHEN** a Polish hourly service has `priceFrom: 140`, `priceCurrency: PLN` and `priceUnit: hour`
+- **THEN** cards and the detail page show `Od 140 zł/h`, and JSON-LD uses minPrice 140, priceCurrency PLN and unitText HOUR
+
+#### Scenario: Existing dollar pricing
+- **WHEN** a service omits priceCurrency
+- **THEN** its amount is displayed in USD and its JSON-LD priceCurrency remains USD

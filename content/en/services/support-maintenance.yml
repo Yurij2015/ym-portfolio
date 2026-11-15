@@ -5,7 +5,8 @@ summary: "I maintain PHP, Laravel and Symfony applications after launch, handlin
 icon: i-lucide-shield-check
 group: support
 order: 41
-priceFrom: 50
+priceFrom: 35
+priceCurrency: USD
 priceUnit: hour
 timeline: Schedule, availability and scope agreed before work starts
 updated: 2026-11-13
@@ -41,4 +42,4 @@ content: |-
 
   The plan also covers how to respond to failures. My DigiPulse service can monitor website availability and send alerts through Telegram and email. Before work begins, we agree on who receives those messages and what happens next.
 
-  To discuss support for your product, tell me who maintains it now and which tasks are building up. We can then agree on how often to run checks and how you will send me tasks. Work is billed hourly, starting at $50.
+  To discuss support for your product, tell me who maintains it now and which tasks are building up. We can then agree on how often to run checks and how you will send me tasks. Work is billed hourly, starting at $35. The final rate depends on the application’s condition, the work needed and how regularly you need support. We discuss it before starting.

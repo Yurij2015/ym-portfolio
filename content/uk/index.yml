@@ -111,13 +111,6 @@ testimonials:
       name: 'LinkedIn'
       description: 'Рекомендація на LinkedIn'
       to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
-  - quote: "Можна звернутися з окремою задачею або долучити мене до роботи над продуктом. Для початку достатньо описати, що потрібно зробити, і показати застосунок чи матеріали, які вже є."
-    author:
-      name: 'Yurii Mokryi'
-      description: 'Senior Full-Stack PHP Developer • 8+ років • Poznań'
-      avatar:
-        src: '/images/avatar-3.jpeg'
-        alt: 'Yurii Mokryi'
 faq:
   title: "Часті запитання"
   description: "Коротко про процес, технології та співпрацю."

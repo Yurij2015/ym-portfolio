@@ -111,13 +111,6 @@ testimonials:
       name: 'LinkedIn'
       description: 'Recommendation on LinkedIn'
       to: 'https://www.linkedin.com/in/yurii-mokryi/details/recommendations/'
-  - quote: "You can get in touch about an individual task or bring me into ongoing product development. To get started, describe what needs doing and share the application or any materials you already have."
-    author:
-      name: Yurii Mokryi
-      description: Senior Full-Stack PHP Developer • 8+ years • Poznań
-      avatar:
-        src: /images/avatar-3.jpeg
-        alt: Yurii Mokryi
 faq:
   title: Frequently asked questions
   description: The short version on process, technologies and collaboration.
