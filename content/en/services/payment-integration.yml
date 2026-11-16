@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Payment and third-party API integration
 description: Stripe, Revolut and Dalenys payments, subscriptions and external services for PHP applications, with webhook handling, retries and error checks.
 summary: "I integrate payments and subscriptions into PHP and Laravel applications, from creating a payment through confirmation, plan changes or cancellation. To make sure payment statuses and user access stay in sync, I also test repeated webhooks, declined payments and provider outages. I take the same approach to third-party APIs used to exchange data between services."

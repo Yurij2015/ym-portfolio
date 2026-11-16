@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: PHP application performance optimization
 description: Investigate slow PHP, Laravel and Symfony applications. Measurements, targeted changes and before-and-after comparisons.
 summary: "I help with slow pages, APIs and background jobs in PHP applications. I start with the operation causing the most frustration for users or staff, then investigate where time is being spent: database queries, data processing, external calls or queues. After making a change, I compare the before-and-after measurements so you can see the difference."

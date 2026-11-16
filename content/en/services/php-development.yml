@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: PHP application development and improvements
 description: Features, reports, integrations and fixes for PHP applications using Laravel, Symfony or a custom codebase.
 summary: "I update existing PHP applications built with Laravel, Symfony or without a framework. This can mean changing a calculation, adding a report, connecting another service or fixing a bug. Before making changes, I investigate how the relevant part of the system works and what it connects to. This lets me test the changes alongside the other operations they affect."

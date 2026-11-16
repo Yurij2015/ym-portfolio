@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Tworzenie i integracja API
 description: "API dla frontendu, aplikacji mobilnej i partnerów: uprawnienia,
   dokumentacja, obsługa błędów oraz testy."

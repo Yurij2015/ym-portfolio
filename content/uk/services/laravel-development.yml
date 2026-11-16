@@ -21,7 +21,7 @@ faq:
     content: Для внутрішніх панелей використовую Filament, для кабінетів, зокрема, Inertia і Vue. Публічні сторінки можна зробити на Nuxt, як у VetCard. Вибір залежить від інтерфейсу й того, хто його підтримуватиме.
 group: development
 icon: i-simple-icons-laravel
-indexable: false
+indexable: true
 order: 10
 priceFrom: 2400
 process:

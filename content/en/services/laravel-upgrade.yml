@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Laravel upgrades
 description: "Laravel and PHP upgrades: dependency review, code changes, tests and a deployment plan."
 summary: "I upgrade Laravel and PHP in existing applications, adapting packages, custom code, configuration and tests to the target version. Since the changes can affect sign-in, payments and background jobs, I check those workflows separately. I then prepare a deployment plan covering database migrations, worker restarts and rollback options."

@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Stabilizing an existing PHP project
 description: "PHP project troubleshooting: setup, backups, errors and deployment. Start with diagnosis and an agreed work plan."
 summary: "I help get PHP projects running again when they are difficult to set up, restore or maintain. Depending on the problem, I review the code, infrastructure and backups, reproduce errors and fix the deployment process. I start with what is blocking you now so we can identify the first fixes and plan the rest of the recovery."

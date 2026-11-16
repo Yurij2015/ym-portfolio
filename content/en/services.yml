@@ -1,12 +1,12 @@
 # Each `indexable` controls one page in this locale only:
 # the /services overview and the two direction pages.
-indexable: false
+indexable: true
 title: PHP development and support for Laravel and Symfony projects
 description: "Laravel and Symfony development and support for existing PHP projects: upgrades, audits and stabilization. Each service lists its scope, process and price."
 intro: "I work on new PHP applications, features and integrations ([Development](#development)), as well as existing projects that need fixes or upgrades ([Support](#support)). Smaller tasks start at $35 per hour; I confirm the rate after reviewing the task and code."
 directions:
   development:
-    indexable: false
+    indexable: true
     label: Development
     title: PHP, Laravel and Symfony development
     description: "Application development in Laravel, Symfony and PHP: SaaS, APIs, admin panels, payments, AI features and Vue or Nuxt frontends. Scope, process and prices."
@@ -17,7 +17,7 @@ directions:
       - laravel-saas-development
       - api-development
   support:
-    indexable: false
+    indexable: true
     label: Support
     title: Support and upgrades for Laravel and Symfony PHP projects
     description: "Support for existing PHP projects: Laravel and Symfony upgrades, code audits, legacy stabilization, performance and maintenance. Scope, process and prices."

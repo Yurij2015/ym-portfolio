@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: API development and integration
 description: APIs for frontends, mobile apps and partner services, with access rules, documentation and tests.
 summary: "I build APIs that let mobile apps, frontends and partner services read and update data, run searches and start background operations. Alongside the implementation, I document requests, responses and errors so another team can connect its application. When extending an existing API, I account for the applications that already use it."

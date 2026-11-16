@@ -1,12 +1,12 @@
 # Each `indexable` controls one page in this locale only:
 # the /services overview and the two direction pages.
-indexable: false
+indexable: true
 title: Розробка й підтримка PHP-проєктів на Laravel і Symfony
 description: "Розробка на Laravel і Symfony та підтримка наявних PHP-проєктів: оновлення, аудит, стабілізація. Для кожної послуги описано обсяг робіт, процес і ціну."
 intro: "Працюю як над новими PHP-застосунками, функціями й інтеграціями ([розробка](#development)), так і над проєктами, яким потрібні виправлення чи оновлення ([підтримка](#support)). Невеликі задачі — від $35/год; ставку погоджуємо після оцінки задачі та коду."
 directions:
   development:
-    indexable: false
+    indexable: true
     label: Розробка
     title: Розробка на PHP, Laravel і Symfony
     description: "Розробка застосунків на Laravel, Symfony та PHP: SaaS, API, адмін-панелі, платежі, AI-функції, фронтенд на Vue і Nuxt. Обсяг робіт, процес і ціни."
@@ -17,7 +17,7 @@ directions:
       - laravel-saas-development
       - api-development
   support:
-    indexable: false
+    indexable: true
     label: Підтримка
     title: Підтримка й оновлення PHP-проєктів на Laravel і Symfony
     description: "Підтримка наявних PHP-проєктів: оновлення Laravel і Symfony, аудит коду, стабілізація legacy, швидкодія та регулярний супровід. Обсяг робіт, процес і ціни."

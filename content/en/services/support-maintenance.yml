@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: PHP and Laravel application maintenance
 description: "Ongoing PHP, Laravel and Symfony maintenance: fixes, dependency reviews, backup checks and monitoring."
 summary: "I maintain PHP, Laravel and Symfony applications after launch, handling fixes, dependency updates and small improvements. Depending on the maintenance plan, I also check queues and backups and review monitoring alerts. I record completed work and open issues in reports so you can see what needs attention and how the time was spent."

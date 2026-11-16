@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Aktualizacja Symfony
 description: "Aktualizacja Symfony i PHP: zależności, przestarzałe wywołania,
   testy i przygotowanie wydania."

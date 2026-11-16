@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Integracja AI z aplikacjami PHP
 description: Wyszukiwanie w dokumentach, przygotowanie tekstów i przetwarzanie
   danych z AI w PHP i Laravelu. Ocena jakości odpowiedzi i kosztów przed

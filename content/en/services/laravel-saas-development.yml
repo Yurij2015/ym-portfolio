@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Laravel SaaS development
 description: Laravel SaaS products with company accounts, permissions, subscriptions and your product’s workflows. Development in agreed stages.
 summary: "I build SaaS products in Laravel where companies can register, invite staff, manage access and pay for a subscription. I work with these features in my own product, VetSpace, a clinic CRM with Stripe billing. For your product, I can help define the features needed for launch and plan the stages that follow."

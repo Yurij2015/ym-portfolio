@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: AI integration for PHP applications
 description: Document search, text preparation and data processing with AI in PHP and Laravel. Check output quality and costs before launch.
 summary: "I add AI features to PHP and Laravel applications to extract fields from documents, classify incoming requests, draft text and search a knowledge base. To find out whether a model suits the task, I first test it on your examples. I use the results to plan the integration, with error handling, usage tracking and human review where needed."

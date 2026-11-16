@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Symfony upgrades
 description: "Upgrade Symfony and PHP in an existing application: dependencies, deprecated calls, tests and release preparation."
 summary: "I upgrade Symfony and PHP in existing systems, checking bundle compatibility and adapting configuration, deprecated calls and custom extensions. After these changes, I test the related operations and prepare the application for release. For a migration from a custom PHP application to Symfony, I prepare a separate plan for moving the application over in stages."

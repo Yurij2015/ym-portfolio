@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Tworzenie aplikacji w Laravelu, Vue i Nuxt
 description: "Backend w Laravelu i interfejs w Vue lub Nuxt: konta, strony
   publiczne, API oraz połączenie obu części."

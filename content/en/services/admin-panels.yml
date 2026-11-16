@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Admin panels for PHP and Laravel applications
 description: "Admin panels for Laravel and PHP built with Filament, Flowbite or AdminLTE: forms, tables, permissions, reports and the actions your team uses daily."
 summary: "I build admin panels where your team can manage customers and orders, edit content and view reports. Depending on the application and the screens you need, I use Filament, Flowbite with Tailwind or AdminLTE with Bootstrap. I can build a new panel or gradually replace an existing one."

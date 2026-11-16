@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: PHP code audit
 description: Review of PHP, Laravel or Symfony code with specific findings, priorities and recommendations for your team.
 summary: "I review PHP code to find the causes of errors and determine which fixes should come first. Depending on the task, I focus on data access, payments, database queries, queues or tests. You receive a report with references to the code, an explanation of each issue’s impact and priorities to help your team plan the fixes."

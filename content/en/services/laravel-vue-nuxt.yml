@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Laravel, Vue and Nuxt development
 description: "Laravel backends with Vue or Nuxt interfaces: user accounts, public pages, APIs and their integration."
 summary: "I build user portals, directories and online booking with Vue or Nuxt interfaces and Laravel backends. Because I work on both the frontend and backend, I can build the full workflow, from a user action in the browser to validation and data storage on the server. For public Nuxt pages, I also configure server rendering and metadata."

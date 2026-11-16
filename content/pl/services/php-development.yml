@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Rozwój i modyfikacje aplikacji PHP
 description: Funkcje, raporty, integracje i poprawki w aplikacjach PHP opartych
   na Laravelu, Symfony lub napisanych bez frameworka.

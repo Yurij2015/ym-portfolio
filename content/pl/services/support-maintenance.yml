@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Utrzymanie aplikacji PHP i Laravel
 description: "Regularne wsparcie PHP, Laravel i Symfony: poprawki, przegląd
   zależności, kontrola kopii zapasowych i monitoringu."

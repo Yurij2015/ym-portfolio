@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Symfony development
 description: Modules, integrations and background workflows in Symfony. I help extend existing applications.
 summary: "I help develop Symfony applications by adding order processing, payment integrations, APIs and background jobs. I work on these features for high-traffic ticketing websites. I draw on that experience when adding a module, changing business rules or investigating data exchange errors in your system."

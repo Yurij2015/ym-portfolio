@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Audyt kodu PHP
 description: "Przegląd kodu PHP, Laravel lub Symfony: konkretne ustalenia,
   priorytety i zalecenia dla zespołu."

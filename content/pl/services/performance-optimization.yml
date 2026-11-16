@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Optymalizacja wydajności aplikacji PHP
 description: Diagnoza powolnych aplikacji PHP, Laravel i Symfony. Pomiary,
   konkretne zmiany i porównanie wyników.

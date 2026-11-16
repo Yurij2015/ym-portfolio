@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Aktualizacja Laravela
 description: "Aktualizacja Laravela i PHP: przegląd zależności, zmiany kodu,
   testy i plan wdrożenia."

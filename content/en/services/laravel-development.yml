@@ -21,7 +21,7 @@ faq:
     content: I use Filament for internal admin panels and tools such as Inertia and Vue for user portals. For public pages, Nuxt can be a good fit, as it is in VetCard. The choice depends on the interface you need and who will maintain it.
 group: development
 icon: i-simple-icons-laravel
-indexable: false
+indexable: true
 order: 10
 priceFrom: 2400
 process:

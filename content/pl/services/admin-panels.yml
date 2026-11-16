@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Panele administracyjne dla aplikacji PHP i Laravel
 description: "Panele administracyjne dla Laravela i PHP w Filamencie, Flowbite
   lub AdminLTE: formularze, tabele, uprawnienia, raporty i codzienne operacje

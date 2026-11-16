@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Integracja płatności i zewnętrznych API
 description: Płatności Stripe, Revolut i Dalenys, subskrypcje i zewnętrzne
   usługi w aplikacjach PHP. Obsługa webhooków, ponowień i błędów.

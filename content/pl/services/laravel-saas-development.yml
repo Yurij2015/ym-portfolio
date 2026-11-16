@@ -1,4 +1,4 @@
-indexable: false
+indexable: true
 title: Tworzenie SaaS w Laravelu
 description: "SaaS w Laravelu: konta firm, uprawnienia, subskrypcje i funkcje
   produktu. Rozwój w uzgodnionych etapach."
