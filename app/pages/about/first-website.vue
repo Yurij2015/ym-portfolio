@@ -28,7 +28,7 @@ defineOgImage('Portfolio', { title, description, headline: t('nav.about') }, { a
 </script>
 
 <template>
-  <UPage>
+  <UPage v-if="page">
     <UPageHero
       :title="page.title"
       :description="page.description"
