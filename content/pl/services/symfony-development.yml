@@ -49,5 +49,5 @@ content: |-
 
   W tych projektach pracuję z zamówieniami, płatnościami i wymianą danych z usługami zewnętrznymi. Gdy trzeba zmienić jeden z tych procesów, najpierw sprawdzam jego działanie i powiązania z pozostałymi częściami aplikacji. Dzięki temu mogę zaplanować zmiany i przetestować cały proces po ich wprowadzeniu.
 
-  Opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP. Sprawdzę, jakich modułów i usług zewnętrznych dotyczy zadanie. Przygotowanie modułu z testami kosztuje od 12 800 zł; potrzebne integracje uwzględniam w wycenie.
+  **Opisz proces, który chcesz dodać lub zmienić, i podaj wersje Symfony oraz PHP.** Sprawdzę, jakich modułów i usług zewnętrznych dotyczy zadanie. Przygotowanie modułu z testami kosztuje od 12 800 zł; potrzebne integracje uwzględniam w wycenie.
 priceCurrency: PLN

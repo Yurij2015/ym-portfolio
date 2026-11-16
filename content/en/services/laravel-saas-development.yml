@@ -41,6 +41,6 @@ content: |-
 
   Alongside data access, we need to define subscription rules: when users gain access, how they change plans and what happens after a failed payment. These rules affect the product's features. For example, in a client marketplace, the purchased package determined how many active listings and drafts a user could have.
 
-  To get started, describe who will use your SaaS, what they need it to do and how you plan to charge for it. This will help us define the first stage and agree on its outcome.
+  **To scope the first stage, describe who will use your SaaS, what they need it to do and how you plan to charge for it.** This will help us agree on what to build and the outcome of that stage.
 
   The first agreed stage of development starts at $4,800. Before work begins, the estimate sets out the features, billing workflows and integrations included in that stage.

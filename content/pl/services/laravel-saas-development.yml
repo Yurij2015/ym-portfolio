@@ -50,7 +50,7 @@ content: |-
 
   Razem z dostępem do danych ustalamy zasady subskrypcji: kiedy użytkownik otrzymuje dostęp, jak zmienia plan i co dzieje się po nieudanej płatności. Od tych zasad zależą funkcje produktu. Na przykład na platformie marketplace jednego z klientów zakupiony pakiet określał, ile aktywnych ogłoszeń i wersji roboczych może mieć użytkownik.
 
-  Na początek wystarczy więc opisać, kto będzie korzystać z Twojego SaaS, w czym produkt ma pomagać i jak planujesz pobierać opłaty. W ten sposób ustalimy, co zbudować w pierwszym etapie i co będzie gotowe po jego zakończeniu.
+  **Aby ustalić zakres pierwszego etapu, opisz, kto będzie korzystać z Twojego SaaS, w czym produkt ma pomagać i jak planujesz pobierać opłaty.** Dzięki temu uzgodnimy, co zbudować i jaki rezultat ma przynieść ten etap.
 
   Pierwszy uzgodniony etap prac kosztuje od 19 200 zł. Wycena określa, jakie funkcje, scenariusze rozliczeń i integracje obejmuje, zanim zaczniemy pisać kod.
 priceCurrency: PLN

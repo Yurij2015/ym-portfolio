@@ -40,6 +40,22 @@ const directions = computed(() =>
 
 const title = settings.value?.title ?? t('nav.services')
 const description = settings.value?.description ?? ''
+const introParts = computed(() => {
+  const intro = settings.value?.intro ?? ''
+  const parts: Array<{ text: string, to?: string }> = []
+  const pattern = /\[([^\]]+)\]\(#(development|support)\)/g
+  let cursor = 0
+
+  for (const match of intro.matchAll(pattern)) {
+    const start = match.index ?? cursor
+    if (start > cursor) parts.push({ text: intro.slice(cursor, start) })
+    parts.push({ text: match[1] ?? '', to: `/services/${match[2]}` })
+    cursor = start + match[0].length
+  }
+
+  if (cursor < intro.length) parts.push({ text: intro.slice(cursor) })
+  return parts
+})
 
 const robots = computed(() => settings.value?.indexable === true ? 'index, follow' : 'noindex, follow')
 useResponseHeader('X-Robots-Tag').value = robots.value
@@ -91,13 +107,25 @@ useHead({
     <UPageSection :ui="{ container: 'pt-20! sm:pt-24!' }">
       <UPageHero
         :title="title"
-        :description="settings?.intro"
         :ui="{
           container: 'pt-0! pb-10 lg:pb-12',
           title: 'mx-0! text-left',
           description: 'mx-0! text-left'
         }"
-      />
+      >
+        <template #description>
+          <p class="max-w-3xl text-left">
+            <template v-for="(part, index) in introParts" :key="index">
+              <NuxtLink
+                v-if="part.to"
+                :to="localePath(part.to)"
+                class="font-medium text-primary underline decoration-primary/40 underline-offset-4 hover:decoration-primary"
+              >{{ part.text }}</NuxtLink>
+              <span v-else>{{ part.text }}</span>
+            </template>
+          </p>
+        </template>
+      </UPageHero>
 
       <section
         v-for="direction in directions"

@@ -18,6 +18,7 @@
   "contact": {
     "title": "Omówmy Twój projekt",
     "description": "Opisz, co chcesz zrobić, lub pokaż problem w istniejącej aplikacji. Dopytam o szczegóły potrzebne do wyceny. Zwykle odpowiadam w ciągu 24 godzin.",
+    "discussProject": "Porozmawiajmy o projekcie",
     "telegram": "Napisz na Telegramie",
     "email": "Napisz e-mail"
   },

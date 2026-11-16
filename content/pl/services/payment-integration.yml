@@ -54,5 +54,5 @@ content: |-
 
   Przy integracji innych usług zewnętrznych również dbam o obsługę błędów i śledzenie statusu operacji. W NetPostPanel wywołania API są częścią zadań przygotowania treści wykonywanych w tle. Aplikacja musi więc zapisać, czy zadanie się powiodło, także po zakończeniu pierwotnego zapytania.
 
-  Jeśli potrzebujesz integracji płatności, podaj wybranego dostawcę i opisz potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty. W przypadku innego API przydadzą się dokumentacja i opis wymienianych danych. Integracja kosztuje od 6400 zł. Opłaty dostawcy są rozliczane osobno.
+  **Aby wycenić integrację płatności, podaj wybranego dostawcę i potrzebne operacje: płatności jednorazowe, subskrypcje lub zwroty.** Przy innym API dołącz dokumentację i opisz wymieniane dane. Integracja kosztuje od 6400 zł. Opłaty dostawcy są rozliczane osobno.
 priceCurrency: PLN

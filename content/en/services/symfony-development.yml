@@ -40,4 +40,4 @@ content: |-
 
   My work on these projects covers order processing, payments and data exchange with external services. When one of these workflows needs changing, I first investigate how it is implemented and which parts of the application it affects. This helps me plan the work and test it alongside the related logic.
 
-  To estimate your task, describe the workflow you need to add or change and include your Symfony and PHP versions. This will help identify related modules and external dependencies. Development of a module with tests starts at $3,200. I account for any external integrations in the overall estimate.
+  **To estimate your task, describe the workflow you need to add or change and include your Symfony and PHP versions.** This will help identify related modules and external dependencies. Development of a module with tests starts at $3,200. I account for any external integrations in the overall estimate.

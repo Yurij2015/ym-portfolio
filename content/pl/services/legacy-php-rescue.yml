@@ -50,5 +50,5 @@ content: |-
 
   Po tej analizie opisuję stan projektu i usuwam uzgodnione problemy, które blokują pracę. Pozostałe ustalenia zbieram w planie dalszych działań. Jeśli dalsze prace wymagają konfiguracji środowiska, odzyskania danych lub zmiany sposobu wdrażania, wyceniam je osobno.
 
-  Opisz, co przestało działać, i daj znać, czy masz kod, dostęp do systemu, kopie zapasowe lub komunikaty o błędach. To wystarczy, żeby ustalić punkt wyjścia. Diagnoza i pierwsze uzgodnione prace nad przywróceniem projektu do działania kosztują od 7200 zł.
+  **Opisz, co przestało działać, i daj znać, czy masz kod, dostęp do systemu, kopie zapasowe lub komunikaty o błędach.** To wystarczy, żeby ustalić punkt wyjścia. Diagnoza i pierwsze uzgodnione prace nad przywróceniem projektu do działania kosztują od 7200 zł.
 priceCurrency: PLN

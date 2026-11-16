@@ -47,6 +47,6 @@ content: |-
 
   I have also built two admin panels for Laravel applications using AdminLTE. One fetches data from an external API on a schedule, letting an agency view and export statistics and expenses. The other manages the collection and filtering of social network data through job queues.
 
-  In each case, the scope depends on how the team works day to day: which records they create and edit, how they find them, and which actions need confirmation. To estimate your panel, it helps to see the current screens or spreadsheets and understand what the team still does manually.
+  In each case, the scope depends on how the team works day to day: which records they create and edit, how they find them, and which actions need confirmation. **To estimate the panel, show me the current screens or spreadsheets and tell me what the team still does manually.**
 
   Development of a set of related screens starts at $1,600. If you need imports, reports or custom operations, I factor their complexity into the overall estimate.

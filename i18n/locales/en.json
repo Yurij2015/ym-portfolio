@@ -18,6 +18,7 @@
   "contact": {
     "title": "Let's discuss your project",
     "description": "Describe what you would like to build, or show me a problem in your existing application. I will ask for any details needed to estimate the work. I usually reply within 24 hours.",
+    "discussProject": "Discuss your project",
     "telegram": "Message me on Telegram",
     "email": "Send an email"
   },

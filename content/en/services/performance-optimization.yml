@@ -40,4 +40,4 @@ content: |-
 
   After the fix, I repeat the same operation with a comparable amount of data and compare execution time and resource usage. I also check that the response is correct, since a faster report still needs to return the same data.
 
-  To get started, show me the page or operation people are waiting for and describe when the delay occurs. Any logs or measurements you already have will help with diagnosis. Investigating and addressing one specific cause starts at $1,200.
+  **To estimate the work, show me the page or operation people are waiting for and describe when the delay occurs.** Include any logs or measurements you already have. Investigating and addressing one specific cause starts at $1,200.

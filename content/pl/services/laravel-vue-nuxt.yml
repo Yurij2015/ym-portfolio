@@ -54,5 +54,5 @@ content: |-
 
   Dlatego podczas prac sprawdzam zarówno wygląd strony, jak i to, co użytkownik widzi w trakcie korzystania z niej: stan ładowania, komunikaty o błędach i potwierdzenie wykonanej operacji. Dla stron publicznych dodatkowo konfiguruję metadane oraz renderowanie serwerowe, aby główna treść znajdowała się w odpowiedzi HTML serwera.
 
-  Jeśli planujesz podobną funkcję, prześlij listę ekranów i opis tego, co użytkownik ma na nich robić. Dołącz też makiety, jeśli je masz. Wspólnie określimy, co trzeba przygotować po stronie frontendu i backendu. Wdrożenie takiej funkcji kosztuje od 9600 zł.
+  **Aby wycenić podobną funkcję, prześlij listę ekranów i opisz, co użytkownik ma na nich robić.** Dołącz makiety, jeśli je masz. Wspólnie określimy zmiany po stronie frontendu i backendu. Taka funkcja kosztuje od 9600 zł.
 priceCurrency: PLN

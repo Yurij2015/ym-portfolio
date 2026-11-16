@@ -50,5 +50,5 @@ content: |-
 
   Po poprawce powtarzam tę samą operację z porównywalną ilością danych i zestawiam czas wykonania oraz zużycie zasobów. Jednocześnie sprawdzam poprawność odpowiedzi, ponieważ szybszy raport nadal musi zwracać te same dane.
 
-  Na początek pokaż stronę lub operację, na którą trzeba czekać, i opisz, kiedy pojawia się opóźnienie. Jeśli masz już logi lub pomiary, pomogą one w diagnozie. Diagnoza i prace nad rozwiązaniem wskazanego problemu kosztują od 4800 zł. W tej cenie zajmuję się jedną zidentyfikowaną przyczyną opóźnienia.
+  **Aby wycenić pracę, pokaż stronę lub operację, na którą trzeba czekać, i opisz, kiedy pojawia się opóźnienie.** Dołącz dostępne logi lub pomiary. Diagnoza i prace nad rozwiązaniem wskazanego problemu kosztują od 4800 zł; zakres obejmuje jedną zidentyfikowaną przyczynę opóźnienia.
 priceCurrency: PLN

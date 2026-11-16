@@ -56,7 +56,7 @@ content: |-
 
   Przykładem jest DigiSpace, gdzie publiczna strona, obsługa treści i panele administracyjne korzystają ze wspólnego kodu w Laravelu. Zmiany pojedynczej funkcji muszą uwzględniać pozostałą logikę aplikacji. To samo podejście stosuję w aplikacjach klientów.
 
-  Na początek opisz zadanie i podaj wersję PHP. W przypadku błędu przydadzą się kroki odtworzenia oraz komunikaty z logów, a dla nowej funkcji przykład oczekiwanego wyniku. Te informacje pomogą mi znaleźć odpowiednie miejsca w kodzie i wycenić pracę.
+  **Aby wycenić zadanie, opisz je i podaj wersję PHP.** Przy błędzie dołącz kroki odtworzenia i komunikaty z logów, a przy nowej funkcji przykład oczekiwanego wyniku. Dzięki temu znajdę odpowiednie miejsca w kodzie.
 
   Uzgodnione prace, na przykład dodanie raportu lub wymiany danych z inną usługą, kosztują od 7200 zł. Cena obejmuje sprawdzenie zmian i instrukcję wdrożenia. Przy drobnej poprawce możemy omówić rozliczenie godzinowe, ze stawką od 140 zł za godzinę. Stawkę i przewidywany czas ustalamy po zapoznaniu się z zadaniem i stanem projektu.
 priceCurrency: PLN

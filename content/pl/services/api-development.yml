@@ -54,5 +54,5 @@ content: |-
 
   Pracę zaczynam więc od określenia operacji, dostępnych danych i odpowiedzi, które powinna otrzymywać aplikacja kliencka. Przy dłuższych zadaniach planuję wykonanie w tle i sposób odebrania wyniku. Zgodnie z tymi ustaleniami piszę kod, dokumentację i testy.
 
-  Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane. Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Wdrożenie zestawu powiązanych operacji API, wraz z dokumentacją i testami, kosztuje od 7200 zł.
+  **Aby wycenić zadanie, opisz potrzebne operacje i dołącz przykładowe dane.** Jeśli API już istnieje, przyda się również jego aktualna dokumentacja. Wdrożenie zestawu powiązanych operacji API, wraz z dokumentacją i testami, kosztuje od 7200 zł.
 priceCurrency: PLN

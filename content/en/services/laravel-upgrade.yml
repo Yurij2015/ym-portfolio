@@ -40,4 +40,4 @@ content: |-
 
   Once the required changes are clear, I plan how to check that the system still works as expected. In my Laravel products, VetSpace and DigiPulse, I work with subscriptions, queues and integrations where a successful application startup is only the beginning of testing. I also test those workflows to check that they still produce the correct results.
 
-  To estimate your upgrade, send composer.json, composer.lock and a short description of how the application runs. Upgrading to an agreed target version starts at $1,600. If abandoned packages need replacing or missing tests need writing, I include that work in the estimate.
+  **To estimate your upgrade, send composer.json, composer.lock and a short description of how the application runs.** Upgrading to an agreed target version starts at $1,600. If abandoned packages need replacing or missing tests need writing, I include that work in the estimate.

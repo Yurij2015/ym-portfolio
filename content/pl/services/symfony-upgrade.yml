@@ -49,5 +49,5 @@ content: |-
 
   Ostrzeżenia o przestarzałych wywołaniach wskazują część miejsc do poprawy. Osobno sprawdzam zgodność zależności i zmiany w API. Jeśli bundle nie jest już utrzymywany, proponuję zamiennik lub ustalamy, jak zmienić funkcję, która z niego korzysta. Następnie sprawdzam integracje i scenariusze biznesowe, których dotyczyła aktualizacja.
 
-  Na początek prześlij wersje Symfony i PHP, pliki zależności oraz powód aktualizacji. Pozwolą mi one ocenić, co trzeba zmienić, aby przejść na docelową wersję. Aktualizacja kosztuje od 7200 zł. Jeśli potrzebna jest migracja autorskiego systemu PHP do Symfony, przygotowuję osobną wycenę.
+  **Aby wycenić aktualizację, prześlij wersje Symfony i PHP, pliki zależności oraz powód aktualizacji.** Pozwolą mi ocenić zakres przejścia na docelową wersję. Aktualizacja kosztuje od 7200 zł. Migrację autorskiego systemu PHP do Symfony wyceniam osobno.
 priceCurrency: PLN

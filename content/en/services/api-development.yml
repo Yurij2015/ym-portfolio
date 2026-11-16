@@ -44,4 +44,4 @@ content: |-
 
   With those requirements in mind, I define which operations the API will support, what data each client can access and how it should handle responses and errors. For long-running tasks, I plan background execution and a way to retrieve the result. This becomes the basis for the implementation, documentation and tests.
 
-  To estimate your task, describe the operations you need and include sample data. If an API already exists, its current documentation will also help. Development of a set of related API operations, including documentation and tests, starts at $1,800.
+  **To estimate your task, describe the operations you need and include sample data.** If an API already exists, its current documentation will also help. Development of a set of related API operations, including documentation and tests, starts at $1,800.

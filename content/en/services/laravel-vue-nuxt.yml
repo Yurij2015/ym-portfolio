@@ -42,4 +42,4 @@ content: |-
 
   When testing a feature like this, I check the page layout as well as the feedback users receive: loading states, error messages and confirmation of completed actions. For public pages, I also configure metadata and server rendering so the main content is included in the server's HTML response.
 
-  To discuss a similar task, send a list of screens and actions users need, along with mockups if you have them. We can use these to define the changes needed in both parts of the application. Development of a feature covering both frontend and backend starts at $2,400.
+  **To estimate a similar task, send a list of the screens and actions users need, along with any mockups you have.** I can use these to define the changes needed in both parts of the application. A feature covering both frontend and backend starts at $2,400.

@@ -42,4 +42,4 @@ content: |-
 
   I also handle errors and track operation status when integrating other external services. In NetPostPanel, for example, API calls run as background content preparation jobs, so the application needs to track whether each job succeeds or fails after the initial request has ended.
 
-  To estimate a payment integration, tell me which provider you have chosen and which operations you need: one-off payments, subscriptions or refunds. For another API, documentation and a description of the data exchange will help. Integrations start at $1,600, with provider fees paid separately.
+  **To estimate a payment integration, tell me which provider you have chosen and which operations you need: one-off payments, subscriptions or refunds.** For another API, include its documentation and describe the data exchange. Integrations start at $1,600, with provider fees paid separately.

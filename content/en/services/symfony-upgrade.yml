@@ -38,4 +38,4 @@ content: |-
 
   Deprecation warnings help identify some of the changes needed, while dependency compatibility and API changes need separate checks. If a bundle is no longer maintained, I propose a replacement or discuss adapting the feature that depends on it. I then test the integrations and business workflows affected by the upgrade.
 
-  To get started, send your Symfony and PHP versions, dependency files and the reason for upgrading. These let me define the scope of the move to your target version, starting at $1,800. Migrating a custom PHP application to Symfony is estimated separately.
+  **To estimate the upgrade, send your Symfony and PHP versions, dependency files and the reason for upgrading.** These let me define the scope of the move to your target version, starting at $1,800. Migrating a custom PHP application to Symfony is estimated separately.

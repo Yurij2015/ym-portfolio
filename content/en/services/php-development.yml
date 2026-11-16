@@ -43,6 +43,6 @@ content: |-
 
   In DigiSpace, for example, the public website, content and admin panels share a Laravel codebase. Changes to one feature need to fit the rest of the logic, and I use the same approach in client applications.
 
-  To get started, describe the task and include your PHP version. For an error, reproduction steps and log messages help; for a new feature, an example of the expected result is useful. These materials let me identify which code needs reviewing and estimate the work.
+  **To estimate the work, describe the task and include your PHP version.** For an error, add reproduction steps and log messages; for a new feature, include an example of the expected result. This helps me identify which code needs reviewing.
 
   The starting budget of $1,800 covers an agreed piece of work, such as adding a report or connecting another service, including checks and deployment instructions. For a small fix, we can discuss hourly work starting at $35 per hour. We discuss the rate and estimated time after reviewing the task and the project’s condition.

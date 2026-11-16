@@ -172,6 +172,13 @@ useHead({
         </template>
         <template #links>
           <div class="flex flex-wrap items-center gap-2">
+            <UButton
+              :to="global.meetingLink"
+              :label="t('contact.discussProject')"
+              icon="i-simple-icons-telegram"
+              color="primary"
+              target="_blank"
+            />
             <UBadge
               color="primary"
               variant="subtle"
@@ -209,7 +216,7 @@ useHead({
         </ul>
       </div>
 
-      <div class="mt-10">
+      <div class="service-content mt-10">
         <MDC
           v-if="service.content"
           :value="service.content"
